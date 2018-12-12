@@ -5,7 +5,7 @@ Guía de la materia.
 
 ## 📢 Contenido
 
-- **[Definiciones](#Definiciones-📌)**
+- **[Definiciones](#definiciones-)**
   - [Sistemas Axiomaticos](#Sistemas-Axiomaticos-📍)
   - [Congruencias en el plano](#Congruencias-en-el-plano-📍)
   - [Homotecia](#Homotecia-📍)
