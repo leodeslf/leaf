@@ -5,20 +5,20 @@ Guía de la materia.
 
 ## 📢 Contenido
 
-- **[Definiciones](#Definiciones-)**
-  - [Sistemas Axiomaticos](#Sistemas-Axiomaticos-)
-  - [Congruencias en el plano](#Congruencias-en-el-plano-)
-  - [Homotecia](#Homotecia-)
-  - [Semejanza](#Semejanza-)
-- **[Isometrias](#Isometrias-)**
-  - [Simetria](#Simetria-)
+- **[Definiciones](#Definiciones-📌)**
+  - [Sistemas Axiomaticos](#Sistemas-Axiomaticos-📍)
+  - [Congruencias en el plano](#Congruencias-en-el-plano-📍)
+  - [Homotecia](#Homotecia-📍)
+  - [Semejanza](#Semejanza-📍)
+- **[Isometrias](#Isometrias-📌)**
+  - [Simetria](#Simetria-📍)
     - *[Simetria Axial](#Simetria-Axial)*
     - *[Simetria Central](#Simetria-Central)*
-  - [Rotacion](#Rotacion-)
-  - [Traslacion](#Traslacion-)
-  - [Antitraslacion](#Antitraslacion-)
-- **[Lugares Geometricos](#Lugares-Geometricos-)**
-  - [Elemental](#Elemental-)
+  - [Rotacion](#Rotacion-📍)
+  - [Traslacion](#Traslacion-📍)
+  - [Antitraslacion](#Antitraslacion-📍)
+- **[Lugares Geometricos](#Lugares-Geometricos-📌)**
+  - [Elemental](#Elemental-📍)
     - *[Mediatriz](#Mediatriz)*
     - *[Bisectriz](#Bisectriz)*
     - *[Arco Capaz](#Arco-Capaz)*
@@ -26,13 +26,13 @@ Guía de la materia.
     - *[Plano bisector](#Plano-bisector)*
     - *[Esfera](#Esfera)*
     - *[Casquete esférico](#casquete-esférico)*
-  - [Sin isometria](#Sin-isometria-)
-  - [Con isometria](#Con-isometria-)
-- **[Complemento](#Complemento-)**
+  - [Sin isometria](#Sin-isometria-📍)
+  - [Con isometria](#Con-isometria-📍)
+- **[Complemento](#Complemento-📌)**
 
 ---
 
-## Definiciones  📌
+## Definiciones 📌
 
 ### Sistemas Axiomaticos 📍
 
