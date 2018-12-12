@@ -29,6 +29,10 @@ Guía de la materia.
   - [Sin isometria](#Sin-isometria-)
   - [Con isometria](#Con-isometria-)
 - **[Complemento](#Complemento-)**
+  - [Lugar geometrico de Thales](#Lugar-geometrico-de-Thales-)
+  - [Teorema de Thales](#Teorema-de-Thales-)
+  - [Angulos](#Angulos-)
+  - [Triangulos](#Triangulos-)
 
 ---
 
