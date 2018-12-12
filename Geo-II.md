@@ -227,11 +227,11 @@ Cuando son congruentes **dos angulos** y el **lado comun**.
 **Tercer criterio:**  
 Cuando son congruentes los **tres lados**.
 
-#### Correspondencia
+#### Correspondencia entre angulos y lados
 
 Las **desigualdades** entre **lados**, son las **mismas** para los **angulos opuestos** de los mismos.
 
-#### Angulos
+#### Angulos internos y externos
 
 **Internos:** Suman **180 grados**.  
 **Externos:** Suman **360 grados**.
