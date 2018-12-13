@@ -46,7 +46,7 @@ Son una forma de organizar el conocimiento, consta de **ideas fundamentales**, l
 
 ### Congruencias en el plano 📍
 
-Si dos figuras geométricas tienen las mismas **dimenciones** y la misa **forma**, se dicen congruentes *(indiferente de su orientación y posición)*.
+Si dos figuras geométricas tienen las mismas **dimensiones** y la misa **forma**, se dicen congruentes *(indiferente de su orientación y posición)*.
 
 ### Homotecia 📍
 
