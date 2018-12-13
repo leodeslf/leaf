@@ -82,6 +82,12 @@ Antitraslación | ![at](https://latex.codecogs.com/gif.latex?AT_%7Be%2C%5Cvec%7B
 
 Una isometría es **involutiva** si al aplicarla **dos veces** se obtiene la **identidad**.
 
+**Isometría directa e indirecta:**
+
+Una isometría es **directa** cuando el conjuntos de puntos de la imágen y la preimágen **mantienen el mismo sentido** *(horario o antihorario)*.
+
+Una isometría es **indirecta** cuando el conjunto de puntos de la imágen **invierte su sentido** con respecto a la preimágen *(de horario a antihorario, o viceversa)*.
+
 ### Simetría 📍
 
 Correspondencia de **posición, forma y tamaño**, respecto a un **punto, linea o plano**.
@@ -274,6 +280,9 @@ Cuando son congruentes **dos ángulos** y el **lado común**.
 
 **Tercer criterio:**  
 Cuando son congruentes los **tres lados**.
+
+**Cuarto criterio:**  
+Cuando son congruentes **dos lados** y un **ángulo que no conforman** *(ángulo adyacente, sólo, a **uno** de los dos lados)*.
 
 #### Correspondencia entre ángulos y lados
 
