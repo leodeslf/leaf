@@ -291,7 +291,7 @@ Un ángulo **externo** es la **suma** de los dos **internos no contiguos**.
 Definición | Recta | Punto
 --- | --- | ---
 Ver [aquí](#Mediatriz). | Mediatriz | Circuncentro
-Ver [aquí](#Bicectriz). | Bicectriz | Incentro
+Ver [aquí](#Bisectriz). | Bisectriz | Incentro
 *Perpendicular* a un lado por el *vértice opuesto*. | Altura | Ortocentro
 Determinado por un *vértice* y el *punto medio* del *lado opuesto*. | Mediana | Baricentro
 
