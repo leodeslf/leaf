@@ -135,7 +135,7 @@ Toda traslación puede descomponerse en dos simetrías axiales (de infinitas for
 ### Antitraslación 📍
 
 Es la **composición** de **traslación y simetría axial**.  
-Por propiedad **conmutativa**, el **orden** de las isometrías **no altera** el resultado.
+A diferencia del resto, aplica la propiedad **conmutativa**, el **orden** de las isometrías **no altera** el resultado.
 
 _**Composición:**_  
 La composición de tres simetrías axiales, tal que, los ejes de dos de ellas sean paralelos y el tercero perpendicular a ambos, es una antitraslación.
