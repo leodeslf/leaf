@@ -17,7 +17,6 @@ Guía de la materia.
   - [Rotación](#Rotación-)
   - [Traslación](#Traslación-)
   - [Antitraslación](#Antitraslación-)
-  - [Composición y Descomposición de Isometrías](#Composición-y-Descomposición-de-Isometrías-)
 - **[Lugares Geométricos](#Lugares-Geométricos-)**
   - [Elemental](#Elemental-)
     - *[Mediatriz](#Mediatriz)*
