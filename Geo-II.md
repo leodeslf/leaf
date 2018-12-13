@@ -6,7 +6,7 @@ Guía de la materia.
 ## 📢 Contenido
 
 - **[Definiciones](#Definiciones-)**
-  - [Sistemas Axiomaticos](#Sistemas-Axiomaticos-)
+  - [Sistemas Axiomáticos](#Sistemas-Axiomáticos-)
   - [Congruencias en el plano](#Congruencias-en-el-plano-)
   - [Homotecia](#Homotecia-)
   - [Semejanza](#Semejanza-)
@@ -40,7 +40,7 @@ Guía de la materia.
 
 ## Definiciones 📌
 
-### Sistemas Axiomaticos 📍
+### Sistemas Axiomáticos 📍
 
 Son una forma de organizar el conocimiento, consta de **ideas fundamentales**, llamadas **axiomas**, y otras **derivadas** mediante deducción (razonamiento lógico), llamadas **teoremas**.
 
@@ -97,7 +97,7 @@ Se da cuando los puntos *correspondientes* de dos figuras **equidistan** del **c
 Los puntos correspondientes (o bien, *homólogos*) pertenecen a una recta que **contiene** al centro de simetría.
 
 _**Composición:**_  
-La composición de dos simetrías axiales de ejes perpediculares, es igual a una simetría central, cuyo centro es el punto de intersección de los ejes.
+La composición de dos simetrías axiales de ejes perpendiculares, es igual a una simetría central, cuyo centro es el punto de intersección de los ejes.
 
 _**Descomposición:**_  
 Recíprocamente, toda simetría central puede ser descompuesta como dos simetrías axiales (de infinitas formas).
@@ -108,22 +108,22 @@ Tiene lugar cuando se **gira** una figura alrededor del **punto de rotación**.
 Los puntos *homólogos* **pertenecen** a una *misma circunferencia*.
 
 _**Composición:**_  
-La composición de **dos simetrías axiales** de ejes secantes, es una rotación cuyo centro es el punto de corte de dichos ejes, y el ángulo de giro es el doble del que determianan los ejes, en el sentido del primer al segundo eje.
+La composición de **dos simetrías axiales** de ejes secantes, es una rotación cuyo centro es el punto de corte de dichos ejes, y el ángulo de giro es el doble del que determinan los ejes, en el sentido del primer al segundo eje.
 
 _**Descomposición:**_  
 Recíprocamente, se puede descomponer una rotación en dos simetrías axiales (de infinitas maneras).
 
 ### Traslación 📍
 
-Es el **desplazamiento** de una figura en funcion a un **vector**. Tal que la distancia entre *homólogos* es la **misma**.  
+Es el **desplazamiento** de una figura en función a un **vector**. Tal que la distancia entre *homólogos* es la **misma**.  
 Un punto `P'` es igual a `P + vector`.
 
 _**Composición:**_  
-La composición de **dos simetrías axiales** de ejes paralelos, es una traslación, cuyo vector tiene como caracteristicas:
+La composición de **dos simetrías axiales** de ejes paralelos, es una traslación, cuyo vector tiene como características:
 
-- Dirección perpedicular a los ejes.
+- Dirección perpendicular a los ejes.
 - Sentido del primer al segundo eje.
-- Modulo igual a la mitad de la distancia de los ejes.
+- Módulo igual a la mitad de la distancia de los ejes.
 
 _**Descomposición:**_  
 Toda traslación puede descomponerse en dos simetrías axiales (de infinitas formas).
@@ -144,7 +144,7 @@ Toda antitraslación puede descomponerse en tres simetrías axiales (de infinita
 ## Lugares Geométricos 📌
 
 Es un **conjunto de puntos** en el plano que **satisface** una o varias **condiciones**.  
-*Usualemente*, dichas *condiciones* suelen ser **distancias** a puntos, rectas o circunferencias **fijas** en un plano.
+*Usualmente*, dichas *condiciones* suelen ser **distancias** a puntos, rectas o circunferencias **fijas** en un plano.
 
 ### Elemental 📍
 
@@ -256,7 +256,7 @@ Escaleno | 3 desiguales
 
 Nombre | Condición
 --- | ---
-Acutánglo | 3 agudos
+Acutángulo | 3 agudos
 Rectángulo | 1 agudo
 Obtusángulo | 1  obtuso
 
