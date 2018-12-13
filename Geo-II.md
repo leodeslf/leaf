@@ -64,7 +64,7 @@ Dos figuras son semejantes cuando tienen la **misma forma** *(sin importar su ta
 **Alteran orientación o posición** de una figura.  
 Las figuras inicial y final son **congruentes y semejantes** *(mantienen forma y tamaño)*.
 
-**Ecuacion con isometrías:**  
+**Ecuación con isometrías:**  
 La composición de isometrías **no** es conmutativa.
 En cualquier caso, la aplicación de una isometría con su inversa, da la como resultado la identidad.
 
@@ -78,12 +78,10 @@ Rotación | ![r](https://latex.codecogs.com/gif.latex?R_%7Bo%2C&plus;a%7D) | ![-
 Traslación | ![t](https://latex.codecogs.com/gif.latex?T_%7B%5Cvec%7Bu%7D%7D) | ![-t](https://latex.codecogs.com/gif.latex?T_%7B-%5Cvec%7Bu%7D%7D)
 Antitraslación | ![at](https://latex.codecogs.com/gif.latex?AT_%7Be%2C%5Cvec%7Bu%7D%7D) | ![-at](https://latex.codecogs.com/gif.latex?AT_%7Be%2C-%5Cvec%7Bu%7D%7D)
 
-**Isometría involutiva:**
-
+**Isometría involutiva:**  
 Una isometría es **involutiva** si al aplicarla **dos veces** se obtiene la **identidad**.
 
-**Isometría directa e indirecta:**
-
+**Isometría directa e indirecta:**  
 Una isometría es **directa** cuando el conjuntos de puntos de la imágen y la preimágen **mantienen el mismo sentido** *(horario o antihorario)*.
 
 Una isometría es **indirecta** cuando el conjunto de puntos de la imágen **invierte su sentido** con respecto a la preimágen *(de horario a antihorario, o viceversa)*.
