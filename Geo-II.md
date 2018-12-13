@@ -69,6 +69,7 @@ La composición de isometrías **no** es conmutativa.
 En cualquier caso, la aplicación de una isometría con su inversa, da la como resultado la identidad.
 
 **Isometrías y sus inversas:**  
+
 Isometría | ![f](https://latex.codecogs.com/gif.latex?%5Ctextbf%7B%5Ctextit%7Bf%7D%7D) | ![f-1](https://latex.codecogs.com/gif.latex?%5Ctextbf%7B%5Ctextit%7Bf%7D%7D%5E%7B-1%7D)
 :---: | :---: | :---:
 Simetría Axial | ![s](https://latex.codecogs.com/gif.latex?S_%7Be%7D) | ![-s](https://latex.codecogs.com/gif.latex?S_%7Be%7D)
