@@ -78,6 +78,10 @@ Rotación | ![r](https://latex.codecogs.com/gif.latex?R_%7Bo%2C&plus;a%7D) | ![-
 Traslación | ![t](https://latex.codecogs.com/gif.latex?T_%7B%5Cvec%7Bu%7D%7D) | ![-t](https://latex.codecogs.com/gif.latex?T_%7B-%5Cvec%7Bu%7D%7D)
 Antitraslación | ![at](https://latex.codecogs.com/gif.latex?AT_%7Be%2C%5Cvec%7Bu%7D%7D) | ![-at](https://latex.codecogs.com/gif.latex?AT_%7Be%2C-%5Cvec%7Bu%7D%7D)
 
+**Isometría involutiva:**
+
+Una isometría es **involutiva** si al aplicarla **dos veces** se obtiene la **identidad**.
+
 ### Simetría 📍
 
 Correspondencia de **posición, forma y tamaño**, respecto a un **punto, linea o plano**.
