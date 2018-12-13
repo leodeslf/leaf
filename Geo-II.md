@@ -64,6 +64,20 @@ Dos figuras son semejantes cuando tienen la **misma forma** *(sin importar su ta
 **Alteran orientacion o posición** de una figura.  
 Las figuras inicial y final son **congruentes y semejantes** *(mantienen forma y tamaño)*.
 
+**Ecuacion con isometrias:**  
+La composicion de isometrias **no** es conmutativa.
+En cualquier caso, la aplicacion de una isometria con su inversa, da la como resultado la identidad.
+
+**Isometrias y sus inversas:**  
+Isometria | ![f](https://latex.codecogs.com/gif.latex?%5Ctextbf%7B%5Ctextit%7Bf%7D%7D) | ![f-1](https://latex.codecogs.com/gif.latex?%5Ctextbf%7B%5Ctextit%7Bf%7D%7D%5E%7B-1%7D)
+:---: | :---: | :---:
+Simetria Axial | ![s](https://latex.codecogs.com/gif.latex?S_%7Be%7D) | ![-s](https://latex.codecogs.com/gif.latex?S_%7Be%7D)
+Simetria Central | ![c](https://latex.codecogs.com/gif.latex?C_%7Bo%7D) | ![-c](https://latex.codecogs.com/gif.latex?C_%7Bo%7D)
+Rotacion | ![r](https://latex.codecogs.com/gif.latex?R_%7Bo%2C&plus;a%7D) | ![-r](https://latex.codecogs.com/gif.latex?R_%7Bo%2C-a%7D)
+Traslacion | ![t](https://latex.codecogs.com/gif.latex?T_%7B%5Cvec%7Bu%7D%7D) | ![-t](https://latex.codecogs.com/gif.latex?T_%7B-%5Cvec%7Bu%7D%7D)
+Antitraslacion | ![at](https://latex.codecogs.com/gif.latex?AT_%7Be%2C%5Cvec%7Bu%7D%7D) | ![-at](https://latex.codecogs.com/gif.latex?AT_%7Be%2C-%5Cvec%7Bu%7D%7D)
+
+
 ### Simetría 📍
 
 Correspondencia de **posición, forma y tamaño**, respecto a un **punto, linea o plano**.
@@ -78,24 +92,48 @@ Los puntos correspondientes (o bien, *homólogos*) pertenecen a una recta **perp
 Se da cuando los puntos *correspondientes* de dos figuras **equidistan** del **centro de simetría**.  
 Los puntos correspondientes (o bien, *homólogos*) pertenecen a una recta que **contiene** al centro de simetría.
 
+_**Composicion:**_  
+La composicion de dos simetrias axiales de ejes perpediculares, es igual a una simetria central, cuyo centro es el punto de interseccion de los ejes.
+
+_**Descomposicion:**_  
+Reciprocamente, toda simetria central puede ser descompuesta como dos simetrias axiales (de infinitas formas).
+
 ### Rotación 📍
 
 Tiene lugar cuando se **gira** una figura alrededor del **punto de rotación**.  
 Los puntos *homólogos* **pertenecen** a una *misma circunferencia*.
+
+_**Composicion:**_  
+La composicion de **dos simetrias axiales** de ejes secantes, es una rotacion cuyo centro es el punto de corte de dichos ejes, y el angulo de giro es el doble del que determianan los ejes, en el sentido del primer al segundo eje.
+
+_**Descomposicion:**_  
+Reciprocamente, se puede descomponer una rotacion en dos simetrias axiales (de infinitas maneras).
 
 ### Traslación 📍
 
 Es el **desplazamiento** de una figura en funcion a un **vector**. Tal que la distancia entre *homólogos* es la **misma**.  
 Un punto `P'` es igual a `P + vector`.
 
+_**Composicion:**_  
+La composicion de **dos simetrias axiales** de ejes paralelos, es una traslacion, cuyo vector tiene como caracteristicas:
+
+- Direccion perpedicular a los ejes.
+- Sentido del primer al segundo eje.
+- Modulo igual a la mitad de la distancio de los ejes.
+
+_**Descomposicion:**_  
+Toda traslacion puede descomponerse en dos simetrias axiales (de infinitas formas).
+
 ### Antitraslación 📍
 
 Es la **composición** de **traslación y simetría axial**.  
 Por propiedad **conmutativa**, el **orden** de las isometrías **no altera** el resultado.
 
-### Composición y Descomposición de Isometrías
+_**Composicion:**_  
+La composicion de tres simetrias axiales, tal que, los ejes de dos de ellas sean paralelos y el tercero perpendicular a ambos, es una aintitraslacion.
 
-s
+_**Descomposicion:**_  
+Toda antitraslacion puede descomponerse en tres simetrias axiales (de infinitas maneras posibles).
 
 ---
 
@@ -259,7 +297,7 @@ Determinado por un *vértice* y el *punto medio* del *lado opuesto*. | Mediana |
 
 - **Paralelogramo:** Lados paralelos dos a dos.
   - *Rectangulo:* Cuatro angulos rectos.
-  - *Cuadrado:* Cuatro lados y angulos iguales *(es tambien rectangulo y rombo)*.
+  - *Cuadrado:* Rectangulo rombo.
   - *Rombo:* Cuatro lados iguales.
 - **Trapecio:** Dos lados paralelos *(llamados bases)*.
   - *Trapecio Rectangulo:* Un lado perpendicular a las bases *(dos angulos rectos)*.
