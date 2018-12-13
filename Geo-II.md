@@ -17,6 +17,7 @@ Guía de la materia.
   - [Rotación](#Rotación-)
   - [Traslación](#Traslación-)
   - [Antitraslación](#Antitraslación-)
+  - [Composición y Descomposición de Isometrías](#Composición-y-Descomposición-de-Isometrías-)
 - **[Lugares Geométricos](#Lugares-Geométricos-)**
   - [Elemental](#Elemental-)
     - *[Mediatriz](#Mediatriz)*
@@ -33,6 +34,7 @@ Guía de la materia.
   - [Teorema de Thales](#Teorema-de-Thales-)
   - [Ángulos](#Ángulos-)
   - [Triángulos](#Triángulos-)
+  - [Cuadrilateros](#Cuadrilateros-)
 
 ---
 
@@ -90,6 +92,10 @@ Un punto `P'` es igual a `P + vector`.
 
 Es la **composición** de **traslación y simetría axial**.  
 Por propiedad **conmutativa**, el **orden** de las isometrías **no altera** el resultado.
+
+### Composición y Descomposición de Isometrías
+
+s
 
 ---
 
@@ -246,6 +252,26 @@ Ver [aquí](#Mediatriz). | Mediatriz | Circuncentro
 Ver [aquí](#Bicectriz). | Bicectriz | Incentro
 *Perpendicular* a un lado por el *vértice opuesto*. | Altura | Ortocentro
 Determinado por un *vértice* y el *punto medio* del *lado opuesto*. | Mediana | Baricentro
+
+### Cuadrilateros 📍
+
+#### Clasificacion de cuadrilateros
+
+- **Paralelogramo:** Lados paralelos dos a dos.
+  - *Rectangulo:* Cuatro angulos rectos.
+  - *Cuadrado:* Cuatro lados y angulos iguales *(es tambien rectangulo y rombo)*.
+  - *Rombo:* Cuatro lados iguales.
+- **Trapecio:** Dos lados paralelos *(llamados bases)*.
+  - *Trapecio Rectangulo:* Un lado perpendicular a las bases *(dos angulos rectos)*.
+  - *Trapecio Isosceles:* Lados no paralelos son iguales.
+  - *Trapecio Escaleno:* Lados no paralelos son desiguales y no forma angulos rectos *(no es rectangulo ni isosceles)*.
+- **Trapezoide:** No tiene lados paralelos.
+  - *Romboide:* Pares de lados consecutivos iguales.
+
+#### Cuadrialteros inscriptibles
+
+Un cuadrilatero es **inscriptible** si sus **ángulos opuestos son suplementarios** (suman 180 grados).
+Si el cuadrilatero ABCD es inscriptible, entonces `AB.CD + AD.BC = AC.BD`.
 
 ---
 
