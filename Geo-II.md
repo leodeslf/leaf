@@ -208,7 +208,7 @@ Si varias rectas **paralelas** son cortadas por dos **secantes**, entonces los *
 
 ### Ángulos 📍
 
-#### Clasificacion por su medida
+#### Clasificación por su medida
 
 Nombre | Condición
 --- | ---
@@ -240,7 +240,7 @@ Llano | `= 180`
 
 ### Triángulos 📍
 
-#### Clasificacion por sus lados
+#### Clasificación por sus lados
 
 Nombre | Condición
 --- | ---
@@ -248,7 +248,7 @@ Equilatero | 3 iguales
 Isósceles | 2 iguales
 Escaleno | 3 desiguales
 
-#### Clasificacion por sus ángulos
+#### Clasificación por sus ángulos
 
 Nombre | Condición
 --- | ---
@@ -291,9 +291,9 @@ Ver [aquí](#Bicectriz). | Bicectriz | Incentro
 *Perpendicular* a un lado por el *vértice opuesto*. | Altura | Ortocentro
 Determinado por un *vértice* y el *punto medio* del *lado opuesto*. | Mediana | Baricentro
 
-### Cuadrilateros 📍
+### Cuadriláteros 📍
 
-#### Clasificacion de cuadrilateros
+#### Clasificación de cuadriláteros
 
 - **Paralelogramo:** Lados paralelos dos a dos.
   - *Rectángulo:* Cuatro ángulos rectos.
@@ -306,10 +306,10 @@ Determinado por un *vértice* y el *punto medio* del *lado opuesto*. | Mediana |
 - **Trapezoide:** No tiene lados paralelos.
   - *Romboide:* Pares de lados consecutivos iguales.
 
-#### Cuadrialteros inscriptibles
+#### Cuadriláteros inscriptibles
 
-Un cuadrilatero es **inscriptible** si sus **ángulos opuestos son suplementarios** (suman 180 grados).
-Si el cuadrilatero ABCD es inscriptible, entonces `AB.CD + AD.BC = AC.BD`.
+Un cuadrilátero es **inscriptible** si sus **ángulos opuestos son suplementarios** (suman 180 grados).
+Si el cuadrilátero ABCD es inscriptible, entonces `AB.CD + AD.BC = AC.BD`.
 
 ---
 
