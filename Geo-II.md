@@ -308,7 +308,7 @@ Determinado por un *vértice* y el *punto medio* del *lado opuesto*. | Mediana |
 
 #### Cuadriláteros inscriptibles
 
-Un cuadrilátero es **inscriptible** si sus **ángulos opuestos son suplementarios** (suman 180 grados).
+Un cuadrilátero es **inscriptible** si sus **ángulos opuestos son suplementarios** (suman 180 grados).  
 Si el cuadrilátero ABCD es inscriptible, entonces `AB.CD + AD.BC = AC.BD`.
 
 ---
