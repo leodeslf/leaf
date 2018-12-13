@@ -46,7 +46,7 @@ Son una forma de organizar el conocimiento, consta de **ideas fundamentales**, l
 
 ### Congruencias en el plano 📍
 
-Si dos figuras geométricas tienen las mismas **dimenciones** y la misa **forma**, se dicen congruentes *(indiferente de su orientacion y posición)*.
+Si dos figuras geométricas tienen las mismas **dimenciones** y la misa **forma**, se dicen congruentes *(indiferente de su orientación y posición)*.
 
 ### Homotecia 📍
 
@@ -61,22 +61,21 @@ Dos figuras son semejantes cuando tienen la **misma forma** *(sin importar su ta
 
 ## Isometrías 📌
 
-**Alteran orientacion o posición** de una figura.  
+**Alteran orientación o posición** de una figura.  
 Las figuras inicial y final son **congruentes y semejantes** *(mantienen forma y tamaño)*.
 
-**Ecuacion con isometrias:**  
-La composicion de isometrias **no** es conmutativa.
-En cualquier caso, la aplicacion de una isometria con su inversa, da la como resultado la identidad.
+**Ecuacion con isometrías:**  
+La composición de isometrías **no** es conmutativa.
+En cualquier caso, la aplicación de una isometría con su inversa, da la como resultado la identidad.
 
-**Isometrias y sus inversas:**  
-Isometria | ![f](https://latex.codecogs.com/gif.latex?%5Ctextbf%7B%5Ctextit%7Bf%7D%7D) | ![f-1](https://latex.codecogs.com/gif.latex?%5Ctextbf%7B%5Ctextit%7Bf%7D%7D%5E%7B-1%7D)
+**Isometrías y sus inversas:**  
+Isometría | ![f](https://latex.codecogs.com/gif.latex?%5Ctextbf%7B%5Ctextit%7Bf%7D%7D) | ![f-1](https://latex.codecogs.com/gif.latex?%5Ctextbf%7B%5Ctextit%7Bf%7D%7D%5E%7B-1%7D)
 :---: | :---: | :---:
-Simetria Axial | ![s](https://latex.codecogs.com/gif.latex?S_%7Be%7D) | ![-s](https://latex.codecogs.com/gif.latex?S_%7Be%7D)
-Simetria Central | ![c](https://latex.codecogs.com/gif.latex?C_%7Bo%7D) | ![-c](https://latex.codecogs.com/gif.latex?C_%7Bo%7D)
-Rotacion | ![r](https://latex.codecogs.com/gif.latex?R_%7Bo%2C&plus;a%7D) | ![-r](https://latex.codecogs.com/gif.latex?R_%7Bo%2C-a%7D)
-Traslacion | ![t](https://latex.codecogs.com/gif.latex?T_%7B%5Cvec%7Bu%7D%7D) | ![-t](https://latex.codecogs.com/gif.latex?T_%7B-%5Cvec%7Bu%7D%7D)
-Antitraslacion | ![at](https://latex.codecogs.com/gif.latex?AT_%7Be%2C%5Cvec%7Bu%7D%7D) | ![-at](https://latex.codecogs.com/gif.latex?AT_%7Be%2C-%5Cvec%7Bu%7D%7D)
-
+Simetría Axial | ![s](https://latex.codecogs.com/gif.latex?S_%7Be%7D) | ![-s](https://latex.codecogs.com/gif.latex?S_%7Be%7D)
+Simetría Central | ![c](https://latex.codecogs.com/gif.latex?C_%7Bo%7D) | ![-c](https://latex.codecogs.com/gif.latex?C_%7Bo%7D)
+Rotación | ![r](https://latex.codecogs.com/gif.latex?R_%7Bo%2C&plus;a%7D) | ![-r](https://latex.codecogs.com/gif.latex?R_%7Bo%2C-a%7D)
+Traslación | ![t](https://latex.codecogs.com/gif.latex?T_%7B%5Cvec%7Bu%7D%7D) | ![-t](https://latex.codecogs.com/gif.latex?T_%7B-%5Cvec%7Bu%7D%7D)
+Antitraslación | ![at](https://latex.codecogs.com/gif.latex?AT_%7Be%2C%5Cvec%7Bu%7D%7D) | ![-at](https://latex.codecogs.com/gif.latex?AT_%7Be%2C-%5Cvec%7Bu%7D%7D)
 
 ### Simetría 📍
 
@@ -92,48 +91,48 @@ Los puntos correspondientes (o bien, *homólogos*) pertenecen a una recta **perp
 Se da cuando los puntos *correspondientes* de dos figuras **equidistan** del **centro de simetría**.  
 Los puntos correspondientes (o bien, *homólogos*) pertenecen a una recta que **contiene** al centro de simetría.
 
-_**Composicion:**_  
-La composicion de dos simetrias axiales de ejes perpediculares, es igual a una simetria central, cuyo centro es el punto de interseccion de los ejes.
+_**Composición:**_  
+La composición de dos simetrías axiales de ejes perpediculares, es igual a una simetría central, cuyo centro es el punto de intersección de los ejes.
 
-_**Descomposicion:**_  
-Reciprocamente, toda simetria central puede ser descompuesta como dos simetrias axiales (de infinitas formas).
+_**Descomposición:**_  
+Recíprocamente, toda simetría central puede ser descompuesta como dos simetrías axiales (de infinitas formas).
 
 ### Rotación 📍
 
 Tiene lugar cuando se **gira** una figura alrededor del **punto de rotación**.  
 Los puntos *homólogos* **pertenecen** a una *misma circunferencia*.
 
-_**Composicion:**_  
-La composicion de **dos simetrias axiales** de ejes secantes, es una rotacion cuyo centro es el punto de corte de dichos ejes, y el angulo de giro es el doble del que determianan los ejes, en el sentido del primer al segundo eje.
+_**Composición:**_  
+La composición de **dos simetrías axiales** de ejes secantes, es una rotación cuyo centro es el punto de corte de dichos ejes, y el ángulo de giro es el doble del que determianan los ejes, en el sentido del primer al segundo eje.
 
-_**Descomposicion:**_  
-Reciprocamente, se puede descomponer una rotacion en dos simetrias axiales (de infinitas maneras).
+_**Descomposición:**_  
+Recíprocamente, se puede descomponer una rotación en dos simetrías axiales (de infinitas maneras).
 
 ### Traslación 📍
 
 Es el **desplazamiento** de una figura en funcion a un **vector**. Tal que la distancia entre *homólogos* es la **misma**.  
 Un punto `P'` es igual a `P + vector`.
 
-_**Composicion:**_  
-La composicion de **dos simetrias axiales** de ejes paralelos, es una traslacion, cuyo vector tiene como caracteristicas:
+_**Composición:**_  
+La composición de **dos simetrías axiales** de ejes paralelos, es una traslación, cuyo vector tiene como caracteristicas:
 
-- Direccion perpedicular a los ejes.
+- Dirección perpedicular a los ejes.
 - Sentido del primer al segundo eje.
-- Modulo igual a la mitad de la distancio de los ejes.
+- Modulo igual a la mitad de la distancia de los ejes.
 
-_**Descomposicion:**_  
-Toda traslacion puede descomponerse en dos simetrias axiales (de infinitas formas).
+_**Descomposición:**_  
+Toda traslación puede descomponerse en dos simetrías axiales (de infinitas formas).
 
 ### Antitraslación 📍
 
 Es la **composición** de **traslación y simetría axial**.  
 Por propiedad **conmutativa**, el **orden** de las isometrías **no altera** el resultado.
 
-_**Composicion:**_  
-La composicion de tres simetrias axiales, tal que, los ejes de dos de ellas sean paralelos y el tercero perpendicular a ambos, es una aintitraslacion.
+_**Composición:**_  
+La composición de tres simetrías axiales, tal que, los ejes de dos de ellas sean paralelos y el tercero perpendicular a ambos, es una antitraslación.
 
-_**Descomposicion:**_  
-Toda antitraslacion puede descomponerse en tres simetrias axiales (de infinitas maneras posibles).
+_**Descomposición:**_  
+Toda antitraslación puede descomponerse en tres simetrías axiales (de infinitas maneras posibles).
 
 ---
 
@@ -296,13 +295,13 @@ Determinado por un *vértice* y el *punto medio* del *lado opuesto*. | Mediana |
 #### Clasificacion de cuadrilateros
 
 - **Paralelogramo:** Lados paralelos dos a dos.
-  - *Rectangulo:* Cuatro angulos rectos.
-  - *Cuadrado:* Rectangulo rombo.
+  - *Rectángulo:* Cuatro ángulos rectos.
+  - *Cuadrado:* Rectángulo rombo.
   - *Rombo:* Cuatro lados iguales.
 - **Trapecio:** Dos lados paralelos *(llamados bases)*.
-  - *Trapecio Rectangulo:* Un lado perpendicular a las bases *(dos angulos rectos)*.
-  - *Trapecio Isosceles:* Lados no paralelos son iguales.
-  - *Trapecio Escaleno:* Lados no paralelos son desiguales y no forma angulos rectos *(no es rectangulo ni isosceles)*.
+  - *Trapecio Rectángulo:* Un lado perpendicular a las bases *(dos ángulos rectos)*.
+  - *Trapecio Isósceles:* Lados no paralelos son iguales.
+  - *Trapecio Escaleno:* Lados no paralelos son desiguales y no forma ángulos rectos *(no es rectángulo ni isósceles)*.
 - **Trapezoide:** No tiene lados paralelos.
   - *Romboide:* Pares de lados consecutivos iguales.
 
