@@ -33,7 +33,7 @@ Guía de la materia.
   - [Teorema de Thales](#Teorema-de-Thales-)
   - [Ángulos](#Ángulos-)
   - [Triángulos](#Triángulos-)
-  - [Cuadrilateros](#Cuadrilateros-)
+  - [Cuadriláteros](#Cuadrilateros-)
 
 ---
 
