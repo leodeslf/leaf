@@ -271,10 +271,10 @@ Un lado debe ser **mayor** a la **diferencia** de los otros, y **menor** a la **
 #### Congruencia entre triángulos
 
 **Primer criterio:**  
-Cuando son congruentes **dos lados** y el **ángulo que conforman**.
+Cuando son congruentes **dos ángulos** y el **lado común**.
 
 **Segundo criterio:**  
-Cuando son congruentes **dos ángulos** y el **lado común**.
+Cuando son congruentes **dos lados** y el **ángulo que conforman**.
 
 **Tercer criterio:**  
 Cuando son congruentes los **tres lados**.
