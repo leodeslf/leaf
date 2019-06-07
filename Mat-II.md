@@ -52,8 +52,6 @@ La **solución** sera la (o las) que  se adapten a las necesidades (maximizar o 
 
 Función polinómica (o bien, *polinomio*). Es la función de una expresión algebraica de varios monomios.
 
----
-
 ### Gráfica 📍
 
 - **Ramas:**
@@ -71,8 +69,6 @@ Función polinómica (o bien, *polinomio*). Es la función de una expresión alg
     Si el factor `x - a` aparece **una vez** en la forma factorizada de `P(x)`, entonces `a` es **raíz simple**.  
     Si aparece **dos veces**, `a` es una **raíz doble**.  
     Si aparece **tres veces**, entonces, `a` es una **raíz triple**.
-
----
 
 ### Multiplicación y División 📍
 
@@ -111,8 +107,6 @@ El cociente es un polinomio cuyo grado es el **grado del dividendo menos el grad
   - **[Polinomio Divisible](#Polinomio-Divisible)**
   - **[Raíz](#Raíz)**
 
----
-
 ### Ruffini 📍
 
 Un método breve para la **división de polinomios** (cuando el divisor es un binomio de la forma `x - a`).
@@ -129,13 +123,9 @@ Un método breve para la **división de polinomios** (cuando el divisor es un bi
 El último número obtenido es el **resto**.  
 El **cociente** conforma un **nuevo polinomio** un grado menor al inicial.
 
----
-
 ### Ley del Resto 📍
 
 El **resto** de `P(x)` dividido `x - a` es igual a `P(a)`.
-
----
 
 ### Teorema de Descartes 📍
 
@@ -148,13 +138,9 @@ Plantea que la condicion **necesaria y suficiente** para que un polinomio `P(x)`
 *b:* Por [Ley del Resto][2b].  
 *c:* Por definicion de [Raíz](#Raíz).
 
----
-
 ### Regla de los signos de Descartes 📍
 
 El número de raíces positivas de `P(x)` es igual al número de **cambios de signo** de término a término dicho polinomio.
-
----
 
 ### Expresión analitica desde la grafica 📍
 
@@ -166,8 +152,6 @@ Para `P(x)` de tercer grado.
   - Obtener **polinomio factorizado** `P(x) = a(x - r1)(x - r2)(x - r3)`.
   - Obtener **producto** `P(x) = ax³ + bx² + cx + d`.
 
----
-
 ### Raíces evidentes 📍
 
 Dado `P(x)`, se puede deducir:
@@ -178,8 +162,6 @@ Raíz | Condicion
 `0` | `(término independiente) no ∃`
 `1` | `(suma de coef.) = 0`
 
----
-
 ### Teorema de la Raíz Racional 📍
 
 Sea `P(x) = ax³ + bx² + cx + d` de grado `n ≥ 1` y `d ≠ 0 ∧ d ∈ ℤ`.  
@@ -187,8 +169,6 @@ Sea `p` divisor del **término independiente**.
 Sea `q` divisor del **coeficiente principal**.
 
 Las **posibles** raíces de `P(x)` son todas las fracciones `p/q` **irreducibles** (incluyendo **enteros**).
-
----
 
 ### Descomposicion Factorial 📍
 
@@ -203,8 +183,6 @@ Del polinomio `P(x)`, obtener `Q(x)` factorizado, siendo `P(x) = Q(x)`.
 Partiendo de `P(x) = ax³ + bx² + cx + d`, se obtiene `Q(x) = a(x - r1)(x - r2)(x - r3)`.  
 Siendo `r1, r2, r3` raíces de `P(x)`.
 
----
-
 ### Raíces comunes a dos polinomios 📍
 
 Dado `P(x)` y `Q(x)` de **mismo grado**.  
@@ -218,8 +196,6 @@ Sea `H(x) = a.P(x) + b.Q(x)` *(Combinacion Lineal)*.
 
 **Demostracion:**  
 Sea `H(r) = a.P(r) + b.Q(r) = 0`, se sabe `P(r) = Q(r) = 0`, entonces, ambos productos y su suma se **reducen a cero**, por lo tanto, `H(r) = 0`.
-
----
 
 ### Raíces independientes del parametro 📍
 
