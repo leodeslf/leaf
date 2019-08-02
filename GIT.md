@@ -1,6 +1,12 @@
-# GIT
+# Git
 
-Git quick notes.
+Notes.
+
+## Content
+
+[Basic](#Basic)
+[Branch](#Branch)
+[Using remote](#Using-remote)
 
 ## Basic
 

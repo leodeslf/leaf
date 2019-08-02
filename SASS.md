@@ -1,5 +1,7 @@
 # SASS
 
+Notes.
+
 ## Contenido
 
 - [Cross Browsing](#Cross-Browsing)
@@ -27,9 +29,9 @@ $var0: green;
 $var1: 14px;
 
 body {
-    background-color: $var0;
-    font-size: $var1;
-    ...
+  background-color: $var0;
+  font-size: $var1;
+  ...
 }
 ```
 
@@ -43,16 +45,16 @@ E.g:
 $var0: red;
 
 a {
-    color: $var0;
-    ...
+  color: $var0;
+  ...
 }
 
 /* para todos los 'a' dentro de 'nav', su color
 ser'a azul, no rojo */
 nav {
-    $var0: blue !global;
-    color: $var0;
-    ...
+  $var0: blue !global;
+  color: $var0;
+  ...
 }
 ```
 
@@ -64,9 +66,9 @@ E.g:
 
 ```SCSS
 @mixin nombre0 {
-    property: value;
-    property: value;
-    ...
+  property: value;
+  property: value;
+  ...
 }
 ```
 
@@ -76,20 +78,20 @@ E.g:
 
 ```SCSS
 @mixin nombre1($param0, $param1: 4px) {
-    property: $param0 $param1;
+  property: $param0 $param1;
 }
 
 select {
-    @include: nombre0;
-    /* ambos personalizados */
-    @include: nombre1(green, 1px);
-    ...
+  @include: nombre0;
+  /* ambos personalizados */
+  @include: nombre1(green, 1px);
+  ...
 }
 
 select {
-    /* solo declarando un valor espec'ifico */
-    @include: nombre1(@param0: red);
-    ...
+  /* solo declarando un valor espec'ifico */
+  @include: nombre1(@param0: red);
+  ...
 }
 ```
 
@@ -101,12 +103,12 @@ E.g:
 
 ```SCSS
 element {
+  property: value;
+  ...
+  element {
     property: value;
     ...
-    element {
-        property: value;
-        ...
-    }
+  }
 }
 ```
 
@@ -116,16 +118,16 @@ E.g:
 
 ```SCSS
 font: {
-    family: value;
-    size: value;
-    weight: value;
-    ...
+  family: value;
+  size: value;
+  weight: value;
+  ...
 }
 
 margin: {
-    top: value;
-    bottom: value;
-    ...
+  top: value;
+  bottom: value;
+  ...
 }
 ```
 
@@ -137,15 +139,15 @@ E.g:
 
 ```SCSS
 selector0 {
-    property: value;
-    property: value;
-    ...
+  property: value;
+  property: value;
+  ...
 }
 
 selector1 {
-    @extend selector0;
-    property: value;
-    ...
+  @extend selector0;
+  property: value;
+  ...
 }
 ```
 
@@ -161,9 +163,9 @@ E.g:
 
 ```SCSS
 * {
-    padding: 0;
-    margin: 0;
-    ...
+  padding: 0;
+  margin: 0;
+  ...
 }
 ```
 
@@ -198,7 +200,7 @@ Al importar, se ignora el underscore.
 @import "filename";
 
 select {
-    property: $prop0;
-    ...
+  property: $prop0;
+  ...
 }
 ```

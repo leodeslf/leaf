@@ -1,5 +1,20 @@
 # JavaScript
 
+Notes.
+
+## Contenido
+
+- [Constants/Variables](#Constants/Variables)
+- [Types](#Types)
+- [Arrays](#Arrays)
+- [Conditionals/Control flow](#Conditionals/Control-flow)
+- [Iterations](#Iterations)
+- [Functions](#Functions)
+- [Object](#Object)
+- [Classes](#Classes)
+- [Promises](#Promises)
+- [BOM and DOM](#BOM-and-DOM)
+
 ## Constants/Variables
 
 ```JavaScript
@@ -80,9 +95,9 @@ for (const iterator of object) {}
 
 // for... in (key = object property)
 for (const key in object) {
-    /* if (object.hasOwnProperty(key)) {
-        const element = object[key];
-    } */
+  /* if (object.hasOwnProperty(key)) {
+    const element = object[key];
+  } */
 }
 
 // for each
@@ -96,8 +111,8 @@ var name = new Function('arg0', 'arg1', 'functionBody')
 
 // or
 function name(arg0, arg1) {
-    // functionBody
-    return something; // (optional)
+  // functionBody
+  return something; // (optional)
 }
 
 // or Arrow function
@@ -128,13 +143,13 @@ var o = {
 
 ```JavaScript
 class MyObj {
-    constructor(prop0) {
-        this.prop0 = prop0
-    }
+  constructor(prop0) {
+    this.prop0 = prop0
+  }
 
-    static function0() {} // Used directly from the class
+  static function0() {} // Used directly from the class
 
-    function0() {} // Used from an initialized object (from this class)
+  function0() {} // Used from an initialized object (from this class)
 }
 
 const myObj0 = new MyObj(myProp0) // Initializing an obj from that class
