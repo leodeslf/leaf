@@ -47,7 +47,7 @@ a {
     ...
 }
 
-/* para todos los 'a' dentro de 'nav', su color 
+/* para todos los 'a' dentro de 'nav', su color
 ser'a azul, no rojo */
 nav {
     $var0: blue !global;
