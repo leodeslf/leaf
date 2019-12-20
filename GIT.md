@@ -16,6 +16,8 @@ Notes.
 
 - `git commit -m "commit message"`
 
+- `git rm -r --cached .` *__Clear repo__ (local).*
+
 ## Branch
 
 - `git branch <branch-name>` *__Creates__.*
