@@ -33,15 +33,15 @@ Deshacer / rehacer (seguridad / confianza)
 
 ### Template vs Content
 
-Encontrar el diseño ideal para determinado contenido / contexto.
+Encontrar el diseño ideal para determinado contenido / contexto
 Cuando el diseño genérico no sirve, aplicar:
 Content specific design
 Context specific design
-Con un sentido funcional y estético.
+Con un sentido funcional y estético
 
 ### Aesthetics & Functionality
 
-Cómo luce y cómo funciona debe ser facilmente percibible por el usuario.
+Cómo luce y cómo funciona debe ser facilmente percibible por el usuario
 
 ### Design Before Design
 
@@ -52,29 +52,29 @@ Dónde funciona?
 
 ### Look and Feel
 
-Estilo, tipografía, paleta de colores y lenguaje.
+Estilo, tipografía, paleta de colores y lenguaje
 
 ### Language as a design tool
 
-Naming / branding, tono / actitud.
+Naming / branding, tono / actitud
 
 ### Color & Shape
 
 Color por asociación / funcionalidad comparado con elementos de la
 vida real.
-Distinguir diferenciar y asociar, activo/inactivo/pasivo/progreso.
-Responder con cambios de color ante la acción del usuario.
+Distinguir diferenciar y asociar, activo/inactivo/pasivo/progreso
+Responder con cambios de color ante la acción del usuario
 
 ### Imágenes
 
 Inmersivas: por sí solas crean el contexto para todo el producto,
-crean un mundo aparte.
-Contenidas: son simplemente una pieza más del contenido.
+crean un mundo aparte
+Contenidas: son simplemente una pieza más del contenido
 
 ### Typography
 
 El texto es económico, rápido, preciso, puede representar lo que
-no puede una imágen.
+no puede una imágen
 Texto como Contenido
 Texto como Interfaz
 Texto como Branding
@@ -82,19 +82,19 @@ Texto como Branding
 ### Icons
 
 Ícono: Semejante a lo que representa (basado en imágen),
-descriptivo (literal).
+descriptivo (literal)
 Símbolo: No-semejante a lo que representa (no-basado en
-imágen), representativo (aprendido).
+imágen), representativo (aprendido)
 Crear / usar un ícono debe basarse en comunicación, estética,
-funcionalidad, audiencia, reconocimiento.
+funcionalidad, audiencia, reconocimiento
 
 ### Functionality
 
-La UI debe mantener lógica, jerarquía y ser sistemática.
-Mostrando al usuario lo conocido / predecible.
-Generando un sistema expandible / escalable.
-Manteniendo la economía entre elementos y acciones del usuario.
-Economía aplicada mediante jerarquía e intuición.
+La UI debe mantener lógica, jerarquía y ser sistemática
+Mostrando al usuario lo conocido / predecible
+Generando un sistema expandible / escalable
+Manteniendo la economía entre elementos y acciones del usuario
+Economía aplicada mediante jerarquía e intuición
 "Hacer más con menos"
 
 ### Speed and Style
@@ -109,11 +109,11 @@ Estilo:
 ✔ entretenido, atractivo, experiencia gratificante, marketing  
 ❌ obstruye contenido, consume timepo, frustrante, pasa de moda, innecesario
 
-Dependiendo del proyecto se dará más prioridad al estilo o a la rapidez.
+Dependiendo del proyecto se dará más prioridad al estilo o a la rapidez
 
 ### Not Buttons
 
-Forma, escala, contraste, claridad, economía.
+Forma, escala, contraste, claridad, economía
 
 ### States and Changes
 
@@ -128,19 +128,19 @@ Qué es la primera cosa que ve el usuario?
 
 ### Conventions and Expectations
 
-Multiples puntos de atención en pantalla sobre PC.
-Un punto de atención por pantalla sobre Mobile.
+Multiples puntos de atención en pantalla sobre PC
+Un punto de atención por pantalla sobre Mobile
 
 ### Structure and Grids
 
 Cuidar consistencia entre lineas de la estructura y
-proporciones del contenido.
-Peso y legibilidad.
-Grids, espaciado, escala, un sistema consistente.
+proporciones del contenido
+Peso y legibilidad
+Grids, espaciado, escala, un sistema consistente
 
 ### Platforms and Screen Sizes
 
-Distancia de visualización (PC vs Mobile).
+Distancia de visualización (PC vs Mobile)
 
 ## UX Design Fundamentals
 

@@ -16,9 +16,14 @@ Libre Baskerville
 ## Sans-Serif
 
 Segoe UI
-Thaoma
-Verdana
 Roboto
 Roboto Condensed
+Rubik
+Barlow
+Assistant
+Archivo
 
 ## Monospace
+
+monospace
+Roboto Mono

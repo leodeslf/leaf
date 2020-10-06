@@ -29,7 +29,7 @@ Notes.
 - `git branch -a` *__Lists__ `-a` (--all) = `-l` (--list [local]) plus `-r` (**--remote**).*
 
 - `git branch -v` *__Lists__ `-v` (--verbose) [branch, branch id, last commit].*
-  - __Or__: `git branch -vv` *[branch, branch id, upstream (if exists), last commit].*
+  - Or: `git branch -vv` *[branch, branch id, upstream (if exists), last commit].*
 
 ## Using remote
 
@@ -42,13 +42,15 @@ Notes.
 - `-u` = `--set-upstream-to` *= **upstream** = remote/branch track. __Use it once__, then it's optional.*
 
 - `git push -u <remote-name> <branch-name>` *__Send__ commited changes to remote and **save/set** that track (remote/branch).*
-  - __Then__ just use: `git push`
+  - Then just use: `git push`
 
 - `git pull <remote-name> <branch-name>` *__Grab all__ from remote.*
-  - __Or__: `git pull` *If `-u` exists.*
-  - __Or__: `git pull --allow-unrelated-histories` *If local and remote files __doesn't match__.*
+  - Or: `git pull` *If `-u` exists.*
+  - Or: `git pull --allow-unrelated-histories` *If local and remote files __doesn't match__.*
 
 - `git remote show <remote-name>` *Show remote **info**.*
 
 - `git push <remote-name> --delete <branch-name>`
-  - __Or__: `git push <remote-name> :<branch-name>`
+  - Or: `git push <remote-name> :<branch-name>`
+
+- `git remote show <remote-name>` to show the _remote info_.
