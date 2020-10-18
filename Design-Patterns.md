@@ -249,21 +249,60 @@ Use it when:
 
 ![ref](https://refactoring.guru/images/patterns/cards/observer-mini.png)
 
+Lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.
+
+Use it when:
+
+- Changes to the state of one object may require changing other objects.
+- Some objects in your app must observe others, but only for a limited time or in specific cases.
+
 ### State
 
 ![ref](https://refactoring.guru/images/patterns/cards/state-mini.png)
+
+Lets an object alter its behavior when its internal state changes.
+
+Use it when:
+
+- You have an object that behaves differently depending on its current state.
+- You have a class polluted with massive conditionals that alter how the class behaves.
+- You have a lot of duplicate code across similar states and transitions of a condition-based state.
 
 ### Strategy
 
 ![ref](https://refactoring.guru/images/patterns/cards/strategy-mini.png)
 
+Lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
+
+Use it when:
+
+- You want to use different variants of an algorithm within an object.
+- You have a lot of similar classes that only differ in the way they execute some behavior.
+- You want to isolate the business logic of a class from the implementation details of algorithms that may not be as important in the context of that logic.
+- Your class has a massive conditional operator that switches between different variants of the same algorithm.
+
 ### Template Method
 
 ![ref](https://refactoring.guru/images/patterns/cards/template-method-mini.png)
 
+Defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
+
+Use it when:
+
+- You want to let clients extend only particular steps of an algorithm.
+- You have several classes that contain almost identical algorithms.
+
 ### Visitor
 
 ![ref](https://refactoring.guru/images/patterns/cards/visitor-mini.png)
+
+Lets you separate algorithms from the objects on which they operate.
+
+Use it when:
+
+- You need to perform an operation on all elements of a complex object structure.
+- You want to clean up the business logic of auxiliary behaviors.
+- A behavior makes sense only in some classes of a class hierarchy.
 
 ---
 
