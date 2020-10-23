@@ -208,11 +208,6 @@ In this case, we can focus on multiple tasks on a single big screen as we have e
 
 ## UX Design Fundamentals
 
-<!-- Ideation, articulation, development.
-Mapping, testing, envisioning.
-Wireframes, UI desing.
-Digital prototyping. -->
-
 ### Ideation
 
 Take ideas. Ideas come from _client_. Ideas should be about **content**, **concept** and **needs**.
@@ -320,12 +315,67 @@ A site map is a **hierarchical diagram** of a web / app, that shows how pages ar
 Proccess scheme:
 
 1. Content Map & Interaction Map.
-2. Paper Prototyping ⟶ Testing UX ⟶ User Testing UX.  
-3. Sitemap (_here we are_).  
-4. Wireframe ⟶ Testing UI.  
+2. Paper Prototyping ⟶ Testing UX ⟶ User Testing UX.
+3. Sitemap (_here we are_).
+4. Wireframe ⟶ Testing UI.
 5. Prototyping ⟶ Testing UI ⟶ User Testing UI.
 
+### Nielsen's 10 Usability Heuristics
+
+1. Visibility of system status.
+2. Match between the system and the real world.
+3. User control and freedom.
+4. Consistency and standards.
+5. Error prevention.
+6. Recognition rather than recall.
+7. Flexibility and efficiency of use.
+8. Aesthetic and minimalist design.
+9. Help users recognize, diagnose, and recover from errors.
+10. Help and documentation.
+
 ### Wireframe
+
+A wireframe defines **what goes where**.
+
+They are functional, minimal, consistent, and user-centric. Simple and clear.
+
+Creating a wireframe:
+
+- Sketch (hand or computer).
+- Geometric shapes and lines.
+- Scale ans hierarchy.
+- Don't get lost in details.
+- Black and white, and grey.
+- Placement on screen.
+- Resuse elements.
+- Visually indicate type of interface elements.
+
+### Prototype
+
+It's made for:
+
+- _Simulating_ the final experience.
+- _Refining_ final UI and UX.
+- Creating a digital prototype for _realistic_ user testing.
+
+It must simulate:
+
+- The **platfrorm**:
+  - Scale (relates to eye).
+  - Physicality (relates to body).
+  - Visual + Tactile (together).
+- The **interface**:
+  - Believable UI design.
+  - Believable content.
+  - Believable language.
+- The **Interaction**:
+  - Believable UX design.
+  - Believable path.
+  - Believable responses.
+- The **experience**:
+  - Believable UI design (needs to be in a screen).
+  - Believable UX design (needs to be interactive).
+  - Believable platform / context (needs to be physical device).
 
 ---
 

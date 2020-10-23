@@ -1,5 +1,11 @@
 # Design Patterns
 
+Types:
+
+- [Creational](#Creational)
+- [Structural](#Structural)
+- [Behaviolar](#Behaviolar)
+
 ## Creational 🧬
 
 Class _instantiation_.
