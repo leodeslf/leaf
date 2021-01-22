@@ -27,13 +27,15 @@ Quick notes book.
   - `true || x` --> `true` (x is never readed).
   - `false || x` --> `x`.
   - `true && x` --> `x`.
-  - `false && x` --> `false` (x is never readed).
+  - `false && x` --> `false` (x is never readed).  
+  - (Not from _EJS_) `a ?? x` --> `a` (returns x **only** if `a` is `undefined` or `null`).
 
 Notes:
 
 - `null == undefined` --> `true`.
 - `null === undefined` --> `false`.
 - Automatic type conversion is called _type coercion_.
+- (Not from _EJS_) `??` is called _nullish coalescing_.
 
 ## Program Structure
 
@@ -724,22 +726,6 @@ Ampersand is used to separate pairs.
 
 Text must be escaped (encoded) to use it as a request. Use `encodeURIComponent` to parse, and `decodeURIComponent`.
 
-### URL anatomy (extra)
-
-Example:
-
-`https://www.example.com.uy:80/folder/resourse?id=1#section-id`
-
-- `https://` - Protocol.
-- `www` - Subdomain.
-- `.example` - Domain.
-- `.com` - Top-level Domain (TLD).
-- `.uy` - Country Code Top-level Domain (ccTLD).
-- `:80/` - Port (world wide web is 80 by default).
-- `folder/resource` - Path.
-- `?id=1` - Query string (used by server-side software).
-- `#section-id` - Fragment (named anchor).
-
 ### Fetch
 
 - When the URL argument doesn't start with a protocol name, it's treated as _relative_.
@@ -774,16 +760,6 @@ Example:
 fetch('example/data.txt')
   .then(res => res.json());
 ```
-
-### HTTP Status codes (extra)
-
-- `1XX`: Informational.
-- `2XX`: Successful.
-- `3XX`: Redirects.
-- `4XX`: Client errors.
-- `5XX`: Server errors.
-
-More info [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status "Mozilla docs").
 
 ### Focus
 

@@ -39,10 +39,10 @@ Notes.
 
 - `git remote update <remote-name> --prune` *__Updates__ local list of remote branches.*
 
-- `-u` = `--set-upstream-to` *= **upstream** = remote/branch track. __Use it once__, then it's optional.*
-
 - `git push -u <remote-name> <branch-name>` *__Send__ commited changes to remote and **save/set** that track (remote/branch).*
   - Then just use: `git push`
+
+- `-u` = `--set-upstream-to` *= **upstream** = remote/branch track. __Use it once__, then it's optional.*
 
 - `git pull <remote-name> <branch-name>` *__Grab all__ from remote.*
   - Or: `git pull` *If `-u` exists.*
