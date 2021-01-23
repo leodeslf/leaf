@@ -24,4 +24,6 @@
 * [Git](quick-notes/git.md)
 * [NPM](quick-notes/npm.md)
 * [Web](quick-notes/web.md)
+* [SASS](quick-notes/sass.md)
+* [Fonts](quick-notes/fonts.md)
 * [Resource APIs](quick-notes/rsc_apis.md)
