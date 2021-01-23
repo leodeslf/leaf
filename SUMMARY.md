@@ -2,7 +2,7 @@
 
 * [Table of contents](README.md)
 
-## Theory
+## Summaries
 
 * [Design Patterns](theory/design-patterns/README.md)
   * [Creational 🧬](theory/design-patterns/creational.md)
@@ -15,7 +15,7 @@
   * [Web Design: Strategy and Information Architecture](theory/ui-ux-design-specialization/web_design_strategy_and_information_architecture.md)
   * [Web Design: Wireframes to Prototypes](theory/ui-ux-design-specialization/web_design_wireframes_to_prototypes.md)
 
-## Techs
+## Quick Notes
 
 * [Git](techs/git.md)
 * [NPM](techs/npm.md)
