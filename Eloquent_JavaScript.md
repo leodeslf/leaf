@@ -2,6 +2,23 @@
 
 Quick notes from the book.
 
+Content:
+
+- [Values, Types and Operators](#Values,-Types-and-Operators)
+- [Program Structure](#Program-Structure)
+- [Data Structures: Objects and Arrays](#Data-Structures:-Objects-and-Arrays)
+- [Higher-Order Functions](#Higher-Order-Functions)
+- [The Secret Life of Objects](#The-Secret-Life-of-Objects)
+- [Getters, Setters and Statics](#Getters,-Setters-and-Statics)
+- [Bugs and Errors](#Bugs-and-Errors)
+- [Regular Expressions](#Regular-Expressions)
+- [Modules](#Modules)
+- [Asynchronous Programming](#Asynchronous-Programming)
+- [JavaScript and the Browser](#JavaScript-and-the-Browser)
+- [The DOM](#The-DOM)
+- [Handling Events](#Handling-Events)
+- [HTTP and Forms](#HTTP-and-Forms)
+
 ## Values, Types and Operators
 
 ### Numbers
