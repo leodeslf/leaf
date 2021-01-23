@@ -1,4 +1,4 @@
-# How to init
+# Init frameworks/libraries
 
 How to init and basic config.
 
