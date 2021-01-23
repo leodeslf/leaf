@@ -20,4 +20,3 @@
 * [Init Frameworks & Libraries](quick-notes/init_frameworks_and_libraries.md)
 * [IP Geolocation APIs](quick-notes/ip_geolocation_apis.md)
 * [Web](quick-notes/web.md)
-
