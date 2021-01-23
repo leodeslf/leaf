@@ -90,8 +90,8 @@ A proxy controls access to the original object, allowing you to perform somethin
 Use it when:
 
 * Lazy initialization, _Virtual Proxy_: Have a heavyweight service object that wastes system resources.
-* Acces control, _Protection Proxy_: Want only specific clients to be able to use the service object.
+* Access control, _Protection Proxy_: Want only specific clients to be able to use the service object.
 * Local execution, _Remote Proxy_: The service object is located on a remote server.
-* Logging requests, _Logging Proxy_: Want to keep a history of requiests to the service object.
-* Caching requests results, _Cahing Proxy_: Need to cache results of client requests and manage the life cycle of this cache.
+* Logging requests, _Logging Proxy_: Want to keep a history of requests to the service object.
+* Caching requests results, _Caching Proxy_: Need to cache results of client requests and manage the life cycle of this cache.
 * Smart reference: You need to be able to dismiss a heavyweight object one there are no clients that use it.

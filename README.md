@@ -15,8 +15,11 @@
 
 ## Quick Notes
 
+* [Initialize with Frameworks & Libraries](quick-notes/init-with-fwks-and-libs/README.md)
+  * [Angular](quick-notes/init-with-fwks-and-libs/angular.md)
+  * [Vue](quick-notes/init-with-fwks-and-libs/vue.md)
+  * [React](quick-notes/init-with-fwks-and-libs/react.md)
 * [Git](quick-notes/git.md)
 * [NPM](quick-notes/npm.md)
-* [Init Frameworks & Libraries](quick-notes/init_frameworks_and_libraries.md)
-* [IP Geolocation APIs](quick-notes/ip_geolocation_apis.md)
 * [Web](quick-notes/web.md)
+* [IP Geolocation APIs](quick-notes/ip_geolocation_apis.md)

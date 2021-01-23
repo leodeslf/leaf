@@ -7,12 +7,10 @@
 - [Audience & Rationale](ux_design_fundamentals.md#Audience-&-Rationale)
 - [Goals & Outcomes](ux_design_fundamentals.md#Goals-&-Outcomes)
 - [Naming and Mission](ux_design_fundamentals.md#Naming-and-Mission)
-- [Mapping (Content & Interation)](ux_design_fundamentals.md#Mapping-(Content-&-Interation))
-- [Mapping Content](ux_design_fundamentals.md#Mapping-Content)
-- [Mappping Interaction](ux_design_fundamentals.md#Mappping-Interaction)
+- [Mapping Content & Interation](ux_design_fundamentals.md#Mapping-(Content-&-Interation))
 - [Non-Visual Testing](ux_design_fundamentals.md#Non-Visual-Testing)
 - [Sitemap](ux_design_fundamentals.md#Sitemap)
-- [Nielsen's 10 Usability Heuristics](ux_design_fundamentals.md#Nielsen's-10-Usability-Heuristics)
+- [Nielsen's 10 Usability Heuristics](ux_design_fundamentals.md#Nielsens-10-Usability-Heuristics)
 - [Wireframe](ux_design_fundamentals.md#Wireframe)
 - [Prototype](ux_design_fundamentals.md#Prototype)
 
@@ -46,9 +44,9 @@ We need to know:
 
 Check out the _competition_:
 
-- Waht apps exists that do the same thing?
+- What apps exists that do the same thing?
 - What apps do something similar?
-- Waht apps are content adjaceent?
+- What apps are content adjacent?
 - What apps are structural models?
 
 Develop and test new ideas. Map possibilities. Shape your solution.
@@ -67,7 +65,7 @@ That is **User Centered Design**.
 
 ## Goals & Outcomes
 
-We need to define 100% beetwen:
+We need to define 100% between:
 
 - **Political**: Fulfill out _main objective_.
 - **Financial**: Make money.
@@ -78,31 +76,21 @@ We need to define 100% beetwen:
 
 Naming has to have a topic to be based on (mythological, contemporary, scientific, historical, fictional, etc). Mission needs to be concise, descriptive and pragmatic.
 
-Here we need **keywords** and a **mindmap** for defining our **language**.
+Here we need **keywords** and a **mind map** for defining our **language**.
 
-Always keeping in mind the appropiate **tone** and **mood** for the brand.
+Always keeping in mind the appropriate **tone** and **mood** for the brand.
 
-## Mapping (Content & Interation)
+## Mapping Content & Interation
 
-The proccess comes from:
-
-- Non-visual, **app idea** (words).
-
-To:
-
-- Semi-viaul, **envision** (words, maps, skeches).
-
-Then:
-
-- Visual, **prototype** (experience, final desifns).
+The process comes from non-visual, **app idea** (words). To semi-visual, **envision** (words, maps, sketches). Then, visual, **prototype** (experience, final designs).
 
 So we start the _content mapping_, _developing ideas_, making _paper prototypes_ for some _testing_ and the _visual development_, the actual UI. We also do _wireframing_, _functionality_ / _logic_, some _visual refinement_ and check the _continuity_ / _coherence_ of the UI system.
 
-## Mapping Content
+### Mapping Content
 
 Identify the _main objective_ (usually as home page), each _module_ and its _attributes_, and the potential to _grow by itself_ (scale). It's a **diagram** / map.
 
-## Mappping Interaction
+### Mapping Interaction
 
 Think about the users posible _pathways_, from the start, to all the _actions_ he can make, all the _inputs_ that should be needed (even optional ones). Independent of visuals, UI elements or specific screens. It's a **flowchart** / map.
 
@@ -120,7 +108,7 @@ Here the user will be _taking decisions_ from the available _options_, _interact
 
 A site map is a **hierarchical diagram** of a web / app, that shows how pages are _prioritized_, _linked_, and _labeled_. If the flowchart is like the street view, the sitemap is like the bird's eye view.
 
-Proccess scheme:
+Process scheme:
 
 1. Content Map & Interaction Map.
 2. Paper Prototyping ⟶ Testing UX ⟶ User Testing UX.
@@ -151,11 +139,11 @@ Creating a wireframe:
 
 - Sketch (hand or computer).
 - Geometric shapes and lines.
-- Scale ans hierarchy.
+- Scale and hierarchy.
 - Don't get lost in details.
 - Black and white, and grey.
 - Placement on screen.
-- Resuse elements.
+- Reuse elements.
 - Visually indicate type of interface elements.
 
 ## Prototype
@@ -168,7 +156,7 @@ It's made for:
 
 It must simulate:
 
-- The **platfrorm**:
+- The **platform**:
   - Scale (relates to eye).
   - Physicality (relates to body).
   - Visual + Tactile (together).

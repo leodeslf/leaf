@@ -12,4 +12,4 @@ Publish a new package.
 
 Unpublish a package.
 
-- `npm unpublish package-name -f`
+- `npm unpublish <package-name> -f`

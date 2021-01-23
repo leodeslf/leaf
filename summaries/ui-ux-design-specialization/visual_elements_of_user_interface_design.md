@@ -50,10 +50,10 @@ We need to have _feedback_, know when the interface is working or not, know if w
 
 An interface should be based on:
 
-- Real world knowladge (analog models).
+- Real world knowledge (analog models).
 - Learned behaviour (conventions).
 - Cause and effect (action / reaction).
-- Consistency (logic / systematic).
+- Consistency (logical / systematic).
 - Seamless (speed and ease).
 - Immediate intuition (a few teach a lot).
 - Fulfillment (payoff / results).
@@ -69,7 +69,7 @@ Generic templates can work for some UI elements or components. Not for an entire
 
 Aesthetics and functionality are different things, but, UI should always be related and familiar to the functionality.
 
-Realationship is making it easy to know **how it works** by **how it looks**.
+Relationship is making it easy to know **how it works** by **how it looks**.
 
 ## Design Before Design
 
@@ -103,11 +103,11 @@ Look and feel defines:
 
 Language sets mood and tone.
 
-We need to define **naming** and **branding** for the UI by specifying the audience, their _actitude_ and _motivation_ to use the app / web.
+We need to define **naming** and **branding** for the UI by specifying the audience, their _attitude_ and _motivation_ to use the app / web.
 
 ## Color & Shape
 
-Use color and shape to define _association_, _functionality_ and _state_ of UI elements. That lets the user know if an element is unabled, active or inactive.
+Use color and shape to define _association_, _functionality_ and _state_ of UI elements. That lets the user know if an element is disabled, active or inactive.
 
 ## Imagery
 
@@ -117,7 +117,7 @@ A special case is the **immersive imagery**. It is used for games, apps and anim
 
 **Imagery as navigation**: They are icons, symbols and links to some other content or functionality.
 
-**Imagery as mood**: They contribute to the look and feel, can be a part of the contetn or the navigation.
+**Imagery as mood**: They contribute to the look and feel, can be a part of the content or the navigation.
 
 ## Typography
 
@@ -125,7 +125,7 @@ Type is language made physical, is fast, is accurate and clear meaning, is econo
 
 **Type as content**: Typographic material, articles, blogs, books, etc.
 
-**Type as interface**: Labels, butttons and navigation.
+**Type as interface**: Labels, buttons and navigation.
 
 **Type as branding**: The app or site identity.
 
@@ -169,7 +169,7 @@ Speed:
 
 Style:
 
-✔ Entretaining  
+✔ Entertaining  
 ✔ Engaging  
 ✔ Rewarding experience  
 ✔ Brandable  
@@ -178,7 +178,7 @@ Style:
 ❌ Time-consuming  
 ❌ Frustrating experience  
 ❌ Dates rapidly  
-❌ Unnecessaty
+❌ Unnecessary
 
 ## Composition and Structure
 
@@ -190,18 +190,18 @@ Size: Must be related to the size of the _cursor_, _finger_ and the _screen_.
 Shape: Meaningful for _functionality_, depending on its _label_ and the _screen_.  
 Color: It can make it easy to recognise _what a button is made for_ (even without a label).  
 Dimension: Making a button _similar_ to a real one, makes the UI intuitive.  
-System: Buttons need to have a _logic placement_ on screen to make sense by theirself.
+System: Buttons need to have a _logic placement_ on screen to make sense by themself.
 
 ## Not Buttons
 
 <!-- asdasdasd -->
-Menus, links, fields. Use design convestions for these elements, for _shape_, _scale_, _contrast_, _clarity_ and _economy_, in order to reinforce and emphasize the goals of speed and function.
+Menus, links, fields. Use design conventions for these elements, for _shape_, _scale_, _contrast_, _clarity_ and _economy_, in order to reinforce and emphasize the goals of speed and function.
 
 ## States and Changes
 
 Let the user know the UI element is responsive (is working) by adding visual states, _normal_, _hover_, _active_, _inactive_.
 
-Think about the differet static elements states as well as how your elements animate between states.
+Think about the different static elements states as well as how your elements animate between states.
 
 ## Hierarchy of Content
 
@@ -210,7 +210,7 @@ Figure out _what goes where_, and _why_:
 - **Function**, what's (and what's NOT) important to the user?
 - **Intention**, what's (and what's NOT) important to the client?
 
-It's critical to define **the scene**, **the thinking**, and **phisical reacting**:
+It's critical to define **the scene**, **the thinking**, and **physical reaction** of the user:
 
 - What's the first thing the user _sees_?
 - What's the user's _first impression_?
@@ -220,8 +220,8 @@ It's critical to define **the scene**, **the thinking**, and **phisical reacting
 
 _Small screen: single task + multiple screens_.
 
-By convension we focus on a single task when working on a small screen, even when multiple functions are available, we keep them hidden, until we need them.
+By convention we focus on a single task when working on a small screen, even when multiple functions are available, we keep them hidden, until we need them.
 
 _Big screen: multiple tasks + single screen_.
 
-In this case, we can focus on multiple tasks on a single big screen as we have enogh space to work.
+In this case, we can focus on multiple tasks on a single big screen as we have enough space to work.

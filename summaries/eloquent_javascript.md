@@ -62,6 +62,44 @@ Make code readable:
 
 The `brake` jumps out of the loop. The `continue` jumps to the loop's next iteration.
 
+## Functions
+
+### Closure
+
+Is the ability to access to a local binding created in a context that is no longer active (a function call that has ended).  
+This feature —being able to reference a specific instance of a local binding in an enclosing scope— is called _closure_.
+
+Example:
+
+```javascript
+function bindTo(n) {
+  let localBinding = n;
+  return () => localBinding;
+}
+
+let one = bindTo(1);
+console.log(one());
+// --> 1
+
+let hi = bindTo('hi');
+console.log(hi());
+// --> hi
+```
+
+```javascript
+function multiplier(factor) {
+  return number => number * factor;
+}
+
+let double = multiplier(2);
+console.log(double(2));
+// --> 4
+
+let half = multiplier(0.5);
+console.log(half(2));
+// --> 1
+```
+
 ### Functions Visibility
 
 Function definition \(or binding\) is under top-to-bottom flow of control.  
@@ -786,7 +824,7 @@ fetch('example/data.txt')
 // --> Content of data.txt
 ```
 
-Similarly, use `json` to parse from plain text JSON file to Javascript object notation.
+Similarly, use `json` to parse from plain text JSON file to JavaScript object notation.
 
 Example:
 

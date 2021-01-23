@@ -16,7 +16,7 @@
 ## Branch
 
 - Create branch: `git branch <branch-name>`
-- Detele a branch: `git branch -d <branch-name>` (`-d` = `--delete`) or (`-D` to force it)
+- Delete a branch: `git branch -d <branch-name>` (`-d` = `--delete`) or (`-D` to force it)
 - List local branches: `git branch -l` (`-l` = `--local`)
 - List remote branches: `git branch -r` (`-r` = `--remotes`)
 - List all branches: `git branch -a` (`-a` = `--all`)
@@ -31,7 +31,7 @@
 - Update local list of remote branches: `git remote update <remote-name> --prune`
 - Show remote info `git remote show <remote-name>`
 - Send commit changes to remote and set remote/branch track: `git push -u <remote-name> <branch-name>` (`-u` = `--set-upstream-to`, used to set the _upstream_, the remote/branch track. _Use it once_, then it's optional, use only `git push`
-- Detele a remote branch: `git push <remote-name> --delete <branch-name>`
+- Delete a remote branch: `git push <remote-name> --delete <branch-name>`
   - Or: `git push <remote-name> :<branch-name>`
 - Grab all from remote: `git pull <remote-name> <branch-name>`
   - If `-u` is already set, use only `git pull`
