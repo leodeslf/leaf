@@ -1,22 +1,26 @@
-# Init frameworks/libraries
+# Init Frameworks & Libraries
 
 How to init and basic config.
 
 Content:
 
-* [Angular](how_to_init.md#Angular)
-* [Vue](how_to_init.md#Vue)
-* [React](how_to_init.md#React)
+* [Angular](init_frameworks_and_libraries.md#Angular)
+* [Vue](init_frameworks_and_libraries.md#Vue)
+* [React](init_frameworks_and_libraries.md#React)
 
 ## Angular
 
 ```bash
 npm i -g @angular/cli
 ng new [project-name]
+
 ...
+
 npm start
 npm run build
+
 ...
+
 ng generate component [component-name]
 ng add [dependency-name]
 
@@ -36,7 +40,9 @@ ng add [dependency-name]
 ```bash
 npm i -g @vue/cli
 vue create [project-name]
+
 ...
+
 npm run serve
 npm run build
 ```
@@ -53,8 +59,10 @@ npm run build
 ## React
 
 ```bash
-npx create-react-app PROJECT-NAME
+npx create-react-app [project-name]
+
 ...
+
 npm start
 npm run build
 ```
