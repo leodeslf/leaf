@@ -4,19 +4,19 @@ Quick notes from docs.
 
 ## Contenido
 
-- [Cross Browsing](#Cross-Browsing)
-- [Variables](#Variables)
-- [!global](#!global)
-- [Mixin/Include](#Mixin/Include)
-- [Nesting](#Nesting)
-- [Extend](#Extend)
-- [Operators](#Operators)
-- [Import](#Import)
-- [Partials](#Partials)
+* [Cross Browsing](sass.md#Cross-Browsing)
+* [Variables](sass.md#Variables)
+* [!global](sass.md#!global)
+* [Mixin/Include](sass.md#Mixin/Include)
+* [Nesting](sass.md#Nesting)
+* [Extend](sass.md#Extend)
+* [Operators](sass.md#Operators)
+* [Import](sass.md#Import)
+* [Partials](sass.md#Partials)
 
 ## Cross Browsing
 
-Automaticamente crea estilos necesarios para cada navegador.
+Generates all the specific styles for each browser.
 
 ## Variables
 
@@ -179,8 +179,7 @@ E.g:
 
 ### Partials
 
-En lugar de importar el archivo completo, se utiliza parte de 'el.
-Un archivo Partial comienza con underscore.
+En lugar de importar el archivo completo, se utiliza parte de 'el. Un archivo Partial comienza con underscore.
 
 E.g:
 
