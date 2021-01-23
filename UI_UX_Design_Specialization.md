@@ -1,5 +1,7 @@
 # UI / UX Design Specialization
 
+Specialization by California Insitute of Arts, at Cursera.
+
 ## Visual Elements of User Interface Design
 
 ### What is a User Interface

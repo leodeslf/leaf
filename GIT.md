@@ -1,6 +1,6 @@
 # Git
 
-Notes.
+Quick notes.
 
 ## Content
 
@@ -10,47 +10,37 @@ Notes.
 
 ## Basic
 
-- `git init`
+- Initialize: `git init`
 
-- `git add .` *__Adds__ `.` (all).*
+- Add file changes (untracked, modified and deleted): `git add .` (`.` = all)
 
-- `git commit -m "commit message"`
+- Commit changes: `git commit -m "commit message"`
 
-- `git rm -r --cached .` *__Clear repo__ (local).*
+- Clear local repo: `git rm -r --cached .`
 
 ## Branch
 
-- `git branch <branch-name>` *__Creates__.*
+- Create branch: `git branch <branch-name>`
+- Detele a branch: `git branch -d <branch-name>` (`-d` = `--delete`) or (`-D` to force it)
+- List local branches: `git branch -l` (`-l` = `--local`)
+- List remote branches: `git branch -r` (`-r` = `--remotes`)
+- List all branches: `git branch -a` (`-a` = `--all`)
+- List branches with more details: `git branch -v` (`-v` = `--verbose`)
+  - To include upstream branch: `git branch -vv`
 
-- `git checkout <branch-name>` *__Switches to__.*
-
-- `git branch -d <branch-name>` *__Deletes__, `-d` = `--delete` or `-D` to **force** if it's not 'up-to-date'*
-
-- `git branch -a` *__Lists__ `-a` (--all) = `-l` (--list [local]) plus `-r` (**--remote**).*
-
-- `git branch -v` *__Lists__ `-v` (--verbose) [branch, branch id, last commit].*
-  - Or: `git branch -vv` *[branch, branch id, upstream (if exists), last commit].*
+- Switch to a branch: `git checkout <branch-name>`
 
 ## Using remote
 
-- `git remote add <remote-name> <repo-url>`
+- Add a remote origin: `git remote add <remote-name> <repo-url>`
+- Remove a remote origin: `git remote remove <remote--name>`
+- Update local list of remote branches: `git remote update <remote-name> --prune`
+- Show remote info `git remote show <remote-name>`
 
-- `git remote remove <remote--name>`
+- Send commit changes to remote and set remote/branch track: `git push -u <remote-name> <branch-name>` (`-u` = `--set-upstream-to`, used to set the _upstream_, the remote/branch track. _Use it once_, then it's optional, use only `git push`.
+- Detele a remote branch: `git push <remote-name> --delete <branch-name>`.
+  - Or: `git push <remote-name> :<branch-name>`.
 
-- `git remote update <remote-name> --prune` *__Updates__ local list of remote branches.*
-
-- `git push -u <remote-name> <branch-name>` *__Send__ commited changes to remote and **save/set** that track (remote/branch).*
-  - Then just use: `git push`
-
-- `-u` = `--set-upstream-to` *= **upstream** = remote/branch track. __Use it once__, then it's optional.*
-
-- `git pull <remote-name> <branch-name>` *__Grab all__ from remote.*
-  - Or: `git pull` *If `-u` exists.*
-  - Or: `git pull --allow-unrelated-histories` *If local and remote files __doesn't match__.*
-
-- `git remote show <remote-name>` *Show remote **info**.*
-
-- `git push <remote-name> --delete <branch-name>`
-  - Or: `git push <remote-name> :<branch-name>`
-
-- `git remote show <remote-name>` to show the _remote info_.
+- Grab all from remote: `git pull <remote-name> <branch-name>`
+  - If `-u` is already set, use only `git pull`
+  - Or `git pull --allow-unrelated-histories` if local and remote files _doesn't match_.

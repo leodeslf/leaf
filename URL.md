@@ -2,9 +2,7 @@
 
 ## Anatomy
 
-Example:
-
-`https://www.example.com.uy:80/folder/resourse?id=1#section-id`
+Example: `https://www.example.com.uy:80/folder/resourse?id=1#section-id`.
 
 Part | Concept
 --- | ---

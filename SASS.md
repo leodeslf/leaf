@@ -1,6 +1,6 @@
 # SASS
 
-Notes.
+Quick notes from docs.
 
 ## Contenido
 
