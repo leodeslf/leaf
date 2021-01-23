@@ -6,4 +6,4 @@ Quick notes from [Refactoring.Guru](https://refactoring.guru/).
 
 * [Creational](creational.md)
 * [Structural](structural.md)
-* [Behaviolar](behavioral.md)
+* [Behavioral](behavioral.md)
