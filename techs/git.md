@@ -1,7 +1,5 @@
 # Git
 
-Quick notes.
-
 ## Table of contents
 
 - [Basic](git.md#basic)

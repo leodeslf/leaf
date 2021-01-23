@@ -1,6 +1,6 @@
 # Init Frameworks & Libraries
 
-How to init and basic config.
+How to initialize and basic configuration.
 
 ## Table of contents
 
@@ -16,13 +16,13 @@ ng new [project-name]
 
 ...
 
-npm start
-npm run build
+ng generate component [component-name]
+ng add [dependency-name]
 
 ...
 
-ng generate component [component-name]
-ng add [dependency-name]
+npm start
+npm run build
 
 ```
 

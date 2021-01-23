@@ -1,5 +1,7 @@
 # IP-GEOLOCATION APIs
 
+## Comparative Table
+
 Web | Limit | HTTPS | Key | Example
 --- | --- | --- | --- | --- |
 ipdata.co | 1.500 day | Free | Yes | [response][1]

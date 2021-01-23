@@ -1,6 +1,19 @@
-# URL
+# Web
 
-## Anatomy
+## Table of contents
+
+* [HTTP status code](web.md#HTTP-status-code)
+* [URL anatomy](web.md#URL-anatomy)
+
+## HTTP status code
+
+* `1XX`: Informational.
+* `2XX`: Successful.
+* `3XX`: Redirects.
+* `4XX`: Client errors.
+* `5XX`: Server errors.
+
+## URL anatomy
 
 Example:
 

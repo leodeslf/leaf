@@ -19,5 +19,4 @@
 * [NPM](techs/npm.md)
 * [Init Frameworks & Libraries](techs/init_frameworks_and_libraries.md)
 * [IP Geolocation APIs](techs/ip_geolocation_apis.md)
-* [HTTP](techs/http.md)
-* [URL](techs/url.md)
+* [Web](techs/web.md)
