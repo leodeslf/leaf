@@ -24,4 +24,4 @@
 * [Git](quick-notes/git.md)
 * [NPM](quick-notes/npm.md)
 * [Web](quick-notes/web.md)
-* [IP Geolocation APIs](quick-notes/ip_geolocation_apis.md)
+* [Resource APIs](quick-notes/rsc_apis.md)
