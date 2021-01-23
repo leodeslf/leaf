@@ -1,6 +1,6 @@
 # Resource APIs
 
-## WEATHER APIs
+## Weather APIs
 
 Comparative Table
 
@@ -13,7 +13,7 @@ openweathermap.org | 1.000.000 mon / 60 minute | free | yes | [current][weather3
 [weather2]:http://api.weatherapi.com/v1/search.json?q={query}&key=7852cac091704637a1c203137202312
 [weather3]:https://api.openweathermap.org/data/2.5/weather?appid=b280c897878592322aafe56701248929&lang=sp&units=metric&q=London
 
-## IP-GEOLOCATION APIs
+## IP-Geolocation APIs
 
 Comparative Table
 
