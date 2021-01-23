@@ -4,9 +4,9 @@ How to init and basic config.
 
 Content:
 
-* [Angular](how#Angular)
-* [Vue](how#Vue)
-* [React](how#React)
+* [Angular](how_to_init.md#Angular)
+* [Vue](how_to_init.md#Vue)
+* [React](how_to_init.md#React)
 
 ## Angular
 

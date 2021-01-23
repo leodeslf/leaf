@@ -4,13 +4,13 @@
 
 Patterns:
 
-- [Adapter](#Adapter)
-- [Bridge](#Bridge)
-- [Composite](#Composite)
-- [Decorator](#Decorator)
-- [Facade](#Facade)
-- [Flyweight](#Flyweight)
-- [Proxy](#Proxy)
+- [Adapter](structural.md#Adapter)
+- [Bridge](structural.md#Bridge)
+- [Composite](structural.md#Composite)
+- [Decorator](structural.md#Decorator)
+- [Facade](structural.md#Facade)
+- [Flyweight](structural.md#Flyweight)
+- [Proxy](structural.md#Proxy)
 
 <!-- - Private Class Data -->
 

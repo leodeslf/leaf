@@ -2,7 +2,7 @@
 
 Quick notes from docs.
 
-## Contenido
+Content:
 
 * [Cross Browsing](sass.md#Cross-Browsing)
 * [Variables](sass.md#Variables)
@@ -16,11 +16,11 @@ Quick notes from docs.
 
 ## Cross Browsing
 
-Generates all the specific styles for each browser.
+Generate cross-browser styles automatically.
 
 ## Variables
 
-Diferente a las variables de CSS3.
+It's different from CSS3 variables.
 
 E.g:
 
@@ -37,7 +37,7 @@ body {
 
 ### !global
 
-Cuando un selector sobreescribe el valor de una variable, solo se aplica a sus hijos (sobreescrito) si se incluye `!global`.
+When a selector overrites, solo se aplica a sus hijos (sobreescrito) si se incluye `!global`.
 
 E.g:
 

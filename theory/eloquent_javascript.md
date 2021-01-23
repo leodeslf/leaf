@@ -4,20 +4,20 @@ Quick notes from the book.
 
 Content:
 
-- [Values, Types and Operators](#Values,-Types-and-Operators)
-- [Program Structure](#Program-Structure)
-- [Data Structures: Objects and Arrays](#Data-Structures:-Objects-and-Arrays)
-- [Higher-Order Functions](#Higher-Order-Functions)
-- [The Secret Life of Objects](#The-Secret-Life-of-Objects)
-- [Getters, Setters and Statics](#Getters,-Setters-and-Statics)
-- [Bugs and Errors](#Bugs-and-Errors)
-- [Regular Expressions](#Regular-Expressions)
-- [Modules](#Modules)
-- [Asynchronous Programming](#Asynchronous-Programming)
-- [JavaScript and the Browser](#JavaScript-and-the-Browser)
-- [The DOM](#The-DOM)
-- [Handling Events](#Handling-Events)
-- [HTTP and Forms](#HTTP-and-Forms)
+- [Values, Types and Operators](eloquent_javascript.md#Values,-Types-and-Operators)
+- [Program Structure](eloquent_javascript.md#Program-Structure)
+- [Data Structures: Objects and Arrays](eloquent_javascript.md#Data-Structures:-Objects-and-Arrays)
+- [Higher-Order Functions](eloquent_javascript.md#Higher-Order-Functions)
+- [The Secret Life of Objects](eloquent_javascript.md#The-Secret-Life-of-Objects)
+- [Getters, Setters and Statics](eloquent_javascript.md#Getters,-Setters-and-Statics)
+- [Bugs and Errors](eloquent_javascript.md#Bugs-and-Errors)
+- [Regular Expressions](eloquent_javascript.md#Regular-Expressions)
+- [Modules](eloquent_javascript.md#Modules)
+- [Asynchronous Programming](eloquent_javascript.md#Asynchronous-Programming)
+- [JavaScript and the Browser](eloquent_javascript.md#JavaScript-and-the-Browser)
+- [The DOM](eloquent_javascript.md#The-DOM)
+- [Handling Events](eloquent_javascript.md#Handling-Events)
+- [HTTP and Forms](eloquent_javascript.md#HTTP-and-Forms)
 
 ## Values, Types and Operators
 
