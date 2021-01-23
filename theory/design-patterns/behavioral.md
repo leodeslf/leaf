@@ -1,4 +1,4 @@
-# Behavioral 📡
+# Behavioral
 
 **Communication** between objects.
 

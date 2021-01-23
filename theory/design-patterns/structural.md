@@ -1,4 +1,4 @@
-# Structural 🏗
+# Structural
 
 **Composition** of objects.
 
