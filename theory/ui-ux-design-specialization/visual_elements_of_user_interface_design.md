@@ -1,6 +1,6 @@
 # Visual Elements of User Interface Design
 
-Content:
+## Table of contents
 
 - [What is a User Interface](visual_elements_of_user_interface_design.md#What-is-a-User-Interface)
 - [The Relationship between UI and UX](visual_elements_of_user_interface_design.md#The-Relationship-between-UI-and-UX)

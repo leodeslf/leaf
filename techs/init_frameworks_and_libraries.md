@@ -2,7 +2,7 @@
 
 How to init and basic config.
 
-Content:
+## Table of contents
 
 * [Angular](init_frameworks_and_libraries.md#Angular)
 * [Vue](init_frameworks_and_libraries.md#Vue)

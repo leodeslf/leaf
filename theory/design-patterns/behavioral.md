@@ -2,7 +2,7 @@
 
 **Communication** between objects.
 
-Patterns:
+## Patterns
 
 * [Chain of responsibility](behavioral.md#Chain-of-responsibility)
 * [Command](behavioral.md#Command)

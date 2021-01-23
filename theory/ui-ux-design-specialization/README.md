@@ -2,7 +2,7 @@
 
 Specialization by California Insitute of Arts, at Cursera.
 
-Content:
+## Table of contents
 
 * [Visual Elements of User Interface Design](visual_elements_of_user_interface_design.md)
 * [UX Design Fundamentals](ux_design_fundamentals.md)

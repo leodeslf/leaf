@@ -2,7 +2,7 @@
 
 Quick notes.
 
-## Content
+## Table of contents
 
 - [Basic](git.md#basic)
 - [Branch](git.md#branch)

@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Intro](README.md)
+* [Table of contents](README.md)
 
 ## Theory
 

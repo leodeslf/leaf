@@ -1,8 +1,8 @@
 # NPM
 
-## Publish new package
+## Package
 
-List of commands to publish a new package.
+Publish a new package.
 
 - `npm init`
 - `npm login`
@@ -10,6 +10,6 @@ List of commands to publish a new package.
 - `npm version <version-value>`
 - `npm publish --access=public`
 
-To unpublish.
+Unpublish a package.
 
 - `npm unpublish package-name -f`

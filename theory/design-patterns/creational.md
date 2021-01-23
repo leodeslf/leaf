@@ -2,7 +2,7 @@
 
 **Instantiation** of objects.
 
-Patterns:
+## Patterns
 
 * [Factory Method](creational.md#Factory-Method)
 * [Abstract Factory](creational.md#Abstract-Factory)

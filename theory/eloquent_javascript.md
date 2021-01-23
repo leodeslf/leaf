@@ -2,7 +2,7 @@
 
 Quick notes from the book.
 
-Content:
+## Table of contents
 
 * [Values, Types and Operators](eloquent_javascript.md#Values,-Types-and-Operators)
 * [Program Structure](eloquent_javascript.md#Program-Structure)

@@ -2,7 +2,7 @@
 
 **Composition** of objects.
 
-Patterns:
+## Patterns
 
 * [Adapter](structural.md#Adapter)
 * [Bridge](structural.md#Bridge)

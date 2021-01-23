@@ -1,6 +1,6 @@
 # UX Design Fundamentals
 
-Content:
+## Table of contents
 
 - [Ideation](ux_design_fundamentals.md#Ideation)
 - [Research & Development](ux_design_fundamentals.md#Research-&-Development)
