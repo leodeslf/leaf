@@ -21,34 +21,33 @@ Code inside `${}` will be computed.
 
 ### Operators
 
-Logical operator executes first (`||`, then `&&`), then comparison operators (`>, >=, <, <=, ==, ===`), then the rest.  
-Conditional operator (ternary) `true ? 1 : 0`.  
+Logical operator executes first \(`||`, then `&&`\), then comparison operators \(`>, >=, <, <=, ==, ===`\), then the rest.  
+Conditional operator \(ternary\) `true ? 1 : 0`.  
 Short-circuiting:
 
-- `true || x --> true` (x is never readed).
-- `false || x --> x`.
-- `true && x --> x`.
-- `false && x --> false` (x is never readed).
-- `a ?? x --> a` (returns x **only** if `a` is `undefined` or `null`). [Not EJS]
-- `null == undefined --> true`.
-- `null === undefined --> false`.
-- Automatic type conversion is called _type coercion_.
-- `??` is called _nullish coalescing_. [Not EJS]
+* `true || x --> true` \(x is never readed\).
+* `false || x --> x`.
+* `true && x --> x`.
+* `false && x --> false` \(x is never readed\).
+* `a ?? x --> a` \(returns x **only** if `a` is `undefined` or `null`\). \[Not EJS\]
+* `null == undefined --> true`.
+* `null === undefined --> false`.
+* Automatic type conversion is called _type coercion_.
+* `??` is called _nullish coalescing_. \[Not EJS\]
 
 ## Program Structure
 
 Make code readable:
 
-- Use semicolons (at the end of a statement).
-- Use braces (to wrap code blocks).
-- Indent with two (or four) spaces.
+* Use semicolons \(at the end of a statement\).
+* Use braces \(to wrap code blocks\).
+* Indent with two \(or four\) spaces.
 
-The `brake` jumps out of the loop.
-The `continue` jumps to the loop's next iteration.
+The `brake` jumps out of the loop. The `continue` jumps to the loop's next iteration.
 
 ### Functions Visibility
 
-Function definition (or binding) is under top-to-bottom flow of control.  
+Function definition \(or binding\) is under top-to-bottom flow of control.  
 Function declaration is _hoisted_.
 
 ### Functions Scope
@@ -57,15 +56,15 @@ The `var` reaches global scope only if it's not in a function.
 Visibility between blocks, its parents, and global scope is called _lexical scope_.  
 Calling a binding inside a different local scope is called _closure_.  
 A function that calls itself is called _recursive_.  
-A function that has no side effects and doesn't read global bindings is called   _pure function_.
+A function that has no side effects and doesn't read global bindings is called _pure function_.
 
 ## Data Structures: Objects and Arrays
 
 ### Objects Properties
 
-Property names are strings (calling `array.length` and `array["length"]` is the same).  
+Property names are strings \(calling `array.length` and `array["length"]` is the same\).  
 In JavaScript, functions contained in properties are called _methods_.  
-A non-existent property returns `undefined` (when not declared or `delete`d).  
+A non-existent property returns `undefined` \(when not declared or `delete`d\).  
 The `in` operator returns whether exists a `("property" in anObject)` or not.  
 The `keys` function returns all the properties as an array.
 
@@ -77,9 +76,9 @@ The `unshift` **adds to the beginning** and returns the new length.
 The `shift` **removes the last one** and returns it.  
 The `slice(start, end)`:
 
-- **Returns an array of elements** between `start` and `end`.
-- The `start` is inclusive, `end` is exclusive.
-- Specific `end` is optional. No arguments will return an entire copy.
+* **Returns an array of elements** between `start` and `end`.
+* The `start` is inclusive, `end` is exclusive.
+* Specific `end` is optional. No arguments will return an entire copy.
 
 ### Mutability
 
@@ -89,7 +88,7 @@ Modifying the content of the original object will reflect changes on its binding
 
 Example:
 
-```JavaScript
+```javascript
 let a = { val: 1 };
 let b = a;
 let c = { val: 1 };
@@ -110,9 +109,9 @@ The `trim` method **removes all whitespaces** from start and end.
 The `padStart(n, character)` **gives a string n length** by adding a character at the start as many times as needed.  
 The `split(separator)`:
 
-- **Returns an array of substrings**.
-- Split by any occurence of the given separator.
-- If the separator is an empty string (`""`), the original is split between each character.
+* **Returns an array of substrings**.
+* Split by any occurence of the given separator.
+* If the separator is an empty string \(`""`\), the original is split between each character.
 
 The `repeat(n)` **returns n concatenated copies** of the original one.
 
@@ -126,7 +125,7 @@ When returning functions they can be called immediately if adding braces after t
 
 Example:
 
-```JavaScript
+```javascript
 function hof(args) {
   return (moreArgs) => {
     return (moreAndMoreArgs) => {
@@ -141,10 +140,10 @@ hof('That is')('an unexpected')('and weird behavior');
 
 ### Strings and Character Codes
 
-The `charCodeAt` returns a code unit (half character if it's an emoji for example).  
+The `charCodeAt` returns a code unit \(half character if it's an emoji for example\).  
 The `codePointAt` returns a full Unicode character.
 
-```JavaScript
+```javascript
 let horse = '🐴';
 
 console.log(horse.length);
@@ -162,23 +161,22 @@ console.log(horse.codePointAt(0));
 
 ## The Secret Life of Objects
 
-It's a common practice to put an underscore (\_) at the start of a _private_ property name.  
+It's a common practice to put an underscore \(\_\) at the start of a _private_ property name.  
 The `call` method takes `this` as the first parameter.  
 Each function defined with the `function` keyword has its own `this` binding.  
 Arrow functions do not bind their own `this`.
 
 ### Symbols
 
-Several properties can (but should not) have the same name with symbols.  
+Several properties can \(but should not\) have the same name with symbols.  
 Symbols are _included_ or _accessed_ by using square brackets.
 
 Example:
 
-```JavaScript
+```javascript
 let name = Symbol('a name');
 let animal = {
   name: 'Timon',
-  [name]: 'Pumba'
 };
 
 console.log(animal.name);
@@ -191,7 +189,7 @@ Even functions work with square brackets notation.
 
 Example:
 
-```JavaScript
+```javascript
 let symbol = Symbol();
 let object = {
   [symbol]() {
@@ -207,7 +205,7 @@ Symbols are always _unique_, even when defined with the same args.
 
 Example:
 
-```JavaScript
+```javascript
 let name = Symbol('a name');
 let nameAgain = Symbol('a name');
 
@@ -215,11 +213,11 @@ console.log(name == nameAgain);
 // --> false
 ```
 
-When declaring through `new Object` syntax (created by `class` or `function` notation), symbols can be applied directly on the `Object.prototype`.
+When declaring through `new Object` syntax \(created by `class` or `function` notation\), symbols can be applied directly on the `Object.prototype`.
 
 Example:
 
-```JavaScript
+```javascript
 class Car {
   constructor(owner) {
     this.owner = owner;
@@ -242,12 +240,12 @@ Symbols don't get listed on `Object.keys()` or `Object.getOwnPropertyNames()`. T
 
 ## Getters, Setters and Statics
 
-The `get` properties are accessed directly, without the call notation (with parenthesis at the end).  
+The `get` properties are accessed directly, without the call notation \(with parenthesis at the end\).  
 Passing args to a `set` method is done directly too, doesn't make use of function call notation.
 
 Example:
 
-```JavaScript
+```javascript
 class Metric {
   constructor(value, magnitude, unit) {
     this.value = value;
@@ -288,7 +286,7 @@ We can raise an exception manually with the `throw` keyword, like this: `throw n
 
 Example:
 
-```JavaScript
+```javascript
 let re = new RegExp('abc');
 
 // Or:
@@ -299,7 +297,7 @@ let re = /abc/;
 
 Example:
 
-```JavaScript
+```javascript
 console.log(re.test('aac'));
 // --> false
 
@@ -308,25 +306,25 @@ console.log(/abc/.test('aac'));
 // --> false
 ```
 
-### Backslash codes (character groups)
+### Backslash codes \(character groups\)
 
-- `\b` word boundary.
-- `\d` digit.
-- `\w` alphanumeric ("word").
-- `\s` whitespace.
-- `\D` _not_ a digit.
-- `\W` _not_ alphanumeric ("word").
-- `\S` _not_ whitespace.
-- `.` any, except a newline.
+* `\b` word boundary.
+* `\d` digit.
+* `\w` alphanumeric \("word"\).
+* `\s` whitespace.
+* `\D` _not_ a digit.
+* `\W` _not_ alphanumeric \("word"\).
+* `\S` _not_ whitespace.
+* `.` any, except a newline.
 
 ### Set of characters
 
-A _set of characters_ (possibilities) can be defined between square brackets.  
+A _set of characters_ \(possibilities\) can be defined between square brackets.  
 We can also define a _range of characters_ like `[0-9]`, `[a-z]` or `[A-Z]`.
 
 Example:
 
-```JavaScript
+```javascript
 console.log(/[0123456789]/.test('5'));
 // --> true
 
@@ -335,26 +333,26 @@ console.log(/[0-9]/.test('5'));
 // --> true
 ```
 
-Backslash codes skill working when used between square brackets (in a set of characters). But other _symbols_, such as `+` or `.`, lose their special meanings.
+Backslash codes skill working when used between square brackets \(in a set of characters\). But other _symbols_, such as `+` or `.`, lose their special meanings.
 
 ### Special symbols
 
-- `^` matches _the start_ of the pattern.
-  - In a set of characters it _inverts/negates_ the content of that set.
-- `+` matches a pattern _one or more times_.
-- `*` matches a pattern _zero or more times_.
-- `?` makes the pattern optional, matches _zero or one time_.
-- `$` matches _the end_ of the pattern.
+* `^` matches _the start_ of the pattern.
+  * In a set of characters it _inverts/negates_ the content of that set.
+* `+` matches a pattern _one or more times_.
+* `*` matches a pattern _zero or more times_.
+* `?` makes the pattern optional, matches _zero or one time_.
+* `$` matches _the end_ of the pattern.
 
 Using `[^]` can refer to any character, including a new line.
 
 ### Counters
 
-Braces after an element indicates that it should occur a _precise number of times_ (or a range of times).
+Braces after an element indicates that it should occur a _precise number of times_ \(or a range of times\).
 
 Example:
 
-```JavaScript
+```javascript
 console.log(/a{4}/.test('aaaa'));
 // --> true
 
@@ -370,7 +368,7 @@ console.log(/a{1,}/.test('aaa'));
 
 It's possible to group subexpressions with parentheses:
 
-```JavaScript
+```javascript
 console.log(/(he)+/.test('hehehe'));
 // --> true
 ```
@@ -380,7 +378,7 @@ A group matched multiple times, will return only the last match.
 
 Example:
 
-```JavaScript
+```javascript
 console.log(/(\d)+/.exec('123'));
 // --> ['123', '3']
 ```
@@ -391,7 +389,7 @@ The `exec` method returns `null` if no match was found, and returns an object wi
 
 Example:
 
-```JavaScript
+```javascript
 let match = /\d+/.exec('Number is 12');
 console.log(match);
 // --> ['12']
@@ -405,18 +403,18 @@ Strings have a `match` method that behaves similarly.
 
 Example:
 
-```JavaScript
+```javascript
 console.log('Number is 12'.match(/\d+/));
 // --> ['12']
 ```
 
 ### Choice patterns
 
-Grouping several patterns within parentheses and separating them with a pipe (`|`), makes each one of them an option (it will match just one of them at a time).
+Grouping several patterns within parentheses and separating them with a pipe \(`|`\), makes each one of them an option \(it will match just one of them at a time\).
 
 Example:
 
-```JavaScript
+```javascript
 console.log(/\b(apple|orange|banana)\b/.test('apple'));
 // --> true
 
@@ -433,7 +431,7 @@ The `$&` refers to the whole match.
 
 Example:
 
-```JavaScript
+```javascript
 let string = "dogs and cats";
 console.log(string.replace(/(\w+) and (\w+)/, "$2 and $1"));
 // --> cats and dogs
@@ -443,18 +441,18 @@ The `replace` can also take a function as the second argument, which will be app
 
 Example:
 
-```JavaScript
+```javascript
 let string = "DON'T SCREAM";
 console.log(string.replace(/\b(\w+)\b/g, str => str.toLowerCase()));
 ```
 
 ### Greedy matching
 
-Repetition operators (`+`, `*`, `?`, `{}`) will match as much as they can.
+Repetition operators \(`+`, `*`, `?`, `{}`\) will match as much as they can.
 
 Example:
 
-```JavaScript
+```javascript
 let commentedCode = "x = 1 /* comment */+/* comment */ 10";
 
 // Try to replace a comment block, and it's content.
@@ -463,11 +461,11 @@ console.log(commentedCode.replace(/\/\*[^]*\*\//g, ""));
 ```
 
 On a _greedy_ way, it will take the first "start" and the last "end" to match as much as it can.  
-To take a smaller match, we can put a question mark after the repetition operators to make them non-greedy (`+?`, `*?`, `??`, `{}?`).
+To take a smaller match, we can put a question mark after the repetition operators to make them non-greedy \(`+?`, `*?`, `??`, `{}?`\).
 
 Example:
 
-```JavaScript
+```javascript
 // Try to replace a comment block, and it's content the right way.
 console.log(commentedCode.replace(/\/\*[^]*?\*\//g, ""));
 // --> x = 1 + 10
@@ -479,7 +477,7 @@ Characters with special meanings must be _escaped_ to be matched against a regex
 
 Example:
 
-```JavaScript
+```javascript
 // Set of characters with special meanings.
 let escapeRegex = /[\\?$^()[\]{}.+*]/g;
 let text = 'To be escaped: \\ ? $ ^ ( ) [ ] { } . + *';
@@ -494,7 +492,7 @@ Resets to zero if no match was found.
 
 Example:
 
-```JavaScript
+```javascript
 let re = /\d/g;
 console.log(re.exec('the number is 180'));
 // --> ['1']
@@ -509,15 +507,15 @@ console.log(re.exec('now it is 90'));
 
 Options:
 
-- `g` _global_, searches matches throughout all the input, can return more than one match.
-- `y` _sticky_, search for a match at the `lastIndex` (zero by default).
-- `i` _case insensitive_.
+* `g` _global_, searches matches throughout all the input, can return more than one match.
+* `y` _sticky_, search for a match at the `lastIndex` \(zero by default\).
+* `i` _case insensitive_.
 
-Note: on sticky (`y`), match will succeed only if it starts directly `lastIndex`, whereas global will search ahead.
+Note: on sticky \(`y`\), match will succeed only if it starts directly `lastIndex`, whereas global will search ahead.
 
 ## Modules
 
-With `import`, we take the __binding__ from another modules, not the value.  
+With `import`, we take the **binding** from another modules, not the value.  
 If the exported binding is redefined, the modules that imported it will see its new value.
 
 ## Asynchronous Programming
@@ -526,7 +524,7 @@ If the exported binding is redefined, the modules that imported it will see its 
 
 Example:
 
-```JavaScript
+```javascript
 let promise = new Promise((resolve, reject) => { /* ... */ });
 let value = promise
   .then(value => { /* use value */ })
@@ -540,12 +538,11 @@ let promiseValue = new Promise((resolve, reject) => { /* Do something. */ }))
 
 ### Async functions
 
-The `async` functions implicitly returns a promise.
-The `await` keyword can be used only inside an `async` function.
+The `async` functions implicitly returns a promise. The `await` keyword can be used only inside an `async` function.
 
 Example:
 
-```JavaScript
+```javascript
 async function anotherPromise() {
   return 1;
 }
@@ -572,7 +569,7 @@ They produce an iterable.
 
 Example:
 
-```JavaScript
+```javascript
 function* powers(n) {
   for (let current = n;; current *=n) {
     yield current;
@@ -593,32 +590,32 @@ for (let power of powers(2)) {
 
 ### The Web
 
-The URL (Uniform Resource Locator) structure is `[protocol]://[server]/[path]`.
+The URL \(Uniform Resource Locator\) structure is `[protocol]://[server]/[path]`.
 
 ### HTML
 
-In HTML, an ampersand (&) followed by a name or character code and a semicolon (;) is called an _entity_.
+In HTML, an ampersand \(&\) followed by a name or character code and a semicolon \(;\) is called an _entity_.
 
 ## The DOM
 
 ### Trees
 
-Each element has a `nodeType` property, which is a number code that identifies  the type of the node. They are constant properties of `Node` object.
+Each element has a `nodeType` property, which is a number code that identifies the type of the node. They are constant properties of `Node` object.
 
 Examples:
 
-- `Node.ELEMENT_NODE` = 1.
-- `Node.TEXT_NODE` = 3.
-- `Node.COMMENT_NODE` = 8.
-- `Node.DOCUMENT_NODE` = 9.
+* `Node.ELEMENT_NODE` = 1.
+* `Node.TEXT_NODE` = 3.
+* `Node.COMMENT_NODE` = 8.
+* `Node.DOCUMENT_NODE` = 9.
 
-There are 12 codes (2, 4, 5, 6 and 12 are deprecated).
+There are 12 codes \(2, 4, 5, 6 and 12 are deprecated\).
 
 ### Moving through the tree
 
-Every node has a `parentNode` and only element nodes has `childNode`. Also `firstChild` and `lastChild`, similarly, `previousSiblind` and `nextSilbling` (when there isn't a previous or a next, it returns `null`).
+Every node has a `parentNode` and only element nodes has `childNode`. Also `firstChild` and `lastChild`, similarly, `previousSiblind` and `nextSilbling` \(when there isn't a previous or a next, it returns `null`\).
 
-There is also the `children` property, but contains only element nodes (`nodetype` = 1), not as `childNodes` which contains all of them.
+There is also the `children` property, but contains only element nodes \(`nodetype` = 1\), not as `childNodes` which contains all of them.
 
 ### Changing the document
 
@@ -640,10 +637,10 @@ Commonly used attributes are `class`, `id`, `href`, but we can also create our o
 
 Useful element properties:
 
-- The `offsetWidth` and `offsetHeight` gives the space the element takes up in pixels.
-- Similarly, `clientWidth` and `clientHeight` gives the size _inside_ the element, ignoring the border.
-- To get the `top`, `bottom`, `left` and `right` position of an element, use the `getBoundingClientRect` method.
-- Current scroll position can be found with `pageXOffeset` and `pageYOfffset`.
+* The `offsetWidth` and `offsetHeight` gives the space the element takes up in pixels.
+* Similarly, `clientWidth` and `clientHeight` gives the size _inside_ the element, ignoring the border.
+* To get the `top`, `bottom`, `left` and `right` position of an element, use the `getBoundingClientRect` method.
+* Current scroll position can be found with `pageXOffeset` and `pageYOfffset`.
 
 ### Query selectors
 
@@ -663,8 +660,8 @@ When a click is done, `mousedown`, `mouseup` and then `click` fires.
 
 That event holds:
 
-- The `clientX` and `clientY`, which contains the clients coordinates in pixels, relative to the top-left corner of the window.
-- The `pageX` and `pageY`, are relative to the whole document.
+* The `clientX` and `clientY`, which contains the clients coordinates in pixels, relative to the top-left corner of the window.
+* The `pageX` and `pageY`, are relative to the whole document.
 
 ### Web worker
 
@@ -672,7 +669,7 @@ A different thread can be fired with a web worker. Workers do not share their gl
 
 Example:
 
-```JavaScript
+```javascript
 // worker.js
 self.onMessage(e => {
   console.log('First element sent from main thread is:', e[0]);
@@ -704,7 +701,7 @@ A common practice to avoid calling a function, or handling an event too often, i
 
 Example:
 
-```JavaScript
+```javascript
 let scheduled = false;
 window.addEventListener('click', event => {
   if (!scheduled) {
@@ -733,7 +730,7 @@ The first line of a request can be followed by a number of _headers_. Headers sh
 
 Forms:
 
-```HTML
+```markup
 <form method="GET" action="example/message.html">
   <p>Name: <input type="text" name="name"/></p>
   <p>Last name: <input type="text" name="lname"/></p>
@@ -744,7 +741,7 @@ Forms:
 Resulting _submitted_ request: `GET /example/message.html?name=Some&lname=Name HTTP/1.1`.
 
 Ampersand is used to separate pairs.  
-Text must be escaped (encoded) to use it as a request. Use `encodeURIComponent` to parse, and `decodeURIComponent`.
+Text must be escaped \(encoded\) to use it as a request. Use `encodeURIComponent` to parse, and `decodeURIComponent`.
 
 ### Fetch
 
@@ -754,7 +751,7 @@ When it does not, it is put in front of the relative URL.
 
 Example:
 
-```JavaScript
+```javascript
 fetch('example/data.txt').then(res => {
   console.log(res.status);
   // --> 200
@@ -765,7 +762,7 @@ Use the `text` method to get the actual content of a response.
 
 Example:
 
-```JavaScript
+```javascript
 fetch('example/data.txt')
   .then(res => res.text())
   .then(text => console.log(text));
@@ -776,7 +773,7 @@ Similarly, use `json` to parse from plain text JSON file to Javascript object no
 
 Example:
 
-```JavaScript
+```javascript
 fetch('example/data.txt')
   .then(res => res.json());
 ```
@@ -789,3 +786,4 @@ We can influence the order of elements when moving through with `TAB` using `tab
 ### The form as a whole
 
 Each `<form>` element contains an array-like collection of elements on it's `elements` property.
+

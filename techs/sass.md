@@ -4,15 +4,15 @@ Quick notes from docs.
 
 ## Contenido
 
-- [Cross Browsing](#Cross-Browsing)
-- [Variables](#Variables)
-- [!global](#!global)
-- [Mixin/Include](#Mixin/Include)
-- [Nesting](#Nesting)
-- [Extend](#Extend)
-- [Operators](#Operators)
-- [Import](#Import)
-- [Partials](#Partials)
+* [Cross Browsing](sass.md#Cross-Browsing)
+* [Variables](sass.md#Variables)
+* [!global](sass.md#!global)
+* [Mixin/Include](sass.md#Mixin/Include)
+* [Nesting](sass.md#Nesting)
+* [Extend](sass.md#Extend)
+* [Operators](sass.md#Operators)
+* [Import](sass.md#Import)
+* [Partials](sass.md#Partials)
 
 ## Cross Browsing
 
@@ -24,7 +24,7 @@ Diferente a las variables de CSS3.
 
 E.g:
 
-```SCSS
+```css
 $var0: green;
 $var1: 14px;
 
@@ -37,11 +37,11 @@ body {
 
 ### !global
 
-Cuando un selector sobreescribe el valor de una variable, solo se aplica a sus hijos (sobreescrito) si se incluye `!global`.
+Cuando un selector sobreescribe el valor de una variable, solo se aplica a sus hijos \(sobreescrito\) si se incluye `!global`.
 
 E.g:
 
-```SCSS
+```css
 $var0: red;
 
 a {
@@ -64,7 +64,7 @@ Crear un set/grupo de estilos.
 
 E.g:
 
-```SCSS
+```css
 @mixin nombre0 {
   property: value;
   property: value;
@@ -72,11 +72,11 @@ E.g:
 }
 ```
 
-Tambi'en se pueden incluir parametros (con o sin valores por defecto).
+Tambi'en se pueden incluir parametros \(con o sin valores por defecto\).
 
 E.g:
 
-```SCSS
+```css
 @mixin nombre1($param0, $param1: 4px) {
   property: $param0 $param1;
 }
@@ -97,11 +97,11 @@ select {
 
 ## Nesting
 
-Anidado entre *selectores*.
+Anidado entre _selectores_.
 
 E.g:
 
-```SCSS
+```css
 element {
   property: value;
   ...
@@ -112,11 +112,11 @@ element {
 }
 ```
 
-Anidar entre *propiedades* (con un mismo prefijo).
+Anidar entre _propiedades_ \(con un mismo prefijo\).
 
 E.g:
 
-```SCSS
+```css
 font: {
   family: value;
   size: value;
@@ -137,7 +137,7 @@ margin: {
 
 E.g:
 
-```SCSS
+```css
 selector0 {
   property: value;
   property: value;
@@ -161,7 +161,7 @@ E.g:
 
 `reset.scss`
 
-```SCSS
+```css
 * {
   padding: 0;
   margin: 0;
@@ -171,7 +171,7 @@ E.g:
 
 `estilo0.scss`
 
-```SCSS
+```css
 @import "reset";
 
 ...
@@ -179,14 +179,13 @@ E.g:
 
 ### Partials
 
-En lugar de importar el archivo completo, se utiliza parte de 'el.
-Un archivo Partial comienza con underscore.
+En lugar de importar el archivo completo, se utiliza parte de 'el. Un archivo Partial comienza con underscore.
 
 E.g:
 
 `_filename.scss`
 
-```SCSS
+```css
 $prop0: value;
 $prop1: value;
 ...
@@ -196,7 +195,7 @@ Al importar, se ignora el underscore.
 
 `estilo.scss`
 
-```SCSS
+```css
 @import "filename";
 
 select {
@@ -204,3 +203,4 @@ select {
   ...
 }
 ```
+
