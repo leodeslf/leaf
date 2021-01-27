@@ -7,7 +7,7 @@
 - [Audience & Rationale](ux_design_fundamentals.md#Audience-&-Rationale)
 - [Goals & Outcomes](ux_design_fundamentals.md#Goals-&-Outcomes)
 - [Naming and Mission](ux_design_fundamentals.md#Naming-and-Mission)
-- [Mapping Content & Interation](ux_design_fundamentals.md#Mapping-(Content-&-Interation))
+- [Mapping Content & Interation](ux_design_fundamentals.md#Mapping-Content-&-Interation)
 - [Non-Visual Testing](ux_design_fundamentals.md#Non-Visual-Testing)
 - [Sitemap](ux_design_fundamentals.md#Sitemap)
 - [Nielsen's 10 Usability Heuristics](ux_design_fundamentals.md#Nielsens-10-Usability-Heuristics)
