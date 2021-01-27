@@ -5,7 +5,7 @@
 * [Cross Browsing](sass.md#cross-browsing)
 * [Variables](sass.md#variables)
 * [!global](sass.md#!global)
-* [Mixin & Include](sass.md#mixin-&-include)
+* [Mixin & Include](sass.md#mixin-and-include)
 * [Nesting](sass.md#nesting)
 * [Extend](sass.md#extend)
 * [Operators](sass.md#operators)
