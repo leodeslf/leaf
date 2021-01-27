@@ -4,11 +4,11 @@
 
 ## Patterns
 
-* [Factory Method](creational.md#Factory-Method)
-* [Abstract Factory](creational.md#Abstract-Factory)
-* [Builder](creational.md#Builder)
-* [Prototype](creational.md#Prototype)
-* [Singleton](creational.md#Singleton)
+* [Factory Method](creational.md#factory-method)
+* [Abstract Factory](creational.md#abstract-factory)
+* [Builder](creational.md#builder)
+* [Prototype](creational.md#prototype)
+* [Singleton](creational.md#singleton)
 
 <!-- - Object Pool -->
 

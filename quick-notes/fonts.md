@@ -2,11 +2,11 @@
 
 ## Table of contents
 
-* [Handwriting](#Handwriting)
-* [Serif](#Serif)
-* [Sans-Serif](#Sans-Serif)
-* [Monospace](#Monospace)
-* [To test](#To-test)
+* [Handwriting](fonts.md#handwriting)
+* [Serif](fonts.md#serif)
+* [Sans-Serif](fonts.md#sans-serif)
+* [Monospace](fonts.md#monospace)
+* [To test](fonts.md#to-test)
 
 ## Handwriting
 

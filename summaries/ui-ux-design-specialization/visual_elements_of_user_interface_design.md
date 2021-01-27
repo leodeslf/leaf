@@ -2,14 +2,14 @@
 
 ## Table of contents
 
-- [What is a User Interface](visual_elements_of_user_interface_design.md#What-is-a-User-Interface)
-- [The Relationship between UI and UX](visual_elements_of_user_interface_design.md#The-Relationship-between-UI-and-UX)
-- [A Brief Historical Overview of Interface Design](visual_elements_of_user_interface_design.md#A-Brief-Historical-Overview-of-Interface-Design)
-- [Interface Conventions: Theory](visual_elements_of_user_interface_design.md#Interface-Conventions:-Theory)
-- [Template vs Content](visual_elements_of_user_interface_design.md#Template-vs-Content)
-- [Aesthetics & Functionality](visual_elements_of_user_interface_design.md#Aesthetics-&-Functionality)
-- [Design Before Design](visual_elements_of_user_interface_design.md#Design-Before-Design)
-- [Look and Feel](visual_elements_of_user_interface_design.md#Look-and-Feel)
+- [What is a User Interface](visual_elements_of_user_interface_design.md#what-is-a-user-interface)
+- [The Relationship between UI and UX](visual_elements_of_user_interface_design.md#the-relationship-between-ui-and-ux)
+- [A Brief Historical Overview of Interface Design](visual_elements_of_user_interface_design.md#a-brief-historical-overview-of-interface-design)
+- [Interface Conventions: Theory](visual_elements_of_user_interface_design.md#interface-conventions:-theory)
+- [Template vs Content](visual_elements_of_user_interface_design.md#template-vs-content)
+- [Aesthetics & Functionality](visual_elements_of_user_interface_design.md#aesthetics-&-functionality)
+- [Design Before Design](visual_elements_of_user_interface_design.md#design-before-design)
+- [Look and Feel](visual_elements_of_user_interface_design.md#look-and-feel)
 - [Language as a design tool](visual_elements_of_user_interface_design.md#Language-as-a-design-tool)
 - [Color & Shape](visual_elements_of_user_interface_design.md#Color-&-Shape)
 - [Imagery](visual_elements_of_user_interface_design.md#Imagery)

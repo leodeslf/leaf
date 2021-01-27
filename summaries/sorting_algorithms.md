@@ -18,16 +18,16 @@ Examples to test:
 
 ## Table of contents
 
-* [Bubble](sorting_algorithms#Bubble)
-* <!-- [Bucket](sorting_algorithms#Bucket) -->
-* <!-- [Count](sorting_algorithms#Count) -->
-* <!-- [Heap](sorting_algorithms#Heap) -->
-* [Insertion](sorting_algorithms#Insertion)
-* <!-- [Merge](sorting_algorithms#Merge) -->
-* [Quick](sorting_algorithms#Quick)
-* <!-- [Radix](sorting_algorithms#Radix) -->
-* [Selection](sorting_algorithms#Selection)
-* [Shell](sorting_algorithms#Shell)
+* [Bubble](sorting_algorithms.md#bubble)
+* <!-- [Bucket](sorting_algorithms.md#bucket) -->
+* <!-- [Count](sorting_algorithms.md#count) -->
+* <!-- [Heap](sorting_algorithms.md#heap) -->
+* [Insertion](sorting_algorithms.md#insertion)
+* <!-- [Merge](sorting_algorithms.md#Merge) -->
+* [Quick](sorting_algorithms.md#quick)
+* <!-- [Radix](sorting_algorithms.md#radix) -->
+* [Selection](sorting_algorithms.md#selection)
+* [Shell](sorting_algorithms.md#shell)
 
 ## Bubble
 

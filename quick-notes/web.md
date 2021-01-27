@@ -2,8 +2,8 @@
 
 ## Table of contents
 
-* [HTTP status code](web.md#HTTP-status-code)
-* [URL anatomy](web.md#URL-anatomy)
+* [HTTP status code](web.md#http-status-code)
+* [URL anatomy](web.md#url-anatomy)
 
 ## HTTP status code
 

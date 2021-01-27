@@ -2,17 +2,17 @@
 
 ## Table of contents
 
-- [Ideation](ux_design_fundamentals.md#Ideation)
-- [Research & Development](ux_design_fundamentals.md#Research-&-Development)
-- [Audience & Rationale](ux_design_fundamentals.md#Audience-&-Rationale)
-- [Goals & Outcomes](ux_design_fundamentals.md#Goals-&-Outcomes)
-- [Naming and Mission](ux_design_fundamentals.md#Naming-and-Mission)
-- [Mapping Content & Interation](ux_design_fundamentals.md#Mapping-Content-&-Interation)
-- [Non-Visual Testing](ux_design_fundamentals.md#Non-Visual-Testing)
-- [Sitemap](ux_design_fundamentals.md#Sitemap)
-- [Nielsen's 10 Usability Heuristics](ux_design_fundamentals.md#Nielsens-10-Usability-Heuristics)
-- [Wireframe](ux_design_fundamentals.md#Wireframe)
-- [Prototype](ux_design_fundamentals.md#Prototype)
+- [Ideation](ux_design_fundamentals.md#ideation)
+- [Research & Development](ux_design_fundamentals.md#research-&-development)
+- [Audience & Rationale](ux_design_fundamentals.md#audience-&-rationale)
+- [Goals & Outcomes](ux_design_fundamentals.md#goals-&-outcomes)
+- [Naming and Mission](ux_design_fundamentals.md#naming-and-mission)
+- [Mapping Content & Interation](ux_design_fundamentals.md#mapping-content-&-interation)
+- [Non-Visual Testing](ux_design_fundamentals.md#non-visual-testing)
+- [Sitemap](ux_design_fundamentals.md#sitemap)
+- [Nielsen's 10 Usability Heuristics](ux_design_fundamentals.md#nielsens-10-usability-heuristics)
+- [Wireframe](ux_design_fundamentals.md#wireframe)
+- [Prototype](ux_design_fundamentals.md#prototype)
 
 ## Ideation
 

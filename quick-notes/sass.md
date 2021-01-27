@@ -2,15 +2,15 @@
 
 ## Table of contents
 
-* [Cross Browsing](sass.md#Cross-Browsing)
-* [Variables](sass.md#Variables)
+* [Cross Browsing](sass.md#cross-browsing)
+* [Variables](sass.md#variables)
 * [!global](sass.md#!global)
-* [Mixin/Include](sass.md#Mixin/Include)
-* [Nesting](sass.md#Nesting)
-* [Extend](sass.md#Extend)
-* [Operators](sass.md#Operators)
-* [Import](sass.md#Import)
-* [Partials](sass.md#Partials)
+* [Mixin & Include](sass.md#mixin-&-include)
+* [Nesting](sass.md#nesting)
+* [Extend](sass.md#extend)
+* [Operators](sass.md#operators)
+* [Import](sass.md#import)
+* [Partials](sass.md#partials)
 
 ## Cross Browsing
 
@@ -55,7 +55,7 @@ nav {
 }
 ```
 
-## Mixin/Include
+## Mixin & Include
 
 Used to create a reusable set of styles.
 

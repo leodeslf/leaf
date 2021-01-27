@@ -4,16 +4,16 @@
 
 ## Patterns
 
-* [Chain of responsibility](behavioral.md#Chain-of-responsibility)
-* [Command](behavioral.md#Command)
-* [Iterator](behavioral.md#Iterator)
-* [Mediator](behavioral.md#Mediator)
-* [Memento](behavioral.md#Memento)
-* [Observer](behavioral.md#Observer)
-* [State](behavioral.md#State)
-* [Strategy](behavioral.md#Strategy)
-* [Template Method](behavioral.md#Template-Method)
-* [Visitor](behavioral.md#Visitor)
+* [Chain of responsibility](behavioral.md#chain-of-responsibility)
+* [Command](behavioral.md#command)
+* [Iterator](behavioral.md#iterator)
+* [Mediator](behavioral.md#mediator)
+* [Memento](behavioral.md#memento)
+* [Observer](behavioral.md#observer)
+* [State](behavioral.md#state)
+* [Strategy](behavioral.md#strategy)
+* [Template Method](behavioral.md#template-method)
+* [Visitor](behavioral.md#visitor)
 
 ## Chain of responsibility
 
