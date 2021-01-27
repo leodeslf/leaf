@@ -14,7 +14,6 @@ ng add [dependency-name]
 
 npm start
 npm run build
-
 ```
 
 ```json

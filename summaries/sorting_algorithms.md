@@ -2,18 +2,19 @@
 
 Conditions:
 
-* Return a sorted copy, don't modify the original.
+* Take only one argument the array.
+* Avoid sorting a single-item or empty array.
+* Avoid built-in methods, objects or constants.
 * Generate recursion or closures if it's possible.
-* Avoid built-in methods and classes.
-* Avoid sorting a single/empty item.
-* Give only the array as argument.
-* Just one function per algorithm.
+* Just one function per algorithm if it's possible.
+* Return a sorted copy, do not modify the original.
 
 Examples to test:
 
-* `[8, 2, 3, 9, 1, 6, 0, 2, 1, 5, 7, 3, 8, 4, 0]`
-* `[9, 6, 3]`
-* `[2, 0]`
+* `[2, 3, 1, 0, 3]`
+* `[2, 1, 0]`
+* `[0, 1, 2]`
+* `[1, 0]`
 
 ## Table of contents
 

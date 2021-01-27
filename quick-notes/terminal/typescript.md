@@ -1,21 +1,12 @@
 # TypeScript
 
-## CLI
+Compile: `tsc`
 
-```bash
-# Compile files from current folder, having a tsconfig.json
-tsc
+Transpile a specific file: `tsc [file-name]`
 
-# Transpile a specific file
-tsc [file-name]
+Specify a tsconfig file: `tsc --project [tsconfig-name]`
 
-# Specify a different tsconfig
-tsc --project [tsconfig-name]
-```
-
-## tsconfig.json
-
-Example:
+Example of tsconfig.json:
 
 ```json
 {

@@ -1,5 +1,13 @@
 # Fonts
 
+## Table of contents
+
+* [Handwriting](#Handwriting)
+* [Serif](#Serif)
+* [Sans-Serif](#Sans-Serif)
+* [Monospace](#Monospace)
+* [To test](#To-test)
+
 ## Handwriting
 
 * Italianno
