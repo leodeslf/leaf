@@ -18,7 +18,6 @@
 
 ## Quick Notes
 
-* [Initialize with Frameworks & Libraries](quick-notes/init-with-fwks-and-libs/README.md)
 * [Terminal](quick-notes/terminal/README.md)
   * [Angular](quick-notes/terminal/angular.md)
   * [Git](quick-notes/terminal/git.md)
