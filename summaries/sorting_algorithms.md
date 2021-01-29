@@ -11,6 +11,7 @@ Conditions:
 
 Examples to test:
 
+* `[7, 0, 6, 5, 9, 1, 5, 4, 8, 2, 9, 3, 1]`
 * `[2, 3, 1, 0, 3]`
 * `[2, 1, 0]`
 * `[0, 1, 2]`
@@ -21,7 +22,7 @@ Examples to test:
 * [Bubble](sorting_algorithms.md#bubble)
 * <!-- [Bucket](sorting_algorithms.md#bucket) -->
 * <!-- [Count](sorting_algorithms.md#count) -->
-* <!-- [Heap](sorting_algorithms.md#heap) -->
+* [Heap](sorting_algorithms.md#heap)
 * [Insertion](sorting_algorithms.md#insertion)
 * <!-- [Merge](sorting_algorithms.md#Merge) -->
 * [Quick](sorting_algorithms.md#quick)
@@ -102,13 +103,55 @@ Pseudocode
 
 ```txt
 Heap(array)
+  For each element of array
+    Add element to (binary) tree
+    If element is greater than its parents
+      Swap them one by one (bottom to top)
+  For each element of tree from last to 0
+    Swap last and first elements
+    Add new last element of tree to array from left
+    Delete new last element of tree
+    For each element of tree
+      If it's smaller than its childs
+        Swap them one by one (top to bottom)
 ```
 
 JavaScript
 
 ```JavaScript
-function Heap() {
-
+function Heap(arr) {
+  const n = arr.length;
+  if (n < 2) return arr;
+  /* Start */
+  const sort = [...arr];
+  for (let i = 0; i < n; i++) {
+    let j = i;
+    while (j > 0) {
+      const parent = ((j % 2 === 0) ? j - 2 : j - 1) * .5;
+      if (sort[j] > sort[parent]) {
+        [sort[j], sort[parent]] = [sort[parent], sort[j]];
+        j = parent;
+      } else break;
+    }
+  }
+  [sort[n - 1], sort[0]] = [sort[0], sort[n - 1]];
+  for (let last = n - 2; last > 0; last--) {
+    for (let j = 0; j * 2 + 1 <= last;) {
+      const left = j * 2 + 1;
+      const right = j * 2 + 2;
+      if (sort[j] < sort[left] &&
+        (right <= last ? sort[left] >= sort[right] : true)) {
+        [sort[j], sort[left]] = [sort[left], sort[j]];
+        j = left;
+      } else if (sort[j] < sort[right] && right <= last) {
+        [sort[j], sort[right]] = [sort[right], sort[j]];
+        j = right;
+      } else break;
+    }
+    [sort[last], sort[0]] = [sort[0], sort[last]];
+  }
+  /* End */
+  return sort;
 }
 ```
 
@@ -279,6 +322,7 @@ function Shell(arr) {
   const sort = [...arr];
   let gap = (n - n % 2) * .5;
   while (gap > 0) {
+  console.log(gap)
     for (let i = gap; i < n; i++) {
       let left = sort[i - gap], right = sort[i];
       if (left > right) {
