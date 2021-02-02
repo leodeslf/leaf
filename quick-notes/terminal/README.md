@@ -3,6 +3,7 @@
 ## Table of contents
 
 * [Angular](angular.md)
+* [Browsersync](#browser-sync.md)
 * [Bash](bash.md)
 * [Git](git.md)
 * [NPM](npm.md)

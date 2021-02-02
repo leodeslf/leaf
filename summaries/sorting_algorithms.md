@@ -2,11 +2,11 @@
 
 Conditions:
 
-* Take only one argument the array.
+* Generate recursion if possible.
+* Avoid built-in tools if possible.
+* Take only one argument, the array.
 * Avoid sorting a single-item or empty array.
-* Avoid built-in methods, objects or constants.
-* Generate recursion or closures if it's possible.
-* Just one function per algorithm if it's possible.
+* Just one function per algorithm if possible.
 * Return a sorted copy, do not modify the original.
 
 Examples to test:
@@ -20,8 +20,8 @@ Examples to test:
 ## Table of contents
 
 * [Bubble](sorting_algorithms.md#bubble)
-* <!-- [Bucket](sorting_algorithms.md#bucket) -->
-* <!-- [Count](sorting_algorithms.md#count) -->
+* [Bucket](sorting_algorithms.md#bucket)
+* [Count](sorting_algorithms.md#count)
 * [Heap](sorting_algorithms.md#heap)
 * [Insertion](sorting_algorithms.md#insertion)
 * <!-- [Merge](sorting_algorithms.md#Merge) -->
@@ -39,9 +39,7 @@ Bubble(array)
   For each element of array
     If next element is greater
       Swap them
-  If no swaps were made
-    Return sorted array
-  Else
+  If swaps were made
     Bobble(array)
 ```
 
@@ -71,13 +69,41 @@ Pseudocode
 
 ```txt
 Bucket(array)
+  Set number of buckets
+  For each element of array
+    Put element in corresponding bucket
+  For each bucket of buckets array
+    Put Bucket(buckets) into into sorted array
 ```
 
 JavaScript
 
 ```JavaScript
-function Bucket() {
-
+function Bucket(arr) {
+  const n = arr.length;
+  if (n < 2) return arr;
+  /* Start */
+  let max = -Infinity, min = Infinity;
+  for (let i = 0; i < n; i++) {
+    if (arr[i] > max) max = arr[i];
+    if (arr[i] < min) min = arr[i];
+  }
+  if (max === min) return arr;
+  const bkts = [];
+  const bktsN = n >= 5 ? 5 : n;
+  for (let i = 0; i < bktsN; i++) bkts[i] = [];
+  for (let i = 0; i < n; i++) {
+    const bkt = Math.floor((arr[i] - min) / (max - min) * (bktsN - 1));
+    bkts[bkt] = [...bkts[bkt], arr[i]];
+  }
+  let sort = [];
+  for (let i = 0; i < bktsN; i++) {
+    sort = [
+      ...sort,
+      ...Bucket(bkts[i])];
+  }
+  /* End */
+  return sort;
 }
 ```
 
@@ -87,13 +113,34 @@ Pseudocode
 
 ```txt
 Count(array)
+  For each element of array
+    Add +1 to count[element]
+  For each element of count array
+    Add element to sorted array, element value amount of times
 ```
 
 JavaScript
 
 ```JavaScript
-function Count() {
-
+function Count(arr) {
+  const n = arr.length;
+  if (n < 2) return arr;
+  /* Start */
+  let sort = [];
+  const count = [];
+  for (let val of arr) {
+    count[val] = count[val] !== undefined ? count[val]++ : 0;
+  }
+  let countN = count.length;
+  for (let i = 0; i < countN; i++) {
+    const val = count[i];
+    if (val === undefined) continue;
+    for (let times = val; times >= 0; times--) {
+      sort = [...sort, val];
+    }
+  }
+  /* End */
+  return sort;
 }
 ```
 
@@ -193,13 +240,20 @@ Pseudocode
 
 ```txt
 Merge(array)
+  From each merging step (from 1 to n / 2)
+    Merge sorted arrays of 'step' items into 'step' * 2
 ```
 
 JavaScript
 
 ```JavaScript
-function Merge() {
+function Merge(arr) {
+  const n = arr.length;
+  if (n < 2) return arr;
+  /* Start */
 
+  /* End */
+  return sort;
 }
 ```
 
@@ -222,22 +276,19 @@ function Quick(arr) {
   const n = arr.length;
   if (n < 2) return arr;
   /* Start */
-  const pivot = arr[n - 1], beforeArr = [], afterArr = [];
+  const pivot = arr[n - 1];
+  let beforeArr = [], afterArr = [];
   for (let i = 0, j = n - 2; i <= j; i++, j--) {
     arr[i] < pivot ?
       beforeArr = [...beforeArr, arr[i]] :
-      afterArr = [...afterArr, arr[i]];      
+      afterArr = [...afterArr, arr[i]];
     if (i === j) break;
     arr[j] < pivot ?
       beforeArr = [...beforeArr, arr[j]] :
       afterArr = [...afterArr, arr[j]];
   }
   /* End */
-  return [
-    ...(beforeArr.length > 1 ? Quick(beforeArr) : beforeArr),
-    pivot,
-    ...(afterArr.length > 1 ? Quick(afterArr) : afterArr)
-  ];
+  return [...(Quick(beforeArr)), pivot, ...(Quick(afterArr))];
 }
 ```
 
@@ -252,8 +303,13 @@ Radix(array)
 JavaScript
 
 ```JavaScript
-function Radix() {
-
+function Radix(arr) {
+  const n = arr.length;
+  if (n < 2) return arr;
+  /* Start */
+  
+  /* End */
+  return sort;
 }
 ```
 
