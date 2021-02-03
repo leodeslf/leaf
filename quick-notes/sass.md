@@ -1,17 +1,5 @@
 # SASS
 
-## Table of contents
-
-* [Cross Browsing](sass.md#cross-browsing)
-* [Variables](sass.md#variables)
-* [!global](sass.md#!global)
-* [Mixin & Include](sass.md#mixin-and-include)
-* [Nesting](sass.md#nesting)
-* [Extend](sass.md#extend)
-* [Operators](sass.md#operators)
-* [Import](sass.md#import)
-* [Partials](sass.md#partials)
-
 ## Cross Browsing
 
 Generate cross-browser styles automatically.

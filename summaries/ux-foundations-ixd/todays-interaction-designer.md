@@ -1,12 +1,5 @@
 # Today's Interaction Designer
 
-## Table of contents
-
-* [Project types and deliverables](#project-types-and-deliverables)
-* [Technical and software skills](#technical-and-software-skills)
-* [Related disciplines and fields of study](#related-disciplines-and-fields-of-study)
-* [Resources and communities](#resources-and-communities)
-
 ## Project types and deliverables
 
 It's about **designing for the entire interconnected system**, the device, the interface, the context, the environment, **and the people**.

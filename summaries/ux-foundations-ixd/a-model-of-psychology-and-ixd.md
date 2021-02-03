@@ -1,10 +1,5 @@
 # A Model of Psychology and Interaction Design
 
-* [Why psychology?](a-model-of-psychology-and-ixd.md#why-psychology)
-* [Introducing the Interaction Design model](a-model-of-psychology-and-ixd.md#introducing-the-interaction-design-model)
-* [Context](a-model-of-psychology-and-ixd.md#context)
-* [Goals](a-model-of-psychology-and-ixd.md#goals)
-
 ## Why psychology?
 
 Understading how people feel, think, understand the information, and make decisions, can help us generate better ideas and solutions and help us craft and deliver better experiences.

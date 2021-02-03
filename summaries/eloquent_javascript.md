@@ -2,23 +2,6 @@
 
 Quick notes from the book.
 
-## Table of contents
-
-* [Values, Types and Operators](eloquent_javascript.md#values-types-and-operators)
-* [Program Structure](eloquent_javascript.md#program-structure)
-* [Data Structures: Objects and Arrays](eloquent_javascript.md#data-structures:-objects-and-arrays)
-* [Higher-Order Functions](eloquent_javascript.md#higher-order-functions)
-* [The Secret Life of Objects](eloquent_javascript.md#the-secret-life-of-objects)
-* [Getters, Setters and Statics](eloquent_javascript.md#getters-setters-and-statics)
-* [Bugs and Errors](eloquent_javascript.md#bugs-and-errors)
-* [Regular Expressions](eloquent_javascript.md#regular-expressions)
-* [Modules](eloquent_javascript.md#modules)
-* [Asynchronous Programming](eloquent_javascript.md#asynchronous-programming)
-* [JavaScript and the Browser](eloquent_javascript.md#javascript-and-the-browser)
-* [The DOM](eloquent_javascript.md#the-dom)
-* [Handling Events](eloquent_javascript.md#handling-events)
-* [HTTP and Forms](eloquent_javascript.md#http-and-forms)
-
 ## Values, Types and Operators
 
 ### Numbers

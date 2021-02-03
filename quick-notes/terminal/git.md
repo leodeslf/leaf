@@ -1,11 +1,5 @@
 # Git
 
-## Table of contents
-
-- [Basic](git.md#basic)
-- [Branch](git.md#branch)
-- [Remote](git.md#remote)
-
 ## Basic
 
 - Initialize: `git init`

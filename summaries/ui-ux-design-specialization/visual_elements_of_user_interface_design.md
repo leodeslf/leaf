@@ -1,29 +1,5 @@
 # Visual Elements of User Interface Design
 
-## Table of contents
-
-- [What is a User Interface](visual_elements_of_user_interface_design.md#what-is-a-user-interface)
-- [The Relationship between UI and UX](visual_elements_of_user_interface_design.md#the-relationship-between-ui-and-ux)
-- [A Brief Historical Overview of Interface Design](visual_elements_of_user_interface_design.md#a-brief-historical-overview-of-interface-design)
-- [Interface Conventions: Theory](visual_elements_of_user_interface_design.md#interface-conventions-theory)
-- [Template vs Content](visual_elements_of_user_interface_design.md#template-vs-content)
-- [Aesthetics & Functionality](visual_elements_of_user_interface_design.md#aesthetics-and-functionality)
-- [Design Before Design](visual_elements_of_user_interface_design.md#design-before-design)
-- [Look and Feel](visual_elements_of_user_interface_design.md#look-and-feel)
-- [Language as a design tool](visual_elements_of_user_interface_design.md#language-as-a-design-tool)
-- [Color & Shape](visual_elements_of_user_interface_design.md#color-and-shape)
-- [Imagery](visual_elements_of_user_interface_design.md#imagery)
-- [Typography](visual_elements_of_user_interface_design.md#typography)
-- [Icons](visual_elements_of_user_interface_design.md#icons)
-- [Functionality](visual_elements_of_user_interface_design.md#functionality)
-- [Speed and Style](visual_elements_of_user_interface_design.md#speed-and-style)
-- [Composition and Structure](visual_elements_of_user_interface_design.md#composition-and-structure)
-- [Buttons](visual_elements_of_user_interface_design.md#buttons)
-- [Not Buttons](visual_elements_of_user_interface_design.md#not-buttons)
-- [States and Changes](visual_elements_of_user_interface_design.md#states-and-changes)
-- [Hierarchy of Content](visual_elements_of_user_interface_design.md#hierarchy-of-content)
-- [Conventions and Expectations](visual_elements_of_user_interface_design.md#conventions-and-expectations)
-
 ## What is a User Interface
 
 It's the _bridge_ between user and content.

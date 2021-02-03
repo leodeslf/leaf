@@ -1,19 +1,5 @@
 # UX Design Fundamentals
 
-## Table of contents
-
-- [Ideation](ux_design_fundamentals.md#ideation)
-- [Research & Development](ux_design_fundamentals.md#research-and-development)
-- [Audience & Rationale](ux_design_fundamentals.md#audience-and-rationale)
-- [Goals & Outcomes](ux_design_fundamentals.md#goals-and-outcomes)
-- [Naming and Mission](ux_design_fundamentals.md#naming-and-mission)
-- [Mapping Content & Interation](ux_design_fundamentals.md#mapping-content-and-interation)
-- [Non-Visual Testing](ux_design_fundamentals.md#non-visual-testing)
-- [Sitemap](ux_design_fundamentals.md#sitemap)
-- [Nielsen's 10 Usability Heuristics](ux_design_fundamentals.md#nielsens-10-usability-heuristics)
-- [Wireframe](ux_design_fundamentals.md#wireframe)
-- [Prototype](ux_design_fundamentals.md#prototype)
-
 ## Ideation
 
 Take ideas. Ideas come from _client_. Ideas should be about **content**, **concept** and **needs**.

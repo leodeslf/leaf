@@ -17,19 +17,6 @@ Examples to test:
 * `[0, 1, 2]`
 * `[1, 0]`
 
-## Table of contents
-
-* [Bubble](sorting_algorithms.md#bubble)
-* [Bucket](sorting_algorithms.md#bucket)
-* [Count](sorting_algorithms.md#count)
-* [Heap](sorting_algorithms.md#heap)
-* [Insertion](sorting_algorithms.md#insertion)
-* <!-- [Merge](sorting_algorithms.md#Merge) -->
-* [Quick](sorting_algorithms.md#quick)
-* <!-- [Radix](sorting_algorithms.md#radix) -->
-* [Selection](sorting_algorithms.md#selection)
-* [Shell](sorting_algorithms.md#shell)
-
 ## Bubble
 
 Pseudocode

@@ -2,19 +2,6 @@
 
 **Communication** between objects.
 
-## Patterns
-
-* [Chain of responsibility](behavioral.md#chain-of-responsibility)
-* [Command](behavioral.md#command)
-* [Iterator](behavioral.md#iterator)
-* [Mediator](behavioral.md#mediator)
-* [Memento](behavioral.md#memento)
-* [Observer](behavioral.md#observer)
-* [State](behavioral.md#state)
-* [Strategy](behavioral.md#strategy)
-* [Template Method](behavioral.md#template-method)
-* [Visitor](behavioral.md#visitor)
-
 ## Chain of responsibility
 
 ![Chain of responsibility](https://refactoring.guru/images/patterns/cards/chain-of-responsibility-mini.png)

@@ -1,13 +1,5 @@
 # Fonts
 
-## Table of contents
-
-* [Handwriting](fonts.md#handwriting)
-* [Serif](fonts.md#serif)
-* [Sans-Serif](fonts.md#sans-serif)
-* [Monospace](fonts.md#monospace)
-* [To test](fonts.md#to-test)
-
 ## Handwriting
 
 * Italianno

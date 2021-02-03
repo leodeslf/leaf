@@ -2,16 +2,6 @@
 
 **Composition** of objects.
 
-## Patterns
-
-* [Adapter](structural.md#adapter)
-* [Bridge](structural.md#bridge)
-* [Composite](structural.md#composite)
-* [Decorator](structural.md#decorator)
-* [Facade](structural.md#facade)
-* [Flyweight](structural.md#flyweight)
-* [Proxy](structural.md#proxy)
-
 <!-- - Private Class Data -->
 
 ## Adapter

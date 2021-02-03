@@ -2,14 +2,6 @@
 
 **Instantiation** of objects.
 
-## Patterns
-
-* [Factory Method](creational.md#factory-method)
-* [Abstract Factory](creational.md#abstract-factory)
-* [Builder](creational.md#builder)
-* [Prototype](creational.md#prototype)
-* [Singleton](creational.md#singleton)
-
 <!-- - Object Pool -->
 
 ## Factory Method
