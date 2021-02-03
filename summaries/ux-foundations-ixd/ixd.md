@@ -1,1 +1,1 @@
-# IxD
+# Interaction Design

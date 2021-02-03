@@ -1,1 +1,1 @@
-# The IxD Model
+# The Interaction Design Model

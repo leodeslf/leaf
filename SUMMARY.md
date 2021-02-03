@@ -17,10 +17,10 @@
   * [Web Design: Wireframes to Prototypes](summaries/ui-ux-design-specialization/web_design_wireframes_to_prototypes.md)
 * [UX Foundations: Interaction Design](summaries/ux-foundations-ixd/README.md)
   * [Today's Interaction Designer](summaries/ux-foundations-ixd/todays-interaction-designer.md)
-  * [A Model of Psychology and IxD](summaries/ux-foundations-ixd/a-model-of-psychology-and-ixd.md)
+  * [A Model of Psychology and Interaction Design](summaries/ux-foundations-ixd/a-model-of-psychology-and-ixd.md)
   * [Introductory Psychology](summaries/ux-foundations-ixd/introductory-psychology.md)
-  * [The IxD Model](summaries/ux-foundations-ixd/the-ixd-model.md)
-  * [IxD](summaries/ux-foundations-ixd/ixd.md)
+  * [The Interaction Design Model](summaries/ux-foundations-ixd/the-ixd-model.md)
+  * [Interaction Design](summaries/ux-foundations-ixd/ixd.md)
 
 ## Quick Notes
 

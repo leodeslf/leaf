@@ -1,4 +1,9 @@
-# A Model of Psychology and IxD
+# A Model of Psychology and Interaction Design
+
+* [Why psychology?](a-model-of-psychology-and-ixd.md#why-psychology)
+* [Introducing the Interaction Design model](a-model-of-psychology-and-ixd.md#introducing-the-interaction-design-model)
+* [Context](a-model-of-psychology-and-ixd.md#context)
+* [Goals](a-model-of-psychology-and-ixd.md#goals)
 
 ## Why psychology?
 
@@ -33,7 +38,7 @@ By researching we need to:
 
 **Iterate**, designing and prototyping are iterative processes, we generate, evaluate, and adjust ideas repeatedly to identify the best solution.
 
-## Introducing the IxD model
+## Introducing the Interaction Design model
 
 ```txt
 CONTEXT
