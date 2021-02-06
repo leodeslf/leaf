@@ -227,8 +227,9 @@ Pseudocode
 
 ```txt
 Merge(array)
-  From each merging step (from 1 to n / 2)
-    Merge sorted arrays of 'step' items into 'step' * 2
+  For each single-block lenght (from 1 to n)
+    For each run (from 0 to n)
+      Sort items from each single-block couple
 ```
 
 JavaScript
@@ -238,7 +239,31 @@ function Merge(arr) {
   const n = arr.length;
   if (n < 2) return arr;
   /* Start */
-
+  let sort = [...arr];
+  let temp = [];
+  for (let singleN = 1; singleN < n; singleN *= 2) {
+    const coupleN = singleN * 2;
+    for (let runAt = 0; runAt < n; runAt += coupleN) {
+      let left = 0 + runAt;
+      let right = singleN + runAt;
+      const mid = left + singleN;
+      const end = right + singleN;
+      while ((left < mid && left < n) || (right < end && right < n)) {
+        if ((left < mid) && (sort[left] <= sort[right]) ||
+          (right >= end || right >= n)) {
+          temp = [...temp, sort[left]];
+          left++;
+          continue;
+        }
+        if ((right < end) && (sort[right] <= sort[left]) ||
+          (left >= mid)) {
+          temp = [...temp, sort[right]];
+          right++;
+        }
+      }
+    }
+    [sort, temp] = [[...temp], []];
+  }
   /* End */
   return sort;
 }

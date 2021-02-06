@@ -49,4 +49,42 @@ CONTEXT
 
 ## Context
 
+Refers to the circumstances, situation and environment in with a person is interacting with a product.
+
+* Who?
+  * Description
+  * Experience
+  * Expectations
+  * Individual or group
+* When and Where?
+  * Location
+  * Time
+  * Public vs private
+  * Focus
+* What and How?
+  * Objects, devices, and tools
+  * Purpose
+  * Conjunction
+  * Alternatives
+  * Efficacy
+
 ## Goals
+
+What the poeple is trying to achieve. The desired outcomes.
+
+It's important to define the type of activity. Productivity vs Play, what we may feel obligated to perform, or may feel desire to engage in creative play (the "I need to" vs "I want to").
+
+Describing the Goals and Desired Outcomes:
+
+* Objectives
+  * Outcomes
+  * Achievements
+  * End states
+* Importance
+  * Value
+  * Essential/necessary
+  * Optional/elective
+* Urgency
+  * Priority
+  * Critical/compelling
+  * Timing
