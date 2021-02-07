@@ -11,5 +11,5 @@ Conditions:
 
 ## Table of contents
 
-* [Comparison Sort](comparison.md)
-* [Integer Sort](integer.md)
+* [Comparison Sorts](comparison.md)
+* [Integer Sorts](integer.md)

@@ -1,4 +1,4 @@
-# Integer
+# Integer Sorts
 
 ## Bucket
 
