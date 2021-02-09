@@ -48,3 +48,32 @@ We might use common depth cues, like:
 * Overlap / Layers
 * Blur
 * Scale
+
+## Motivation
+
+We need to understand both the user **goals** and **needs**. As we know what actually drives people to do things, we can describe context and goals more efficiently:
+
+* People
+* Situation
+* Needs
+* Objectives
+* Importance
+* Urgency
+
+### Theories of Motivation
+
+* Locus of control:
+  * External - Extrinsic motivation: when people behavior is influenced by external factors, usually things they **need / are obligated to**, or ends in rewards or earnings.
+  * Internal - Intrinsic motivation: when people do something because they **want to**, because it's personally rewarding.
+* David McClelland described motivation as::
+  * Achievement: problem solving and learning.
+  * Affiliation: social relationships.
+  * Power: influencing others.
+* Victor Vroom - Expectancy theory:
+  * Expectancy: "If I put forth the effort necessary, then I will perform well".
+  * Instrumentality: "If I perform well, then I will receive and outcome".
+  * Valence: "If I value the outcome, then I will be motivated to put forth the effort necessary".
+* ERG theory:
+  * Existence: basic survival and safety.
+  * Relatedness: establishing and manteining interpersonal relationships.
+  * Growth: intrinsic desire for personal development and self-esteem.
