@@ -157,8 +157,7 @@ function Merge(arr) {
           left++;
           continue;
         }
-        if ((right < end) && (sort[right] <= sort[left]) ||
-          (left >= mid)) {
+        if ((right < end) && (sort[right] <= sort[left]) || (left >= mid)) {
           temp = [...temp, sort[right]];
           right++;
         }
@@ -271,7 +270,6 @@ function Shell(arr) {
   const sort = [...arr];
   let gap = (n - n % 2) * .5;
   while (gap > 0) {
-  console.log(gap)
     for (let i = gap; i < n; i++) {
       let left = sort[i - gap], right = sort[i];
       if (left > right) {
