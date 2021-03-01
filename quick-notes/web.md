@@ -27,3 +27,16 @@ Part | Concept
 `folder/resource` | Path.
 `?id=1` | Query string (used by server-side software).
 `#section-id` | Fragment (named anchor).
+
+## Browsers
+
+### Engines
+
+|| Rendering Engine | JavaScript Engine
+--- | --- | ---
+**Chrome** | Blink | V8
+**Edge** | EdgeHTML | Chakra
+**Firefox** | Gecko | SpiderMonkey
+**IE** | Trident | Chakra
+**Opera** | Blink | V8
+**Safari** | WebKit | Nitro

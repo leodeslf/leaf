@@ -7,7 +7,7 @@ npm publish --access public
 
 ...
 
-npm version [patch/major/minor]
+npm version [major/minor/patch]
 npm publish
 
 ...
