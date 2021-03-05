@@ -49,3 +49,94 @@ When there are different ways to complete a task, people decide based on:
 * Prior experience
 * Perveivability
 * Confidence
+
+## Feedback
+
+### Three stages of feedback
+
+#### Interaction acknowledged
+
+An immediate response to a person's interaction and request. The product acknowledges that they have done something.
+
+Techniques:
+
+* Hovers, rollovers, and down states.
+* Transitions for size, rotation, and location.
+* Modal layers and dialogs appear or disappear.
+* Sound and vibration.
+
+#### Request in progress
+
+Interim feedback to indicate that the product is still working on the request and provides progress information.
+
+Techniques:
+
+* De-activate states with status messages.
+* Progress indicators fot time, amount, or simply ongoing.
+
+#### Results of interaction
+
+The final feedback is the actual result or output of the product in response to a person's request.
+
+Final feedback forms and variations:
+
+* Navigate to a new page or screen.
+* Modal layers and dialogs.
+* Update content on the current page.
+* Control media playback.
+* Control game play.
+* Error message.
+
+### Ambien feedback
+
+* Subtle, continuous change to the interface that provide useful information at a glance.
+* It usually conveys information about a single variable in a simple way.
+
+### Anticipatory feedback
+
+* Information is provided before a person interacts to help them understate what the outcomes may be.
+* Improves the accuracy of predictions.
+* Helps people avoid interactions that are not likely to help them achieve their goals.
+
+### Making meaning of feedback
+
+* We put cognitive effort into making sense of feedback
+* Is the outcome meaningful?
+* Does the outcome match the prediction?
+* Does the outcome help the person get closer to the goal?
+
+### Value of outcomes
+
+* Meaningful outcomes that match predictions and move people toward their goals are more useful and valuable.
+* The probability of continued interaction with the product increases.
+
+### Feedback bring emotions
+
+Useful outcomes and meaningful feedback create positive experiences, instill trust, and may even delight people.
+
+## Learn
+
+### Practice to learn
+
+* We observe our own behavior and the outcomes that occur.
+* Repeated interactions strengthen then associations and improve the accuracy of predictions.
+* The more we practice, the faster and more accurate our interactions with the product become.
+
+### Intuitive Design
+
+Even when when products are "intuitive", they may require multiple uses and practice before people learn and remember how to interact.
+
+## Remember
+
+### Memory and remembering
+
+* **Sensory Store**: during the perceive phase we process all incoming information and indentify the important elements.
+* **Working Memory**: during the feedback and learn phases we process information for meaning and associations.
+* **Long-term Memory**: during the remember phase we store learned information (and skills) for future use.
+
+### Transfer
+
+* We recognize products we have used before, may remember how to use them, and recall and ew-use what we learned.
+* We notice similarities between prior experiences and new products, transfer what we learned from earlier product experiences, and apply those skills and knowledge to the new prducts.
+
+Sometimes, we can mismatch, confuse, or even forget what we have learned.
