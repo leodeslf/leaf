@@ -98,3 +98,21 @@ Complex tasks tend to have multiple decision points, branching, and repeat actio
 * Design to effectively communicate place, state, and progress.
 
 ### Interface
+
+At this level, we focus on appearance and behavior, but this is also the stage where we add the polish, nuance, and refinement that can differentiate a product.
+
+#### More than Brand and Identity
+
+Appearance and behavior can:
+
+* Clarify structure and flow.
+* Clarify and enhance content
+* Guide through a path
+* Enhance feedback
+* Help people identify opportunities to transfer and apply their prior experiences.
+
+#### Appearance, Meaning, and value
+
+* Good design enhances the value and quality of a product.
+* Bad design detracts from or even interferes with a product experience.
+* Prople judge the quality of a product higher and think it works better when it is attractive.
