@@ -42,8 +42,10 @@
 
 ## To test
 
+```txt
 0123456789
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 abcdefghijklmnopqrstuvwxyz
 ,.;:@#$%&+-*?|_[]{}()''""``
 = == === != !== <= => <- ->
+```

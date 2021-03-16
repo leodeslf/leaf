@@ -2,8 +2,6 @@
 
 ## Weather APIs
 
-Comparative Table
-
 Web | Limit | HTTPS | Key | Example
 --- | --- | --- | --- | --- |
 weatherapi.com | 1.000.000 mon | free | yes | [current][weather1], [autocomplete][weather2]
@@ -14,8 +12,6 @@ openweathermap.org | 1.000.000 mon / 60 minute | free | yes | [current][weather3
 [weather3]:https://api.openweathermap.org/data/2.5/weather?appid=b280c897878592322aafe56701248929&lang=sp&units=metric&q=London
 
 ## IP-Geolocation APIs
-
-Comparative Table
 
 Web | Limit | HTTPS | Key | Example
 --- | --- | --- | --- | --- |

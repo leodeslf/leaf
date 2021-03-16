@@ -2,8 +2,6 @@
 
 ## Bubble
 
-Pseudocode
-
 ```txt
 Bubble(array)
   For each element of array
@@ -12,8 +10,6 @@ Bubble(array)
   If swaps were made
     Bobble(array)
 ```
-
-JavaScript
 
 ```JavaScript
 function Bubble(arr) {
@@ -35,8 +31,6 @@ function Bubble(arr) {
 
 ## Heap
 
-Pseudocode
-
 ```txt
 Heap(array)
   For each element of array
@@ -51,8 +45,6 @@ Heap(array)
       If it's smaller than its childs
         Swap them one by one (top to bottom)
 ```
-
-JavaScript
 
 ```JavaScript
 function Heap(arr) {
@@ -93,16 +85,12 @@ function Heap(arr) {
 
 ## Insertion
 
-Pseudocode
-
 ```txt
 Insertion(array)
   For each element of array from 1
     Move +1 place greater elements from the left
     Put element at the right spot
 ```
-
-JavaScript
 
 ```JavaScript
 function Insertion(arr) {
@@ -125,16 +113,12 @@ function Insertion(arr) {
 
 ## Merge
 
-Pseudocode
-
 ```txt
 Merge(array)
   For each single-block lenght (from 1 to n)
     For each run (from 0 to n)
       Sort items from each single-block couple
 ```
-
-JavaScript
 
 ```JavaScript
 function Merge(arr) {
@@ -172,8 +156,6 @@ function Merge(arr) {
 
 ## Quick
 
-Pseudocode
-
 ```txt
 Quick(array)
   Pick last element as pivot
@@ -181,8 +163,6 @@ Quick(array)
     Put greater or equal elements in "after" array
     Return Quick(before) + pivot + Quick(after)
 ```
-
-JavaScript
 
 ```JavaScript
 function Quick(arr) {
@@ -207,8 +187,6 @@ function Quick(arr) {
 
 ## Selection
 
-Pseudocode
-
 ```txt
 Selection(array)
   For each elementI of array to n - 2
@@ -219,8 +197,6 @@ Selection(array)
     If saved elementJ
        Swap elementI and elementJ
 ```
-
-JavaScript
 
 ```JavaScript
 function Selection(arr) {
@@ -248,8 +224,6 @@ function Selection(arr) {
 
 ## Shell
 
-Pseudocode
-
 ```txt
 Shell(array)
   Pick a gap smaller than n and greater than 0
@@ -259,8 +233,6 @@ Shell(array)
         Swap them
     Reduce gap
 ```
-
-JavaScript
 
 ```JavaScript
 function Shell(arr) {

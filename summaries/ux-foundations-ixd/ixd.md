@@ -116,3 +116,161 @@ Appearance and behavior can:
 * Good design enhances the value and quality of a product.
 * Bad design detracts from or even interferes with a product experience.
 * Prople judge the quality of a product higher and think it works better when it is attractive.
+
+## Patterns
+
+### Design patterns
+
+Design patterns are recurring, re-usable, **optimal solutions** to common design problems.
+
+There are DP for structure, flow, and interface.
+
+Good DP are:
+
+* Familiar, recognizable, and easy to apply correctly.
+* Optimal, effective, and efficient.
+* Relevant in the context and to the goals.
+* Effortless and easy to use with minimal work.
+
+> Good design patterns improve consistency and cohesivness, whith makes producs easier to use, learn, and remember.
+
+### Anti-patterns
+
+Anti-patterns are recurring solutions that may be common and familiar, but they are **non-optimal** in practice.
+
+They are non-optimal, but, it doesn't mean they are bad or worst than a pattern. They are just exceptions.
+
+### Dark patterns
+
+Dark patterns **intentionally mislead people** into making choices and performing actions they would not have otherwise chosen to do and which are not in their best interests.
+
+Harry Brignull studied and identified multiple types of dark patterns, such as:
+
+* Bait and switch
+* Disguised ads
+* Forced continuity
+* Friend spam
+* Hidden costs
+* Misdirection
+* Price comparison prevention
+* Privacy Zuckering
+* Roach motel
+* Sneak into basket
+* Trick questions
+
+Dark patterns are associated with **violations of privacy**, **theft of money and information**, and the **installation of malware**.
+
+*Features* that can counter a dark pattern from a product:
+
+* Perceivable / Findable.
+* Honest / Transparent.
+* Notify / Clarify.
+* Comparison / Confirmation.
+* Reversible / Usable.
+
+## Navigation
+
+Navigation is the movement from place to place or state to state within a product.
+
+### Navigation structure
+
+Information architecture:
+
+* Information architecture as a field and practice is attributed to Richard Saul Wurman.
+* It is typically incolved in creating the structire of a navigation system.
+* Good information architecture is often considered essential for good interaction design.
+
+Mental models we have about:
+
+* How information should be organized.
+* Flows and the sequence of steps is will take to perform an action.
+* Tasks organized into a logical sequence of steps (that will be easier to complete).
+
+### Navigation systems
+
+Types of navogation systems:
+
+* **Hierarchical**: used when there are multiple levels, or hierarchies, in the structure of the content and functionality.
+* **Hub and spoke**: there is a central hub from which to explore and browse. There are often several independent sections, and each may have different content or functions.
+* **Adaptive**: navigation adjusts dynamically to the context, content, and how it is being used.
+  * Inditivual access privileges.
+  * Suggested actions based on context.
+  * Valid actions based on section or content.
+* **Steam**: used when there is a steady stream of new content or posts, presented in reverse chronological order, may be algorithms to promote sponsored or popular content.
+* **Search sort, and filter**: effective when there are vast amounts of content, whether or not it is well-organized.
+* **Interactive or gestural**: used when navigation elements are revealed after an interaction, often lack signals or cues, so they may be difficult to discover. We shall use hints and cues to indicate that actions are available.
+* **Content link**: links in the content of a page or screen are a form of contextually relevant navigation.
+* **Hybrid**: when mixing different types of navigation into a single system.
+
+#### Findability vs Discoverability
+
+*Findability* is when a person **knows in advance** that something is or should be within the product. **Discoverability** is when a person **does not know in advance** that something exists and is available within that product.
+
+## Content
+
+### Content strategy
+
+* It guides the creation, publication, and maintenance of meaningful, relevant content.
+* Content creation is an essential part of the design process.
+* Content takes many form.
+
+### Design with text
+
+* **Readability**: is the ease with which a reader can understand weitten text. We need to use *appropriate vocabulary* and syntax based on context of the product.
+* **Scanning**: organize text to facilitate scanning to *help people focus* their attention and fin what they need.
+* **Typography**: optimize fint size, line height, and line lenght. Also text styles are used to differentiate among text types, headers, labels, body content, and links.
+* **Interactivity**: expose only the necessary information to *keep the product focused and simpler*. Extencive content may benefit from interactive layouts that conceal and reveal supplemental information as needed.
+
+### Microcopy
+
+Small pieces of text found throughout the interface, important for clarity and guidance. Such as buttons, labels, status and progress indicators.
+
+### Localization
+
+* Language.
+* Numeric, date, and time formats.
+* Use of currency.
+* Keyboard usage.
+* Collation and sorting.
+* Symbols, icons, and colors.
+* Culturally appropiate text and graphics.
+* Varyng legal requirements, among others.
+
+### Imagery
+
+* Images have high information density. They can convey much in a small amount of space.
+* Enable pan and zoom for exploration of large, highly detailed images.
+
+### Interactive images and media
+
+* Highly interactive content experiences can be very engaging.
+* Interactions should support and enhance the information and improve comprehension.
+* Design interacive media with the same principles used to design products.
+
+### Media controls
+
+* Auto-play should be used only when requested and expected.
+* When not requested, auto-play distracts and interrupts.
+* Removing control over auto-playing media is an undesirable and negative experience.
+
+## Inputs
+
+### Bi-directional data flow
+
+* Interaction is bi-directional. People add and receive information.
+* Data can be entered many ways through input devices and sensors.
+* Data may be gathered without explicit interaction. (Such as GPS location or ambient brightness).
+
+## Gestures
+
+## Voice
+
+## Sensors
+
+## Microinteractions
+
+### Motion
+
+### Sound
+
+### Haptics

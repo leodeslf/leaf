@@ -30,13 +30,13 @@ Part | Concept
 
 ## Browsers
 
-### Engines
-
 || Rendering Engine | JavaScript Engine
 --- | --- | ---
 **Chrome** | Blink | V8
-**Edge** | EdgeHTML | Chakra
+**Edge** | EdgeHTML / Blink | Chakra
 **Firefox** | Gecko | SpiderMonkey
 **IE** | Trident | Chakra
 **Opera** | Blink | V8
 **Safari** | WebKit | Nitro
+
+Blink comes from Webkit library named WebCore, forked by Google in 2013.

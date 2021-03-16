@@ -2,8 +2,6 @@
 
 ## Bucket
 
-Pseudocode
-
 ```txt
 Bucket(array)
   Set number of buckets
@@ -12,8 +10,6 @@ Bucket(array)
   For each bucket of buckets array
     Put Bucket(buckets) into into sorted array
 ```
-
-JavaScript
 
 ```JavaScript
 function Bucket(arr) {
@@ -46,8 +42,6 @@ function Bucket(arr) {
 
 ## Count
 
-Pseudocode
-
 ```txt
 Count(array)
   For each element of array
@@ -55,8 +49,6 @@ Count(array)
   For each element of count array
     Add element to sorted array, element value amount of times
 ```
-
-JavaScript
 
 ```JavaScript
 function Count(arr) {
@@ -83,13 +75,9 @@ function Count(arr) {
 
 ## Radix
 
-Pseudocode
-
 ```txt
 Radix(array)
 ```
-
-JavaScript
 
 ```JavaScript
 function Radix(arr) {
