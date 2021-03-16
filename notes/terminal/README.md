@@ -6,7 +6,7 @@
 * [Browsersync](#browser-sync.md)
 * [Bash](bash.md)
 * [Git](git.md)
-* [NPM](npm.md)
+* [NPM Package](npm.md)
 * [React](react.md)
 * [Serve](serve.md)
 * [Terser](terser.md)

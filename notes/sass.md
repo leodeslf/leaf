@@ -190,7 +190,7 @@ Partials are identified by an underscore as a prefix. When importing them, undes
 
 Example:
 
-```bash
+```txt
 # styles/
 _variables.scss
 _mixins.scss

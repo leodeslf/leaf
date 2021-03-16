@@ -39,4 +39,7 @@ Part | Concept
 **Opera** | Blink | V8
 **Safari** | WebKit | Nitro
 
-Blink comes from Webkit library named WebCore, forked by Google in 2013.
+Notes:
+
+* Blink comes from Webkit library named WebCore, forked by Google in 2013.
+* Since 2019, Edge uses Blink (still being WebKit on iOS).

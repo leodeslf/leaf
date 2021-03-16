@@ -1,6 +1,6 @@
 # Eloquent JavaScript
 
-Quick notes from the book.
+Quick notes from EJS, boork written by Marijn Haverbeke.
 
 ## Values, Types and Operators
 
@@ -276,7 +276,7 @@ console.log(acmeCar[owner]);
 Symbols are not enumerated, they don't make part neither of `for...of` nor `for...in` loops.  
 Symbols don't get listed on `Object.keys()` or `Object.getOwnPropertyNames()`. They can be listed by using `Object.getOwnPropertySymbols()`.
 
-## Getters, Setters and Statics
+### Getters, Setters and Statics
 
 The `get` properties are accessed directly, without the call notation \(with parenthesis at the end\).  
 Passing args to a `set` method is done directly too, doesn't make use of function call notation.

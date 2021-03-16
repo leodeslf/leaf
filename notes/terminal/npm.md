@@ -1,4 +1,4 @@
-# NPM
+# NPM Package
 
 ```bash
 npmrc [user-name]

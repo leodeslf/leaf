@@ -170,7 +170,6 @@ System: Buttons need to have a _logic placement_ on screen to make sense by them
 
 ## Not Buttons
 
-<!-- asdasdasd -->
 Menus, links, fields. Use design conventions for these elements, for _shape_, _scale_, _contrast_, _clarity_ and _economy_, in order to reinforce and emphasize the goals of speed and function.
 
 ## States and Changes
