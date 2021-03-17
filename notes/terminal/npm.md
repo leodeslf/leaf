@@ -1,8 +1,8 @@
 # NPM Package
 
 ```bash
-npmrc [user-name]
-npm init --scope=@[user-name]
+npmrc <usr-name>
+npm init --scope=@[usr-name]
 npm publish --access public
 
 ...
@@ -12,13 +12,13 @@ npm publish
 
 ...
 
-npm unpublish <package-name> -f
+npm unpublish <pkg-name> -f
 ```
 
 ```json
 // package.json
 {
-  "name": "@[user-name]/[package-name]",
+  "name": "@<usr-name>/<pkg-name>",
   "publishConfig": {
     "registry": "http://registry.npmjs.org",
     "access": "public"

@@ -1,7 +1,6 @@
 # Vue
 
 ```bash
-# Terminal
 npm i -g @vue/cli
 vue create [project-name]
 

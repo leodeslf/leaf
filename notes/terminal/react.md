@@ -1,7 +1,6 @@
 # React
 
 ```bash
-# Terminal
 npx create-react-app [project-name]
 
 ...

@@ -1,14 +1,13 @@
 # TypeScript
 
-Compile: `tsc`
-
-Transpile a specific file: `tsc [file-name]`
-
-Specify a tsconfig file: `tsc --project [tsconfig-name]`
-
-Example of tsconfig.json:
+```bash
+tsc # Transpile
+tsc <file> # Transpile a specific file
+tsc --project <tsconfig-file> # Specify a tsconfig file
+```
 
 ```json
+// tsconfig.json
 {
   "compilerOptions": {
     "target": "ES6",

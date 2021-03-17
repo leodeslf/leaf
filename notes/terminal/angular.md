@@ -1,7 +1,6 @@
 # Angular
 
 ```bash
-# Terminal
 npm i -g @angular/cli
 ng new [project-name]
 
