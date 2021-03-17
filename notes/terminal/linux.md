@@ -1,6 +1,6 @@
 # Linux
 
-Curated cheat sheet for *filesystem* and *text processing* commands on linux.
+Cheat sheet for *filesystem* and *text processing* commands on linux.
 
 ```sh
 [cmd] -- [args]  # Indicates that following args. are not options
