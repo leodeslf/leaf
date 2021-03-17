@@ -67,7 +67,7 @@ Example:
 }
 
 select {
-  @include: mixinName;
+  @include: mixinName(green);
   /* or... */
   @include: mixinName(green, 1px);
   ...
