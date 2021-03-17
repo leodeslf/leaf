@@ -87,8 +87,8 @@ pwd # Show current dir
 rm <file>    # Remove file
 rm -f <file> # Force removing
 rm -i <file> # Ask mebofe removing each file
-rm -r <dir> # Remove dir and its content recursively
-rm -d <dir> # Remove dir if it's empty
+rm -r <dir>  # Remove dir and its content recursively
+rm -d <dir>  # Remove dir if it's empty
 ```
 
 ```sh
@@ -96,13 +96,13 @@ rmdir <dir> # Remove empty dir
 ```
 
 ```sh
-head <file> # Outputs the first 10 lines of a file
+head <file>           # Outputs the first 10 lines of a file
 head -c<num>, --bytes # Prints num amount of bytes
 head -n<num>, --lines # Prints num amount of lines instead of 10
 ```
 
 ```sh
-tail <file> # Outputs the last 10 lines of a file
+tail <file>           # Outputs the last 10 lines of a file
 tail -c<num>, --bytes # Prints num amount of bytes
 tail -n<num>, --lines # Prints num amount of lines instead of 10
 ```
