@@ -261,16 +261,303 @@ Small pieces of text found throughout the interface, important for clarity and g
 * Data can be entered many ways through input devices and sensors.
 * Data may be gathered without explicit interaction. (Such as GPS location or ambient brightness).
 
+### Interaction gap
+
+* The more distance or time between the point of interaction and the result or reaction, the more difficult it may be to control.
+* Experiences where people "interacti here for outcomes over thre" may be more dificult to predict and learn.
+
+### Direct interaction
+
+* It's easier to learn, control, and predict.
+* Strive to make interactions as direct and immediate as possible.
+
+### Keyboards
+
+* Typing has been around for 150 years and os a familiar interaction.
+* On-screen keyboards replicate the familiar od layout of keys, but the interactions are more direct, because the interaction gap is reduced.
+
+### Mice and trackballs
+
+* Distance from and orientation relative to the screen may differ for these input devices.
+* Use and interactnions have become more complex, because people need more control over the objects no their screens.
+* Both require learning and practice to become proficient.
+
+### Pen tablets
+
+* The surface of the tablet is a mirror of the coordinate system on the screen.
+* Use and interaction can be more difficult to learn and master, because it requires precise spatial and motor control.
+
+### Clicking and tapping
+
+* The most familiar and frequent interactions with easily recognized outcomes.
+* Tapping on screens is more direct than using a mause.
+
+### Signals and cues
+
+* Anything may be tapped on a touchscreen, so we need to provide signals about which elements are actually interactive.
+* Depth cues, such as shadows, layers, and textures, can make on-screen objects look like they can be touched.
+
+### Target size
+
+Small and/or faraway targets are harder to reach and tap quickly and accurately. Instead, use larger and/or near targts.
+
 ## Gestures
+
+* Gestures leave no trace.
+* Accidental gestures may go unnoticed and may be difficult to undo.
+* Hidden, complex, and arbitrary gestures are difficult to learn and remember.
+* Use gestures consistently and in familiar ways whenever possible.
+
+Common gestures:
+
+* Tap
+* Double-tap
+* Long or hard press
+* Scroll
+* Pan
+* Drag
+* Swipe
+* Flick
+* Pinch
+* Spear
+* Rotate
+* Multi-touch
+
+Device gestures:
+
+* Orient
+* Shake
+* Flip
+
+### Siganls and cues for gestures
+
+* Buttons and icons are perceivable, but gestures are invisible.
+* Previews, hints, and motion can be used to indicate that gestural intereaction is possible.
+* Demos and instructions can show how to gesture.
+
+### Arbitrary and abstract gestures
+
+* Multi-touch gestures may be powerful, but they can be difficult to discover.
+* Multi-touch gestures vary across brands and products, which makes learning, generalization, and transfer of experience even more difficult.
 
 ## Voice
 
+Voice recognition and speech synthesis have been available for decades. It still evolving and improving. People are very good at understanding context, reference, intent, and non-verbal communication, computers are not -yet-.
+
+> We need to design to help people learn what to say and how to say it while we wait for technology to catch up to our expectations.
+
+### Principles for Voice Interaction
+
+* **Reveal**: when voice interaction is available and ready.
+* **Guide**: what people can say and the actions the product can perform for them.
+* **Repeat**: repeat the request and provide options and examples when asking for clarification.
+* **Tell**: state the request when delivering results or performing actions on their behalf.
+* **Respect**: be polite, friendly, concise, considerate, and unobstructive.
+
 ## Sensors
+
+Sensors gather data from the environment around the device.
+
+They are:
+
+* Camera
+* Microphone
+* Photometer
+* Accelerometer
+* Gyroscope
+* Compass
+* Thermometer
+* Barometer
+* Altimeter
+* Magnetometer
+* Proximity
+
+And more.
+
+### Uses for Sensor Data
+
+* Context may be better understood with location and environmental data.
+* Monitor health and fitness.
+* Learn about nearby things with audio and image recognition.
+* Automatic device adjustments for improved usability.
+
+### Privacy and Security about on sensors
+
+* Data collected is often personal and may be sufficient to indetify the person.
+* Be transparent about what is collected and how it is used.
+* Offer clear and findable privacy and security controls.
 
 ## Microinteractions
 
+Microinteractions are the small, naunced reactions of a product that **provide information and feedback**.
+
+Dan Saffer studied microinteractions extensively and indetified four parts:
+
+* **Triggrs**: signal or cue that something has happened or will happen.
+* **Rules**: determine the conditions under which microinteractions occur and define what will happen.
+* **Feedback**: verifies that the person has interacted with the product or that specific conditions have been met.
+* **Loops and modes**: some interactions repeat (loop) intil the person stops it, others change the way a device work (mode) under certain conditions.
+
 ### Motion
+
+Our brains are wired to be sensitive to **motion and change**. It draws and guides our attention trough the product.
+
+Motion can also *distract*, stealing people's attention is unwanted and unwelcome. Use motion judiciously and with purpose.
+
+#### Motion has meaning
+
+* **Time**: animations and motion may communicate progress, transition, and status.
+* **Space**: motion can help people understand spatial location and hierarchy.
+* **Relationship**: connections, relationships, and associations can be clarified and highlighted.
+* **Change**: shape, size, appearance, and/or location may transform in proportion to changes in value or meaning.
+* **Opportunity**: indicate opportunities to interact, often with gestures, by mimicking the gesture with similar motion of the interactive elements on the screen.
+
+#### Smooth Motion
+
+**Abrupt changes feel mechanical and may be disriptuve**.
+
+Easing is used to create smooth motion with acceleration, deceleration, and other physical effects.
+
+Motion that embodies characteristics of the natural world can be more appealing.
 
 ### Sound
 
+Sound is an important part of product design, but it can also *distract* or even *annoy*. It can enhance a product by providing information and contributing to positive emotions.
+
+#### Sounds as icons
+
+**Auditory icons** are sounds that correspond to something in the real world.
+
+**Earcons** are arbitrary sounds we learn to associate with actions.
+
+#### Sound has value and purpose
+
+* **Direct attention**: attract and guide a person's attention to outcomes they requested or which require their response.
+* **Provide feedback and information**: provide feedback and information about the status and progress of interactions and processes.
+* **Support brand and identity**: sounds mey be identifiable and associated with a product's brand and identity.
+
 ### Haptics
+
+It's **how people see and manipulate** objects using their senses of touch and proprioception.
+
+#### Haptic feedback
+
+* **Vibration**: making device vibrate may create different sensations.
+* **Force**: it's used by mechanical systems to "push back" against interactions to simulate natural conditions of friction and resistance.
+* **Texture**: surface textures may be simulated with vairable friction, and advanced materials may even make physical changes.
+
+#### Vibration
+
+* **Taps on the screens**: commonly acknowledged with rapid vibrations.
+* **Hard or long press**: indicate when a press has been long or foceful enough to trigger the interaction.
+* **Alarms and notifications**: sounds and vibration are commonly used in conjunction and increase effectiveness in environments with variable noise levels
+* **Gestural feedback**: may be used to provide feedback during a gesture and at the end to indicate successful completion.
+
+#### Some haptic feecback is real
+
+Not all is simulated, physical buttons and sweitches provide real haptic feedback.
+
+## Error handling
+
+No matter how much we plan, things go wrong. Errors cause frustration, and error messages are important feedback and guidance.
+
+> The best error handling is error prevention
+
+### Effective error messages
+
+1. Use natural language and never blame the person.
+1. Clearly describe what went wrong.
+1. Briefly axplain why it went wrong.
+1. Recommend how to fix or resolve the error.
+
+Make error messages noticeable and place them as near the error as possible.
+
+There may be two messages:
+
+1. A generic message that an error has occured, usually, in an easily noticed location.
+1. A specific message about the error near where the error occurred.
+
+### Presentation of Error Messages
+
+1. Provide error messages as soon as possible.
+1. Use color to draw attention and indicate urgency.
+1. Subtle transitions can be used to remove an error message after a correction has been made.
+
+## Mistakes
+
+> When mistakes or errors are made, sometimes the best solution is **undo**.
+
+### Error vs Mistake
+
+An **error** occurs when an action or **process cannot be completed** correctly.
+
+A **mistake** is an incorrect choice or information that **does not prevent the process from being completed**, but the end result is not anticipated or desired.
+
+### Detecting mistakes
+
+* Good feedback *confirms* that the action was performed and *reports the results* or outcomes.
+* Important actions should provide the opportinuty to make corrections or be canceled.
+
+## Usability and accessibility
+
+Usability is the **ease of use** of the product or service.
+
+Utility is the **usefulness and value** of the prodcut or service.
+
+### Evaluating Usability
+
+* Sufficient motivation or need can override poor usability.
+* Just because someone completes a task, does not mean it was easy to do.
+* We need to observe people using a product and interview them about their experience to better evaluate usability.
+
+### Usability principles
+
+#### Human-Computer Interaction (HCI)
+
+* **Learnability**: how easily cana  new person learn to use the product?
+* **Flexibility**: how many ways can a person interact with the product?
+* **Robustness**: how well does the product help people when errors occur?
+
+By Dix, Finlay, Abowl, and Beale.
+
+#### Nielsen and Shneiderman
+
+* **Learnability**: how easily cana  new person learn to use the product?
+* **Efficiency**: how quickly and accurately can a person perform tasks?
+* **Memorability**: how well do people remember a product if they have not used it recently?
+* **Errors**: how many errors occur, and how well do people recover from them?
+* **Satisfaction**: how much do people enjoy using a product, and are they satified with the results?
+
+#### ISO 9241 - Five Principles
+
+* **Learnability**: how easily cana  new person learn to use the product?
+* **Understandability**: how well can people understand what they are seeing?
+* **Operability**: how much controll does the person have within the product?
+* **Attractiveness**: how visually appealing is the product?
+* **Usability Compliance**: does the product adhere to documented standards?
+
+### Eight Golden Rules of Interface Design
+
+1. Strive for consistency.
+1. Enable shortcuts for frequent actions.
+1. Offer informative feedback.
+1. Design dialogs to yeld closure.
+1. Offer simple errror handling.
+1. Permit easy revisal of actions.
+1. Support internal locus of control.
+1. Reduce short-term memory load.
+
+By Ben Shneiderman, PhD.
+
+### Accessibility
+
+**All people shall be able** to perceive, understand, navigate, and interact with a product, **regardless or their abilities**, and they can contribute equally.
+
+Accessibility is often a legal requirement.
+
+#### Basic accessibility
+
+* Text should be structured for screen readers.
+* Imagery should have descriptions.
+* Videos should be captioned.
+* Interfaces should be navigable and usable by multiple methods, including keyboard, mouse, touch, and voice.
