@@ -87,7 +87,7 @@ Final feedback forms and variations:
 * Control game play.
 * Error message.
 
-### Ambien feedback
+### Ambient feedback
 
 * Subtle, continuous change to the interface that provide useful information at a glance.
 * It usually conveys information about a single variable in a simple way.
