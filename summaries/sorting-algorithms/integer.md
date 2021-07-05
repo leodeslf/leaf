@@ -72,20 +72,3 @@ function Count(arr) {
   return sort;
 }
 ```
-
-## Radix
-
-```txt
-Radix(array)
-```
-
-```JavaScript
-function Radix(arr) {
-  const n = arr.length;
-  if (n < 2) return arr;
-  /* Start */
-
-  /* End */
-  return sort;
-}
-```

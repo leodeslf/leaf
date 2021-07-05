@@ -4,9 +4,9 @@
 
 <!-- - Object Pool -->
 
-## Factory Method
+## Factory
 
-![Factory Method](https://refactoring.guru/images/patterns/cards/factory-method-mini.png)
+![Factory](https://refactoring.guru/images/patterns/cards/factory-method-mini.png)
 
 Provides an interface for creating objects in a superclass. Allows subclasses to alter the type of object that will be created.
 
