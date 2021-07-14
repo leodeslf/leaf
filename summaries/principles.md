@@ -57,7 +57,7 @@ changes just for the sake of "adaption" or "customization".
 
 >Derived classes must be able to substitute for their base classes.
 
-When we have A and B, B is A plus some features, A can be replaced by B if it's correctly done.
+When we have A and B, being B = A + [moreFeatures], A can be replaced by B if it's correctly done.
 
 ### Interface Segregation Principle (ISP)
 
