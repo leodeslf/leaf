@@ -29,6 +29,7 @@
   * [Behavioral](summaries/design-patterns/behavioral.md)
 * [Eloquent JavaScript](summaries/eloquent_javascript.md)
 * [GitFlow](summaries/gitflow.md)
+* [Principles](summaries/principles.md)
 * [Scrum](summaries/scrum.md)
 * [Sorting Algorithms](summaries/sorting-algorithms/README.md)
   * [Comparison Sorts](summaries/sorting-algorithms/comparison.md)

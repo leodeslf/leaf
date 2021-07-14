@@ -6,6 +6,7 @@
 - Add file changes (untracked, modified and deleted): `git add .` (`.` = all)
 - Commit changes: `git commit -m "commit message"`
 - Clear local repo: `git rm -r --cached .`
+- Show last commit message: `git log -1` or `git log -1 <branch-name>`.
 
 ## Branch
 
