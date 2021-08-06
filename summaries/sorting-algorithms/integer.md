@@ -31,9 +31,7 @@ function Bucket(arr) {
   }
   let sort = [];
   for (let i = 0; i < bktsN; i++) {
-    sort = [
-      ...sort,
-      ...Bucket(bkts[i])];
+    sort = [...sort, ...Bucket(bkts[i])];
   }
   /* End */
   return sort;
