@@ -25,6 +25,7 @@
   * [Creational](summaries/design-patterns/creational.md)
   * [Structural](summaries/design-patterns/structural.md)
   * [Behavioral](summaries/design-patterns/behavioral.md)
+* [Don't Make Me Think](summaries/dont_make_me_think.md)
 * [Eloquent JavaScript](summaries/eloquent_javascript.md)
 * [GitFlow](summaries/gitflow.md)
 * [Principles](summaries/principles.md)
