@@ -1,6 +1,6 @@
 # Eloquent JavaScript
 
-Quick notes from EJS, written by Marijn Haverbeke.
+Written by Marijn Haverbeke.
 
 ## Values, Types and Operators
 
