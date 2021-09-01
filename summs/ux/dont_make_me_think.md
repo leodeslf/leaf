@@ -1,0 +1,287 @@
+# Don't Make Me Think
+
+Written by Steve Krug.
+
+## Guiding Principles
+
+### Don't make me think
+
+>Krig's first law of usability.
+
+People doesn't read, *people does scan*, they should be capable of **instantly finding what they need** without waisting time and effort, where is it, how to use it, or even identifying more options. Webs should be *self-explanatory and speak the users language*.
+
+If you can't make something self-evident, you at least need to make it self-explanatory.
+
+### How we really use the Web
+
+>Scanning, satisficing, and muddling through.
+
+Sometimes *people doesn't use the Web the way we spect* as designers and developers.
+
+*People is usually in a hurry*. As said before, **they don't read pages, they scan them**. We need (or want) to get something done fast. We try to find the closest option that looks relevant to us, even if it's not the right one.
+
+In reality, most of the time people don't make an optimal choice, **people guess** and choose the most reasonable option. Usually getting wrong, but, when they're right, **it's faster**, surprising and pleasant.
+
+Sometimes *people don't actually know how things work*, **they muddle through**. It's not important for them to ignore things, however, if they know, they'll feel smarter.
+
+### Billboard Design 101
+
+>Designing for scanning, not reading.
+
+#### Take advantage of conventions
+
+Standards and **conventions are the safest solutions**  (where the things are, how they work, how they look). Innovate when *you know you have a better idea* that is clear, self-explanatory, and doesn't hurt consistancy.
+
+#### Create effective visual hierarchies
+
+Make obvious which things are **more important**, what things **does**, and what things **are part of**. In other words show visual cues about *hierarchy*, *functionality* and *relationship*.
+
+#### Break pages up into clearly defined areas
+
+Divide the page into clearly defined areas so users can easily **decide which areas to focus** on, and what they can ignore.
+
+#### Make it obvious what's clickable
+
+On the Web, *almost all we can do are clicks*. Use visual cues to **show what's clickable**, color, shape, underlining, location, and more.
+
+#### Eliminate distractions
+
+Reduce visual noise. **Clamoring for attention, disorganizaiton, and clutter is overwhelming**. All of that leads to lots of noise, not much information, and noise obscures the usefull stuff.
+
+#### Format content to support scanning
+
+Use **headings** and make them distinctive. **Keep paragraphs short**, avoid creating a "wall of words". Use **bulleted lists** whenever you can. **Highlight key terms** when appropriate.
+
+### Animal, Vegetable, or Mineral?
+
+>Why users like mindless choices.
+
+People don't care how many clicks they have to make, but **how much they have to think** to make them. If you know something is difficult, give some help, **guidance should be brief, timely, and unavoidable**.
+
+### Omit needless words
+
+>The art of not writing for the web.
+
+By **writing less**, we reduce the noise level, make the useful content more prominent, and save time for the users. Try to avoid *happy talk*, *small talk*, and *instructions* on your products.
+
+## Things You Need to Get Right
+
+### Street signs and Breadcrumbs
+
+>Designing navigation.
+
+#### Web Navigation 101
+
+- You're usually trying to find something.
+- You decide whether to ask first or browse first.
+- If you choose to browse, you use signs as guides.
+- Eventually, if you can't find what you're looking for, you'll leave.
+
+#### The unbearable lightness of browsing
+
+We have to give the missing cues for the user, as while searching on the web we have **no sense of scale, direction, and location**.
+
+#### The overlooked purposes of navigation
+
+Navigation:
+
+- Tells us **what's here**.
+- Tells us **how to use** the site.
+- Gives us **confidence** in the people who built it.
+
+#### Web navigation conventions
+
+Follow standards on **appearance and location of navigation systems**, so people can know *what to look* for and *where to look* when they need.
+
+#### Don't look now, but I think it's following us
+
+**Persistent navigation** (or *global navigation*) should say:
+
+- Navigation is here...
+- It will change a little as you navigate...
+- But it will always be here...
+- And it will always work the same way.
+
+Persistent navigation usually contains the Site ID, Utilities, Sections, and a Search bar.
+
+#### Did I say every page?
+
+We need to **avoid unnecesary distractions while filling forms**, paying on an e-commerce, registering, or subscribing. It's fine to simplify the persistent navigation to ensure that people can finish these activities.
+
+#### Now I know we're not in Kansas
+
+Use the **Site ID as a sign** to let the people know where they are. Usually it will be on the **top left corner** of the site, that way it will frame the entire page.
+
+#### The Sections
+
+They are the **primary navigation**, they can show (while clicking or pointing) the subsections or *secondary navigation*.
+
+#### The Utilities
+
+They are even less prominent than the sections. They can **help people use the site**, usually presented as groups of *no more than four elements* (other elements whould be on the footer).
+
+Some of the most common utility elements are:
+
+- Sign In.
+- Register.
+- Your Account.
+- Shopping Cart.
+- About Us.
+- Contact Us.
+- Forums.
+- Help.
+- FAQs.
+
+#### Just click youe heels three times and say, "There's no place like home"
+
+Users spect to have access to the Site ID button at any time, so they can **_reset_ and go back to the home page** no matter how lost they are while navigating.
+
+#### A way to search
+
+Stick to the *formula* of **a box and a button labeled as "Search"** (or a magnifying glass icon).
+
+Avoid:
+
+- **Fancy wording**, "Search" is just the standard.
+- **Instructions**, usually, no one needs them.
+- **Options**, give options only after the search, when the user can actually decide if they are needed or not.
+
+#### Secondary, tertiary, and whatever comes after tertiary
+
+After primary and secondary navigation levels, we often **don't give priority for lower levels**.
+
+That happens because:
+
+- The **limited amount of space on the page**.
+- The **limited time to design and develop**.
+- And most important, the **people already knows how to use the page**, so navigation is *not needed* enymore when they reaches these lower levels.
+
+#### Page names, or Why I love to drive in L.A
+
+In L.A.:
+
+- Street signs are big.
+- They'r in the right place.
+
+Four things about page names:
+
+- **Every page needs a name**: even when it's highlighted in the navigation.
+- The name needs to be in **the right place**: it should be framing it's content.
+- The name needs to be **prominent**: use position, size, color, and typeface for it.
+- The name needs to **match what I clicked**: when it happens it gives confort and trust.
+
+#### "You are here"
+
+To counteract the "lost in space" feeling on the Web, we need to **highlight the current location** on the navigation bar, list, or menu elements.
+
+We can do this by adding cues like:
+
+- A pointer.
+- Bold text.
+- Different text color.
+- Different background color.
+
+#### Breadcrumbs
+
+Breadcrumbs allows users to **back up a level or go Home**. They're most useful in **large sites with a deep hierarchy**, self explanatory, and don't take up much room.
+
+Best practices:
+
+- Put them at the top.
+- Use ">" between levels.
+- Boldface the last item (as "You are here").
+
+#### Three reasons why I still love tabs
+
+Tabs are one of the only few physical metaphors used in UIs, easy to identify and use. Effective when we **bring the active one to the front** and use a distinctive shape and color to make them "pop" on the screen.
+
+They're:
+
+- **Self evident**.
+- **Hard to miss** (they perfectly divide the navigation from the content).
+- **Slick** (easy to customize and apply).
+
+#### Try the trunk test
+
+No matter where you are on a Web site, or if you have use it before or not, **you should always be able to answer these questions** at a glance:
+
+- What site is this? (Site ID)
+- What page am I on? (Page name)
+- What are the majore sections of this site? (Sections)
+- What are my options at this level? (Local navigation)
+- Where am I in the scheme of things? ("You are here" indicators)
+- How can I search?
+
+### The Big Bang Theory of Web Design
+
+>The importance of getting people off on the right foot.
+
+**Designing the Home page** can be complex, here you need to cover all the bases, and, *a few other things*:
+
+- Site identity and mission.
+- Site hierarchy (for content and features).
+- Search.
+- Teases (good staff).
+- Content promos.
+- Feature promos.
+- Timely content.
+- Deals (ads., cross-promotion, co-branding).
+- Shortcuts (for the most frequently requested content).
+- Registration.
+- Show me what I'm looking for.
+- ...and what I'm not looking for.
+- Show me where to start.
+- Stablish credibility and trust.
+
+#### And you have to do it...blindfolded
+
+About the Home page:
+
+- **Everybody wants a piece of it**, people who makes it, and people who uses it, may have different points of view or different needs and interests, then the available and the desired content on the Home page may not be the same.
+- **Too many cooks**, everyone ends up with a different opinion about it.
+- **One size fits all**, the Home page is the only one that has to appeal to everyone.
+
+#### The First Casuality of War
+
+As said, we tend to put a lot of thing in the Home page, but we can't. We start filtering and removing things and sometimes we get rid of the most important one, **to make it easy to see the big picture**.
+
+Questions that a Home page has to answer:
+
+- What is this?
+- What can I do here?
+- What do they have here?
+- Why should I be here and not somewhere else?
+
+It's better if we can answer these questions at a glance and with very little effort. **The first few seconds you spend on a new Web site are critical**, (that's the Big Bang Theory of Web Design). **People often form wrong ideas** of what things are and how they work, so they end up creating more misinterpretations.
+
+##### The Top Four Plausible Excuses for not Spelling Out the Big Picture on the Home Page
+
+1. **"We don't need to. It's obvious"**: No, it's not obvious for everybody.
+1. **"After people have seen the explanation once, they'll find it annoying"**: No, it will not (and should not) be annoying at all.
+1. **"Anybody who really needs our site will know what it is"**: No, even the people who needs it, may not "get" it if done wrong.
+1. **"That's what our advertising is for"**: No, the TV/radio/Web/print ads not necessarily will be remembered when people gets to the site.
+
+#### But...the Home page? Really?
+
+Even knowing that nowadays most of times **people gets on a site from an external link**, the behavior tends to be that: **if they like what they see, they will visit the home page** to see who made it and what more they can find.
+
+#### How to get the message across
+
+There are three things to make it clear **what the site is about**:
+
+- **The tagline**: it's a valuable space next to the Site ID, we read it as a description of the whole site.
+- **The welcome blurb**: a terce description of the site.
+- **The "Learn more"**: people have become accostumated to watching short explanatory videos, they don't have the patience for a fair amount of explanation.
+
+People will often *get it* without even notice these three elements. But if they can't guess, there should be a place where they can go fint out.
+
+A few guidelines for **getting the message across**:
+
+- **Use as much space as necessary**: it's the main goal, so make sure you *do it well*.
+- **...but don't use any more space than necessary**: if you can, *leave some space* to other things.
+- **Don't use a mission statement as a Welcome blurb**: truth is that *nobody cares*.
+- **It's one of the most important things to test**: you can't trust your own judgment, just *people from outside* can tell you what's missing.
+
+#### Nothing beats a good tagline!™
+
+p101
