@@ -1,27 +1,33 @@
 # Linux
 
-Cheat sheet for *filesystem* and *text processing* commands on linux.
+Cheat sheet for **filesystem** and **text processing** commands on linux.
 
-```sh
+```bash
 [cmd] -- [args]  # Indicates that following args. are not options
 # E.g.: rm -- -f # Remove file called '-f'
 ```
 
-```sh
+## `cat`
+
+```bash
 cat <file> # Display the content of a text file
 cat -b     # Add line number to non-blank line
 cat -n     # Add line number to all lines
 cat -s     # Suppress repeated emplty lines to one
 ```
 
-```sh
+## `cd`
+
+```bash
 cd    # Change to home dir (env variable $HOME)
 cd ~  # Change to home dir
 cd /  # Change to root dir
 cd .. # Change to parent dir
 ```
 
-```sh
+## `cp`
+
+```bash
 cp <src> <dest>    # Copy src into a destination file or dir
 cp -f              # Force, if dest cannot be opened, it's removed
 cp -i              # Asks before overwrite
@@ -33,12 +39,16 @@ cp -t <dest> <src> # Copy all src into the dest dir
 cp -T              # Force dest to be taken as a normal file (not a dir)
 ```
 
-```sh
+## `df`
+
+```bash
 df    # Outputs free disk space
 df -h # Use human readable units
 ```
 
-```sh
+## `dir`
+
+```bash
 dir     # List current dir contents
 dir -a  # Include hidden files
 dir -l  # Long format
@@ -52,7 +62,9 @@ dir -X  # Sort extension name
 dir -1  # List one file per line
 ```
 
-```sh
+## `du`
+
+```bash
 du         # Outputs usage of disk space
 du -a      # Includes all files, not only dirs
 du -c      # Display a grand total at the end
@@ -61,20 +73,26 @@ du -h      # Print human readable units
 du -s      # Display only a grand total
 ```
 
-```sh
+## `echo`
+
+```bash
 echo <str> # Outputs a string
 echo -n    # Avoid a new line at the end
 echo -e    # Enables escaped chars.
 echo -E    # Disables escaped chars.
 ```
 
-```sh
+## `head`
+
+```bash
 head <file>           # Outputs the first 10 lines of file
 head -c<num>, --bytes # Prints num amount of bytes
 head -n<num>, --lines # Prints num amount of lines instead of 10
 ```
 
-```sh
+## `ls`
+
+```bash
 ls     # List current dir contents
 ls -a  # Include hidden files
 ls -l  # Long format
@@ -86,12 +104,16 @@ ls -t  # Sort by time
 ls -X  # Sort by extension name
 ```
 
-```sh
+## `mkdir`
+
+```bash
 mkdir <dir>         # Makea a new dir
 mkdir path/<dir> -p # Creates "path" if doesn't exists
 ```
 
-```sh
+## `mv`
+
+```bash
 mv <src> <dest>    # Move src into a destination file or dir
 mv -f              # Force overwriting
 mv -i              # Asks before overwrite
@@ -101,11 +123,15 @@ mv -t <dest> <src> # Copy all src into the dest dir
 mv -T <src> <dest> # Force dest to be taken as a normal file (not a dir)
 ```
 
-```sh
+## `pwd`
+
+```bash
 pwd # Show current dir
 ```
 
-```sh
+## `rm`
+
+```bash
 rm <file>    # Remove file
 rm -f <file> # Force removing
 rm -i <file> # Ask mebofe removing each file
@@ -113,21 +139,29 @@ rm -r <dir>  # Remove dir and its content recursively
 rm -d <dir>  # Remove dir if it's empty
 ```
 
-```sh
+## `rmdir`
+
+```bash
 rmdir <dir> # Remove empty dir
 ```
 
-```sh
+## `tail`
+
+```bash
 tail <file>           # Outputs the last 10 lines of file
 tail -c<num>, --bytes # Prints num amount of bytes
 tail -n<num>, --lines # Prints num amount of lines instead of 10
 ```
 
-```sh
+## `touch`
+
+```bash
 touch <file> # Create or update file
 ```
 
-```sh
+## `wc`
+
+```bash
 wc <file>      # Print newline, word, and byte count
 wc -c, --bytes # Print the byte counts
 wc -m, --chars # Print the char counts
@@ -135,10 +169,23 @@ wc -l, --lines # Print the line counts
 wc -w, --words # Print the word counts
 ```
 
-<!-- ```sh
-ping <host> # Ping host "host"
+## `ping`
+
+```bash
+ping <host>
+ping -n <number> # Number of echos request to send
+ping -l <number> # Buffer size
+ping -w <number> # Timeout in milliseconds to wait for each reply
+```
+
+<!-- ## `grep`
+
+```bash
+grep <patterns> <file>
+``` -->
+
+<!-- ```bash
 awk
-grep
 man
 sed
 vi
