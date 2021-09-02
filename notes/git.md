@@ -2,35 +2,74 @@
 
 ## Basic
 
-- Initialize: `git init`
-- Add file changes (untracked, modified and deleted): `git add .` (`.` = all)
-- Commit changes: `git commit -m "commit message"`
-- Clear local repo: `git rm -r --cached .`
-- Show last commit message: `git log -1` or `git log -1 <branch-name>`.
+```bash
+git init
+```
 
-## Branch
+```bash
+# Add changes to stage
+git add [<file>] # Specific files
+git add .        # (., -all, -A)
+```
 
-- Create branch: `git branch <branch-name>`
-- Delete a branch: `git branch -d <branch-name>` (`-d` = `--delete`) or (`-D` to force it)
-- List local branches: `git branch -l` (`-l` = `--local`)
-- List remote branches: `git branch -r` (`-r` = `--remotes`)
-- List all branches: `git branch -a` (`-a` = `--all`)
-- List branches with more details: `git branch -v` (`-v` = `--verbose`)
-  - To include upstream branch: `git branch -vv`
-- Switch to a branch: `git checkout <branch-name>`
+```bash
+# Do/apply changes
+git commit -m <commit-message>
+```
+
+```bash
+# Extra
+git rm -r --cached # Clear local repo
+git log            # Show commit logs
+git log -1         # To show last commit
+```
+
+## Branches
+
+```bash
+git branch <branch-name>    # Create branch
+git branch -d <branch-name> # (-d, --delete) or -D to force
+```
+
+```bash
+# List branches
+git branch -a # (-a, --all)
+git branch -l # (-l, --local)
+git branch -r # (-r, --remote)
+git branch -v # (-v, --verbose) or -vv to include upstream
+```
+
+```bash
+# Switch to a branch
+git checkout <branch-name>
+```
 
 ## Remote
 
-- Add a remote origin: `git remote add <remote-name> <repo-url>`
-- Remove a remote origin: `git remote remove <remote--name>`
-- Update local list of remote branches: `git remote update <remote-name> --prune`
-- Show remote info `git remote show <remote-name>`
-- Send commit changes to remote and set remote/branch track: `git push -u <remote-name> <branch-name>` (`-u` = `--set-upstream-to`, used to set the _upstream_, the remote/branch track. _Use it once_, then it's optional, use only `git push`
-- Delete a remote branch: `git push <remote-name> --delete <branch-name>`
-  - Or: `git push <remote-name> :<branch-name>`
-- Grab all from remote: `git pull <remote-name> <branch-name>`
-  - If `-u` is already set, use only `git pull`
-  - Or `git pull --allow-unrelated-histories` if local and remote files _doesn't match_
+```bash
+git remote add <remote-name> <repo-url>
+git remote remove <remote-name>
+git remote update <remote-name> --prune # Update local list of remote branches
+git remote show <remote-name>           # Show remote info
+```
+
+```bash
+# Send changes
+git push -u <remote-name> <branch-name> # (-u, --set-upstream-to) use '-u' only once
+```
+
+```bash
+# Delete a branch
+git push <remote-name> --delete <branch-name> # Or...
+git push <remote-name> :<branch-name>
+```
+
+```bash
+# Grab all
+git pull
+git pull <remote-name> <branch-name> # If '-u' wasn't set before
+git pull --allow-unrelated-histories # If local and remote files doesn't match
+```
 
 ---
 
