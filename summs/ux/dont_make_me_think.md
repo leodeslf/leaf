@@ -284,4 +284,90 @@ A few guidelines for **getting the message across**:
 
 #### Nothing beats a good tagline!™
 
-p101
+A tagline is a pithy phrase that characterizes the whole enterprise, summing up **what it is** and **what makes it great**.
+
+>A good tagline is one that no one else in the world could use except you.
+>
+>Jakob Nielsen.
+
+Good taglines are:
+
+- Clear and informative.
+- Just long enough, but not too long.
+- Good at conveying differentiation and clear benefits.
+- Not generic.
+- Personable, lively, and sometimes clever.
+
+#### Tagline? We don't need no stinking tagline
+
+Some sites don't actually need taglines. When they come from an already achieved **household word status**, or they are well known from their **offline origins**. Even in these cases, sites would benefit from a tagline.
+
+#### The fifth question
+
+Once we know **what we are looking at**, we need to answer **where to start if I want to**:
+
+- Search?
+- Browse?
+- Sample their best stuff?
+
+If it's a step-by-step process site, it should be obvious, if not, it should be easy to find, for example, the log in or sign In buttons. Unfortunately, the *need to promote everything* can obscure the important stuff. Then we need to make the **entry points visible**. It helps to label them like "Search", "Sign in", "Start here", etc.
+
+#### Why Golden Geese make such tempting targets
+
+One of the worst behaviors is to **try to promote everything**.
+
+Promoting things in the Home page guarantees more traffic to the promoted section. The cost of a promotional overload is an **overall loss in effectiveness** of the Home page as it gets overpopulated.
+
+That's *The Tragedy of the Commons*.
+
+>Any shared resource (a "commons") will inevitabely be destroyed by overuse.
+
+## Making Sure You Got them Right
+
+### "The Farmer and the Cowman Should Be Friends"
+
+> Why most arguments about usability are a waste of time, and how to avoid them.
+
+The team (PMs, designers, marketing, devs, etc) needs to make decisions about usability. Unfortunately they/we end up having an **endless discussion** consisting of *personal beliefs* that cannot be proven, such as a "religious debate".
+
+Instead of solving problems, these *arguments* create **tension** among the team members, and result in a **waste of time**.
+
+#### "Everybody likes ___."
+
+We are not only Web *creators*, are also Web *users*. So we have our own feelings and opinions about it. Often, we tend to think that others like and dislike the same as we do. **We tend to think that most users are like us**.
+
+That happens even when we actually know that *other people* can hate what we like, in fact, some of them belong to our own Web team. Not always *sensible* people, there aren't many of them.
+
+#### Farmers vs. cowmen
+
+On top of that personal passion, we have the **professional passion**. We don't only have our own point of view about each specific element, but about the whole **target** of the project.
+
+I.e., devs tend to like ingenious features, while designers enjoy plesant visual experiences. And maybe the CEO doesn't care about any of these things and just wants to make something that came out from a dream (true story).
+
+#### The myth of the Average User
+
+While building a Web site, we figure out that not only team members are different from each other, they are different from the Web user, and even more, **each Web user is different** from each other.
+
+Then, thinking that *most* Web users are like *anything* is just a myth. **There is no Average User**.
+
+>All Web users are unique and all Web use is basically idiosyncratic.
+
+Each Web user has it's own intentions, motivations, knowledge, etc. Their individual reactions are based on **so many variables** that it's almost impossible to describe the Average User. It's even **counter-productive**.
+
+There is no "right" answer to design questions, thay just need to be carefully thought out, well executed, and tested. There are some things we should *never* do, and some others that we should *rarely* do, but usually Web teams don't even argue about these ones.
+
+#### The antidote for relogious debates
+
+At the end, **there is no point in trying to generalize**, saying what is *good* and what is *bad*. What we really need is a **specific solution** for a specific problem in a specific context.
+
+The only thing that *is good* is the one that works. And the only way to know it is by **testing**. There's no substitute fot it.
+
+We have to use our **collective skill**, experience, creativity, and common sense to build "the solution". Whatch people as they try and (if possible) finally use it. That's all.
+
+Debates about what *we like* and what *the user (supposedly) likes* are just a waste of time and energy, what really matters is what **works**.
+
+### Usability testing on 10 cents a day
+
+>Keeping testing simple -so you do enough of it.
+
+p115
