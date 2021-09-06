@@ -370,4 +370,13 @@ Debates about what *we like* and what *the user (supposedly) likes* are just a w
 
 >Keeping testing simple -so you do enough of it.
 
-p115
+Usability testing has to make part of the project from the **beginning**. Sadly, a lot of it still gets done: too *little*, too *late*, and for *wrong reasons*.
+
+#### Repeat after me: Focus groups are not usability tests
+
+- **Focus group**: is a small group of **people talking** about their opinions and experiences about products, and their reaction to new ones. It's for getting a **sampling of users' feelings**.
+- **Usability test**: is **watching a person try to use** something, to complete tasks, then detecting and **fixing what confuses or frustrates** them.
+
+The main difference is that in usability, you watch people **use and behave**, instead of listening opinions and past experiences.
+
+Focus groups are good for determining what your audience wants, needs, and likes (in the *abstract*). They let you know if your product **makes sense** and your **value proposition is attractive**. They are best used in planning stages. They're *not* good for learning about whether your site works and how to improve it. That's what usability testing does, and it should be done through the entire process.
