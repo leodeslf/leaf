@@ -379,4 +379,4 @@ Usability testing has to make part of the project from the **beginning**. Sadly,
 
 The main difference is that in usability, you watch people **use and behave**, instead of listening opinions and past experiences.
 
-Focus groups are good for determining what your audience wants, needs, and likes (in the *abstract*). They let you know if your product **makes sense** and your **value proposition is attractive**. They are best used in planning stages. They're *not* good for learning about whether your site works and how to improve it. That's what usability testing does, and it should be done through the entire process.
+Focus groups are good for determining what your audience wants, needs, and likes (in the abstract). They let you know if your product **makes sense** and your **value proposition is attractive**. They are best used in *planning* stages. They're *not* good for learning about whether your site works and how to improve it. That's what usability testing does, and it should be done through the entire process.
