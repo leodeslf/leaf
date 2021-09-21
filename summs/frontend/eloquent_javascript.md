@@ -6,7 +6,7 @@ Written by Marijn Haverbeke.
 
 ### Numbers
 
-Max possible number is close to 9 with 15 zeros.  
+Maximum possible number is close to 9 with 15 zeros.  
 Scientific notation `2e8`, means `2 * (10 ** 8)`.  
 Arithmetic operators with the same precedence execute from left to right.  
 The `/`, `*` and `%` share the same precedence, `+` and `-` also do.  
@@ -21,27 +21,27 @@ Code inside `${}` will be computed.
 
 ### Operators
 
-Logical operator executes first \(`||`, then `&&`\), then comparison operators \(`>, >=, <, <=, ==, ===`\), then the rest.  
-Conditional operator \(ternary\) `true ? 1 : 0`.  
+Logical operator executes first (`||`, then `&&`), then comparison operators (`>, >=, <, <=, ==, ===`), then the rest.  
+Conditional operator (ternary) `true ? 1 : 0`.  
 Short-circuiting:
 
-* `true || x --> true` \(x is never readed\).
+* `true || x --> true` (x is never readed).
 * `false || x --> x`.
 * `true && x --> x`.
-* `false && x --> false` \(x is never readed\).
+* `false && x --> false` (x is never readed).
 * `null == undefined --> true`.
 * `null === undefined --> false`.
-* `a ?? x` \(returns x **only** if `a` is `undefined` or `null`\). \[Not EJS\]
-* `??` is called _nullish coalescing_. \[Not EJS\]
+* `a ?? x` (returns x **only** if `a` is `undefined` or `null`). [Not EJS]
+* `??` is called _nullish coalescing_. [Not EJS]
 * Automatic type conversion is called _type coercion_.
 
 ## Program Structure
 
 Make code readable:
 
-* Use semicolons \(at the end of a statement\).
-* Use braces \(to wrap code blocks\).
-* Indent with two \(or four\) spaces.
+* Use semicolons (at the end of a statement).
+* Use braces (to wrap code blocks).
+* Indent with two (or four) spaces.
 
 The `brake` jumps out of the loop. The `continue` jumps to the loop's next iteration.
 
@@ -49,7 +49,7 @@ The `brake` jumps out of the loop. The `continue` jumps to the loop's next itera
 
 ### Closure
 
-Is the ability to access to a local binding created in a context that is no longer active (a function call that has ended).  
+Is the ability to access a local binding created in a context that is no longer active (a function call that has ended).  
 This feature —being able to reference a specific instance of a local binding in an enclosing scope— is called _closure_.
 
 Example:
@@ -85,7 +85,7 @@ console.log(half(2));
 
 ### Functions Visibility
 
-Function definition \(or binding\) is under top-to-bottom flow of control.  
+Function definition (or binding) is under top-to-bottom flow of control.  
 Function declaration is _hoisted_.
 
 ### Functions Scope
@@ -100,10 +100,10 @@ A function that has no side effects and doesn't read global bindings is called _
 
 ### Objects Properties
 
-Property names are strings \(calling `array.length` and `array["length"]` is the same\).  
+Property names are strings (calling `array.length` and `array["length"]` is the same).  
 In JavaScript, functions contained in properties are called _methods_.  
-A non-existent property returns `undefined` \(when not declared or `delete`d\).  
-The `in` operator returns whether exists a `("property" in anObject)` or not.  
+A non-existent property returns `undefined` (when not declared or `delete`d).  
+The `in` operator returns whether there exists a `("property" in anObject)` or not.  
 The `keys` function returns all the properties as an array.
 
 ### Some Array Methods
@@ -149,7 +149,7 @@ The `split(separator)`:
 
 * **Returns an array of substrings**.
 * Split by any occurence of the given separator.
-* If the separator is an empty string \(`""`\), the original is split between each character.
+* If the separator is an empty string (`""`), the original is split between each character.
 
 The `repeat(n)` **returns n concatenated copies** of the original one.
 
@@ -178,7 +178,7 @@ hof('That is')('an unexpected')('and weird behavior');
 
 ### Strings and Character Codes
 
-The `charCodeAt` returns a code unit \(half character if it's an emoji for example\).  
+The `charCodeAt` returns a code unit (half character if it's an emoji for example).  
 The `codePointAt` returns a full Unicode character.
 
 ```javascript
@@ -199,14 +199,14 @@ console.log(horse.codePointAt(0));
 
 ## The Secret Life of Objects
 
-It's a common practice to put an underscore \(\_\) at the start of a _private_ property name.  
+It's a common practice to put an underscore (\_) at the start of a _private_ property name.  
 The `call` method takes `this` as the first parameter.  
 Each function defined with the `function` keyword has its own `this` binding.  
 Arrow functions do not bind their own `this`.
 
 ### Symbols
 
-Several properties can \(but should not\) have the same name with symbols.  
+Several properties can (but should not) have the same name with symbols.  
 Symbols are _included_ or _accessed_ by using square brackets.
 
 Example:
@@ -251,7 +251,7 @@ console.log(name == nameAgain);
 // --> false
 ```
 
-When declaring through `new Object` syntax \(created by `class` or `function` notation\), symbols can be applied directly on the `Object.prototype`.
+When declaring through `new Object` syntax (created by `class` or `function` notation), symbols can be applied directly on the `Object.prototype`.
 
 Example:
 
@@ -278,8 +278,8 @@ Symbols don't get listed on `Object.keys()` or `Object.getOwnPropertyNames()`. T
 
 ### Getters, Setters and Statics
 
-The `get` properties are accessed directly, without the call notation \(with parenthesis at the end\).  
-Passing args to a `set` method is done directly too, doesn't make use of function call notation.
+The `get` properties are accessed directly, without the call notation (with parenthesis at the end).  
+Passing args to a `set` method is done directly too, it doesn't make use of function call notation.
 
 Example:
 
@@ -309,11 +309,11 @@ console.log(timer.status);
 
 ### Inheritance
 
-The `instanceof` see through inherited types.
+The `instanceof` sees through inherited types.
 
 ## Bugs and Errors
 
-The `'use strict'` avoids automatic 'corrections' and assumptions made by JavaScript, instead throwing errors, also removes some features entirely.  
+The `'use strict'` avoids automatic "corrections" and assumptions made by JavaScript, instead throwing errors, it also removes some features entirely.  
 The `debugger` creates a breakpoint and pauses the program if the developer tools is active.  
 When JavaScript 'throws' an error it stops all the call stack that ended in that exception, this is called _unwinding the stack_.  
 We can raise an exception manually with the `throw` keyword, like this: `throw new Error('Oops!')`.
@@ -344,20 +344,20 @@ console.log(/abc/.test('aac'));
 // --> false
 ```
 
-### Backslash codes \(character groups\)
+### Backslash codes (character groups)
 
 * `\b` word boundary.
 * `\d` digit.
-* `\w` alphanumeric \("word"\).
+* `\w` alphanumeric ("word").
 * `\s` whitespace.
 * `\D` _not_ a digit.
-* `\W` _not_ alphanumeric \("word"\).
+* `\W` _not_ alphanumeric ("word").
 * `\S` _not_ whitespace.
 * `.` any, except a newline.
 
 ### Set of characters
 
-A _set of characters_ \(possibilities\) can be defined between square brackets.  
+A _set of characters_ (possibilities) can be defined between square brackets.  
 We can also define a _range of characters_ like `[0-9]`, `[a-z]` or `[A-Z]`.
 
 Example:
@@ -371,7 +371,7 @@ console.log(/[0-9]/.test('5'));
 // --> true
 ```
 
-Backslash codes skill working when used between square brackets \(in a set of characters\). But other _symbols_, such as `+` or `.`, lose their special meanings.
+Backslash codes still work when used between square brackets (in a set of characters). But other _symbols_, such as `+` or `.`, lose their special meanings.
 
 ### Special symbols
 
@@ -386,7 +386,7 @@ Using `[^]` can refer to any character, including a new line.
 
 ### Counters
 
-Braces after an element indicates that it should occur a _precise number of times_ \(or a range of times\).
+Braces after an element indicates that it should occur a _precise number of times_ (or a range of times).
 
 Example:
 
@@ -397,7 +397,7 @@ console.log(/a{4}/.test('aaaa'));
 console.log(/\d{1, 3}/.test('36'));
 // --> true
 
-// Omitting the last value means an open-ended range (any times).
+// Omitting the last value means an open-ended range (any amount of times).
 console.log(/a{1,}/.test('aaa'));
 // --> true
 ```
@@ -448,7 +448,7 @@ console.log('Number is 12'.match(/\d+/));
 
 ### Choice patterns
 
-Grouping several patterns within parentheses and separating them with a pipe \(`|`\), makes each one of them an option \(it will match just one of them at a time\).
+Grouping several patterns within parentheses and separating them with a pipe (`|`), makes each one of them an option (it will match just one of them at a time).
 
 Example:
 
@@ -486,7 +486,7 @@ console.log(string.replace(/\b(\w+)\b/g, str => str.toLowerCase()));
 
 ### Greedy matching
 
-Repetition operators \(`+`, `*`, `?`, `{}`\) will match as much as they can.
+Repetition operators (`+`, `*`, `?`, `{}`) will match as much as they can.
 
 Example:
 
@@ -499,7 +499,7 @@ console.log(commentedCode.replace(/\/\*[^]*\*\//g, ""));
 ```
 
 On a _greedy_ way, it will take the first "start" and the last "end" to match as much as it can.  
-To take a smaller match, we can put a question mark after the repetition operators to make them non-greedy \(`+?`, `*?`, `??`, `{}?`\).
+To take a smaller match, we can put a question mark after the repetition operators to make them non-greedy (`+?`, `*?`, `??`, `{}?`).
 
 Example:
 
@@ -517,10 +517,10 @@ Example:
 
 ```javascript
 // Set of characters with special meanings.
-let escapeRegex = /[\\?$^()[\]{}.+*]/g;
+let escapeRegex = /[\\?$^()[]{}.+*]/g;
 let text = 'To be escaped: \\ ? $ ^ ( ) [ ] { } . + *';
 console.log(text.replace(escapeRegex, '\\$&'));
-// --> To be escaped: \\ \? \$ \^ \( \) \[ \] \{ \} \. \+ \*
+// --> To be escaped: \\ \? \$ \^ ( ) [ ] \{ \} \. \+ \*
 ```
 
 ### LastIndex property
@@ -545,15 +545,15 @@ console.log(re.exec('now it is 90'));
 
 Options:
 
-* `g` _global_, searches matches throughout all the input, can return more than one match.
-* `y` _sticky_, search for a match at the `lastIndex` \(zero by default\).
+* `g` _global_, searches matches throughout all the input and can return more than one match.
+* `y` _sticky_, search for a match at the `lastIndex` (zero by default).
 * `i` _case insensitive_.
 
-Note: on sticky \(`y`\), match will succeed only if it starts directly `lastIndex`, whereas global will search ahead.
+Note: on sticky (`y`), match will succeed only if it starts directly with `lastIndex`, whereas global will search ahead.
 
 ## Modules
 
-With `import`, we take the **binding** from another modules, not the value.  
+With `import`, we take the **binding** from other modules, not the value.  
 If the exported binding is redefined, the modules that imported it will see its new value.
 
 ## Asynchronous Programming
@@ -576,7 +576,7 @@ let promiseValue = new Promise((resolve, reject) => { /* Do something. */ }))
 
 ### Async functions
 
-The `async` functions implicitly returns a promise. The `await` keyword can be used only inside an `async` function.
+The `async` functions implicitly return a promise. The `await` keyword can be used only inside an `async` function.
 
 Example:
 
@@ -628,17 +628,17 @@ for (let power of powers(2)) {
 
 ### The Web
 
-The URL \(Uniform Resource Locator\) structure is `[protocol]://[server]/[path]`.
+The URL (Uniform Resource Locator) structure is `[protocol]://[server]/[path]`.
 
 ### HTML
 
-In HTML, an ampersand \(&\) followed by a name or character code and a semicolon \(;\) is called an _entity_.
+In HTML, an ampersand (&) followed by a name or character code and a semicolon (;) is called an _entity_.
 
 ## The DOM
 
 ### Trees
 
-Each element has a `nodeType` property, which is a number code that identifies the type of the node. They are constant properties of `Node` object.
+Each element has a `nodeType` property, which is a number code that identifies the type of the node. They are constant properties of `Node` objects.
 
 Examples:
 
@@ -647,17 +647,17 @@ Examples:
 * `Node.COMMENT_NODE` = 8.
 * `Node.DOCUMENT_NODE` = 9.
 
-There are 12 codes \(2, 4, 5, 6 and 12 are deprecated\).
+There are 12 codes (2, 4, 5, 6 and 12 are deprecated).
 
 ### Moving through the tree
 
-Every node has a `parentNode` and only element nodes has `childNode`. Also `firstChild` and `lastChild`, similarly, `previousSiblind` and `nextSilbling` \(when there isn't a previous or a next, it returns `null`\).
+Every node has a `parentNode` and only element nodes have `childNode`. Also `firstChild` and `lastChild`, similarly, `previousSiblind` and `nextSilbling` (when there isn't a previous or a next, it returns `null`).
 
-There is also the `children` property, but contains only element nodes \(`nodetype` = 1\), not as `childNodes` which contains all of them.
+There is also the `children` property, but contains only element nodes (`nodetype` = 1), not as `childNodes` which contains all of them.
 
 ### Changing the document
 
-A node can exist only in one place. That means if we take an element from a certain part of the DOM tree and we insert it into a different part, it will first be removed from the dom, and then insert it in its new place.
+A node can exist only in one place. That means if we take an element from a certain part of the DOM tree and we insert it into a different part, it will first be removed from the dom, and then inserted in its new place.
 
 The `replaceChildren` method takes the new node, and the one to be replaced as arguments.
 
@@ -675,8 +675,8 @@ Commonly used attributes are `class`, `id`, `href`, but we can also create our o
 
 Useful element properties:
 
-* The `offsetWidth` and `offsetHeight` gives the space the element takes up in pixels.
-* Similarly, `clientWidth` and `clientHeight` gives the size _inside_ the element, ignoring the border.
+* The `offsetWidth` and `offsetHeight` give the space the element takes up in pixels.
+* Similarly, `clientWidth` and `clientHeight` give the size _inside_ the element, ignoring the border.
 * To get the `top`, `bottom`, `left` and `right` position of an element, use the `getBoundingClientRect` method.
 * Current scroll position can be found with `pageXOffeset` and `pageYOfffset`.
 
@@ -762,7 +762,7 @@ The shape of an HTTP request is `[method] [path] [version]`.
 Methods: `GET`, `POST`, `PUT`, `DELETE`.  
 A server response, e.g.: `HTTP/1.1 200 OK`. Starts with the protocols version, followed with the status code, and finally a human-readable version of that status.  
 Status code starting with a `2` indicates success. Starting with a `4` means there was something wrong. Codes with `5` means an error happened on the server.  
-The first line of a request can be followed by a number of _headers_. Headers shape is `name: value`.
+The first line of a request can be followed by a number of _headers_. Header's shape is `name: value`.
 
 ### Browsers and HTTP
 
@@ -779,7 +779,7 @@ Forms:
 Resulting _submitted_ request: `GET /example/message.html?name=Some&lname=Name HTTP/1.1`.
 
 Ampersand is used to separate pairs.  
-Text must be escaped \(encoded\) to use it as a request. Use `encodeURIComponent` to parse, and `decodeURIComponent`.
+Text must be escaped (encoded) to use it as a request. Use `encodeURIComponent` to parse, and `decodeURIComponent`.
 
 ### Fetch
 
@@ -819,7 +819,7 @@ fetch('example/data.txt')
 ### Focus
 
 To move the focus to an element use `focus`. To remove focus use `blur` method. If the user is expected to interact immediately use `autofocus`.  
-We can influence the order of elements when moving through with `TAB` using `tabindex` attribute. A `tabindex` of -1 makes tabbing skip over an element.
+We can influence the order of elements when moving through with `TAB` using the `tabindex` attribute. A `tabindex` of -1 makes tabbing skip over an element.
 
 ### The form as a whole
 

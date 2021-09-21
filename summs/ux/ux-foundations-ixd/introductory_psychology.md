@@ -4,7 +4,7 @@
 
 Most important senses interaction focuses on are: vision, hearing, touch, and proprioception.
 
-What the user sees and how, keeping in mind possible user visual deficiencies, what the user hears when something happens, nothing or some sound signals, how the user squeezes or drags an element, the device vibrates or not, how the elements on the UI are distributed and percieved.
+What the user sees and how, keeping in mind possible user visual deficiencies, what the user hears when something happens, nothing or some sound signals, how the user squeezes or drags an element, the device vibrates or not, how the elements on the UI are distributed and perceived.
 
 ## Perception
 
@@ -16,7 +16,7 @@ Shape, lightness, color, distance, size, location, and timbre are some of these 
 
 ## Gestalt principles
 
-Starting in 1910, Max Wertheimer, a German psychologist, noticed that a series of blinking likghts creates the illusion of motion. The *Phi Effect*.
+Starting in 1910, Max Wertheimer, a German psychologist, noticed that a series of blinking lights creates the illusion of motion. The *Phi Effect*.
 
 * Gestalt means "shape and form".
 * We perceive the world as meaningful and complete objects, not a series of independent parts.
@@ -25,8 +25,8 @@ Starting in 1910, Max Wertheimer, a German psychologist, noticed that a series o
 
 * Figure-ground: how we organize our perceptions in terms of foreground objects, the clearly defined ones, and background objects, which may be unbounded or vaguely defined.
 * Simplicity: how we organize our perceptions into the simplest possible experience.
-* Proximity: objects near one tnother in space or time, are perceived as being a group.
-* Similarity: objects with similar characteristics, such as form, color, size, and brightness, are preceived as belonging together.
+* Proximity: objects near one to other in space or time, are perceived as being a group.
+* Similarity: objects with similar characteristics, such as form, color, size, and brightness, are perceived as belonging together.
 * Common fate: how objects moving together are perceived as belonging together.
 * And others like closure, continuity, and symmetry.
 
@@ -34,10 +34,10 @@ Starting in 1910, Max Wertheimer, a German psychologist, noticed that a series o
 
 * Physical characteristics of objects make possible what we are able to do.
 * We recognize when we are able to interact.
-* Affordabces are relavite to the individual and their ability to interact.
+* Affordances are relative to the individual and their ability to interact.
 
-* It don't require conscious attention and thought.
-* It arise from our intrinsic understanding of our physical relationship with the world arround us.
+* It doesn't require conscious attention and thought.
+* It arises from our intrinsic understanding of our physical relationship with the world around us.
 
 Don Norman introduced the concept of the *perceived affordance*. When people perceive similarity between a digital representation and an actual physical object.
 
@@ -76,16 +76,16 @@ We need to understand both the user **goals** and **needs**. As we know what act
 #### Victor Vroom - Expectancy theory
 
 * Expectancy: "If I put forth the effort necessary, then I will perform well".
-* Instrumentality: "If I perform well, then I will receive and outcome".
+* Instrumentality: "If I perform well, then I will receive an outcome".
 * Valence: "If I value the outcome, then I will be motivated to put forth the effort necessary".
 
 #### ERG theory
 
 * Existence: basic survival and safety.
-* Relatedness: establishing and manteining interpersonal relationships.
+* Relatedness: establishing and maintaining interpersonal relationships.
 * Growth: intrinsic desire for personal development and self-esteem.
 
-## Atention and Memory
+## Attention and Memory
 
 ### Attention
 
@@ -96,8 +96,8 @@ As the designers, we need to provide **structure**, **hierarchy** and guide atte
 ### Memory
 
 * Our ability to store, recall, and recognize information.
-* We expect it to work and only notice when if fails.
-* We depend in our devices to store information for us to extend our momory.
+* We expect it to work and only notice when it fails.
+* We depend on our devices to store information for us to extend our memory.
 
 #### Three stages of memory
 
@@ -111,7 +111,7 @@ Short-duration and limited capacity memory for active thinking and processing.
 
 ##### Long-term
 
-Long duration and very large capacity, this where we store information for future.
+Long duration and very large capacity, this is where we store information for future.
 
 * Declarative:
   * Things we know (knowledge).
@@ -122,11 +122,11 @@ Long duration and very large capacity, this where we store information for futur
   * Things we can do (skills).
   * Easier to show how to perform an action or task than to describe how to do id.
 
-### Encoding inormation
+### Encoding information
 
 #### Schemas
 
-Memory structures that organize information for meaninng and associations.
+Memory structures that organize information for meaning and associations.
 
 #### Assimilation
 
@@ -144,7 +144,7 @@ What we usually think of as memory: we store information and retrieve it when we
 
 #### Recognition
 
-When make a selection from a set of choices by comparing what we perceive with what we remember.
+It's making a selection from a set of choices by comparing what we perceive with what we remember.
 
 ### Recognition is easier than recall
 
@@ -157,7 +157,7 @@ When make a selection from a set of choices by comparing what we perceive with w
 * Memory for images is better than our memory for words.
 * Images can represent complex concepts, easier and faster than words.
 
-### Patern recognition
+### Pattern recognition
 
 The ability to see patterns and to make connections between similar and related things.
 
@@ -178,7 +178,7 @@ Methods:
 
 ### Decision-making
 
-It's making the best choice from a set of options for a given context or situaiton.
+It's making the best choice from a set of options for a given context or situation.
 
 Methods:
 
@@ -202,11 +202,11 @@ They are our **thoughts and expectations** about how things work in the real wor
 
 #### Mental model
 
-Prior experiences and expectations of how a product should work in the users mind.
+Prior experiences and expectations of how a product should work in the user's mind.
 
 #### Concept model
 
-Prior experiences, plans, and design intents for how a product should work in the creators mind.
+Prior experiences, plans, and design intents for how a product should work in the creator's mind.
 
 #### System model
 
@@ -251,11 +251,11 @@ It occurs when people have to put in more than they should and are therefore slo
 
 ## Theories of Emotion
 
-Emotions are subjective and difficult to define and measure, they may vary by individual, context. The absence of negative experiences is not enough to create positive emotions.
+Emotions are subjective and difficult to define and measure, they may vary by individual context. The absence of negative experiences is not enough to create positive emotions.
 
 ### Designing for positive experiences
 
-Increase the **frequency** and **duration** if positive emotianal experiences. Decrease or avoid the negative emotional experiences.
+Increase the **frequency** and **duration** if positive emotional experiences. Decrease or avoid the negative emotional experiences.
 
 ### Classifying emotions
 
@@ -266,25 +266,25 @@ Increase the **frequency** and **duration** if positive emotianal experiences. D
 * Fear
 * Sadness
 * Happiness
-* Surpise
+* Surprise
 
 ## Designing for delight
 
 **Surprise only works once**.
 
-A continuous stream of surprising new thing is unsustainable.
+A continuous stream of surprising new things is unsustainable.
 
 ### Levels of Delight (Tollady and Rowe)
 
-* Surface delight comes from the characteristics of the product we percieve and experience.
+* Surface delight comes from the characteristics of the product we perceive and experience.
 * Deep delight emerges when products are frictionless, effortless, easy, and meaningful.
 * Strive to create products that are deeply delightful.
 
 ### Creating Delight (Dana Chisnell)
 
 * Pleasure arises from humor, uniqueness, personality, beauty, simplicity, and the ability to anticipate needs.
-* Flow arises from ease of use, efficiency, immersivenesss, automation, and when people feel empowered.
-* Meaning creates delight with purpouse, value, connectedness, relevance, and personal engagement with compassion and care.
+* Flow arises from ease of use, efficiency, immersiveness, automation, and when people feel empowered.
+* Meaning creates delight with purpose, value, connectedness, relevance, and personal engagement with compassion and care.
 
 ### Hierarchy of product quality (Aaron Walter)
 
@@ -293,13 +293,13 @@ A continuous stream of surprising new thing is unsustainable.
 * Ease of Use
 * Pleasurable (Delight)
 
-Making something **functional and reliable is not enough** to be "ready to use". We should think about it's ease of use and rewarding/pleasurable part before launching it.
+Making something **functional and reliable is not enough** to be "ready to use". We should think about it's ease of use and the rewarding/pleasurable part before launching it.
 
 ### Incorporating Delight
 
 * Delight is many things, and **it must be part of the design process**.
 * It cannot be added at the end.
-* Delight (and positive amotional experiences in general) should be on par with functionality, reliability, and usability.
+* Delight (and positive emotional experiences in general) should be on par with functionality, reliability, and usability.
 
 ## Empathy
 
@@ -317,15 +317,15 @@ Making something **functional and reliable is not enough** to be "ready to use".
 * Develop good listening and observation skills.
 * Collect objective data about how your product is actually being used.
 * Remove yourself from the product decisions.
-* Practice with colleagues and helo each other improve.
+* Practice with colleagues and help each other improve.
 * Employ user-centered design methods.
 
 ## Learning Behaviors
 
 ### Behavior and Interaction Design
 
-* Focus and the signals and cues that indicates certain behaviors may be performed.
-* Internal states, motivations, and emotions are difficult to detect and measure, so we observe bahaviot to try to understand needs and goals.
+* Focus and the signals and cues that indicate certain behaviors may be performed.
+* Internal states, motivations, and emotions are difficult to detect and measure, so we observe behavior to try to understand needs and goals.
 
 ### Multiple Theories of Behavior
 
@@ -335,14 +335,14 @@ Making something **functional and reliable is not enough** to be "ready to use".
 ### Basic Terminology
 
 * **Stimulus** is a signal.
-* **Reasponse** is a behavior.
+* **Response** is a behavior.
 * **Consequence** is an outcome.
 * **Conditioning** is learning.
 * **Association** is connecting.
 
 ### Three Theories of Learned Behavior
 
-**Clasical conditioning**: we learn to associate experiences that occur together in space and/or time.
+**Classical conditioning**: we learn to associate experiences that occur together in space and/or time.
 **Operant (or Instrumental) conditioning**: we learn to behave to seek reward and avoid punishment.
 **Observational (or Social) learning**: we learn by observing others then imitating them.
 
@@ -350,17 +350,17 @@ Making something **functional and reliable is not enough** to be "ready to use".
 
 * Start with a behavior that already occurs in response to a signal.
 * Pair a new signal with the existing signal.
-* Over time and with repeated wxperience, the new signal becomes associated with the original signal, and the new signal elicits the same behavior.
+* Over time and with repeated experience, the new signal becomes associated with the original signal, and the new signal elicits the same behavior.
 
 ### Conditional Emotional Responses
 
-* Some emotional reactions are learned responses to neutral signals. These are called Conditinal Emotional Responses.
-* Neutral signals paired with stimuli that casuse an emotion can elicit that emotion once the neutral signal and original stimulus are associated.
+* Some emotional reactions are learned responses to neutral signals. These are called Conditional Emotional Responses.
+* Neutral signals paired with stimuli that cause an emotion can elicit that emotion once the neutral signal and original stimulus are associated.
 
 ## Operant Conditioning
 
 * A stimulus (or signal) indicates that a behavior may be performed.
-* Once the behavior is performed, and outcome (or consequence) results.
+* Once the behavior is performed, an outcome (or consequence) results.
 
 ### Reinforcement vs Punishment
 
@@ -377,11 +377,11 @@ Reinforcement can be scheduled as something happens certain **amount of times** 
 
 I.e.:
 
-Reinforce some bahavior every ten times it occures, or about two hours since the last time behavior has been reinforced.
+Reinforce some behavior every ten times it occurs, or about two hours since the last time behavior has been reinforced.
 
 ### Rewards have different values
 
-* Nor all rewards have the same value for averyone.
+* Nor all rewards have the same value for everyone.
 * What reinforces behavior in one person may not reinforce the same behavior in another.
 
 #### Selecting Rewards
@@ -391,7 +391,7 @@ Reinforce some bahavior every ten times it occures, or about two hours since the
 
 ### Extinction
 
-* Behaviors which are no longer reinforced then to fade.
+* Behaviors which are no longer reinforced then fade.
 * The more frequent and regular the reinforcement, the faster the behavior will fade when reinforcement is withdrawn.
 
 ## Social Learning Theory
@@ -408,7 +408,7 @@ In addition to behaviors, **we also learn values and attitudes**.
 
 * When we observe other people behaving, they serve as models that we can then imitate.
 * Seeing other people being reinforced makes us more likely to perform that behavior.
-* Seein other people being punished makes us less likely to perform that behavior.
+* Seeing other people being punished makes us less likely to perform that behavior.
 
 ### Learning behavior is an active process
 
@@ -417,7 +417,7 @@ In addition to behaviors, **we also learn values and attitudes**.
 
 ### Three Types of Modeling (Bandura)
 
-* **Live models**: *a person demostrates* the desired behavior, we observe directly, then we imitate their behavior.
+* **Live models**: *a person demonstrates* the desired behavior, we observe directly, then we imitate their behavior.
 * **Direct instruction**: *a person describes* the desired behavior in detail and provides instructions to us about how to do it, then we perform the behavior as described.
 * **Symbolic instruction**: *modeling occurs through media*, webs, written and/or illustrated information, video, and audio. We view the media then perform the behavior as instructed.
 
@@ -427,17 +427,17 @@ In addition to behaviors, **we also learn values and attitudes**.
 
 * What we learned in the past influences how we behave now and how we might behave in the future.
 * We look for ways to apply what we already know to new situations.
-* Transfer refets to our ability to take information and behaviors learned in one context and apply it in another.
+* Transfer refers to our ability to take information and behaviors learned in one context and apply it in another.
 
 ### Generalization
 
 * We generalize our past experiences and transfer what we have learned to similar situations.
-* If it even remotly looks like something we have done before, we will interact with it using those behaviors.
+* If it even remotely looks like something we have done before, we will interact with it using those behaviors.
 * When experiences are identifiably analogous, people will generalize and transfer their knowledge more efficiently.
-* The less similar the situation appear, the more cognitive effort tit takes to determine if a past learned behavior is relevand and should be applied.
+* The less similar the situation appears, the more cognitive effort it takes to determine if a past learned behavior is relevant and should be applied.
 * Facilitate generalization by making it easier for people to identify analogous situations.
 
 ### Discrimination learning
 
-* People also learn how to distiguish among situations or problems that may appear similar but are actually different.
-* Do not design a product that misleads people to predicting it operates in a way it does not, or makes it look non-interactive.
+* People also learn how to distinguish among situations or problems that may appear similar but are actually different.
+* Do not design a product that misleads people to predict it operates in a way it does not, or makes it look non-interactive.

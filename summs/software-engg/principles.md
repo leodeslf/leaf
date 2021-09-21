@@ -2,9 +2,9 @@
 
 In fact: methods, philosophies, principles, strategies and more.
 
-## Don't Repeat Your Self (DRY)
+## Don't Repeat Yourself (DRY)
 
-Design, develop, test, mainteinance, and reusability will be easier by having a **single source of code**, then reuse it and modify it in another place as needed.
+Design, develop, test, maintenance, and reusability will be easier by having a **single source of code**, then reuse it and modify it in another place as needed.
 
 Opposite to:
 
@@ -40,13 +40,13 @@ Similar to the goal of KISS, code that follows this principle is easy to underst
 
 ### Open/Closed Principle (OCP)
 
-Scalability should always be present, but aditional features should not make changes just for the sake of adaption or customization. If something is working and tested, it should be **extended** making use of inheritance or prototyping, **not modified**.
+Scalability should always be present, but additional features should not make changes just for the sake of adaption or customization. If something is working and tested, it should be **extended** making use of inheritance or prototyping, **not modified**.
 
 >A class should be open for extension, but closed for modification.
 
 ### Liskov Substitution Principle (LSP)
 
-A derived element should *be* it's base element and more. In other words, if S is a subtype of T, then any of type T may be substituted by any S. As a subtype should **inherit** it's parent requirements, and **include additional features** (not replace).
+A derived element should *be* it's base element and more. In other words, if S is a subtype of T, then any of type T may be substituted by any S. As a subtype should **inherit** it's parent requirements, and **include additional features** (not to replace).
 
 >Derived classes must be able to substitute for their base classes.
 
@@ -58,7 +58,7 @@ The **specific is better**, easier to develop, test, and maintain, it respects t
 
 ### Dependency Inversion Principle (DIP)
 
-Make your modules to **depend on abstractions**/interfaces, **not in details** of concrete implementation. Also, high-level modules should not depend in low-level ones, and both should depend on abstractions.
+Make your modules to **depend on abstractions**/interfaces, **not in details** of concrete implementation. Also, high-level modules should not depend on low-level ones, and both should depend on abstractions.
 
 >Depend upon abstractions, not concretions.
 
@@ -70,7 +70,7 @@ Only implement things when you **need** them, don't do them because you *think* 
 
 ### Do the simplest thing that could possibly work (DTSTTCPW)
 
-Prioritize requirements and **do only the important** things. Don't do things you don't need, don't improve things if not need.
+Prioritize requirements and **do only the important** things. Don't do things you don't need, don't improve things if not needed.
 
 ## MoSCoW
 
@@ -95,11 +95,9 @@ They are least-critical and **not planned** for the current release. In general 
 ## Worth mentioning
 
 - **If it ain't broke, don't fix it**.
-- **Measure tiwce, cut once**.
+- **Measure twice, cut once**.
 - **Occam's Razor** (less dependencies are better).
 - **Law of Demeter** (only talk to your friends).
 - **Big Design Up Front** (BDUF).
 - **Avoid Premature Optimization**.
 - **Minimum Viable Product** (MVP).
-
-<!-- write once run anywhere/away -->

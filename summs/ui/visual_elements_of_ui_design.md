@@ -1,6 +1,6 @@
 # Visual Elements of User Interface Design
 
-**UI / UX Design Specialization** by California Insitute of Arts (CalArts) at Cursera (1/4).
+**UI / UX Design Specialization** by California Institute of Arts (CalArts) at Coursera (1/4).
 
 ## What is a User Interface
 
@@ -22,7 +22,7 @@ UX:
 
 ## A Brief Historical Overview of Interface Design
 
-We need to have _feedback_, know when the interface is working or not, know if we make a mistake or it is all right, be able to undo and redo our actions.
+We need to have _feedback_, know when the interface is working or not, know if we make a mistake or if it's all right, and to be able to undo and redo our actions.
 
 ## Interface Conventions: Theory
 
@@ -95,11 +95,11 @@ A special case is the **immersive imagery**. It is used for games, apps and anim
 
 **Imagery as navigation**: They are icons, symbols and links to some other content or functionality.
 
-**Imagery as mood**: They contribute to the look and feel, can be a part of the content or the navigation.
+**Imagery as mood**: They contribute to the look and feel, and can be a part of the content or the navigation.
 
 ## Typography
 
-Type is language made physical, is fast, is accurate and clear meaning, is economical, and can represent what cannot be depicted.
+Type is language made physical, is fast, is accurate, and has a clear meaning, is economical, and can represent what cannot be depicted.
 
 **Type as content**: Typographic material, articles, blogs, books, etc.
 
@@ -178,7 +178,7 @@ Menus, links, fields. Use design conventions for these elements, for _shape_, _s
 
 Let the user know the UI element is responsive (is working) by adding visual states, _normal_, _hover_, _active_, _inactive_.
 
-Think about the different static elements states as well as how your elements animate between states.
+Think about the different static element states as well as how your elements animate between states.
 
 ## Hierarchy of Content
 

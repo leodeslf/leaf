@@ -2,11 +2,11 @@
 
 ## Why psychology?
 
-Understading how people feel, think, understand the information, and make decisions, can help us generate better ideas and solutions and help us craft and deliver better experiences.
+Understanding how people feel, think, understand the information, and make decisions, can help us generate better ideas and solutions and help us craft and deliver better experiences.
 
 The core model is:
 
-* Discover (study and insigts) [this course]
+* Discover (study and insights) [this course]
 * Craft (design and prototype) [this course]
 * Deliver (develop and measure)
 * Improve (iterate and optimize)
@@ -27,7 +27,7 @@ By researching we need to:
 
 ### Craft
 
-**Design** from an abducting reasoning, critical thinking, and problem-solving.
+**Design** from an abductive reasoning, critical thinking, and problem-solving.
 
 **Prototype**, evaluate if our design decisions are working, and identify alternatives if not.
 
@@ -49,7 +49,7 @@ CONTEXT
 
 ## Context
 
-Refers to the circumstances, situation and environment in with a person is interacting with a product.
+Refers to the circumstances, situation and environment in which a person is interacting with a product.
 
 * Who?
   * Description
@@ -70,7 +70,7 @@ Refers to the circumstances, situation and environment in with a person is inter
 
 ## Goals
 
-What the poeple is trying to achieve. The desired outcomes.
+What the people is trying to achieve. The desired outcomes.
 
 It's important to define the type of activity. Productivity vs Play, what we may feel obligated to perform, or may feel desire to engage in creative play (the "I need to" vs "I want to").
 

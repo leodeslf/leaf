@@ -1,6 +1,6 @@
 # UX Design Fundamentals
 
-**UI / UX Design Specialization** by California Insitute of Arts (CalArts) at Cursera (2/4).
+**UI / UX Design Specialization** by California Institute of Arts (CalArts) at Coursera (2/4).
 
 ## Ideation
 
@@ -32,9 +32,9 @@ We need to know:
 
 Check out the _competition_:
 
-- What apps exists that do the same thing?
+- What apps exist that do the same thing?
 - What apps do something similar?
-- What apps are content adjacent?
+- What apps are content-adjacent?
 - What apps are structural models?
 
 Develop and test new ideas. Map possibilities. Shape your solution.
@@ -68,7 +68,7 @@ Here we need **keywords** and a **mind map** for defining our **language**.
 
 Always keeping in mind the appropriate **tone** and **mood** for the brand.
 
-## Mapping Content & Interation
+## Mapping Content & Interaction
 
 The process comes from non-visual, **app idea** (words). To semi-visual, **envision** (words, maps, sketches). Then, visual, **prototype** (experience, final designs).
 
@@ -90,7 +90,7 @@ All mapped ideas have to be put on paper, making _revisions_, _moving parts arou
 
 ### User Testing
 
-Here the user will be _taking decisions_ from the available _options_, _interacting_ with the system and, if it's all fine, doing what he is supposed to do with the app. Also telling tester whether or not there is a _problem_, something that can't be done or understood.
+Here the user will be _taking decisions_ from the available _options_, _interacting_ with the system and, if it's all fine, doing what he is supposed to do with the app. Also telling testers whether or not there is a _problem_, something that can't be done or understood.
 
 ## Sitemap
 
@@ -132,7 +132,7 @@ Creating a wireframe:
 - Black and white, and grey.
 - Placement on screen.
 - Reuse elements.
-- Visually indicate type of interface elements.
+- Visually indicate the type of interface elements.
 
 ## Prototype
 
@@ -157,6 +157,6 @@ It must simulate:
   - Believable path.
   - Believable responses.
 - The **experience**:
-  - Believable UI design (needs to be in a screen).
+  - Believable UI design (needs to be on a screen).
   - Believable UX design (needs to be interactive).
-  - Believable platform / context (needs to be physical device).
+  - Believable platform / context (needs to be a physical device).

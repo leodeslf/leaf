@@ -10,7 +10,7 @@ It's different from CSS3 variables.
 
 Example:
 
-```css
+```scss
 $var0: green;
 $var1: 14px;
 
@@ -27,7 +27,7 @@ If `!global` is included, an override over a variable value, is only visible by 
 
 Example:
 
-```css
+```scss
 $var: red;
 
 a {
@@ -49,7 +49,7 @@ Used to create a reusable set of styles.
 
 Example:
 
-```css
+```scss
 @mixin mixinName {
   property: value;
   property: value;
@@ -61,7 +61,7 @@ We can also use parameters \(with or without default values\).
 
 Example:
 
-```css
+```scss
 @mixin mixinName($param0, $param1: 4px) {
   property: $param0 $param1;
 }
@@ -86,7 +86,7 @@ It's possible to nest selectors.
 
 Example:
 
-```css
+```scss
 selectorA {
   property: value;
   ...
@@ -101,7 +101,7 @@ Even nesting properties with the same prefix.
 
 Example:
 
-```css
+```scss
 font: {
   family: value;
   size: value;
@@ -122,7 +122,7 @@ The `@extend` takes the style from another selector, similar to the `@include` f
 
 Example:
 
-```css
+```scss
 selector0 {
   property: value;
   property: value;
@@ -142,7 +142,7 @@ Sass can operate with numbers, strings and logic, almost like JavaScript, even b
 
 Example:
 
-```css
+```scss
 @debug 10s + 15s; // 25s
 @debug 1in - 10px; // 0.8958333333in
 
@@ -168,13 +168,13 @@ Example:
 
 `variables.scss`
 
-```css
+```scss
 $var: red;
 ```
 
 `styles.scss`
 
-```css
+```scss
 @import "./variables";
 
 p {
@@ -197,7 +197,7 @@ _mixins.scss
 main.scss
 ```
 
-```css
+```scss
 /* main.scss */
 @import './variables', './mixins';
 ```

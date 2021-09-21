@@ -31,7 +31,7 @@ Different methods helps us to:
 * **Diverge**: is the process of generating multiple ideas.
 * **Converge**: is the process of choosing the best of those ideas.
 
-### Design Thinking mehtods
+### Design Thinking methods
 
 1. Observe and empathize.
 1. Explore and create.
@@ -54,34 +54,34 @@ Solution --> Develop --> Deliver
 1. Define a product's purpose based on people's needs and goals.
 1. Craft experiences for efficient flow.
 1. Deliver meaningful, relevant, and valuable experiences.
-1. Ensure products easy to use, learn, and remember.
-1. Always respect and protect the people who use our products and sercives.
+1. Ensure products are easy to use, learn, and remember.
+1. Always respect and protect the people who use our products and services.
 
 ## Levels of design
 
 ### Structure
 
-It focus on the overall oreganization and architecture of the product. We identify and define the systematic structire of content and functionality.
+It focuses on the overall organization and architecture of the product. We identify and define the systematic structure of content and functionality.
 
 #### Scent of Information
 
-It's derived from informatioon foraging theory, this is how people can *predict* what they will find if they follow a path or flow through a product.
+It's derived from information foraging theory, this is how people can *predict* what they will find if they follow a path or flow through a product.
 
 #### Three levels of Structure
 
-* **Product**: overall architecture defines all of their sections, the purpouse of each, and the navigation and connections among them.
+* **Product**: overall architecture defines all of their sections, the purpose of each, and the navigation and connections among them.
 * **Screen**: what belongs on each page or screen and where should it appear? What appears on all multiple screens? Placement can communicate importance, relationships, and functionality.
 * **Component**: define the content and interactivity of individual elements on the screen. We are not yet focused on final appearance, because we first need to validate that the structure and flow are correct.
 
 ### Flow
 
-Here we identify and define all of the sreps people must take and the states of the product as they work toward their goal.
+Here we identify and define all of the steps people must take and the states of the product as they work toward their goal.
 
 #### Three levels of Flow
 
-* **Multi-channel ecosystem**: many products and services are used in conjunction with others. How does the product fit into a larger ecosystem? What are the paths though the product and the states of the product.
-* **Product**: indentify the paths through the product and all of the steps and actions necessary to complete tasks. There is at least one path for each function. There may be more than one path to achieve the same goal.
-* **Components**: identify abd describe the various states if interactivity screens and components. Define the conditions that produce each and the outcomes that may result.
+* **Multi-channel ecosystem**: many products and services are used in conjunction with others. How does the product fit into a larger ecosystem? What are the paths through the product and the states of the product?
+* **Product**: identify the paths through the product and all of the steps and actions necessary to complete tasks. There is at least one path for each function. There may be more than one path to achieve the same goal.
+* **Components**: identify and describe the various states of interactivity screens and components. Define the conditions that produce each and the outcomes that may result.
 
 #### Simple flows
 
@@ -115,7 +115,7 @@ Appearance and behavior can:
 
 * Good design enhances the value and quality of a product.
 * Bad design detracts from or even interferes with a product experience.
-* Prople judge the quality of a product higher and think it works better when it is attractive.
+* People judge the quality of a product higher and think it works better when it is attractive.
 
 ## Patterns
 
@@ -132,13 +132,13 @@ Good DP are:
 * Relevant in the context and to the goals.
 * Effortless and easy to use with minimal work.
 
-> Good design patterns improve consistency and cohesivness, whith makes producs easier to use, learn, and remember.
+> Good design patterns improve consistency and cohesiveness, which makes products easier to use, learn, and remember.
 
 ### Anti-patterns
 
 Anti-patterns are recurring solutions that may be common and familiar, but they are **non-optimal** in practice.
 
-They are non-optimal, but, it doesn't mean they are bad or worst than a pattern. They are just exceptions.
+They are non-optimal, but it doesn't mean they are bad or worse than a pattern. They are just exceptions.
 
 ### Dark patterns
 
@@ -177,23 +177,23 @@ Navigation is the movement from place to place or state to state within a produc
 Information architecture:
 
 * Information architecture as a field and practice is attributed to Richard Saul Wurman.
-* It is typically incolved in creating the structire of a navigation system.
+* It is typically involved in creating the structure of a navigation system.
 * Good information architecture is often considered essential for good interaction design.
 
 Mental models we have about:
 
 * How information should be organized.
-* Flows and the sequence of steps is will take to perform an action.
+* Flows and the sequence of steps it will take to perform an action.
 * Tasks organized into a logical sequence of steps (that will be easier to complete).
 
 ### Navigation systems
 
-Types of navogation systems:
+Types of navigation systems:
 
 * **Hierarchical**: used when there are multiple levels, or hierarchies, in the structure of the content and functionality.
 * **Hub and spoke**: there is a central hub from which to explore and browse. There are often several independent sections, and each may have different content or functions.
 * **Adaptive**: navigation adjusts dynamically to the context, content, and how it is being used.
-  * Inditivual access privileges.
+  * Individual access privileges.
   * Suggested actions based on context.
   * Valid actions based on section or content.
 * **Steam**: used when there is a steady stream of new content or posts, presented in reverse chronological order, may be algorithms to promote sponsored or popular content.
@@ -212,14 +212,14 @@ Types of navogation systems:
 
 * It guides the creation, publication, and maintenance of meaningful, relevant content.
 * Content creation is an essential part of the design process.
-* Content takes many form.
+* Content takes many forms.
 
 ### Design with text
 
-* **Readability**: is the ease with which a reader can understand weitten text. We need to use *appropriate vocabulary* and syntax based on context of the product.
-* **Scanning**: organize text to facilitate scanning to *help people focus* their attention and fin what they need.
-* **Typography**: optimize fint size, line height, and line lenght. Also text styles are used to differentiate among text types, headers, labels, body content, and links.
-* **Interactivity**: expose only the necessary information to *keep the product focused and simpler*. Extencive content may benefit from interactive layouts that conceal and reveal supplemental information as needed.
+* **Readability**: is the ease with which a reader can understand written text. We need to use *appropriate vocabulary* and syntax based on the context of the product.
+* **Scanning**: organize text to facilitate scanning to *help people focus* their attention and find what they need.
+* **Typography**: optimize font size, line height, and line length. Also text styles are used to differentiate among text types, headers, labels, body content, and links.
+* **Interactivity**: expose only the necessary information to *keep the product focused and simpler*. Extensive content may benefit from interactive layouts that conceal and reveal supplemental information as needed.
 
 ### Microcopy
 
@@ -233,8 +233,8 @@ Small pieces of text found throughout the interface, important for clarity and g
 * Keyboard usage.
 * Collation and sorting.
 * Symbols, icons, and colors.
-* Culturally appropiate text and graphics.
-* Varyng legal requirements, among others.
+* Culturally appropriate text and graphics.
+* Varying legal requirements, among others.
 
 ### Imagery
 
@@ -245,7 +245,7 @@ Small pieces of text found throughout the interface, important for clarity and g
 
 * Highly interactive content experiences can be very engaging.
 * Interactions should support and enhance the information and improve comprehension.
-* Design interacive media with the same principles used to design products.
+* Design interactive media with the same principles used to design products.
 
 ### Media controls
 
@@ -264,7 +264,7 @@ Small pieces of text found throughout the interface, important for clarity and g
 ### Interaction gap
 
 * The more distance or time between the point of interaction and the result or reaction, the more difficult it may be to control.
-* Experiences where people "interacti here for outcomes over thre" may be more dificult to predict and learn.
+* Experiences where people "interacti here for outcomes over there" may be more difficult to predict and learn.
 
 ### Direct interaction
 
@@ -273,13 +273,13 @@ Small pieces of text found throughout the interface, important for clarity and g
 
 ### Keyboards
 
-* Typing has been around for 150 years and os a familiar interaction.
-* On-screen keyboards replicate the familiar od layout of keys, but the interactions are more direct, because the interaction gap is reduced.
+* Typing has been around for 150 years and is a familiar interaction.
+* On-screen keyboards replicate the familiar layout of keys, but the interactions are more direct, because the interaction gap is reduced.
 
 ### Mice and trackballs
 
 * Distance from and orientation relative to the screen may differ for these input devices.
-* Use and interactnions have become more complex, because people need more control over the objects no their screens.
+* Use and interactions have become more complex, because people need more control over the objects on their screens.
 * Both require learning and practice to become proficient.
 
 ### Pen tablets
@@ -290,7 +290,7 @@ Small pieces of text found throughout the interface, important for clarity and g
 ### Clicking and tapping
 
 * The most familiar and frequent interactions with easily recognized outcomes.
-* Tapping on screens is more direct than using a mause.
+* Tapping on screens is more direct than using a mouse.
 
 ### Signals and cues
 
@@ -299,7 +299,7 @@ Small pieces of text found throughout the interface, important for clarity and g
 
 ### Target size
 
-Small and/or faraway targets are harder to reach and tap quickly and accurately. Instead, use larger and/or near targts.
+Small and/or faraway targets are harder to reach and tap quickly and accurately. Instead, use larger and/or near target.
 
 ## Gestures
 
@@ -329,10 +329,10 @@ Device gestures:
 * Shake
 * Flip
 
-### Siganls and cues for gestures
+### Signals and cues for gestures
 
 * Buttons and icons are perceivable, but gestures are invisible.
-* Previews, hints, and motion can be used to indicate that gestural intereaction is possible.
+* Previews, hints, and motion can be used to indicate that gestural interaction is possible.
 * Demos and instructions can show how to gesture.
 
 ### Arbitrary and abstract gestures
@@ -342,7 +342,7 @@ Device gestures:
 
 ## Voice
 
-Voice recognition and speech synthesis have been available for decades. It still evolving and improving. People are very good at understanding context, reference, intent, and non-verbal communication, computers are not -yet-.
+Voice recognition and speech synthesis have been available for decades. It is still evolving and improving. People are very good at understanding context, reference, intent, and non-verbal communication, computers are not -yet-.
 
 > We need to design to help people learn what to say and how to say it while we wait for technology to catch up to our expectations.
 
@@ -383,24 +383,24 @@ And more.
 
 ### Privacy and Security about on sensors
 
-* Data collected is often personal and may be sufficient to indetify the person.
+* Data collected is often personal and may be sufficient to identify the person.
 * Be transparent about what is collected and how it is used.
 * Offer clear and findable privacy and security controls.
 
 ## Microinteractions
 
-Microinteractions are the small, naunced reactions of a product that **provide information and feedback**.
+Microinteractions are the small, nuanced reactions of a product that **provide information and feedback**.
 
-Dan Saffer studied microinteractions extensively and indetified four parts:
+Dan Saffer studied microinteractions extensively and identified four parts:
 
-* **Triggrs**: signal or cue that something has happened or will happen.
+* **Triggers**: signal or cue that something has happened or will happen.
 * **Rules**: determine the conditions under which microinteractions occur and define what will happen.
 * **Feedback**: verifies that the person has interacted with the product or that specific conditions have been met.
-* **Loops and modes**: some interactions repeat (loop) intil the person stops it, others change the way a device work (mode) under certain conditions.
+* **Loops and modes**: some interactions repeat (loop) until the person stops it, others change the way a device works (mode) under certain conditions.
 
 ### Motion
 
-Our brains are wired to be sensitive to **motion and change**. It draws and guides our attention trough the product.
+Our brains are wired to be sensitive to **motion and change**. It draws and guides our attention through the product.
 
 Motion can also *distract*, stealing people's attention is unwanted and unwelcome. Use motion judiciously and with purpose.
 
@@ -414,7 +414,7 @@ Motion can also *distract*, stealing people's attention is unwanted and unwelcom
 
 #### Smooth Motion
 
-**Abrupt changes feel mechanical and may be disriptuve**.
+**Abrupt changes feel mechanical and may be disruptive**.
 
 Easing is used to create smooth motion with acceleration, deceleration, and other physical effects.
 
@@ -434,7 +434,7 @@ Sound is an important part of product design, but it can also *distract* or even
 
 * **Direct attention**: attract and guide a person's attention to outcomes they requested or which require their response.
 * **Provide feedback and information**: provide feedback and information about the status and progress of interactions and processes.
-* **Support brand and identity**: sounds mey be identifiable and associated with a product's brand and identity.
+* **Support brand and identity**: sounds may be identifiable and associated with a product's brand and identity.
 
 ### Haptics
 
@@ -442,20 +442,20 @@ It's **how people see and manipulate** objects using their senses of touch and p
 
 #### Haptic feedback
 
-* **Vibration**: making device vibrate may create different sensations.
+* **Vibration**: making the device vibrate may create different sensations.
 * **Force**: it's used by mechanical systems to "push back" against interactions to simulate natural conditions of friction and resistance.
-* **Texture**: surface textures may be simulated with vairable friction, and advanced materials may even make physical changes.
+* **Texture**: surface textures may be simulated with variable friction, and advanced materials may even make physical changes.
 
 #### Vibration
 
 * **Taps on the screens**: commonly acknowledged with rapid vibrations.
-* **Hard or long press**: indicate when a press has been long or foceful enough to trigger the interaction.
+* **Hard or long press**: indicate when a press has been long or forceful enough to trigger the interaction.
 * **Alarms and notifications**: sounds and vibration are commonly used in conjunction and increase effectiveness in environments with variable noise levels
 * **Gestural feedback**: may be used to provide feedback during a gesture and at the end to indicate successful completion.
 
-#### Some haptic feecback is real
+#### Some haptic feedback is real
 
-Not all is simulated, physical buttons and sweitches provide real haptic feedback.
+Not all is simulated, physical buttons and switches provide real haptic feedback.
 
 ## Error handling
 
@@ -467,14 +467,14 @@ No matter how much we plan, things go wrong. Errors cause frustration, and error
 
 1. Use natural language and never blame the person.
 1. Clearly describe what went wrong.
-1. Briefly axplain why it went wrong.
+1. Briefly explain why it went wrong.
 1. Recommend how to fix or resolve the error.
 
 Make error messages noticeable and place them as near the error as possible.
 
 There may be two messages:
 
-1. A generic message that an error has occured, usually, in an easily noticed location.
+1. A generic message that an error has occurred, usually, in an easily noticed location.
 1. A specific message about the error near where the error occurred.
 
 ### Presentation of Error Messages
@@ -496,13 +496,13 @@ A **mistake** is an incorrect choice or information that **does not prevent the 
 ### Detecting mistakes
 
 * Good feedback *confirms* that the action was performed and *reports the results* or outcomes.
-* Important actions should provide the opportinuty to make corrections or be canceled.
+* Important actions should provide the opportunity to make corrections or be canceled.
 
 ## Usability and accessibility
 
 Usability is the **ease of use** of the product or service.
 
-Utility is the **usefulness and value** of the prodcut or service.
+Utility is the **usefulness and value** of the product or service.
 
 ### Evaluating Usability
 
@@ -514,7 +514,7 @@ Utility is the **usefulness and value** of the prodcut or service.
 
 #### Human-Computer Interaction (HCI)
 
-* **Learnability**: how easily cana  new person learn to use the product?
+* **Learnability**: how easily can a new person learn to use the product?
 * **Flexibility**: how many ways can a person interact with the product?
 * **Robustness**: how well does the product help people when errors occur?
 
@@ -522,17 +522,17 @@ By Dix, Finlay, Abowl, and Beale.
 
 #### Nielsen and Shneiderman
 
-* **Learnability**: how easily cana  new person learn to use the product?
+* **Learnability**: how easily can a new person learn to use the product?
 * **Efficiency**: how quickly and accurately can a person perform tasks?
 * **Memorability**: how well do people remember a product if they have not used it recently?
 * **Errors**: how many errors occur, and how well do people recover from them?
-* **Satisfaction**: how much do people enjoy using a product, and are they satified with the results?
+* **Satisfaction**: how much do people enjoy using a product, and are they satisfied with the results?
 
 #### ISO 9241 - Five Principles
 
-* **Learnability**: how easily cana  new person learn to use the product?
+* **Learnability**: how easily can a new person learn to use the product?
 * **Understandability**: how well can people understand what they are seeing?
-* **Operability**: how much controll does the person have within the product?
+* **Operability**: how much control does the person have within the product?
 * **Attractiveness**: how visually appealing is the product?
 * **Usability Compliance**: does the product adhere to documented standards?
 
@@ -541,9 +541,9 @@ By Dix, Finlay, Abowl, and Beale.
 1. Strive for consistency.
 1. Enable shortcuts for frequent actions.
 1. Offer informative feedback.
-1. Design dialogs to yeld closure.
-1. Offer simple errror handling.
-1. Permit easy revisal of actions.
+1. Design dialogs to yield closure.
+1. Offer simple error handling.
+1. Permit easy reversal of actions.
 1. Support internal locus of control.
 1. Reduce short-term memory load.
 

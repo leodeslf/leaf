@@ -13,7 +13,7 @@ The behavior on the [interaction design model](a-model-of-psychology-and-ixd.md/
 --> ...
 ```
 
-## Percieve
+## Perceive
 
 People are less likely to interact if they do not perceive the opportunity to interact, even if they need or want to interact.
 
@@ -31,14 +31,14 @@ Good design solutions **increase the perceivability** of opportunities to intera
 
 ### Multiple possible interactions
 
-* MAny products offer many functions and services, but ussually need only one a few per use.
+* MAny products offer many functions and services, but usually need only one a few per use.
 * We quickly process our options and select the most salient and relevant, and then ignore the rest.
 
 ## Predict
 
 ### Confidence
 
-If people are confident that their interaction with a product will help them achieve their goals, then the probability of intraction increases.
+If people are confident that their interaction with a product will help them achieve their goals, then the probability of interaction increases.
 
 ### Deciding among options
 
@@ -47,7 +47,7 @@ When there are different ways to complete a task, people decide based on:
 * Context
 * Goal
 * Prior experience
-* Perveivability
+* Perceivability
 * Confidence
 
 ## Feedback
@@ -71,8 +71,8 @@ Interim feedback to indicate that the product is still working on the request an
 
 Techniques:
 
-* De-activate states with status messages.
-* Progress indicators fot time, amount, or simply ongoing.
+* Deactivate states with status messages.
+* Progress indicators for time, amount, or simply ongoing.
 
 #### Results of interaction
 
@@ -89,7 +89,7 @@ Final feedback forms and variations:
 
 ### Ambient feedback
 
-* Subtle, continuous change to the interface that provide useful information at a glance.
+* Subtle, continuous change to the interface that provides useful information at a glance.
 * It usually conveys information about a single variable in a simple way.
 
 ### Anticipatory feedback
@@ -119,24 +119,24 @@ Useful outcomes and meaningful feedback create positive experiences, instill tru
 ### Practice to learn
 
 * We observe our own behavior and the outcomes that occur.
-* Repeated interactions strengthen then associations and improve the accuracy of predictions.
+* Repeated interactions strengthen the associations and improve the accuracy of predictions.
 * The more we practice, the faster and more accurate our interactions with the product become.
 
 ### Intuitive Design
 
-Even when when products are "intuitive", they may require multiple uses and practice before people learn and remember how to interact.
+Even when products are "intuitive", they may require multiple uses and practice before people learn and remember how to interact.
 
 ## Remember
 
 ### Memory and remembering
 
-* **Sensory Store**: during the perceive phase we process all incoming information and indentify the important elements.
-* **Working Memory**: during the feedback and learn phases we process information for meaning and associations.
+* **Sensory Store**: during the perceive phase we process all incoming information and identify the important elements.
+* **Working Memory**: during the feedback and learning phases we process information for meaning and associations.
 * **Long-term Memory**: during the remember phase we store learned information (and skills) for future use.
 
 ### Transfer
 
 * We recognize products we have used before, may remember how to use them, and recall and ew-use what we learned.
-* We notice similarities between prior experiences and new products, transfer what we learned from earlier product experiences, and apply those skills and knowledge to the new prducts.
+* We notice similarities between prior experiences and new products, transfer what we learned from earlier product experiences, and apply those skills and knowledge to the new products.
 
 Sometimes, we can mismatch, confuse, or even forget what we have learned.

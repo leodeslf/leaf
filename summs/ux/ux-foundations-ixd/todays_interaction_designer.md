@@ -8,7 +8,7 @@ It's about **designing for the entire interconnected system**, the device, the i
 
 Starting from pencil and paper or a whiteboard, to **understand, define, and frame the problem**.
 
-To low-fidelity diagrams, models, and flows, that helps us **identify potencial directions**, missing information, and paths the project may take.
+To low-fidelity diagrams, models, and flows, that helps us **identify potential directions**, missing information, and paths the project may take.
 
 After that, we need to **translate the ideas**, from concepts in papers, **to pixels on screens**.
 
@@ -16,7 +16,7 @@ Even more, by making pixels alive, **we should put interactive prototypes in use
 
 ## Related disciplines and fields of study
 
-Interaction designers have knowledge and skills across several fields, but we often go deep in  afew specific areas. This allows us to **understand people and problems** from different perspectives and give us the capabilities in specific areas to solve those problems.
+Interaction designers have knowledge and skills across several fields, but we often go deep in a few specific areas. This allows us to **understand people and problems** from different perspectives and give us the capabilities in specific areas to solve those problems.
 
 Any knowledge in the area, at the end, helps us to understand **People, Technology, and Design**.
 
