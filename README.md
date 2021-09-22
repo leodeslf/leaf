@@ -38,6 +38,7 @@
     * [Integer Sorts](summs/software-engg/sorting/integer.md)
   * [GitFlow](summs/software-engg/gitflow.md)
   * [Principles](summs/software-engg/principles.md)
+  * [Unit Testing](summs/software-engg/u_testing.md)
 * UI
   * [Visual Elements of User Interface Design (CalArts)](summs/ui/visual_elements_of_ui_design.md)
 * UX
