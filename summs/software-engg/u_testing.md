@@ -1,5 +1,7 @@
 # Unit Testing
 
+From the book Building Secure & Reliable Systems (Google).
+
 Unit testing can increase system security and reliability by pointing to a wide range of bugs in individual software components before a release. This technique involves breaking software components into smaller, self-contained "units" that have no external dependencies, and then testing each unit.
 
 Unit tests consist of **code that exercises a given unit with different inputs** selected by the engineer writing the test.
