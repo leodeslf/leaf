@@ -24,7 +24,7 @@ npm unpublish <pkg-name> -f
   "publishConfig": {
     "registry": "http://registry.npmjs.org",
     "access": "public"
-  }  
+  }
 }
 ```
 
