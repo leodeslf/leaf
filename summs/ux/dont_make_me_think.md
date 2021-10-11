@@ -557,6 +557,90 @@ Whatever method we use, we're likely to keep doing it.
 
 ### Mobile: It's not just a city in Alabama anymore
 
->Welcome to the 21th century
+>Welcome to the 21th century -you may experience a slight sense of vertigo.
 
-p140
+Phones has been getting gradually *smarter* for years, even more after the iPhone introduction in June 2007. And it was about this same time that the Mobile Web finally came into its own. There had been Web browsers on phones before, but they *sucked*.
+
+One of Apple's great inventions was the ability to **scroll and zoom** in and out (by just swiping and pinching the screen) very quickly. For the first time, the Web was fun to use on a device that you could carry with you at all times. You could look up anything anywhere anytime.
+
+There's not much denying that mobile devices are the wave of the future, except for things where we need enormous *horsepower* or a big *playing surface* (professional video editing, Photoshop, CAD, etc).
+
+#### What's the difference?
+
+The answer is: **Not much**, the basic principles are still the same.
+
+There are *some* significant differences about mobile that makes for challenging new usability problems. But the fact is that Web and app design for mobile devices is still in its formative days in many ways, so it's going to take another few years for things to shake out. Prevailing conventions probably haven't emerged yet.
+
+#### It's all about tradeoffs
+
+Constraints and tradeoffs in design.
+
+>The best you can do is pease some of the people some of the time.
+
+Constraints actually make design easier rather than limited. They have a **focusing effect**, while liberting and unlimited options can have a *paralyzing* effect.
+
+>Where there are constrains, there are tradeoffs to be made.
+
+Many of serious usability problems are the result of a poor decision about a tradeoff.
+
+#### The tyranny of the itty-bitty living space
+
+The most obvious thing about mobile screens us that they're **small**. Thus, the amount of tradeoffs to make in the Home page is quite big.
+
+One of the only ways to deal with it is to leave things out, the tricky question is: **Which parts do we leave out?**
+
+One approach was **Mobile First**. Where we define the most important features and contents, then we use them for the design, and finally we add on more things to create the desktop/full version. Mobile First forces as to work hard to determine what's *really essential*, what people needed more (as it should always be).
+
+Often happens that we tend to design for mobile as the users were "on the move". That's wrong, users are just as likely to be using their mobile device while sitting at home, and they want (and expect) to be able to do the same things they do on desktop.
+
+The main idea is not to remove features or content, it's to **prioritize** them.
+
+At the end, it results in a navigation with a few more "taps" than the full version, and that's OK. As long as the user continues to feel confident that what they want is further down the screen or behind a link or button, they'll keep going.
+
+>Managing real state challenges shouldn't be done at the cost of usability.
+
+#### Breeding chameleons
+
+The one-size-fits-all-sizes promise broke since mobile development is a thing.
+
+Facts about **scalable design** (aka. dynamic layout, fluid design, adaptive design, responsive design):
+
+- It tends to be a lot of work.
+- It's very hard to do it well.
+- it's a must have for almost any Web site nowadays.
+
+Scalable design doubles the effort and guarantees that either things *won't be updated* or the versions *will be out of sync*. It's has real revenue implications.
+
+Three suggestions to "solve" that problems:
+
+- **Allow zooming**: If we don't have the resources to "mobilize" the site and we're not using responsive design, we should make sure that users can zoom in on the tiny text.
+- **Don't leave me standing at the front door**: If we want to enter a site on a specific article from a mobile device, but the server returns the mobile Home page, it's a real nuisance.
+- **Always provide a link to the "full" Web site**: No matter how complete our mobile site is, we do need to give the option of viewing the non-mobile version. Especially if it has exclusive features. (The convention is to put that option/toggle at the bottom of the page.)
+
+#### Don't hide your affordances under a bushel
+
+Even in the *need* of removing and hiding things, avoid hiding affordances (signifiers/visual clues) of elements on visual user interfaces.
+
+By definition, they are the *last* thing we should hide.
+
+They need to be **noticeable**, and some characteristics of mobile devices have made them less noticeable, or worse, invisible. Affordances don't need to hit you in the face, they just have to be visible enough.
+
+#### No cursor = no hover = no clue
+
+When designing for mobile, we cannot rely on the *hover* feature as it doesn't actually exists. We do need to find ways to replace the cues or entire features that depend on that behavior.
+
+#### Flat design: Friend or foe?
+
+150
+
+<!-- ### Usability as common courtesy
+
+>Why your Web site should be a mensch.
+
+### Accessibility and you
+
+>Just when you think your're done, a cat floats by with buttered toast strapped to its back.
+
+### Guide for the perplexed
+
+>Making usability happen where you live. -->
