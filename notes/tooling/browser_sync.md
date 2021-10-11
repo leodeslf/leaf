@@ -1,7 +1,7 @@
 # Browsersync
 
 ```bash
-browser-sync [root-dir] -w --port [port-number]
+browser-sync <root-dir> -w --port <port-number>
 ```
 
 ---
