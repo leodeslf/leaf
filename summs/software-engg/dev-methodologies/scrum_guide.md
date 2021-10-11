@@ -1,4 +1,4 @@
-# Scrum
+# Scrum Guide
 
 An **Agile** framework based on sprint iterations.
 
