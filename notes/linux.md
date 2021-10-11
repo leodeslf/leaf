@@ -107,7 +107,7 @@ ls -X  # Sort by extension name
 ## `mkdir`
 
 ```bash
-mkdir <dir>         # Makea a new dir
+mkdir <dir>         # Make a new dir
 mkdir path/<dir> -p # Creates "path" if doesn't exists
 ```
 
@@ -121,6 +121,15 @@ mv -n              # Do not overwrite
 mv -u              # Copy only if src is newer than dest or dest is missing
 mv -t <dest> <src> # Copy all src into the dest dir
 mv -T <src> <dest> # Force dest to be taken as a normal file (not a dir)
+```
+
+## `ping`
+
+```bash
+ping <host>
+ping -n <num> # Number of echos request to send
+ping -l <num> # Buffer size
+ping -w <num> # Timeout in milliseconds to wait for each reply
 ```
 
 ## `pwd`
@@ -142,7 +151,7 @@ rm -d <dir>  # Remove dir if it's empty
 ## `rmdir`
 
 ```bash
-rmdir <dir> # Remove empty dir
+rmdir <dir> # Remove only empty dirs
 ```
 
 ## `tail`
@@ -169,24 +178,47 @@ wc -l, --lines # Print the line counts
 wc -w, --words # Print the word counts
 ```
 
-## `ping`
+## `sed`
 
 ```bash
-ping <host>
-ping -n <number> # Number of echos request to send
-ping -l <number> # Buffer size
-ping -w <number> # Timeout in milliseconds to wait for each reply
+sed <script> <file>
+sed '/regexp/d' <file>        # Delete match
+sed 's/old/new/' <file>       # Replac match
+sed 's/old/new/g' <file>      # Replace all matches (global)
+sed '<number>p' <file>        # Print specified line
+sed -E, -r,                   # Use extended regular expressions
+sed -n, --quiet, --silent     # Suppress output (modifications/deletions)
+sed -i<suffix?>, --in-place   # Edit file in-place (avoid standart output)
+sed -e <script>, --expression # Allow multiple expressions
+sed -f <script-file>, --file  # Run a script file
 ```
 
-<!-- ## `grep`
+<!-- https://www.gnu.org/software/sed/manual/html_node/index.html#SEC_Contents -->
+<!-- https://quickref.me/sed -->
+
+## `find`
 
 ```bash
-grep <patterns> <file>
-``` -->
+find [src-dir]          # Find files in src dir/s
+find -name "<regexp>"   # By name
+find -iname "<regexp>"  # By name, case-insensitive
+find -type d            # Only directories
+find -type f            # Only files
+find -size <num><unit>  # By size
+find -size +<num><unit> # Bigger than
+find -size -<num><unit> # Smaller than 
+find -size <num>b       # By num 512-byte blocks (default)
+find -size <num>c       # By num Bytes
+find -size <num>k       # By num Kilobytes
+find -size <num>M       # By num Megabytes
+find -size <num>G       # By num Gigabytes
+find -maxdepth <num>    # Set maximum direcory depth
+find -mindepth <num>    # Set minimum direcory depth
+```
+
+<!-- https://quickref.me/find -->
 
 <!-- ```bash
 awk
-man
-sed
-vi
+grep <patterns> <file>
 ``` -->
