@@ -10,7 +10,7 @@ Branch name|Description|Branch off from|Merge back to
 `develop`|Main develop branch|`master`|`release-*`
 `feature-*`|New features branch|`develop`, `feature-*`|`develop`
 `release-*`|New release branch| `develop`|`master`, `develop`
-`hotfix-*`|Hotfixes branch|`master`|`master`,`develop`
+`hotfix-*`|Hotfixes branch|`master`|`master`, `develop`
 
 ### Notes
 
