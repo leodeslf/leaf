@@ -1,6 +1,6 @@
 # Principles
 
-In fact: methods, philosophies, principles, strategies and more.
+Methods, philosophies, principles, strategies and more.
 
 ## Don't Repeat Yourself (DRY)
 
