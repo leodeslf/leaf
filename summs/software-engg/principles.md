@@ -13,7 +13,7 @@ Opposite to:
 - Write Everything Twice, **WET**.
 
 The Pragmatic Programmer:
->Every piece of knowledge must have a single, unambiguous, authoritative representation within a system".
+>Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.
 
 ## Keep it Simple, Stupid! (KISS)
 
