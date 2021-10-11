@@ -1,6 +1,6 @@
 # The Interaction Design Model
 
-The behavior on the [interaction design model](a-model-of-psychology-and-ixd.md/#introducing-the-interaction-design-model) is the actual interaction with the product, and it has its own cycle.
+The behavior on the *interaction design model* is the actual interaction with the product, and it has its own cycle.
 
 ```txt
 ... -->
