@@ -102,7 +102,7 @@ A function that has no side effects and doesn't read global bindings is called _
 
 Property names are strings (calling `array.length` and `array["length"]` is the same).  
 In JavaScript, functions contained in properties are called _methods_.  
-A non-existent property returns `undefined` (when not declared or `delete`d).  
+A non-existent property returns `undefined` (when not declared or deleted).  
 The `in` operator returns whether there exists a `("property" in anObject)` or not.  
 The `keys` function returns all the properties as an array.
 
