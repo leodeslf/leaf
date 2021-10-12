@@ -1,5 +1,7 @@
 # Creational
 
+Quick notes from [Refactoring.Guru](https://refactoring.guru/).
+
 **Instantiation** of objects.
 
 <!-- - Object Pool -->
@@ -12,7 +14,7 @@ Produce families of related objects without specifying their concrete classes.
 
 Use it when:
 
-* You need to work with various families of related objects.
+- You need to work with various families of related objects.
 
 ## Builder
 
@@ -22,8 +24,8 @@ Allows you to produce different representations of an object using the same cons
 
 Use it when:
 
-* You want to get ride of a "telescopic constructor" \(with a simpler one\).
-* You need to create different types of the same object.
+- You want to get ride of a "telescopic constructor" \(with a simpler one\).
+- You need to create different types of the same object.
 
 ## Factory Method
 
@@ -33,9 +35,9 @@ Provides an interface for creating objects in a superclass. Allows subclasses to
 
 Use it when:
 
-* You don't know the requirements of the objects you'd work with.
-* You need your library with a way to extend its internal components.
-* You want to save system resources by reusing existing objects.
+- You don't know the requirements of the objects you'd work with.
+- You need your library with a way to extend its internal components.
+- You want to save system resources by reusing existing objects.
 
 ## Prototype
 
@@ -45,8 +47,8 @@ Lets you copy existing objects without making your code dependent on their class
 
 Use it when:
 
-* Your code shouldn't depend on the concrete classes for objects that you need to copy.
-* You want to reduce the number of subclasses that only differ in the way they initialize their respective objects.
+- Your code shouldn't depend on the concrete classes for objects that you need to copy.
+- You want to reduce the number of subclasses that only differ in the way they initialize their respective objects.
 
 ## Singleton
 
@@ -56,4 +58,4 @@ Lets you ensure that a class has only one instance, while providing a global acc
 
 Use it when:
 
-* You need stricter control over global variables.
+- You need stricter control over global variables.

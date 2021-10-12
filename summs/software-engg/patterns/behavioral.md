@@ -1,5 +1,7 @@
 # Behavioral
 
+Quick notes from [Refactoring.Guru](https://refactoring.guru/).
+
 **Communication** between objects.
 
 ## Chain of responsibility
@@ -10,9 +12,9 @@ Lets you pass requests along a chain of handlers.
 
 Use it when:
 
-* Your program is expected to process different kinds of requests in various ways.
-* It’s essential to execute several handlers in a particular order.
-* The set of handlers and their order are supposed to change at runtime.
+- Your program is expected to process different kinds of requests in various ways.
+- It’s essential to execute several handlers in a particular order.
+- The set of handlers and their order are supposed to change at runtime.
 
 ## Command
 
@@ -22,9 +24,9 @@ It turns a request into a stand-alone object that contains all information about
 
 Use it when:
 
-* You want to parameterize objects with operations.
-* You want to queue operations, schedule their execution, or execute them remotely.
-* You want to implement reversible operations.
+- You want to parameterize objects with operations.
+- You want to queue operations, schedule their execution, or execute them remotely.
+- You want to implement reversible operations.
 
 ## Iterator
 
@@ -34,9 +36,9 @@ Lets you traverse elements of a collection without exposing its underlying repre
 
 Use it when:
 
-* Your collection has a complex data structure under the hood, but you want to hide its complexity from clients.
-* Reduce duplication of the traversal code across your app.
-* You want your code to be able to traverse different data structures or when types of these structures are unknown beforehand.
+- Your collection has a complex data structure under the hood, but you want to hide its complexity from clients.
+- Reduce duplication of the traversal code across your app.
+- You want your code to be able to traverse different data structures or when types of these structures are unknown beforehand.
 
 ## Mediator
 
@@ -46,9 +48,9 @@ Lets you reduce chaotic dependencies between objects. The pattern restricts dire
 
 Use it when:
 
-* It’s hard to change some of the classes because they are tightly coupled to a bunch of other classes.
-* Can't reuse a component in a different program because it's too dependent on other components.
-* Find yourself creating tons of component subclasses just to reuse some basic behavior in various contexts.
+- It’s hard to change some of the classes because they are tightly coupled to a bunch of other classes.
+- Can't reuse a component in a different program because it's too dependent on other components.
+- Find yourself creating tons of component subclasses just to reuse some basic behavior in various contexts.
 
 ## Memento
 
@@ -58,8 +60,8 @@ Lets you save and restore the previous state of an object without revealing the 
 
 Use it when:
 
-* You want to produce snapshots of the object’s state.
-* Direct access to the object’s fields/getters/setters violates its encapsulation.
+- You want to produce snapshots of the object’s state.
+- Direct access to the object’s fields/getters/setters violates its encapsulation.
 
 ## Observer
 
@@ -69,8 +71,8 @@ Lets you define a subscription mechanism to notify multiple objects about any ev
 
 Use it when:
 
-* Changes to the state of one object may require changing other objects.
-* Some objects in your app must observe others, but only for a limited time or in specific cases.
+- Changes to the state of one object may require changing other objects.
+- Some objects in your app must observe others, but only for a limited time or in specific cases.
 
 ## State
 
@@ -80,9 +82,9 @@ Lets an object alter its behavior when its internal state changes.
 
 Use it when:
 
-* You have an object that behaves differently depending on its current state.
-* You have a class polluted with massive conditionals that alter how the class behaves.
-* You have a lot of duplicate code across similar states and transitions of a condition-based state.
+- You have an object that behaves differently depending on its current state.
+- You have a class polluted with massive conditionals that alter how the class behaves.
+- You have a lot of duplicate code across similar states and transitions of a condition-based state.
 
 ## Strategy
 
@@ -92,10 +94,10 @@ Lets you define a family of algorithms, put each of them into a separate class, 
 
 Use it when:
 
-* You want to use different variants of an algorithm within an object.
-* You have a lot of similar classes that only differ in the way they execute some behavior.
-* You want to isolate the business logic of a class from the implementation details of algorithms that may not be as important in the context of that logic.
-* Your class has a massive conditional operator that switches between different variants of the same algorithm.
+- You want to use different variants of an algorithm within an object.
+- You have a lot of similar classes that only differ in the way they execute some behavior.
+- You want to isolate the business logic of a class from the implementation details of algorithms that may not be as important in the context of that logic.
+- Your class has a massive conditional operator that switches between different variants of the same algorithm.
 
 ## Template Method
 
@@ -105,8 +107,8 @@ Defines the skeleton of an algorithm in the superclass but lets subclasses overr
 
 Use it when:
 
-* You want to let clients extend only particular steps of an algorithm.
-* You have several classes that contain almost identical algorithms.
+- You want to let clients extend only particular steps of an algorithm.
+- You have several classes that contain almost identical algorithms.
 
 ## Visitor
 
@@ -116,6 +118,6 @@ Lets you separate algorithms from the objects on which they operate.
 
 Use it when:
 
-* You need to perform an operation on all elements of a complex object structure.
-* You want to clean up the business logic of auxiliary behaviors.
-* A behavior makes sense only in some classes of a class hierarchy.
+- You need to perform an operation on all elements of a complex object structure.
+- You want to clean up the business logic of auxiliary behaviors.
+- A behavior makes sense only in some classes of a class hierarchy.
