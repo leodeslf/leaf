@@ -25,23 +25,23 @@ Logical operator executes first (`||`, then `&&`), then comparison operators (`>
 Conditional operator (ternary) `true ? 1 : 0`.  
 Short-circuiting:
 
-* `true || x --> true` (x is never readed).
-* `false || x --> x`.
-* `true && x --> x`.
-* `false && x --> false` (x is never readed).
-* `null == undefined --> true`.
-* `null === undefined --> false`.
-* `a ?? x` (returns x **only** if `a` is `undefined` or `null`). [Not EJS]
-* `??` is called _nullish coalescing_. [Not EJS]
-* Automatic type conversion is called _type coercion_.
+- `true || x --> true` (x is never readed).
+- `false || x --> x`.
+- `true && x --> x`.
+- `false && x --> false` (x is never readed).
+- `null == undefined --> true`.
+- `null === undefined --> false`.
+- `a ?? x` (returns x **only** if `a` is `undefined` or `null`). [Not EJS]
+- `??` is called _nullish coalescing_. [Not EJS]
+- Automatic type conversion is called _type coercion_.
 
 ## Program Structure
 
 Make code readable:
 
-* Use semicolons (at the end of a statement).
-* Use braces (to wrap code blocks).
-* Indent with two (or four) spaces.
+- Use semicolons (at the end of a statement).
+- Use braces (to wrap code blocks).
+- Indent with two (or four) spaces.
 
 The `brake` jumps out of the loop. The `continue` jumps to the loop's next iteration.
 
@@ -114,9 +114,9 @@ The `unshift` **adds to the beginning** and returns the new length.
 The `shift` **removes the last one** and returns it.  
 The `slice(start, end)`:
 
-* **Returns an array of elements** between `start` and `end`.
-* The `start` is inclusive, `end` is exclusive.
-* Specific `end` is optional. No arguments will return an entire copy.
+- **Returns an array of elements** between `start` and `end`.
+- The `start` is inclusive, `end` is exclusive.
+- Specific `end` is optional. No arguments will return an entire copy.
 
 ### Mutability
 
@@ -147,9 +147,9 @@ The `trim` method **removes all whitespaces** from start and end.
 The `padStart(n, character)` **gives a string n length** by adding a character at the start as many times as needed.  
 The `split(separator)`:
 
-* **Returns an array of substrings**.
-* Split by any occurence of the given separator.
-* If the separator is an empty string (`""`), the original is split between each character.
+- **Returns an array of substrings**.
+- Split by any occurence of the given separator.
+- If the separator is an empty string (`""`), the original is split between each character.
 
 The `repeat(n)` **returns n concatenated copies** of the original one.
 
@@ -346,14 +346,14 @@ console.log(/abc/.test('aac'));
 
 ### Backslash codes (character groups)
 
-* `\b` word boundary.
-* `\d` digit.
-* `\w` alphanumeric ("word").
-* `\s` whitespace.
-* `\D` _not_ a digit.
-* `\W` _not_ alphanumeric ("word").
-* `\S` _not_ whitespace.
-* `.` any, except a newline.
+- `\b` word boundary.
+- `\d` digit.
+- `\w` alphanumeric ("word").
+- `\s` whitespace.
+- `\D` _not_ a digit.
+- `\W` _not_ alphanumeric ("word").
+- `\S` _not_ whitespace.
+- `.` any, except a newline.
 
 ### Set of characters
 
@@ -375,12 +375,12 @@ Backslash codes still work when used between square brackets (in a set of charac
 
 ### Special symbols
 
-* `^` matches _the start_ of the pattern.
-  * In a set of characters it _inverts/negates_ the content of that set.
-* `+` matches a pattern _one or more times_.
-* `*` matches a pattern _zero or more times_.
-* `?` makes the pattern optional, matches _zero or one time_.
-* `$` matches _the end_ of the pattern.
+- `^` matches _the start_ of the pattern.
+  - In a set of characters it _inverts/negates_ the content of that set.
+- `+` matches a pattern _one or more times_.
+- `*` matches a pattern _zero or more times_.
+- `?` makes the pattern optional, matches _zero or one time_.
+- `$` matches _the end_ of the pattern.
 
 Using `[^]` can refer to any character, including a new line.
 
@@ -545,9 +545,9 @@ console.log(re.exec('now it is 90'));
 
 Options:
 
-* `g` _global_, searches matches throughout all the input and can return more than one match.
-* `y` _sticky_, search for a match at the `lastIndex` (zero by default).
-* `i` _case insensitive_.
+- `g` _global_, searches matches throughout all the input and can return more than one match.
+- `y` _sticky_, search for a match at the `lastIndex` (zero by default).
+- `i` _case insensitive_.
 
 Note: on sticky (`y`), match will succeed only if it starts directly with `lastIndex`, whereas global will search ahead.
 
@@ -642,10 +642,10 @@ Each element has a `nodeType` property, which is a number code that identifies t
 
 Examples:
 
-* `Node.ELEMENT_NODE` = 1.
-* `Node.TEXT_NODE` = 3.
-* `Node.COMMENT_NODE` = 8.
-* `Node.DOCUMENT_NODE` = 9.
+- `Node.ELEMENT_NODE` = 1.
+- `Node.TEXT_NODE` = 3.
+- `Node.COMMENT_NODE` = 8.
+- `Node.DOCUMENT_NODE` = 9.
 
 There are 12 codes (2, 4, 5, 6 and 12 are deprecated).
 
@@ -675,10 +675,10 @@ Commonly used attributes are `class`, `id`, `href`, but we can also create our o
 
 Useful element properties:
 
-* The `offsetWidth` and `offsetHeight` give the space the element takes up in pixels.
-* Similarly, `clientWidth` and `clientHeight` give the size _inside_ the element, ignoring the border.
-* To get the `top`, `bottom`, `left` and `right` position of an element, use the `getBoundingClientRect` method.
-* Current scroll position can be found with `pageXOffeset` and `pageYOfffset`.
+- The `offsetWidth` and `offsetHeight` give the space the element takes up in pixels.
+- Similarly, `clientWidth` and `clientHeight` give the size _inside_ the element, ignoring the border.
+- To get the `top`, `bottom`, `left` and `right` position of an element, use the `getBoundingClientRect` method.
+- Current scroll position can be found with `pageXOffeset` and `pageYOfffset`.
 
 ### Query selectors
 
@@ -698,8 +698,8 @@ When a click is done, `mousedown`, `mouseup` and then `click` fires.
 
 That event holds:
 
-* The `clientX` and `clientY`, which contains the clients coordinates in pixels, relative to the top-left corner of the window.
-* The `pageX` and `pageY`, are relative to the whole document.
+- The `clientX` and `clientY`, which contains the clients coordinates in pixels, relative to the top-left corner of the window.
+- The `pageX` and `pageY`, are relative to the whole document.
 
 ### Web worker
 
