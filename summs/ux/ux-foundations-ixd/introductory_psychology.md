@@ -1,4 +1,4 @@
-# Introductory Psychology
+# Introductory Psychology (3/5)
 
 ## Sensation
 

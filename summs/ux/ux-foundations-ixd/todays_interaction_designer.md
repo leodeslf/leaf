@@ -1,4 +1,6 @@
-# Today's Interaction Designer
+# Today's Interaction Designer (1/5)
+
+Interaction Design was introduced by Bill Moggride and Bil Verplank in mid-1980s.
 
 ## Project types and deliverables
 
