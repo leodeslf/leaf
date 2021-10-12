@@ -1,5 +1,14 @@
 # Serve
 
 ```bash
-serve -s <root-dir> -p <port-number>
+npm i -g serve
 ```
+
+```bash
+serve <dir> [options]
+```
+
+Options:
+
+- `-p <port-number>`
+- `-s`, `--single` (404 redirects to `index.html`)

@@ -1,4 +1,4 @@
-# Angular
+# Angular CLI
 
 ```bash
 npm i -g @angular/cli
@@ -15,8 +15,6 @@ npm start
 npm run build
 ```
 
----
-
 ```json
 // package.json
 {
@@ -26,7 +24,5 @@ npm run build
   }
 }
 ```
-
----
 
 More at [CLI Overview and Command Reference](https://angular.io/cli).

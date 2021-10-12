@@ -9,8 +9,6 @@ npm run dev
 npm run build
 ```
 
----
-
 ```json
 // package.json
 {
@@ -22,8 +20,6 @@ npm run build
 }
 ```
 
----
-
 More at [Getting started](https://kit.svelte.dev/docs#introduction-getting-started).
 
 ## Adding SASS/SCSS
@@ -31,8 +27,6 @@ More at [Getting started](https://kit.svelte.dev/docs#introduction-getting-start
 ```bash
 npm i -D svelte-preprocess node-sass
 ```
-
----
 
 ```js
 // svelte.config.js
@@ -47,8 +41,6 @@ const config = {
 export default config;
 ```
 
----
-
 More at:
 
 - [scss, sass](https://github.com/sveltejs/svelte-preprocess/blob/main/docs/preprocessing.md#scss-sass).
@@ -59,8 +51,6 @@ More at:
 ```bash
 npm i -D @sveltejs/adapter-vercel
 ```
-
----
 
 ```js
 // svelte.config.js
@@ -74,8 +64,6 @@ const config = {
 
 export default config;
 ```
-
----
 
 More at:
 

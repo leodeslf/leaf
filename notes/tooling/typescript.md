@@ -6,8 +6,6 @@ tsc <file> # Transpile a specific file
 tsc --project <tsconfig-file> # Specify a tsconfig file
 ```
 
----
-
 ```json
 // tsconfig.json
 {
@@ -24,8 +22,6 @@ tsc --project <tsconfig-file> # Specify a tsconfig file
   ]
 }
 ```
-
----
 
 More at:
 

@@ -15,8 +15,6 @@ npm publish
 npm unpublish <pkg-name> -f
 ```
 
----
-
 ```json
 // package.json
 {
@@ -27,8 +25,6 @@ npm unpublish <pkg-name> -f
   }
 }
 ```
-
----
 
 More at:
 

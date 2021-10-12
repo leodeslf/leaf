@@ -1,4 +1,4 @@
-# Vue
+# Vue CLI
 
 ```bash
 npm i -g @vue/cli
@@ -10,8 +10,6 @@ npm run serve
 npm run build
 ```
 
----
-
 ```json
 // package.json
 {
@@ -21,7 +19,5 @@ npm run build
   }
 }
 ```
-
----
 
 More at [CLI Service](https://cli.vuejs.org/guide/cli-service.html#using-the-binary).

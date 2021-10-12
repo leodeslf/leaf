@@ -24,8 +24,6 @@ Options:
 - `-p, --port`
 - `-h, --hostname`
 
----
-
 ```json
 // package.json
 {
@@ -34,7 +32,5 @@ Options:
   }
 }
 ```
-
----
 
 More at [CLI flags](https://modern-web.dev/docs/dev-server/cli-and-configuration/#cli-flags).

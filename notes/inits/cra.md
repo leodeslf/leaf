@@ -9,8 +9,6 @@ npm start
 npm run build
 ```
 
----
-
 ```json
 // package.json
 {
@@ -20,7 +18,5 @@ npm run build
   }
 }
 ```
-
----
 
 More at [Quick Start](https://create-react-app.dev/docs/getting-started#quick-start).

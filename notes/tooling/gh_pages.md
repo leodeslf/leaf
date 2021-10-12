@@ -9,8 +9,6 @@ npm run predeploy
 npm run deploy
 ```
 
----
-
 ```json
 // package.json
 {

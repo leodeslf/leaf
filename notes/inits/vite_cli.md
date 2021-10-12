@@ -1,4 +1,4 @@
-# Vite
+# Vite CLI
 
 ```bash
 npm init vite@latest <project-name> --template <option>
@@ -8,8 +8,6 @@ npm init vite@latest <project-name> --template <option>
 npm run dev
 npm run build
 ```
-
----
 
 ```json
 // package.json
@@ -36,7 +34,5 @@ Template options:
 - `lit-element-ts`
 - `svelte`
 - `svelte-ts`
-
----
 
 More at [Command Line Interface](https://vitejs.dev/guide/#command-line-interface).
