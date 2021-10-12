@@ -6,23 +6,24 @@ Written by Marijn Haverbeke.
 
 ### Numbers
 
-Maximum possible number is close to 9 with 15 zeros.  
-Scientific notation `2e8`, means `2 * (10 ** 8)`.  
-Arithmetic operators with the same precedence execute from left to right.  
-The `/`, `*` and `%` share the same precedence, `+` and `-` also do.  
-The `/`, `*` and `%` executes first, then `+` and `-`.  
-Special numbers that don't behave like numbers are `NaN`, `Infinite` and `-Infinite`.
+- Maximum possible number is close to 9 with 15 zeros.
+- Scientific notation `2e8`, means `2 * (10 ** 8)`.
+- Arithmetic operators with the same precedence execute from left to right.
+- The `/`, `*` and `%` share the same precedence, `+` and `-` also do.
+- The `/`, `*` and `%` executes first, then `+` and `-`.
+- Special numbers that don't behave like numbers are `NaN`, `Infinite` and `-Infinite`.
 
 ### Strings
 
-Escape character is `/`.  
-Backtick quote creates _template literals_.  
-Code inside `${}` will be computed.
+- Escape character is `/`.
+- Backtick quote creates _template literals_.
+- Code inside `${}` will be computed.
 
 ### Operators
 
-Logical operator executes first (`||`, then `&&`), then comparison operators (`>, >=, <, <=, ==, ===`), then the rest.  
-Conditional operator (ternary) `true ? 1 : 0`.  
+- Logical operator executes first (`||`, then `&&`), then comparison operators (`>, >=, <, <=, ==, ===`), then the rest.
+- Conditional operator (ternary) `true ? 1 : 0`.
+
 Short-circuiting:
 
 - `true || x --> true` (x is never readed).
@@ -49,7 +50,8 @@ The `brake` jumps out of the loop. The `continue` jumps to the loop's next itera
 
 ### Closure
 
-Is the ability to access a local binding created in a context that is no longer active (a function call that has ended).  
+Is the ability to access a local binding created in a context that is no longer active (a function call that has ended).
+
 This feature —being able to reference a specific instance of a local binding in an enclosing scope— is called _closure_.
 
 Example:
@@ -85,44 +87,43 @@ console.log(half(2));
 
 ### Functions Visibility
 
-Function definition (or binding) is under top-to-bottom flow of control.  
-Function declaration is _hoisted_.
+- Function definition (or binding) is under top-to-bottom flow of control.
+- Function declaration is _hoisted_.
 
 ### Functions Scope
 
-The `var` reaches global scope only if it's not in a function.  
-Visibility between blocks, its parents, and global scope is called _lexical scope_.  
-Calling a binding inside a different local scope is called _closure_.  
-A function that calls itself is called _recursive_.  
-A function that has no side effects and doesn't read global bindings is called _pure function_.
+- The `var` reaches global scope only if it's not in a function.
+- Visibility between blocks, its parents, and global scope is called _lexical scope_.
+- Calling a binding inside a different local scope is called _closure_.
+- A function that calls itself is called _recursive_.
+- A function that has no side effects and doesn't read global bindings is called _pure function_.
 
 ## Data Structures: Objects and Arrays
 
 ### Objects Properties
 
-Property names are strings (calling `array.length` and `array["length"]` is the same).  
-In JavaScript, functions contained in properties are called _methods_.  
-A non-existent property returns `undefined` (when not declared or deleted).  
-The `in` operator returns whether there exists a `("property" in anObject)` or not.  
-The `keys` function returns all the properties as an array.
+- Property names are strings (calling `array.length` and `array["length"]` is the same).
+- In JavaScript, functions contained in properties are called _methods_.
+- A non-existent property returns `undefined` (when not declared or deleted).
+- The `in` operator returns whether there exists a `("property" in anObject)` or not.
+- The `keys` function returns all the properties as an array.
 
 ### Some Array Methods
 
-The `push` **adds to the end** and returns the new length.  
-The `pop` **removes the last one** and returns it.  
-The `unshift` **adds to the beginning** and returns the new length.  
-The `shift` **removes the last one** and returns it.  
-The `slice(start, end)`:
-
-- **Returns an array of elements** between `start` and `end`.
-- The `start` is inclusive, `end` is exclusive.
-- Specific `end` is optional. No arguments will return an entire copy.
+- The `push` **adds to the end** and returns the new length.
+- The `pop` **removes the last one** and returns it.
+- The `unshift` **adds to the beginning** and returns the new length.
+- The `shift` **removes the last one** and returns it.
+- The `slice(start, end)`:
+  - **Returns an array of elements** between `start` and `end`.
+  - The `start` is inclusive, `end` is exclusive.
+  - Specific `end` is optional. No arguments will return an entire copy.
 
 ### Mutability
 
-Values of numbers, strings, and booleans are _immutable_, we change the value the binding points to.  
-Binding elements to the same object leads to an _identity_.  
-Modifying the content of the original object will reflect changes on its bindings.
+- Values of numbers, strings, and booleans are _immutable_, we change the value the binding points to.
+- Binding elements to the same object leads to an _identity_.
+- Modifying the content of the original object will reflect changes on its bindings.
 
 Example:
 
@@ -143,23 +144,21 @@ console.log(b.val);
 
 ### Some String Methods
 
-The `trim` method **removes all whitespaces** from start and end.  
-The `padStart(n, character)` **gives a string n length** by adding a character at the start as many times as needed.  
+- The `trim` method **removes all whitespaces** from start and end.
+- The `padStart(n, character)` **gives a string n length** by adding a character at the start as many times as needed.
 The `split(separator)`:
-
-- **Returns an array of substrings**.
-- Split by any occurence of the given separator.
-- If the separator is an empty string (`""`), the original is split between each character.
-
-The `repeat(n)` **returns n concatenated copies** of the original one.
+  - **Returns an array of substrings**.
+  - Split by any occurence of the given separator.
+  - If the separator is an empty string (`""`), the original is split between each character.
+- The `repeat(n)` **returns n concatenated copies** of the original one.
 
 JavaScript stops or warns you when binding with _a name already taken_, but, it **only** does that for `let` and `const` declarations, not for `var` nor `function`.
 
 ## Higher-Order Functions
 
-A function that operates on other functions, taking them as arguments or returning them, are called _higher-order functions_.  
-Calls can be _stacked_ in a single expression.  
-When returning functions they can be called immediately if adding braces after the first call.
+A function that operates on other functions, taking them as arguments or returning them, are called _higher-order functions_.
+
+Calls can be _stacked_ in a single expression. When returning functions they can be called immediately if adding braces after the first call.
 
 Example:
 
@@ -178,8 +177,8 @@ hof('That is')('an unexpected')('and weird behavior');
 
 ### Strings and Character Codes
 
-The `charCodeAt` returns a code unit (half character if it's an emoji for example).  
-The `codePointAt` returns a full Unicode character.
+- The `charCodeAt` returns a code unit (half character if it's an emoji for example).
+- The `codePointAt` returns a full Unicode character.
 
 ```javascript
 let horse = '🐴';
@@ -199,15 +198,15 @@ console.log(horse.codePointAt(0));
 
 ## The Secret Life of Objects
 
-It's a common practice to put an underscore (\_) at the start of a _private_ property name.  
-The `call` method takes `this` as the first parameter.  
-Each function defined with the `function` keyword has its own `this` binding.  
-Arrow functions do not bind their own `this`.
+- It's a common practice to put an underscore (\_) at the start of a _private_ property name.
+- The `call` method takes `this` as the first parameter.
+- Each function defined with the `function` keyword has its own `this` binding.
+- Arrow functions do not bind their own `this`.
 
 ### Symbols
 
-Several properties can (but should not) have the same name with symbols.  
-Symbols are _included_ or _accessed_ by using square brackets.
+- Several properties can (but should not) have the same name with symbols.
+- Symbols are _included_ or _accessed_ by using square brackets.
 
 Example:
 
@@ -273,13 +272,13 @@ console.log(acmeCar[owner]);
 // --> Road Runner
 ```
 
-Symbols are not enumerated, they don't make part neither of `for...of` nor `for...in` loops.  
-Symbols don't get listed on `Object.keys()` or `Object.getOwnPropertyNames()`. They can be listed by using `Object.getOwnPropertySymbols()`.
+- Symbols are not enumerated, they don't make part neither of `for...of` nor `for...in` loops.
+- Symbols don't get listed on `Object.keys()` or `Object.getOwnPropertyNames()`. They can be listed by using `Object.getOwnPropertySymbols()`.
 
 ### Getters, Setters and Statics
 
-The `get` properties are accessed directly, without the call notation (with parenthesis at the end).  
-Passing args to a `set` method is done directly too, it doesn't make use of function call notation.
+- The `get` properties are accessed directly, without the call notation (with parenthesis at the end).
+- Passing args to a `set` method is done directly too, it doesn't make use of function call notation.
 
 Example:
 
@@ -313,10 +312,10 @@ The `instanceof` sees through inherited types.
 
 ## Bugs and Errors
 
-The `'use strict'` avoids automatic "corrections" and assumptions made by JavaScript, instead throwing errors, it also removes some features entirely.  
-The `debugger` creates a breakpoint and pauses the program if the developer tools is active.  
-When JavaScript 'throws' an error it stops all the call stack that ended in that exception, this is called _unwinding the stack_.  
-We can raise an exception manually with the `throw` keyword, like this: `throw new Error('Oops!')`.
+- The `'use strict'` avoids automatic "corrections" and assumptions made by JavaScript, instead throwing errors, it also removes some features entirely.
+- The `debugger` creates a breakpoint and pauses the program if the developer tools is active.
+- When JavaScript 'throws' an error it stops all the call stack that ended in that exception, this is called _unwinding the stack_.
+- We can raise an exception manually with the `throw` keyword, like this: `throw new Error('Oops!')`.
 
 ## Regular Expressions
 
@@ -357,8 +356,8 @@ console.log(/abc/.test('aac'));
 
 ### Set of characters
 
-A _set of characters_ (possibilities) can be defined between square brackets.  
-We can also define a _range of characters_ like `[0-9]`, `[a-z]` or `[A-Z]`.
+- A _set of characters_ (possibilities) can be defined between square brackets.
+- We can also define a _range of characters_ like `[0-9]`, `[a-z]` or `[A-Z]`.
 
 Example:
 
@@ -411,7 +410,7 @@ console.log(/(he)+/.test('hehehe'));
 // --> true
 ```
 
-The whole match is always the first element.  
+The whole match is always the first element.
 A group matched multiple times, will return only the last match.
 
 Example:
@@ -462,10 +461,10 @@ console.log(/\b(A|B|C)\b/.test('AB'));
 
 ### Replace method
 
-We can refer to _n_ matched group in the replacement string with the dollar sign.  
-The _n_ range is from 1 up to 9.  
-The `replace` returns a new string.  
-The `$&` refers to the whole match.
+- We can refer to _n_ matched group in the replacement string with the dollar sign.
+- The _n_ range is from 1 up to 9.
+- The `replace` returns a new string.
+- The `$&` refers to the whole match.
 
 Example:
 
@@ -475,7 +474,7 @@ console.log(string.replace(/(\w+) and (\w+)/, "$2 and $1"));
 // --> cats and dogs
 ```
 
-The `replace` can also take a function as the second argument, which will be applied to each group matched.
+- The `replace` can also take a function as the second argument, which will be applied to each group matched.
 
 Example:
 
@@ -486,7 +485,7 @@ console.log(string.replace(/\b(\w+)\b/g, str => str.toLowerCase()));
 
 ### Greedy matching
 
-Repetition operators (`+`, `*`, `?`, `{}`) will match as much as they can.
+- Repetition operators (`+`, `*`, `?`, `{}`) will match as much as they can.
 
 Example:
 
@@ -498,8 +497,8 @@ console.log(commentedCode.replace(/\/\*[^]*\*\//g, ""));
 // --> x = 1  10
 ```
 
-On a _greedy_ way, it will take the first "start" and the last "end" to match as much as it can.  
-To take a smaller match, we can put a question mark after the repetition operators to make them non-greedy (`+?`, `*?`, `??`, `{}?`).
+- On a _greedy_ way, it will take the first "start" and the last "end" to match as much as it can.
+- To take a smaller match, we can put a question mark after the repetition operators to make them non-greedy (`+?`, `*?`, `??`, `{}?`).
 
 Example:
 
@@ -511,7 +510,7 @@ console.log(commentedCode.replace(/\/\*[^]*?\*\//g, ""));
 
 ### Escape characters
 
-Characters with special meanings must be _escaped_ to be matched against a regex.
+- Characters with special meanings must be _escaped_ to be matched against a regex.
 
 Example:
 
@@ -525,8 +524,8 @@ console.log(text.replace(escapeRegex, '\\$&'));
 
 ### LastIndex property
 
-When `exec` matches `lastIndex` is updated to the index after the match.  
-Resets to zero if no match was found.
+- When `exec` matches `lastIndex` is updated to the index after the match.
+- Resets to zero if no match was found.
 
 Example:
 
@@ -553,8 +552,8 @@ Note: on sticky (`y`), match will succeed only if it starts directly with `lastI
 
 ## Modules
 
-With `import`, we take the **binding** from other modules, not the value.  
-If the exported binding is redefined, the modules that imported it will see its new value.
+- With `import`, we take the **binding** from other modules, not the value.
+- If the exported binding is redefined, the modules that imported it will see its new value.
 
 ## Asynchronous Programming
 
@@ -576,7 +575,7 @@ let promiseValue = new Promise((resolve, reject) => { /* Do something. */ }))
 
 ### Async functions
 
-The `async` functions implicitly return a promise. The `await` keyword can be used only inside an `async` function.
+- The `async` functions implicitly return a promise. The `await` keyword can be used only inside an `async` function.
 
 Example:
 
@@ -587,7 +586,7 @@ async function anotherPromise() {
 
 async function waitAndDo() {
   // Code will stop here at `await`, until "anotherPromise" is ready.
-  return await anotherPromise();  
+  return await anotherPromise();
 }
 
 let any = undefined;
@@ -603,7 +602,7 @@ console.log(any);
 
 ### Generators
 
-They produce an iterable.
+Generators produce an iterable.
 
 Example:
 
@@ -628,17 +627,17 @@ for (let power of powers(2)) {
 
 ### The Web
 
-The URL (Uniform Resource Locator) structure is `[protocol]://[server]/[path]`.
+- The URL (Uniform Resource Locator) structure is `[protocol]://[server]/[path]`.
 
 ### HTML
 
-In HTML, an ampersand (&) followed by a name or character code and a semicolon (;) is called an _entity_.
+- In HTML, an ampersand (&) followed by a name or character code and a semicolon (;) is called an _entity_.
 
 ## The DOM
 
 ### Trees
 
-Each element has a `nodeType` property, which is a number code that identifies the type of the node. They are constant properties of `Node` objects.
+- Each element has a `nodeType` property, which is a number code that identifies the type of the node. They are constant properties of `Node` objects.
 
 Examples:
 
@@ -663,13 +662,13 @@ The `replaceChildren` method takes the new node, and the one to be replaced as a
 
 ### Creating nodes
 
-Some array-like collections returned by `getElementsByTagName` and `childNodes` are _live_. That means they are updated when the DOM changes.  
-If we want a solid collection of nodes, we can call it from `Array.from`.
+- Some array-like collections returned by `getElementsByTagName` and `childNodes` are _live_. That means they are updated when the DOM changes.
+- If we want a solid collection of nodes, we can call it from `Array.from`.
 
 ### Attributes
 
-We can work with attributes with `getAttribute` and `setAttribute`.  
-Commonly used attributes are `class`, `id`, `href`, but we can also create our own attributes, it's recommended to prefix them with `data-` as a good practice.
+- We can work with attributes with `getAttribute` and `setAttribute`.
+- Commonly used attributes are `class`, `id`, `href`, but we can also create our own attributes, it's recommended to prefix them with `data-` as a good practice.
 
 ### Layout
 
@@ -729,9 +728,9 @@ Each side receives a _copy_ of the object sent, rather than the value itself.
 
 ### Timers
 
-The `setTimeout` function schedules a function to be called after a given number of milliseconds.  
-A `setInterval` sets a timer that should fire every given number of milliseconds.  
-Similarly to `animationFrame` and `cancelAnimationFrame`, these timers also have a `clearTimeout` and `clearInterval` respectively.
+- The `setTimeout` function schedules a function to be called after a given number of milliseconds.
+- A `setInterval` sets a timer that should fire every given number of milliseconds.
+- Similarly to `animationFrame` and `cancelAnimationFrame`, these timers also have a `clearTimeout` and `clearInterval` respectively.
 
 ### Debouncing
 
@@ -758,11 +757,11 @@ window.addEventListener('click', event => {
 
 ### The protocol
 
-The shape of an HTTP request is `[method] [path] [version]`.  
-Methods: `GET`, `POST`, `PUT`, `DELETE`.  
-A server response, e.g.: `HTTP/1.1 200 OK`. Starts with the protocols version, followed with the status code, and finally a human-readable version of that status.  
-Status code starting with a `2` indicates success. Starting with a `4` means there was something wrong. Codes with `5` means an error happened on the server.  
-The first line of a request can be followed by a number of _headers_. Header's shape is `name: value`.
+- The shape of an HTTP request is `[method] [path] [version]`.
+- Methods: `GET`, `POST`, `PUT`, `DELETE`.
+- A server response, e.g.: `HTTP/1.1 200 OK`. Starts with the protocols version, followed with the status code, and finally a human-readable version of that status.
+- Status code starting with a `2` indicates success. Starting with a `4` means there was something wrong. Codes with `5` means an error happened on the server.
+- The first line of a request can be followed by a number of _headers_. Header's shape is `name: value`.
 
 ### Browsers and HTTP
 
@@ -776,16 +775,16 @@ Forms:
 </form>
 ```
 
-Resulting _submitted_ request: `GET /example/message.html?name=Some&lname=Name HTTP/1.1`.
+- Resulting _submitted_ request: `GET /example/message.html?name=Some&lname=Name HTTP/1.1`.
 
-Ampersand is used to separate pairs.  
-Text must be escaped (encoded) to use it as a request. Use `encodeURIComponent` to parse, and `decodeURIComponent`.
+- Ampersand is used to separate pairs.
+- Text must be escaped (encoded) to use it as a request. Use `encodeURIComponent` to parse, and `decodeURIComponent`.
 
 ### Fetch
 
-When the URL argument doesn't start with a protocol name, it's treated as _relative_.  
-When it starts with a slash, it replaces the current path.  
-When it does not, it is put in front of the relative URL.
+- When the URL argument doesn't start with a protocol name, it's treated as _relative_.
+- When it starts with a slash, it replaces the current path.
+- When it does not, it is put in front of the relative URL.
 
 Example:
 
@@ -796,7 +795,7 @@ fetch('example/data.txt').then(res => {
 });
 ```
 
-Use the `text` method to get the actual content of a response.
+- Use the `text` method to get the actual content of a response.
 
 Example:
 
@@ -818,9 +817,11 @@ fetch('example/data.txt')
 
 ### Focus
 
-To move the focus to an element use `focus`. To remove focus use `blur` method. If the user is expected to interact immediately use `autofocus`.  
+To move the focus to an element use `focus`. To remove focus use `blur` method. If the user is expected to interact immediately use `autofocus`.
 We can influence the order of elements when moving through with `TAB` using the `tabindex` attribute. A `tabindex` of -1 makes tabbing skip over an element.
 
 ### The form as a whole
 
-Each `<form>` element contains an array-like collection of elements on it's `elements` property.
+- Each `<form>` element contains an array-like collection of elements on it's `elements` property.
+
+<!-- https://eloquentjavascript.net/ -->
