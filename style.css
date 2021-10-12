@@ -1,0 +1,190 @@
+/* F5F493 */
+
+:root {
+  --bg: #202121;
+  --bg--alt-a: #282929;
+  --bg--alt-b: #2c2d2d;
+  --color: #edeeed;
+  --color--alt: #848484;
+  --color--complementary-a: #f59037;
+  --color--complementary-b: #aff864;
+  --color--h2: #f5ef37;
+  --color--h3: #f3ee53;
+  --color--h4: #f6f374;
+  --color--h5: #f9f79d;
+  --color--h6: #fbfac4;
+  background-color: var(--bg);
+  color: var(--color);
+  font-family: Roboto, Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: .5px;
+  line-height: 1.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 80ch;
+  width: 80ch;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+main>:first-child {
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
+}
+
+h1, footer {
+  font-size: 12px;
+}
+
+h1 a {
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h2 {
+  color: var(--color--h2);
+  font-size: 34px;
+  font-weight: 400;
+}
+
+h3 {
+  color: var(--color--h3);
+  font-size: 26px;
+  font-weight: 400;
+}
+
+h4 {
+  color: var(--color--h4);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h5 {
+  color: var(--color--h5);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+h6 {
+  color: var(--color--h6);
+  font-size: 16px;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+strong {
+  color: var(--color--complementary-a);
+  font-weight: 500;
+}
+
+em, blockquote>p {
+  color: var(--color--complementary-a);
+}
+
+blockquote>p {
+  border-left: .5ch solid var(--color--complementary-a);
+  padding-left: .5rem;
+  padding-top: 2px;
+}
+
+ul, ol {
+  padding-left: 3ch;
+}
+
+ul {
+  list-style-type: "╴ ";
+}
+
+ul ul {
+  margin-bottom: 0;
+}
+
+hr {
+  margin: 2rem 0;
+  border: none;
+  border-bottom: 1px solid var(--bg--alt-a);
+}
+
+pre {
+  margin: 0 -1rem;
+  padding: .5rem 1rem;
+}
+
+code:not(h3>code), pre, table {
+  font-size: 14px;
+}
+
+pre, table {
+  background-color: var(--bg--alt-a);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+code:not(pre>code) {
+  color: var(--color--complementary-b);
+}
+
+table {
+  border-spacing: 0;
+  margin: 0 -1rem;
+}
+
+table td, table th {
+  padding: .25rem .5rem;
+}
+
+table tr:nth-of-type(2n), table>thead>tr {
+  background-color: var(--bg--alt-b);
+}
+
+table tr td:first-of-type, table tr th:first-of-type {
+  padding-left: 1rem;
+}
+
+table tr td:last-of-type, table tr th:last-of-type {
+  padding-right: 1rem;
+}
+
+table tr:first-of-type th {
+  padding-top: .5rem;
+}
+
+table tr:last-of-type td {
+  padding-bottom: .5rem;
+}
+
+footer {
+  color: var(--color--alt);
+  align-self: center;
+  margin-top: auto;
+  width: fit-content;
+}
+
+blockquote, p, ul, ol, pre, table {
+  margin-bottom: 1rem;
+}
