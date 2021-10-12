@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🌱 My learning docs and notes.">
+    <meta name="author" content="Leonardo de S.L.F"/>
+    <link rel="stylesheet" href="/style.css"/>
+    <link rel="stylesheet" href="/syntax-highlight.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <title>Docs & Notes</title>
+  </head>
+  <body>
+    <h1>
+      <a href="/">Docs & Notes</a>
+    </h1>
+    <main>
+      <h2>Git flow</h2>
+<p>A branching model made by Vincent Driessen in 2010.</p>
+<h3>Branches</h3>
+<table>
+<thead>
+<tr>
+<th>Branch name</th>
+<th>Description</th>
+<th>Branch off from</th>
+<th>Merge back to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>master</code></td>
+<td>Main production branch.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>develop</code></td>
+<td>Main develop branch</td>
+<td><code>master</code></td>
+<td><code>release-*</code></td>
+</tr>
+<tr>
+<td><code>feature-*</code></td>
+<td>New features branch</td>
+<td><code>develop</code>, <code>feature-*</code></td>
+<td><code>develop</code></td>
+</tr>
+<tr>
+<td><code>release-*</code></td>
+<td>New release branch</td>
+<td><code>develop</code></td>
+<td><code>master</code>, <code>develop</code></td>
+</tr>
+<tr>
+<td><code>hotfix-*</code></td>
+<td>Hotfixes branch</td>
+<td><code>master</code></td>
+<td><code>master</code>, <code>develop</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Notes</h4>
+<ul>
+<li>Branch <code>develop</code> is created from the very first commit of <code>master</code>.</li>
+<li>Only <code>release-*</code> should merge back into <code>master</code>. The exception to that is <code>hotfix-*</code>.</li>
+<li>Hotfixes from a <code>release-*</code> branch may be continuously merged back into <code>develop</code>, until the complete release is finished, then merged to <code>master</code>.</li>
+</ul>
+<h3>Reference</h3>
+<p><a href="https://nvie.com/posts/a-successful-git-branching-model/">A successful Git branching model</a></p>
+
+    </main>
+    <footer>
+      <p>
+        🌱 My learning docs and notes. By
+        <a href="https://www.leodeslf.com/">leodeslf</a>
+        © 2021 Docs & Notes
+      </p>
+    </footer>
+  </body>
+</html>

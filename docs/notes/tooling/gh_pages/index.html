@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🌱 My learning docs and notes.">
+    <meta name="author" content="Leonardo de S.L.F"/>
+    <link rel="stylesheet" href="/style.css"/>
+    <link rel="stylesheet" href="/syntax-highlight.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <title>Docs & Notes</title>
+  </head>
+  <body>
+    <h1>
+      <a href="/">Docs & Notes</a>
+    </h1>
+    <main>
+      <h2>GitHub Pages</h2>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> i gh-pages --save-dev</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> run predeploy<br><span class="token function">npm</span> run deploy</code></pre>
+<pre class="language-json"><code class="language-json"><span class="token comment">// package.json</span><br><span class="token punctuation">{</span><br>  <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"predeploy"</span><span class="token operator">:</span> <span class="token string">"npm run build"</span><span class="token punctuation">,</span><br>    <span class="token property">"deploy"</span><span class="token operator">:</span> <span class="token string">"gh-pages -d build"</span><br>  <span class="token punctuation">}</span><span class="token punctuation">,</span><br>  <span class="token property">"homepage"</span><span class="token operator">:</span> <span class="token string">"https://[user-name].github.io/[repo-name]"</span><br><span class="token punctuation">}</span></code></pre>
+
+    </main>
+    <footer>
+      <p>
+        🌱 My learning docs and notes. By
+        <a href="https://www.leodeslf.com/">leodeslf</a>
+        © 2021 Docs & Notes
+      </p>
+    </footer>
+  </body>
+</html>

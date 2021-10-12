@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🌱 My learning docs and notes.">
+    <meta name="author" content="Leonardo de S.L.F"/>
+    <link rel="stylesheet" href="/style.css"/>
+    <link rel="stylesheet" href="/syntax-highlight.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <title>Docs & Notes</title>
+  </head>
+  <body>
+    <h1>
+      <a href="/">Docs & Notes</a>
+    </h1>
+    <main>
+      <h2>NPM Packages</h2>
+<pre class="language-bash"><code class="language-bash">npmrc <span class="token operator">&lt;</span>usr-name<span class="token operator">></span><br><span class="token function">npm</span> init --scope<span class="token operator">=</span>@<span class="token operator">&lt;</span>usr-name<span class="token operator">></span><br><span class="token function">npm</span> publish --access public</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> version <span class="token punctuation">[</span>major <span class="token operator">|</span> minor <span class="token operator">|</span> patch<span class="token punctuation">]</span><br><span class="token function">npm</span> publish</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> unpublish <span class="token operator">&lt;</span>pkg-name<span class="token operator">></span> -f</code></pre>
+<pre class="language-json"><code class="language-json"><span class="token comment">// package.json</span><br><span class="token punctuation">{</span><br>  <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"@&lt;usr-name>/&lt;pkg-name>"</span><span class="token punctuation">,</span><br>  <span class="token property">"publishConfig"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"registry"</span><span class="token operator">:</span> <span class="token string">"http://registry.npmjs.org"</span><span class="token punctuation">,</span><br>    <span class="token property">"access"</span><span class="token operator">:</span> <span class="token string">"public"</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p>More at:</p>
+<ul>
+<li><a href="https://docs.npmjs.com/creating-and-publishing-scoped-public-packages">Creating and publishing scoped public packages</a>.</li>
+<li><a href="https://docs.npmjs.com/cli/v7/commands">CLI commands</a>.</li>
+</ul>
+
+    </main>
+    <footer>
+      <p>
+        🌱 My learning docs and notes. By
+        <a href="https://www.leodeslf.com/">leodeslf</a>
+        © 2021 Docs & Notes
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🌱 My learning docs and notes.">
+    <meta name="author" content="Leonardo de S.L.F"/>
+    <link rel="stylesheet" href="/style.css"/>
+    <link rel="stylesheet" href="/syntax-highlight.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <title>Docs & Notes</title>
+  </head>
+  <body>
+    <h1>
+      <a href="/">Docs & Notes</a>
+    </h1>
+    <main>
+      <h2>SvelteKit</h2>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> init svelte@next <span class="token operator">&lt;</span>project-name<span class="token operator">></span></code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> run dev<br><span class="token function">npm</span> run build</code></pre>
+<pre class="language-json"><code class="language-json"><span class="token comment">// package.json</span><br><span class="token punctuation">{</span><br>  <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"dev"</span><span class="token operator">:</span> <span class="token string">"svelte-kit dev --port &lt;number> --open"</span><span class="token punctuation">,</span><br>    <span class="token property">"build"</span><span class="token operator">:</span> <span class="token string">"svelte-kit build"</span><span class="token punctuation">,</span><br>    <span class="token property">"preview"</span><span class="token operator">:</span> <span class="token string">"svelte-kit preview --port &lt;number> --open"</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p>More at <a href="https://kit.svelte.dev/docs#introduction-getting-started">Getting started</a>.</p>
+<h3>Adding SASS/SCSS</h3>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> i -D svelte-preprocess node-sass</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token comment">// svelte.config.js</span><br><span class="token keyword">import</span> preprocess <span class="token keyword">from</span> <span class="token string">'svelte-preprocess'</span><span class="token punctuation">;</span><br><br><span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span><br>  preprocess<span class="token operator">:</span> <span class="token function">preprocess</span><span class="token punctuation">(</span><span class="token punctuation">{</span><br>    scss<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><span class="token punctuation">)</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span><br><br><span class="token keyword">export</span> <span class="token keyword">default</span> config<span class="token punctuation">;</span></code></pre>
+<p>More at:</p>
+<ul>
+<li><a href="https://github.com/sveltejs/svelte-preprocess/blob/main/docs/preprocessing.md#scss-sass">scss, sass</a>.</li>
+<li><a href="https://github.com/sveltejs/svelte-preprocess#what-is-it">What is it?</a>.</li>
+</ul>
+<h3>Adding a Vercel adapter</h3>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> i -D @sveltejs/adapter-vercel</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token comment">// svelte.config.js</span><br><span class="token keyword">import</span> vercel <span class="token keyword">from</span> <span class="token string">'@sveltejs/adapter-vercel'</span><span class="token punctuation">;</span><br><br><span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span><br>  kit<span class="token operator">:</span> <span class="token punctuation">{</span><br>    adapter<span class="token operator">:</span> <span class="token function">vercel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span><br><br><span class="token keyword">export</span> <span class="token keyword">default</span> config<span class="token punctuation">;</span></code></pre>
+<p>More at:</p>
+<ul>
+<li><a href="https://kit.svelte.dev/docs#adapters">ADAPTERS</a>.</li>
+<li><a href="https://github.com/sveltejs/kit/tree/master/packages/adapter-vercel#adapter-vercel">adapter-vercel</a>.</li>
+</ul>
+
+    </main>
+    <footer>
+      <p>
+        🌱 My learning docs and notes. By
+        <a href="https://www.leodeslf.com/">leodeslf</a>
+        © 2021 Docs & Notes
+      </p>
+    </footer>
+  </body>
+</html>
