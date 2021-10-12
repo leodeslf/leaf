@@ -20,7 +20,7 @@ Bubble(array)
     Bobble(array)
 ```
 
-```JavaScript
+```javascript
 function Bubble(arr) {
   const n = arr.length;
   if (n < 2) return arr;
@@ -55,7 +55,7 @@ Heap(array)
         Swap them one by one (top to bottom)
 ```
 
-```JavaScript
+```javascript
 function Heap(arr) {
   const n = arr.length;
   if (n < 2) return arr;
@@ -101,7 +101,7 @@ Insertion(array)
     Put element at the right spot
 ```
 
-```JavaScript
+```javascript
 function Insertion(arr) {
   const n = arr.length;
   if (n < 2) return arr;
@@ -129,7 +129,7 @@ Merge(array)
       Sort items from each single-block couple
 ```
 
-```JavaScript
+```javascript
 function Merge(arr) {
   const n = arr.length;
   if (n < 2) return arr;
@@ -173,7 +173,7 @@ Quick(array)
     Return Quick(before) + pivot + Quick(after)
 ```
 
-```JavaScript
+```javascript
 function Quick(arr) {
   const n = arr.length;
   if (n < 2) return arr;
@@ -207,7 +207,7 @@ Selection(array)
        Swap elementI and elementJ
 ```
 
-```JavaScript
+```javascript
 function Selection(arr) {
   const n = arr.length;
   if (n < 2) return arr;
@@ -243,7 +243,7 @@ Shell(array)
     Reduce gap
 ```
 
-```JavaScript
+```javascript
 function Shell(arr) {
   const n = arr.length;
   if (n < 2) return arr;

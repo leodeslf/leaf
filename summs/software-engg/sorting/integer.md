@@ -20,7 +20,7 @@ Bucket(array)
     Put Bucket(buckets) into into sorted array
 ```
 
-```JavaScript
+```javascript
 function Bucket(arr) {
   const n = arr.length;
   if (n < 2) return arr;
@@ -57,7 +57,7 @@ Count(array)
     Add element to sorted array, element value amount of times
 ```
 
-```JavaScript
+```javascript
 function Count(arr) {
   const n = arr.length;
   if (n < 2) return arr;
