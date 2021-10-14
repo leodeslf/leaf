@@ -1,13 +1,13 @@
-/*
-Name: Duotone Sea
-Author: by Simurai, adapted from DuoTone themes by Simurai for Atom (http://simurai.com/projects/2016/01/01/duotone-themes)
-
-Conversion: Bram de Haan (http://atelierbram.github.io/Base2Tone-prism/output/prism/prism-base2tone-sea-dark.css)
-Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
-*/
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=aFTR7PB1QTsUX8KYvrGyIYG_N43dfHtrnIxZTJDPBOB4UCmNI2xPlbOv17hhi2vxRj7N4KlbmYQeEiC8L4do19Mgc3EO-YNXV9NywmZcCoYj7jQA7aZLIZPetWrOh3JF3ZxxfgoN6b5DkB87MRqzvQWk&skey=d4f206f6aecab2b9&v=v5) format('woff2');
+}
 
 code[class*="language-"], pre[class*="language-"] {
-  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-family: 'DM Mono', monospace;
   font-size: 14px;
   line-height: 1.375;
   direction: ltr;
@@ -15,9 +15,9 @@ code[class*="language-"], pre[class*="language-"] {
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
@@ -26,18 +26,14 @@ code[class*="language-"], pre[class*="language-"] {
   color: #93a3b4;
 }
 
-pre>code[class*="language-"] {
-  font-size: 1em;
-}
-
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection, code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-  text-shadow: none;
-  background: #004a9e;
+  color: #ffffff;
+  background: #000000;
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection, code[class*="language-"]::selection, code[class*="language-"] ::selection {
-  text-shadow: none;
-  background: #004a9e;
+  color: #ffffff;
+  background: #000000;
 }
 
 /* Code blocks */
@@ -48,13 +44,8 @@ pre[class*="language-"] {
 
 /* Inline code */
 
-:not(pre)>code[class*="language-"] {
-  padding: .1em;
-  border-radius: .3em;
-}
-
 .token.comment, .token.prolog, .token.doctype, .token.cdata {
-  color: #8192a7;
+  color: #70849c;
 }
 
 .token.punctuation {
@@ -70,7 +61,7 @@ pre[class*="language-"] {
 }
 
 .token.property, .token.function {
-  color: #7d9ec5;
+  color: #7eb6f6;
 }
 
 .token.tag-id, .token.selector, .token.atrule-id {
@@ -78,7 +69,7 @@ pre[class*="language-"] {
 }
 
 code.language-javascript, .token.attr-name {
-  color: #7eb6f6;
+  color: #9dafc5;
 }
 
 code.language-css, code.language-scss, .token.boolean, .token.string, .token.entity, .token.url, .language-css .token.string, .language-scss .token.string, .style .token.string, .token.attr-value, .token.keyword, .token.control, .token.directive, .token.unit, .token.statement, .token.regex, .token.atrule {
@@ -119,10 +110,6 @@ pre>code.highlight {
   outline-offset: .4em;
 }
 
-/* overrides color-values for the Line Numbers plugin
- * http://prismjs.com/plugins/line-numbers/
- */
-
 .line-numbers.line-numbers .line-numbers-rows {
   border-right-color: #1f2932;
 }
@@ -130,10 +117,6 @@ pre>code.highlight {
 .line-numbers .line-numbers-rows>span:before {
   color: #2c3847;
 }
-
-/* overrides color-values for the Line Highlight plugin
-* http://prismjs.com/plugins/line-highlight/
-*/
 
 .line-highlight.line-highlight {
   background: rgba(10, 163, 112, 0.2);
