@@ -35,9 +35,9 @@ while getopts ":g" opt; do
     {
       task="Add/Commit/Push changes"
       echo "🔃 $task working..."
-      #git add . &&
-      #  git commit -m "Add/Commit/Push in build script." &&
-      #  git push &&
+      git add . &&
+        git commit -m "Add/Commit/Push in build script." &&
+        git push &&
       echo "🔃 $task finished." ||
         echo "🔃 $task failed!"
     }
