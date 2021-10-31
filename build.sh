@@ -19,7 +19,7 @@ printf -- "$layout## Table of contents\n$(sed 's/.md/\//g' <<<$content)" >index.
   #   2.3) Bulid site
   eleventy &&
   #   2.4) Remove formatted files
-  rm -r notes summs &&
+  rm -r notes summs index.md &&
   #   2.5) Restore originals
   mv backup/notes backup/summs ./ &&
   echo "📦 $task finished." || error=1
