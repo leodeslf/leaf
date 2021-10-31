@@ -17,7 +17,7 @@ Bucket(array)
   For each element of array
     Put element in corresponding bucket
   For each bucket of buckets array
-    Put Bucket(buckets) into into sorted array
+    Put Bucket(buckets) into sorted array
 ```
 
 ```javascript
