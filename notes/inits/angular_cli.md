@@ -1,28 +1,23 @@
 # Angular CLI
 
 ```bash
+# Install
 npm i -g @angular/cli
 ```
 
 ```bash
+# Use
 ng new <project-name>
-ng generate component <component-name>
 ng add <dependency-name>
+ng generate component <component-name>
+ng serve --port <number> --open
+ng build --configuration <producion|development>
 ```
 
 ```bash
+# Scripts
 npm start
 npm run build
-```
-
-```json
-// package.json
-{
-  "scripts": {
-    "start": "ng serve --port <number> --open",
-    "build": "ng build --prod",
-  }
-}
 ```
 
 More at [CLI Overview and Command Reference](https://angular.io/cli).

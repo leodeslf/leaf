@@ -1,17 +1,15 @@
 # NPM Packages
 
 ```bash
+# Create npm global configuration file
 npmrc <usr-name>
+```
+
+```bash
+# Use
 npm init --scope=@<usr-name>
 npm publish --access public
-```
-
-```bash
-npm version [major | minor | patch]
-npm publish
-```
-
-```bash
+npm version <major|minor|patch>
 npm unpublish <pkg-name> -f
 ```
 

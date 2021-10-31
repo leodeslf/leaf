@@ -1,23 +1,22 @@
 # SvelteKit
 
 ```bash
+# Initialize
 npm init svelte@next <project-name>
 ```
 
 ```bash
-npm run dev
-npm run build
+# Use
+svelte-kit dev --port <number> --open
+svelte-kit build
+svelte-kit preview --port <number> --open
 ```
 
-```json
-// package.json
-{
-  "scripts": {
-    "dev": "svelte-kit dev --port <number> --open",
-    "build": "svelte-kit build",
-    "preview": "svelte-kit preview --port <number> --open"
-  }
-}
+```bash
+# Scripts
+npm run dev
+npm run build
+npm run preview
 ```
 
 More at [Getting started](https://kit.svelte.dev/docs#introduction-getting-started).
