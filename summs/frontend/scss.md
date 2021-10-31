@@ -17,7 +17,6 @@ $var1: 14px;
 body {
   background-color: $var0;
   font-size: $var1;
-  ...
 }
 ```
 
@@ -32,14 +31,12 @@ $var: red;
 
 a {
   color: $var;
-  ...
 }
 
 /* Any 'a' occurrence insude 'nav' will take '$var' as blue */
 nav {
   $var: blue !global;
   color: $var;
-  ...
 }
 ```
 
@@ -53,11 +50,10 @@ Example:
 @mixin mixinName {
   property: value;
   property: value;
-  ...
 }
 ```
 
-We can also use parameters \(with or without default values\).
+We can also use parameters (with or without default values).
 
 Example:
 
@@ -70,13 +66,11 @@ select {
   @include: mixinName(green);
   /* or... */
   @include: mixinName(green, 1px);
-  ...
 }
 
 select {
   /* Leaving the default value untouched */
   @include: mixinName(@param0: red);
-  ...
 }
 ```
 
@@ -89,7 +83,6 @@ Example:
 ```scss
 selectorA {
   property: value;
-  ...
   selectorb {
     property: value;
     ...
@@ -106,13 +99,11 @@ font: {
   family: value;
   size: value;
   weight: value;
-  ...
 }
 
 margin: {
   top: value;
   bottom: value;
-  ...
 }
 ```
 
@@ -126,13 +117,11 @@ Example:
 selector0 {
   property: value;
   property: value;
-  ...
 }
 
 selector1 {
   @extend selector0;
   property: value;
-  ...
 }
 ```
 

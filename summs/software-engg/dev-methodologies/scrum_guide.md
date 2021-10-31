@@ -4,39 +4,21 @@ An **Agile** framework based on sprint iterations.
 
 ## Scrum Values
 
-### Commitment
-
-The Scrum Team commits to achieving its goals and to supporting each other.
-
-### Focus
-
-Their primary focus is on the work of the Sprint to make the best possible progress toward these goals.
-
-### Openness
-
-The Scrum Team and its stakeholders are open about the work and the challenges.
-
-### Respect
-
-Scrum Team members respect each other to be capable, independent people, and are respected as such by the people with whom they work.
-
-### Courage
-
-The Scrum Team members have the courage to do the right thing, to work on tough problems.
+Value|Definition
+---|---
+Commitment|The Scrum Team commits to achieving its goals and to supporting each other.
+Focus|Their primary focus is on the work of the Sprint to make the best possible progress toward these goals.
+Openness|The Scrum Team and its stakeholders are open about the work and the challenges.
+Respect|Scrum Team members respect each other to be capable, independent people, and are respected as such by the people with whom they work.
+Courage|The Scrum Team members have the courage to do the right thing, to work on tough problems.
 
 ## Scrum Theory
 
-### Transparency
-
-Important decisions must be visible to all the team all the time and be based on the three artifacts. It enables inspection otherwise it is misleading and wasteful.
-
-### Inspection
-
-The three artifacts and progress must be inspected frequently and diligently to detect potential problems. It's pointless to inspect without adaptation. Scrum is designed to provoke change.
-
-### Adaptation
-
-If any aspect of a process is unacceptable, the process or the product must be adjusted as soon as possible.
+Theory|Definition
+---|---
+Transparency|Important decisions must be visible to all the team all the time and be based on the three artifacts. It enables inspection otherwise it is misleading and wasteful.
+Inspection|The three artifacts and progress must be inspected frequently and diligently to detect potential problems. It's pointless to inspect without adaptation. Scrum is designed to provoke change.
+Adaptation|If any aspect of a process is unacceptable, the process or the product must be adjusted as soon as possible.
 
 ## Scrum Team
 

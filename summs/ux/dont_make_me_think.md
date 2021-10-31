@@ -8,7 +8,7 @@ Written by Steve Krug.
 
 >Krug's first law of usability.
 
-People doesn't read, *people does scan*, they should be capable of **instantly finding what they need** without wasting time and effort, where is it, how to use it, or even identifying more options. Webs should be *self-explanatory and speak the users language*.
+People don't read, *people scan*, they should be capable of **instantly finding what they need** without wasting time and effort, where it is, how to use it, or even identifying more options. Webs should be *self-explanatory and speak the user's language*.
 
 If you can't make something self-evident, you at least need to make it self-explanatory.
 
@@ -16,9 +16,9 @@ If you can't make something self-evident, you at least need to make it self-expl
 
 >Scanning, satisficing, and muddling through.
 
-Sometimes *people doesn't use the Web the way we spect* as designers and developers.
+Sometimes *people don't use the Web the way we exspect* as designers and developers.
 
-*People is usually in a hurry*. As said before, **they don't read pages, they scan them**. We need (or want) to get something done fast. We try to find the closest option that looks relevant to us, even if it's not the right one.
+*People are usually in a hurry*. As said before, **they don't read pages, they scan them**. We need (or want) to get something done fast. We try to find the closest option that looks relevant to us, even if it's not the right one.
 
 In reality, most of the time people don't make an optimal choice, **people guess** and choose the most reasonable option. Usually getting wrong, but, when they're right, **it's faster**, surprising and pleasant.
 
@@ -34,7 +34,7 @@ Standards and **conventions are the safest solutions**  (where the things are, h
 
 #### Create effective visual hierarchies
 
-Make obvious which things are **more important**, what things **does**, and what things **are part of**. In other words show visual cues about *hierarchy*, *functionality* and *relationship*.
+Make obvious which things are **more important**, what things **does**, and what things **are part of**. In other words, show visual cues about *hierarchy*, *functionality* and *relationship*.
 
 #### Break pages up into clearly defined areas
 
@@ -179,7 +179,7 @@ We can do this by adding cues like:
 - A pointer.
 - Bold text.
 - Different text color.
-- Different background color.
+- Different background colors.
 
 #### Breadcrumbs
 
@@ -263,7 +263,7 @@ It's better if we can answer these questions at a glance and with very little ef
 
 #### But...the Home page? Really?
 
-Even knowing that nowadays most of times **people gets on a site from an external link**, the behavior tends to be that: **if they like what they see, they will visit the home page** to see who made it and what more they can find.
+Even knowing that nowadays most of the times **people get on a site from an external link**, the behavior tends to be that: **if they like what they see, they will visit the home page** to see who made it and what more they can find.
 
 #### How to get the message across
 
@@ -278,7 +278,7 @@ People will often *get it* without even noticing these three elements. But if th
 A few guidelines for **getting the message across**:
 
 - **Use as much space as necessary**: it's the main goal, so make sure you *do it well*.
-- **...but don't use any more space than necessary**: if you can, *leave some space* to other things.
+- **...but don't use any more space than necessary**: if you can, *leave some space* for other things.
 - **Don't use a mission statement as a Welcome blurb**: truth is that *nobody cares*.
 - **It's one of the most important things to test**: you can't trust your own judgment, just *people from outside* can tell you what's missing.
 
@@ -393,7 +393,7 @@ As we've already said, usability testing is to watch some people while they try 
 
 At the beginning **it was very expensive**. Recruiting lots of participants, a professional to plan the tests, the resources to execute and analyze it, etc.
 
-In 1989, Jakob Nielsen wrote a paper titled "Usability Engineering at a Discount". He pointed that **it didn't have to be that expensive** and dropped the costs to about 20% from the amount people were paying until the date (e.g: from $50.000 to $10.000, which is still a lot of money).
+In 1989, Jakob Nielsen wrote a paper titled "Usability Engineering at a Discount". He pointed out that **it didn't have to be that expensive** and dropped the costs to about 20% from the amount people were paying until the date (e.g: from $50.000 to $10.000, which is still a lot of money).
 
 That's what this chapter is about, a better approach that is **simpler and less expensive**, the Do-it-yourself usability testing.
 
@@ -471,7 +471,7 @@ Other than keeping the participants comfortable and focused on doing the tasks, 
 
 **As many people as possible!**
 
-One of the most valuable things is the effect that a usability testing has on the observers, it's a **transformative experience** that dramatically changes the way they think about users.
+One of the most valuable things is the effect that usability testing has on the observers, it's a **transformative experience** that dramatically changes the way they think about users.
 
 We should encourage everyone to come and watch the test sessions. We'll need an observation room with a large screen monitor or projector so everyone can see what's happening.
 
@@ -510,7 +510,7 @@ Some of the problems you're going to see more often:
 
 - **Users are unclear on the concept**, they just don't get it, or they get it wrong.
 - **The words they're looking for aren't there**, you failed to anticipate what they'd be looking for, or you're just using the wrong words.
-- **There's is too much going on**, sometimes they can't see what they're looking for, in this cases you need to either reduce the overall noise or turn up the volume on the things that need to "pop" out of the visual hierarchy.
+- **There's too much going on**, sometimes they can't see what they're looking for, in this cases you need to either reduce the overall noise or turn up the volume on the things that need to "pop" out of the visual hierarchy.
 
 #### The debriefing: Deciding what to fix
 
@@ -529,17 +529,17 @@ That maxim can be achieved by:
 
 Tips about deciding what to fix -and what not to:
 
-- **Keep a separate list of low-hanging fruit**, a list of non-serious but *very* easy to fix problems (things that one person can fix in less than an hour).
-- **Resist the impulse to add things**, avoid adding explanations or instructions. Very often it's enough to take something (or some *things*) away that are obscuring the meaning of the important things, rather than adding yet another distraction.
-- **Take "new feature" requests with a grain of salt**. Participants will often say things like "I'd like it better if it could do *x*..." but then, they end saying "... now that I think of it, I probably wouldn't use that". Participants aren't designers, even when they come up with a great idea, it won't be *the* solution to their problem.
-- **Ignore "kayak" problems**. Sometimes users will go astray momentarily but manage to get back on track immediately without any help. It's kind of like rolling a kayak, as long as the kayak rights itself quickly enough, it's all ok (no harm, no fault). As long as they notice they're no longer headed in the right direction quickly, they manage to recover without help, and it doesn't seem to faze them, we can ignore the problem.
+- **Keep a separate list of low-hanging fruit**: a list of non-serious but *very* easy to fix problems (things that one person can fix in less than an hour).
+- **Resist the impulse to add things**: avoid adding explanations or instructions. Very often it's enough to take something (or some *things*) away that are obscuring the meaning of the important things, rather than adding yet another distraction.
+- **Take "new feature" requests with a grain of salt**: participants will often say things like "I'd like it better if it could do *x*..." but then, they end saying "... now that I think of it, I probably wouldn't use that". Participants aren't designers, even when they come up with a great idea, it won't be *the* solution to their problem.
+- **Ignore "kayak" problems**: sometimes users will go astray momentarily but manage to get back on track immediately without any help. It's kind of like rolling a kayak, as long as the kayak rights itself quickly enough, it's all ok (no harm, no fault). As long as they notice they're no longer headed in the right direction quickly, they manage to recover without help, and it doesn't seem to faze them, we can ignore the problem.
 
 #### Alternative lifestyles
 
 Two other ways to do testing that have distinct advantages:
 
-- **Remote testing**, same as working from home, it expands your recruiting pool from "people near to the office" to "almost anyone", all the participants need a high-speed internet access and a microphone.
-- **Unmoderated remote testing**, services like UserTesting.com provide people who will record themselves doing a usability test. We don't get to interact with them, but it's relatively inexpensive and requires almost no effort (especially recruiting) on your part.
+- **Remote testing**: same as working from home, it expands your recruiting pool from "people near to the office" to "almost anyone", all the participants need a high-speed internet access and a microphone.
+- **Unmoderated remote testing**: services like UserTesting.com provide people who will record themselves doing a usability test. We don't get to interact with them, but it's relatively inexpensive and requires almost no effort (especially recruiting) on your part.
 
 #### Try it, you'll like it
 
@@ -549,7 +549,7 @@ Whatever method we use, we're likely to keep doing it.
 
 1. **We don't have the time**: It's true that we usually "don't have time" in Web development, but it's also true that by making testing and keeping it as simple as possible, we end up saving time.
 1. **We don't have the money**: We don't need to spend $5.000 to $10.000, investing a few hundred dollars per round of testing is enough to get it (at least the most important) done.
-1. **We don't have the expertice**: Usability testing is incredibly easy to do. For sure, more experience and knowledge will be better, but even a poorly conducted testing session will produce useful results.
+1. **We don't have the expertise**: Usability testing is incredibly easy to do. For sure, more experience and knowledge will be better, but even a poorly conducted testing session will produce useful results.
 1. **We don't have a usability lab**: We don't need one, all we really need is a room with a desk, a computer, two chairs where you won't be interrupted and another room for the observers with a large screen.
 1. **We wouldn't know how to interpret the results**: One of the nicest things is that the most serious problems are hard to miss, they are quite obvious to everyone who's watching.
 
@@ -559,7 +559,7 @@ Whatever method we use, we're likely to keep doing it.
 
 >Welcome to the 21th century -you may experience a slight sense of vertigo.
 
-Phones has been getting gradually *smarter* for years, even more after the iPhone introduction in June 2007. And it was about this same time that the Mobile Web finally came into its own. There had been Web browsers on phones before, but they *sucked*.
+Phones have been getting gradually *smarter* for years, even more after the iPhone introduction in June 2007. And it was about this same time that the Mobile Web finally came into its own. There had been Web browsers on phones before, but they *sucked*.
 
 One of Apple's great inventions was the ability to **scroll and zoom** in and out (by just swiping and pinching the screen) very quickly. For the first time, the Web was fun to use on a device that you could carry with you at all times. You could look up anything anywhere anytime.
 
@@ -569,35 +569,35 @@ There's not much denying that mobile devices are the wave of the future, except 
 
 The answer is: **Not much**, the basic principles are still the same.
 
-There are *some* significant differences about mobile that makes for challenging new usability problems. But the fact is that Web and app design for mobile devices is still in its formative days in many ways, so it's going to take another few years for things to shake out. Prevailing conventions probably haven't emerged yet.
+There are *some* significant differences about mobile that make for challenging new usability problems. But the fact is that Web and app design for mobile devices is still in its formative days in many ways, so it's going to take another few years for things to shake out. Prevailing conventions probably haven't emerged yet.
 
 #### It's all about tradeoffs
 
 Constraints and tradeoffs in design.
 
->The best you can do is pease some of the people some of the time.
+>The best you can do is please some of the people some of the time.
 
 Constraints actually make design easier rather than limited. They have a **focusing effect**, while liberting and unlimited options can have a *paralyzing* effect.
 
->Where there are constrains, there are tradeoffs to be made.
+>Where there are constraints, there are tradeoffs to be made.
 
-Many of serious usability problems are the result of a poor decision about a tradeoff.
+Many of the serious usability problems are the result of a poor decision about a tradeoff.
 
 #### The tyranny of the itty-bitty living space
 
-The most obvious thing about mobile screens us that they're **small**. Thus, the amount of tradeoffs to make in the Home page is quite big.
+The most obvious thing about mobile screens is that they're **small**. Thus, the amount of tradeoffs to make in the Home page is quite big.
 
 One of the only ways to deal with it is to leave things out, the tricky question is: **Which parts do we leave out?**
 
-One approach was **Mobile First**. Where we define the most important features and contents, then we use them for the design, and finally we add on more things to create the desktop/full version. Mobile First forces as to work hard to determine what's *really essential*, what people needed more (as it should always be).
+One approach was **Mobile First**. Where we define the most important features and contents, then we use them for the design, and finally we add on more things to create the desktop/full version. Mobile First forces us to work hard to determine what's *really essential*, what people need more (as it should always be).
 
-Often happens that we tend to design for mobile as the users were "on the move". That's wrong, users are just as likely to be using their mobile device while sitting at home, and they want (and expect) to be able to do the same things they do on desktop.
+Often it happens that we tend to design for mobile as the users were "on the move". That's wrong, users are just as likely to be using their mobile device while sitting at home, and they want (and expect) to be able to do the same things they do on desktop.
 
 The main idea is not to remove features or content, it's to **prioritize** them.
 
 At the end, it results in a navigation with a few more "taps" than the full version, and that's OK. As long as the user continues to feel confident that what they want is further down the screen or behind a link or button, they'll keep going.
 
->Managing real state challenges shouldn't be done at the cost of usability.
+>Managing real estate challenges shouldn't be done at the cost of usability.
 
 #### Breeding chameleons
 
@@ -627,20 +627,135 @@ They need to be **noticeable**, and some characteristics of mobile devices have 
 
 #### No cursor = no hover = no clue
 
-When designing for mobile, we cannot rely on the *hover* feature as it doesn't actually exists. We do need to find ways to replace the cues or entire features that depend on that behavior.
+When designing for mobile, we cannot rely on the *hover* feature as it doesn't actually exist. We do need to find ways to replace the cues or entire features that depend on that behavior.
 
 #### Flat design: Friend or foe?
 
-150
+To make affordances effective they need to be **distinctive**. Flat design, if done wrong, removes all the visual information for the sake of looking "good". It makes it harder to differentiate things.
 
-<!-- ### Usability as common courtesy
+#### You actually can be too rich or too thin
 
->Why your Web site should be a mensch.
+Internet connection is quite fast nowadays. Anyways, people leave the fast wi-fi and revert to a slow 4G/3G so often that download speeds are unreliable. We shouldn't force the user to download a huge amount of code and images larger than needed on mobile screens.
+
+#### Mobile apps, usability attributes of
+
+Krug's definition of usability:
+
+A person of average ability and experience can figure out how to use the thing \[*learnable*\] to accomplish something \[*effective*\] without it being more trouble than it's worth \[*efficient*\].
+
+Three important concepts are **delight**, **learnability**, and **memorability** (next three sections are about these applied on mobile apps).
+
+#### Delightful is the new black
+
+In general it's hard to define *delightful*, but people describe it as something **fun**, **surprising**, **impressive**, **clever**, and even **magical**. It happens when people figure out that they can do something that they don't imagine is possible, it's something that people really enjoy being able to do.
+
+#### Apps need to be learnable
+
+One of the biggest problems comes when we add **too many features**, new ones and the ones that don't follow any convention and need to be explained. It makes the app **too complicated** and not easy to learn.
+
+Even an innovative app can be depreciated by users if its demo/training/tutorial is done wrong. No matter how much creativity we bring on the table, users need to figure out how the thing works.
+
+#### Apps need to be memorable, too
+
+Once the users have figured out how to use an app, they should be able to **remember** or **relearn** it again with no much effort. To ensure that, we have to make things incredibly clear and easy. If it's easy the first time, it'll be easy the second time.
+
+#### Usability testing on mobile devices
+
+It's **quite the same** as the testing on non-mobile devices. The only thing that can change is the logistics.
+
+#### The logistics of mobile testing
+
+As mentioned before, when testing on a personal computer:
+
+- The facilitator looks at the same screen as the participant.
+- Screen sharing software allows the observers to see what's happening.
+- Screen recording software creates a video of the session.
+
+Setup isn't the same for mobile devices, we cannot rely on the same tools, some of them don't even exist yet.
+
+- Do you need to let the participants use their own devices?
+- Do they need to hold the device naturally, or can it be sitting on a table or propped up on a stand?
+- What do the observers need to see (e.g., just the screen, or both the screen and the participant's fingers so they can see their gestures)? And how do you display it in the observation room?
+- How do you create a recording?
+
+#### My recommendations
+
+Until better technology comes along:
+
+- **Use a camera pointed at the screen instead of mirroring**: the idea is to watch not only the screen but also the gestures of the participant, it's much more engaging and rich in information.
+- **Attach the camera to the device so the user can hold it naturally**: this way we ensure that the participant can not only hold the device, but also move it while keeping it in view and focused all the time, without having to worry about a fixed area.
+- **Don't bother with a camera pointed at the participant**: it's more a distraction than something useful. Enough information comes from what the participant is saying and the tone of voice.
+
+#### Proof of concept: My Brundleyfly camera
+
+Brundlefly is the name I give to a hand-crafted solution that consists of a lightweight webcam and a clip from a book light, so we don't need to use a heavy camera attached to the device.
+
+The traditional way with mounted cameras:
+
+- They're heavy and awkward.
+- They're distracting.
+- Nobody wants to attach anything to their device.
+
+The rest of the setup:
+
+- Connect the brundlefly camera to the facilitator's laptop via USB.
+- Use some software to display the view from the brundlefly camera.
+- Share the laptop screen with the observers with a screen sharing software.
+- Run a screen recorder on the computer in the observation room (to reduce the burden on the facilitator's laptop).
+
+### Usability as common courtesy
+
+>Why your Web site should be a mensch*.
+
+**Mensch: a German-derived word, a person with integrity and honor, someone who does the right thing.*
+
+Besides being just *clear*, the site should **behave like a mensch** -being considerate of the user, bringing the content and utility the people need and isn't that obvious.
+
+#### The reservoir of goodwill
+
+It's useful to imagine that every time we enter a Web site, we start out with a reservoir of goodwill. Each problem we encounter on the site lowers the level.
+
+The **reservoir is limited**, and if we treat users badly enough and exhaust it there's a good chance that they'll leave. It can get even worse, they may not be as eager to use your site in the future and savage you on Facebook or Twitter. Thinking in marketing, the NPS (Net Promoter Score) will go down.
+
+A few things worth noting about this reservoir:
+
+- **It's idiosyncratic**: some people have a large reservoir, some small, some people are more suspicious, some more patient.
+- **It's situational**: people may have their reservoir already affected by a previous experience.
+- **You can refill it**: we can fix our mistakes by making the people know that we're looking out for their best interests.
+- **Sometimes a single mistake can empty it**: people don't need a large amount of reasons to empty their reservoir.
+
+#### Things that diminish goodwill
+
+- **Hiding information that should be visible**: sometimes it's useful to hide some information for *convenience*, to avoid a negative psychological impact, to save money, to reserve space in the UI, among other reasons. Truth is that this kind of tactic is annoying for the user and can even be worse than just keeping the information visible.
+- **Punishing for not doing things the expected way**: things like forcing the user to format data, while it can be done by code, tends to be a negative experience.
+- **Asking for information that's not really needed**: if a task can be done by only requesting A, don't ask for A, B, and C.
+- **Shucking and jiving**: sincerity is important, we should never offer things or make promises that we will not keep.
+- **Putting sizzle in the way**: if we really care about the peoples needs and time, we shouldn't put any distractions between them and the service/product.
+- **A site that looks amateurish**: people can lose goodwill if the site looks disorganized, sloppy, or unprofessional, it's like no effort has gone into making it presentable.
+
+#### Things that increase goodwill
+
+Most of these items are just the flip side of the previous list:
+
+- **Know the main things that people want to do on the site and make it obvious and easy**: keep it clear what the users want do.
+- **Tell the people what they want to know**: be upfront about waht will be required.
+- **Save steps wherever we can**: for the people, it's important when we save them a few clicks or minutes for a given task.
+- **Put effort into it**: people will notice it and, in some way, reward it when we put effort into our job.
+- **Know what questions people are likely to have, and answer them**: Frequently Asked Questions are valuable when:
+  - They are really FAQs, not QWWPWAs (Questions We Wish People Would Ask).
+  - They are up to date.
+- **Provide people with creature comforts like printer-friendly pages**: while serving printer-friendly material, we should drop any ads banner, but keep images, illustrations, phothos, and figures.
+- **Make it easy to recover from errors**: for sure, errors should be prevended by doing user testing, anyway, we should provide a graceful, obvious way for people to recover.
+- **When in doubt, apologize**: sometimes we can't help. If we can't do what users want us to do, we at least have to let them know that we know we're inconveniencing them.
 
 ### Accessibility and you
 
->Just when you think your're done, a cat floats by with buttered toast strapped to its back.
+>Just when you think you're done, a cat floats by with buttered toast strapped to its back.
 
+p169
+
+<!--
 ### Guide for the perplexed
 
->Making usability happen where you live. -->
+>Making usability happen where you live.
+-->
