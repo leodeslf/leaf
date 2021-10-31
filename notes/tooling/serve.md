@@ -1,10 +1,12 @@
 # Serve
 
 ```bash
+# Install
 npm i -g serve
 ```
 
 ```bash
+# Use
 serve <dir> [options]
 ```
 

@@ -1,21 +1,44 @@
 # TypeScript
 
 ```bash
-tsc # Transpile
-tsc <file> # Transpile a specific file
-tsc --project <tsconfig-file> # Specify a tsconfig file
+# Install
+npm i -g typescript
 ```
+
+```bash
+# Use
+tsc [file] [option]            # Transpile
+tsc <input-file> <output-file> # Ignores tsconfig.json
+```
+
+Options:
+
+- `--allowJs`
+- `-b`, `--build`
+- `-h`, `--help`
+- `--init` (create a tsconfig.json)
+- `--outDir <dir>`
+- `--outfile <file>`
+- `-m` `--module [commonjs|amd|umd|system|es6|es2015|es2020|es2022|esnext|node12|nodenext]` (output, depends up on `target`)
+- `--moduleResolution <classic|node>` (input, depends up on `module`)
+- `--noImplicitAny <boolean>`
+- `-p`, `--project <config-file>`
+- `--rootDir <dir>`
+- `--removeComments`
+- `--strict`
+- `-t`, `--target [es3|es5|es6|es2015...es2021|esnext]`
+- `--watch`
 
 ```json
 // tsconfig.json
 {
   "compilerOptions": {
-    "target": "ES6",
     "module": "ES6",
-    "outDir": "dist",
     "noImplicitAny": true,
+    "outDir": "dist",
+    "removeComments": true,
     "strict": true,
-    "removeComments": true
+    "target": "ES6"
   },
   "files": [
     ...

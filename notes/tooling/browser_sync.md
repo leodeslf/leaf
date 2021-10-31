@@ -1,16 +1,19 @@
 # Browsersync
 
 ```bash
+# Install
 npm i -g browser-sync
 ```
 
 ```bash
-browser-sync <dir> [options]
+# Use
+browser-sync <dir> [option]
 ```
 
 Options:
 
-- `-w` (watch)
+- `-w`, `--watch`
 - `--port <port-number>`
+- `--open`
 
 More at [Browsersync Command Line Usage](https://browsersync.io/docs/command-line).

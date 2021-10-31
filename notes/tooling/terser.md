@@ -1,19 +1,21 @@
 # Terser CLI
 
 ```bash
+# Install
 npm i -g terser
 ```
 
 ```bash
+# Use
 terser [options] <file>
 ```
 
 Options:
 
-- `-c, --compress`
-- `-m, --mangle reserved=[<reserved-words>]`
-- `-o, --output <file>`
-- `--comments [all | false]`
+- `-c`, `--compress`
+- `-m`, `--mangle reserved=[reserved-words]`
+- `-o`, `--output <file>`
+- `--comments [all|false]`
 - `--keep-classnames`
 - `--keep-fmanes` (keep function names)
 

@@ -1,10 +1,54 @@
-# Linux
+# Bash
 
-Cheat sheet for **filesystem** and **text processing** commands on linux.
+A cheatsheet for **file-system**, **text-processing**, and a few more bash commands with some of their options.
+
+## Not options
 
 ```bash
-[cmd] -- [args]  # Indicates that following args. are not options
-# E.g.: rm -- -f # Remove file called '-f'
+[cmd] -- [args]
+# Indicates that following args are not options
+# E.g.: `rm -- -r` # Remove file called "-r"
+```
+
+## Concatenate commands
+
+```bash
+<cmd1> \
+<cmd2>
+# Shell concatenates lines (same as deleting the new line char)
+```
+
+```bash
+<cmd1> ; <cmd2>
+# Shell waits for cmd1 to finish, then runs cmd2
+```
+
+```bash
+<cmd1> & <cmd2>
+# Shell runs cmd1 in the background, doesn't wait for it to finish
+# (immediatelly returns exit code 0) and runs cmd2
+```
+
+```bash
+<cmd1> | <cmd2>
+# Shell runs cmd1, waits for it to finish and takes its standard output
+# as standard input for cmd2
+```
+
+```bash
+<cmd1> && <cmd2>
+# Shell runs cmd2, only, and only if cmd1 succeeds (returns exit code == 0)
+```
+
+```bash
+<cmd1> || <cmd2>
+# Shell runs cmd2, only, and only if cmd1 fails (returns exit code != 0)
+```
+
+```bash
+<cmd> |& <cmd>
+# Shell runs cmd1, waits for it to finish and takes both standard output
+# and standard error from cmd1 as standard input for cmd2
 ```
 
 ## `cat`

@@ -2,11 +2,11 @@
 
 ## HTTP status code
 
-* `1XX`: Informational.
-* `2XX`: Successful.
-* `3XX`: Redirects.
-* `4XX`: Client errors.
-* `5XX`: Server errors.
+* `1XX` Informational.
+* `2XX` Successful.
+* `3XX` Redirects.
+* `4XX` Client errors.
+* `5XX` Server errors.
 
 ## URL anatomy
 
@@ -21,16 +21,16 @@ Part|Concept
 `https://`|Protocol
 `www`|Subdomain name
 `.example`|Domain name
-`.com`|Top-level Domain name [**TLD**]
-`.uy`|Country Code Top-level Domain name [**ccTLD**]
+`.com`|Top-level Domain name (**TLD**)
+`.uy`|Country Code Top-level Domain name (**ccTLD**)
 `:80/`|Port (80 by default for webs)
 `folder/resource`|Path
 `?id=1`|Query string (used by server-side software)
 `#section-id`|Fragment
 
-## Browsers
+## Browser engines
 
-Name|Rendering Engine|JavaScript Engine
+||Rendering engine|JavaScript engine
 ---|---|---
 **Chrome**|Blink|V8
 **Edge**|EdgeHTML / Blink|Chakra

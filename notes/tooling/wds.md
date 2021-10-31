@@ -1,36 +1,28 @@
 # Web Dev Server
 
 ```bash
-npm i --save-dev @web/dev-server
+# Install
+npm i -D @web/dev-server
 ```
 
 ```bash
-npx wds --help
+# Use
+web-dev-server [option]
 ```
 
 ```bash
-web-dev-server [options]
-# or
-wds [options]
+# Shorthand
+wds [option]
 ```
 
 Options:
 
-- `-c, --config` (for a **web-dev-server.config** file)
-- `-r, --root-dir`
-- `-o, --open`
+- `-c`, `--config` (for a **web-dev-server.config** file)
+- `-h`, `--hostname`
 - `--node-resolve`
-- `-w, --watch`
-- `-p, --port`
-- `-h, --hostname`
-
-```json
-// package.json
-{
-  "scripts": {
-    "start": "wds -p <number> --node-resolve -w -o"
-  }
-}
-```
+- `-o`, `--open`
+- `-p`, `--port <number>`
+- `-r`, `--root-dir <dir>`
+- `-w`, `--watch`
 
 More at [CLI flags](https://modern-web.dev/docs/dev-server/cli-and-configuration/#cli-flags).
