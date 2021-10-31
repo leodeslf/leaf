@@ -5,28 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="🌱 My learning docs and notes.">
     <meta name="author" content="Leonardo de S.L.F"/>
-    <link rel="stylesheet" href="/style.css"/>
-    <link rel="stylesheet" href="/syntax-highlight.css"/>
+    <link rel="stylesheet" href="/style/style.css"/>
+    <link rel="stylesheet" href="/style/syntax-highlight.css"/>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
     <title>Docs & Notes</title>
   </head>
   <body>
     <h1>
-      <a href="/">Docs & Notes</a>
+      <a href="/">🌱 Docs & Notes</a>
     </h1>
     <main>
       <h2>GitHub Pages</h2>
-<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> i gh-pages --save-dev</code></pre>
-<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> run predeploy<br><span class="token function">npm</span> run deploy</code></pre>
-<pre class="language-json"><code class="language-json"><span class="token comment">// package.json</span><br><span class="token punctuation">{</span><br>  <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"predeploy"</span><span class="token operator">:</span> <span class="token string">"npm run build"</span><span class="token punctuation">,</span><br>    <span class="token property">"deploy"</span><span class="token operator">:</span> <span class="token string">"gh-pages -d build"</span><br>  <span class="token punctuation">}</span><span class="token punctuation">,</span><br>  <span class="token property">"homepage"</span><span class="token operator">:</span> <span class="token string">"https://[user-name].github.io/[repo-name]"</span><br><span class="token punctuation">}</span></code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># Install</span><br><span class="token function">npm</span> i -D gh-pages</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># Use</span><br>gh-pages -d <span class="token operator">&lt;</span>dir<span class="token operator">></span> -m <span class="token operator">&lt;</span>commit-message<span class="token operator">></span></code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># Scripts</span><br><span class="token function">npm</span> run predeploy<br><span class="token function">npm</span> run deploy</code></pre>
+<pre class="language-json"><code class="language-json"><span class="token comment">// package.json</span><br><span class="token punctuation">{</span><br>  <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"predeploy"</span><span class="token operator">:</span> <span class="token string">"npm run build"</span><span class="token punctuation">,</span><br>    <span class="token property">"deploy"</span><span class="token operator">:</span> <span class="token string">"gh-pages -d build"</span><br>  <span class="token punctuation">}</span><span class="token punctuation">,</span><br>  <span class="token property">"homepage"</span><span class="token operator">:</span> <span class="token string">"https://&lt;user-name>.github.io/&lt;repo-name>"</span><br><span class="token punctuation">}</span></code></pre>
+<p>More at <a href="https://github.com/tschaub/gh-pages#command-line-utility">Command Line Utility</a>.</p>
 
     </main>
     <footer>
       <p>
-        🌱 My learning docs and notes. By
-        <a href="https://www.leodeslf.com/">leodeslf</a>
-        © 2021 Docs & Notes
+        🌱 Learning
+        <a href="/">docs & notes</a>
+        about my Frontend Development journey,
+        <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
       </p>
     </footer>
+    <a id="go-to-top-btn" href="#">&gt;</a>
   </body>
 </html>

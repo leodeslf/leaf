@@ -16,9 +16,18 @@
       <a href="/">🌱 Docs & Notes</a>
     </h1>
     <main>
-      <h2>Linux</h2>
-<p>Cheat sheet for <strong>filesystem</strong> and <strong>text processing</strong> commands on linux.</p>
-<pre class="language-bash"><code class="language-bash"><span class="token punctuation">[</span>cmd<span class="token punctuation">]</span> -- <span class="token punctuation">[</span>args<span class="token punctuation">]</span>  <span class="token comment"># Indicates that following args. are not options</span><br><span class="token comment"># E.g.: rm -- -f # Remove file called '-f'</span></code></pre>
+      <h2>Bash</h2>
+<p>A cheatsheet for <strong>file-system</strong>, <strong>text-processing</strong>, and a few more bash commands with some of their options.</p>
+<h3>Not options</h3>
+<pre class="language-bash"><code class="language-bash"><span class="token punctuation">[</span>cmd<span class="token punctuation">]</span> -- <span class="token punctuation">[</span>args<span class="token punctuation">]</span><br><span class="token comment"># Indicates that following args are not options</span><br><span class="token comment"># E.g.: `rm -- -r` # Remove file called "-r"</span></code></pre>
+<h3>Concatenate commands</h3>
+<pre class="language-bash"><code class="language-bash"><span class="token operator">&lt;</span>cmd<span class="token operator"><span class="token file-descriptor important">1</span>></span> <span class="token punctuation">\</span><br><span class="token operator">&lt;</span>cmd<span class="token operator"><span class="token file-descriptor important">2</span>></span><br><span class="token comment"># Shell concatenates lines (same as deleting the new line char)</span></code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token operator">&lt;</span>cmd<span class="token operator"><span class="token file-descriptor important">1</span>></span> <span class="token punctuation">;</span> <span class="token operator">&lt;</span>cmd<span class="token operator"><span class="token file-descriptor important">2</span>></span><br><span class="token comment"># Shell waits for cmd1 to finish, then runs cmd2</span></code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token operator">&lt;</span>cmd<span class="token operator"><span class="token file-descriptor important">1</span>></span> <span class="token operator">&amp;</span> <span class="token operator">&lt;</span>cmd<span class="token operator"><span class="token file-descriptor important">2</span>></span><br><span class="token comment"># Shell runs cmd1 in the background, doesn't wait for it to finish</span><br><span class="token comment"># (immediatelly returns exit code 0) and runs cmd2</span></code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token operator">&lt;</span>cmd<span class="token operator"><span class="token file-descriptor important">1</span>></span> <span class="token operator">|</span> <span class="token operator">&lt;</span>cmd<span class="token operator"><span class="token file-descriptor important">2</span>></span><br><span class="token comment"># Shell runs cmd1, waits for it to finish and takes its standard output</span><br><span class="token comment"># as standard input for cmd2</span></code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token operator">&lt;</span>cmd<span class="token operator"><span class="token file-descriptor important">1</span>></span> <span class="token operator">&amp;&amp;</span> <span class="token operator">&lt;</span>cmd<span class="token operator"><span class="token file-descriptor important">2</span>></span><br><span class="token comment"># Shell runs cmd2, only, and only if cmd1 succeeds (returns exit code == 0)</span></code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token operator">&lt;</span>cmd<span class="token operator"><span class="token file-descriptor important">1</span>></span> <span class="token operator">||</span> <span class="token operator">&lt;</span>cmd<span class="token operator"><span class="token file-descriptor important">2</span>></span><br><span class="token comment"># Shell runs cmd2, only, and only if cmd1 fails (returns exit code != 0)</span></code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token operator">&lt;</span>cmd<span class="token operator">></span> <span class="token operator">|&amp;</span> <span class="token operator">&lt;</span>cmd<span class="token operator">></span><br><span class="token comment"># Shell runs cmd1, waits for it to finish and takes both standard output</span><br><span class="token comment"># and standard error from cmd1 as standard input for cmd2</span></code></pre>
 <h3><code>cat</code></h3>
 <pre class="language-bash"><code class="language-bash"><span class="token function">cat</span> <span class="token operator">&lt;</span>file<span class="token operator">></span> <span class="token comment"># Display the content of a text file</span><br><span class="token function">cat</span> -b     <span class="token comment"># Add line number to non-blank line</span><br><span class="token function">cat</span> -n     <span class="token comment"># Add line number to all lines</span><br><span class="token function">cat</span> -s     <span class="token comment"># Suppress repeated emplty lines to one</span></code></pre>
 <h3><code>cd</code></h3>
@@ -72,9 +81,7 @@ grep <patterns> <file>
       <p>
         🌱 Learning
         <a href="/">docs & notes</a>
-        about my
-        <strong>Frontend Development</strong>
-        journey,
+        about my Frontend Development journey,
         <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
       </p>
     </footer>

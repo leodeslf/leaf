@@ -5,40 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="🌱 My learning docs and notes.">
     <meta name="author" content="Leonardo de S.L.F"/>
-    <link rel="stylesheet" href="/style.css"/>
-    <link rel="stylesheet" href="/syntax-highlight.css"/>
+    <link rel="stylesheet" href="/style/style.css"/>
+    <link rel="stylesheet" href="/style/syntax-highlight.css"/>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
     <title>Docs & Notes</title>
   </head>
   <body>
     <h1>
-      <a href="/">Docs & Notes</a>
+      <a href="/">🌱 Docs & Notes</a>
     </h1>
     <main>
       <h2>Web Dev Server</h2>
-<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> i --save-dev @web/dev-server</code></pre>
-<pre class="language-bash"><code class="language-bash">npx wds --help</code></pre>
-<pre class="language-bash"><code class="language-bash">web-dev-server <span class="token punctuation">[</span>options<span class="token punctuation">]</span><br><span class="token comment"># or</span><br>wds <span class="token punctuation">[</span>options<span class="token punctuation">]</span></code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># Install</span><br><span class="token function">npm</span> i -D @web/dev-server</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># Use</span><br>web-dev-server <span class="token punctuation">[</span>option<span class="token punctuation">]</span></code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># Shorthand</span><br>wds <span class="token punctuation">[</span>option<span class="token punctuation">]</span></code></pre>
 <p>Options:</p>
 <ul>
-<li><code>-c, --config</code> (for a <strong>web-dev-server.config</strong> file)</li>
-<li><code>-r, --root-dir</code></li>
-<li><code>-o, --open</code></li>
+<li><code>-c</code>, <code>--config</code> (for a <strong>web-dev-server.config</strong> file)</li>
+<li><code>-h</code>, <code>--hostname</code></li>
 <li><code>--node-resolve</code></li>
-<li><code>-w, --watch</code></li>
-<li><code>-p, --port</code></li>
-<li><code>-h, --hostname</code></li>
+<li><code>-o</code>, <code>--open</code></li>
+<li><code>-p</code>, <code>--port &lt;number&gt;</code></li>
+<li><code>-r</code>, <code>--root-dir &lt;dir&gt;</code></li>
+<li><code>-w</code>, <code>--watch</code></li>
 </ul>
-<pre class="language-json"><code class="language-json"><span class="token comment">// package.json</span><br><span class="token punctuation">{</span><br>  <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"start"</span><span class="token operator">:</span> <span class="token string">"wds -p &lt;number> --node-resolve -w -o"</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
 <p>More at <a href="https://modern-web.dev/docs/dev-server/cli-and-configuration/#cli-flags">CLI flags</a>.</p>
 
     </main>
     <footer>
       <p>
-        🌱 My learning docs and notes. By
-        <a href="https://www.leodeslf.com/">leodeslf</a>
-        © 2021 Docs & Notes
+        🌱 Learning
+        <a href="/">docs & notes</a>
+        about my Frontend Development journey,
+        <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
       </p>
     </footer>
+    <a id="go-to-top-btn" href="#">&gt;</a>
   </body>
 </html>
