@@ -22,7 +22,8 @@ printf -- "$layout## Table of contents\n$(sed 's/.md/\//g' <<<$content)" >index.
   rm -r notes summs index.md &&
   #   2.5) Restore originals
   mv backup/notes backup/summs ./ &&
-  echo "📦 $task finished." || error=1
+  echo "📦 $task finished." ||
+  error=1
 
 if (($error)); then
   echo "📦 $task failed!" && exit 1
@@ -36,9 +37,9 @@ while getopts ":g" opt; do
       task="Add/Commit/Push changes"
       echo "🔃 $task working..."
       git add . &&
-        git commit -m "Add/Commit/Push in build script." &&
+        git commit -m "$task in build script." &&
         git push &&
-      echo "🔃 $task finished." ||
+        echo "🔃 $task finished." ||
         echo "🔃 $task failed!"
     }
     ;;
