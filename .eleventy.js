@@ -7,7 +7,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   return {
     dir: {
-      output: 'docs' // Folder for GitHub Pages.
+      output: 'docs'
     }
   };
 }
