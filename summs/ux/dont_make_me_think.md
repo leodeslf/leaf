@@ -6,15 +6,15 @@ Written by Steve Krug.
 
 ### Don't make me think
 
->Krug's first law of usability.
+>Krug's first law of usability
 
 People don't read, *people scan*, they should be capable of **instantly finding what they need** without wasting time and effort, where it is, how to use it, or even identifying more options. Webs should be *self-explanatory and speak the user's language*.
 
-If you can't make something self-evident, you at least need to make it self-explanatory.
+If we can't make something self-evident, we at least need to make it self-explanatory.
 
 ### How we really use the Web
 
->Scanning, satisficing, and muddling through.
+>Scanning, satisficing, and muddling through
 
 Sometimes *people don't use the Web the way we exspect* as designers and developers.
 
@@ -26,7 +26,7 @@ Sometimes *people don't actually know how things work*, **they muddle through**.
 
 ### Billboard Design 101
 
->Designing for scanning, not reading.
+>Designing for scanning, not reading
 
 #### Take advantage of conventions
 
@@ -54,13 +54,13 @@ Use **headings** and make them distinctive. **Keep paragraphs short**, avoid cre
 
 ### Animal, Vegetable, or Mineral?
 
->Why users like mindless choices.
+>Why users like mindless choices
 
 People don't care how many clicks they have to make, but **how much they have to think** to make them. If you know something is difficult, give some help, **guidance should be brief, timely, and unavoidable**.
 
 ### Omit needless words
 
->The art of not writing for the web.
+>The art of not writing for the web
 
 By **writing less**, we reduce the noise level, make the useful content more prominent, and save time for the users. Try to avoid *happy talk*, *small talk*, and *instructions* on your products.
 
@@ -68,12 +68,12 @@ By **writing less**, we reduce the noise level, make the useful content more pro
 
 ### Street signs and Breadcrumbs
 
->Designing navigation.
+>Designing navigation
 
 #### Web Navigation 101
 
-- You're usually trying to find something.
-- You decide whether to ask first or browse first.
+- We're usually trying to find something.
+- We decide whether to ask first or browse first.
 - If you choose to browse, you use signs as guides.
 - Eventually, if you can't find what you're looking for, you'll leave.
 
@@ -168,7 +168,7 @@ Four things about page names:
 - **Every page needs a name**: even when it's highlighted in the navigation.
 - The name needs to be in **the right place**: it should be framing it's content.
 - The name needs to be **prominent**: use position, size, color, and typeface for it.
-- The name needs to **match what I clicked**: when it happens it gives comfort and trust.
+- The name needs to **match what we clicked**: when it happens it gives comfort and trust.
 
 #### "You are here"
 
@@ -214,7 +214,7 @@ No matter where you are on a Web site, or if you have use it before or not, **yo
 
 ### The Big Bang Theory of Web Design
 
->The importance of getting people off on the right foot.
+>The importance of getting people off on the right foot
 
 **Designing the Home page** can be complex, here you need to cover all the bases, and, *a few other things*:
 
@@ -286,9 +286,9 @@ A few guidelines for **getting the message across**:
 
 A tagline is a pithy phrase that characterizes the whole enterprise, summing up **what it is** and **what makes it great**.
 
->A good tagline is one that no one else in the world could use except you.
->
->Jakob Nielsen.
+>A good tagline is one that no one else in the world could use except you
+
+- Jakob Nielsen.
 
 Good taglines are:
 
@@ -320,13 +320,13 @@ Promoting things in the Home page guarantees more traffic to the promoted sectio
 
 That's *The Tragedy of the Commons*.
 
->Any shared resource (a "commons") will inevitably be destroyed by overuse.
+>Any shared resource (a "commons") will inevitably be destroyed by overuse
 
 ## Making Sure You Got them Right
 
 ### "The Farmer and the Cowman Should Be Friends"
 
-> Why most arguments about usability are a waste of time, and how to avoid them.
+>Why most arguments about usability are a waste of time, and how to avoid them
 
 The team (PMs, designers, marketing, devs, etc) needs to make decisions about usability. Unfortunately they/we end up having an **endless discussion** consisting of *personal beliefs* that cannot be proven, such as a "religious debate".
 
@@ -350,7 +350,7 @@ While building a Web site, we figure out that not only team members are differen
 
 Then, thinking that *most* Web users are like *anything* is just a myth. **There is no Average User**.
 
->All Web users are unique and all Web use is basically idiosyncratic.
+>All Web users are unique and all Web use is basically idiosyncratic
 
 Each Web user has its own intentions, motivations, knowledge, etc. Their individual reactions are based on **so many variables** that it's almost impossible to describe the Average User. It's even **counter-productive**.
 
@@ -368,7 +368,7 @@ Debates about what *we like* and what *the user (supposedly) likes* are just a w
 
 ### Usability testing on 10 cents a day
 
->Keeping testing simple -so you do enough of it.
+>Keeping testing simple -so you do enough of it
 
 Usability testing has to make part of the project from the **beginning**. Sadly, a lot of it still gets done: too *little*, too *late*, and for *wrong reasons*.
 
@@ -429,7 +429,7 @@ The ideal number is **three**.
 It may seem too small to *prove* anything and won't uncover *all of the problems*. But it's not true, and here's why:
 
 - **The purpose of this kind of testing isn't to _prove_ anything**: the process isn't rigorous at all, it's not intended to serve great amounts of quantitative data to be analyzed and used to prove things. It's made to learn about usability problems by literally watching them occur, and immediately act in consequence.
-- **You don't need to find all of the problems**: the truth is that you'll never find all of the problems, and even by doing it, the fact is *you can find more problems in half a day than you can fix in a month*.
+- **We don't need to find all of the problems**: the truth is that you'll never find all of the problems, and even by doing it, the fact is *you can find more problems in half a day than you can fix in a month*.
 
 #### How do you choose the participants?
 
@@ -437,7 +437,7 @@ People often spend a lot of time trying to recruit users who they *think* will p
 
 For many sites, **you can do testing with almost anybody**. The earlier the tests, the greater the amount of usability flaws that will cause problems. Problems that affect both specific and non-specific users, things that anybody will encounter.
 
->Recruit loosely and grade on a curve.
+>Recruit loosely and grade on a curve
 
 Recruiting people who fit a narrow profile usually requires more work and money. Try to find users that reflect your target audience, but don't get hung up by it.
 
@@ -518,7 +518,7 @@ As soon as possible we must **decide which problems to fix** and what we're goin
 
 Whenever we test, we're almost always going to find some serious usability problems. Unfortunately, they aren't always fixed. Sometimes people decide to postpone them, or simply choose to fix the easier and shorter ones.
 
->Focus ruthlessly on fixing the most serious problems first.
+>Focus ruthlessly on fixing the most serious problems first
 
 That maxim can be achieved by:
 
@@ -557,11 +557,11 @@ Whatever method we use, we're likely to keep doing it.
 
 ### Mobile: It's not just a city in Alabama anymore
 
->Welcome to the 21th century -you may experience a slight sense of vertigo.
+>Welcome to the 21th century -you may experience a slight sense of vertigo
 
 Phones have been getting gradually *smarter* for years, even more after the iPhone introduction in June 2007. And it was about this same time that the Mobile Web finally came into its own. There had been Web browsers on phones before, but they *sucked*.
 
-One of Apple's great inventions was the ability to **scroll and zoom** in and out (by just swiping and pinching the screen) very quickly. For the first time, the Web was fun to use on a device that you could carry with you at all times. You could look up anything anywhere anytime.
+One of Apple's great inventions was the ability to **scroll and zoom** in and out (by just swiping and pinching the screen) very quickly. For the first time, the Web was fun to use on a device that you could carry with you at all times. We could look up anything anywhere anytime.
 
 There's not much denying that mobile devices are the wave of the future, except for things where we need enormous *horsepower* or a big *playing surface* (professional video editing, Photoshop, CAD, etc).
 
@@ -575,11 +575,11 @@ There are *some* significant differences about mobile that make for challenging 
 
 Constraints and tradeoffs in design.
 
->The best you can do is please some of the people some of the time.
+>The best you can do is please some of the people some of the time
 
 Constraints actually make design easier rather than limited. They have a **focusing effect**, while liberting and unlimited options can have a *paralyzing* effect.
 
->Where there are constraints, there are tradeoffs to be made.
+>Where there are constraints, there are tradeoffs to be made
 
 Many of the serious usability problems are the result of a poor decision about a tradeoff.
 
@@ -597,7 +597,7 @@ The main idea is not to remove features or content, it's to **prioritize** them.
 
 At the end, it results in a navigation with a few more "taps" than the full version, and that's OK. As long as the user continues to feel confident that what they want is further down the screen or behind a link or button, they'll keep going.
 
->Managing real estate challenges shouldn't be done at the cost of usability.
+>Managing real estate challenges shouldn't be done at the cost of usability
 
 #### Breeding chameleons
 
@@ -609,7 +609,7 @@ Facts about **scalable design** (aka. dynamic layout, fluid design, adaptive des
 - It's very hard to do it well.
 - it's a must have for almost any Web site nowadays.
 
-Scalable design doubles the effort and guarantees that either things *won't be updated* or the versions *will be out of sync*. It's has real revenue implications.
+Scalable design doubles the effort and guarantees that either things *won't be updated* or the versions *will be out of sync*. It has real revenue implications.
 
 Three suggestions to "solve" that problems:
 
@@ -705,7 +705,7 @@ The rest of the setup:
 
 ### Usability as common courtesy
 
->Why your Web site should be a mensch*.
+>Why your Web site should be a mensch*
 
 **Mensch: a German-derived word, a person with integrity and honor, someone who does the right thing.*
 
@@ -721,7 +721,7 @@ A few things worth noting about this reservoir:
 
 - **It's idiosyncratic**: some people have a large reservoir, some small, some people are more suspicious, some more patient.
 - **It's situational**: people may have their reservoir already affected by a previous experience.
-- **You can refill it**: we can fix our mistakes by making the people know that we're looking out for their best interests.
+- **We can refill it**: we can fix our mistakes by making the people know that we're looking out for their best interests.
 - **Sometimes a single mistake can empty it**: people don't need a large amount of reasons to empty their reservoir.
 
 #### Things that diminish goodwill
@@ -730,32 +730,147 @@ A few things worth noting about this reservoir:
 - **Punishing for not doing things the expected way**: things like forcing the user to format data, while it can be done by code, tends to be a negative experience.
 - **Asking for information that's not really needed**: if a task can be done by only requesting A, don't ask for A, B, and C.
 - **Shucking and jiving**: sincerity is important, we should never offer things or make promises that we will not keep.
-- **Putting sizzle in the way**: if we really care about the peoples needs and time, we shouldn't put any distractions between them and the service/product.
+- **Putting sizzle in the way**: if we really care about the people's needs and time, we shouldn't put any distractions between them and the service/product.
 - **A site that looks amateurish**: people can lose goodwill if the site looks disorganized, sloppy, or unprofessional, it's like no effort has gone into making it presentable.
 
 #### Things that increase goodwill
 
 Most of these items are just the flip side of the previous list:
 
-- **Know the main things that people want to do on the site and make it obvious and easy**: keep it clear what the users want do.
-- **Tell the people what they want to know**: be upfront about waht will be required.
+- **Know the main things that people want to do on the site and make it obvious and easy**: keep it clear what the users want to do.
+- **Tell the people what they want to know**: be upfront about what will be required.
 - **Save steps wherever we can**: for the people, it's important when we save them a few clicks or minutes for a given task.
 - **Put effort into it**: people will notice it and, in some way, reward it when we put effort into our job.
 - **Know what questions people are likely to have, and answer them**: Frequently Asked Questions are valuable when:
   - They are really FAQs, not QWWPWAs (Questions We Wish People Would Ask).
   - They are up to date.
-- **Provide people with creature comforts like printer-friendly pages**: while serving printer-friendly material, we should drop any ads banner, but keep images, illustrations, phothos, and figures.
-- **Make it easy to recover from errors**: for sure, errors should be prevended by doing user testing, anyway, we should provide a graceful, obvious way for people to recover.
+- **Provide people with creature comforts like printer-friendly pages**: while serving printer-friendly material, we should drop any ads banner, but keep images, illustrations, photos, and figures.
+- **Make it easy to recover from errors**: for sure, errors should be prevented by doing user testing, anyway, we should provide a graceful, obvious way for people to recover.
 - **When in doubt, apologize**: sometimes we can't help. If we can't do what users want us to do, we at least have to let them know that we know we're inconveniencing them.
 
 ### Accessibility and you
 
->Just when you think you're done, a cat floats by with buttered toast strapped to its back.
+>Just when you think you're done, a cat floats by with buttered toast strapped to its back
 
-p169
+Unless we're going to make a blanket decision that people with disabilities aren't part of our audience, **we must make sure the site is accessible** to really make it usable.
 
-<!--
+#### What developers and designers hear
+
+Reasons why they need to make their sites accessible:
+
+- **Everyone should have the same opportunities**.
+- Most accessibility adaptations **benefit everyone**.
+- It's a **huge potential market** (~65% of the population).
+- It's **required by law**.
+
+In the end, doing an accessible site **is the right thing to do** because it makes some people's lives extraordinarily better.
+
+#### What developers and designers fear
+
+As they learn more about accessibility, two fears tend to emerge:
+
+- **More work**: especially for developers, it means that they have to put one more thing into an already complicated system and a tight deadline, ending in more time-consuming reports, reviews, meetings and tests.
+- **Compromised design**: especially for designers, because it seems like a good design for people with disabilities and a good design for everyone else who have opposite directions.
+
+#### The truth is, it can be complicated
+
+Sometimes it seems like we can get the job done by just using a validator to make sure the site complies with the WCAG guidelines, but **it's not that easy**. It does cover some of the problems, but not all of them. It gives us vague warnings about things that *may* be wrong, and a long list of things that can be improved but we don't actually need.
+
+This can be very discouraging for developers and designers that are not going to become accessibility experts and figure out that it's much harder than they thought.
+
+At the end:
+
+- Screen readers and adaptive technologies have to **get smarter**.
+- Tools to code and make accessible sites have to **make it easier**.
+- Design processes need to include accessibility **from the beginning**.
+
+#### The four things you can do right now
+
+Even with current technology and standards, **it's possible** to make any site accessible without an awful lot of effort by focusing on a few things that will have the most impact.
+
+#### #1. Fix the usability problems that confuse everyone
+
+**If something confuses most people who use the site, it's almost certain to confuse users who have accessibility issues** (or even to confuse them harder). The single best thing we can do to improve our site's accessibility is to test it often.
+
+#### #2. Read an article
+
+There are a lot of articles from people who had time and motivation to do tests with users that have some accessibility issues. As usual, **they produced invaluable insights**.
+
+#### #3. Read a book
+
+Some recommendations:
+
+- **A Web for Everyone: Designing Accessible User Experiences** by Sarah Horton and Whitney Quesenbery.
+- **Web Accessibility: Web Standards and Regulatory Compliance** by Jim Thatcher.
+
+#### #4. Go for the low-hanging fruit
+
+The most important things to do, implementing specific changes in our pages:
+
+- **Add appropriate alt text to every image**. Leave it empty or "null" for images that should be ignored, then add a helpful and descriptive text for the rest.
+- **Use headings correctly**. They give logical organization for the screen readers.
+- **Make forms work with screen readers**. The correct use of "label"s is important.
+- **Put a "Skip to Main Content" link at the beginning of each page**. This can save a lot of time specially for blind people that should be listening to all, or almost all the content before continuing to the *important* part.
+- **Make all content accessible by keyboard**. Not everyone can use a mouse.
+- **Create significant contrast between text and background**. Readability is key for everyone.
+- **Use an accessible template**. If we use a premade template, we should make sure it was made with accessibility in mind.
+
 ### Guide for the perplexed
 
->Making usability happen where you live.
--->
+>Making usability happen where you live
+
+What can you do if you find yourself in an environment where your desire to "do usability" isn't supported?
+
+#### Ya gotta know the territory
+
+In the 1990s The terms used to describe *this* were **Usability** and **User Centered Design** (UCD). And there were essentially two "professions", **Usability** (making sure things are designed in a way that enables people to use them successfully) and **Information Architecture** (making sure the content is organized in a way that allows people to find what they need).
+
+Now the term we hear most often is **User Experience Design** or just **User Experience** (UXD, UX), and there are a lot of specialties involved, like *Interaction Design*, *Interface Design*, *Visual Design*, *Content Design*, *Content Management*, *Usability*, *Information Architecture*, and more.
+
+One difference between UCD and UX is that:
+
+- UCD is focused on *making a product usable*.
+- UX takes the *users' needs into account at every stage* of the product life cycle.
+
+#### The usual advice
+
+Here are the two suggestions for convincing management to support usability work:
+
+- **Demonstrate ROI**: we gather and analyze data to prove that a change resulted in *cost savings* and/or *additional revenue*.
+- **Speak their language**: instead of talking about the benefits for users, describe the *solution for the current vexing corporate problems*.
+
+#### If I were you...
+
+Some *tried and tested* ways to make it work based on successful experiences:
+
+- **Get your boss (and her boss) to watch a usability test**: *executives often become fascinated* and they stay longer than they'd planned, because it's the first time they've seen abyone try to use the company's site and it's often not nearly as pretty a picture as they'd imagined.
+- **Do the first one on your own time**: we should do the first test without asking for permission, we just need to *keep it incredibly simple* by finding some volunteers, so it doesn't cost anything, and making sure something improves as a result, usually a well known serious problem.
+- **Do a test of the competition**: everybody loves *learning about the competition*, and because it's not our site, *no one will be hurt* about the bad things we find on it.
+- **Empathize with management**: virtually, *empathy is a proffessional requirement*.
+- **Know you place in the grand scheme of things**: humility goes a long way, our primary role is *to share what we know*, not to tell people how things should be done.
+
+At the end, it's all about sharing what we know, not to tell people how things should be done.
+
+#### Resist the dark forces
+
+Usability is about **serving people better** by building better products, but there's a trend, mainly from the marketing team, to try to get usability practitioners to help them figure out how to **manipulate users** rather than serve their needs.
+
+There's even a book called *Evil by Design: Interaction Design to Lead Us into Temptation* by Chris Nodder about human frailties and design decisions.
+
+Whether something is desirable or not is a marketing question, best answered by using market research tools and instruments.
+
+It's fine to use usability tests to *determine* whether something is desirable, or even for help in figuring out how to make something *more* desirable. What's wrong is to use usability to make users *think* something is desirable, to manipulate them.
+
+Books that can lead us to influence people *the right way*:
+
+- *Influence: The Psychology of Persuasion* by Robert Cialdini.
+- *How to Get People to Do Stuff: Master the art and science of persuasion and motivation* by Susan Weinschenk.
+
+#### A few definitive answers
+
+Almost all in this book has been answered with "it depends", but there is a collection of things that are definitive answers:
+
+- **Don't use small, low-contrast type**.
+- **Don't put labels inside form fields** (as content).
+- **Preserve a distinction between visited and unvisited links**.
+- **Don't float headings between paragraphs**.
