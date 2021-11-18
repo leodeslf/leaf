@@ -10,12 +10,6 @@
 
 ## URL anatomy
 
-Example:
-
-```http
-https://www.example.com.uy:80/folder/resourse?id=1#section-id
-```
-
 Part|Concept
 ---|---
 `https://`|Protocol
@@ -27,6 +21,12 @@ Part|Concept
 `folder/resource`|Path
 `?id=1`|Query string (used by server-side software)
 `#section-id`|Fragment
+
+Example:
+
+```http
+https://www.example.com.uy:80/folder/resourse?id=1#section-id
+```
 
 ## Browser engines
 
