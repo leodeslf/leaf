@@ -37,7 +37,7 @@ while getopts ":g" opt; do
       task="Push changes"
       echo "🔃 $task started."
       git add docs
-      git commit -m "$task from build script."
+      git commit -m "Update build folder from build script."
       git push &&
         echo "🔃 $task finished." ||
         echo "🔃 $task failed!"
