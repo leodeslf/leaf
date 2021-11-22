@@ -19,14 +19,17 @@ The Pragmatic Programmer:
 
 Each method should solve **only one** problem. More problems, options, or conditions should be solved by another block of code to be easily maintained.
 
-Leonardo da Vinci:
 >Simplicity is the ultimate sophistication.
 
-Mies Van Der Rohe:
+- Leonardo da Vinci
+
 >Less is more.
 
-Antoine de Saint Exupéry:
+- Mies Van Der Rohe
+
 >It seems that perfection is reached not when there is nothing left to add, but when there is nothing left to take away.
+
+- Antoine de Saint Exupéry
 
 ## SOLID
 
