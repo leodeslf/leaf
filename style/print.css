@@ -1,0 +1,27 @@
+:root {
+  --bg: #ffffff;
+  --bg--alt-a: #f1f3f4;
+  --bg--alt-b: #f3f4f6;
+  --color: #525556;
+  --color--variation: #7a7e7f;
+  --color--blue: #0f4d6c;
+  --color--turquoise: #288a6a;
+  --color--green: #377817;
+  --color--h2: #0a0a0a;
+  --color--h3: #1f1f1f;
+  --color--h4: #2e2e2e;
+  --color--h5: #3d3d3d;
+  --color--h6: #474747;
+  color-scheme: light;
+  font-family: 'Crimson Pro', serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+body {
+  outline: none;
+}
+
+h1, footer, #go-to-top-btn {
+  display: none;
+}
