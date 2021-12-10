@@ -132,35 +132,29 @@ These facts help the user to interact fast and easily, as we make an economic in
 
 ## Speed and Style
 
-Speed:
+### Speed
 
-✔ Simple / direct  
-✔ Unambiguous  
-✔ Rapidly adoptable  
-✔ Familiar / predictable  
-✔ Logical  
-❌ Boring  
-❌ Boring  
-❌ Boring  
-❌ Boring  
-❌ Boring
+Good|Bad
+---|---
+Simple / direct|Boring
+Unambiguous|Boring
+Rapidly adoptable|Boring
+Familiar / predictable|Boring
+Logical|Boring
 
-Style:
+### Style
 
-✔ Entertaining  
-✔ Engaging  
-✔ Rewarding experience  
-✔ Brandable  
-✔ Novel / individual  
-❌ Obstructs Content  
-❌ Time-consuming  
-❌ Frustrating experience  
-❌ Dates rapidly  
-❌ Unnecessary
+Good|Bad
+---|---
+Entertaining|Obstructs Content
+Engaging|Time-consuming
+Rewarding experience|Frustrating experience
+Brandable|Dates rapidly
+Novel / individual|Unnecessary
 
 ## Composition and Structure
 
-Content-specific design: Sometimes, the structure is all the content, and its functionality drives all the design decisions.
+Content-specific design: Sometimes, the structure is the actual content, and its functionality drives all the design decisions.
 
 ## Buttons
 
