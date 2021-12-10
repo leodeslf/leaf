@@ -10,6 +10,7 @@
   - [Vite CLI](notes/inits/vite_cli.md)
   - [Vue CLI](notes/inits/vue_cli.md)
 - Tooling
+  - [11ty](notes/tooling/11ty.md)
   - [Browsersync](notes/tooling/browser_sync.md)
   - [GitHub Pages](notes/tooling/gh_pages.md)
   - [Jekyll CLI](notes/tooling/jekyll_cli.md)
@@ -34,9 +35,9 @@
     - [Browser Rendering Optimization](summs/software-engg/optimization/browser_rendering.md)
     - [Website Performance Optimization](summs/software-engg/optimization/wpo.md)
   - Design Patterns
+    - [Behavioral](summs/software-engg/patterns/behavioral.md)
     - [Creational](summs/software-engg/patterns/creational.md)
     - [Structural](summs/software-engg/patterns/structural.md)
-    - [Behavioral](summs/software-engg/patterns/behavioral.md)
   - Sorting Algorithms
     - [Comparison Sorts](summs/software-engg/sorting/comparison.md)
     - [Integer Sorts](summs/software-engg/sorting/integer.md)
@@ -47,6 +48,6 @@
 - UI
   - [Visual Elements of User Interface Design (CalArts)](summs/ui/visual_elements_of_ui_design.md)
 - UX
-  - [UX Foundations: Interaction Design](summs/ux/ux-foundations-ixd.md)
   - [Don't Make Me Think](summs/ux/dont_make_me_think.md)
   - [UX Design Fundamentals (CalArts)](summs/ux/ux_design_fundamentals.md)
+  - [UX Foundations: Interaction Design](summs/ux/ux-foundations-ixd.md)
