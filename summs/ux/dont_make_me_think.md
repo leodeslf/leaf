@@ -8,7 +8,7 @@ Written by Steve Krug.
 
 >Krug's first law of usability
 
-People don't read, *people scan*, they should be capable of **instantly finding what they need** without wasting time and effort, where it is, how to use it, or even identifying more options. Webs should be *self-explanatory and speak the user's language*.
+People don't read, *people scan*, they should be capable of **instantly finding what they need** without wasting time and effort, where it is, how to use it, or even identifying more options. Webs should be *self-explanatory* and speak the user's language.
 
 If we can't make something self-evident, we at least need to make it self-explanatory.
 
