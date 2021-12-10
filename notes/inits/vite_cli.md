@@ -1,7 +1,7 @@
 # Vite CLI
 
 ```bash
-# Inititalize
+# Initialize
 npm init vite@latest <project-name> --template <option>
 ```
 
