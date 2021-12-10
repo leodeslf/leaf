@@ -3,11 +3,11 @@
 Implementation conditions:
 
 * Avoid sorting unsortable arrays (n < 2).
-* Only one argument, the unsorted array.
-* Only one function per algorithm.
-* Avoid built-in array tools.
+* Take only one argument, the array.
+* Use only one function per algorithm.
+* Avoid built-in array methods.
 * Use recursion if possible.
-* Return a sorted copy.
+* Return a new array.
 
 ## Bucket
 
