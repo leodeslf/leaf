@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="🌱 My learning docs and notes.">
     <meta name="author" content="Leonardo de S.L.F"/>
-    <link rel="stylesheet" href="/style/style.css"/>
-    <link rel="stylesheet" href="/style/syntax-highlight.css"/>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link rel="stylesheet" href="/style/style.css"/>
+    <link rel="stylesheet" href="/style/syntax-highlight.css"/>
+    <link rel="stylesheet" href="/style/print.css" media="print"/>
+    <link rel="stylesheet" href="/style/small.css" media="(max-width: 599px)"/>
     <title>Docs & Notes</title>
   </head>
   <body>
@@ -20,11 +22,11 @@
 <p>Implementation conditions:</p>
 <ul>
 <li>Avoid sorting unsortable arrays (n &lt; 2).</li>
-<li>Only one argument, the unsorted array.</li>
-<li>Only one function per algorithm.</li>
-<li>Avoid built-in array tools.</li>
+<li>Take only one argument, the array.</li>
+<li>Use only one function per algorithm.</li>
+<li>Avoid built-in array methods.</li>
 <li>Use recursion if possible.</li>
-<li>Return a sorted copy.</li>
+<li>Return a new array.</li>
 </ul>
 <h3>Bubble</h3>
 <pre class="language-txt"><code class="language-txt">Bubble(array)<br>  For each element of array<br>    If next element is greater<br>      Swap them<br>  If swaps were made<br>    Bobble(array)</code></pre>

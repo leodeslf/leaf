@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🌱 My learning docs and notes.">
+    <meta name="author" content="Leonardo de S.L.F"/>
+    <link rel="stylesheet" href="/style/style.css"/>
+    <link rel="stylesheet" href="/style/syntax-highlight.css"/>
+    <link rel="stylesheet" href="/style/print.css" media="print"/>
+    <link rel="stylesheet" href="/style/small.css" media="(max-width: 599px)"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <title>Docs & Notes</title>
+  </head>
+  <body>
+    <h1>
+      <a href="/">🌱 Docs & Notes</a>
+    </h1>
+    <main>
+      <h2>Browser Rendering Optimization</h2>
+<p>Course by Google.</p>
+<h3>The Critical Rendering Path</h3>
+<h4>Frames</h4>
+<p>A modern device tends to draw <em>60fps</em> (frames per second) due to its screen refresh rate of 60Hz (in most of the cases), that's about 16ms between each new frame.</p>
+<p>Our target as developers should be to make animations and transitions to render at 60fps consistently from start to finish. By doing so, we ensure to bring the best experience to the user by making a product that runs smoothly <em>avoiding juddering</em>.</p>
+<p>Juddering happens when the <em>fps drops</em> to the point that it's easily noticeable by the human eye because the drawing process has been slowed down (or even worse, the whole page/app lacks performance for some reason).</p>
+<h4>Rendering Pipeline</h4>
+<ul>
+<li><strong>JavaScript</strong>: It would (or not) be used to handle work that will result in visual changes, like animation functions, sorting data, or manipulating the DOM/CSSOM.</li>
+<li><strong>Style</strong>: It can be affected from JavaScript or CSS by using animations, transitions, or the Web Animation API (Timing Model and Animation Model).</li>
+<li><strong>Layout</strong>: In this phase we compute the geometry (position, size, and shapes) of each element.</li>
+<li><strong>Paint</strong>: Once the layout is done, each element gets painted on the screen pixel by pixel on a process known as rastering.</li>
+<li><strong>Compose</strong>: It's where the browser puts the inidividual layers toghether.</li>
+</ul>
+<p>There are three ways the render pipeline can make a frame:</p>
+<ol>
+<li>Layout, then Paint, then Composite</li>
+<li>Paint, then Composite</li>
+<li>Only Composite</li>
+</ol>
+<p>All of these cases will be the result of a Style change. A Style change that come from either JavaScript or CSS.</p>
+<!-- http://blog.wilsonpage.co.uk/introducing-layout-boundaries/ -->
+<h3>App Lifecycles (RAIL)</h3>
+<p>The four mayor areas of a site/app life cycle:</p>
+<ul>
+<li><strong>Response</strong>: it's the time it takes to give feedback from the users input. If the response time gets longer than 100ms, it will be noticed as lagged.</li>
+<li><strong>Animate</strong>: either JavaScript or CSS, triggered by the user or a style rule. Each frame should be done in less than 16ms to ensure animations run at 60fps.</li>
+<li><strong>Idle</strong>: it begins immediately after the site/app loads and it's waiting for the user to interact, it's <em>when nothing happens</em>. During this state, we usually do the post-loading of anything that can wait and isn't included in the CRP (like images, videos, or any low-priority content). It's around 50ms long after the load.</li>
+<li><strong>Load</strong>: it's the actual first load of the page and all it's required assets before becoming idle. It should take less than 1s.</li>
+</ul>
+<h3>Weapons of Jank Destruction</h3>
+<p>Steps to ensure we run on a <em>proper environment</em>:</p>
+<ol>
+<li>Quit other apps.</li>
+<li>Go incognito.</li>
+<li>Focus on the cause of bottlenecks, not symptoms.</li>
+<li>Measure first, then optimize.</li>
+</ol>
+<p>To cover most of the use case scenarios and make a proper rendering performance analisis, we need to test on different <em>devices</em> (Windows, Mac, Android) and <em>browsers</em> (Chrome, Edge, Firefox, IE), as they may have a different JavaScript and Rendering <em>Engine</em>, which may result on different behaviors and an overall performance gap, a gap that's quite big specially when talking about rendering.</p>
+<p>Our primary tool is the browsers developers tool, the <em>DevTools</em> in Chrome, which is used to monitor the <em>Rendering Pipeline trace</em> (among other functionalities) from its <em>Performance tab</em> (previously Timeline), giving us access to valuable data like <em>events</em>, <em>function calls</em>, the <em>line of code</em> that fires them, <em>timing</em>, and more.</p>
+<h3>JavaScript</h3>
+<h4>Just In Time (JIT) Compilers</h4>
+<p>JavaScript compilers do compile the source code immediately after the file is loaded, that means they <em>generate a new code</em> to be executed from the one we write in JavaScript. Different engines may vary on the way they compile giving different results. That's why micro-optimizations aren't that effective and, in some cases, it can get even worse depending on the engine.</p>
+<h4>JavaScript Animations</h4>
+<p>The proper tool to make animations in JavaScript is the <code>requestAnimationFrame</code> API which is a method used to <em>call a given function before the next repaint</em>, a callback to that function is passed as an argument. The given function itself needs to call <code>requestAnimationFrame</code> again to keep the loop running as an actual animation. It's said <code>requestAnimatioFrame</code> is one shot. To stop that loop we use <code>cancelAnimationFrame</code>.</p>
+<!-- https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame -->
+<h4>Web Workers</h4>
+<p>JavaScript is a <em>single-thread environment</em>, that means that's not possible to run multiple scripts at the same time (in parallel). It was true until the invention of Web Workers. A Web Worker is a script that runs in a <em>background thread</em>, allowing us to run scripts that hanlde computationally intensive tasks without blocking the UI or other script in the main thread. Transferring data between a worker and a non-worker script can be achieved via a thread-like message passing.</p>
+<p>Web Workers do have access to:</p>
+<ul>
+<li>The <code>navigator</code> object.</li>
+<li>The <code>location</code> object.</li>
+<li>The application cache.</li>
+<li>Importing scripts using the <code>importScripts</code> method.</li>
+<li>Spawning other workers, (among other features).</li>
+</ul>
+<p>Web Workers do NOT have access to:</p>
+<ul>
+<li>The DOM tree.</li>
+<li>The <code>window</code> object.</li>
+<li>The <code>document</code> object.</li>
+<li>The <code>parent</code> object.</li>
+</ul>
+<!-- https://www.html5rocks.com/en/tutorials/workers/basics/ -->
+<h4>JavaScript Memory Management</h4>
+<p>JavaScript implements <em>Garbage Collection</em> (it's said it is garbage-collected), which means for us developers, we don't need to worry about pointers, deleting objects, or how to handle local variables as it gets done by the engine itself automatically. The dowside is that the garbage collector is <em>Script-Blocking</em>, and, in consequence, it can be Render-Blocking resulting in a noticeable freezzing of the page/app.</p>
+<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management -->
+<h3>Styles and Layout</h3>
+<h4>Recalculating Styles</h4>
+<p>The <em>performance cost</em> of the Style stage (&quot;Recalculate Style&quot; in DevTools) tends to <em>scale linearly</em> with the number of elements affected by style changes.</p>
+<p>At this stage, the rendering engine has to, first, read the whole CSSOM to <em>identify matching selectors</em> for a given node/element, then <em>apply all of them</em>. There could be more than one selector pointing at the same element (different or even identical ones), as well as repeating rules affecting the same attributes, in such a case, the rule gets applied and overridden each time it appears.</p>
+<p>Make the engine to <strong>work faster</strong>:</p>
+<ul>
+<li>Reduce the number of style rules.</li>
+<li>Reduce complex and deeply nested selectors.</li>
+<li>Remove unused CSS.</li>
+<li>Avoid redundancy.</li>
+<li>Avoid overrides.</li>
+</ul>
+<h4>Forced Synchronous Layout</h4>
+<h3>Composing and Painting</h3>
+
+    </main>
+    <footer>
+      <p>
+        🌱 Learning
+        <a href="/">docs & notes</a>
+        about my Frontend Development journey,
+        <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
+      </p>
+    </footer>
+    <a id="go-to-top-btn" href="#">&gt;</a>
+  </body>
+</html>
