@@ -71,7 +71,7 @@ while getopts ":g" opt; do
   g | git)
     {
       git add docs
-      git commit -m "Update & Commit from build script."
+      git commit -m "Build, update, and commit from script."
 
       # 7)
       task="Push changes"
