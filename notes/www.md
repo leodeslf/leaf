@@ -1,4 +1,8 @@
-# Web
+# WWW
+
+The World Wide Web (WWW) is an **Information System** in which resources are accessible over the Internet, linked by *hyperlinks*, identified by *Resource Locators* (URLs), and served via *Hypertext Transfer Protocol* (HTTP).
+
+It was invented by Tim Berners-Lee in 1989 who also wrote the first Browser while working at CERN in Geneva, Switzerland. The WWW was originally meant to transfer documents as *Hypertext Markup Laguaje* (HTML) files, then called Websites.
 
 ## HTTP status code
 
@@ -41,5 +45,5 @@ https://www.example.com.uy:80/folder/resourse?id=1#section-id
 
 Notes:
 
-* Blink comes from Webkit library named WebCore, forked by Google in 2013.
+* Blink comes from a Webkit library called WebCore, forked by Google in 2013.
 * Since 2019, Edge uses Blink (still being WebKit on iOS).
