@@ -190,13 +190,11 @@ We can see the screen areas that are being repainted by using the **Paint flashi
 
 It's the process of *mixing layers* on screen displayed as a single image.
 
-#### Spawn new layers
+#### Promoting new layers
 
-There are a couple of hacks for persuading the browser to *create a new layer*.
+A way to make that is to use the `will-change` rule, by passing any value that is related to a geometric/positioning property, like `top`, `left`, `hight`, or `width`, we (almost) ensure the browser will "prepare" for these changes by creating a new layer.
 
-One of them is the `will-change` rule, by passing any value that is related to a geometric/positioning property, like `top`, `left`, `hight`, or `width`, we (almost) ensure the browser will prepare for these changes by creating a new layer.
-
-The second, the `transform` rule with a neutral value (e.g.: `transform: translateZ(0)`), a technique known as the *no-transform hack*, it triggers a new layer even for older browsers and Safari, something that won't happen with `will-change`.
+It's also possible to do that with the `transform` rule, with a neutral value if no visual changes need to be done (e.g.: `transform: translateZ(0)`), also known as the *no-transform hack*. It always triggers the creation of a new layer even for older browsers and Safari, something that won't happen if using `will-change`.
 
 In a production environment it's often needed to use both rules, e.g.:
 
@@ -206,3 +204,5 @@ div {
   will-change: transform;
 }
 ```
+
+<!-- https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count -->

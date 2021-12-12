@@ -20,4 +20,4 @@ Branch name|Description|Branch off from|Merge back to
 
 ## Reference
 
-[A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
+- [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
