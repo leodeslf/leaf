@@ -194,6 +194,7 @@ footer {
   align-self: center;
   color: var(--color--variation);
   margin-top: auto;
+  padding-top: .5rem;
   text-align: center;
 }
 

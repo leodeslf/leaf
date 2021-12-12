@@ -153,12 +153,12 @@
 <p>We can see the screen areas that are being repainted by using the <strong>Paint flashing</strong> tool from the Rendering tab of the DevTools in Chrome.</p>
 <h4>Composing</h4>
 <p>It's the process of <em>mixing layers</em> on screen displayed as a single image.</p>
-<h5>Spawn new layers</h5>
-<p>There are a couple of hacks for persuading the browser to <em>create a new layer</em>.</p>
-<p>One of them is the <code>will-change</code> rule, by passing any value that is related to a geometric/positioning property, like <code>top</code>, <code>left</code>, <code>hight</code>, or <code>width</code>, we (almost) ensure the browser will prepare for these changes by creating a new layer.</p>
-<p>The second, the <code>transform</code> rule with a neutral value (e.g.: <code>transform: translateZ(0)</code>), a technique known as the <em>no-transform hack</em>, it triggers a new layer even for older browsers and Safari, something that won't happen with <code>will-change</code>.</p>
+<h5>Promoting new layers</h5>
+<p>A way to make that is to use the <code>will-change</code> rule, by passing any value that is related to a geometric/positioning property, like <code>top</code>, <code>left</code>, <code>hight</code>, or <code>width</code>, we (almost) ensure the browser will &quot;prepare&quot; for these changes by creating a new layer.</p>
+<p>It's also possible to do that with the <code>transform</code> rule, with a neutral value if no visual changes need to be done (e.g.: <code>transform: translateZ(0)</code>), also known as the <em>no-transform hack</em>. It always triggers the creation of a new layer even for older browsers and Safari, something that won't happen if using <code>will-change</code>.</p>
 <p>In a production environment it's often needed to use both rules, e.g.:</p>
 <pre class="language-css"><code class="language-css"><span class="token selector">div</span> <span class="token punctuation">{</span><br>  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">will-change</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<!-- https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count -->
 
     </main>
     <footer>
