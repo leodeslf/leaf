@@ -12,6 +12,8 @@ function error() {
   echo -e "🌱 $task: \e[91mFailed!\e[39m" && fail=true
 }
 
+rm -r -f docs && mkdir docs
+
 layout="---\nlayout: default\n---\n"
 fail=false
 
@@ -21,7 +23,7 @@ feedback
 # 1)
 task="Backup"
 feedback
-cp -r notes summs backup || error
+cp -r engg ui ux backup || error
 "$fail" && exit 1
 success
 
@@ -41,7 +43,7 @@ feedback
 # 3.1) Add one level to the heading (keeping comments in code blocks)
 # 3.2) Add one level to the first heading
 # 3.3) Add layout
-find notes summs -type f -exec sed -i -e 's/## /### /g' -e '1 s/# /## /' -e "1i$layout" {} \; || error
+find engg ui ux -type f -exec sed -i -e 's/## /### /g' -e '1 s/# /## /' -e "1i$layout" {} \; || error
 "$fail" && exit 1
 success
 
@@ -55,14 +57,14 @@ success
 # 5)
 task="Remove garbage"
 feedback
-rm -r notes summs index.md || error
+rm -r engg ui ux index.md || error
 "$fail" && exit 1
 success
 
 # 6)
 task="Restore originals"
 feedback
-mv backup/notes backup/summs ./ || error
+mv backup/engg backup/ui backup/ux ./ || error
 "$fail" && exit 1
 success
 
