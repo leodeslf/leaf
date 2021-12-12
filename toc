@@ -1,53 +1,50 @@
 ## Table of contents
 
-### Quick Notes
-
-- Inits
-  - [Angular CLI](notes/inits/angular_cli.md)
-  - [Create React App](notes/inits/cra.md)
-  - [NPM Packages](notes/inits/npm_pkg.md)
-  - [SvelteKit](notes/inits/sveltekit.md)
-  - [Vite CLI](notes/inits/vite_cli.md)
-  - [Vue CLI](notes/inits/vue_cli.md)
-- Tooling
-  - [11ty](notes/tooling/11ty.md)
-  - [Browsersync](notes/tooling/browser_sync.md)
-  - [GitHub Pages](notes/tooling/gh_pages.md)
-  - [Jekyll CLI](notes/tooling/jekyll_cli.md)
-  - [Serve](notes/tooling/serve.md)
-  - [Terser](notes/tooling/terser.md)
-  - [TypeScript](notes/tooling/typescript.md)
-  - [Web Dev Server](notes/tooling/wds.md)
-- [Bash](notes/bash.md)
-- [Git](notes/git.md)
-- [WWW](notes/www.md)
-
-### Summaries
-
-- Frontend
-  - [Eloquent JavaScript](summs/frontend/eloquent_js.md)
-  - [SCSS](summs/frontend/scss.md)
 - Software Engineering
-  - Development Methodologies
-    - [Agile Manifesto](summs/software-engg/dev-methodologies/agile_manifesto.md)
-    - [Scrum Guide](summs/software-engg/dev-methodologies/scrum_guide.md)
-  - Optimization
-    - [Browser Rendering Optimization](summs/software-engg/optimization/browser_rendering.md)
-    - [Website Performance Optimization](summs/software-engg/optimization/wpo.md)
   - Design Patterns
-    - [Behavioral](summs/software-engg/patterns/behavioral.md)
-    - [Creational](summs/software-engg/patterns/creational.md)
-    - [Structural](summs/software-engg/patterns/structural.md)
+    - [Behavioral](engg/patterns/behavioral.md)
+    - [Creational](engg/patterns/creational.md)
+    - [Structural](engg/patterns/structural.md)
+  - Frontend Development
+    - Inits
+      - [Angular CLI](engg/frontend/inits/angular_cli.md)
+      - [Create React App](engg/frontend/inits/cra.md)
+      - [NPM Packages](engg/frontend/inits/npm_pkg.md)
+      - [SvelteKit](engg/frontend/inits/sveltekit.md)
+      - [Vite CLI](engg/frontend/inits/vite_cli.md)
+      - [Vue CLI](engg/frontend/inits/vue_cli.md)
+    - Tooling
+      - [11ty](engg/frontend/tooling/11ty.md)
+      - [Browsersync](engg/frontend/tooling/browser_sync.md)
+      - [GitHub Pages](engg/frontend/tooling/gh_pages.md)
+      - [Jekyll CLI](engg/frontend/tooling/jekyll_cli.md)
+      - [Serve](engg/frontend/tooling/serve.md)
+      - [Terser](engg/frontend/tooling/terser.md)
+      - [TypeScript](engg/frontend/tooling/typescript.md)
+      - [Web Dev Server](engg/frontend/tooling/wds.md)
+    - [Eloquent JavaScript](engg/frontend/eloquent_js.md)
+    - [SCSS](engg/frontend/scss.md)
+  - Methodologies
+    - [Agile Manifesto](engg/method/agile.md)
+    - [Scrum Guide](engg/method/scrum.md)
+  - Optimization
+    - [Browser Rendering Optimization](engg/optim/browser_rendering.md)
+    - [Website Performance Optimization](engg/optim/wpo.md)
   - Sorting Algorithms
-    - [Comparison Sorts](summs/software-engg/sorting/comparison.md)
-    - [Integer Sorts](summs/software-engg/sorting/integer.md)
+    - [Comparison Sorts](engg/sorting/comparison.md)
+    - [Integer Sorts](engg/sorting/integer.md)
   - Testing
-    - [Unit Testing](summs/software-engg/testing/unit.md)
-  - [GitFlow](summs/software-engg/gitflow.md)
-  - [Principles](summs/software-engg/principles.md)
+    - [Unit Testing](engg/testing/unit.md)
+  - Version Control
+    - [Git](engg/version/git.md)
+    - [Git flow](engg/version/gitflow.md)
+    - [GitHub flow](engg/version/github_flow.md)
+  - [Bash](engg/bash.md)
+  - [Principles](engg/principles.md)
+  - [World Wide Web](engg/www.md)
 - UI
-  - [Visual Elements of User Interface Design (CalArts)](summs/ui/visual_elements_of_ui_design.md)
+  - [Visual Elements of User Interface Design](ui/visual_elements_of_ui_design.md)
 - UX
-  - [Don't Make Me Think](summs/ux/dont_make_me_think.md)
-  - [UX Design Fundamentals (CalArts)](summs/ux/ux_design_fundamentals.md)
-  - [UX Foundations: Interaction Design](summs/ux/ux-foundations-ixd.md)
+  - [Don't Make Me Think](ux/dont_make_me_think.md)
+  - [UX Design Fundamentals](ux/ux_design_fundamentals.md)
+  - [UX Foundations: Interaction Design](ux/ux-foundations-ixd.md)
