@@ -4,24 +4,41 @@
   --bg--alt-b: #f3f4f6;
   --color: #525556;
   --color--variation: #7a7e7f;
-  --color--blue: #0f4d6c;
-  --color--turquoise: #288a6a;
-  --color--green: #377817;
-  --color--h2: #0a0a0a;
-  --color--h3: #1f1f1f;
-  --color--h4: #2e2e2e;
-  --color--h5: #3d3d3d;
-  --color--h6: #474747;
+  --color--cyan: hsl(174, 50%, 45%);
+  --color--green: hsl(114, 50%, 45%);
+  --color--yellow: hsl(54, 50%, 45%);
+  --color--headline: #0a0a0a;
   color-scheme: light;
-  font-family: 'Crimson Pro', serif;
-  font-size: 20px;
-  font-weight: 400;
 }
 
 body {
   outline: none;
+  padding: 1rem;
 }
 
-h1, footer, #go-to-top-btn {
+footer,
+h1,
+#home {
   display: none;
+}
+
+code,
+pre {
+  background-color: unset !important;
+}
+
+code:not(pre>code),
+pre {
+  border: 1pt solid var(--bg--alt-a);
+}
+
+table tr:nth-of-type(2n),
+table>thead>tr {
+  background-color: unset;
+}
+
+table {
+  background-color: unset;
+  border: 1pt solid var(--bg--alt-a);
+  border-radius: unset;
 }

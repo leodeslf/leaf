@@ -1,5 +1,19 @@
 @media screen and (max-width: 599px) {
   :root {
-    font-size: 15px;
+    font-size: 16px;
+  }
+
+  body {
+    padding: 0 1rem;
+  }
+
+  h1 a {
+    margin-left: -1;
+  }
+
+  pre,
+  table {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
