@@ -1,0 +1,55 @@
+---
+layout: default
+index: true
+---
+## Table of contents
+
+<!-- - [Test](test/) -->
+- **[Software Engineering](engg/)**
+  - [Bash](engg/bash/)
+  - [Data Structures](engg/ds/)
+  - Development Methodologies
+    - [Agile Manifesto](engg/method/agile/)
+      - [Scrum Guide](engg/method/scrum/)
+    - [Pair Programming](engg/method/pair_programming/)
+  - [Object Oriented Programming](engg/oop/)
+    - [Design Patterns](engg/oop/design_patterns/) *[WIP]*
+  - [Sorting Algorithms](engg/sorting_algorithms/) *[WIP]*
+  - Testing
+    - [Test-Driven Development](engg/testing/tdd/)
+    - [Unit Testing](engg/testing/unit/)
+  - Version Control
+    - [Git](engg/version/git/)
+    - [Git Flow](engg/version/gitflow/)
+    - [GitHub Flow](engg/version/github_flow/)
+  - [World Wide Web](engg/www/)
+- **Frontend Development**
+  - Project Initialization
+    - [Angular](front/inits/angular/)
+    - [Create React App](front/inits/cra/)
+    - [Jekyll](front/tooling/jekyll/)
+    - [NPM Package](front/inits/npm/)
+    - [React Redux / Redux Toolkit](front/tooling/react_redux_toolkit/)
+    - [SvelteKit](front/inits/sveltekit/)
+    - [Vite](front/inits/vite/)
+    - [Vue](front/inits/vue/)
+  - Tooling
+    - [11ty](front/tooling/11ty/)
+    - [Browsersync](front/tooling/browser_sync/)
+    - [GitHub Pages](front/tooling/gh_pages/)
+    - [Serve](front/tooling/serve/)
+    - [Terser](front/tooling/terser/)
+    - [TypeScript](front/tooling/ts/)
+    - [Web Dev Server](front/tooling/wds/)
+  - [Eloquent JavaScript](front/eloquent_js/) *[To Update]*
+  - [JavaScript](front/js/) *[WIP]*
+  - [SCSS](front/scss/) *[To Update]*
+  - Website Performance Optimization
+    - [Browser Rendering Optim.](front/wpo/browser_rendering/)
+    - [Critical Rendering Path Optim.](front/wpo/crp/)
+- **UI**
+  - [Visual Elements of User Interface Design](ui/visual_elements_of_ui_design/) *[To Update]*
+- **UX**
+  - [Don't Make Me Think](ux/dont_make_me_think/)
+  - [UX Design Fundamentals](ux/ux_design_fundamentals/) *[To Update]*
+  - [UX Foundations: Interaction Design](ux/ux-foundations-ixd/) *[To Update]*
