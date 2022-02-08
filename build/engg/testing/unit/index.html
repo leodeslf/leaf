@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🌱 My learning docs and notes.">
+    <meta name="author" content="Leonardo de S.L.F"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link rel="stylesheet" href="/style/style.css"/>
+    <link rel="stylesheet" href="/style/syntax-highlight.css"/>
+    <link rel="stylesheet" href="/style/print.css" media="print"/>
+    <link rel="stylesheet" href="/style/small.css" media="(max-width: 599px)"/>
+    <title>Docs & Notes</title>
+  </head>
+  <body>
+    <h1>
+      <a href="/">🌱 Docs & Notes</a>
+    </h1>
+    <main>
+      <h2>Unit Testing</h2>
+<p>From the book Building Secure &amp; Reliable Systems (Google).</p>
+<p>Unit testing is an approach that <strong>prevents the release of code that contains bugs</strong>. Typically run locally as part of engineering workflows to provide feedback before a commit is made and any change is sent into the repository's mainline branch.</p>
+<p>This technique involves breaking software components into smaller, isolated code blocks called units to be tested. <em>A unit has no external dependencies</em>. The tests consist of code that exercises a given unit with different inputs.</p>
+<h3>Writing effective Unit Tests</h3>
+<p>A unit test needs to be fast and <strong>hermetic</strong> at all, that means it should repeatedly <em>produce the same results</em> given the same inputs in the same environment, if not, it's not a reliable test. As expected, the efficiency and comprehensiveness of unit tests can significantly impact the robustness of the software.</p>
+<p>It's useful to execute the same test with <em>different inputs</em>. Thereby minimizing the amount of: duplicated code; boilerplate code; and refactoring efforts.</p>
+<h3>When to Write Unit Tests</h3>
+<p>A common strategy is to write tests <strong>immediately after the code</strong>. These tests typically accompany the new code in the same commit. In organizations that practice code review, a peer reviewer can <em>double-check the tests</em> to ensure they're sufficiently robust to maintain the quality of the codebase.</p>
+<p>Instead of writing tests after the code, we can <em>write tests before writing code</em> following <em>test-driven development</em> (TDD) methodologies, these tests are based on requirements and expected behaviors.</p>
+<p>We can also <em>write tests in response to</em>: manual testing; code review efforts; during a milestone; and to verify that a proposed bug fix works, so later refactoring won't reintroduce the same bug.</p>
+<blockquote>
+<p>In the interest of covering as many scenarios as possible, you'll spend more time writing tests than writing the code being tested, especially when dealing with nontrivial systems.</p>
+</blockquote>
+<h3>How Unit Testing Affects Code</h3>
+<p>To improve the comprehensiveness of tests, we may need to design new code to <em>include testing</em> provisions, or refactor older code to make it <em>more testable</em>. Refactoring involves providing a way to <strong>intercept calls</strong> (e.g.: to verify that the code invokes the interceptor the correct number of times, or with the correct arguments).</p>
+<p>We should <em>remove direct calls</em> and replace them with <strong>abstractions</strong>. This dramatically reduces the &quot;flakiness&quot; of a test that depends on real-word systems, as tests will guarantee that we won't get random failures because of external dependancies , or even worse, unavailable systems (e.g: when consuming APIs).</p>
+<blockquote>
+<p>These abstractions and their corresponding implementations are called <em>mocks</em>, <em>stubs</em>, or <em>fakes</em>. Engineers sometimes use these words interchangeably, despite the fact that the concepts vary in implementation complexity and features, so it's important to ensure everyone at the organization uses consistent vocabulary.</p>
+</blockquote>
+<p>Another fact to keep in mind is that, if we have to completely rewrite the tests every time a method changes, we may need to rethink the tests or even the architecture of the system itself.</p>
+
+    </main>
+    <footer>
+      <p>
+        🌱 Learning
+        <a href="/">docs & notes</a>
+        about my Frontend Development journey,
+        <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
+      </p>
+    </footer>
+    
+      <a id="home" href="/">🏡</a>
+    
+  </body>
+</html>

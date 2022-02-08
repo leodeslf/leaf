@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🌱 My learning docs and notes.">
+    <meta name="author" content="Leonardo de S.L.F"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link rel="stylesheet" href="/style/style.css"/>
+    <link rel="stylesheet" href="/style/syntax-highlight.css"/>
+    <link rel="stylesheet" href="/style/print.css" media="print"/>
+    <link rel="stylesheet" href="/style/small.css" media="(max-width: 599px)"/>
+    <title>Docs & Notes</title>
+  </head>
+  <body>
+    <h1>
+      <a href="/">🌱 Docs & Notes</a>
+    </h1>
+    <main>
+      <h2>Design Patterns</h2>
+<p>From the books:</p>
+<ul>
+<li>Design Patterns.</li>
+<li>Learning JavaScript Design Patterns.</li>
+</ul>
+<p>Design patterns have three main benefits:</p>
+<ul>
+<li><em>Proven solution</em>, tested and optimized by many developers many times.</li>
+<li><em>Easily reusable</em>, they are the generic tool for specific problems.</li>
+<li><em>Expressive</em>, elegant and selfevident solutions can be made with them.</li>
+</ul>
+<p>They also <em>ease communication</em> and <em>prevent refactoring</em> as they create a common language for developers and the solutions are often the best ones.</p>
+<h3>Creational Patterns</h3>
+<p>Creational design patterns abstract the <strong>instantiation</strong> process. They help make a system independent of how its objects are created, composed, and represented.</p>
+<p>We can apply this concept by making:</p>
+<ul>
+<li>Objects to defer part of their creation to <em>other objects</em>;</li>
+<li>Classes to defer part of their object creation to <em>subclasses</em>.</li>
+</ul>
+<p>This kind of pattern become important as systems evolve to depend more on object composition than class inheritance. Emphasis shifts aways from hardcoding a fixed set of behaviors toward defining a smaller set of fundamental behaviors. Creational patterns give us flexibility about <em>what</em> gets created, <em>who</em> creates it, <em>how</em> is gets created, and <em>when</em>.</p>
+<p>Two aspects these patterns have:</p>
+<ol>
+<li>They all encapsulate knowledge about which concrete classes the system uses.</li>
+<li>They hide how instances of these classes are created and put together.</li>
+</ol>
+<h4>Abstract Factory</h4>
+<p>Provide an interface for <em>creating families of related objects without specifying their concrete classes</em>. Also known as Kit.</p>
+<p>Applicable when:</p>
+<ul>
+<li>A system should be independent of how its products are created, composed, and represented.</li>
+<li>A system should be configured with one of multiple families of products.</li>
+<li>A family of related product objects is designed to be used together, and we need to enforce this constraint.</li>
+<li>We want to provide a class library of products, and we want to reveal just their interfaces, not their implementations.</li>
+</ul>
+<p>Consequences:</p>
+<ul>
+<li>It isolates concrete classes.</li>
+<li>It makes exchanging product families easy.</li>
+<li>It promotes consistency among products.</li>
+<li>Supporting new kinds of products is difficult.</li>
+</ul>
+<p>Related patterns:</p>
+<p>Abstract Factory is often implemented with Factory Method and Prototype, a concrete factory is often a Singleton.</p>
+<h4>Builder</h4>
+<p><em>Separate the construction of an object from its representation</em> so that the same construction process can create different representations.</p>
+<p>Applicable when:</p>
+<ul>
+<li>The algorithm for creating a complex object should be independent of the parts that make up the object and how they're assembled.</li>
+<li>The construction process must allow different representations for the object that's constructed.</li>
+</ul>
+<p>Consequences:</p>
+<ul>
+<li>It lets us vary a product's internal representation.</li>
+<li>It isolates code for construction and representation.</li>
+<li>It gives us finer control over the construction process.</li>
+</ul>
+<p>Related patterns:</p>
+<p>It's similar to Abstract Factory, but instead of returning a product from a family, it returns a complex object after several steps. A Composite is what the builder often builds.</p>
+<h4>Factory Method</h4>
+<p>Define an interface for creating an object, but <em>let the subclasses decide which class to instantiate</em>. Factory Method kets a class defer instantiation to subclasses. Also known as Virtual Constructor.</p>
+<p>Applicable when:</p>
+<ul>
+<li>A class can't anticipate the class of object it must create.</li>
+<li>A class wants its subclasses to specify the objects it creates.</li>
+<li>Classes delegate responsibility to one of several helper subclasses, and we want to localize the knowledge of which helper subclass is the delegate.</li>
+</ul>
+<p>Consequences:</p>
+<ul>
+<li>Provides hooks for subclasses.</li>
+<li>Connects parallel class hierarchies.</li>
+</ul>
+<p>Related patterns:</p>
+<p>As said before Abstract Factory is often implemented with Factory Method. Factory Methods are usually called within Template Methods.</p>
+<h4>Prototype</h4>
+<p>Specify the kinds of objects to create using a prototypical instance, and <em>create new objects by copying this prototype</em>.</p>
+<p>Applicable when a system should be independent of how its products are created, composed, and represented (as with Abstract Factory), and:</p>
+<ul>
+<li>When the classes to instantiate are specified at run-time.</li>
+<li>To avoid building a class hierarchy of factories that parallels the class hierarchy of products.</li>
+<li>When instances of a class can have one of only a few different combinations of state.</li>
+</ul>
+<p>Consequences:</p>
+<ul>
+<li>Adding and removing products at run-time.</li>
+<li>Specifying new objects by varying values.</li>
+<li>Specifying new objects by varying structure.</li>
+<li>Reduced subclassing.</li>
+<li>Configuring an application with classes synamically.</li>
+</ul>
+<p>Related patterns:</p>
+<p>Prototype and Abstract Factory are competing patterns in some ways. They can also be used together. An Abstract Factory might store a set of proyotypes from which to clone and return product objects. Designs that make heavy use of the Composite and Decorator patterns often can benefit from Prototype as well.</p>
+<h4>Singleton</h4>
+<p><em>Ensure a class only has one instance</em>, and provide a global point of access to it.</p>
+<p>Applicable when:</p>
+<ul>
+<li>There must be exactly one instance of a class, and it must be accessible to clients from a well-known access point.</li>
+<li>The sole instance should be extensible by subclasses, and clients should be able to use an extended instance without modifying their code.</li>
+</ul>
+<p>Consequences:</p>
+<ul>
+<li>Controlled access to the sole instance.</li>
+<li>Reduced name space.</li>
+<li>Permits refinement of operations and representation.</li>
+<li>Permits a variable number of instances.</li>
+<li>More flexible than class operations.</li>
+</ul>
+<p>Related patterns:</p>
+<p>Many patterns can be implemented using a Singleton, see Abstract Factory, Builder, and Prototype.</p>
+<h3>Structural Patterns</h3>
+<p>Structural patterns are concern with how classes and objects are <strong>composed</strong> to form larger structures while keeping these structures flexible and efficient, easing the design by identifying a simple way to realize <em>relationships among entities</em>. This kind of pattern is particularly useful for making independently developed class libraries work together.</p>
+<p>In practice:</p>
+<ul>
+<li>Class patterns use <em>inheritance</em> to compose interfaces or implementations.</li>
+<li>Object patterns describe ways to <em>compose objects</em> to realize new functionality.</li>
+</ul>
+<h4>Adapter</h4>
+<p>Convert the interface of a class into <em>another interface clients expect</em>. Adapter lets classes work together that couldn't otherwise becasuse of incompatible interfaces. Also known as Wrapper.</p>
+<h4>Bridge</h4>
+<p><em>Decouple an abstraction from its implementation</em> so that the two can vary independently. Also known as Handle/Body.</p>
+<h4>Composite</h4>
+<p><em>Compose objects into tree structures to represent part-whole hierarchies</em>. Composite lets clients treat individual objects and compositions of objetcs uniformly.</p>
+<h4>Decorator</h4>
+<p><em>Attach additional responsibilities to an object dynamically</em>. Decorators provide a flexible alternative to subclassing for extending functionality. Also known as Wrapper.</p>
+<h4>Facade</h4>
+<p>Provide a <em>unified interface to a set of interfaces in a subsystem</em>. Facade defines a higher-level interface that makes the subsystem easier to use.</p>
+<h4>Flyweight</h4>
+<p>Use <em>sharing</em> to support large numbers of fine-grained objects efficiently.</p>
+<h4>Proxy</h4>
+<p>Provide a <em>placeholder</em> or surrogate for another object to control access to it. Also known as Surrogate.</p>
+<h3>Behavioral Patterns</h3>
+<p>Behavioral patterns are concern with <strong>communication</strong> among objects, algorithms and the assignment of responsibilities between them. These patterns shift our focus away from flow of control to let us concentrate just on the way objects are interconnected.</p>
+<p>To achieve it:</p>
+<ul>
+<li>Class patterns use <em>inheritance</em> to distribute behavior between classes.</li>
+<li>Object patterns use <em>object compositon</em> rather than inheritance.</li>
+</ul>
+<p>Some patterns describe how a group of peer objects <em>cooperate</em> to perform a task that no single object can carry out by itself. An important issue here is how peer objects know about each other. In an extreme case, every object will know about every other.</p>
+<h4>Chain of Responsability</h4>
+<p><em>Avoid coupling a request sender to its receiver</em> by giving more than one object a chance to handle the request. Chain the receiving objects and <em>pass the request along the chain unil an object handles it</em>.</p>
+<h4>Command</h4>
+<p><em>Encapsulate a request as an object</em>, thereby letting us parameterize clients with different requests, queue or log requests, and support undoable operations. Also known as Action, Transaction.</p>
+<h4>Interpreter</h4>
+<p>Given a language, <em>define a representation for its grammar along with an interpreter</em> that uses the representation to interpret sentences in the language.</p>
+<h4>Iterator</h4>
+<p>provide a way to <em>access the elements</em> of an aggregate object sequentially <em>without exposing its underlying representation</em>. Also known as Cursor.</p>
+<h4>Mediator</h4>
+<p>Define an object that <em>encapsulates how a set of objects interact</em>. Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it lets us vary their interaction independently.</p>
+<h4>Memento</h4>
+<p>Without violating encapsulation, <em>capture and externalize an object's internal state</em> so that the object can be restored to this state later. Also known as Token.</p>
+<h4>Observer</h4>
+<p>Provide a way to <em>notify and update objects from a one-to-many dependency</em>. When one object changes state, all the dependents will automatically synchronise. Also known as Dependents, Publish-Subscribe.</p>
+<h4>State</h4>
+<p>Allow an object to <em>alter its behavior when its internal state changes</em>. The object will appear to change its class. Also known as Objects for State.</p>
+<h4>Strategy</h4>
+<p>Define <em>a family of encapsulated and interchangeable algorithms</em>. Strategy lets the algorithm vary independently from clients that use it. Also known as Policy.</p>
+<h4>Template Method</h4>
+<p>For an operation, define <em>the skeleton of its algorithm, deferring some steps to subclasses</em>. Template Method lets subclasses redefine steps of an algorithm without changing the algorithm's structure.</p>
+<h4>Visitor</h4>
+<p>Represent an operation to be performed on the elements of an object structure. Visitor lets us <em>define a new operation without changing the classes</em> of the elements on which it operate.</p>
+<!-- #### Creational Design Patterns
+
+##### Factory Method
+
+Provides an interface for creating objects in a superclass. Allows subclasses to alter the type of object that will be created.
+
+Use it when:
+
+- You don't know the requirements of the objects you'd work with.
+- You need your library with a way to extend its internal components.
+- You want to save system resources by reusing existing objects.
+
+##### Abstract Factory
+
+Produce families of related objects without specifying their concrete classes.
+
+Use it when:
+
+- You need to work with various families of related objects.
+
+##### Builder
+
+Allows you to produce different representations of an object using the same construction code.
+
+Use it when:
+
+- You want to get ride of a "telescopic constructor" (with a simpler one).
+- You need to create different types of the same object.
+
+##### Prototype
+
+Lets you copy existing objects without making your code dependent on their classes.
+
+Use it when:
+
+- Your code shouldn't depend on the concrete classes for objects that you need to copy.
+- You want to reduce the number of subclasses that only differ in the way they initialize their respective objects.
+
+##### Singleton
+
+Lets you ensure that a class has only one instance, while providing a global access point to this instance.
+
+Use it when:
+
+- You need stricter control over global variables.
+
+#### Structural Design Patterns
+
+##### Adapter
+
+Allows objects with incompatible interfaces to collaborate.
+
+Use it when:
+
+- You need to reuse or communicate several existing subclasses that lack some common functionality.
+
+This design pattern also applies for the object scope.
+
+##### Bridge
+
+Lets you split one or more closely related classes into two separate hierarchies (abstraction and implementation) which can be developed independently of each other.
+
+Use it when:
+
+- You want to divide a monolithic class.
+- You need to extend a class in several orthogonal dimensions.
+- You need to switch implementations at runtime.
+
+##### Composite
+
+Lets you compose objects into tree structures and then work with these structures as if they were individual objects.
+
+Use it when:
+
+- You need to implement a tree-like object structure.
+- You want the client to treat both simple and complex elements uniformly.
+
+##### Decorator
+
+Lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.
+
+Use it when:
+
+- You need to assign extra behaviors to objects without breaking the code that uses them.
+- It’s awkward or not possible to extend an object’s behavior using inheritance.
+
+##### Facade
+
+Provides a simplified interface to a library, framework or any other complex set of classes.
+
+Use it when:
+
+- You need to have a limited but straightforward interface to a complex subsystem.
+- You want to structure a subsystem into layers.
+
+##### Flyweight
+
+Lets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects instead of keeping all of the data in each object.
+
+Use it when:
+
+- Your program must support a huge number of objects which barely fit into available RAM.
+
+##### Proxy
+
+Lets you provide a substitute/placeholder for an object.
+
+A proxy controls access to the original object, allowing you to perform something either before or after the request gets through to the original object.
+
+Use it when:
+
+- Lazy initialization, _Virtual Proxy_: Have a heavyweight service object that wastes system resources.
+- Access control, _Protection Proxy_: Want only specific clients to be able to use the service object.
+- Local execution, _Remote Proxy_: The service object is located on a remote server.
+- Logging requests, _Logging Proxy_: Want to keep a history of requests to the service object.
+- Caching requests results, _Caching Proxy_: Need to cache results of client requests and manage the life cycle of this cache.
+- Smart reference: You need to be able to dismiss a heavyweight object when there are no clients that use it.
+
+#### Behavioral Design Patterns
+
+##### Interpreter
+
+...
+
+##### Template Method
+
+Defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
+
+Use it when:
+
+- You want to let clients extend only particular steps of an algorithm.
+- You have several classes that contain almost identical algorithms.
+
+##### Chain of responsibility
+
+Lets you pass requests along a chain of handlers.
+
+Use it when:
+
+- Your program is expected to process different kinds of requests in various ways.
+- It’s essential to execute several handlers in a particular order.
+- The set of handlers and their order are supposed to change at runtime.
+
+##### Command
+
+It turns a request into a stand-alone object that contains all information about the request. This transformation lets you parameterize methods with different requests, delay or queue a request’s execution, and support undoable operations.
+
+Use it when:
+
+- You want to parameterize objects with operations.
+- You want to queue operations, schedule their execution, or execute them remotely.
+- You want to implement reversible operations.
+
+##### Iterator
+
+Lets you traverse elements of a collection without exposing its underlying representation.
+
+Use it when:
+
+- Your collection has a complex data structure under the hood, but you want to hide its complexity from clients.
+- Reduce duplication of the traversal code across your app.
+- You want your code to be able to traverse different data structures or when types of these structures are unknown beforehand.
+
+##### Mediator
+
+Lets you reduce chaotic dependencies between objects. The pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object.
+
+Use it when:
+
+- It’s hard to change some of the classes because they are tightly coupled to a bunch of other classes.
+- Can't reuse a component in a different program because it's too dependent on other components.
+- Find yourself creating tons of component subclasses just to reuse some basic behavior in various contexts.
+
+##### Memento
+
+Lets you save and restore the previous state of an object without revealing the details of its implementation.
+
+Use it when:
+
+- You want to produce snapshots of the object’s state.
+- Direct access to the object’s fields/getters/setters violates its encapsulation.
+
+##### Observer
+
+Lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.
+
+Use it when:
+
+- Changes to the state of one object may require changing other objects.
+- Some objects in your app must observe others, but only for a limited time or in specific cases.
+
+##### State
+
+Lets an object alter its behavior when its internal state changes.
+
+Use it when:
+
+- You have an object that behaves differently depending on its current state.
+- You have a class polluted with massive conditionals that alter how the class behaves.
+- You have a lot of duplicate code across similar states and transitions of a condition-based state.
+
+##### Strategy
+
+Lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
+
+Use it when:
+
+- You want to use different variants of an algorithm within an object.
+- You have a lot of similar classes that only differ in the way they execute some behavior.
+- You want to isolate the business logic of a class from the implementation details of algorithms that may not be as important in the context of that logic.
+- Your class has a massive conditional operator that switches between different variants of the same algorithm.
+
+##### Visitor
+
+Lets you separate algorithms from the objects on which they operate.
+
+Use it when:
+
+- You need to perform an operation on all elements of a complex object structure.
+- You want to clean up the business logic of auxiliary behaviors.
+- A behavior makes sense only in some classes of a class hierarchy. -->
+
+    </main>
+    <footer>
+      <p>
+        🌱 Learning
+        <a href="/">docs & notes</a>
+        about my Frontend Development journey,
+        <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
+      </p>
+    </footer>
+    
+      <a id="home" href="/">🏡</a>
+    
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🌱 My learning docs and notes.">
+    <meta name="author" content="Leonardo de S.L.F"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link rel="stylesheet" href="/style/style.css"/>
+    <link rel="stylesheet" href="/style/syntax-highlight.css"/>
+    <link rel="stylesheet" href="/style/print.css" media="print"/>
+    <link rel="stylesheet" href="/style/small.css" media="(max-width: 599px)"/>
+    <title>Docs & Notes</title>
+  </head>
+  <body>
+    <h1>
+      <a href="/">🌱 Docs & Notes</a>
+    </h1>
+    <main>
+      <h2>Sorting Algorithms</h2>
+<p>From the book Data Structures and Algorithms in C++.</p>
+<p>An algorithm is a <strong>set of well-defined instructions</strong> to solve a given problem, taking a set of inputs and producing a desired output.</p>
+<p>Algorithm rules:</p>
+<ul>
+<li>Input and output should be <em>defined precisely</em>.</li>
+<li>Each step should be <em>clear and unambiguous</em>.</li>
+<li>It should be the <em>most effective way</em> to get a solution.</li>
+<li>It should be defined as an <em>abstraction</em>, not as an implementation.</li>
+</ul>
+<h3>An Optimal Algorithm</h3>
+<p>The efficiency of data handling can be substantially increased if the data are sorted according to some <strong>criteria of order</strong>. Very often, the <em>sorting criteria are natural</em>, as in the case of numbers, or the numeric value of alphanumerical characters. Sorting can be made in <em>ascending or descending</em> order. Once the criterion is selected, the second step is <em>how to sort the data using that criterion</em>.</p>
+<p>The final ordering of data can be obtained on a variety of ways, and only some of them can be considered meaningful and efficient. To decide which method is best, certain <strong>criteria of efficiency</strong> have to be established and a method for quantitatively <em>comparing different algorithms</em> must be chosen.</p>
+<p>To make the comparison machine-independent, certain critical <em>properties of sorting algorithms</em> should be defined when comparing alternative methods. Two such properties are the <strong>number of comparisons</strong> and the <strong>number of movements</strong>. The efficiency of these two operations <em>depend on the size of the data set</em>.</p>
+<p>Because determining the precise number of comparisons is not always necessary or possible, an approximate value can be computed. For this reason, the number of comparisons and movements is <em>approximated with the big-O notation</em> by giving the order of magnitude of these numbers. But the order of magnitude can vary depending on the initial ordering of data.</p>
+<p>By measuring the efficiency of a given algorithm, we do not only get to know <strong>how much time it takes</strong> for it to sort the data, but also the <strong>intelligence</strong> of that method. For example, an algorithm can (it better should) <em>recognize an already sorted data set</em>, so it doesn't make any unnecessary movement or comparison. By the other hand it can be completely unaware of that fact, something obviously unefficient.</p>
+<p>The number of comparisons and the number of movements do not have to be coincident. An algorithm can be very efficient on the former and perform poorly on the later, or vice versa. Some sorting methods perform the same operations regardless of the initial ordering of data, others are more flexible. The number of operations is computed (if possible) for three case scenarios.</p>
+<p>The three cases are:</p>
+<ul>
+<li><em>Best case</em> (often, data already in order).</li>
+<li><em>Worst case</em> (it can be data in reverse order).</li>
+<li><em>Average case</em> ( data in random order).</li>
+</ul>
+<p>Usually, simple algorithms often perform better with a small amount of data than their more complex counterparts, whose effectiveness may become obvious only when data samples become very large.</p>
+<h3>Comparison Sorting Algorithms</h3>
+<h4>Bubble Sort</h4>
+<h4>Heap Sort</h4>
+<h4>Insertion Sort</h4>
+<h4>Merge Sort</h4>
+<h4>Quick Sort</h4>
+<h4>Selection Sort</h4>
+<h4>Shell Sort</h4>
+<h3>Integer Sorting Algorithms</h3>
+<h4>Bucket Sort</h4>
+<h4>Count Sort</h4>
+<h3>Searching Algorithms</h3>
+<h4>Linear Search</h4>
+<h4>Binary Search</h4>
+<h4>Breadth-first Search</h4>
+<!-- ### Asymptotic Analysis
+
+It's the analysis of *performance over input size* (among other conditions) for a given algorithm, as it may vary in different ways while scaling. Asymptotic notations are the mathematical notations used to **measure the efficiency** (running times) of an algorithm as the input tends towards a particular value.
+
+There are three notations for the different *scenarios*:
+
+- **Big-O** notation, *worst-case*.
+- **Omega** notation, *best-case*.
+- **Theta** notation, *average-case*.
+
+https://www.programiz.com/dsa/asymptotic-notations
+
+#### Master Method & Theorem
+
+##### Master Method
+
+It's a formula for solving *recurrence relations* of the form `T(n) = aT(n / b) + f(n)`.
+
+Where:
+
+- `n` = size of input.
+- `a` = number of subproblems.
+- `a >= 1` and `b > 1` are constants.
+- `n / b` = size of each subproblem (assuming all of them to have the same size).
+- `f(n)` = the cost of dividing the problem and cost of merging the solutions.
+- `f(n)` is an asymptotically positive function.
+
+##### Master Theorem
+
+The master theorem is used in calculating the **time complexity** of recurrence relations (divide and conquer algorithms) in a simple and quick way.
+
+As the method defines, time complexity is given by `T(n) = aT(n / b) + f(n)`.
+
+Where `T(n)` has the following *asymptotic bounds*:
+
+For|If|Thus
+---|---|---
+`T(n) = Θ(n^(log_b(a)))`|`f(n) =O(n^(log_b(a - ϵ)))`|`f(n) < n^(log_b(a))`
+`T(n) = Θ(n^(log_b(a)) * log(n))`|`f(n) =Θ(n^(log_b(a)))`|`f(n) = n^(log_b(a))`
+`T(n) = Θ(f(n))`|`f(n) =Ω(n^(log_b(a + ϵ)))`|`f(n) > n^(log_b(a))`
+
+Being `ϵ > 0` a constant.
+
+The master theorem *cannot* be used if:
+
+- `T(n)` is not monotone.
+- `f(n)` is not a polynomial.
+- `a` is not a constant.
+- `a < 1`.
+
+https://www.programiz.com/dsa/master-theorem
+
+#### Divide and Conquer Algorithm
+
+It's a **strategy** of solving a large problem by:
+
+1. Breaking (*divide*) the problem into smaller subproblems.
+1. Solving (*conquer*) the subproblems.
+1. Merging (*combining*) them to get the desired output.
+
+Advantages:
+
+- Tends to simplify the complexity of problems.
+- It's suitable for multiprocessing systems.
+- It makes efficient use of memory caches.
+
+##### Divide and Conquer vs Dynamic approach
+
+The main difference is the *storage of subproblem results*. In a dynamic approach, each subproblem result is stored for future reference, whereas, with a divide and conquer approach, it won't happen. That's why we use a dynamic approach when we know we will need to solve the same problem multiple times. -->
+<!-- https://www.programiz.com/dsa/divide-and-conquer -->
+<!-- ### Greedy Algorithms
+
+### Dynamic Programming -->
+<!-- https://www.programiz.com/dsa -->
+
+    </main>
+    <footer>
+      <p>
+        🌱 Learning
+        <a href="/">docs & notes</a>
+        about my Frontend Development journey,
+        <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
+      </p>
+    </footer>
+    
+      <a id="home" href="/">🏡</a>
+    
+  </body>
+</html>
