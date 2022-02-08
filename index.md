@@ -4,7 +4,6 @@ index: true
 ---
 ## Table of contents
 
-<!-- - [Test](test/) -->
 - **[Software Engineering](engg/)**
   - [Bash](engg/bash/)
   - [Data Structures](engg/ds/)
