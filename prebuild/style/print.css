@@ -1,0 +1,44 @@
+:root {
+  --bg: #ffffff;
+  --bg--alt-a: #f1f3f4;
+  --bg--alt-b: #f3f4f6;
+  --color: #525556;
+  --color--variation: #7a7e7f;
+  --color--cyan: hsl(174, 50%, 45%);
+  --color--green: hsl(114, 50%, 45%);
+  --color--yellow: hsl(54, 50%, 45%);
+  --color--headline: #0a0a0a;
+  color-scheme: light;
+}
+
+body {
+  outline: none;
+  padding: 1rem;
+}
+
+footer,
+h1,
+#home {
+  display: none;
+}
+
+code,
+pre {
+  background-color: unset !important;
+}
+
+code:not(pre>code),
+pre {
+  border: 1pt solid var(--bg--alt-a);
+}
+
+table tr:nth-of-type(2n),
+table>thead>tr {
+  background-color: unset;
+}
+
+table {
+  background-color: unset;
+  border: 1pt solid var(--bg--alt-a);
+  border-radius: unset;
+}

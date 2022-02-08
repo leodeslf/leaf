@@ -18,26 +18,7 @@
       <a href="/">🌱 Docs & Notes</a>
     </h1>
     <main>
-      <h2>GitHub Flow</h2>
-<p>A branching model made by the GitHub team.</p>
-<h3>Branches</h3>
-<table>
-<thead>
-<tr>
-<th>Branch name</th>
-<th>Description</th>
-<th>Branch off from</th>
-<th>Merge back to</th>
-</tr>
-</thead>
-</table>
-<h3>Notes</h3>
-<h3>Reference</h3>
-<ul>
-<li><a href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub flow (GitHub Docs)</a></li>
-<li><a href="https://githubflow.github.io/">GitHub Flow (github.io)</a></li>
-</ul>
-
+      {{ content | safe }}
     </main>
     <footer>
       <p>
@@ -47,8 +28,8 @@
         <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
       </p>
     </footer>
-    
+    {% if index === undefined %}
       <a id="home" href="/">🏡</a>
-    
+    {% endif %}
   </body>
 </html>
