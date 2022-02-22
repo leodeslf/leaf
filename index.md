@@ -10,10 +10,11 @@ index: true
   - Development Methodologies
     - [Agile Manifesto](engg/method/agile/)
       - [Scrum Guide](engg/method/scrum/)
+    - [Kanban](engg/method/kanban/) *[WIP]*
     - [Pair Programming](engg/method/pair_programming/)
   - [Object Oriented Programming](engg/oop/)
     - [Design Patterns](engg/oop/design_patterns/) *[WIP]*
-  - [Sorting Algorithms](engg/sorting_algorithms/) *[WIP]*
+  - [Sorting Algorithms](engg/sa/)
   - Testing
     - [Test-Driven Development](engg/testing/tdd/)
     - [Unit Testing](engg/testing/unit/)
@@ -40,15 +41,15 @@ index: true
     - [Terser](front/tooling/terser/)
     - [TypeScript](front/tooling/ts/)
     - [Web Dev Server](front/tooling/wds/)
-  - [Eloquent JavaScript](front/eloquent_js/) *[To Update]*
+  - [Eloquent JavaScript](front/eloquent_js/) *[To remake]*
   - [JavaScript](front/js/) *[WIP]*
-  - [SCSS](front/scss/) *[To Update]*
+  - [SCSS](front/scss/) *[To remake]*
   - Website Performance Optimization
     - [Browser Rendering Optim.](front/wpo/browser_rendering/)
     - [Critical Rendering Path Optim.](front/wpo/crp/)
 - **UI**
-  - [Visual Elements of User Interface Design](ui/visual_elements_of_ui_design/) *[To Update]*
+  - [Visual Elements of User Interface Design](ui/visual_elements_of_ui_design/) *[To update]*
 - **UX**
   - [Don't Make Me Think](ux/dont_make_me_think/)
-  - [UX Design Fundamentals](ux/ux_design_fundamentals/) *[To Update]*
-  - [UX Foundations: Interaction Design](ux/ux-foundations-ixd/) *[To Update]*
+  - [UX Design Fundamentals](ux/ux_design_fundamentals/) *[To update]*
+  - [UX Foundations: Interaction Design](ux/ux-foundations-ixd/)
