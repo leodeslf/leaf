@@ -22,7 +22,7 @@ index: true
     - [Git](engg/version/git/)
     - [Git Flow](engg/version/gitflow/)
     - [GitHub Flow](engg/version/github_flow/)
-  - [World Wide Web](engg/www/)
+  - [World Wide Web](engg/www/) *[WIP]*
 - **Frontend Development**
   - Project Initialization
     - [Angular](front/inits/angular/)
@@ -41,15 +41,15 @@ index: true
     - [Terser](front/tooling/terser/)
     - [TypeScript](front/tooling/ts/)
     - [Web Dev Server](front/tooling/wds/)
-  - [Eloquent JavaScript](front/eloquent_js/) *[To remake]*
+  - [Eloquent JavaScript](front/eloquent_js/) *[To be reviewed]*
   - [JavaScript](front/js/) *[WIP]*
-  - [SCSS](front/scss/) *[To remake]*
+  - [SCSS](front/scss/) *[To be reviewed]*
   - Website Performance Optimization
     - [Browser Rendering Optim.](front/wpo/browser_rendering/)
     - [Critical Rendering Path Optim.](front/wpo/crp/)
 - **UI**
-  - [Visual Elements of User Interface Design](ui/visual_elements_of_ui_design/) *[To update]*
+  - [Visual Elements of User Interface Design](ui/visual_elements_of_ui_design/) *[To be reviewed]*
 - **UX**
   - [Don't Make Me Think](ux/dont_make_me_think/)
-  - [UX Design Fundamentals](ux/ux_design_fundamentals/) *[To update]*
+  - [UX Design Fundamentals](ux/ux_design_fundamentals/) *[To be reviewed]*
   - [UX Foundations: Interaction Design](ux/ux-foundations-ixd/)
