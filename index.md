@@ -10,7 +10,7 @@ index: true
   - Development Methodologies
     - [Agile Manifesto](engg/method/agile/)
       - [Scrum Guide](engg/method/scrum/)
-    - [Kanban](engg/method/kanban/) *[WIP]*
+    - [Kanban](engg/method/kanban/)
     - [Pair Programming](engg/method/pair_programming/)
   - [Object Oriented Programming](engg/oop/)
     - [Design Patterns](engg/oop/design_patterns/) *[WIP]*
