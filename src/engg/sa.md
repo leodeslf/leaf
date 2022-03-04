@@ -50,7 +50,9 @@ insertion(array, n)
 ```javascript
 function insertion(array) {
   const n = array.length;
-  for (let i = 1, j, key = array[i]; i < n; i++) {
+  let key;
+  for (let i = 1, j; i < n; i++) {
+    key = array[i]
     for (j = i; j > 0 && key < array[j - 1]; j--) {
       array[j] = array[j - 1];
     }
@@ -414,11 +416,22 @@ function counting(array) {
 }
 ```
 
-<!-- ## Comparative Table for Average Case
+## Comparative Table
 
-Algorithm|`n = 100`|`n = 10.000`|`n = 500.000`|`n = 1.000.000`
----|---|---|---|---
-Insertion|.|.|.|. -->
+Each implementation sorting an average case array with multiple lengths (`n`).
+
+Algorithm|`16`|`256`|`4,096`|`65,536`|`1,048,576`|`67,108,864`
+---|---|---|---|---|---|---
+*Insertion Sort*|0.0002ms|0.014ms|2.9ms|736.2ms|317.5s|-|
+*Selection Sort*|0.0003ms|0.032ms|5.92ms|1.4s|389.3s|-|
+*Bubble Sort*|0.0003ms|0.076ms|18.32ms|7.1s|1924.4s|-|
+*Comb Sort*|0.0003ms|0.011ms|0.4ms|11.2ms|197ms|-|
+*Shell Sort*|0.0003ms|0.005ms|0.31ms|8.2ms|263ms|36.2s
+*Heap Sort*|0.0003ms|0.006ms|0.33ms|7.4ms|182ms|25.3s
+*Quicksort*|0.0004ms|0.007ms|0.34ms|6.8ms|131ms|10.6s
+*Mergesort*|0.0009ms|0.02ms|0.59ms|13.4ms|298ms|29.4s
+*Radix Sort*|0.0034ms|0.048ms|0.74ms|12.8ms|216ms|14.2s
+*Counting Sort*|0.0048ms|0.073ms|1.52ms|125ms|80ms|2.9s
 
 <!-- ## Asymptotic Analysis
 
@@ -488,12 +501,6 @@ Advantages:
 
 #### Divide and Conquer vs Dynamic approach
 
-The main difference is the *storage of subproblem results*. In a dynamic approach, each subproblem result is stored for future reference, whereas, with a divide and conquer approach, it won't happen. That's why we use a dynamic approach when we know we will need to solve the same problem multiple times. -->
+The main difference is the *storage of subproblem results*. In a dynamic approach, each subproblem result is stored for future reference, whereas, with a divide and conquer approach, it won't happen. That's why we use a dynamic approach when we know we will need to solve the same problem multiple times. 
 
-<!-- https://www.programiz.com/dsa/divide-and-conquer -->
-
-<!-- ## Greedy Algorithms
-
-## Dynamic Programming -->
-
-<!-- https://www.programiz.com/dsa -->
+https://www.programiz.com/dsa -->
