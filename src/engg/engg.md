@@ -2,7 +2,7 @@
 
 Principles and philosophies of software engineering.
 
->The question of whether computers can think is just like the question of whether submarines can swim. -Edsger W. Dijktra, 1986
+>The question of whether computers can think is just like the question of whether submarines can swim. -Edsger W. Dijkstra, 1986
 
 ## Egoless Programming
 
@@ -23,7 +23,7 @@ The ten commandments of Egoless Programming:
 
 ## Don't Repeat Yourself (DRY)
 
-Design, develop, test, maintenance, and reusability will be easier by having a **single source of code**, then reuse it and modify it in another place as needed.
+Design, development, test, maintenance, and reusability will be easier by having a **single source of code**, then reuse it and modify it in another place as needed.
 
 Opposite to:
 
@@ -99,7 +99,7 @@ A **prioritization method** to reach a common understanding of the *importance* 
 
 ### Must have
 
-They are **critical** for the current release to be delivered. If a requirements like this is not included, the project should be considered a *failure*.
+They are **critical** for the current release to be delivered. If a requirement like this is not included, the project should be considered a *failure*.
 
 ### Should have
 
@@ -117,7 +117,7 @@ They are least-critical and **not planned** for the current release. In general 
 
 - **If it ain't broke, don't fix it**.
 - **Measure twice, cut once**.
-- **Ockham's Razor** (the simplest design shoud be selected).
+- **Ockham's Razor** (the simplest design should be selected).
 - **Law of Demeter** (only talk to your friends).
 - **Big Design Up Front** (BDUF).
 - **Avoid Premature Optimization**.
