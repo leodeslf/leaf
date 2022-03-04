@@ -29,7 +29,7 @@ A cheatsheet for **file-system**, **text-processing**, and a few more bash comma
 ```bash
 <cmd1> & <cmd2>
 # Shell runs cmd1 in the background, doesn't wait for it to finish
-# (immediatelly returns exit code 0) and runs cmd2
+# (immediately returns exit code 0) and runs cmd2
 ```
 
 ```bash
@@ -60,7 +60,7 @@ A cheatsheet for **file-system**, **text-processing**, and a few more bash comma
 cat <file> # Display the content of a text file
 cat -b     # Add line number to non-blank line
 cat -n     # Add line number to all lines
-cat -s     # Suppress repeated emplty lines to one
+cat -s     # Suppress repeated empty lines to one
 ```
 
 ### `cd`
@@ -133,8 +133,8 @@ echo -E    # Disables escaped chars.
 
 ```bash
 find [src-dir]          # Find files in src dir/s
-find -name "<regexp>"   # By name
-find -iname "<regexp>"  # By name, case-insensitive
+find -name "<regex>"   # By name
+find -iname "<regex>"  # By name, case-insensitive
 find -type d            # Only directories
 find -type f            # Only files
 find -size <num><unit>  # By size
@@ -145,8 +145,8 @@ find -size <num>c       # By num Bytes
 find -size <num>k       # By num Kilobytes
 find -size <num>M       # By num Megabytes
 find -size <num>G       # By num Gigabytes
-find -maxdepth <num>    # Set maximum direcory depth
-find -mindepth <num>    # Set minimum direcory depth
+find -maxdepth <num>    # Set maximum directory depth
+find -mindepth <num>    # Set minimum directory depth
 ```
 
 ### `grep`
@@ -155,7 +155,7 @@ find -mindepth <num>    # Set minimum direcory depth
 grep [patterns] [file] # Print lines that match patterns
 grep -i                # Ignore case distinctions
 grep -f <file>         # Take patterns from a file
-grep -F                # Take patterns as fixed string instead of a regexp
+grep -F                # Take patterns as fixed string instead of a regex
 grep -v                # Invert matching sense (select non-matching lines)
 grep -w                # Select only by word-matches (match whole words)
 grep -x                # Select only by line-matches (match whole lines)
@@ -226,7 +226,7 @@ pwd # Show current dir
 ```bash
 rm <file>    # Remove file
 rm -f <file> # Force removing
-rm -i <file> # Ask mebofe removing each file
+rm -i <file> # Ask before removing each file
 rm -r <dir>  # Remove dir and its content recursively
 rm -d <dir>  # Remove dir if it's empty
 ```
@@ -241,13 +241,13 @@ rmdir <dir> # Remove only empty dirs
 
 ```bash
 sed <script> <file>
-sed '/regexp/d' <file>        # Delete match
-sed 's/old/new/' <file>       # Replac match
+sed '/regex/d' <file>        # Delete match
+sed 's/old/new/' <file>       # Replace match
 sed 's/old/new/g' <file>      # Replace all matches (global)
-sed '<number>p' <file>        # Print specified line
+sed '<number>p' <file>        # Print the specified line
 sed -E, -r,                   # Use extended regular expressions
 sed -n, --quiet, --silent     # Suppress output (modifications/deletions)
-sed -i<suffix?>, --in-place   # Edit file in-place (avoid standart output)
+sed -i<suffix?>, --in-place   # Edit file in-place (avoid standard output)
 sed -e <script>, --expression # Allow multiple expressions
 sed -f <script-file>, --file  # Run a script file
 ```

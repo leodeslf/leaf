@@ -29,7 +29,7 @@ We can also *write tests in response to*: manual testing; code review efforts; d
 
 To improve the comprehensiveness of tests, we may need to design new code to *include testing* provisions, or refactor older code to make it *more testable*. Refactoring involves providing a way to **intercept calls** (e.g.: to verify that the code invokes the interceptor the correct number of times, or with the correct arguments).
 
-We should *remove direct calls* and replace them with **abstractions**. This dramatically reduces the "flakiness" of a test that depends on real-word systems, as tests will guarantee that we won't get random failures because of external dependancies , or even worse, unavailable systems (e.g: when consuming APIs).
+We should *remove direct calls* and replace them with **abstractions**. This dramatically reduces the "flakiness" of a test that depends on real-word systems, as tests will guarantee that we won't get random failures because of external dependencies, or even worse, unavailable systems (e.g: when consuming APIs).
 
 >These abstractions and their corresponding implementations are called *mocks*, *stubs*, or *fakes*. Engineers sometimes use these words interchangeably, despite the fact that the concepts vary in implementation complexity and features, so it's important to ensure everyone at the organization uses consistent vocabulary.
 

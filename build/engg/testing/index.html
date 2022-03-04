@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🌱 My learning docs and notes.">
+    <meta name="author" content="Leonardo de S.L.F"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link rel="stylesheet" href="/style/style.css"/>
+    <link rel="stylesheet" href="/style/syntax-highlight.css"/>
+    <link rel="stylesheet" href="/style/print.css" media="print"/>
+    <link rel="stylesheet" href="/style/small.css" media="(max-width: 599px)"/>
+    <title>Docs & Notes</title>
+  </head>
+  <body>
+    <h1>
+      <a href="/">🌱 Docs & Notes</a>
+    </h1>
+    <main>
+      <h2>Testing</h2>
+<p>From the books:</p>
+<ul>
+<li>The Art of Software Testing.</li>
+<li>Perfect Software and Other Illusions About Testing.</li>
+<li>Software Testing - An ISTQB Certified Tester Foundation Guide.</li>
+</ul>
+<p>On September 9th, 1947, <em>Grace Hopper found the first computer bug in history</em>. It was a mouth stuck between relays of the Harvard Mark II computer, she documented this finding in her log book.</p>
+<p>Software systems are part of our everyday life, used almost everywhere in almost every sector (e.g.: financial, government, transport, medicine, entertainment, etc). Even though they are getting more and more common to achieve even the simplest tasks, we have all experienced software systems failing. That's why <em>testing is necessary</em>.</p>
+<blockquote>
+<p>The only truly secure system is one that is powered off, cast in a block of concrete and sealed in a lead-lined room with armed guards. And even then I have my doubts. -Gene Spafford</p>
+</blockquote>
+<!-- https://www.bugsnag.com/blog/bug-day-2017 -->
+<h3>Common Terms</h3>
+<p>From the ISTQB Standard Glossary of Terms.</p>
+<ul>
+<li><strong>Testing</strong> is the process concerned with planning, preparation, execution, and evaluation with the objective of <em>finding defects</em> in our software products.</li>
+<li><strong>Error</strong>, a <em>human can make an error</em> (aka mistake). An error is a human action that produces an incorrect result.</li>
+<li><strong>Defect</strong>, an <em>error can cause a defect</em> (aka fault or <em>bug</em>). A defect is a flaw in a component or system that can lead it to fail to perform its required function. It can be at a software, system, or documentation level. Defects occur simply because human beings are fallible, we can often find ourselves dealing with time pressure, complex code, complex infraestructures, changed technologies, among others.</li>
+<li><strong>Failure</strong>, a <em>defect may result in a failure</em>. It's a deviation of the component or system from its expected delivery, service, or result. Failures can be caused by environmental conditions such as radiation, magnetism, electronic fields, and any kind of pollution. These conditions may change hardware behavior, then influence the execution of software.</li>
+<li><strong>Quality</strong> is the degree to which a system <em>meets specified requirements</em>, needs, and expectations.</li>
+<li><strong>Risk</strong>, a factor that could result in future <em>negative consequences</em>.</li>
+<li><strong>Exit criteria</strong>, the <em>set of conditions</em> for permitting a process to be officially completed. These conditions are often agreed with the stakeholders. Exit criteria may be defined based on cost or time constraints, number of defects remaining (to be fixed), percentage of tests run without incident, among others.</li>
+</ul>
+<h3>The Role of Testing</h3>
+<blockquote>
+<p>Testing is a measurement of software quality. -Bill Hetzel, 1988</p>
+</blockquote>
+<p>Testing is used to <strong>find defects</strong> (so they can be fixed) before the system is released. By doing so, we <em>reduce the risk</em> of problems occurring in an operational environment and <em>contribute to the quality</em> of the software system. Testing may also be required to meet contractual or legal requirements, as well as industry-specific standards.</p>
+<blockquote>
+<p>Testing is any activity aimed at evaluating an attribute or capability of a program or system and determining that it meets its required results. -Bill Hetzel</p>
+</blockquote>
+<p>Testing can help us <em>measure the quality</em> of the system, quality can be measured in terms of defects found. The higher the amount of defects, the closer we are to the highest quality  product. Defects can be functional or non-functional (e.g.: reliability, usability, efficiency, portability, and maintainability).</p>
+<blockquote>
+<p>Quality is not intangible. The purpose of testing is to make quality visible. Testing is the measurement of software quality! -Bill Hetzel</p>
+</blockquote>
+<p>In some cases the main objective of testing may be to assess the quality of the software (with no intention of fixing defects), to give information to stakeholders of the risk of releasing the system at a given time. The <em>decision of releasing</em> (or not) should be taken by the whole team, it's not (only) the testers' responsibility.</p>
+<h3>Enough is Enough</h3>
+<p>To decide <em>how much testing is enough</em>, we should take into account:</p>
+<ul>
+<li>The <strong>level of risk</strong>.</li>
+<li>The <strong>time and budget constraints</strong>.</li>
+</ul>
+<p>Risks should be evaluated at the business, technological, project, and testing level. They are also used to determine where to start testing and where more testing is needed. The risk considerations can include financial implications, legal actions, delivery delays, potential loss of reputation, potential loss of life, among others.</p>
+<blockquote>
+<p>Test estimation is hard to do perfectly, but not that hard to do well. -Black, 2002</p>
+</blockquote>
+<h3>Debugging and Testing</h3>
+<p>As said before, testing aims to find and report a defect. While debugging, on the other hand, is used to <strong>find and fix an error</strong>, the cause of a defect. After a correction is made, some check should be done to verify the defect was fixed. New tests are run to ensure that new defects were not introduced among the corrections.</p>
+<p>Debugging is a two-step process that developers go through after a test successfully reported a defect. First, we need to <em>identify the error</em> that causes the defect in the code by isolating and locating it. Second, we <em>fix the error</em>.</p>
+<p>In short:</p>
+<ul>
+<li><em>Testers test</em> to ensure the system meets its requirements.</li>
+<li><em>Developers debug</em> to fix (met but) broken requirements.</li>
+</ul>
+<h3>General Principles of Testing</h3>
+<h4>Testing Shows Presence of Defects</h4>
+<blockquote>
+<p>Testing may convincingly demonstrate the presence of bugs, but can never demonstrate their absence. -Edsger W. Dijkstra, Computing Pioneer</p>
+</blockquote>
+<p>By testing, the only thing we can actually prove is that there are defects. What we cannot do at all is to prove that there are <em>no</em> defects.</p>
+<blockquote>
+<p>(1) The probability of the existence of more errors (defects) in a section of a program is proportional to the number of errors (defects) already found in that program. (2) Do not plan a test effort under the tacit assumption that no errors (defects) will be found (3) A good test is one that has high probability of detecting an as-yet undiscovered error (defect). (4) A successful test is one that detects an as-yet undiscovered error (defect). -Myers 2004</p>
+</blockquote>
+<h4>Exhaustive Testing is Impossible</h4>
+<p>For most cases we cannot test everything, it would be almost impossible because of the complexity or the time it would take, we need to <em>prioritize</em> using a risk-based approach to define what actually needs to be tested.</p>
+<h4>Early Testing</h4>
+<p>Testing activities should start <em>as early as possible</em> in the development/design cycle. As later in the process we test, the more expensive it will be to correct the defects.</p>
+<h4>Defect Clustering</h4>
+<p>Defects are not evenly spread in a system, they are usually <em>confined</em> to a small number of modules. It's said they are clustered. Similarly to defects, failures also tend to be close to each other.</p>
+<h4>Pesticide Paradox</h4>
+<p>As programmers fix defects, and the quality of the software improves, the effectiveness of the <em>previous tests erodes</em>. We must create new tests as old ones become useless, by doing so, more defects can be found in the future.</p>
+<blockquote>
+<p>It's called the &quot;pesticide paradox&quot; after the agricultural phenomenon, where bugs were able to build tolerance to pesticides, leaving us with the choice of; ever-more powerful pesticides followed by ever-more powerful bugs; or an altogether different approach. -Beizer, 1995</p>
+</blockquote>
+<h4>Testing is Context Dependent</h4>
+<p>Testing is done differently in different projects. <em>Severity and standards</em> may vary from context to context, so investment on testing should adapt to the given conditions (e.g.: compare a software to share media, with one to save lives). Usually testing can be about 50% of the development costs but, as said before, it may vary.</p>
+<p>Examples of permitted failures per KLOC:</p>
+<ul>
+<li>3 to 10 for commercial software.</li>
+<li>1 to 3 for industrial software.</li>
+<li>0.01 for NASA shuttle code.</li>
+</ul>
+<h4>Absence-of-Error Fallacy</h4>
+<blockquote>
+<p>Have no fear of perfection, you will never reach it. -Salvador Dali</p>
+</blockquote>
+<p>The fact of making improvements in the system by fixing bugs, doesn't really mean there are no more bugs. The system <em>may still</em> be unusable or at least not good enough to meet the requirements.</p>
+<blockquote>
+<p>In any form of testing it is impossible to achieve total confidence. The only exhaustive testing there is, is so much testing, that the tester is exhausted. -Bill Hetzel</p>
+</blockquote>
+<h3>Hall of Fame</h3>
+<p>Sometimes a bug can make us waste a couple of minutes, but sometimes it can lead a system to do exactly the <em>worst</em> thing we can (or actually cannot) imagine, such as losing a huge amount of time, millions of dollars, or even human lifes.</p>
+<h4>Ariane 5</h4>
+<p>Ariane 5, 1996, a rocket that <em>lost its guidance and exploded</em> about 40 seconds after launch, resulting in a loss of +$370 million. The code from Ariane 4 was reused while the hardware was partially different, causing an integer overflow while converting data.</p>
+<!-- https://www.bugsnag.com/blog/bug-day-ariane-5-disaster -->
+<h4>Mars Climate Orbiter</h4>
+<p>NASA launched the Mars Climate Orbiter in 1998, but in 1999, communication was permanently lost. It went too close to the planet, and it was either destroyed in the atmosphere of Mars or entered an orbit around the Sun. The bug was a <em>measurement mismatch between two different systems</em>, one of them used metric units, while the other imperial units (they didn't know that). The cost of the mission was +$320 million.</p>
+<!-- https://www.bugsnag.com/blog/bug-day-mars-climate-orbiter -->
+<h4>Knight Capital</h4>
+<p>In 2012, Knight Capital deployed an update to the production servers. Due to the use of an old and incorrectly configured system, the servers automatically <em>executed 4 million wrong trades in 40 minutes</em>. They were wrong because the order was to: buy a stock at its &quot;ask&quot; (high) price and immediately sell it at the &quot;bid&quot; (low) price, which is exactly the opposite of how stock exchange works. They lost +$460 million.</p>
+<!-- https://www.bugsnag.com/blog/bug-day-460m-loss -->
+<h4>Therac-25</h4>
+<p>Therac-25 was a radiation therapy machine built in 1985, it was designed to use software-based safety systems rather than (the standard) hardware controls. That had tragic consequences. The immaturity and poor quality of the software led the machine to apply <em>deathly radiation doses</em>, killing three people and causing injuries to at least three others.</p>
+<!-- https://www.bugsnag.com/blog/bug-day-race-condition-therac-25 -->
+<h4>General Electric Energy - Blackout of 2003</h4>
+<p>The blackout of 2003 (US and Canada) affected around 50 million people for 2 hours up to 4 days. The event contributed to at least 11 deaths (and possibly ~100). Economical effects are unmeasurable, but estimations say it reduced the US earnings by +$6.4 billion. It all happened due to a bug from the General Electric Energy's software that <em>stalled the alarm system</em> of FirstEnergy, making operators unaware of a downed power line, causing other ones to overload and overheat in cascade.</p>
+<!-- https://en.wikipedia.org/wiki/Northeast_blackout_of_2003 -->
+<h4>Early Release of Prisoners</h4>
+<p>Department of Corrections of Michigan, between 2003 and 2005, a bug in the software that calculates the release dates resulted in the <em>early release of 23 inmates</em>, from 39 to 161 days earlier, some others had the period prolonged.</p>
+<!-- https://www.theregister.com/2005/10/24/michigan_jail_pc_snafu/ -->
+<!-- https://www.computerworld.com/article/2559063/computer-glitch-gives-seven-mich--prisoners-early-release.html -->
+<h4>American Airlines - Grounded Flights</h4>
+<p>In 2013, the airline American Airlines was <em>forced to ground flights</em> for several hours due to a bug in the program that accesses the booking system. More than 500 flights were canceled and many more were delayed.</p>
+<!-- https://www.nytimes.com/2013/04/17/business/american-airlines-cancels-flights-after-outage.html -->
+<!-- https://www.elmundo.es/america/2013/04/16/estados_unidos/1366141051.html -->
+<h4>United Airlines - (Almost) Free Tickets</h4>
+<p>United Airlines, in 2013, <em>sold tickets for $0</em> because of a bug on a website's booking system. The passengers only asked to pay for US security fees which cost about 5 to $10, instead of the whole ticket price that could cost as much as $800.</p>
+<!-- https://www.bbc.com/news/world-us-canada-24089326 -->
+<h4>Patriot Failed to Defend</h4>
+<p>The MIM-104 Patriot missile battery used in the Persian Gulf War in 1991, successfully detected, but <em>miscalculated the position of an enemy missile</em> due to a bug in the software that converts tenths of seconds to seconds. A small defect (0.000000095 seconds per iteration), but repeated for more than 100 hours. It led to the system to miss for almost 600 meters, &quot;thinking&quot; the missile wasn't a threat, then letting it hit the US Army's barracks, killing 28 soldiers and causing injuries to about 100 people.</p>
+
+    </main>
+    <footer>
+      <p>
+        🌱 Learning
+        <a href="/">docs & notes</a>
+        about my Frontend Development journey,
+        <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
+      </p>
+    </footer>
+    
+      <a id="home" href="/">🏡</a>
+    
+  </body>
+</html>

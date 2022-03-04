@@ -7,22 +7,22 @@ index: true
 - **[Software Engineering](engg/)**
   - [Bash](engg/bash/)
   - [Data Structures](engg/ds/)
-  - Development Methodologies
-    - [Agile Manifesto](engg/method/agile/)
+  - Methodologies
+    - [Agile (Manifesto)](engg/method/agile/)
       - [Scrum Guide](engg/method/scrum/)
     - [Kanban](engg/method/kanban/)
     - [Pair Programming](engg/method/pair_programming/)
   - [Object Oriented Programming](engg/oop/)
     - [Design Patterns](engg/oop/design_patterns/) *[WIP]*
   - [Sorting Algorithms](engg/sa/)
-  - Testing
+  - [Testing](engg/testing/)
     - [Test-Driven Development](engg/testing/tdd/)
     - [Unit Testing](engg/testing/unit/)
   - Version Control
     - [Git](engg/version/git/)
     - [Git Flow](engg/version/gitflow/)
     - [GitHub Flow](engg/version/github_flow/)
-  - [World Wide Web](engg/www/) *[WIP]*
+  - [World Wide Web](engg/www/)
 - **Frontend Development**
   - Project Initialization
     - [Angular](front/inits/angular/)
@@ -41,15 +41,16 @@ index: true
     - [Terser](front/tooling/terser/)
     - [TypeScript](front/tooling/ts/)
     - [Web Dev Server](front/tooling/wds/)
-  - [Eloquent JavaScript](front/eloquent_js/) *[To be reviewed]*
-  - [JavaScript](front/js/) *[WIP]*
-  - [SCSS](front/scss/) *[To be reviewed]*
+  - [JavaScript](front/js/)
+    - [Eloquent JavaScript](front/eloquent_js/) *[to review]*
+  - [SCSS](front/scss/) *[to review]*
   - Website Performance Optimization
     - [Browser Rendering Optim.](front/wpo/browser_rendering/)
     - [Critical Rendering Path Optim.](front/wpo/crp/)
 - **UI**
-  - [Visual Elements of User Interface Design](ui/visual_elements_of_ui_design/) *[To be reviewed]*
+  - [Atomic Design](ui/atomic_design/) *[WIP]*
+  - [Visual Elements of User Interface Design](ui/visual_elements_of_ui_design/) *[to review]*
 - **UX**
   - [Don't Make Me Think](ux/dont_make_me_think/)
-  - [UX Design Fundamentals](ux/ux_design_fundamentals/) *[To be reviewed]*
-  - [UX Foundations: Interaction Design](ux/ux-foundations-ixd/)
+  - [UX Design Fundamentals](ux/ux_design_fundamentals/) *[to review]*
+  - [UX Foundations: Interaction Design](ux/ux-foundations-ixd/) *[to review]*

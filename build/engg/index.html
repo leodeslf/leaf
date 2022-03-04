@@ -19,9 +19,27 @@
     </h1>
     <main>
       <h2>Software Engineering</h2>
-<h3>Principles</h3>
-<h4>Don't Repeat Yourself (DRY)</h4>
-<p>Design, develop, test, maintenance, and reusability will be easier by having a <strong>single source of code</strong>, then reuse it and modify it in another place as needed.</p>
+<p>Principles and philosophies of software engineering.</p>
+<blockquote>
+<p>The question of whether computers can think is just like the question of whether submarines can swim. -Edsger W. Dijkstra, 1986</p>
+</blockquote>
+<h3>Egoless Programming</h3>
+<p>By Geral M. Weinberg (The Psychology of Computer Programming, 1971).</p>
+<p>The ten commandments of Egoless Programming:</p>
+<ul>
+<li>Understand and <em>accept that you will make mistakes</em>.</li>
+<li><em>You are not your code</em>.</li>
+<li>No matter how much you know, <em>someone else will always know more than you</em>.</li>
+<li><em>Don't rewrite code without consultation</em>.</li>
+<li>Treat people who know less than you with <em>respect and patience</em>.</li>
+<li>The only constant in the world is <em>change</em>.</li>
+<li>The only true <em>authority stems from knowledge</em>, not from position.</li>
+<li>Fight for what you believe, but <em>gracefully accept defeat</em>.</li>
+<li><em>Don't be &quot;the guy in the room&quot;</em>.</li>
+<li>Critique code instead of people, <em>be kind to the coder</em>, no to the code.</li>
+</ul>
+<h3>Don't Repeat Yourself (DRY)</h3>
+<p>Design, development, test, maintenance, and reusability will be easier by having a <strong>single source of code</strong>, then reuse it and modify it in another place as needed.</p>
 <p>Opposite to:</p>
 <ul>
 <li>Copy And Paste Programming, <strong>CAPP</strong>.</li>
@@ -32,7 +50,7 @@
 <blockquote>
 <p>Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.</p>
 </blockquote>
-<h4>Keep it Simple, Stupid! (KISS)</h4>
+<h3>Keep it Simple, Stupid! (KISS)</h3>
 <p>Each method should solve <strong>only one</strong> problem. More problems, options, or conditions should be solved by another block of code to be easily maintained.</p>
 <blockquote>
 <p>Simplicity is the ultimate sophistication. -Leonardo da Vinci</p>
@@ -45,53 +63,53 @@
 <blockquote>
 <p>It seems that perfection is reached not when there is nothing left to add, but when there is nothing left to take away. -Antoine de Saint Exupéry</p>
 </blockquote>
-<h4>SOLID</h4>
+<h3>SOLID</h3>
 <p>Also known as class design principles.</p>
-<h5>Single Responsibility Principle (SRP)</h5>
+<h4>Single Responsibility Principle (SRP)</h4>
 <p>Similar to the goal of KISS, code that follows this principle is easy to understand, maintain, and modify. It's also similar to DRY if done correctly. The goal is to <strong>isolate</strong> requirements and functionality <strong>in one place</strong>.</p>
 <blockquote>
 <p>A class should have only one responsibility. A class should have one, and only one reason to change.</p>
 </blockquote>
-<h5>Open/Closed Principle (OCP)</h5>
+<h4>Open/Closed Principle (OCP)</h4>
 <p>Scalability should always be present, but additional features should not make changes just for the sake of adaption or customization. If something is working and tested, it should be <strong>extended</strong> making use of inheritance or prototyping, <strong>not modified</strong>.</p>
 <blockquote>
 <p>A class should be open for extension, but closed for modification.</p>
 </blockquote>
-<h5>Liskov Substitution Principle (LSP)</h5>
+<h4>Liskov Substitution Principle (LSP)</h4>
 <p>A derived element should <em>be</em> it's base element and more. In other words, if S is a subtype of T, then any of type T may be substituted by any S. As a subtype should <strong>inherit</strong> it's parent requirements, and <strong>include additional features</strong> (not to replace).</p>
 <blockquote>
 <p>Derived classes must be able to substitute for their base classes.</p>
 </blockquote>
-<h5>Interface Segregation Principle (ISP)</h5>
+<h4>Interface Segregation Principle (ISP)</h4>
 <p>The <strong>specific is better</strong>, easier to develop, test, and maintain, it respects the SRP and KISS principles. We prefer to use many specific and easy-to-use interfaces than a single and complex one. It's intended to <strong>keep a system decoupled</strong> and thus easier to use and maintain.</p>
 <blockquote>
 <p>Many client-specific interfaces are better than one general-purpose interface.</p>
 </blockquote>
-<h5>Dependency Inversion Principle (DIP)</h5>
+<h4>Dependency Inversion Principle (DIP)</h4>
 <p>Make your modules to <strong>depend on abstractions</strong>/interfaces, <strong>not in details</strong> of concrete implementation. Also, high-level modules should not depend on low-level ones, and both should depend on abstractions.</p>
 <blockquote>
 <p>Depend upon abstractions, not concretions.</p>
 </blockquote>
-<h4>Extreme Programming (XP)</h4>
-<h5>You Aren't Gonna Need It (YAGNI)</h5>
+<h3>Extreme Programming (XP)</h3>
+<h4>You Aren't Gonna Need It (YAGNI)</h4>
 <p>Only implement things when you <strong>need</strong> them, don't do them because you <em>think</em> you are gonna need it later.</p>
-<h5>Do the simplest thing that could possibly work (DTSTTCPW)</h5>
+<h4>Do the simplest thing that could possibly work (DTSTTCPW)</h4>
 <p>Prioritize requirements and <strong>do only the important</strong> things. Don't do things you don't need, don't improve things if not needed.</p>
-<h4>MoSCoW</h4>
+<h3>MoSCoW</h3>
 <p>A <strong>prioritization method</strong> to reach a common understanding of the <em>importance</em> of each requirement among a team. Developed by Dai Clegg in 1994.</p>
-<h5>Must have</h5>
-<p>They are <strong>critical</strong> for the current release to be delivered. If a requirements like this is not included, the project should be considered a <em>failure</em>.</p>
-<h5>Should have</h5>
+<h4>Must have</h4>
+<p>They are <strong>critical</strong> for the current release to be delivered. If a requirement like this is not included, the project should be considered a <em>failure</em>.</p>
+<h4>Should have</h4>
 <p>They are <strong>important</strong> but not necessary for the current release. They are just <em>not needed now</em>, or the requirement can be satisfied in another way.</p>
-<h5>Could have</h5>
+<h4>Could have</h4>
 <p>They are <strong>desirable</strong> but not necessary. Taken as a  <em>suggestion to improve</em> the product for a low cost in development. These are included if there is enough time.</p>
-<h5>Won't have</h5>
+<h4>Won't have</h4>
 <p>They are least-critical and <strong>not planned</strong> for the current release. In general they are either <em>reconsidered</em> for a future release or <em>dropped</em> at all.</p>
-<h4>Worth mentioning</h4>
+<h3>Worth mentioning</h3>
 <ul>
 <li><strong>If it ain't broke, don't fix it</strong>.</li>
 <li><strong>Measure twice, cut once</strong>.</li>
-<li><strong>Occam's Razor</strong> (less dependencies are better).</li>
+<li><strong>Ockham's Razor</strong> (the simplest design should be selected).</li>
 <li><strong>Law of Demeter</strong> (only talk to your friends).</li>
 <li><strong>Big Design Up Front</strong> (BDUF).</li>
 <li><strong>Avoid Premature Optimization</strong>.</li>

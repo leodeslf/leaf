@@ -5,7 +5,7 @@ layout: default
 
 ### The Standard
 
-Initialy designed by Brendan Eich, the **ECMA** **International**'s (European Computer Manufacturers Association) group **TC39** (Technical Committee number 39) is responsible for maintaining the **ECMA-262** (or ECMAScript Language Specification) which defines the **ECMAScript Language** (*ES* or *JavaScript*). It was first named Mocha, then LiveScript, and released in 1997 as JavaScript.
+Initialy designed by Brendan Eich, the **ECMA International**'s (European Computer Manufacturers Association) group **TC39** (Technical Committee number 39) is responsible for maintaining the **ECMA-262** (or ECMAScript Language Specification) which defines the **ECMAScript Language** (*ES* or *JavaScript*). It was first named Mocha, then LiveScript, and released in 1997 as JavaScript.
 
 After its sixth version (*ES6* or *ES2015*), it's been releasd at least one "small" update per year instead of having a huge one after several years.
 
@@ -18,3 +18,11 @@ Other relevant standards:
 
 <!-- https://tc39.es/ -->
 <!-- https://www.ecma-international.org/publications-and-standards/standards/ecma-262/ -->
+
+### What it actually is?
+
+JavaScript is a **programming language**.
+
+It can also be called a high level, single threaded, garbage collected, interpreted, JIT compiled, prototype based, multi-paradigm, dynamic programming language.
+
+But programming language is enough.

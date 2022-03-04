@@ -30,13 +30,45 @@
 <th>Merge back to</th>
 </tr>
 </thead>
-<tbody></tbody>
+<tbody>
+<tr>
+<td><code>master</code></td>
+<td>Main production branch.</td>
+<td><code>none</code></td>
+<td><code>none</code></td>
+</tr>
+<tr>
+<td><code>&lt;branch-name&gt;</code></td>
+<td>New feature/change branch.</td>
+<td><code>master</code></td>
+<td><code>master</code></td>
+</tr>
+</tbody>
 </table>
 <h3>Notes</h3>
-<h3>Reference</h3>
+<p>Common steps in GitHub Flow to add a new feature/change:</p>
+<ol>
+<li><em>Branch off</em> of <code>master</code>.</li>
+<li>Make <em>commits</em> locally, and regularly push them to the remote repo.</li>
+<li>When ready to deploy (or asking for feedback), open a <em>pull request</em>.</li>
+<li>Once it is reviewed, <em>merge</em> it into <code>master</code>, then <em>push</em> changes.</li>
+<li>At this point <em>deploy</em> (if not already done by CI/CD).</li>
+<li>Finally <em>delete</em> the new branch as it's no longer needed.</li>
+</ol>
+<h3>The Seven Rules of a Good Commit Message</h3>
+<ol>
+<li>Separate subject from body with a blank line.</li>
+<li>Limit the subject lite to 50 characters.</li>
+<li>Capitalize the subject line.</li>
+<li>Do not end the subject line with period.</li>
+<li>Use the imperative mood in the subject line.</li>
+<li>Wrap the body at 72 characters.</li>
+<li>Use the body to explain <em>what</em> and <em>why</em> (not how).</li>
+</ol>
+<p>More at:</p>
 <ul>
-<li><a href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub flow (GitHub Docs)</a></li>
-<li><a href="https://githubflow.github.io/">GitHub Flow (github.io)</a></li>
+<li><a href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub flow (GitHub Docs)</a>.</li>
+<li><a href="https://githubflow.github.io/">GitHub Flow (github.io)</a>.</li>
 </ul>
 
     </main>

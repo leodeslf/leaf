@@ -14,15 +14,15 @@ Algorithm rules:
 - It should be the *most effective way* to get a solution.
 - It should be defined as an *abstraction*, not as an implementation.
 
-The efficiency of data handling can be substantially increased if the data are sorted according to some **criteria of order**. Very often, the *sorting criteria are natural*, as in the case of numbers, or the numeric value of alphanumerical characters. Sorting can be made in *ascending or descending* order. Once the criterion is selected, the second step is *how to sort the data using that criterion*.
+The efficiency of data handling can be substantially increased if the data are sorted according to some **criteria of order**. Very often, the *sorting criteria are natural*, as in the case of numbers, or the numeric value of alphanumeric characters. Sorting can be made in *ascending or descending* order. Once the criterion is selected, the second step is *how to sort the data using that criterion*.
 
-The final ordering of data can be obtained on a variety of ways, and only some of them can be considered meaningful and efficient. To decide which method is best, certain **criteria of efficiency** have to be established and a method for quantitatively *comparing different algorithms* must be chosen.
+The final ordering of data can be obtained in a variety of ways, and only some of them can be considered meaningful and efficient. To decide which method is best, certain **criteria of efficiency** have to be established and a method for quantitatively *comparing different algorithms* must be chosen.
 
 To make the comparison machine-independent, certain critical *properties of sorting algorithms* should be defined when comparing alternative methods. Two such properties are the **number of comparisons** and the **number of movements**. The efficiency of these two operations *depend on the size of the data set*.
 
 Because determining the precise number of comparisons is not always necessary or possible, an approximate value can be computed. For this reason, the number of comparisons and movements is *approximated with the big-O notation* by giving the order of magnitude of these numbers. But the order of magnitude can vary depending on the initial ordering of data.
 
-By measuring the efficiency of a given algorithm, we do not only get to know **how much time it takes** for it to sort the data, but also the **intelligence** of that method. For example, an algorithm can (it better should) *recognize an already sorted data set*, so it doesn't make any unnecessary movement or comparison. By the other hand it can be completely unaware of that fact, something obviously unefficient.
+By measuring the efficiency of a given algorithm, we not only get to know **how much time it takes** for it to sort the data, but also the **intelligence** of that method. For example, an algorithm can (it better should) *recognize an already sorted data set*, so it doesn't make any unnecessary movement or comparison. By the other hand it can be completely unaware of that fact, something obviously inefficient.
 
 The number of comparisons and the number of movements do not have to be coincident. An algorithm can be very efficient on the former and perform poorly on the latter, or vice versa. Some sorting methods perform the same operations regardless of the initial ordering of data, others are more flexible. The number of operations is computed (if possible) for three case scenarios.
 
@@ -36,11 +36,11 @@ Usually, simple algorithms often perform better with a small amount of data than
 
 ### Elementary Sorting Algorithms
 
-This kind of algorithm tend to be efficient for sorting a *small number of elements*. As the number of elements increases, efficiency decreases.
+This kind of algorithm tends to be efficient for sorting a *small number of elements*. As the number of elements increases, efficiency decreases.
 
 #### Insertion Sort
 
-In insertion sort, given an item, *shift all greater-left items by one position* to finally put it in the right spot when there are no more greater-left items. It makes use of a key to temporary hold the items value.
+In insertion sort, given an item, *shift all greater-left items by one position* to finally put it in the right spot when there are no more greater-left items. It makes use of a key to temporarily hold the item's value.
 
 ```txt
 insertion(array, n)
@@ -53,7 +53,9 @@ insertion(array, n)
 ```javascript
 function insertion(array) {
   const n = array.length;
-  for (let i = 1, j, key = array[i]; i < n; i++) {
+  let key;
+  for (let i = 1, j; i < n; i++) {
+    key = array[i]
     for (j = i; j > 0 && key < array[j - 1]; j--) {
       array[j] = array[j - 1];
     }
@@ -119,7 +121,7 @@ function bubble(array) {
 
 #### Comb Sort
 
-In comb sort the idea is quite similar to bubble sort, we still swapping items, but this time, we *swap items with a greater gap between them*. We start from the largest possible gap, which is the array length, comparing the first and the last element. Then reduce the gap dividing it by a shrink factor, usually 1.3, and compare all possible pairs with that configuration, repeat the process while the gap is at least one (comparing adjacent items).
+In comb sort the idea is quite similar to bubble sort, we still swap items, but this time, we *swap items with a greater gap between them*. We start from the largest possible gap, which is the array length, comparing the first and the last element. Then reduce the gap dividing it by a shrink factor, usually 1.3, and compare all possible pairs with that configuration, repeat the process while the gap is at least one (comparing adjacent items).
 
 ```txt
 comb(array, n)
@@ -249,7 +251,7 @@ function heap(array) {
 
 #### Quicksort
 
-Quicksort *divides the array into two subarrays and a key called bound* or pivot. The first one contains items less than or equal to the pivot, the second subarray includes items equal to or grater than the pivot. Then the same partition process is repeated for both subarrays, and so on, until there are only one-cell arrays that do not need to be sorted at all.
+Quicksort *divides the array into two subarrays and a key called bound* or pivot. The first one contains items less than or equal to the pivot, the second subarray includes items equal to or greater than the pivot. Then the same partition process is repeated for both subarrays, and so on, until there are only one-cell arrays that do not need to be sorted at all.
 
 ```txt
 quicksort(array)
@@ -385,7 +387,7 @@ function radix(array) {
 
 #### Counting Sort
 
-Counting sort first *counts the number of times each integer occures* using an array wich is indexed with the value of the given integer.
+Counting sort first *counts the number of times each integer occurs* using an array which is indexed with the value of the given integer.
 
 ```txt
 counting(array, n)
@@ -417,11 +419,22 @@ function counting(array) {
 }
 ```
 
-<!-- ### Comparative Table for Average Case
+### Comparative Table
 
-Algorithm|`n = 100`|`n = 10.000`|`n = 500.000`|`n = 1.000.000`
----|---|---|---|---
-Insertion|.|.|.|. -->
+Each implementation sorting an average case array with multiple lengths (`n`).
+
+Algorithm|`16`|`256`|`4,096`|`65,536`|`1,048,576`|`67,108,864`
+---|---|---|---|---|---|---
+*Insertion Sort*|0.0002ms|0.014ms|2.9ms|736.2ms|317.5s|-|
+*Selection Sort*|0.0003ms|0.032ms|5.92ms|1.4s|389.3s|-|
+*Bubble Sort*|0.0003ms|0.076ms|18.32ms|7.1s|1924.4s|-|
+*Comb Sort*|0.0003ms|0.011ms|0.4ms|11.2ms|197ms|-|
+*Shell Sort*|0.0003ms|0.005ms|0.31ms|8.2ms|263ms|36.2s
+*Heap Sort*|0.0003ms|0.006ms|0.33ms|7.4ms|182ms|25.3s
+*Quicksort*|0.0004ms|0.007ms|0.34ms|6.8ms|131ms|10.6s
+*Mergesort*|0.0009ms|0.02ms|0.59ms|13.4ms|298ms|29.4s
+*Radix Sort*|0.0034ms|0.048ms|0.74ms|12.8ms|216ms|14.2s
+*Counting Sort*|0.0048ms|0.073ms|1.52ms|125ms|80ms|2.9s
 
 <!-- ### Asymptotic Analysis
 
@@ -491,12 +504,6 @@ Advantages:
 
 ##### Divide and Conquer vs Dynamic approach
 
-The main difference is the *storage of subproblem results*. In a dynamic approach, each subproblem result is stored for future reference, whereas, with a divide and conquer approach, it won't happen. That's why we use a dynamic approach when we know we will need to solve the same problem multiple times. -->
+The main difference is the *storage of subproblem results*. In a dynamic approach, each subproblem result is stored for future reference, whereas, with a divide and conquer approach, it won't happen. That's why we use a dynamic approach when we know we will need to solve the same problem multiple times. 
 
-<!-- https://www.programiz.com/dsa/divide-and-conquer -->
-
-<!-- ### Greedy Algorithms
-
-### Dynamic Programming -->
-
-<!-- https://www.programiz.com/dsa -->
+https://www.programiz.com/dsa -->

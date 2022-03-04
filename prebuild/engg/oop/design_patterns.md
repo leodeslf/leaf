@@ -12,7 +12,7 @@ Design patterns have three main benefits:
 
 - *Proven solution*, tested and optimized by many developers many times.
 - *Easily reusable*, they are the generic tool for specific problems.
-- *Expressive*, elegant and selfevident solutions can be made with them.
+- *Expressive*, elegant and self-evident solutions can be made with them.
 
 They also *ease communication* and *prevent refactoring* as they create a common language for developers and the solutions are often the best ones.
 
@@ -20,12 +20,12 @@ They also *ease communication* and *prevent refactoring* as they create a common
 
 Creational design patterns abstract the **instantiation** process. They help make a system independent of how its objects are created, composed, and represented.
 
-We can apply this concept by making:
+We can apply this concept by:
 
-- Objects to defer part of their creation to *other objects*;
-- Classes to defer part of their object creation to *subclasses*.
+- Making objects to defer part of their creation to *other objects*;
+- Making classes to defer part of their object creation to *subclasses*.
 
-This kind of pattern become important as systems evolve to depend more on object composition than class inheritance. Emphasis shifts aways from hardcoding a fixed set of behaviors toward defining a smaller set of fundamental behaviors. Creational patterns give us flexibility about *what* gets created, *who* creates it, *how* is gets created, and *when*.
+This kind of pattern becomes important as systems evolve to depend more on object composition than class inheritance. Emphasis shifts aways from hardcoding a fixed set of behaviors toward defining a smaller set of fundamental behaviors. Creational patterns give us flexibility about *what* gets created, *who* creates it, *how* it gets created, and *when*.
 
 Two aspects these patterns have:
 
@@ -75,11 +75,11 @@ It's similar to Abstract Factory, but instead of returning a product from a fami
 
 #### Factory Method
 
-Define an interface for creating an object, but *let the subclasses decide which class to instantiate*. Factory Method kets a class defer instantiation to subclasses. Also known as Virtual Constructor.
+Define an interface for creating an object, but *let the subclasses decide which class to instantiate*. Factory Method lets a class defer instantiation to subclasses. Also known as Virtual Constructor.
 
 Applicable when:
 
-- A class can't anticipate the class of object it must create.
+- A class can't anticipate the class of objects it must create.
 - A class wants its subclasses to specify the objects it creates.
 - Classes delegate responsibility to one of several helper subclasses, and we want to localize the knowledge of which helper subclass is the delegate.
 
@@ -90,7 +90,7 @@ Consequences:
 
 Related patterns:
 
-As said before Abstract Factory is often implemented with Factory Method. Factory Methods are usually called within Template Methods.
+As said before, Abstract Factory is often implemented with Factory Method. Factory Methods are usually called within Template Methods.
 
 #### Prototype
 
@@ -100,7 +100,7 @@ Applicable when a system should be independent of how its products are created, 
 
 - When the classes to instantiate are specified at run-time.
 - To avoid building a class hierarchy of factories that parallels the class hierarchy of products.
-- When instances of a class can have one of only a few different combinations of state.
+- When instances of a class can have one of only a few different combinations of states.
 
 Consequences:
 
@@ -108,11 +108,11 @@ Consequences:
 - Specifying new objects by varying values.
 - Specifying new objects by varying structure.
 - Reduced subclassing.
-- Configuring an application with classes synamically.
+- Configuring an application with classes dynamically.
 
 Related patterns:
 
-Prototype and Abstract Factory are competing patterns in some ways. They can also be used together. An Abstract Factory might store a set of proyotypes from which to clone and return product objects. Designs that make heavy use of the Composite and Decorator patterns often can benefit from Prototype as well.
+Prototype and Abstract Factory are competing patterns in some ways. They can also be used together. An Abstract Factory might store a set of prototypes from which to clone and return product objects. Designs that make heavy use of the Composite and Decorator patterns often can benefit from Prototype as well.
 
 #### Singleton
 
@@ -137,7 +137,7 @@ Many patterns can be implemented using a Singleton, see Abstract Factory, Builde
 
 ### Structural Patterns
 
-Structural patterns are concern with how classes and objects are **composed** to form larger structures while keeping these structures flexible and efficient, easing the design by identifying a simple way to realize *relationships among entities*. This kind of pattern is particularly useful for making independently developed class libraries work together.
+Structural patterns are concerned with how classes and objects are **composed** to form larger structures while keeping these structures flexible and efficient, easing the design by identifying a simple way to realize *relationships among entities*. This kind of pattern is particularly useful for making independently developed class libraries work together.
 
 In practice:
 
@@ -146,7 +146,7 @@ In practice:
 
 #### Adapter
 
-Convert the interface of a class into *another interface clients expect*. Adapter lets classes work together that couldn't otherwise becasuse of incompatible interfaces. Also known as Wrapper.
+Convert the interface of a class into *another interface clients expect*. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces. Also known as Wrapper.
 
 #### Bridge
 
@@ -154,7 +154,7 @@ Convert the interface of a class into *another interface clients expect*. Adapte
 
 #### Composite
 
-*Compose objects into tree structures to represent part-whole hierarchies*. Composite lets clients treat individual objects and compositions of objetcs uniformly.
+*Compose objects into tree structures to represent part-whole hierarchies*. Composite lets clients treat individual objects and compositions of objects uniformly.
 
 #### Decorator
 
@@ -174,18 +174,18 @@ Provide a *placeholder* or surrogate for another object to control access to it.
 
 ### Behavioral Patterns
 
-Behavioral patterns are concern with **communication** among objects, algorithms and the assignment of responsibilities between them. These patterns shift our focus away from flow of control to let us concentrate just on the way objects are interconnected.
+Behavioral patterns are concerned with **communication** among objects, algorithms and the assignment of responsibilities between them. These patterns shift our focus away from flow of control to let us concentrate just on the way objects are interconnected.
 
 To achieve it:
 
 - Class patterns use *inheritance* to distribute behavior between classes.
-- Object patterns use *object compositon* rather than inheritance.
+- Object patterns use *object composition* rather than inheritance.
 
 Some patterns describe how a group of peer objects *cooperate* to perform a task that no single object can carry out by itself. An important issue here is how peer objects know about each other. In an extreme case, every object will know about every other.
 
-#### Chain of Responsability
+#### Chain of Responsibility
 
-*Avoid coupling a request sender to its receiver* by giving more than one object a chance to handle the request. Chain the receiving objects and *pass the request along the chain unil an object handles it*.
+*Avoid coupling a request sender to its receiver* by giving more than one object a chance to handle the request. Chain the receiving objects and *pass the request along the chain until an object handles it*.
 
 #### Command
 
@@ -209,7 +209,7 @@ Without violating encapsulation, *capture and externalize an object's internal s
 
 #### Observer
 
-Provide a way to *notify and update objects from a one-to-many dependency*. When one object changes state, all the dependents will automatically synchronise. Also known as Dependents, Publish-Subscribe.
+Provide a way to *notify and update objects from a one-to-many dependency*. When one object changes state, all the dependents will automatically synchronize. Also known as Dependents, Publish-Subscribe.
 
 #### State
 
@@ -225,7 +225,7 @@ For an operation, define *the skeleton of its algorithm, deferring some steps to
 
 #### Visitor
 
-Represent an operation to be performed on the elements of an object structure. Visitor lets us *define a new operation without changing the classes* of the elements on which it operate.
+Represent an operation to be performed on the elements of an object structure. Visitor lets us *define a new operation without changing the classes* of the elements on which it operates.
 
 <!-- #### Creational Design Patterns
 
