@@ -1,6 +1,6 @@
 # Critical Rendering Path Optimization
 
-Course by Google, original title "Website Performance Optimization".
+Course by Google (original title: Website Performance Optimization).
 
 ## The Website Performance Optimization
 
