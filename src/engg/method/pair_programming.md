@@ -6,7 +6,7 @@ From the books:
 - Software Engineering.
 - The Psicology of Computer Programming.
 
-Pair programming is a technique from the eXtreme Programming software development agile method in which all code to be sent into production is designed and developed by **two people working together at a single station**.
+Pair programming is a *technique* from the eXtreme Programming software development agile method in which all code to be sent into production is designed and developed by **two people working together at a single station**.
 
 The two roles are often called the *driver* and the *navigator*. The driver, the one who actually codes, has the control over the micro tasks, the low-level details of syntax and coding style. While the nevigator is free to consider higher-level issues and scope, keeping in mind the big picture.
 
@@ -41,13 +41,13 @@ In a good sense, we are forced to discuss approaches and solutions instead of on
 
 Pairing makes it easier to caught errors, the little, and the bigger ones. We are actually doing **code review on-the-go**, specially the navigator, but also the driver, which should always be talking through the code being written, so it tends to pay more attention than when working alone. It also makes *refactoring* easier because we can instantly discuss ideas about the approach. That's why we use to have *fewer defects* on the resulting code, which can save a considerable amount of time later on.
 
->By having a second party look at the programm, ...we increase the possibility of eliminating at least the most obviously inefficient areas. -Gerald M. Weinberg, Egoless Programming
+>By having a second party look at the programm, ...we increase the possibility of eliminating at least the most obviously inefficient areas. -Gerald M. Weinberg, Egoless Programming (1971)
 
 The responsibility of working with another person leads us to **keep focus** for courtesy and respect. We're more likely to *avoid potentially embarrassing decisions* when someone is actively watching. The parts agree on intervals to take *small breaks* and *return quickly* to the task. One of them might have more focus and help "awaken" the other if they lose it, that's why the role needs to be switched often.
 
 **Keeping the team's work in progress low** is important (and one of the core principles of Kanban) to improve team flow. It helps us focus on the current task. The overall team *productivity often increases* if the team has a WIP limit in place, because multi-tasking is not just inefficient on an individual, but also on the team level.
 
->...it does seem that the general level of competence of such a group is likely to rise itself... -Gerald M. Weinberg, Egoless Programming
+>...it does seem that the general level of competence of such a group is likely to rise itself... -Gerald M. Weinberg, Egoless Programming (1971)
 
 <!-- https://martinfowler.com/articles/on-pair-programming.html -->
 <!-- https://en.wikipedia.org/wiki/Pair_programming -->
