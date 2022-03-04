@@ -43,8 +43,8 @@ git branch -v # -v, --verbose (-vv to include upstream)
 ```
 
 ```bash
-# Switch to a branch
-git checkout <branch-name>
+git checkout <branch-name>  # Switch to a branch
+git checkout -b <new> <src> # Create and switch to branch `new`, a copy of `src`
 ```
 
 ## Remote
