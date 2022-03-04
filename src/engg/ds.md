@@ -11,7 +11,7 @@ There are two main categories of DSs:
 - *Linear* structure (sequential).
 - *Non-linear* structure (graph or tree).
 
-Linear| Non-linear
+Linear|Non-linear
 ---|---
 Items are arranged in *sequential* order, one after the other.|Items are arranged in a *hierarchical* manner (non-sequential).
 Items are present on the *single layer*.|Items are present at *different layers*.
@@ -103,7 +103,7 @@ Ways to traverse a tree:
 
 ### Binary Tree
 
-A binary tree is a tree DS in which each node have *at most two children*.
+A binary tree is a tree DS in which each node has *at most two children*.
 
 Each node contains:
 
@@ -113,7 +113,7 @@ Each node contains:
 
 #### Full Binary Tree
 
-A special binary tree in which *each node has either two or no children*. It´s also known as "a proper binary tree".
+A special binary tree in which *each node has either two or no children*. It's also known as "a proper binary tree".
 
 Theorem:
 
@@ -147,7 +147,7 @@ Theorems:
 
 #### Complete Binary Tree
 
-It's a tree that shares featues among the perfect binary tree, but there might be some differences. The main diffference is that *not every parent node has to have two childs*.
+It's a tree that shares features among the perfect binary tree, but there might be some differences. The main difference is that *not every parent node has to have two childs*.
 
 Conditions:
 
@@ -175,7 +175,7 @@ Degenerate (or pathological) binary tree is a tree in which *every node has a si
 
 A skewed binary tree is a tree in which *all child nodes are left or right nodes*.
 
-The two possible types of skwewd binary tree:
+The two possible types of skewed binary tree:
 
 - **Left-skewed binary tree**.
 - **Right-skewed binary tree**.
@@ -206,7 +206,7 @@ The *balance factor is the height difference between left and right subtrees*. I
 A b-tree is another type of self-balancing BST in which each node can have *more than one key and more than two children*. It's also known as a height-balanced m-way tree.
 
 - Nodes have their keys stored in increasing order.
-- Nodes hold information that let us know if they're a leaf.
+- Nodes hold information that lets us know if they're a leaf.
 - Each internal node can contain at most `n - 1` keys.
 - All leaves have the same depth.
 - The root has at least 2 children.
@@ -224,7 +224,7 @@ Properties:
 
 ##### B+ Tree
 
-An advanced form of a self-balancing tree in which the *all the data is stored on the leaves*. Internal nodes are called index set and can only store key values.
+An advanced form of a self-balancing tree in which *all the data is stored on the leaves*. Internal nodes are called index sets and can only store key values.
 
 Properties:
 
@@ -241,7 +241,7 @@ A graph DS consists of:
 
 Graph terminology:
 
-- *Adjacency*: ad edge connecting two vertices maked them to be adjacent.
+- *Adjacency*: an edge connecting two vertices makes them adjacent.
 - *Path*: a sequence of edges that connect a vertex to another one.
 - *Directed graph*: a graph in which the edges (u, v) and (v, u) are different things.
 
@@ -249,8 +249,10 @@ Graph terminology:
 
 It's a way of representing a graph as *boolean values in a 2D array* of size V times V, in which each column and row represent each vertex. For any value `a[i][j]`, if it's `1`: there is an edge connecting the vertex `i` and `j`.
 
-Notice that values in `a[i][j]` and `a[j][i]` should both be defined if it's an undirected graph, thus making the matrix symetric (about the diagonal).
+Notice that values in `a[i][j]` and `a[j][i]` should both be defined if it's an undirected graph, thus making the matrix symmetric (about the diagonal).
 
 ### Adjacency List
 
 It represents a graph as *an array of linked lists*. The index of the array represents a vertex, each element in its linked list represents an edge pair vertex.
+
+<!-- https://www.programiz.com/dsa -->
