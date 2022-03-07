@@ -19,7 +19,7 @@ It offers the flexibility to use the method on top of existing workflows without
 
 #### Agree to pursue incremental, evolutionary change
 
-The kanban method is designed to meet *minimal resistance*. It encourages continuous small incremental and evolutionary changes to the current process by implementing *collaboration and feedback forms*.
+The Kanban method is designed to meet *minimal resistance*. It encourages continuous small incremental and evolutionary changes to the current process by implementing *collaboration and feedback forms*.
 
 #### Initially, keep current roles and responsibilities
 

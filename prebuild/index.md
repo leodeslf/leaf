@@ -6,17 +6,18 @@ index: true
 
 - **[Software Engineering](engg/)**
   - [Bash](engg/bash/)
-  - [Data Structures](engg/ds/)
+  - [Data Structures](engg/data_structures/)
   - Methodologies
     - [Agile (Manifesto)](engg/method/agile/)
-      - [Scrum Guide](engg/method/scrum/)
+      - [Scrum (Guide)](engg/method/scrum/)
     - [Kanban](engg/method/kanban/)
+    - [Lean](engg/method/lean/)
     - [Pair Programming](engg/method/pair_programming/)
+    - [Test-Driven Development](engg/method/tdd/)
   - [Object Oriented Programming](engg/oop/)
     - [Design Patterns](engg/oop/design_patterns/) *[WIP]*
-  - [Sorting Algorithms](engg/sa/)
+  - [Sorting Algorithms](engg/sorting_algorithms/)
   - [Testing](engg/testing/)
-    - [Test-Driven Development](engg/testing/tdd/)
     - [Unit Testing](engg/testing/unit/)
   - Version Control
     - [Git](engg/version/git/)
