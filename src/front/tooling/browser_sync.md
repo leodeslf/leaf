@@ -12,8 +12,8 @@ browser-sync <dir> [option]
 
 Options:
 
-- `-w`, `--watch`
-- `--port <port-number>`
 - `--open`
+- `--port <port-number>`
+- `-w`, `--watch`
 
 More at [Browsersync Command Line Usage](https://browsersync.io/docs/command-line).
