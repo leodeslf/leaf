@@ -4,6 +4,20 @@ Principles and philosophies of software engineering.
 
 >The question of whether computers can think is just like the question of whether submarines can swim. -Edsger W. Dijkstra, 1986
 
+## Don't Repeat Yourself (DRY)
+
+Design, development, test, maintenance, and reusability will be easier by having a **single source of code**, then reuse it and modify it in another place as needed.
+
+Opposite to:
+
+- Copy And Paste Programming, **CAPP**.
+- Clone And Modify Programming, **CAMP**.
+- Write Everything Twice, **WET**.
+
+The Pragmatic Programmer:
+
+>Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.
+
 ## Egoless Programming
 
 By Geral M. Weinberg (The Psychology of Computer Programming, 1971).
@@ -21,19 +35,15 @@ The ten commandments of Egoless Programming:
 - *Don't be "the guy in the room"*.
 - Critique code instead of people, *be kind to the coder*, no to the code.
 
-## Don't Repeat Yourself (DRY)
+## Extreme Programming (XP)
 
-Design, development, test, maintenance, and reusability will be easier by having a **single source of code**, then reuse it and modify it in another place as needed.
+### You Aren't Gonna Need It (YAGNI)
 
-Opposite to:
+Only implement things when you **need** them, don't do them because you *think* you are gonna need it later.
 
-- Copy And Paste Programming, **CAPP**.
-- Clone And Modify Programming, **CAMP**.
-- Write Everything Twice, **WET**.
+### Do The Simplest Thing That Could Possibly Work (DTSTTCPW)
 
-The Pragmatic Programmer:
-
->Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.
+Prioritize requirements and **do only the important** things. Don't do things you don't need, don't improve things if not needed.
 
 ## Keep it Simple, Stupid! (KISS)
 
@@ -83,37 +93,27 @@ Make your modules to **depend on abstractions**/interfaces, **not in details** o
 
 >Depend upon abstractions, not concretions.
 
-## Extreme Programming (XP)
-
-### You Aren't Gonna Need It (YAGNI)
-
-Only implement things when you **need** them, don't do them because you *think* you are gonna need it later.
-
-### Do the simplest thing that could possibly work (DTSTTCPW)
-
-Prioritize requirements and **do only the important** things. Don't do things you don't need, don't improve things if not needed.
-
 ## MoSCoW
 
 A **prioritization method** to reach a common understanding of the *importance* of each requirement among a team. Developed by Dai Clegg in 1994.
 
-### Must have
+### Must Have
 
 They are **critical** for the current release to be delivered. If a requirement like this is not included, the project should be considered a *failure*.
 
-### Should have
+### Should Have
 
 They are **important** but not necessary for the current release. They are just *not needed now*, or the requirement can be satisfied in another way.
 
-### Could have
+### Could Have
 
 They are **desirable** but not necessary. Taken as a  *suggestion to improve* the product for a low cost in development. These are included if there is enough time.
 
-### Won't have
+### Won't Have
 
 They are least-critical and **not planned** for the current release. In general they are either *reconsidered* for a future release or *dropped* at all.
 
-## Worth mentioning
+## Worth Mentioning
 
 - **If it ain't broke, don't fix it**.
 - **Measure twice, cut once**.
