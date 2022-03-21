@@ -8,11 +8,7 @@ gem install jekyll bundler
 ```bash
 # Use
 jekyll new <project-name>
-```
-
-```bash
-# To fix 3.0.0+ Ruby
-bundle add webrick
+bundle add webrick # To fix 3.0.0+ Ruby
 ```
 
 ```bash
