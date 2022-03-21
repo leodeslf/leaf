@@ -2,55 +2,6 @@
 
 A cheatsheet for **file-system**, **text-processing**, and a few more bash commands with some of their options.
 
-## Not options
-
-```bash
-[cmd] -- [args]
-# Indicates that following args are not options
-# E.g.: `rm -- -r` # Remove file called "-r"
-```
-
-## Concatenate commands
-
-```bash
-<cmd1> \
-<cmd2>
-# Shell concatenates lines (same as deleting the new line char)
-```
-
-```bash
-<cmd1> ; <cmd2>
-# Shell waits for cmd1 to finish, then runs cmd2
-```
-
-```bash
-<cmd1> & <cmd2>
-# Shell runs cmd1 in the background, doesn't wait for it to finish
-# (immediately returns exit code 0) and runs cmd2
-```
-
-```bash
-<cmd1> | <cmd2>
-# Shell runs cmd1, waits for it to finish and takes its standard output
-# as standard input for cmd2
-```
-
-```bash
-<cmd1> && <cmd2>
-# Shell runs cmd2, only, and only if cmd1 succeeds (returns exit code == 0)
-```
-
-```bash
-<cmd1> || <cmd2>
-# Shell runs cmd2, only, and only if cmd1 fails (returns exit code != 0)
-```
-
-```bash
-<cmd> |& <cmd>
-# Shell runs cmd1, waits for it to finish and takes both standard output
-# and standard error from cmd1 as standard input for cmd2
-```
-
 ## `cat`
 
 ```bash
@@ -149,7 +100,7 @@ find -mindepth <num>    # Set minimum directory depth
 ## `grep`
 
 ```bash
-grep [patterns] [file] # Print lines that match patterns
+grep [patterns] [file] # Global regular expression print
 grep -i                # Ignore case distinctions
 grep -f <file>         # Take patterns from a file
 grep -F                # Take patterns as fixed string instead of a regex
@@ -168,6 +119,35 @@ grep -n                # Prefix output with the matching line number
 head <file>           # Outputs the first 10 lines of file
 head -c<num>, --bytes # Prints num amount of bytes
 head -n<num>, --lines # Prints num amount of lines instead of 10
+```
+
+## `less`
+
+```bash
+less <file>       # Shows one screenful of the file at a time
+less -g           # Highlights only the last match for searches
+less -G           # Don't highlight any matches for searches
+less -i           # Ignore case in search
+less -I           # Ignore case in search and pattern
+less -p <pattern> # Start at pattern
+less -N           # Display line numbers
+less -s           # Squeeze multiple blank lines
+less -S           # Chop long lines
+less -X           # Don't clean screen after exit
+```
+
+```bash
+# While running `less`
+g                       # Go to first line
+<num>g                  # Go to num line
+G                       # Go to last line
+down_arrow, enter, e, j # Move forward one line
+up_arrow, y, k          # Move backward one line
+space_bar, f            # Move forward one page
+b                       # Move backward one page
+q                       # Exit
+/<pattern>              # Forward search for pattern
+?<pattern>              # Backward search for pattern
 ```
 
 ## `ls`
@@ -215,7 +195,7 @@ ping -w <num> # Timeout in milliseconds to wait for each reply
 ## `pwd`
 
 ```bash
-pwd # Show current dir
+pwd # Print working dir
 ```
 
 ## `rm`
@@ -238,10 +218,10 @@ rmdir <dir> # Remove only empty dirs
 
 ```bash
 sed <script> <file>
-sed '/regex/d' <file>        # Delete match
+sed '/regex/d' <file>         # Delete match
 sed 's/old/new/' <file>       # Replace match
 sed 's/old/new/g' <file>      # Replace all matches (global)
-sed '<number>p' <file>        # Print the specified line
+sed '<num>p' <file>           # Print the specified line
 sed -E, -r,                   # Use extended regular expressions
 sed -n, --quiet, --silent     # Suppress output (modifications/deletions)
 sed -i<suffix?>, --in-place   # Edit file in-place (avoid standard output)
@@ -272,5 +252,61 @@ wc -m, --chars # Print the char counts
 wc -l, --lines # Print the line counts
 wc -w, --words # Print the word counts
 ```
+
+## Other
+
+### Not options
+
+```bash
+[cmd] -- [args]
+# Indicates that following args are not options
+# E.g.: `rm -- -r` # Remove file called "-r"
+```
+
+### Concatenate commands
+
+```bash
+<cmd1> \
+<cmd2>
+# Shell concatenates lines (same as deleting the new line char)
+```
+
+```bash
+<cmd1> ; <cmd2>
+# Shell waits for cmd1 to finish, then runs cmd2
+```
+
+```bash
+<cmd1> & <cmd2>
+# Shell runs cmd1 in the background, doesn't wait for it to finish
+# (immediately returns exit code 0) and runs cmd2
+```
+
+```bash
+<cmd1> | <cmd2>
+# Shell runs cmd1, waits for it to finish and takes its standard output
+# as standard input for cmd2
+```
+
+```bash
+<cmd1> && <cmd2>
+# Shell runs cmd2, only, and only if cmd1 succeeds (returns exit code == 0)
+```
+
+```bash
+<cmd1> || <cmd2>
+# Shell runs cmd2, only, and only if cmd1 fails (returns exit code != 0)
+```
+
+```bash
+<cmd> |& <cmd>
+# Shell runs cmd1, waits for it to finish and takes both standard output
+# and standard error from cmd1 as standard input for cmd2
+```
+
+<!-- https://ss64.com/bash/ -->
+<!-- https://guide.bash.academy/ -->
+<!-- https://tldp.org/LDP/Bash-Beginners-Guide/html/ -->
+<!-- https://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html -->
 
 <!-- awk -->
