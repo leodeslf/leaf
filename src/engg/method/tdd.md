@@ -2,10 +2,27 @@
 
 From the books:
 
-- The Pragmatic Programmer.
+- Clean Agile.
 - Software Engineering.
+- The Pragmatic Programmer.
 
 Test-driven development (TDD) is an approach, introduced by Kent Beck in 2002, that **reverses the developing and testing process**. We first write a test case for a given requirement, only afterwards we implement the code that passes that test.
+
+## Double-Entry Bookkeeping, the Exemplar
+
+Accountants have a 1000 years old discipline, the "double-entry bookkeeping", in which *every transaction is entered twice into their books*: once as a credit in a set of accounts, and again as a complementary debit in another set. Finally, the difference of these accounts is entered into a single document called "balance sheet". The difference must be zero. If not zero, then an error has been made.
+
+They are taught to enter the transactions *one at a time* and compute the balance each time, since errors would be hard to find if a batch of transactions is entered between balance checks. It is so essential that has become law in almost all parts of the world.
+
+TDD is the corresponding practice for programmers. **DEB and TDD are equivalent**. Every required behavior is entered twice: once as a test, and then again as a production code that passes the test. They both serve the same function: to prevent errors in critically important documents where *every symbol must be correct*. The only difference is that, by the moment, TDD is not required by law, but should it?
+
+## The Three Laws of TDD
+
+TDD can be described in three simple rules:
+
+1. No production code should be written until we have written a failing unit test.
+1. No more of a single, sufficient to fail, unit test should be written.
+1. No more production code should be written than the sufficient to pass the test.
 
 ## The cycle
 
