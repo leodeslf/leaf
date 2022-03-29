@@ -43,7 +43,7 @@
   line-height: 1.25;
 }
 
-border::selection {
+::selection {
   background-color: black;
   color: white;
 }
@@ -83,11 +83,10 @@ footer p {
   text-align: center !important;
 }
 
-footer,
-h1,
-h6,
-table {
-  font-size: .85rem;
+hr {
+  border: none;
+  border-top: 1px solid var(--bg--alt-a);
+  margin: 2rem 0;
 }
 
 /* text blocks */
@@ -138,7 +137,11 @@ main> :last-child {
 }
 
 code,
-pre {
+footer,
+h1,
+h6,
+pre,
+table {
   font-size: 0.85em;
 }
 
@@ -217,7 +220,7 @@ li {
 }
 
 pre {
-  padding: .5rem 1rem;
+  padding: 1rem;
 }
 
 pre,
