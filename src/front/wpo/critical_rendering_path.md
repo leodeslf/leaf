@@ -25,7 +25,7 @@ The process begins by reading each *character* in the html file sent by the serv
 
 The same process is followed (characters, tokens, nodes) to build the *CSSDOM*. Converting CSS into CSSOM is a *Render-Blocking* process.
 
-<!-- https://www.hongkiat.com/blog/css-object-model-cssom/ -->
+More at [The Beginners Guide to CSS Object Model (CSSOM) (hongkiat.com)](https://www.hongkiat.com/blog/css-object-model-cssom/).
 
 ### Render Tree
 
@@ -70,7 +70,7 @@ Steps to render the example page:
 
 The best way to optimize the DOM size and improve the page-load speed is to *avoid large files* by minifying them, to *reduce the amount of files* (specially the critical ones), and to *prevent unnecessary network requests* by caching.
 
-<!-- https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer -->
+More at [Optimizing Encoding and Transfer Size if Text-Based Assets (web.dev)](https://web.dev/optimizing-content-efficiency-optimize-encoding-and-transfer/).
 
 #### Minify
 
@@ -96,8 +96,10 @@ HTTP caching help us to:
 - Save people's money when using mobile plans.
 - Load a given resource faster.
 
-<!-- https://web.dev/http-cache/ -->
-<!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching -->
+More at:
+
+- [Prevent unnecessary network requests with the HTTP Cache (web.dev)](https://web.dev/i18n/en/http-cache/)
+- [HTTP caching (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching).
 
 ### Unblocking CSS with Media Queries
 
@@ -105,7 +107,7 @@ As said before, parsing a CSS asset is a Render-Blocking process. We can avoid t
 
 ### JavaScript and the CRP
 
-JavaScript execution is a *Parser-Blocking* process. It means that the process of building the DOM out of the HTML gets interrupted as soon as a script is found, then resumed after its execution. During that, we can use JavaScript to manipulate (read, write, and rewrite) the current DOM and CSSOM.
+JavaScript execution (and downloading unless it has `async` or `defer` attributes) is a *Parser-Blocking* process. It means that the process of building the DOM out of the HTML gets interrupted as soon as a script is found, then resumed after its execution. During that, we can use JavaScript to manipulate (read, write, and rewrite) the current DOM and CSSOM.
 
 #### JavaScript dependencies
 
@@ -135,4 +137,4 @@ We can enumerate three:
 1. **Reduce Critical Resources**: these are the assets that could block the initial rendering of the page. They are usually downloaded with the highest priority and before the others.
 1. **Shorten Critical Path Length**: as the amount of in-parallel requests is limited and quite short, we should avoid chaining (serializing) a large number of assets and also the ones requested in parallel.
 
-<!-- https://andydavies.me/blog/2013/10/22/how-the-browser-pre-loader-makes-pages-load-faster/ -->
+More at [How the Browser Pre-loader Makes Pages Load Faster (andydavies.me)](https://andydavies.me/blog/2013/10/22/how-the-browser-pre-loader-makes-pages-load-faster/).
