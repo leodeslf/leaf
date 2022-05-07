@@ -70,7 +70,7 @@ Steps to render the example page:
 
 The best way to optimize the DOM size and improve the page-load speed is to *avoid large files* by minifying them, to *reduce the amount of files* (specially the critical ones), and to *prevent unnecessary network requests* by caching.
 
-More at [Optimizing Encoding and Transfer Size if Text-Based Assets (web.dev)](https://web.dev/optimizing-content-efficiency-optimize-encoding-and-transfer/).
+More at [Optimizing Encoding and Transfer Size of Text-Based Assets (web.dev)](https://web.dev/optimizing-content-efficiency-optimize-encoding-and-transfer/).
 
 #### Minify
 

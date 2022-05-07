@@ -39,7 +39,7 @@ The four major areas of a site/app life cycle:
 - **Response**: it's the time it takes to give feedback from the users' input. If the response time gets longer than 100ms, it will be noticed as lagged.
 - **Animate**: either JavaScript or CSS, triggered by the user or a style rule. Each frame should be done in less than 16ms to ensure animations run at 60fps.
 - **Idle**: it begins immediately after the site/app loads and it's waiting for the user to interact, it's *when nothing happens*. During this state, we usually do the post-loading of anything that can wait and isn't included in the CRP (like images, videos, or any low-priority content). It's around 50ms long after the load.
-- **Load**: it's the actual first load of the page and all it's required assets before becoming idle. It should take less than 1s.
+- **Load**: it's the actual first load of the page and all its required assets before becoming idle. It should take less than 1s.
 
 ## Weapons of Jank Destruction
 
