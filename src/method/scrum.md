@@ -1,20 +1,24 @@
-# Scrum Guide
+# Scrum
 
-An **Agile** framework based on sprint iterations.
+Scrum is **an Agile framework** based on *sprint iterations*.
 
 ## Scrum Values
 
-- **Commitment**: The Scrum Team commits to *achieving its goals* and to *supporting each other*.
-- **Focus**: Their primary focus is on the work of the Sprint to *make the best possible progress* toward these goals.
-- **Openness**: The Scrum Team and its stakeholders are *open about the work and the challenges*.
-- **Respect**: Scrum *Team members respect each other* to be capable, independent people, and are respected as such by the people with whom they work.
-- **Courage**: The Scrum Team members have the courage to *do the right thing*, to *work on tough problems*.
+Value|Description
+---|---
+**Commitment**|The Scrum Team commits to *achieving its goals* and to *supporting each other*.
+**Focus**|Their primary focus is on the work of the Sprint to *make the best possible progress* toward these goals.
+**Openness**|The Scrum Team and its stakeholders are *open about the work and the challenges*.
+**Respect**|Scrum *Team members respect each other* to be capable, independent people, and are respected as such by the people with whom they work.
+**Courage**|The Scrum Team members have the courage to *do the right thing*, to *work on tough problems*.
 
 ## Scrum Theory
 
-- **Transparency**: Important decisions must be *visible to all the team all the time* and be based on the three artifacts. It enables inspection otherwise it is misleading and wasteful.
-- **Inspection**: The three artifacts and progress must be *inspected frequently and diligently* to detect potential problems. It's pointless to inspect without adaptation. Scrum is designed to provoke change.
-- **Adaptation**: If any aspect of a process is unacceptable, the process or the product must be *adjusted as soon as possible*.
+Theory|Description
+---|---
+**Transparency**|Important decisions must be *visible to all the team all the time* and be based on the three artifacts. It enables inspection otherwise it is misleading and wasteful.
+**Inspection**|The three artifacts and progress must be *inspected frequently and diligently* to detect potential problems. It's pointless to inspect without adaptation. Scrum is designed to provoke change.
+**Adaptation**|If any aspect of a process is unacceptable, the process or the product must be *adjusted as soon as possible*.
 
 ## Scrum Team
 
@@ -34,7 +38,7 @@ They create the plan for the Sprint, the Sprint Backlog, adapting that plan ever
 
 The person who ensures the right features make into the Product Backlog and maximize its value for each Sprint, **representing the customers** of the product.
 
-Responsible for the *Product Backlog management*, developing and comminicating its items and the whole Product Goal, ordering and keeping it transparent, visible, and understandable.
+Responsible for the *Product Backlog management*, developing and communicating its items and the whole Product Goal, ordering and keeping it transparent, visible, and understandable.
 
 ### Scrum Master
 
@@ -87,7 +91,7 @@ Daily Scrums improve communications, identify impediments, promote quick decisio
 
 Sprint Review's purpose is to *inspect the outcome of the Sprint* and determine future adaptations.
 
-During the event, the Scrum Team presents the *results* of their work to key stakeholders, all of them review what was accomplished and what has changed in their environment. The product Backlog may be adjusted.
+During the event, the Scrum Team presents the *results* of their work to key stakeholders, everyone reviews what was accomplished and what has changed in their environment. The product Backlog may be adjusted.
 
 It's the second to last event, and it's timeboxed to a maximum of *four hours*.
 
@@ -151,5 +155,9 @@ It's a *formal description of the state* of the Increment when it meets the qual
 
 It creates transparency by providing everyone a shared understanding of what work was completed as part of the Increment.
 
-<!-- https://scrumguides.org/scrum-guide.html -->
-<!-- https://www.scrum.org/pathway/software-developer-learning-path -->
+----
+
+Reference:
+
+- [Scrum Guide (scrumguides.org)](https://scrumguides.org/scrum-guide.html).
+- [Software Developer Learning Path (scrum.org)](https://www.scrum.org/pathway/software-developer-learning-path).

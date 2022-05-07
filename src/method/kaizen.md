@@ -38,7 +38,7 @@ The Five S are:
 
 Reference:
 
-- Agile Kaizen (page 4, 10, 39, 92, 179).<!-- 162, 170 -->
+- Agile Kaizen (page 4, 10, 39, 92, 179).
 - [Kaizen (leansixsigmadefinition.com)](https://www.leansixsigmadefinition.com/glossary/kaizen/).
 - Toyota Kaizen Methods (page 19).
 - [What is KAIZEN™ (kaizen.com)](https://www.kaizen.com/what-is-kaizen).

@@ -1,12 +1,6 @@
 # Test-Driven Development
 
-From the books:
-
-- Clean Agile.
-- Software Engineering.
-- The Pragmatic Programmer.
-
-Test-driven development (TDD) is an approach, introduced by Kent Beck in 2002, that **reverses the developing and testing process**. We first write a test case for a given requirement, only afterwards we implement the code that passes that test.
+Test-driven development (TDD) is an approach, introduced by Kent Beck in 2002 as part of the eXtreme Programming practices (initially called test-first development), that **reverses the developing and testing process**. We first write a test case for a given requirement, only afterwards we implement the code that passes that test.
 
 ## Double-Entry Bookkeeping, the Exemplar
 
@@ -24,7 +18,7 @@ TDD can be described in three simple rules:
 1. No more of a single, sufficient to fail, unit test should be written.
 1. No more production code should be written than sufficient to pass the test.
 
-## The cycle
+## The Cycle
 
 The TDD process is defined by a **five-steps** cycle as follows:
 
@@ -58,3 +52,13 @@ This manifests itself in a number of ways:
 - Spending inordinate amounts of time just to keep the test coverage at 100%.
 - Making lots of redundant tests, testing the same on different tests.
 - Starting to design at the bottom and work the way up (Bottom-Up).
+
+----
+
+Reference:
+
+- Clean Agile (page 114).
+- Software Engineering (page 221).
+- The Clean Coder (page 77).
+- The Pragmatic Programmer (page 364).
+- [Code the Unit Test First (extremeprogramming.org)](http://www.extremeprogramming.org/rules/testfirst.html)
