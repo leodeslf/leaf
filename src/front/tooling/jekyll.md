@@ -18,4 +18,6 @@ bundle exec jekyll serve
 # `bundle exec` is optional after the first use.
 ```
 
-More at [Command Line Usage](https://jekyllrb.com/docs/usage/).
+----
+
+Reference: [Command Line Usage (jekyllrb.com)](https://jekyllrb.com/docs/usage/).

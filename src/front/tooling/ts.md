@@ -7,7 +7,7 @@ npm i -g typescript
 
 ```bash
 # Use
-tsc [file] [option]            # Transpile
+tsc [file] [option]
 tsc <input-file> <output-file> # Ignores tsconfig.json
 ```
 
@@ -46,8 +46,10 @@ Options:
 }
 ```
 
-More at:
+----
 
-- [tsc CLI Options](https://www.typescriptlang.org/docs/handbook/compiler-options.html).
-- [What is a tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
-- [TSConfig Reference - Docs on every TSConfig option](https://www.typescriptlang.org/tsconfig).
+Reference:
+
+- [tsc CLI Options (typescriptlang.org)](https://www.typescriptlang.org/docs/handbook/compiler-options.html).
+- [What is a tsconfig.json (typescriptlang.org)](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+- [Intro to the TSConfig Reference (typescriptlang.org)](https://www.typescriptlang.org/tsconfig).

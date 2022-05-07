@@ -2,25 +2,25 @@
 
 ```bash
 # Create npm global configuration file
-npmrc <usr-name>
+npmrc <user-name>
 ```
 
 ```bash
 # Initialize
-npm init --scope=@<usr-name>
+npm init --scope=@<user-name>
 ```
 
 ```bash
 # Use
 npm publish --access public
 npm version <major|minor|patch>
-npm unpublish <pkg-name> -f
+npm unpublish <package-name> -f
 ```
 
 ```json
 // package.json
 {
-  "name": "@<usr-name>/<pkg-name>",
+  "name": "@<user-name>/<package-name>",
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
     "access": "public"
@@ -28,7 +28,9 @@ npm unpublish <pkg-name> -f
 }
 ```
 
-More at:
+----
 
-- [Creating and publishing scoped public packages](https://docs.npmjs.com/creating-and-publishing-scoped-public-packages).
-- [CLI commands](https://docs.npmjs.com/cli/v7/commands).
+Reference:
+
+- [Creating and publishing scoped public packages (docs.npmjs.com)](https://docs.npmjs.com/creating-and-publishing-scoped-public-packages).
+- [CLI commands (docs.npmjs.com)](https://docs.npmjs.com/cli/v7/commands).

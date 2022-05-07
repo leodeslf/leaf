@@ -7,7 +7,7 @@ npm i -g terser
 
 ```bash
 # Use
-terser [options] <file>
+terser [option] <file>
 ```
 
 Options:
@@ -19,4 +19,6 @@ Options:
 - `-m`, `--mangle reserved=[reserved-words]`
 - `-o`, `--output <file>`
 
-More at [CLI Usage](https://terser.org/docs/cli-usage).
+----
+
+Reference: [CLI Usage (terser.org)](https://terser.org/docs/cli-usage).

@@ -25,4 +25,6 @@ Options:
 - `-r`, `--root-dir <dir>`
 - `-w`, `--watch`
 
-More at [CLI flags](https://modern-web.dev/docs/dev-server/cli-and-configuration/#cli-flags).
+----
+
+Reference: [CLI flags (modern-web.dev)](https://modern-web.dev/docs/dev-server/cli-and-configuration/#cli-flags).

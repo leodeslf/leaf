@@ -7,33 +7,24 @@ npm i -D cypress
 
 ```bash
 # Use
-./node_modules/.bin/cypress run [options]
+./node_modules/.bin/cypress run [option]
 ```
 
 ```bash
-# Use with shorcut
-$(npm bin)/cypress run [options]
+# Use with shortcut
+$(npm bin)/cypress run [option]
 ```
 
 ```bash
 # Use with npx
-npx cypress run [options]
+npx cypress run [option]
+npx cypress open [option]
+npx cypress info [option]
 ```
 
 ```bash
-# Use with `npm run` as a script
-npm run cy:run -- [options]
-```
-
-```json
-// package.json
-{
-  "scripts": {
-    "cy:run": "cypress run",   // Runs all tests
-    "cy:open": "cypress open", // Opens the test runner
-    "cy:info": "cypress info"  // Shows info about the environment
-  }
-}
+# Use with npm scripts
+npm run cy:run -- [option]
 ```
 
 Options:
@@ -46,7 +37,20 @@ Options:
 - `-p`, `--port <number>`
 - `-q`, `--quiet`
 
-More at:
+```json
+// package.json
+{
+  "scripts": {
+    "cy:run": "cypress run",   // Runs all tests
+    "cy:open": "cypress open", // Opens the test runner
+    "cy:info": "cypress info"  // Shows info about the environment
+  }
+}
+```
 
-- [Command Line](https://docs.cypress.io/guides/guides/command-line).
-- [Configuration](https://docs.cypress.io/guides/references/configuration).
+----
+
+Reference:
+
+- [Command Line (docs.cypress.io)](https://docs.cypress.io/guides/guides/command-line).
+- [Configuration (docs.cypress.io)](https://docs.cypress.io/guides/references/configuration).

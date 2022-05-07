@@ -24,10 +24,12 @@ vite preview --port <number>
 ```
 
 ```bash
-# Scripts
+# Use with npm scripts
 npm run dev
 npm run build
 npm run preview
 ```
 
-More at [Command Line Interface](https://vitejs.dev/guide/#command-line-interface).
+----
+
+Reference: [Command Line Interface (vitejs.dev)](https://vitejs.dev/guide/#command-line-interface).
