@@ -6,7 +6,7 @@ By preprocessing we get *cross-browser* style rules and selectors automatically.
 
 ## Variables
 
-They have a different behaviour from the CSS3 variables and a simpler way to use.
+They are easier to use and even behave differently from the CSS3 variables.
 
 Example:
 
@@ -22,7 +22,7 @@ body {
 
 ### !global
 
-If `!global` is included to a variable override, is only visible by the selector and its childs.
+If `!global` is included in a variable override, then it's only visible by the selector.
 
 Example:
 
@@ -175,7 +175,7 @@ p {
 
 Partials will be *ignored* by the preprocessor, no equivalent `.css` file will be generated. Anyways, they can still be visible and imported. The final style sheet, containing all the imported partials by a module, will be processed.
 
-Partials are identified by an underscore as a prefix. When importing them, undescore is ignored.
+Partials are identified by an underscore as a prefix. When importing them, underscore is ignored.
 
 Example:
 
@@ -191,4 +191,9 @@ main.scss
 @import './variables', './mixins';
 ```
 
-<!-- https://sass-lang.com/ -->
+----
+
+Reference:
+
+- [Sass Basics (sass-lang.com)](https://sass-lang.com/guide).
+- [Documentation (sass-lang.com)](https://sass-lang.com/documentation).

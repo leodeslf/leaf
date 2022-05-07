@@ -13,13 +13,11 @@ svelte-kit preview --port <number> --open
 ```
 
 ```bash
-# Scripts
+# Use with npm scripts
 npm run dev
 npm run build
 npm run preview
 ```
-
-More at [Getting started](https://kit.svelte.dev/docs#introduction-getting-started).
 
 ## Adding SASS/SCSS
 
@@ -42,8 +40,8 @@ export default config;
 
 More at:
 
-- [scss, sass](https://github.com/sveltejs/svelte-preprocess/blob/main/docs/preprocessing.md#scss-sass).
-- [What is it?](https://github.com/sveltejs/svelte-preprocess#what-is-it).
+- [scss, sass (github.com)](https://github.com/sveltejs/svelte-preprocess/blob/main/docs/preprocessing.md#scss-sass).
+- [Svelte Preprocess (github.com)](https://github.com/sveltejs/svelte-preprocess#svelte-preprocess).
 
 ## Adding a Vercel adapter
 
@@ -67,5 +65,10 @@ export default config;
 
 More at:
 
-- [ADAPTERS](https://kit.svelte.dev/docs#adapters).
-- [adapter-vercel](https://github.com/sveltejs/kit/tree/master/packages/adapter-vercel#adapter-vercel).
+- [adapter (kit.svelte.dev)](https://kit.svelte.dev/docs/configuration#adapter).
+- [Adapters (kit.svelte.dev)](https://kit.svelte.dev/docs/adapters).
+- [adapter-vercel (github.com)](https://github.com/sveltejs/kit/tree/master/packages/adapter-vercel#adapter-vercel).
+
+----
+
+Reference: [Getting started (kit.svelte.dev)](https://kit.svelte.dev/docs/introduction#getting-started).

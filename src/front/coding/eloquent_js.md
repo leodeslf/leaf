@@ -113,7 +113,7 @@ console.log(half(2));
 - The `push` **adds to the end** and returns the new length.
 - The `pop` **removes the last one** and returns it.
 - The `unshift` **adds to the beginning** and returns the new length.
-- The `shift` **removes the last one** and returns it.
+- The `shift` **removes the first one** and returns it.
 - The `slice(start, end)`:
   - **Returns an array of elements** between `start` and `end`.
   - The `start` is inclusive, the `end` is exclusive.
@@ -497,7 +497,7 @@ console.log(commentedCode.replace(/\/\*[^]*\*\//g, ""));
 // --> x = 1  10
 ```
 
-- On a _greedy_ way, it will take the first "start" and the last "end" to match as much as it can.
+- In a _greedy_ way, it will take the first "start" and the last "end" to match as much as it can.
 - To take a smaller match, we can put a question mark after the repetition operators to make them non-greedy (`+?`, `*?`, `??`, `{}?`).
 
 Example:
@@ -822,6 +822,8 @@ We can influence the order of elements when moving through with `TAB` using the 
 
 ### The form as a whole
 
-- Each `<form>` element contains an array-like collection of elements on it's `elements` property.
+- Each `<form>` element contains an array-like collection of elements on its `elements` property.
 
-<!-- https://eloquentjavascript.net/ -->
+----
+
+Reference: [Eloquent JavaScript (eloquentjavascript.net)](https://eloquentjavascript.net/).

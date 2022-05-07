@@ -17,9 +17,11 @@ react-scripts build
 ```
 
 ```bash
-# Scripts
+# Use with npm scripts
 npm start
 npm run build
 ```
 
-More at [Quick Start](https://create-react-app.dev/docs/getting-started#quick-start).
+----
+
+Reference: [Quick Start (create-react-app.dev)](https://create-react-app.dev/docs/getting-started/#quick-start).

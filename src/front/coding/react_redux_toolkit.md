@@ -88,7 +88,9 @@ function App() {
 }
 ```
 
-More at:
+----
 
-- [Getting Started with Redux Toolkit](https://redux-toolkit.js.org/introduction/getting-started).
-- [Getting Started with React Redux](https://react-redux.js.org/introduction/getting-started).
+Reference:
+
+- [Getting Started with Redux Toolkit (redux-toolkit.js.org)](https://redux-toolkit.js.org/introduction/getting-started).
+- [Getting Started with React Redux (react-redux.js.org)](https://react-redux.js.org/introduction/getting-started).

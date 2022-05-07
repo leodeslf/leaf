@@ -11,13 +11,15 @@ ng new <project-name>
 ng add <dependency-name>
 ng generate component <component-name>
 ng serve --port <number> --open
-ng build --configuration <producion|development>
+ng build --configuration <production|development>
 ```
 
 ```bash
-# Scripts
+# Use with npm scripts
 npm start
 npm run build
 ```
 
-More at [CLI Overview and Command Reference](https://angular.io/cli).
+----
+
+Reference: [CLI Overview and Command Reference (angular.io)](https://angular.io/cli).
