@@ -71,4 +71,6 @@ git pull <remote-name> <branch-name> # If -u wasn't set before
 git pull --allow-unrelated-histories # If repos doesn't match (local/remote)
 ```
 
-More at [Reference](https://git-scm.com/docs).
+----
+
+Reference: [Reference (git-scm.com)](https://git-scm.com/docs).

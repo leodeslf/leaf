@@ -4,7 +4,7 @@ Course by David Hogue.
 
 ## Today's Interaction Designer
 
-Interaction Design was introduced by Bill Moggride and Bill Verplank in the mid-1980s.
+Interaction Design was introduced by Bill Moggride and Bill Verplank in the 1980s.
 
 ### Project types and deliverables
 
@@ -59,7 +59,7 @@ By researching we need to:
 
 #### Craft
 
-**Design** from an abductive reasoning, critical thinking, and problem-solving.
+**Design** from an abductive reasoning, critical thinking, and problem-solving perspective.
 
 **Prototype**, evaluate if our design decisions are working, and identify alternatives if not.
 
@@ -146,11 +146,11 @@ Starting in 1910, Max Wertheimer, a German psychologist, noticed that a series o
 
 #### Gestalt Laws
 
-* Figure-ground: how we organize our perceptions in terms of foreground objects, the clearly defined ones, and background objects, which may be unbounded or vaguely defined.
-* Simplicity: how we organize our perceptions into the simplest possible experience.
-* Proximity: objects near one to other in space or time, are perceived as being a group.
-* Similarity: objects with similar characteristics, such as form, color, size, and brightness, are perceived as belonging together.
-* Common fate: how objects moving together are perceived as belonging together.
+* *Figure-ground*: how we organize our perceptions in terms of foreground objects, the clearly defined ones, and background objects, which may be unbounded or vaguely defined.
+* *Simplicity*: how we organize our perceptions into the simplest possible experience.
+* *Proximity*: objects near one to other in space or time, are perceived as being a group.
+* *Similarity*: objects with similar characteristics, such as form, color, size, and brightness, are perceived as belonging together.
+* *Common fate*: how objects moving together are perceived as belonging together.
 * And others like closure, continuity, and symmetry.
 
 ### Affordances
@@ -158,7 +158,6 @@ Starting in 1910, Max Wertheimer, a German psychologist, noticed that a series o
 * Physical characteristics of objects make possible what we are able to do.
 * We recognize when we are able to interact.
 * Affordances are relative to the individual and their ability to interact.
-
 * It doesn't require conscious attention and thought.
 * It arises from our intrinsic understanding of our physical relationship with the world around us.
 
@@ -174,7 +173,7 @@ We might use common depth cues, like:
 
 ### Motivation
 
-We need to understand both the user **goals** and **needs**. As we know what actually drives people to do things, we can describe context and goals more efficiently:
+We need to understand both the user's **goals** and **needs**. As we know what actually drives people to do things, we can describe context and goals more efficiently:
 
 * People
 * Situation
@@ -187,7 +186,7 @@ We need to understand both the user **goals** and **needs**. As we know what act
 
 ##### Locus of control
 
-* External - Extrinsic motivation: when people behavior is influenced by external factors, usually things they **need / are obligated to**, or ends in rewards or earnings.
+* External - Extrinsic motivation: when people's behavior is influenced by external factors, usually things they **need/are obligated to**, or ends in rewards or earnings.
 * Internal - Intrinsic motivation: when people do something because they **want to**, because it's personally rewarding.
 
 ##### David McClelland described motivation as
@@ -224,7 +223,7 @@ As the designers, we need to provide **structure**, **hierarchy** and guide atte
 
 ##### Three stages of memory
 
-1. **Sonsory store**: Very brief snapshot of incoming sensory information; most of it will be lost.
+1. **Sensory store**: Very brief snapshot of incoming sensory information; most of it will be lost.
 1. **Working**: Short-duration and limited capacity memory for active thinking and processing.
 1. **Long-term**: Long duration and very large capacity, this is where we store information for the future.
 
@@ -370,7 +369,7 @@ Emotions are subjective and difficult to define and measure, they may vary by in
 
 #### Designing for positive experiences
 
-Increase the **frequency** and **duration** if positive emotional experiences. Decrease or avoid the negative emotional experiences.
+Increase the **frequency** and **duration** of positive emotional experiences. Decrease or avoid the negative emotional experiences.
 
 #### Classifying emotions
 
@@ -408,7 +407,7 @@ A continuous stream of surprising new things is unsustainable.
 * Ease of Use
 * Pleasurable (Delight)
 
-Making something **functional and reliable is not enough** to be "ready to use". We should think about it's ease of use and the rewarding/pleasurable part before launching it.
+Making something **functional and reliable is not enough** to be "ready to use". We should think about its ease of use and the rewarding/pleasurable part before launching it.
 
 #### Incorporating Delight
 
@@ -488,7 +487,7 @@ Making something **functional and reliable is not enough** to be "ready to use".
 * In real life, most reinforcement is not this predictable and consistent.
 * Reinforcement is still effective even if it is not delivered for every behavior.
 
-Reinforcement can be scheduled as something happens certain **amount of times** or the **amount of time** since the last time something happens.
+Reinforcement can be scheduled as something happens a certain **amount of times** or the **amount of time** since the last time something happens.
 
 I.e.:
 
@@ -1001,7 +1000,7 @@ Small pieces of text found throughout the interface, important for clarity and g
 
 #### Target size
 
-Small and/or faraway targets are harder to reach and tap quickly and accurately. Instead, use larger and/or near target.
+Small and/or faraway targets are harder to reach and tap quickly and accurately. Instead, use larger and/or near targets.
 
 ### Gestures
 
@@ -1253,7 +1252,7 @@ By Ben Shneiderman, PhD.
 
 #### Accessibility
 
-**All people shall be able** to perceive, understand, navigate, and interact with a product, **regardless or their abilities**, and they can contribute equally.
+**All people shall be able** to perceive, understand, navigate, and interact with a product, **regardless of their abilities**, and they can contribute equally.
 
 Accessibility is often a legal requirement.
 

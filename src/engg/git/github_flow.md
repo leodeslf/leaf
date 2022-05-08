@@ -1,6 +1,6 @@
 # GitHub Flow
 
-A branching model made by the GitHub team.
+A *branching model* made by the GitHub team.
 
 ## Branches
 
@@ -30,7 +30,9 @@ Common steps in GitHub Flow to add a new feature/change:
 1. Wrap the body at 72 characters.
 1. Use the body to explain *what* and *why* (not how).
 
-More at:
+----
 
-- [GitHub flow (GitHub Docs)](https://docs.github.com/en/get-started/quickstart/github-flow).
-- [GitHub Flow (github.io)](https://githubflow.github.io/).
+Reference:
+
+- [GitHub Flow (docs.github.com)](https://docs.github.com/en/get-started/quickstart/github-flow).
+- [GitHub Flow (githubflow.github.io)](https://githubflow.github.io/).
