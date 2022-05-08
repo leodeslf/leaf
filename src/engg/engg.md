@@ -1,6 +1,6 @@
 # Software Engineering
 
-Principles and philosophies of software engineering.
+Some *principles and mindsets* of software engineering.
 
 >The question of whether computers can think is just like the question of whether submarines can swim. -Edsger W. Dijkstra, 1986
 
@@ -35,19 +35,15 @@ The ten commandments of Egoless Programming:
 - *Don't be "the guy in the room"*.
 - Critique code instead of people, *be kind to the coder*, no to the code.
 
-## Extreme Programming (XP)
-
-### You Aren't Gonna Need It (YAGNI)
-
-Only implement things when you **need** them, don't do them because you *think* you are gonna need it later.
-
-### Do The Simplest Thing That Could Possibly Work (DTSTTCPW)
-
-Prioritize requirements and **do only the important** things. Don't do things you don't need, don't improve things if not needed.
+More at [The Ten Commandments of Egoless Programming (blog.codinghorror.com)](https://blog.codinghorror.com/the-ten-commandments-of-egoless-programming/).
 
 ## Keep it Simple, Stupid! (KISS)
 
 Each method should solve **only one** problem. More problems, options, or conditions should be solved by another block of code to be easily maintained.
+
+>It seems that perfection is reached not when there is nothing left to add, but when there is nothing left to take away. -Antoine de Saint Exupéry
+
+...
 
 >Simplicity is the ultimate sophistication. -Leonardo da Vinci
 
@@ -55,70 +51,10 @@ Each method should solve **only one** problem. More problems, options, or condit
 
 >Less is more. -Mies Van Der Rohe
 
-...
-
->It seems that perfection is reached not when there is nothing left to add, but when there is nothing left to take away. -Antoine de Saint Exupéry
-
-## SOLID
-
-Also known as class design principles.
-
-### Single Responsibility Principle (SRP)
-
-Similar to the goal of KISS, code that follows this principle is easy to understand, maintain, and modify. It's also similar to DRY if done correctly. The goal is to **isolate** requirements and functionality **in one place**.
-
->A class should have only one responsibility. A class should have one, and only one reason to change.
-
-### Open/Closed Principle (OCP)
-
-Scalability should always be present, but additional features should not make changes just for the sake of adaption or customization. If something is working and tested, it should be **extended** making use of inheritance or prototyping, **not modified**.
-
->A class should be open for extension, but closed for modification.
-
-### Liskov Substitution Principle (LSP)
-
-A derived element should *be* it's base element and more. In other words, if S is a subtype of T, then any of type T may be substituted by any S. As a subtype should **inherit** it's parent requirements, and **include additional features** (not to replace).
-
->Derived classes must be able to substitute for their base classes.
-
-### Interface Segregation Principle (ISP)
-
-The **specific is better**, easier to develop, test, and maintain, it respects the SRP and KISS principles. We prefer to use many specific and easy-to-use interfaces than a single and complex one. It's intended to **keep a system decoupled** and thus easier to use and maintain.
-
->Many client-specific interfaces are better than one general-purpose interface.
-
-### Dependency Inversion Principle (DIP)
-
-Make your modules to **depend on abstractions**/interfaces, **not in details** of concrete implementation. Also, high-level modules should not depend on low-level ones, and both should depend on abstractions.
-
->Depend upon abstractions, not concretions.
-
-## MoSCoW
-
-A **prioritization method** to reach a common understanding of the *importance* of each requirement among a team. Developed by Dai Clegg in 1994.
-
-### Must Have
-
-They are **critical** for the current release to be delivered. If a requirement like this is not included, the project should be considered a *failure*.
-
-### Should Have
-
-They are **important** but not necessary for the current release. They are just *not needed now*, or the requirement can be satisfied in another way.
-
-### Could Have
-
-They are **desirable** but not necessary. Taken as a  *suggestion to improve* the product for a low cost in development. These are included if there is enough time.
-
-### Won't Have
-
-They are least-critical and **not planned** for the current release. In general they are either *reconsidered* for a future release or *dropped* at all.
-
 ## Worth Mentioning
 
 - **If it ain't broke, don't fix it**.
 - **Measure twice, cut once**.
-- **Ockham's Razor** (the simplest design should be selected).
-- **Law of Demeter** (only talk to your friends).
-- **Big Design Up Front** (BDUF).
+- **Ockham's Razor**, the simplest design should be selected.
+- **Law of Demeter**, only talk to your friends, (Clean Coder, page 97).
 - **Avoid Premature Optimization**.
-- **Minimum Viable Product** (MVP).
