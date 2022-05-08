@@ -1,6 +1,6 @@
 # Design Patterns
 
-Design patterns have three main benefits as they are:
+Design patterns have three main *benefits* as they are:
 
 - *Proven solution*, tested and optimized by many developers many times.
 - *Easily reusable*, they are the generic tool for specific problems.
@@ -50,7 +50,7 @@ Pattern|Description
 **Interpreter**|Provides *a representation for a given language's grammar* along with the corresponding interpreter.
 **Iterator**|Allows clients to *sequentially access all the elements of a collection* without exposing its underlying representation. Pattern also known as Cursor.
 **Mediator**|An interface that *encapsulates communication between a group of objects* as a central authority, keeping those objects from referring to each other directly.
-**Memento**|Offers a way to *capture and save an object's internal state*, letting us to reuse or restore it later. Pattern also known as Token.
+**Memento**|Offers a way to *capture and save an object's internal state*, letting us reuse or restore it later. Pattern also known as Token.
 **Observer**|A subscription model to *notify and update objects from a one-to-many dependency* based on the dependency's events. Pattern also known as Publish/Subscribe.
 **State**|An object that *alters other object's behavior when its internal state changes*, those objects will appear to change its class. Pattern also known as Objects for State.
 **Strategy**|*A family of interchangeable algorithms encapsulated in different classes* to be used by a single one through a generic interface. Pattern also known as Policy.
