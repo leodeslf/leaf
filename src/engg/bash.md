@@ -34,6 +34,48 @@ cp -t <dest> <src> # Copy all src into the dest dir
 cp -T              # Force dest to be taken as a normal file (not a dir)
 ```
 
+## `date`
+
+```bash
+date         # Prints the current date and time
+date +%c     # Date and time: locale
+date +%D     # Date: mm/dd/yy
+date +%F     # Date: yyyy-mm-dd
+date +%x     # Date: locale
+date +%C     # Century: the first two digits of the year
+date +%y     # Year: yy
+date +%Y     # Year: yyyy
+date +%b, %h # Month: abbreviated name
+date +%B     # Month: name
+date +%m     # Month: mm, leading zero
+date +%U     # Week of the year: [1, n], week starts on Sunday
+date +%V     # Week of the year: [1, n], week starts on Monday
+date +%W     # Week of the year: [0, n], week starts on Monday
+date +%a     # Day: abbreviated name
+date +%A     # Day: name
+date +%j     # Day of the year: ddd, leading zeroes
+date +%d     # Day of the month: dd, leading zero
+date +%e     # Day of the month: dd, leading space
+date +%w     # Day of the week: [0, 6], 0 is Sunday
+date +%u     # Day of the week: [1, 7], 1 is Monday
+date +%T     # Time: HH:MM:SS, 24-hour
+date +%R     # Time: HH:MM, 24-hour
+date +%r     # Time: locale, 12-hour
+date +%X     # Time: locale, 24-hour
+date +%H     # Hour: HH, leading zero, 24-hour
+date +%I     # Hour: HH, leading zero, 12-hour
+date +%k     # Hour: HH, leading space, 24-hour
+date +%l     # Hour: HH, leading space, 12-hour
+date +%M     # Minutes: MM, leading zero
+date +%s     # Seconds: since 1970-01-01 00:00:00
+date +%S     # Seconds: SS, leading zero
+date +%N     # Nanoseconds
+date +%z     # Timezone: HHMM
+date +%:z    # Timezone: HH:MM
+date +%::z   # Timezone: HH:MM:SS
+date +%Z     # Timezone: name
+```
+
 ## `df`
 
 ```bash
@@ -81,8 +123,8 @@ echo -E    # Disables escaped chars.
 
 ```bash
 find [src-dir]          # Find files in src dir/s
-find -name "<regex>"   # By name
-find -iname "<regex>"  # By name, case-insensitive
+find -name "<regex>"    # By name
+find -iname "<regex>"   # By name, case-insensitive
 find -type d            # Only directories
 find -type f            # Only files
 find -size <num><unit>  # By size
@@ -255,7 +297,14 @@ wc -w, --words # Print the word counts
 
 ## Other
 
-### Not options
+### Aliases
+
+```bash
+# ~/.bashrc
+alias <cmd-alias>='<cmd>' # Defines cmd-alias as an alias for cmd
+```
+
+### Arguments Not options
 
 ```bash
 [cmd] -- [args]
@@ -263,7 +312,7 @@ wc -w, --words # Print the word counts
 # E.g.: `rm -- -r` # Remove file called "-r"
 ```
 
-### Concatenate commands
+### Concatenate Commands
 
 ```bash
 <cmd1> \
@@ -304,9 +353,14 @@ wc -w, --words # Print the word counts
 # and standard error from cmd1 as standard input for cmd2
 ```
 
-<!-- https://ss64.com/bash/ -->
-<!-- https://guide.bash.academy/ -->
-<!-- https://tldp.org/LDP/Bash-Beginners-Guide/html/ -->
-<!-- https://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html -->
+----
 
-<!-- awk -->
+Reference:
+
+- [An A-Z Index of the Linux Command Line (ss64.com/bash)](https://ss64.com/bash/).
+- [Bash Guide for Beginners (tldp.org)](https://tldp.org/LDP/Bash-Beginners-Guide/html/).
+- [Bash Programming - Introduction (tldp.org)](https://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html).
+- [Bash Reference Manual (gnu.org)](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html)
+- [Linux Manual Pages (man7.org)](https://man7.org/linux/man-pages/dir_by_project.html)
+- [Shell Workshop (udacity.com)](https://classroom.udacity.com/courses/ud206).
+- [The Bash Guide (guide.bash.academy)](https://guide.bash.academy/).
