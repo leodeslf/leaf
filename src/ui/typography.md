@@ -13,7 +13,7 @@ Types can be classified by functionality, style, by Serif or Sans Serif, by the 
 Differentiation by functionality:
 
 - **Text Type**: It's designed to be read at *small sizes* and *large quantities* of text. The idea for them is to make it *effortless to read*, they should be invisible for the reader.
-- **Display Type**: It's intended to be used at *big sizes* but in a *small amount* of text, most of them are *emotional and expressive*. They are designed to get *noticed and draw attention*.
+- **Display Type**: It's to be used at *big sizes* but in a *small amount* of text, most of them are *emotional and expressive*. They are designed to get *noticed and draw attention*.
 
 Classification by Serif vs Sans Serif:
 
@@ -22,7 +22,7 @@ Classification by Serif vs Sans Serif:
 
 Serif subclasses:
 
-- **Bracketed Serif**: It has a smooth and *curved transition* from the Serif to the letter body.
+- **Bracketed Serif**: It has a smooth and *curved transition* from the Serif to the letterform.
 - **Unbracketed Serif**: It forms a *sharp 90 degree corner* between the Serif and the body.
 - **Slab Serif**: An unbracketed Serif, sometimes square. Uses the *same width for its strokes and Serifs*. Has a *lack of contrast* (or no contrast at all) between strokes (mid 1800s).
 
@@ -47,7 +47,7 @@ Styles often used as Display Type:
 
 It's a **group of related typefaces** which share *similar characteristics*, designed to work together fulfilling different roles at the same text body. There are *three common variations* for a type family, the **weight**, the **width**, and the **slope**. The complete name for each member starts by the name of the typeface family, followed by its weight, width, and slope variation names. There isn't a single way to call these variations, we can do it as follows. Each of these variations is often called a **Font**.
 
-Weight terms in ascending order (thinner to thicker):
+Weight terms in ascending order (from thinner to thicker):
 
 - *Extra Light*.
 - *Roman or Normal*.
@@ -55,7 +55,7 @@ Weight terms in ascending order (thinner to thicker):
 - *Bold*.
 - *Black*.
 
-Width terms in ascending order:
+Width terms in ascending order (from narrowest to widest):
 
 - *Ultra Condensed*.
 - *Condensed*.
@@ -191,5 +191,5 @@ Cases help us define and control *mood* and *voice volume* for the message.
 Reference:
 
 - [Graphic Design Foundations: Typography](https://www.linkedin.com/learning/graphic-design-foundations-typography/) (Ina Saltz).
-- Typography Referenced (page <!-- 8, 52,  -->320).
+- Typography Referenced (page 320).
 <!-- - [The 33 Laws of Typography](https://www.linkedin.com/learning/the-33-laws-of-typography/) (Jill Butler). -->
