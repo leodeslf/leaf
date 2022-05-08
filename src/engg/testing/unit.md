@@ -1,7 +1,5 @@
 # Unit Testing
 
-From the book Building Secure & Reliable Systems (Google).
-
 Unit testing is an approach that **prevents the release of code that contains bugs**. Typically run locally as part of engineering workflows to provide feedback before a commit is made and any change is sent into the repository's mainline branch.
 
 This technique involves breaking software components into smaller, isolated code blocks called units to be tested. *A unit has no external dependencies*. The tests consist of code that exercises a given unit with different inputs.
@@ -31,3 +29,7 @@ We should *remove direct calls* and replace them with **abstractions**. This dra
 >These abstractions and their corresponding implementations are called *mocks*, *stubs*, or *fakes*. Engineers sometimes use these words interchangeably, despite the fact that the concepts vary in implementation complexity and features, so it's important to ensure everyone at the organization uses consistent vocabulary.
 
 Another fact to keep in mind is that, if we have to completely rewrite the tests every time a method changes, we may need to rethink the tests or even the architecture of the system itself.
+
+----
+
+Reference: Building Secure & Reliable Systems (page 272).
