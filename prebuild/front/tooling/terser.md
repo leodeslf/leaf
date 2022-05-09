@@ -10,16 +10,18 @@ npm i -g terser
 
 ```bash
 # Use
-terser [options] <file>
+terser [option] <file>
 ```
 
 Options:
 
+- `--comments <all|false>`
 - `-c`, `--compress`
+- `--keep-classnames`
+- `--keep-fnames` (keep function names)
 - `-m`, `--mangle reserved=[reserved-words]`
 - `-o`, `--output <file>`
-- `--comments [all|false]`
-- `--keep-classnames`
-- `--keep-fmanes` (keep function names)
 
-More at [CLI Usage](https://terser.org/docs/cli-usage).
+----
+
+Reference: [CLI Usage (terser.org)](https://terser.org/docs/cli-usage).

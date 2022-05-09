@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="🌱 My learning docs and notes.">
+    <meta name="description" content="🌱 Learning docs & notes about my Frontend Development journey, Leo de S.L.F.">
     <meta name="author" content="Leonardo de S.L.F"/>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
@@ -14,6 +14,43 @@
     <title>Docs & Notes</title>
   </head>
   <body>
+    <label id="dark-theme">
+      <input id="dark-theme__input" type="checkbox"/>
+      <span></span>
+    </label>
+    <script>
+      const lastChoise = localStorage.getItem('color_scheme_choise');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+      // Prioritize user preferences over system settings.
+      const currentIsDark = lastChoise !== null
+        ? lastChoise === 'true'
+        : prefersDark.matches;
+
+      // Checkbox (checked = dark, unchecked = light).
+      const darkThemeCheckbox = document.getElementById('dark-theme__input');
+      darkThemeCheckbox.checked = currentIsDark;
+      darkThemeCheckbox.addEventListener('input', toggleTheme);
+
+      if (currentIsDark) {
+        document
+          .documentElement
+          .classList
+          .add("dark");
+      }
+
+      function toggleTheme({target}) {
+        localStorage.setItem('color_scheme_choise', target.checked);
+        document
+          .documentElement
+          .classList
+          .toggle("dark");
+      }
+    </script>
+    
+      <a id="home" href="/">🌱</a>
+      
+    
     <h1>
       <a href="/">🌱 Docs & Notes</a>
     </h1>
@@ -21,12 +58,15 @@
       <h2>World Wide Web</h2>
 <p>The World Wide Web (WWW), also known as the Web, is an <strong>Information System</strong> in which resources are accessible over the <em>Internet</em>, linked by <em>hyperlinks</em>, identified by a <em>Uniform Resource Identifier</em> (URI), and served via the <em>Hypertext Transfer Protocol</em> (HTTP).</p>
 <p>It was invented by <strong>Tim Berners-Lee</strong> in 1989 while working at CERN in Geneva, Switzerland. He also wrote the very first <em>Browser</em> (called WorldWideWeb, later renamed Nexus to avoid confusion), a software to navigate over the Internet.</p>
-<p>The Web was originally meant to transfer documents written in <em>Hypertext Markup Laguage</em> (HTML) called Webpages. Multiple Webpages sharing a common <em>domain name</em> make up a Website. Resources are stored in computers running <em>web servers</em>, which are the programs that respond to resource requests.</p>
-<!-- https://en.wikipedia.org/wiki/World_Wide_Web -->
-<!-- https://www.w3.org/People/Berners-Lee/WorldWideWeb.html -->
+<p>The Web was originally meant to transfer documents written in <em>Hypertext Markup Language</em> (HTML) called Webpages. Multiple Webpages sharing a common <em>domain name</em> make up a Website. Resources are stored in computers running <em>web servers</em>, which are the programs that respond to resource requests.</p>
+<p>More at:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/World_Wide_Web">World Wide Web (en.wikipedia.org)</a>.</li>
+<li><a href="https://www.w3.org/People/Berners-Lee/WorldWideWeb.html">The WorldWideWeb browser (w3.org)</a>.</li>
+</ul>
 <h3>HTTP</h3>
 <p>The HTTP protocol exchanges data through <em>requests-response</em> messages.</p>
-<!-- https://www.w3.org/Protocols/rfc2616/rfc2616.html -->
+<p>More at <a href="https://www.w3.org/Protocols/rfc2616/rfc2616.html">Hypertext Transfer Protocol -- HTTP/1.1 (w3.org)</a>.</p>
 <h4>HTTP Request</h4>
 <p>A request, or <strong>request-line</strong>, begins with a <em>method</em> token, followed by the <em>request uri</em> and the <em>protocol version</em>. All these elements are separated by a space character.</p>
 <p>Example:</p>
@@ -47,8 +87,8 @@
 </ul>
 <p>Example:</p>
 <pre class="language-http"><code class="language-http"><span class="token response-status"><span class="token http-version property">HTTP/3.0</span> <span class="token status-code number">505</span> <span class="token reason-phrase string">HTTP Version not supported</span></span></code></pre>
-<!-- https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.1.1 -->
-<h4>Uniform Resourse Identifier</h4>
+<p>More at <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">Status Code Definitions (w3.org)</a>.</p>
+<h4>Uniform Resource Identifier</h4>
 <p>Example:</p>
 <pre class="language-uri"><code class="language-uri"><span class="token scheme">https<span class="token scheme-delimiter">:</span></span><span class="token authority"><span class="token authority-delimiter">//</span><span class="token host">www.example.com.uy</span><span class="token port-segment"><span class="token port-delimiter">:</span><span class="token port">80</span></span></span><span class="token path"><span class="token path-separator">/</span>path<span class="token path-separator">/</span>src</span><span class="token query"><span class="token query-delimiter">?</span><span class="token pair"><span class="token key">key</span>=<span class="token value">value</span></span></span><span class="token fragment"><span class="token fragment-delimiter">#</span>frag</span></code></pre>
 <p>Components:</p>
@@ -117,14 +157,11 @@
     </main>
     <footer>
       <p>
-        🌱 Learning
+        Learning
         <a href="/">docs & notes</a>
         about my Frontend Development journey,
         <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
       </p>
     </footer>
-    
-      <a id="home" href="/">🏡</a>
-    
   </body>
 </html>

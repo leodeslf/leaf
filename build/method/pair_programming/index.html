@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🌱 Learning docs & notes about my Frontend Development journey, Leo de S.L.F.">
+    <meta name="author" content="Leonardo de S.L.F"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link rel="stylesheet" href="/style/style.css"/>
+    <link rel="stylesheet" href="/style/syntax-highlight.css"/>
+    <link rel="stylesheet" href="/style/print.css" media="print"/>
+    <link rel="stylesheet" href="/style/small.css" media="(max-width: 599px)"/>
+    <title>Docs & Notes</title>
+  </head>
+  <body>
+    <label id="dark-theme">
+      <input id="dark-theme__input" type="checkbox"/>
+      <span></span>
+    </label>
+    <script>
+      const lastChoise = localStorage.getItem('color_scheme_choise');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+      // Prioritize user preferences over system settings.
+      const currentIsDark = lastChoise !== null
+        ? lastChoise === 'true'
+        : prefersDark.matches;
+
+      // Checkbox (checked = dark, unchecked = light).
+      const darkThemeCheckbox = document.getElementById('dark-theme__input');
+      darkThemeCheckbox.checked = currentIsDark;
+      darkThemeCheckbox.addEventListener('input', toggleTheme);
+
+      if (currentIsDark) {
+        document
+          .documentElement
+          .classList
+          .add("dark");
+      }
+
+      function toggleTheme({target}) {
+        localStorage.setItem('color_scheme_choise', target.checked);
+        document
+          .documentElement
+          .classList
+          .toggle("dark");
+      }
+    </script>
+    
+      <a id="home" href="/">🌱</a>
+      
+    
+    <h1>
+      <a href="/">🌱 Docs & Notes</a>
+    </h1>
+    <main>
+      <h2>Pair Programming</h2>
+<p>Pair programming is a technique from the eXtreme Programming software development agile method in which all code to be sent into production is designed and developed by <strong>two people working together at a single station</strong>.</p>
+<p>The two roles are often called the <em>driver</em> and the <em>navigator</em>. The driver, the one who actually codes, has the control over the micro tasks, the low-level details of syntax and coding style. While the navigator is free to consider higher-level issues and scope, keeping in mind the big picture. Often, however, there are no roles at all, both programmers are simply co-equal authors <em>working in a cooperative manner</em>.</p>
+<p>We should take into consideration that first, pairing is <em>optional</em> for everyone, and second, pairing is <em>intermittent</em>. There are many good reasons to code alone from time to time. In fact, pairing should be done by about 50% of the team or so. For the most part, <em>this is an individual and team choice</em>.</p>
+<h3>A Similar Approach</h3>
+<p><em>Mob programming</em> is a similar technique that involves <em>more than two people</em>, but keeps only one of them in the driver’s role. It's not as popular as pair programming because complexity increases with the number of members.</p>
+<h3>How to Pair Programming</h3>
+<p>On a common working flow we often follow four steps:</p>
+<ol>
+<li>Start with <em>a well-defined task</em>.</li>
+<li>If needed, <em>divide the task</em> into smaller ones.</li>
+<li>Agree on <em>a tiny goal at a time</em> (define a unit test or a commit message).</li>
+<li>Regularly <em>switch roles</em>, active participation keeps energy levels up.</li>
+</ol>
+<p>There are some &quot;rules&quot; that help us take care of the team's mood and productivity. First, <em>pairs are not scheduled</em>, programmers are the ones who actually know when they need to form and break up the pair. Second, <em>pairs are generally short-lived</em>, sessions can last as long as a day, but more often they last for about an hour or even less.</p>
+<h3>Benefits of Pair Programming</h3>
+<p>The overall benefits of pairing are <strong>higher-quality</strong> on the code base without impacting time to deliver, and <strong>better communication</strong> among team members.</p>
+<blockquote>
+<p>Don't Go into Code Alone. -The Pragmatic Programmer</p>
+</blockquote>
+<p>Having people working together helps the team with the <strong>knowledge sharing</strong> on technology and domain preventing silos of knowledge. When two minds with different experiences and perspectives understand and discuss a problem, more alternatives come into consideration which <em>improves the chances of finding a good solution</em>. It can also speed up the process as one member might have the required knowledge on a given area to help or guide the other, thus <em>eliminating delays</em>.</p>
+<p>Since pairing promotes <em>constant communication</em> and knowledge sharing, it can help with a <strong>fast onboarding of new team members</strong>. Changes on a team have an impact on the team flow, people just need some time to get to know each other. New joiners can get to know the project, the business, and the organization with the help of their pair as they communicate a lot more than they need when working solo.</p>
+<blockquote>
+<p>Organizations which design systems are constrained to produce designs which are <em>copies of the communication</em> structures of these organizations. This is, the social structures and communication pathways of the team will be mirrored in the product being developed. But most importantly, development teams that include users will produce software that clearly reflects that involvement, and teams that don't bother will reflect that, too. -Conway's Law (Malvin Conway, 1967)</p>
+</blockquote>
+<p>Pair programming allows us to <strong>combine two models of thinking</strong>. The driver is in &quot;tactical&quot; mode, thinking about the <em>little details</em>, the current line of code. Meanwhile, the navigator is more &quot;strategically&quot;, considering the <em>big picture</em>, the next steps.</p>
+<p>Consistent pairing makes sure that every line of code was touched or seen by at least two people. This increases the chances that anyone on <em>the team feels confortable</em> changing the code almost anywhere because we trigger a <strong>collective code ownership</strong>. It also makes the codebase more consistent than it would be with single coders only.</p>
+<blockquote>
+<p>Collective code ownership abandons any notion of individual ownership of modules. The code base is owned by the entire team and anyone may make changes anywhere. -Martin Fowler</p>
+</blockquote>
+<p>In a good sense, we are forced to discuss approaches and solutions instead of only thinking them through in our own head. <em>Saying and explaining things</em> out loud pushes us to <strong>reflect</strong> on what we are doing, if we really have the right understanding, or if we really have a good solution.</p>
+<p>Pairing makes it easier to catch errors, the little, and the bigger ones. We are actually doing <strong>code review on-the-go</strong>, specially the navigator, but also the driver, which should always be talking through the code being written, so it tends to pay more attention than when working alone. It also makes <em>refactoring</em> easier because we can instantly discuss ideas about the approach. That's why we use to have <em>fewer defects</em> on the resulting code, which can save a considerable amount of time later on.</p>
+<blockquote>
+<p>By having a second party look at the programm, ...we increase the possibility of eliminating at least the most obviously inefficient areas. -Gerald M. Weinberg, Egoless Programming (1971)</p>
+</blockquote>
+<p>The responsibility of working with another person leads us to <strong>keep focus</strong> for courtesy and respect. We're more likely to <em>avoid potentially embarrassing decisions</em> when someone is actively watching. The parts agree on intervals to take <em>small breaks</em> and <em>return quickly</em> to the task. One of them might have more focus and help &quot;awaken&quot; the other if they lose it, that's why the role needs to be switched often.</p>
+<p><strong>Keeping the team's work in progress low</strong> is important (and one of the core principles of Kanban) to improve team flow. It helps us focus on the current task. The overall team <em>productivity often increases</em> if the team has a WIP limit in place, because multitasking is not just inefficient on an individual, but also on the team level.</p>
+<blockquote>
+<p>...it does seem that the general level of competence of such a group is likely to rise itself... -Gerald M. Weinberg, Egoless Programming (1971)</p>
+</blockquote>
+<hr>
+<p>Reference:</p>
+<ul>
+<li>Clean Agile (page 127).</li>
+<li><a href="http://www.extremeprogramming.org/rules/collective.html">Collective Ownership (extremeprogramming.org)</a>.</li>
+<li><a href="https://martinfowler.com/articles/on-pair-programming.html">On Pair Programming (martinfowler.com)</a>.</li>
+<li><a href="https://en.wikipedia.org/wiki/Pair_programming">Pair Programming (wikipedia.org)</a>.</li>
+<li><a href="http://www.extremeprogramming.org/rules/pair.html">Pair Programming (extremeprogramming.org)</a>.</li>
+<li>Software Engineering (page 71).</li>
+<li>The Pragmatic Programmer (page 424).</li>
+<li>The Psychology of Computer Programming (page 56).</li>
+</ul>
+
+    </main>
+    <footer>
+      <p>
+        Learning
+        <a href="/">docs & notes</a>
+        about my Frontend Development journey,
+        <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
+      </p>
+    </footer>
+  </body>
+</html>

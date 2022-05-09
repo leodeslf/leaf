@@ -10,7 +10,7 @@ npm i -g serve
 
 ```bash
 # Use
-serve <dir> [options]
+serve <dir> [option]
 ```
 
 Options:

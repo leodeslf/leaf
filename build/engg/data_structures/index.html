@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="🌱 My learning docs and notes.">
+    <meta name="description" content="🌱 Learning docs & notes about my Frontend Development journey, Leo de S.L.F.">
     <meta name="author" content="Leonardo de S.L.F"/>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
@@ -14,6 +14,43 @@
     <title>Docs & Notes</title>
   </head>
   <body>
+    <label id="dark-theme">
+      <input id="dark-theme__input" type="checkbox"/>
+      <span></span>
+    </label>
+    <script>
+      const lastChoise = localStorage.getItem('color_scheme_choise');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+      // Prioritize user preferences over system settings.
+      const currentIsDark = lastChoise !== null
+        ? lastChoise === 'true'
+        : prefersDark.matches;
+
+      // Checkbox (checked = dark, unchecked = light).
+      const darkThemeCheckbox = document.getElementById('dark-theme__input');
+      darkThemeCheckbox.checked = currentIsDark;
+      darkThemeCheckbox.addEventListener('input', toggleTheme);
+
+      if (currentIsDark) {
+        document
+          .documentElement
+          .classList
+          .add("dark");
+      }
+
+      function toggleTheme({target}) {
+        localStorage.setItem('color_scheme_choise', target.checked);
+        document
+          .documentElement
+          .classList
+          .toggle("dark");
+      }
+    </script>
+    
+      <a id="home" href="/">🌱</a>
+      
+    
     <h1>
       <a href="/">🌱 Docs & Notes</a>
     </h1>
@@ -138,8 +175,7 @@
 </ul>
 <h5>Full Binary Tree</h5>
 <p>A special binary tree in which <em>each node has either two or no children</em>. It's also known as &quot;a proper binary tree&quot;.</p>
-<p>Theorem:</p>
-<p>Let:</p>
+<p>Theorem, let:</p>
 <ul>
 <li><code>i</code> = number of internal nodes.</li>
 <li><code>n</code> = number of nodes.</li>
@@ -181,7 +217,7 @@
 <li><strong>Max heap property</strong>: any node is <em>greater than its childs</em> (the root is the largest).</li>
 <li><strong>Min heap property</strong>: any node is <em>smaller than its childs</em> (the root is the smallest).</li>
 </ul>
-<p><strong>Fibonacci Heap</strong> is a variation of heap DS. It consists of a <em>collection of trees</em> (instead of been a single one) in which <em>a node can have more than two or no children</em> at all. A pointer is kept to the minimum value, which is the root of a tree). All roots are connected as a circular doubly linked list.</p>
+<p><strong>Fibonacci Heap</strong> is a variation of heap DS. It consists of a <em>collection of trees</em> (instead of being a single one) in which <em>a node can have more than two or no children</em> at all. A pointer is kept to the minimum value, which is the root of a tree). All roots are connected as a circular doubly linked list.</p>
 <h5>Degenerate Binary Tree</h5>
 <p>Degenerate (or pathological) binary tree is a tree in which <em>every node has a single child either left or right</em> (there are no nodes with both left and right children).</p>
 <h5>Skewed Binary Tree</h5>
@@ -247,19 +283,23 @@
 <p>Notice that values in <code>a[i][j]</code> and <code>a[j][i]</code> should both be defined if it's an undirected graph, thus making the matrix symmetric (about the diagonal).</p>
 <h4>Adjacency List</h4>
 <p>It represents a graph as <em>an array of linked lists</em>. The index of the array represents a vertex, each element in its linked list represents an edge pair vertex.</p>
-<!-- https://www.programiz.com/dsa -->
+<hr>
+<p>Reference:</p>
+<ul>
+<li>Advanced Data Structures.</li>
+<li>Data Structures and Algorithms in C++.</li>
+<li>Handbook of Data Structures and Applications.</li>
+<li><a href="https://www.programiz.com/dsa">Learning DS &amp; Algorithms (programiz.com)</a>.</li>
+</ul>
 
     </main>
     <footer>
       <p>
-        🌱 Learning
+        Learning
         <a href="/">docs & notes</a>
         about my Frontend Development journey,
         <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
       </p>
     </footer>
-    
-      <a id="home" href="/">🏡</a>
-    
   </body>
 </html>

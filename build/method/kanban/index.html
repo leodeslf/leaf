@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🌱 Learning docs & notes about my Frontend Development journey, Leo de S.L.F.">
+    <meta name="author" content="Leonardo de S.L.F"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link rel="stylesheet" href="/style/style.css"/>
+    <link rel="stylesheet" href="/style/syntax-highlight.css"/>
+    <link rel="stylesheet" href="/style/print.css" media="print"/>
+    <link rel="stylesheet" href="/style/small.css" media="(max-width: 599px)"/>
+    <title>Docs & Notes</title>
+  </head>
+  <body>
+    <label id="dark-theme">
+      <input id="dark-theme__input" type="checkbox"/>
+      <span></span>
+    </label>
+    <script>
+      const lastChoise = localStorage.getItem('color_scheme_choise');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+      // Prioritize user preferences over system settings.
+      const currentIsDark = lastChoise !== null
+        ? lastChoise === 'true'
+        : prefersDark.matches;
+
+      // Checkbox (checked = dark, unchecked = light).
+      const darkThemeCheckbox = document.getElementById('dark-theme__input');
+      darkThemeCheckbox.checked = currentIsDark;
+      darkThemeCheckbox.addEventListener('input', toggleTheme);
+
+      if (currentIsDark) {
+        document
+          .documentElement
+          .classList
+          .add("dark");
+      }
+
+      function toggleTheme({target}) {
+        localStorage.setItem('color_scheme_choise', target.checked);
+        document
+          .documentElement
+          .classList
+          .toggle("dark");
+      }
+    </script>
+    
+      <a id="home" href="/">🌱</a>
+      
+    
+    <h1>
+      <a href="/">🌱 Docs & Notes</a>
+    </h1>
+    <main>
+      <h2>Kanban</h2>
+<p>Kanban is a <strong>workflow management method</strong> that helps optimize the work process by visualizing the <em>work to be done</em>, the <em>work in progress</em>, and the already <em>finished tasks</em> to maximize efficiency and improve continuously. It serves as a real-time information repository, highlighting bottlenecks within the system and anything else that might interrupt smooth working practices.</p>
+<p>It's been used in the sense of process definition since the 1950s when it was first developed and applied by Toyota as a <em>scheduling system</em>. Kanban means &quot;visual board&quot; or a &quot;sign&quot; in japanese. The Kanban Method was then introduced in the IT and Software Development sectors in 2007.</p>
+<blockquote>
+<p>Produce only what's needed, when it's needed, and in the needed quantity. -Taiichi Ohno, considered the father of the Toyota Production System (TPS)</p>
+</blockquote>
+<h3>The Kanban Principles</h3>
+<p>There are <em>four</em> foundational principles.</p>
+<h4>Start With What's Being Done Now</h4>
+<p>It offers the flexibility to use the method on top of existing workflows without disrupting what is already in place. <em>Kanban is not a system for managing projects. It's a method for improving the process</em>: the steps that the team takes to build and deliver products. Before we can improve anything, we need a starting point, and for Kanban, it's what we do today.</p>
+<h4>Agree to Pursue Incremental, Evolutionary Change</h4>
+<p>The Kanban method is designed to meet <em>minimal resistance</em>. It encourages continuous small incremental and evolutionary changes to the current process by implementing <em>collaboration and feedback forms</em>.</p>
+<h4>Initially, Keep Current Roles and Responsibilities</h4>
+<p>The method recognized that existing processes, roles, responsibilities, and job titles <em>have value and are worth preserving</em> (in general).</p>
+<h4>Encourage Acts of Leadership at All Levels</h4>
+<p>Leadership and ownership at all levels derives from <em>people's everyday insights</em> and acts to <em>improve their way of working</em>. Even when we think something is insignificant, each shared observation fosters a continuous improvement mindset.</p>
+<h3>The Kanban Practices</h3>
+<p><em>Six</em> core practices need to be present for a successful implementation.</p>
+<h4>Visualize the Workflow</h4>
+<p>To visualize the process with Kanban, we use a board divided in columns, each of them representing a step in the process. A column contains cards representing a work item. The board itself represents the actual <em>state of the workflow</em>. By doing so we keep track of what is requested, what is in progress, and what is already done, giving us the chance to make well-observed and necessary changes.</p>
+<h4>Limit Work in Progress (WIP)</h4>
+<p>One of the Kanban's primary functions is to ensure that a <em>manageable number of active items</em> are in progress, if there is no WIP limit, it is not Kanban. Multitasking is a sure route to generating waste and inefficiency.</p>
+<h4>Manage Flow</h4>
+<p>Managing the flow is about <em>managing the work but not the people</em>. The flow is the movement of work items through the production process at a <em>predictable and sustainable pace</em>, by doing so the process is smooth and healthy.</p>
+<h4>Make Process Policies Explicit</h4>
+<p>We can't improve something we don't understand. People would not participate in something they do not believe. When everyone is familiar with the common goal, they would be able to work and make decisions regarding a <em>positive impact</em>. Visible and well-defined policies have the power to <em>boost people's self-organization</em>.</p>
+<h4>Feedback Loops</h4>
+<p>They ensure that organizations are adequately responding to potential changes and enable knowledge transfer between stakeholders. Kanban suggests the use of <em>cadences</em> (feedback loops). An example of a <em>team-level cadence</em> is the daily Team Kanban Meeting, in which every team member tells the others what they did the previous day and what they will be doing today (based on the Kanban board).</p>
+<h4>Improve Collaboratively, Evolve Experimentally</h4>
+<p>Kanban is an evolutionary improvement process, it helps us adopt small changes and <em>improve gradually</em> at a pace that the team can handle easily. It encourages the use of the <em>scientific method</em> to measure the impact of changes to know whether it's an improvement or not.</p>
+<h3>Elements and Key Terms of Kanban</h3>
+<p>A short <em>glossary</em>:</p>
+<ul>
+<li><strong>Kanban board</strong>: It's where we visualize all work items. It should be divided into a minimum of three columns usually called Requested, In Progress, and Done, representing different process stages.</li>
+<li><strong>Kanban card</strong>: It represents work items through a Kanban board. They contain details about the tasks such as description, deadline, size, assigned, etc.</li>
+<li><strong>Swimlines</strong>: Like columns, they divide the Kanban board but horizontally, they are used to visually separate different work types at the same board.</li>
+<li><strong>Cycle Time</strong>: It begins at the moment when a new task enters the &quot;In Progress&quot; stage.</li>
+<li><strong>Lead Time</strong>: It begins at the moment when a new task is being requested and ends with its final departure.</li>
+<li><strong>Throughput</strong>: The number of work items passing through (completed) a process over a certain period. It indicates how productive the team is over time.</li>
+<li><strong>Work in Progress (WIP)</strong>: The amount of work items in the &quot;In Progress&quot; stage.</li>
+<li><strong>WIP limits</strong>: The maximum amount of tasks a team can work on simultaneously, used to avoid overburdening.</li>
+</ul>
+<h3>Benefits of Working With Kanban</h3>
+<p>According to the 1st <em>State of Kanban</em> report:</p>
+<ul>
+<li>Increased visibility of flow.</li>
+<li>Improved delivery speed.</li>
+<li>Alignment between business objectives, key results, and delivery work.</li>
+<li>Improved predictability.</li>
+<li>Improved ability to manage scale and dependencies.</li>
+<li>Improved Quality.</li>
+<li>Increased customer satisfaction.</li>
+<li>Improved risk management.</li>
+<li>Decreased project management cost.</li>
+</ul>
+<hr>
+<p>Reference:</p>
+<ul>
+<li><a href="https://www.agilealliance.org/glossary/kanban/">Kanban (agilealliance.org)</a></li>
+<li><a href="https://www.digite.com/kanban/what-is-kanban/">What Is Kanban? (digite.com)</a></li>
+<li><a href="https://kanbanize.com/kanban-resources/getting-started/what-is-kanban">What Is Kanban? (kanbanize.com)</a></li>
+</ul>
+
+    </main>
+    <footer>
+      <p>
+        Learning
+        <a href="/">docs & notes</a>
+        about my Frontend Development journey,
+        <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
+      </p>
+    </footer>
+  </body>
+</html>

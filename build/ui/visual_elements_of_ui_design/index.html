@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="🌱 My learning docs and notes.">
+    <meta name="description" content="🌱 Learning docs & notes about my Frontend Development journey, Leo de S.L.F.">
     <meta name="author" content="Leonardo de S.L.F"/>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
@@ -14,6 +14,43 @@
     <title>Docs & Notes</title>
   </head>
   <body>
+    <label id="dark-theme">
+      <input id="dark-theme__input" type="checkbox"/>
+      <span></span>
+    </label>
+    <script>
+      const lastChoise = localStorage.getItem('color_scheme_choise');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+      // Prioritize user preferences over system settings.
+      const currentIsDark = lastChoise !== null
+        ? lastChoise === 'true'
+        : prefersDark.matches;
+
+      // Checkbox (checked = dark, unchecked = light).
+      const darkThemeCheckbox = document.getElementById('dark-theme__input');
+      darkThemeCheckbox.checked = currentIsDark;
+      darkThemeCheckbox.addEventListener('input', toggleTheme);
+
+      if (currentIsDark) {
+        document
+          .documentElement
+          .classList
+          .add("dark");
+      }
+
+      function toggleTheme({target}) {
+        localStorage.setItem('color_scheme_choise', target.checked);
+        document
+          .documentElement
+          .classList
+          .toggle("dark");
+      }
+    </script>
+    
+      <a id="home" href="/">🌱</a>
+      
+    
     <h1>
       <a href="/">🌱 Docs & Notes</a>
     </h1>
@@ -55,7 +92,7 @@
 <p>An interface should be based on:</p>
 <ul>
 <li>Real world knowledge (analog models).</li>
-<li>Learned behaviour (conventions).</li>
+<li>Learned behavior (conventions).</li>
 <li>Cause and effect (action / reaction).</li>
 <li>Consistency (logical / systematic).</li>
 <li>Seamless (speed and ease).</li>
@@ -67,8 +104,7 @@
 <p>To ensure we make the right interface, it should be based on <strong>content</strong>, <strong>context</strong>, and <strong>functionality</strong> for a specific, well defined <strong>audience</strong>.</p>
 <p>A generic template <em>can</em> work for some UI elements or components. But <em>it won't work for the entire interface</em>, that leads us to a generic experience, a poor experience.</p>
 <h3>Aesthetics &amp; Functionality</h3>
-<p>Aesthetics and functionality are different things, but, UI should always be related and familiar to the functionality.</p>
-<p>Relationship is making it easy to know <strong>how it works</strong> by <strong>how it looks</strong>.</p>
+<p>Aesthetics and functionality are different things, but, UI should always be related and familiar to the functionality. Relationships make it easy to know <em>how it works</em> by <em>how it looks</em>.</p>
 <h3>Design Before Design</h3>
 <p><strong>Project Brief</strong> is the non-visual pre-design (how it all starts).</p>
 <p>Here we define:</p>
@@ -130,7 +166,7 @@
 </ul>
 <h3>Functionality</h3>
 <p>Creating a logical UI is creating a <strong>predictable system</strong>.</p>
-<p>A UI must combine <strong>logic</strong>, <strong>hierarchy</strong> and <strong>systematic</strong> behaviours. While using the <strong>intuition</strong>, <strong>discovery</strong> and <strong>learning</strong>.</p>
+<p>A UI must combine <strong>logic</strong>, <strong>hierarchy</strong> and <strong>systematic</strong> behaviors. While using <strong>intuition</strong>, <strong>discovery</strong> and <strong>learning</strong>.</p>
 <p>These facts help the user to interact fast and easily, as we make an economic interface. Economizing UI elements and user actions, saving time and doing more with less.</p>
 <h3>Speed and Style</h3>
 <h4>Speed</h4>
@@ -229,14 +265,11 @@ System: Buttons need to have a <em>logic placement</em> on screen to make sense 
     </main>
     <footer>
       <p>
-        🌱 Learning
+        Learning
         <a href="/">docs & notes</a>
         about my Frontend Development journey,
         <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
       </p>
     </footer>
-    
-      <a id="home" href="/">🏡</a>
-    
   </body>
 </html>

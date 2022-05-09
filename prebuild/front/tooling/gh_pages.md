@@ -14,7 +14,7 @@ gh-pages -d <dir> -m <commit-message>
 ```
 
 ```bash
-# Scripts
+# Use with npm scripts
 npm run predeploy
 npm run deploy
 ```
@@ -30,4 +30,6 @@ npm run deploy
 }
 ```
 
-More at [Command Line Utility](https://github.com/tschaub/gh-pages#command-line-utility).
+----
+
+Reference: [Command Line Utility (github.com)](https://github.com/tschaub/gh-pages#command-line-utility).

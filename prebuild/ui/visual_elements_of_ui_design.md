@@ -26,7 +26,7 @@ We need to have *feedback*, know when the interface is working or not, know if w
 An interface should be based on:
 
 - Real world knowledge (analog models).
-- Learned behaviour (conventions).
+- Learned behavior (conventions).
 - Cause and effect (action / reaction).
 - Consistency (logical / systematic).
 - Seamless (speed and ease).
@@ -42,9 +42,7 @@ A generic template *can* work for some UI elements or components. But *it won't 
 
 ### Aesthetics & Functionality
 
-Aesthetics and functionality are different things, but, UI should always be related and familiar to the functionality.
-
-Relationship is making it easy to know **how it works** by **how it looks**.
+Aesthetics and functionality are different things, but, UI should always be related and familiar to the functionality. Relationships make it easy to know *how it works* by *how it looks*.
 
 ### Design Before Design
 
@@ -123,7 +121,7 @@ What makes a good icon?
 
 Creating a logical UI is creating a **predictable system**.
 
-A UI must combine **logic**, **hierarchy** and **systematic** behaviours. While using the **intuition**, **discovery** and **learning**.
+A UI must combine **logic**, **hierarchy** and **systematic** behaviors. While using **intuition**, **discovery** and **learning**.
 
 These facts help the user to interact fast and easily, as we make an economic interface. Economizing UI elements and user actions, saving time and doing more with less.
 

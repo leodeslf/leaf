@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🌱 Learning docs & notes about my Frontend Development journey, Leo de S.L.F.">
+    <meta name="author" content="Leonardo de S.L.F"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link rel="stylesheet" href="/style/style.css"/>
+    <link rel="stylesheet" href="/style/syntax-highlight.css"/>
+    <link rel="stylesheet" href="/style/print.css" media="print"/>
+    <link rel="stylesheet" href="/style/small.css" media="(max-width: 599px)"/>
+    <title>Docs & Notes</title>
+  </head>
+  <body>
+    <label id="dark-theme">
+      <input id="dark-theme__input" type="checkbox"/>
+      <span></span>
+    </label>
+    <script>
+      const lastChoise = localStorage.getItem('color_scheme_choise');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+      // Prioritize user preferences over system settings.
+      const currentIsDark = lastChoise !== null
+        ? lastChoise === 'true'
+        : prefersDark.matches;
+
+      // Checkbox (checked = dark, unchecked = light).
+      const darkThemeCheckbox = document.getElementById('dark-theme__input');
+      darkThemeCheckbox.checked = currentIsDark;
+      darkThemeCheckbox.addEventListener('input', toggleTheme);
+
+      if (currentIsDark) {
+        document
+          .documentElement
+          .classList
+          .add("dark");
+      }
+
+      function toggleTheme({target}) {
+        localStorage.setItem('color_scheme_choise', target.checked);
+        document
+          .documentElement
+          .classList
+          .toggle("dark");
+      }
+    </script>
+    
+      <a id="home" href="/">🌱</a>
+      
+    
+    <h1>
+      <a href="/">🌱 Docs & Notes</a>
+    </h1>
+    <main>
+      <h2>Git Flow</h2>
+<p>A <em>branching model</em> introduced by Vincent Driessen in 2010.</p>
+<h3>Branches</h3>
+<table>
+<thead>
+<tr>
+<th>Branch name</th>
+<th>Description</th>
+<th>Branch off from</th>
+<th>Merge back to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>master</code></td>
+<td>Main production branch.</td>
+<td><code>none</code></td>
+<td><code>none</code></td>
+</tr>
+<tr>
+<td><code>develop</code></td>
+<td>Main development branch.</td>
+<td><code>master</code></td>
+<td><code>release-*</code></td>
+</tr>
+<tr>
+<td><code>feature-*</code></td>
+<td>New features branch.</td>
+<td><code>develop</code>, <code>feature-*</code></td>
+<td><code>develop</code></td>
+</tr>
+<tr>
+<td><code>release-*</code></td>
+<td>New release branch.</td>
+<td><code>develop</code></td>
+<td><code>master</code>, <code>develop</code></td>
+</tr>
+<tr>
+<td><code>hotfix-*</code></td>
+<td>Hotfixes branch.</td>
+<td><code>master</code></td>
+<td><code>master</code>, <code>develop</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Notes</h4>
+<ul>
+<li>Branch <code>develop</code> is created from the very first commit of <code>master</code>.</li>
+<li>Only <code>release-*</code> should merge back into <code>master</code>. The exception to that is <code>hotfix-*</code>.</li>
+<li>Hotfixes from a <code>release-*</code> branch may be continuously merged back into <code>develop</code>, until the complete release is finished, then merged to <code>master</code>.</li>
+</ul>
+<hr>
+<p>Reference: <a href="https://nvie.com/posts/a-successful-git-branching-model/">A successful Git branching model (nvie.com)</a>.</p>
+
+    </main>
+    <footer>
+      <p>
+        Learning
+        <a href="/">docs & notes</a>
+        about my Frontend Development journey,
+        <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
+      </p>
+    </footer>
+  </body>
+</html>

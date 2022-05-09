@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="🌱 My learning docs and notes.">
+    <meta name="description" content="🌱 Learning docs & notes about my Frontend Development journey, Leo de S.L.F.">
     <meta name="author" content="Leonardo de S.L.F"/>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
@@ -14,6 +14,43 @@
     <title>Docs & Notes</title>
   </head>
   <body>
+    <label id="dark-theme">
+      <input id="dark-theme__input" type="checkbox"/>
+      <span></span>
+    </label>
+    <script>
+      const lastChoise = localStorage.getItem('color_scheme_choise');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+      // Prioritize user preferences over system settings.
+      const currentIsDark = lastChoise !== null
+        ? lastChoise === 'true'
+        : prefersDark.matches;
+
+      // Checkbox (checked = dark, unchecked = light).
+      const darkThemeCheckbox = document.getElementById('dark-theme__input');
+      darkThemeCheckbox.checked = currentIsDark;
+      darkThemeCheckbox.addEventListener('input', toggleTheme);
+
+      if (currentIsDark) {
+        document
+          .documentElement
+          .classList
+          .add("dark");
+      }
+
+      function toggleTheme({target}) {
+        localStorage.setItem('color_scheme_choise', target.checked);
+        document
+          .documentElement
+          .classList
+          .toggle("dark");
+      }
+    </script>
+    
+      <a id="home" href="/">🌱</a>
+      
+    
     <h1>
       <a href="/">🌱 Docs & Notes</a>
     </h1>
@@ -31,7 +68,7 @@
 <blockquote>
 <p>Scanning, satisficing, and muddling through</p>
 </blockquote>
-<p>Sometimes <em>people don't use the Web the way we exspect</em> as designers and developers.</p>
+<p>Sometimes <em>people don't use the Web the way we expect</em> as designers and developers.</p>
 <p><em>People are usually in a hurry</em>. As said before, <strong>they don't read</strong> pages, <strong>they scan</strong> them. We need (or want) to get something done fast. We try to find the closest option that looks relevant to us, even if it's not the right one.</p>
 <p>In reality, most of the time people don't make an optimal choice, <strong>people guess</strong> and choose the most reasonable option. Usually getting wrong, but, when they're right, <strong>it's faster</strong>, surprising and pleasant.</p>
 <p>Sometimes <em>people don't actually know how things work</em>, <strong>they muddle through</strong>. It's not important for them to ignore things, however, if they know, they'll feel smarter.</p>
@@ -42,7 +79,7 @@
 <h5>Take advantage of conventions</h5>
 <p>Standards and <strong>conventions are the safest solutions</strong>  (where the things are, how they work, how they look). Innovate when <em>you know you have a better idea</em> that is clear, self-explanatory, and doesn't hurt consistency.</p>
 <h5>Create effective visual hierarchies</h5>
-<p>Make obvious which things are <strong>more important</strong>, what things <strong>does</strong>, and what things <strong>are part of</strong>. In other words, show visual cues about <em>hierarchy</em>, <em>functionality</em> and <em>relationship</em>.</p>
+<p>Make obvious which things are <em>more important</em>, what things <em>do</em>, and what things <em>are part of</em>. In other words, show visual cues about <em>hierarchy</em>, <em>functionality</em> and <em>relationship</em>.</p>
 <h5>Break pages up into clearly defined areas</h5>
 <p>Divide the page into clearly defined areas so users can easily <strong>decide which areas to focus</strong> on, and what they can ignore.</p>
 <h5>Make it obvious what's clickable</h5>
@@ -124,12 +161,12 @@
 <li><strong>Options</strong>, give options only after the search, when the user can actually decide if they are needed or not.</li>
 </ul>
 <h5>Secondary, tertiary, and whatever comes after tertiary</h5>
-<p>After primary and secondary navigation levels, we often <strong>don't give priority for lower levels</strong>.</p>
+<p>After primary and secondary navigation levels, we often <strong>don't give priority to lower levels</strong>.</p>
 <p>That happens because:</p>
 <ul>
 <li>The <strong>limited amount of space on the page</strong>.</li>
 <li>The <strong>limited time to design and develop</strong>.</li>
-<li>And most important, the <strong>people already knows how to use the page</strong>, so navigation is <em>not needed</em> anymore when they reach these lower levels.</li>
+<li>And most importantly, the <strong>people already know how to use the page</strong>, so navigation is <em>not needed</em> anymore when they reach these lower levels.</li>
 </ul>
 <h5>Page names, or Why I love to drive in L.A</h5>
 <p>In L.A.:</p>
@@ -140,7 +177,7 @@
 <p>Four things about page names:</p>
 <ul>
 <li><strong>Every page needs a name</strong>: even when it's highlighted in the navigation.</li>
-<li>The name needs to be in <strong>the right place</strong>: it should be framing it's content.</li>
+<li>The name needs to be in <strong>the right place</strong>: it should be framing its content.</li>
 <li>The name needs to be <strong>prominent</strong>: use position, size, color, and typeface for it.</li>
 <li>The name needs to <strong>match what we clicked</strong>: when it happens it gives comfort and trust.</li>
 </ul>
@@ -244,11 +281,8 @@
 <h5>Nothing beats a good tagline!™</h5>
 <p>A tagline is a pithy phrase that characterizes the whole enterprise, summing up <strong>what it is</strong> and <strong>what makes it great</strong>.</p>
 <blockquote>
-<p>A good tagline is one that no one else in the world could use except you</p>
+<p>A good tagline is one that no one else in the world could use except you. - Jakob Nielsen.</p>
 </blockquote>
-<ul>
-<li>Jakob Nielsen.</li>
-</ul>
 <p>Good taglines are:</p>
 <ul>
 <li>Clear and informative.</li>
@@ -282,7 +316,7 @@
 <p>The team (PMs, designers, marketing, devs, etc) needs to make decisions about usability. Unfortunately they/we end up having an <strong>endless discussion</strong> consisting of <em>personal beliefs</em> that cannot be proven, such as a &quot;religious debate&quot;.</p>
 <p>Instead of solving problems, these <em>arguments</em> create <strong>tension</strong> among the team members, and result in a <strong>waste of time</strong>.</p>
 <h5>&quot;Everybody likes ___.&quot;</h5>
-<p>We are not only Web <em>creators</em>, are also Web <em>users</em>. So we have our own feelings and opinions about it. Often, we tend to think that others like and dislike the same as we do. <strong>We tend to think that most users are like us</strong>.</p>
+<p>We are not only Web <em>creators</em>, but also Web <em>users</em>. So we have our own feelings and opinions about it. Often, we tend to think that others like and dislike the same as we do. <strong>We tend to think that most users are like us</strong>.</p>
 <p>That happens even when we actually know that <em>other people</em> can hate what we like, in fact, some of them belong to our own Web team. Not always <em>sensible</em> people, there aren't many of them.</p>
 <h5>Farmers vs. cowmen</h5>
 <p>On top of that personal passion, we have the <strong>professional passion</strong>. We don't only have our own point of view about each specific element, but about the whole <strong>target</strong> of the project.</p>
@@ -360,7 +394,7 @@
 <tr>
 <td><strong>Where do you test?</strong></td>
 <td>Off-site, in a rented facility with an observation room with a one-way mirror.</td>
-<td>On-site, with observer in a conference room using screen sharing software to watch.</td>
+<td>On-site, with an observer in a conference room using screen sharing software to watch.</td>
 </tr>
 <tr>
 <td><strong>Who watches?</strong></td>
@@ -375,7 +409,7 @@
 <tr>
 <td><strong>Who identifies the problems?</strong></td>
 <td>The person running the tests usually analyzes the results and recommends changes.</td>
-<td>The entire development team and any interested stakeholders meet over the lunch the same day to compare notes and decide what to fix.</td>
+<td>The entire development team and any interested stakeholders meet over lunch the same day to compare notes and decide what to fix.</td>
 </tr>
 <tr>
 <td><strong>Primary purpose:</strong></td>
@@ -715,11 +749,11 @@
 <h5>If I were you...</h5>
 <p>Some <em>tried and tested</em> ways to make it work based on successful experiences:</p>
 <ul>
-<li><strong>Get your boss (and her boss) to watch a usability test</strong>: <em>executives often become fascinated</em> and they stay longer than they'd planned, because it's the first time they've seen abyone try to use the company's site and it's often not nearly as pretty a picture as they'd imagined.</li>
+<li><strong>Get your boss (and her boss) to watch a usability test</strong>: <em>executives often become fascinated</em> and they stay longer than they'd planned, because it's the first time they've seen anyone try to use the company's site and it's often not nearly as pretty a picture as they'd imagined.</li>
 <li><strong>Do the first one on your own time</strong>: we should do the first test without asking for permission, we just need to <em>keep it incredibly simple</em> by finding some volunteers, so it doesn't cost anything, and making sure something improves as a result, usually a well known serious problem.</li>
 <li><strong>Do a test of the competition</strong>: everybody loves <em>learning about the competition</em>, and because it's not our site, <em>no one will be hurt</em> about the bad things we find on it.</li>
 <li><strong>Empathize with management</strong>: virtually, <em>empathy is a proffessional requirement</em>.</li>
-<li><strong>Know you place in the grand scheme of things</strong>: humility goes a long way, our primary role is <em>to share what we know</em>, not to tell people how things should be done.</li>
+<li><strong>Know your place in the grand scheme of things</strong>: humility goes a long way, our primary role is <em>to share what we know</em>, not to tell people how things should be done.</li>
 </ul>
 <p>At the end, it's all about sharing what we know, not to tell people how things should be done.</p>
 <h5>Resist the dark forces</h5>
@@ -735,7 +769,7 @@
 <h5>A few definitive answers</h5>
 <p>Almost all in this book has been answered with &quot;it depends&quot;, but there is a collection of things that are definitive answers:</p>
 <ul>
-<li><strong>Don't use small, low-contrast type</strong>.</li>
+<li><strong>Don't use small, low-contrast types</strong>.</li>
 <li><strong>Don't put labels inside form fields</strong> (as content).</li>
 <li><strong>Preserve a distinction between visited and unvisited links</strong>.</li>
 <li><strong>Don't float headings between paragraphs</strong>.</li>
@@ -744,14 +778,11 @@
     </main>
     <footer>
       <p>
-        🌱 Learning
+        Learning
         <a href="/">docs & notes</a>
         about my Frontend Development journey,
         <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
       </p>
     </footer>
-    
-      <a id="home" href="/">🏡</a>
-    
   </body>
 </html>

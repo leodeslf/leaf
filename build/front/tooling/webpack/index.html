@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🌱 Learning docs & notes about my Frontend Development journey, Leo de S.L.F.">
+    <meta name="author" content="Leonardo de S.L.F"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link rel="stylesheet" href="/style/style.css"/>
+    <link rel="stylesheet" href="/style/syntax-highlight.css"/>
+    <link rel="stylesheet" href="/style/print.css" media="print"/>
+    <link rel="stylesheet" href="/style/small.css" media="(max-width: 599px)"/>
+    <title>Docs & Notes</title>
+  </head>
+  <body>
+    <label id="dark-theme">
+      <input id="dark-theme__input" type="checkbox"/>
+      <span></span>
+    </label>
+    <script>
+      const lastChoise = localStorage.getItem('color_scheme_choise');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+      // Prioritize user preferences over system settings.
+      const currentIsDark = lastChoise !== null
+        ? lastChoise === 'true'
+        : prefersDark.matches;
+
+      // Checkbox (checked = dark, unchecked = light).
+      const darkThemeCheckbox = document.getElementById('dark-theme__input');
+      darkThemeCheckbox.checked = currentIsDark;
+      darkThemeCheckbox.addEventListener('input', toggleTheme);
+
+      if (currentIsDark) {
+        document
+          .documentElement
+          .classList
+          .add("dark");
+      }
+
+      function toggleTheme({target}) {
+        localStorage.setItem('color_scheme_choise', target.checked);
+        document
+          .documentElement
+          .classList
+          .toggle("dark");
+      }
+    </script>
+    
+      <a id="home" href="/">🌱</a>
+      
+    
+    <h1>
+      <a href="/">🌱 Docs & Notes</a>
+    </h1>
+    <main>
+      <h2>Webpack</h2>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># Install</span><br><span class="token function">npm</span> i -D webpack webpack-cli</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># Use with npx</span><br>npx webpack <span class="token operator">&lt;</span>command<span class="token operator">></span> <span class="token punctuation">[</span>option<span class="token punctuation">]</span></code></pre>
+<p>Commands:</p>
+<ul>
+<li><code>b [entry]</code>, <code>build</code>, <code>bundle</code> (default command, can be omitted)</li>
+<li><code>n &lt;dir&gt;</code>, <code>new</code>, <code>c</code>, <code>create</code>, <code>init</code></li>
+<li><code>s</code>, <code>serve</code>, <code>server</code>, options (<a href="https://github.com/webpack/webpack-cli/blob/master/SERVE-OPTIONS-v4.md">serve-options-v4.md</a>, <a href="https://webpack.js.org/configuration/dev-server/">DevServer</a>):
+<ul>
+<li><code>--mode &lt;development|production&gt;</code></li>
+<li><code>--open &lt;page?&gt;</code> (<a href="https://github.com/sindresorhus/open-cli">open-cli</a>)</li>
+<li><code>--open-app-name [browser-name]</code></li>
+<li><code>--port &lt;number&gt;</code></li>
+</ul>
+</li>
+</ul>
+<p>Options (<a href="https://github.com/webpack/webpack-cli/blob/master/OPTIONS.md">options.md</a>):</p>
+<ul>
+<li><code>-c</code>, <code>--config</code> (webpack.config.js by default).</li>
+<li><code>-w</code>, <code>--watch</code>.</li>
+</ul>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># Use with npm scripts</span><br><span class="token function">npm</span> run init<br><span class="token function">npm</span> run build<br><span class="token function">npm</span> run serve</code></pre>
+<pre class="language-javascript"><code class="language-javascript"><span class="token comment">// webpack.config.js</span><br><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span><br>  mode<span class="token operator">:</span> <span class="token string">'development'</span><span class="token punctuation">,</span><br>  entry<span class="token operator">:</span> <span class="token punctuation">{</span><br>    bundle<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'./src/index.js'</span><span class="token punctuation">)</span><br>  <span class="token punctuation">}</span><span class="token punctuation">,</span><br>  output<span class="token operator">:</span> <span class="token punctuation">{</span><br>    path<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'dist'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br>    filename<span class="token operator">:</span> <span class="token string">'[name].js'</span> <span class="token comment">// [name] == 'bundle' (name from `entry`)</span><br>  <span class="token punctuation">}</span><span class="token punctuation">,</span><br>  module<span class="token operator">:</span> <span class="token punctuation">{</span><br>    rules<span class="token operator">:</span> <span class="token punctuation">[</span><br>      <span class="token punctuation">{</span><br>        test<span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">regexp</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span> <span class="token comment">// Condition</span><br>        use<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'module'</span><span class="token punctuation">]</span> <span class="token comment">// Tool to use</span><br>      <span class="token punctuation">}</span><br>    <span class="token punctuation">]</span><br>  <span class="token punctuation">}</span><span class="token punctuation">,</span><br>  plugins<span class="token operator">:</span> <span class="token punctuation">[</span><br>    <span class="token comment">/* ... */</span><br>  <span class="token punctuation">]</span><span class="token punctuation">,</span><br>  devServer<span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token comment">/* ... */</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<hr>
+<p>Reference (webpack.js.org):</p>
+<ul>
+<li><a href="https://webpack.js.org/guides/getting-started/">Getting Started</a>.</li>
+<li><a href="https://webpack.js.org/api/cli/">Command Lines Interface</a>.</li>
+<li><a href="https://webpack.js.org/configuration/">Configuration</a>.</li>
+</ul>
+
+    </main>
+    <footer>
+      <p>
+        Learning
+        <a href="/">docs & notes</a>
+        about my Frontend Development journey,
+        <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
+      </p>
+    </footer>
+  </body>
+</html>

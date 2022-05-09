@@ -33,7 +33,7 @@ There are three ways the render pipeline can make a frame:
 
 All of these cases will be the result of a Style change. A Style change that comes from either JavaScript or CSS.
 
-<!-- http://blog.wilsonpage.co.uk/introducing-layout-boundaries/ -->
+More at [Introducing 'layout boundaries' (wilsonpage.co.uk)](http://blog.wilsonpage.co.uk/introducing-layout-boundaries/).
 
 ### App Lifecycles (RAIL)
 
@@ -42,7 +42,7 @@ The four major areas of a site/app life cycle:
 - **Response**: it's the time it takes to give feedback from the users' input. If the response time gets longer than 100ms, it will be noticed as lagged.
 - **Animate**: either JavaScript or CSS, triggered by the user or a style rule. Each frame should be done in less than 16ms to ensure animations run at 60fps.
 - **Idle**: it begins immediately after the site/app loads and it's waiting for the user to interact, it's *when nothing happens*. During this state, we usually do the post-loading of anything that can wait and isn't included in the CRP (like images, videos, or any low-priority content). It's around 50ms long after the load.
-- **Load**: it's the actual first load of the page and all it's required assets before becoming idle. It should take less than 1s.
+- **Load**: it's the actual first load of the page and all its required assets before becoming idle. It should take less than 1s.
 
 ### Weapons of Jank Destruction
 
@@ -59,7 +59,7 @@ Our primary tool is the browsers developers tool, the *DevTools* in Chrome, whic
 
 ### JavaScript
 
-#### Just In Time (JIT) Compilers
+#### Just in Time (JIT) Compilers
 
 JavaScript compilers do compile the source code immediately after the file is loaded, that means they *generate a new code* to be executed from the one we write in JavaScript. Different engines may vary on the way they compile giving different results. That's why micro-optimizations aren't that effective and, in some cases, it can get even worse depending on the engine.
 
@@ -67,7 +67,7 @@ JavaScript compilers do compile the source code immediately after the file is lo
 
 The proper tool to make animations in JavaScript is the `requestAnimationFrame` API which is a method used to *call a given function the next frame* before it repaints, a callback to that function is passed as an argument. The given function itself needs to call `requestAnimationFrame` again to keep the loop running as an animation. To stop it, we use `cancelAnimationFrame`. It's said `requestAnimationFrame` is one-shot.
 
-<!-- https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame -->
+More at [Window.requestAnimationFrame() (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame).
 
 #### Web Workers
 
@@ -88,13 +88,13 @@ Web Workers do NOT have access to:
 - The `document` object.
 - The `parent` object.
 
-<!-- https://www.html5rocks.com/en/tutorials/workers/basics/ -->
+More at [The Basics of Web Workers (html5rocks.com)](https://www.html5rocks.com/en/tutorials/workers/basics/).
 
 #### JavaScript Memory Management
 
 JavaScript implements *Garbage Collection* (it's said it is garbage-collected), which means for us developers, we don't need to worry about pointers, deleting objects, or how to handle local variables as it gets done by the engine itself automatically. The downside is that the garbage collector is *Script-Blocking*, and, in consequence, it can be Render-Blocking resulting in a noticeable freezing of the page/app.
 
-<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management -->
+More at [Memory Management (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management).
 
 ### Styles and Layout
 
@@ -146,8 +146,10 @@ Forcing the use of GPU:
 - Set `opacity` to less than `1`.
 - Set `transform` to anything but `none`.
 
-<!-- https://www.hongkiat.com/blog/writing-better-css/ -->
-<!-- https://dev.opera.com/articles/css-will-change-property/ -->
+More at:
+
+- [How to Write Berret CSS with Performance in Mind (hongkiat.com)](https://www.hongkiat.com/blog/writing-better-css/).
+- [Everything You Need to Know About the CSS will-change Property (dev.opera.com)](https://dev.opera.com/articles/css-will-change-property/).
 
 #### Forced Synchronous Layout
 
@@ -161,8 +163,10 @@ An ideal (but not realistic) solution would be to *re-order the execution* so th
 
 As mentioned before, `requestAnimationFrame` executes a given function the next frame as soon as it starts. So it can perform *writes without triggering reflows* while not having to re-order the code, and keeping the reads synchronous on frame.
 
-<!-- http://blog.wilsonpage.co.uk/preventing-layout-thrashing/ -->
-<!-- https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing -->
+More at:
+
+- [Avoid large, complex layouts and layout thrashing (web.dev)](https://web.dev/avoid-large-complex-layouts-and-layout-thrashing/).
+- [Preventing 'layout thrashing' (wilsonpage.co.uk)](http://blog.wilsonpage.co.uk/preventing-layout-thrashing/).
 
 ### Composing and Painting
 
@@ -179,7 +183,7 @@ How to reduce Paint work load:
 - *Use layers* to isolate changes from a given element.
 - *Reduce painting areas*, the less pixels to repaint, the better.
 
-<!-- https://developers.google.com/web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas -->
+More at [Simplify paint complexity and reduce paint areas (web.dev)](https://web.dev/simplify-paint-complexity-and-reduce-paint-areas/).
 
 ##### Painting by Layers
 
@@ -193,7 +197,7 @@ We can see the screen areas that are being repainted by using the **Paint flashi
 
 It's the process of *mixing layers* on screen displayed as a single image.
 
-##### Promoting new layers
+##### Promoting New Layers
 
 A way to make that is to use the `will-change` rule, by passing any value that is related to a geometric/positioning property, like `top`, `left`, `height`, or `width`, we (almost) ensure the browser will "prepare" for these changes by creating a new layer.
 
@@ -208,4 +212,4 @@ div {
 }
 ```
 
-<!-- https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count -->
+More at [Stick to Compositor-Only Properties and Manage Layer Count (web.dev)](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/).

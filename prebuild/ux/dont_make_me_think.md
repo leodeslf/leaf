@@ -19,7 +19,7 @@ If something is not self-evident, at least it should be self-explanatory.
 
 >Scanning, satisficing, and muddling through
 
-Sometimes *people don't use the Web the way we exspect* as designers and developers.
+Sometimes *people don't use the Web the way we expect* as designers and developers.
 
 *People are usually in a hurry*. As said before, **they don't read** pages, **they scan** them. We need (or want) to get something done fast. We try to find the closest option that looks relevant to us, even if it's not the right one.
 
@@ -37,7 +37,7 @@ Standards and **conventions are the safest solutions**  (where the things are, h
 
 ##### Create effective visual hierarchies
 
-Make obvious which things are **more important**, what things **does**, and what things **are part of**. In other words, show visual cues about *hierarchy*, *functionality* and *relationship*.
+Make obvious which things are *more important*, what things *do*, and what things *are part of*. In other words, show visual cues about *hierarchy*, *functionality* and *relationship*.
 
 ##### Break pages up into clearly defined areas
 
@@ -151,13 +151,13 @@ Avoid:
 
 ##### Secondary, tertiary, and whatever comes after tertiary
 
-After primary and secondary navigation levels, we often **don't give priority for lower levels**.
+After primary and secondary navigation levels, we often **don't give priority to lower levels**.
 
 That happens because:
 
 - The **limited amount of space on the page**.
 - The **limited time to design and develop**.
-- And most important, the **people already knows how to use the page**, so navigation is *not needed* anymore when they reach these lower levels.
+- And most importantly, the **people already know how to use the page**, so navigation is *not needed* anymore when they reach these lower levels.
 
 ##### Page names, or Why I love to drive in L.A
 
@@ -169,7 +169,7 @@ In L.A.:
 Four things about page names:
 
 - **Every page needs a name**: even when it's highlighted in the navigation.
-- The name needs to be in **the right place**: it should be framing it's content.
+- The name needs to be in **the right place**: it should be framing its content.
 - The name needs to be **prominent**: use position, size, color, and typeface for it.
 - The name needs to **match what we clicked**: when it happens it gives comfort and trust.
 
@@ -289,9 +289,7 @@ A few guidelines for **getting the message across**:
 
 A tagline is a pithy phrase that characterizes the whole enterprise, summing up **what it is** and **what makes it great**.
 
->A good tagline is one that no one else in the world could use except you
-
-- Jakob Nielsen.
+>A good tagline is one that no one else in the world could use except you. - Jakob Nielsen.
 
 Good taglines are:
 
@@ -337,7 +335,7 @@ Instead of solving problems, these *arguments* create **tension** among the team
 
 ##### "Everybody likes ___."
 
-We are not only Web *creators*, are also Web *users*. So we have our own feelings and opinions about it. Often, we tend to think that others like and dislike the same as we do. **We tend to think that most users are like us**.
+We are not only Web *creators*, but also Web *users*. So we have our own feelings and opinions about it. Often, we tend to think that others like and dislike the same as we do. **We tend to think that most users are like us**.
 
 That happens even when we actually know that *other people* can hate what we like, in fact, some of them belong to our own Web team. Not always *sensible* people, there aren't many of them.
 
@@ -407,10 +405,10 @@ That's what this chapter is about, a better approach that is **simpler and less 
 **Number of rounds of testing:**|Typically one or two per project.|One every month.
 **Number of participants in each round:**|Eight or more.|Three.
 **How do you choose the participants?**|Recruit carefully to find people who are like your target audience.|Recruit loosely, if necessary. Doing frequent testing is more important than testing "actual" users.
-**Where do you test?**|Off-site, in a rented facility with an observation room with a one-way mirror.|On-site, with observer in a conference room using screen sharing software to watch.
+**Where do you test?**|Off-site, in a rented facility with an observation room with a one-way mirror.|On-site, with an observer in a conference room using screen sharing software to watch.
 **Who watches?**|Full days of off-site testing means not many people will observe firsthand.|Half day of on-site testing means more people can see the tests "live".
 **Reporting:**|Someone takes at least a week to prepare a briefing or write a Big Honkin' Report (25-50 pages).|A 1-2 page email summarizes decisions made during the team's debriefing.
-**Who identifies the problems?**|The person running the tests usually analyzes the results and recommends changes.|The entire development team and any interested stakeholders meet over the lunch the same day to compare notes and decide what to fix.
+**Who identifies the problems?**|The person running the tests usually analyzes the results and recommends changes.|The entire development team and any interested stakeholders meet over lunch the same day to compare notes and decide what to fix.
 **Primary purpose:**|Identify as many problems as possible (sometimes hundreds), then categorize them and prioritize them by severity.|Identify the most serious problems and commit to fixing them before the next round of testing.
 **Out-of-pocket costs:**|$5.000 to $10.000 per round if you hire someone to do it.|A few hundred dollars or less per round.
 
@@ -846,11 +844,11 @@ Here are the two suggestions for convincing management to support usability work
 
 Some *tried and tested* ways to make it work based on successful experiences:
 
-- **Get your boss (and her boss) to watch a usability test**: *executives often become fascinated* and they stay longer than they'd planned, because it's the first time they've seen abyone try to use the company's site and it's often not nearly as pretty a picture as they'd imagined.
+- **Get your boss (and her boss) to watch a usability test**: *executives often become fascinated* and they stay longer than they'd planned, because it's the first time they've seen anyone try to use the company's site and it's often not nearly as pretty a picture as they'd imagined.
 - **Do the first one on your own time**: we should do the first test without asking for permission, we just need to *keep it incredibly simple* by finding some volunteers, so it doesn't cost anything, and making sure something improves as a result, usually a well known serious problem.
 - **Do a test of the competition**: everybody loves *learning about the competition*, and because it's not our site, *no one will be hurt* about the bad things we find on it.
 - **Empathize with management**: virtually, *empathy is a proffessional requirement*.
-- **Know you place in the grand scheme of things**: humility goes a long way, our primary role is *to share what we know*, not to tell people how things should be done.
+- **Know your place in the grand scheme of things**: humility goes a long way, our primary role is *to share what we know*, not to tell people how things should be done.
 
 At the end, it's all about sharing what we know, not to tell people how things should be done.
 
@@ -873,7 +871,7 @@ Books that can lead us to influence people *the right way*:
 
 Almost all in this book has been answered with "it depends", but there is a collection of things that are definitive answers:
 
-- **Don't use small, low-contrast type**.
+- **Don't use small, low-contrast types**.
 - **Don't put labels inside form fields** (as content).
 - **Preserve a distinction between visited and unvisited links**.
 - **Don't float headings between paragraphs**.

@@ -3,36 +3,32 @@ layout: default
 ---
 ## Sorting Algorithms
 
-From the book Data Structures and Algorithms in C++.
-
 An algorithm is a **set of well-defined instructions** to solve a given problem, taking a set of inputs and producing a desired output.
 
-Algorithm rules:
+Basic algorithm rules:
 
 - Input and output should be *defined precisely*.
 - Each step should be *clear and unambiguous*.
 - It should be the *most effective way* to get a solution.
 - It should be defined as an *abstraction*, not as an implementation.
 
-The efficiency of data handling can be substantially increased if the data are sorted according to some **criteria of order**. Very often, the *sorting criteria are natural*, as in the case of numbers, or the numeric value of alphanumeric characters. Sorting can be made in *ascending or descending* order. Once the criterion is selected, the second step is *how to sort the data using that criterion*.
+### Developing a Good Algorithm
 
-The final ordering of data can be obtained in a variety of ways, and only some of them can be considered meaningful and efficient. To decide which method is best, certain **criteria of efficiency** have to be established and a method for quantitatively *comparing different algorithms* must be chosen.
+The efficiency of data handling can be substantially increased if the data are sorted according to some **criteria of order**. Very *often, the sorting criteria are natural*, as in the case of numbers, or the numeric value of alphanumeric characters. Sorting can be made in *ascending or descending* order. Once the criterion is selected, the second step is **how to sort** the data using that criterion.
 
-To make the comparison machine-independent, certain critical *properties of sorting algorithms* should be defined when comparing alternative methods. Two such properties are the **number of comparisons** and the **number of movements**. The efficiency of these two operations *depend on the size of the data set*.
+There are infinite ways to sort the data, not all of them are efficient. To decide which method is best, certain **criteria of efficiency** have to be established, and a **method for quantitatively comparing** different algorithms must be chosen, certain critical properties should be defined when comparing alternative methods. Two such properties to do that are the **number of comparisons** and the **number of movements**. *The efficiency of these two operations depend on the size of the data set*.
 
-Because determining the precise number of comparisons is not always necessary or possible, an approximate value can be computed. For this reason, the number of comparisons and movements is *approximated with the big-O notation* by giving the order of magnitude of these numbers. But the order of magnitude can vary depending on the initial ordering of data.
+### Estimating Efficiency
 
-By measuring the efficiency of a given algorithm, we not only get to know **how much time it takes** for it to sort the data, but also the **intelligence** of that method. For example, an algorithm can (it better should) *recognize an already sorted data set*, so it doesn't make any unnecessary movement or comparison. By the other hand it can be completely unaware of that fact, something obviously inefficient.
+We need to measure **how much time it takes** for it to sort the data, but also need to get to know the *intelligence* of that method. For example, an algorithm can (it better should) *recognize an already sorted data set*, so it doesn't make any unnecessary movement or comparison. On the other hand it can be completely unaware of that fact. Determining the precise number of operations **is not always necessary or possible**. For this reason, *the number of comparisons and movements is approximated*.
 
-The number of comparisons and the number of movements do not have to be coincident. An algorithm can be very efficient on the former and perform poorly on the latter, or vice versa. Some sorting methods perform the same operations regardless of the initial ordering of data, others are more flexible. The number of operations is computed (if possible) for three case scenarios.
+The number of **comparisons and movements** can vary independently. An algorithm can be efficient on the former and perform poorly on the latter, or vice versa. They can always perform the same operations regardless of **the initial ordering of data**, others are more flexible. Some algorithms perform better on small data samples, others perform better on larger ones, so the **size of the data sample** is also important. The number of operations is often computed (if possible) for three case scenarios.
 
 The three cases are:
 
-- *Best case* (often, data already in order).
-- *Worst case* (it can be data in reverse order).
-- *Average case* ( data in random order).
-
-Usually, simple algorithms often perform better with a small amount of data than their more complex counterparts, whose effectiveness may become obvious only when data samples become very large.
+- **Best case**: when the data is already in order, *Big-O* notation.
+- **Worst case**: the data is in reverse order, *Omega* notation.
+- **Average case**: data consistently in random order, *Theta* notation.
 
 ### Elementary Sorting Algorithms
 
@@ -94,7 +90,7 @@ function selection(array) {
 
 #### Bubble Sort
 
-A sort algorithm in where we *swap any unordered adjacent pair of items* from an edge of the array to the other. Any time we make a swap, another scan should be made to verify if the new positioning left all items in the right place.
+A sort algorithm in which we *swap any unordered adjacent pair of items* from one edge of the array to the other. Any time we make a swap, another scan should be made to verify if the new positioning left all items in the right place.
 
 ```txt
 bubble(array, n)
@@ -181,7 +177,7 @@ function shell(array) {
   const n = array.length;
   const gaps = [];
   let i, gap;
-  for (i = 0, gap = 3 * i + 1; gap < n; i++, gap = 3 * gap + 1) {
+  for (i = 0, gap = 1; gap < n; i++, gap = 3 * gap + 1) {
     gaps[i] = gap;
   }
   let j, k, offset, key;
@@ -203,7 +199,7 @@ function shell(array) {
 }
 ```
 
-<!-- https://oeis.org/A003462 -->
+More at [Sequence A003462 (oeis.org)](https://oeis.org/A003462).
 
 #### Heap Sort
 
@@ -294,9 +290,6 @@ function quicksort(array, first, last) {
 }
 ```
 
-<!-- https://www.guru99.com/images/1/011019_1052_QuickSortAl6.png -->
-<!-- https://gist.github.com/claudiahdz/39a86084edaaabe7fc17c321c0bb6896 -->
-
 #### Mergesort
 
 The key process here is to *merge sorted halves of an array into one sorted array*. The process of dividing arrays into two halves is done recursively and stops when the array has fewer than two items. Each resulting halve has to be sorted first to then be able to merge. Subarrays are logically separated, no new data structure is created.
@@ -341,9 +334,6 @@ function mergesort(array, first, last) {
   return array;
 }
 ```
-
-<!-- https://www.interviewbit.com/tutorial/merge-sort-algorithm/ -->
-<!-- https://www.toptal.com/developers/sorting-algorithms/merge-sort -->
 
 #### Radix Sort
 
@@ -421,89 +411,32 @@ function counting(array) {
 
 ### Comparative Table
 
-Each implementation sorting an average case array with multiple lengths (`n`).
+**Average benchmark** results for each *algorithm* implementation sorting an average case collection on multiple *lengths* to compare its performance evolution. The best and second best algorithms for each collection length are highlighted.
 
-Algorithm|`16`|`256`|`4,096`|`65,536`|`1,048,576`|`67,108,864`
+Elementary Sorting Algorithms (algorithm vs collection lenght):
+
+||`25`|`250`|`1,000`|`15,000`|`50,000`
+---|---|---|---|---|---
+*Insertion Sort*|**0.00063ms**|*0.0153ms*|*0.1861ms*|*38.7ms*|*427ms*
+*Selection Sort*|*0.00072ms*|0.0311ms|0.3943ms|78.3ms|866ms
+*Bubble Sort*|0.00099ms|0.0700ms|0.9445ms|339ms|4.2s
+*Comb Sort*|0.00099ms|**0.0082ms**|**0.0654ms**|**1.57ms**|**6.60ms**
+
+Efficient Sorting Algorithm (algorithm vs collection lenght):
+
+||`25`|`250`|`1,000`|`15,000`|`50,000`|`1,000,000`
 ---|---|---|---|---|---|---
-*Insertion Sort*|0.0002ms|0.014ms|2.9ms|736.2ms|317.5s|-|
-*Selection Sort*|0.0003ms|0.032ms|5.92ms|1.4s|389.3s|-|
-*Bubble Sort*|0.0003ms|0.076ms|18.32ms|7.1s|1924.4s|-|
-*Comb Sort*|0.0003ms|0.011ms|0.4ms|11.2ms|197ms|-|
-*Shell Sort*|0.0003ms|0.005ms|0.31ms|8.2ms|263ms|36.2s
-*Heap Sort*|0.0003ms|0.006ms|0.33ms|7.4ms|182ms|25.3s
-*Quicksort*|0.0004ms|0.007ms|0.34ms|6.8ms|131ms|10.6s
-*Mergesort*|0.0009ms|0.02ms|0.59ms|13.4ms|298ms|29.4s
-*Radix Sort*|0.0034ms|0.048ms|0.74ms|12.8ms|216ms|14.2s
-*Counting Sort*|0.0048ms|0.073ms|1.52ms|125ms|80ms|2.9s
+*Shell Sort*|*0.00081ms*|*0.0045ms*|*0.0554ms*|1.39ms|5.90ms|229.3ms
+*Heap Sort*|0.00117ms|0.0061ms|0.0571ms|*1.38ms*|5.60ms|176.6ms
+*Quicksort*|0.00108ms|0.0076ms|0.0679ms|1.40ms|*5.20ms*|*125.2ms*
+*Mergesort*|0.00189ms|0.0207ms|0.1239ms|2.55ms|10.1ms|290.6ms
+*Radix Sort*|0.00603ms|0.0451ms|0.1798ms|2.80ms|9.40ms|207.6ms
+*Counting Sort*|**0.00036ms**|**0.0022ms**|**0.0078ms**|**0.18ms**|**1.10ms**|**36.40ms**
 
-<!-- ### Asymptotic Analysis
+----
 
-It's the analysis of *performance over input size* (among other conditions) for a given algorithm, as it may vary in different ways while scaling. Asymptotic notations are the mathematical notations used to **measure the efficiency** (running times) of an algorithm as the input tends towards a particular value.
+Reference:
 
-There are three notations for the different *scenarios*:
-
-- **Big-O** notation, *worst-case*.
-- **Omega** notation, *best-case*.
-- **Theta** notation, *average-case*.
-
-https://www.programiz.com/dsa/asymptotic-notations
-
-#### Master Method & Theorem
-
-##### Master Method
-
-It's a formula for solving *recurrence relations* of the form `T(n) = aT(n / b) + f(n)`.
-
-Where:
-
-- `n` = size of input.
-- `a` = number of subproblems.
-- `a >= 1` and `b > 1` are constants.
-- `n / b` = size of each subproblem (assuming all of them to have the same size).
-- `f(n)` = the cost of dividing the problem and cost of merging the solutions.
-- `f(n)` is an asymptotically positive function.
-
-##### Master Theorem
-
-The master theorem is used in calculating the **time complexity** of recurrence relations (divide and conquer algorithms) in a simple and quick way.
-
-As the method defines, time complexity is given by `T(n) = aT(n / b) + f(n)`.
-
-Where `T(n)` has the following *asymptotic bounds*:
-
-For|If|Thus
----|---|---
-`T(n) = Θ(n^(log_b(a)))`|`f(n) =O(n^(log_b(a - ϵ)))`|`f(n) < n^(log_b(a))`
-`T(n) = Θ(n^(log_b(a)) * log(n))`|`f(n) =Θ(n^(log_b(a)))`|`f(n) = n^(log_b(a))`
-`T(n) = Θ(f(n))`|`f(n) =Ω(n^(log_b(a + ϵ)))`|`f(n) > n^(log_b(a))`
-
-Being `ϵ > 0` a constant.
-
-The master theorem *cannot* be used if:
-
-- `T(n)` is not monotone.
-- `f(n)` is not a polynomial.
-- `a` is not a constant.
-- `a < 1`.
-
-https://www.programiz.com/dsa/master-theorem
-
-#### Divide and Conquer Algorithm
-
-It's a **strategy** of solving a large problem by:
-
-1. Breaking (*divide*) the problem into smaller subproblems.
-1. Solving (*conquer*) the subproblems.
-1. Merging (*combining*) them to get the desired output.
-
-Advantages:
-
-- Tends to simplify the complexity of problems.
-- It's suitable for multiprocessing systems.
-- It makes efficient use of memory caches.
-
-##### Divide and Conquer vs Dynamic approach
-
-The main difference is the *storage of subproblem results*. In a dynamic approach, each subproblem result is stored for future reference, whereas, with a divide and conquer approach, it won't happen. That's why we use a dynamic approach when we know we will need to solve the same problem multiple times. 
-
-https://www.programiz.com/dsa -->
+- Data Structures and Algorithms in C++ (page 491).
+- Introduction to Algorithms (page 16, 170, 194, 197).
+- [Learning DS & Algorithms (programiz.com)](https://www.programiz.com/dsa).

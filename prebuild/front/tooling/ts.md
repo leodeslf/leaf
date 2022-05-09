@@ -10,7 +10,7 @@ npm i -g typescript
 
 ```bash
 # Use
-tsc [file] [option]            # Transpile
+tsc [file] [option]
 tsc <input-file> <output-file> # Ignores tsconfig.json
 ```
 
@@ -20,16 +20,16 @@ Options:
 - `-b`, `--build`
 - `-h`, `--help`
 - `--init` (creates a tsconfig.json file)
-- `--outDir <dir>`
-- `--outfile <file>`
-- `-m` `--module [commonjs|amd|umd|system|es6|es2015|es2020|es2022|esnext|node12|nodenext]` (output, depends up on `target`)
+- `-m` `--module <commonjs|amd|umd|system|es6|es2015|es2020|es2022|esnext|node12|nodenext>` (output, depends up on `target`)
 - `--moduleResolution <classic|node>` (input, depends up on `module`)
 - `--noImplicitAny <boolean>`
+- `--outDir <dir>`
+- `--outfile <file>`
 - `-p`, `--project <config-file>`
-- `--rootDir <dir>`
 - `--removeComments`
+- `--rootDir <dir>`
 - `--strict`
-- `-t`, `--target [es3|es5|es6|es2015...es2021|esnext]`
+- `-t`, `--target <es3|es5|es6|es2015...es2021|esnext>`
 - `--watch`
 
 ```json
@@ -49,8 +49,10 @@ Options:
 }
 ```
 
-More at:
+----
 
-- [tsc CLI Options](https://www.typescriptlang.org/docs/handbook/compiler-options.html).
-- [What is a tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
-- [TSConfig Reference - Docs on every TSConfig option](https://www.typescriptlang.org/tsconfig).
+Reference:
+
+- [tsc CLI Options (typescriptlang.org)](https://www.typescriptlang.org/docs/handbook/compiler-options.html).
+- [What is a tsconfig.json (typescriptlang.org)](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+- [Intro to the TSConfig Reference (typescriptlang.org)](https://www.typescriptlang.org/tsconfig).

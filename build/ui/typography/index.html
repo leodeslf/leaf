@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🌱 Learning docs & notes about my Frontend Development journey, Leo de S.L.F.">
+    <meta name="author" content="Leonardo de S.L.F"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link rel="stylesheet" href="/style/style.css"/>
+    <link rel="stylesheet" href="/style/syntax-highlight.css"/>
+    <link rel="stylesheet" href="/style/print.css" media="print"/>
+    <link rel="stylesheet" href="/style/small.css" media="(max-width: 599px)"/>
+    <title>Docs & Notes</title>
+  </head>
+  <body>
+    <label id="dark-theme">
+      <input id="dark-theme__input" type="checkbox"/>
+      <span></span>
+    </label>
+    <script>
+      const lastChoise = localStorage.getItem('color_scheme_choise');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+      // Prioritize user preferences over system settings.
+      const currentIsDark = lastChoise !== null
+        ? lastChoise === 'true'
+        : prefersDark.matches;
+
+      // Checkbox (checked = dark, unchecked = light).
+      const darkThemeCheckbox = document.getElementById('dark-theme__input');
+      darkThemeCheckbox.checked = currentIsDark;
+      darkThemeCheckbox.addEventListener('input', toggleTheme);
+
+      if (currentIsDark) {
+        document
+          .documentElement
+          .classList
+          .add("dark");
+      }
+
+      function toggleTheme({target}) {
+        localStorage.setItem('color_scheme_choise', target.checked);
+        document
+          .documentElement
+          .classList
+          .toggle("dark");
+      }
+    </script>
+    
+      <a id="home" href="/">🌱</a>
+      
+    
+    <h1>
+      <a href="/">🌱 Docs & Notes</a>
+    </h1>
+    <main>
+      <h2>Typography</h2>
+<p>Typography is the <strong>communication made visual</strong>, if done right, it can even <em>boost</em> the message by making it <em>more visible</em> and <em>providing mood and context</em> for the reader.</p>
+<p>Foundations of writing go back to the 5th and the 1st century BCE with the Greek and Roman <em>carved letters on stone</em> respectively. In 800 AD one of the first standardized letterforms came in as the Emperor Charlemagne decreed that the Carolingian <em>letters should be universally used</em>, these are the basis of the lowercase letters we recognize today. Johannes Gutenberg made one of the finest <em>art typography</em> ever created for his Gutenberg Bible in 1455, where movable type and printing press were already the state of the art in writing.</p>
+<blockquote>
+<p>The task before us is simple: to make beautiful letters and to arrange them well. -Edward Johnston, the father of modern calligraphy</p>
+</blockquote>
+<h3>Typographic Differentiation</h3>
+<p>Types can be classified by functionality, style, by Serif or Sans Serif, by the historical period of creation, etc. There are <em>many characteristics</em> and <em>many ways to sort</em> them.</p>
+<p>Differentiation by functionality:</p>
+<ul>
+<li><strong>Text Type</strong>: It's designed to be read at <em>small sizes</em> and <em>large quantities</em> of text. The idea for them is to make it <em>effortless to read</em>, they should be invisible for the reader.</li>
+<li><strong>Display Type</strong>: It's to be used at <em>big sizes</em> but in a <em>small amount</em> of text, most of them are <em>emotional and expressive</em>. They are designed to get <em>noticed and draw attention</em>.</li>
+</ul>
+<p>Classification by Serif vs Sans Serif:</p>
+<ul>
+<li><strong>Serif</strong>: Types that have <em>little extenders</em> at the end of each trace, often called feets.</li>
+<li><strong>Sans Serif</strong>: They <em>don't have</em> Serifs, &quot;sans&quot; translates to &quot;without&quot; (late 1800s).</li>
+</ul>
+<p>Serif subclasses:</p>
+<ul>
+<li><strong>Bracketed Serif</strong>: It has a smooth and <em>curved transition</em> from the Serif to the letterform.</li>
+<li><strong>Unbracketed Serif</strong>: It forms a <em>sharp 90 degree corner</em> between the Serif and the body.</li>
+<li><strong>Slab Serif</strong>: An unbracketed Serif, sometimes square. Uses the <em>same width for its strokes and Serifs</em>. Has a <em>lack of contrast</em> (or no contrast at all) between strokes (mid 1800s).</li>
+</ul>
+<p>Serif subclasses by historical period of creation:</p>
+<ul>
+<li><strong>Oldstyle</strong>: It has <em>thick bracketed</em> serifs, <em>low contrast</em> between thick and thin strokes, and long ascenders and descenders. The first Roman serif types (15th and 18th century).</li>
+<li><strong>Transitional</strong>: It's a bridge between Oldstyle and Modern. Has <em>sharper, flatter serifs</em>, <em>tighter bracketed</em> curve, and more <em>vertical stress</em> in curved letters (mid 1800s).</li>
+<li><strong>Modern</strong>: This class of types has an <em>extreme contrast</em> between thick and thin strokes, as well as <em>ultra thin unbracketed</em> serifs (late 1800s).</li>
+</ul>
+<p>Sans Serif subclasses:</p>
+<ul>
+<li><strong>Grotesque</strong> or Gothic: Has <em>slight variations</em> in stroke width.</li>
+<li><strong>Humanist</strong>: Follows the <em>proportions of the hand-lettered</em> Roman forms.</li>
+<li><strong>Geometric</strong>: Their design is based on <em>circles</em>, <em>squares</em>, and <em>triangles</em> (20th century).</li>
+</ul>
+<p>Styles often used as Display Type:</p>
+<ul>
+<li><strong>Scripts</strong>: Types based on <em>handwritten letters</em>, often <em>attached</em> to one another with connecting strokes, some have a formal style, others a more informal style.</li>
+<li><strong>Blackletter</strong> or Fraktur: Type made of individual strokes, it looks <em>fractured or broken</em>.</li>
+</ul>
+<h3>Type Family</h3>
+<p>It's a <strong>group of related typefaces</strong> which share <em>similar characteristics</em>, designed to work together fulfilling different roles at the same text body. There are <em>three common variations</em> for a type family, the <strong>weight</strong>, the <strong>width</strong>, and the <strong>slope</strong>. The complete name for each member starts by the name of the typeface family, followed by its weight, width, and slope variation names. There isn't a single way to call these variations, we can do it as follows. Each of these variations is often called a <strong>Font</strong>.</p>
+<p>Weight terms in ascending order (from thinner to thicker):</p>
+<ul>
+<li><em>Extra Light</em>.</li>
+<li><em>Roman or Normal</em>.</li>
+<li><em>Semi Bold</em>.</li>
+<li><em>Bold</em>.</li>
+<li><em>Black</em>.</li>
+</ul>
+<p>Width terms in ascending order (from narrowest to widest):</p>
+<ul>
+<li><em>Ultra Condensed</em>.</li>
+<li><em>Condensed</em>.</li>
+<li><em>Roman or Normal</em>.</li>
+<li><em>Extended</em>.</li>
+</ul>
+<p>Slope types:</p>
+<ul>
+<li><strong>Oblique</strong>: simply the <em>same design</em> but with a slope, a slanted version of a type.</li>
+<li><strong>Italic</strong>: features <em>different letterform designs</em>, it's often more rounded and inclined.</li>
+</ul>
+<h3>Anatomy, Parts &amp; Shapes</h3>
+<p>Boundaries:</p>
+<ul>
+<li><strong>Baselie</strong>: it's where the type sits, the floor.</li>
+<li><strong>Ascender Line</strong>: the top boundary of the ascender.</li>
+<li><strong>Descender Line</strong>: the bottom boundary of the descender.</li>
+<li><strong>X-Height</strong>: the height of the lowercase letter &quot;X&quot;.</li>
+<li><strong>Cap Height</strong>: height of capital letters, often less than or equal to the ascender line.</li>
+<li><strong>Body Height</strong>: vertical boundary around the shape of the letter.</li>
+<li><strong>Body Width</strong>: horizontal boundary around the shape of the letter.</li>
+</ul>
+<p>Common body parts:</p>
+<ul>
+<li><strong>Jot</strong>: the dot over the &quot;j&quot; and the &quot;i&quot;.</li>
+<li><strong>Stem</strong>: the main vertical stroke of a letterform.</li>
+<li><strong>Serif</strong>: small extension at the end of arms, stems, tails, and descenders.</li>
+<li><strong>Ascender</strong>: the part of the letters that rise above the x-height.</li>
+<li><strong>Descender</strong>: the part of the letters that extend below the baseline.</li>
+<li><strong>Extenders</strong>: it's how both ascenders and descenders are called.</li>
+<li><strong>Arm</strong>: the stroke that extends from the stem, like the ones from the &quot;E&quot;.</li>
+<li><strong>Leg</strong>: the stroke that extends down to the baseline.</li>
+<li><strong>Foot</strong>: the final part at the end of the leg over the baseline.</li>
+<li><strong>Tail</strong>: descending, often diagonal stroke on characters such as &quot;Q&quot;, &quot;R&quot; and &quot;K&quot;.</li>
+<li><strong>Crossbar</strong>: horizontal stroke that connects two strokes, like the &quot;A&quot; or the &quot;H&quot;.</li>
+<li><strong>Cross Stroke</strong>: horizontal stroke that crosses over a steam, like the &quot;f&quot;.</li>
+<li><strong>Bar</strong>: horizontal stroke of the lowercase &quot;e&quot;.</li>
+<li><strong>Bowl</strong>: the rounded trace of the letters like the ones in the &quot;B&quot; or the &quot;a&quot;.</li>
+<li><strong>Counter</strong>: any enclosed space in a letter, like the &quot;B&quot; or &quot;P&quot;.</li>
+<li><strong>Arc</strong>: curved extension from a steam that does not form a bowl, like the &quot;f&quot;.</li>
+<li><strong>Beak</strong>: a sharp projection at the end of an arc like the &quot;f&quot; and the &quot;C&quot;.</li>
+<li><strong>Shoulder</strong>: the curved stroke of the lowercase &quot;h&quot;, &quot;m&quot;, and &quot;n&quot;.</li>
+<li><strong>Spur</strong>: little extension that's not a serif, often present on the &quot;G&quot; and the &quot;S&quot;.</li>
+<li><strong>Apex</strong>: the joint part of the two strokes, like the top part of the &quot;A&quot; or &quot;M&quot;.</li>
+<li><strong>Terminal</strong>: tapered, curved part at the end of a stroke see &quot;C&quot; and &quot;f&quot;, aka Final.</li>
+</ul>
+<p>Letter specific body parts:</p>
+<ul>
+<li><strong>Spine</strong>: the central curved part of the &quot;S&quot;.</li>
+<li><strong>Ear</strong>: little extension on often on the top right part of the &quot;g&quot; (in some types).</li>
+<li><strong>Link</strong>: it's the connection between the loop and the bowl of the lowercase &quot;g&quot;.</li>
+<li><strong>Loop</strong>: the closer counter that extends below the &quot;g&quot; and connects through the link.</li>
+<li><strong>Ligature</strong>: visual connection between two or more characters, often seen on the &quot;fi&quot;.</li>
+<li><strong>Single-story form</strong>: the &quot;a&quot; without an arm above, &quot;g&quot; without an ear and a loop.</li>
+<li><strong>Double-story form</strong>: the &quot;a&quot; with an arm above, &quot;g&quot; with an ear and a loop.</li>
+</ul>
+<h3>Alignment</h3>
+<p>There are five kinds of alignment:</p>
+<ul>
+<li><strong>Flush Left</strong>: uneven or ragged words at the right side of the text block, aka <em>Rag Right</em>.</li>
+<li><strong>Flush Right</strong>: uneven or ragged words at the left side of the text block, aka <em>Rag Left</em>.</li>
+<li><strong>Justified</strong>: keeps all the <em>lines at the same length</em> by varying the space width.</li>
+<li><strong>Centered</strong>: keeps each line <em>balanced at the center</em> of the text body.</li>
+<li><strong>Random or Asymmetrical</strong>: a more <em>artistic or dramatic</em> way to align text.</li>
+</ul>
+<h3>Size &amp; Measurement</h3>
+<p>In design, type is measured in <strong>Points</strong>, which are a 1/12 part of a <em>Pica</em>, and Picas is 1/6 of an <em>Inch</em>. Back in time, Point was the term used for the height of the movable type block for printing. Another term is the <strong>set-width</strong>, which is the <em>width of a character</em> for a specific typeface, the amount of characters that can fit in a line vary depending on this measure. A line is also measured in Picas, the <em>width of a line</em> of type is called the <strong>Measure of the Line</strong>.</p>
+<p>Relation between measurement units:</p>
+<ul>
+<li>12 Points = 1 Pica.</li>
+<li>6 Picas = 1 Inch.</li>
+<li>72 Points = 1 Inch.</li>
+</ul>
+<h3>Spacing</h3>
+<h4>Tonal Weight</h4>
+<p>It's the <em>typographic level of darkness</em> or lightness of a text body based on four variables, the actual <strong>typeface</strong>, the <strong>size</strong> of the type, the <strong>leading</strong>, and the <strong>tracking</strong> of the type.</p>
+<h4>Kerning</h4>
+<p>Kerning is the <strong>manual spacing between two specific letters</strong>, the required amount of space is a designer decision, there are no strict or mathematical rules to define it. The idea is to create the appearance of <em>even spacing</em> between letters, to make that space <em>look consistent</em> among characters to <em>improve readability</em>, it's all about <em>visual adjustments</em>. For a given typeface, there are thousands of <strong>Kerning Pairs</strong> made by its designer.</p>
+<p>Some specific cases in which manual Kerning might be required are:</p>
+<ul>
+<li>Two <em>rounded side</em> letters, like &quot;po&quot; or &quot;oc&quot;.</li>
+<li>Two <em>straight sided</em> letters, like &quot;nn&quot; or &quot;dk&quot;.</li>
+<li>One of them has an <em>open side</em> or <em>diagonal side</em>, like &quot;ev&quot; or &quot;LT&quot;.</li>
+<li>One rounded side letter and one straight side, like &quot;on&quot; or &quot;mc&quot;.</li>
+</ul>
+<h4>Tracking</h4>
+<p>Tracking is the <strong>overall space between letters</strong>, applied <em>equally for each case</em>, a word, a line, or a large body of text. Notice it is the same amount applied for every pair of characters, there are no distinctions between specific pairs of letters, that's the job of manual Kerning. We can also use Tracking to <em>avoid widows and orphans</em>. A <strong>widow</strong> is a word <em>hanging out at the end</em> of a paragraph, while an <strong>orphan</strong> is a word <em>at the top</em> of a body text column.</p>
+<h4>Leading</h4>
+<p>Leading is a much simpler concept, it is the <strong>space between lines</strong> measured <em>from baseline to baseline</em>. In case the Tracking is too large or the type has strong vertical strokes, we will need to increase the Leading to compensate, this way the eye can distinguish the horizontal flow of the line more easily, because rows (lines) will be noticeable enough in comparison with columns (letters and spaces). The term Leading comes from the early days of metal typing, where the space between lines was adjusted with thin strips of lead.</p>
+<h3>Legibility &amp; Readability</h3>
+<p><strong>Legibility</strong> measures the ability to decipher something. In typography, legibility measures how easy it is to <em>distinguish one letter from another</em>. Some features a legible typeface has can be <em>individual character shapes</em>, a <em>large counter space</em>, a <em>large x-height</em>, or <em>Serifs</em>, as they provide extra information in comparison with Sans Serifs.</p>
+<p><strong>Readability</strong> measures how much areader wants to read the text, in other words, it's <em>how appealing the text is for the reader</em>. We can enhance it by creating places where the eye can <em>focus or even rest</em>.
+These appealing features are often called <strong>Entry Points</strong>, places where the reader can choose to enter the text and start reading, like <em>white space</em> between text blocks, <em>noticeable headings</em> on Caps or Bold letters, or <em>colors</em> for specific blocks.</p>
+<p>Factors that can affect readability in general:</p>
+<ul>
+<li>The size of the text.</li>
+<li>The length of the lines.</li>
+<li>The spacing among characters and lines.</li>
+<li>The color contrast between the text and the background.</li>
+</ul>
+<h3>Combining Types</h3>
+<p>Often, it's fine <em>not to combine</em> more than one typeface, we could keep only one and use its different variations (like italics and weights). In case we really want to use more than one we need to make them <strong>live harmoniously</strong> with one another (when trying to differentiate between body text and headlines, for instance). Most projects <em>don't need more than two</em> well-chosen types to create an effective <em>typographic hierarchy</em>.</p>
+<p>To ensure a good matching, we need to consider their basic characteristics to <strong>find some similarities</strong>. Those characteristics can be the <em>historical period</em> in which they were created, typefaces created by <em>the same designer</em>, types that are <em>stylistically opposite</em> to build up a noticeable contrast, types with a similar <em>body height</em> but with different styles, etc. What we should not do is to combine two types with a strong stylistic identity each, that would make them conflict and <em>fight for attention</em> instead of being complementary to one another.</p>
+<h3>Writing with Cases</h3>
+<p>Cases help us define and control <em>mood</em> and <em>voice volume</em> for the message.</p>
+<p><strong>Uppercase</strong>, writing with Capital letters (originally called Majuscules) conveys a <em>louder voice</em>, something <em>powerful</em>, often <em>authority</em>, sometimes even <em>formality</em>. When designing with them, we should leave a bit of extra <em>space around</em> them to let the word breath, because its uncomfortable to read on Caps when the letters are too close to one another.</p>
+<p><strong>Lowercase</strong> (or Minuscules) provides a <em>lower voice</em>, a more <em>friendly</em> mood. They seem to be closer to the reader as if they were <em>more personal</em>, they work well for <em>informal</em> contexts. Opposite to its counterpart, lowercase (letters and words) works just fine in <em>closer contact</em>.</p>
+<hr>
+<p>Reference:</p>
+<ul>
+<li><a href="https://www.linkedin.com/learning/graphic-design-foundations-typography/">Graphic Design Foundations: Typography</a> (Ina Saltz).</li>
+<li>Typography Referenced (page 320).</li>
+</ul>
+<!-- - [The 33 Laws of Typography](https://www.linkedin.com/learning/the-33-laws-of-typography/) (Jill Butler). -->
+
+    </main>
+    <footer>
+      <p>
+        Learning
+        <a href="/">docs & notes</a>
+        about my Frontend Development journey,
+        <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
+      </p>
+    </footer>
+  </body>
+</html>

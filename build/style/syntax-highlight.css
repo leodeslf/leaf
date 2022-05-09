@@ -1,59 +1,3 @@
-@font-face {
-  font-family: 'DM Mono';
-  font-style: italic;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/l/font?kit=aFTT7PB1QTsUX8KYth-orYatbZ-DXllNuq57Yr7tJsZecguzHU5ts5WN9ZZPqUnXYBzvvvc5--J4cELSQeUKsbVCEQ9wm-ExMbEQrAg-aOBFjFZes4RpB7X8l0TgpVBj-75TQDQvy5hlsj0VHziRmyOGhqTf5lTLRCkKcrkqxqIhtpxGskXQjMKOX75VTkZJQ6Ivig&skey=adfe8cf4b5bc144d&v=v8) format('woff2');
-}
-
-@font-face {
-  font-family: 'DM Mono';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/l/font?kit=aFTW7PB1QTsUX8KYth-QBLbyaKz-XVxKv612bbPuI8FbcRasAE1otJCO-JlCqkzQZR_Sgco6_uV9c0_dTOYPtrBBDBBtmOQ2NLIdowU9bedAjyshzodsALD_mkvtplVk_r1OXykszp9gsTAaEjuUnCaFu5vi5VHMQSoHfbQpw6UktYFZr0bVi8eNUrFYTUNORg&skey=ddea0452ad7481a5&v=v8) format('woff2');
-}
-
-@font-face {
-  font-family: 'DM Mono';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/l/font?kit=aFTR7PB1QTsUX8KYvrGyIYG_F639XFtLvKx5bLDvJMBYcAmtA0xvtZOP95hBq0vRZh7tgMk7-eR-ckDcT-cIt7NAExFumeM3N7MSogY8auZDjlQgzYZrAbP-lUrup1Jl_bxRXiotyZ5jsD8bETqTnSWEhJrh5FbNQisIfLcoxKQntJ5YrEfSisSMXbBbTERPRaA&skey=d4f206f6aecab2b9&v=v8) format('woff2');
-}
-
-@font-face {
-  font-family: 'DM Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/l/font?kit=aFTU7PB1QTsUX8KYhhiCfoSMaq74W15IsaN0b7XoIcNFbxSuBktqtp6A-ptErE7SWyHQg8w8_OdzfU3fSuANtK5fDhJrnuY0OrwfoQM7b-U-8SkjyIFuAr7xmEnroFdm4KNMXS8qzJ1uvzIYFD2Wnhi7uZnk41POTyQFf7Ivwac6q4NbqUDXicmDULNeS0E&skey=7fffa551dba78cac&v=v8) format('woff2');
-}
-
-code[class*="language-"],
-pre[class*="language-"] {
-  background-color: var(--bg--alt-a);
-  color: var(--color);
-  direction: ltr;
-  font-family: 'DM Mono', monospace;
-  font-weight: 300;
-  text-align: left;
-  white-space: pre;
-  word-break: normal;
-  word-spacing: normal;
-  tab-size: 2;
-  -moz-tab-size: 2;
-  -o-tab-size: 2;
-  hyphens: none;
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-}
-
-pre[class*="language-"] {
-  overflow: auto;
-}
-
 .token.atrule,
 .token.attr-name,
 .token.builtin,
@@ -102,19 +46,19 @@ pre[class*="language-"] {
 
 .token.important,
 .token.placeholder {
-  color: white;
+  color: var(--color--white);
 }
 
 .token.comment,
 .token.cdata,
 .token.doctype,
 .token.prolog {
-  color: grey;
+  color: var(--color--dark-grey);
 }
 
 .token.comment,
 .token.italic {
-  font-style: italic;
+  font-style: oblique;
 }
 
 .token.bold,
@@ -129,3 +73,5 @@ pre[class*="language-"] {
 .token.namespace {
   opacity: .7;
 }
+
+/* [class*="language-"] */

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🌱 Learning docs & notes about my Frontend Development journey, Leo de S.L.F.">
+    <meta name="author" content="Leonardo de S.L.F"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link rel="stylesheet" href="/style/style.css"/>
+    <link rel="stylesheet" href="/style/syntax-highlight.css"/>
+    <link rel="stylesheet" href="/style/print.css" media="print"/>
+    <link rel="stylesheet" href="/style/small.css" media="(max-width: 599px)"/>
+    <title>Docs & Notes</title>
+  </head>
+  <body>
+    <label id="dark-theme">
+      <input id="dark-theme__input" type="checkbox"/>
+      <span></span>
+    </label>
+    <script>
+      const lastChoise = localStorage.getItem('color_scheme_choise');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+      // Prioritize user preferences over system settings.
+      const currentIsDark = lastChoise !== null
+        ? lastChoise === 'true'
+        : prefersDark.matches;
+
+      // Checkbox (checked = dark, unchecked = light).
+      const darkThemeCheckbox = document.getElementById('dark-theme__input');
+      darkThemeCheckbox.checked = currentIsDark;
+      darkThemeCheckbox.addEventListener('input', toggleTheme);
+
+      if (currentIsDark) {
+        document
+          .documentElement
+          .classList
+          .add("dark");
+      }
+
+      function toggleTheme({target}) {
+        localStorage.setItem('color_scheme_choise', target.checked);
+        document
+          .documentElement
+          .classList
+          .toggle("dark");
+      }
+    </script>
+    
+      <a id="home" href="/">🌱</a>
+      
+    
+    <h1>
+      <a href="/">🌱 Docs & Notes</a>
+    </h1>
+    <main>
+      <h2>Kaizen</h2>
+<p>Kaizen is a <strong>mindset</strong> aimed to pursue <em>continuous improvement</em> for every process we perform, assuming we can always do it better with either small or big scale changes. Changes can come from each and every partner of the organization. It's originally a Japanese philosophy, which literally means &quot;<em>change</em> (kai) <em>for the better</em> (zen)&quot;, then Kaizen is the <em>commitment and self-discipline to constantly improve through change</em>.</p>
+<p>Kaizen is not a time-bounded initiative with a fixed goal, but a <em>lifetime path</em> to gradually make productivity improvements (done by everyone, everywhere, and every day), where we research, reflect, learn, and take action to effectively <em>rise customer value</em>, while fostering <em>employee courage and engagement</em>, making job more fulfilling and less tiring.</p>
+<p>Shigeo Shingo (Ind. Engineer) consultant and trainer focused on improving factory management, and Taiichi Ohno (Ind. Engineer and former Manager at Toyota) were some of the main promoters and actual fathers of the Kaizen we know today. It started to proliferate in the 1950s with the creation of the Toyota Production System (TPS) among other tools to improve manufacturing <em>performance</em>.</p>
+<h3>Kaizen Events</h3>
+<p>A Kaizen event is a <strong>scheduled short-term session</strong> (15 minutes to a week long) intended to <em>create improvement plans</em> by identifying impediments, breaking them into smaller parts, analyzing root causes, and thinking ways of getting rid of them. As opposed to Kaizen, they are <em>limited in scope and time-bounded</em>. They seek to build <em>enthusiasm</em> and knowledge exchange, combining different perspectives and reaching <em>alignment and commitment</em>.</p>
+<h3>Five Whys</h3>
+<p>The best way to solve a problem for good is to find out its cause (or the cause of that cause and so on), in other words: the &quot;real&quot; problem. Sakichi Toyoda (father of Kiichiro Toyoda, the founder of Toyota) introduced the concept of Five Whys.</p>
+<blockquote>
+<p>Having no problems is the biggest problem of all. -Taiichi Ohno</p>
+</blockquote>
+<p>Five Whys is a method to find the <strong>root cause</strong> of a given problem by asking five times why (the amount of times doesn't actually have to be strictly five), uncovering a series of cause-and-effect events until we get to the issue that's preventing us from improving our systems and processes. This approach of <em>exploring inefficiencies</em> can lead us to get useful insights even after the fifth &quot;why&quot;, allowing us to not only solve a problem and eliminate its root cause, but also to make several small improvements through that process.</p>
+<blockquote>
+<p>...the basis of Toyota's scientific approach... by repeating why five times, the nature of the problem as well as its solution becomes clear. -Taiichi Ohno</p>
+</blockquote>
+<h3>Five S</h3>
+<p>To make <strong>environmental improvements</strong> and <em>create a healthy work culture</em> at the organization, we can use the Five S method, a systematic approach aimed to <em>expose waste</em> by cleaning, inspecting, and optimizing the workplace (Gemba). The name comes from the first letter of the five <em>high impact, low cost</em> activities that get each and everyone in the team to participate, thus raising the general sense of ownership. It's a practice also adopted by Lean.</p>
+<blockquote>
+<p>A place for every thing, and every thing in its place. -an old Lean saying</p>
+</blockquote>
+<p>The Five S are:</p>
+<ol>
+<li><strong>Seiri</strong>: Separate items by how necessary they are. <em>Get rid of everything that's not needed</em>, keep aside what's not needed now, and keep close the critical, high priority items.</li>
+<li><strong>Seition</strong>: <em>Organize all the items left</em> from the previous step. Store them in an accessible and easy to find place. This step enforces and supports value stream flow.</li>
+<li><strong>Seiso</strong>: Shine the workplace and tools in a systematic way. Leave it even cleaner than it was before. <em>Make a deep clean to inspect</em> and find even more opportunities to improve.</li>
+<li><strong>Seiketsu</strong>: After the first three steps, <em>standardize and create good practices</em> as regular mechanisms to keep improvements and the workplace in its optimal shape.</li>
+<li><strong>Shitsuke</strong>: We need to apply previous steps with <em>self-discipline and consistency</em> in order to make it easy to detect future unorganized and unclear stuff.</li>
+</ol>
+<hr>
+<p>Reference:</p>
+<ul>
+<li>Agile Kaizen (page 4, 10, 39, 92, 179).</li>
+<li><a href="https://www.leansixsigmadefinition.com/glossary/kaizen/">Kaizen (leansixsigmadefinition.com)</a>.</li>
+<li>Toyota Kaizen Methods (page 19).</li>
+<li><a href="https://www.kaizen.com/what-is-kaizen">What is KAIZEN™ (kaizen.com)</a>.</li>
+<li><a href="https://www.managementstudyguide.com/what-is-kaizen.htm">What is Kaizen (managementstudyguide.com)</a>.</li>
+</ul>
+
+    </main>
+    <footer>
+      <p>
+        Learning
+        <a href="/">docs & notes</a>
+        about my Frontend Development journey,
+        <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="🌱 My learning docs and notes.">
+    <meta name="description" content="🌱 Learning docs & notes about my Frontend Development journey, Leo de S.L.F.">
     <meta name="author" content="Leonardo de S.L.F"/>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
@@ -14,6 +14,43 @@
     <title>Docs & Notes</title>
   </head>
   <body>
+    <label id="dark-theme">
+      <input id="dark-theme__input" type="checkbox"/>
+      <span></span>
+    </label>
+    <script>
+      const lastChoise = localStorage.getItem('color_scheme_choise');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+      // Prioritize user preferences over system settings.
+      const currentIsDark = lastChoise !== null
+        ? lastChoise === 'true'
+        : prefersDark.matches;
+
+      // Checkbox (checked = dark, unchecked = light).
+      const darkThemeCheckbox = document.getElementById('dark-theme__input');
+      darkThemeCheckbox.checked = currentIsDark;
+      darkThemeCheckbox.addEventListener('input', toggleTheme);
+
+      if (currentIsDark) {
+        document
+          .documentElement
+          .classList
+          .add("dark");
+      }
+
+      function toggleTheme({target}) {
+        localStorage.setItem('color_scheme_choise', target.checked);
+        document
+          .documentElement
+          .classList
+          .toggle("dark");
+      }
+    </script>
+    
+      <a id="home" href="/">🌱</a>
+      
+    
     <h1>
       <a href="/">🌱 Docs & Notes</a>
     </h1>
@@ -41,14 +78,14 @@
 <li>Only Composite</li>
 </ol>
 <p>All of these cases will be the result of a Style change. A Style change that comes from either JavaScript or CSS.</p>
-<!-- http://blog.wilsonpage.co.uk/introducing-layout-boundaries/ -->
+<p>More at <a href="http://blog.wilsonpage.co.uk/introducing-layout-boundaries/">Introducing 'layout boundaries' (wilsonpage.co.uk)</a>.</p>
 <h3>App Lifecycles (RAIL)</h3>
 <p>The four major areas of a site/app life cycle:</p>
 <ul>
 <li><strong>Response</strong>: it's the time it takes to give feedback from the users' input. If the response time gets longer than 100ms, it will be noticed as lagged.</li>
 <li><strong>Animate</strong>: either JavaScript or CSS, triggered by the user or a style rule. Each frame should be done in less than 16ms to ensure animations run at 60fps.</li>
 <li><strong>Idle</strong>: it begins immediately after the site/app loads and it's waiting for the user to interact, it's <em>when nothing happens</em>. During this state, we usually do the post-loading of anything that can wait and isn't included in the CRP (like images, videos, or any low-priority content). It's around 50ms long after the load.</li>
-<li><strong>Load</strong>: it's the actual first load of the page and all it's required assets before becoming idle. It should take less than 1s.</li>
+<li><strong>Load</strong>: it's the actual first load of the page and all its required assets before becoming idle. It should take less than 1s.</li>
 </ul>
 <h3>Weapons of Jank Destruction</h3>
 <p>Steps to ensure we run on a <em>proper environment</em>:</p>
@@ -61,11 +98,11 @@
 <p>To cover most of the use case scenarios and make a proper rendering performance analysis, we need to test on different <em>devices</em> (Windows, Mac, Android) and <em>browsers</em> (Chrome, Edge, Firefox, IE), as they may have a different JavaScript and Rendering <em>Engine</em>, which may result on different behaviors and an overall performance gap, a gap that's quite big specially when talking about rendering.</p>
 <p>Our primary tool is the browsers developers tool, the <em>DevTools</em> in Chrome, which is used to monitor the <em>Rendering Pipeline trace</em> (among other functionalities) from its <em>Performance tab</em> (previously Timeline), giving us access to valuable data like events, function calls, the line of code that fires them, timing, and more.</p>
 <h3>JavaScript</h3>
-<h4>Just In Time (JIT) Compilers</h4>
+<h4>Just in Time (JIT) Compilers</h4>
 <p>JavaScript compilers do compile the source code immediately after the file is loaded, that means they <em>generate a new code</em> to be executed from the one we write in JavaScript. Different engines may vary on the way they compile giving different results. That's why micro-optimizations aren't that effective and, in some cases, it can get even worse depending on the engine.</p>
 <h4>JavaScript Animations</h4>
 <p>The proper tool to make animations in JavaScript is the <code>requestAnimationFrame</code> API which is a method used to <em>call a given function the next frame</em> before it repaints, a callback to that function is passed as an argument. The given function itself needs to call <code>requestAnimationFrame</code> again to keep the loop running as an animation. To stop it, we use <code>cancelAnimationFrame</code>. It's said <code>requestAnimationFrame</code> is one-shot.</p>
-<!-- https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame -->
+<p>More at <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame">Window.requestAnimationFrame() (developer.mozilla.org)</a>.</p>
 <h4>Web Workers</h4>
 <p>JavaScript is a <em>single-thread environment</em>, which means that it's not possible to run multiple scripts at the same time (in parallel). It was true until the invention of Web Workers. A Web Worker is a script that runs in a <em>background thread</em>, allowing us to run scripts that handle computationally intensive tasks without blocking the UI or other script in the main thread. Transferring data between a worker and a non-worker script can be achieved via a thread-like message passing.</p>
 <p>Web Workers do have access to:</p>
@@ -83,10 +120,10 @@
 <li>The <code>document</code> object.</li>
 <li>The <code>parent</code> object.</li>
 </ul>
-<!-- https://www.html5rocks.com/en/tutorials/workers/basics/ -->
+<p>More at <a href="https://www.html5rocks.com/en/tutorials/workers/basics/">The Basics of Web Workers (html5rocks.com)</a>.</p>
 <h4>JavaScript Memory Management</h4>
 <p>JavaScript implements <em>Garbage Collection</em> (it's said it is garbage-collected), which means for us developers, we don't need to worry about pointers, deleting objects, or how to handle local variables as it gets done by the engine itself automatically. The downside is that the garbage collector is <em>Script-Blocking</em>, and, in consequence, it can be Render-Blocking resulting in a noticeable freezing of the page/app.</p>
-<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management -->
+<p>More at <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management">Memory Management (developer.mozilla.org)</a>.</p>
 <h3>Styles and Layout</h3>
 <h4>Recalculating Styles</h4>
 <p>The <em>performance cost</em> of the Style stage (&quot;Recalculate Style&quot; in DevTools) tends to <em>scale linearly</em> with the number of elements affected by style changes.</p>
@@ -125,16 +162,22 @@
 <li>Set <code>opacity</code> to less than <code>1</code>.</li>
 <li>Set <code>transform</code> to anything but <code>none</code>.</li>
 </ul>
-<!-- https://www.hongkiat.com/blog/writing-better-css/ -->
-<!-- https://dev.opera.com/articles/css-will-change-property/ -->
+<p>More at:</p>
+<ul>
+<li><a href="https://www.hongkiat.com/blog/writing-better-css/">How to Write Berret CSS with Performance in Mind (hongkiat.com)</a>.</li>
+<li><a href="https://dev.opera.com/articles/css-will-change-property/">Everything You Need to Know About the CSS will-change Property (dev.opera.com)</a>.</li>
+</ul>
 <h4>Forced Synchronous Layout</h4>
 <p>Layout Thrashing occurs when JavaScript <em>first writes, then reads</em> the DOM multiple times triggering reflow each time it happens. The rendering engine behaves as follows, <em>when the DOM is written to, Layout is invalidated</em>, new changes apply, and finally the document is reflowed.</p>
 <p>The browser tends to wait for the current frame to finish, then it performs this reflow. But, when we read a geometric value from the DOM before the current frame to be finished, the browser needs to <em>force Layout to perform early</em> so we can read it, that behavior is known as Forced Synchronous Layout.</p>
 <p>An ideal (but not realistic) solution would be to <em>re-order the execution</em> so that we first read the current DOM, then we write on it (invalidating the Layout, but not forcing it to perform as we aren't reading), and finally only one reflow is triggered at the end of the frame.</p>
 <h5>Trigger Reflows Asynchronously</h5>
 <p>As mentioned before, <code>requestAnimationFrame</code> executes a given function the next frame as soon as it starts. So it can perform <em>writes without triggering reflows</em> while not having to re-order the code, and keeping the reads synchronous on frame.</p>
-<!-- http://blog.wilsonpage.co.uk/preventing-layout-thrashing/ -->
-<!-- https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing -->
+<p>More at:</p>
+<ul>
+<li><a href="https://web.dev/avoid-large-complex-layouts-and-layout-thrashing/">Avoid large, complex layouts and layout thrashing (web.dev)</a>.</li>
+<li><a href="http://blog.wilsonpage.co.uk/preventing-layout-thrashing/">Preventing 'layout thrashing' (wilsonpage.co.uk)</a>.</li>
+</ul>
 <h3>Composing and Painting</h3>
 <h4>Painting</h4>
 <p>It's the process of <em>filling in pixels on the screen</em>, and it's often the <em>longest-running</em> of all tasks in the pipeline. That's why it's so important to optimize (or avoid) it.</p>
@@ -146,31 +189,28 @@
 <li><em>Use layers</em> to isolate changes from a given element.</li>
 <li><em>Reduce painting areas</em>, the less pixels to repaint, the better.</li>
 </ul>
-<!-- https://developers.google.com/web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas -->
+<p>More at <a href="https://web.dev/simplify-paint-complexity-and-reduce-paint-areas/">Simplify paint complexity and reduce paint areas (web.dev)</a>.</p>
 <h5>Painting by Layers</h5>
 <p>The browser is capable of painting not only into a single image in memory, but into multiple images, or <em>Compositor Layers</em>. Layers are one of the best options to isolate changes and prevent unnecessary work to be done, but we <em>shouldn't abuse them</em>, as they require memory and management.</p>
 <h5>Debugging Repaints</h5>
 <p>We can see the screen areas that are being repainted by using the <strong>Paint flashing</strong> tool from the Rendering tab of the DevTools in Chrome.</p>
 <h4>Composing</h4>
 <p>It's the process of <em>mixing layers</em> on screen displayed as a single image.</p>
-<h5>Promoting new layers</h5>
+<h5>Promoting New Layers</h5>
 <p>A way to make that is to use the <code>will-change</code> rule, by passing any value that is related to a geometric/positioning property, like <code>top</code>, <code>left</code>, <code>height</code>, or <code>width</code>, we (almost) ensure the browser will &quot;prepare&quot; for these changes by creating a new layer.</p>
 <p>It's also possible to do that with the <code>transform</code> rule, with a neutral value if no visual changes need to be done (e.g.: <code>transform: translateZ(0)</code>), also known as the <em>no-transform hack</em>. It always triggers the creation of a new layer even for older browsers and Safari, something that won't happen if using <code>will-change</code>.</p>
 <p>In a production environment it's often needed to use both rules, e.g.:</p>
 <pre class="language-css"><code class="language-css"><span class="token selector">div</span> <span class="token punctuation">{</span><br>  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">will-change</span><span class="token punctuation">:</span> transform<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<!-- https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count -->
+<p>More at <a href="https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/">Stick to Compositor-Only Properties and Manage Layer Count (web.dev)</a>.</p>
 
     </main>
     <footer>
       <p>
-        🌱 Learning
+        Learning
         <a href="/">docs & notes</a>
         about my Frontend Development journey,
         <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
       </p>
     </footer>
-    
-      <a id="home" href="/">🏡</a>
-    
   </body>
 </html>

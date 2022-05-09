@@ -2,56 +2,68 @@
 layout: default
 index: true
 ---
-## Table of contents
+## Table of Contents
 
-- **[Software Engineering](engg/)**
-  - [Bash](engg/bash/)
-  - [Data Structures](engg/data_structures/)
-  - Methodologies
-    - [Agile (Manifesto)](engg/method/agile/)
-      - [Scrum (Guide)](engg/method/scrum/)
-    - [Kanban](engg/method/kanban/)
-    - [Lean](engg/method/lean/)
-    - [Pair Programming](engg/method/pair_programming/)
-    - [Test-Driven Development](engg/method/tdd/)
-  - [Object Oriented Programming](engg/oop/)
-    - [Design Patterns](engg/oop/design_patterns/) *[WIP]*
-  - [Sorting Algorithms](engg/sorting_algorithms/)
-  - [Testing](engg/testing/)
-    - [Unit Testing](engg/testing/unit/)
-  - Version Control
-    - [Git](engg/version/git/)
-    - [Git Flow](engg/version/gitflow/)
-    - [GitHub Flow](engg/version/github_flow/)
-  - [World Wide Web](engg/www/)
-- **Frontend Development**
-  - Project Initialization
-    - [Angular](front/inits/angular/)
-    - [Create React App](front/inits/cra/)
-    - [Jekyll](front/tooling/jekyll/)
-    - [NPM Package](front/inits/npm/)
-    - [React Redux / Redux Toolkit](front/tooling/react_redux_toolkit/)
-    - [SvelteKit](front/inits/sveltekit/)
-    - [Vite](front/inits/vite/)
-    - [Vue](front/inits/vue/)
-  - Tooling
+- Frontend
+  - Coding
+    - [Angular](front/coding/angular/)
+    - React
+      - [Create React App](front/coding/cra/)
+      - [React Redux & Redux Toolkit](front/coding/react_redux_toolkit/)
+    - [SCSS](front/coding/scss/) *[old]*
+    - [SvelteKit](front/coding/sveltekit/)
+    - [JavaScript](front/coding/js/) *[wip]*
+      - [Eloquent JavaScript](front/coding/eloquent_js/) *[old]*
+    - [Vue](front/coding/vue/)
+  - Tooling CLIs
     - [11ty](front/tooling/11ty/)
     - [Browsersync](front/tooling/browser_sync/)
+    - [Cypress](front/tooling/cypress/)
     - [GitHub Pages](front/tooling/gh_pages/)
+    - [Gulp](front/tooling/gulp/todo) *[wip]*
+    - [Jekyll](front/tooling/jekyll/)
+    - [Jest](front/tooling/jest/todo) *[wip]*
+    - [NPM Package](front/tooling/npm/)
+    - [SASS](front/tooling/sass/)
     - [Serve](front/tooling/serve/)
     - [Terser](front/tooling/terser/)
     - [TypeScript](front/tooling/ts/)
+    - [Vite](front/tooling/vite/)
     - [Web Dev Server](front/tooling/wds/)
-  - [JavaScript](front/js/)
-    - [Eloquent JavaScript](front/eloquent_js/) *[to review]*
-  - [SCSS](front/scss/) *[to review]*
+    - [Webpack](front/tooling/webpack/) *[wip]*
   - Website Performance Optimization
-    - [Browser Rendering Optim.](front/wpo/browser_rendering/)
-    - [Critical Rendering Path Optim.](front/wpo/crp/)
-- **UI**
-  - [Atomic Design](ui/atomic_design/) *[WIP]*
-  - [Visual Elements of User Interface Design](ui/visual_elements_of_ui_design/) *[to review]*
-- **UX**
+    - [Browser Rendering Optimization](front/wpo/browser_rendering/)
+    - [Critical Rendering Path Optimization](front/wpo/critical_rendering_path/)
+    - [Search Engine Optimization](front/wpo/search_engine/todo) *[soon]*
+- Methodologies
+  - [Agile](method/agile/)
+    - [Scrum](method/scrum/) *[old]*
+  - [Extreme Programming](method/xp/todo) *[soon]*
+    - [Pair Programming](method/pair_programming/)
+    - [Refactoring](method/refactoring/todo) *[soon]*
+    - [Test-Driven Development](method/tdd/)
+  - [Kaizen](method/kaizen/)
+    - [Lean](method/lean/)
+      - [Kanban](method/kanban/)
+- [Software Engineering](engg/)
+  - [Architectural Patterns](engg/arch_patterns/todo) *[soon]*
+  - [Bash](engg/bash/)
+  - [Data Structures](engg/data_structures/)
+  - [Git](engg/git/)
+    - [Git Flow](engg/git/gitflow/)
+    - [GitHub Flow](engg/git/github_flow/)
+  - [Object Oriented Programming](engg/oop/)
+    - [Design Patterns](engg/oop/design_patterns/)
+  - [Sorting Algorithms](engg/sorting_algorithms/)
+  - [Testing](engg/testing/)
+    - [A/B Testing](engg/testing/ab/todo) *[soon]*
+    - [Unit Testing](engg/testing/unit/)
+  - [World Wide Web](engg/www/)
+- UI
+  - [Atomic Design](ui/atomic_design/todo) *[soon]*
+  - [Typography](ui/typography/)
+  - [Visual Elements of User Interface Design](ui/visual_elements_of_ui_design/) *[old]*
+- [UX](ux/todo) *[soon]*
   - [Don't Make Me Think](ux/dont_make_me_think/)
-  - [UX Design Fundamentals](ux/ux_design_fundamentals/) *[to review]*
-  - [UX Foundations: Interaction Design](ux/ux-foundations-ixd/) *[to review]*
+  - [UX Design Fundamentals](ux/ux_design_fundamentals/) *[old]*
+  - [UX Foundations: Interaction Design](ux/ux_foundations_ixd/) *[old]*

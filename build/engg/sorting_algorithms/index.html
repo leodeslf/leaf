@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="🌱 My learning docs and notes.">
+    <meta name="description" content="🌱 Learning docs & notes about my Frontend Development journey, Leo de S.L.F.">
     <meta name="author" content="Leonardo de S.L.F"/>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
@@ -14,33 +14,68 @@
     <title>Docs & Notes</title>
   </head>
   <body>
+    <label id="dark-theme">
+      <input id="dark-theme__input" type="checkbox"/>
+      <span></span>
+    </label>
+    <script>
+      const lastChoise = localStorage.getItem('color_scheme_choise');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+      // Prioritize user preferences over system settings.
+      const currentIsDark = lastChoise !== null
+        ? lastChoise === 'true'
+        : prefersDark.matches;
+
+      // Checkbox (checked = dark, unchecked = light).
+      const darkThemeCheckbox = document.getElementById('dark-theme__input');
+      darkThemeCheckbox.checked = currentIsDark;
+      darkThemeCheckbox.addEventListener('input', toggleTheme);
+
+      if (currentIsDark) {
+        document
+          .documentElement
+          .classList
+          .add("dark");
+      }
+
+      function toggleTheme({target}) {
+        localStorage.setItem('color_scheme_choise', target.checked);
+        document
+          .documentElement
+          .classList
+          .toggle("dark");
+      }
+    </script>
+    
+      <a id="home" href="/">🌱</a>
+      
+    
     <h1>
       <a href="/">🌱 Docs & Notes</a>
     </h1>
     <main>
       <h2>Sorting Algorithms</h2>
-<p>From the book Data Structures and Algorithms in C++.</p>
 <p>An algorithm is a <strong>set of well-defined instructions</strong> to solve a given problem, taking a set of inputs and producing a desired output.</p>
-<p>Algorithm rules:</p>
+<p>Basic algorithm rules:</p>
 <ul>
 <li>Input and output should be <em>defined precisely</em>.</li>
 <li>Each step should be <em>clear and unambiguous</em>.</li>
 <li>It should be the <em>most effective way</em> to get a solution.</li>
 <li>It should be defined as an <em>abstraction</em>, not as an implementation.</li>
 </ul>
-<p>The efficiency of data handling can be substantially increased if the data are sorted according to some <strong>criteria of order</strong>. Very often, the <em>sorting criteria are natural</em>, as in the case of numbers, or the numeric value of alphanumeric characters. Sorting can be made in <em>ascending or descending</em> order. Once the criterion is selected, the second step is <em>how to sort the data using that criterion</em>.</p>
-<p>The final ordering of data can be obtained in a variety of ways, and only some of them can be considered meaningful and efficient. To decide which method is best, certain <strong>criteria of efficiency</strong> have to be established and a method for quantitatively <em>comparing different algorithms</em> must be chosen.</p>
-<p>To make the comparison machine-independent, certain critical <em>properties of sorting algorithms</em> should be defined when comparing alternative methods. Two such properties are the <strong>number of comparisons</strong> and the <strong>number of movements</strong>. The efficiency of these two operations <em>depend on the size of the data set</em>.</p>
-<p>Because determining the precise number of comparisons is not always necessary or possible, an approximate value can be computed. For this reason, the number of comparisons and movements is <em>approximated with the big-O notation</em> by giving the order of magnitude of these numbers. But the order of magnitude can vary depending on the initial ordering of data.</p>
-<p>By measuring the efficiency of a given algorithm, we not only get to know <strong>how much time it takes</strong> for it to sort the data, but also the <strong>intelligence</strong> of that method. For example, an algorithm can (it better should) <em>recognize an already sorted data set</em>, so it doesn't make any unnecessary movement or comparison. By the other hand it can be completely unaware of that fact, something obviously inefficient.</p>
-<p>The number of comparisons and the number of movements do not have to be coincident. An algorithm can be very efficient on the former and perform poorly on the latter, or vice versa. Some sorting methods perform the same operations regardless of the initial ordering of data, others are more flexible. The number of operations is computed (if possible) for three case scenarios.</p>
+<h3>Developing a Good Algorithm</h3>
+<p>The efficiency of data handling can be substantially increased if the data are sorted according to some <strong>criteria of order</strong>. Very <em>often, the sorting criteria are natural</em>, as in the case of numbers, or the numeric value of alphanumeric characters. Sorting can be made in <em>ascending or descending</em> order. Once the criterion is selected, the second step is <strong>how to sort</strong> the data using that criterion.</p>
+<p>There are infinite ways to sort the data, not all of them are efficient. To decide which method is best, certain <strong>criteria of efficiency</strong> have to be established, and a <strong>method for quantitatively comparing</strong> different algorithms must be chosen, certain critical properties should be defined when comparing alternative methods. Two such properties to do that are the <strong>number of comparisons</strong> and the <strong>number of movements</strong>. <em>The efficiency of these two operations depend on the size of the data set</em>.</p>
+<h3>Estimating Efficiency</h3>
+<p>We need to measure <strong>how much time it takes</strong> for it to sort the data, but also need to get to know the <em>intelligence</em> of that method. For example, an algorithm can (it better should) <em>recognize an already sorted data set</em>, so it doesn't make any unnecessary movement or comparison. On the other hand it can be completely unaware of that fact. Determining the precise number of operations <strong>is not always necessary or possible</strong>. For this reason, <em>the number of comparisons and movements is approximated</em>.</p>
+<p>The number of <strong>comparisons and movements</strong> can vary independently. An algorithm can be efficient on the former and perform poorly on the latter, or vice versa. They can always perform the same operations regardless of <strong>the initial ordering of data</strong>, others are more flexible. Some algorithms perform better on small data samples, others perform better on larger ones, so the <strong>size of the data sample</strong> is also important. The number of operations is often computed (if possible) for three case scenarios.</p>
 <p>The three cases are:</p>
 <ul>
-<li><em>Best case</em> (often, data already in order).</li>
-<li><em>Worst case</em> (it can be data in reverse order).</li>
-<li><em>Average case</em> ( data in random order).</li>
+<li><strong>Best case</strong>: when the data is already in order, <em>Big-O</em> notation.</li>
+<li><strong>Worst case</strong>: the data is in reverse order, <em>Omega</em> notation.</li>
+<li><strong>Average case</strong>: data consistently in random order, <em>Theta</em> notation.</li>
 </ul>
-<p>Usually, simple algorithms often perform better with a small amount of data than their more complex counterparts, whose effectiveness may become obvious only when data samples become very large.</p>
 <h3>Elementary Sorting Algorithms</h3>
 <p>This kind of algorithm tends to be efficient for sorting a <em>small number of elements</em>. As the number of elements increases, efficiency decreases.</p>
 <h4>Insertion Sort</h4>
@@ -52,7 +87,7 @@
 <pre class="language-txt"><code class="language-txt">selection(array, n)<br>  for i = 0 to n - 2<br>    select the smallest item from array<br>    swap it with array[i]<br>  return array</code></pre>
 <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">selection</span><span class="token punctuation">(</span><span class="token parameter">array</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">const</span> n <span class="token operator">=</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span><br>  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> j<span class="token punctuation">,</span> lowestIndex<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">for</span> <span class="token punctuation">(</span>j <span class="token operator">=</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> lowestIndex <span class="token operator">=</span> i<span class="token punctuation">;</span> j <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>      <span class="token keyword">if</span> <span class="token punctuation">(</span>array<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">&lt;</span> array<span class="token punctuation">[</span>lowestIndex<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>        lowestIndex <span class="token operator">=</span> j<span class="token punctuation">;</span><br>      <span class="token punctuation">}</span><br>    <span class="token punctuation">}</span><br>    <span class="token punctuation">[</span>array<span class="token punctuation">[</span>lowestIndex<span class="token punctuation">]</span><span class="token punctuation">,</span> array<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>array<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> array<span class="token punctuation">[</span>lowestIndex<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br>  <span class="token keyword">return</span> array<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
 <h4>Bubble Sort</h4>
-<p>A sort algorithm in where we <em>swap any unordered adjacent pair of items</em> from an edge of the array to the other. Any time we make a swap, another scan should be made to verify if the new positioning left all items in the right place.</p>
+<p>A sort algorithm in which we <em>swap any unordered adjacent pair of items</em> from one edge of the array to the other. Any time we make a swap, another scan should be made to verify if the new positioning left all items in the right place.</p>
 <pre class="language-txt"><code class="language-txt">bubble(array, n)<br>  for i = 0 to n - 2<br>    for j = n - 1 to i + 1<br>      if array[j] > array[j - 1]<br>        swap array[j] and array[j - 1]<br>  return array</code></pre>
 <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">bubble</span><span class="token punctuation">(</span><span class="token parameter">array</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">let</span> n <span class="token operator">=</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span><br>  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> j<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">for</span> <span class="token punctuation">(</span>j <span class="token operator">=</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">>=</span> i<span class="token punctuation">;</span> j<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>      <span class="token keyword">if</span> <span class="token punctuation">(</span>array<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">&lt;</span> array<span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>        <span class="token punctuation">[</span>array<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span> array<span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>array<span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> array<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br>      <span class="token punctuation">}</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><br>  <span class="token keyword">return</span> array<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
 <h4>Comb Sort</h4>
@@ -64,8 +99,8 @@
 <h4>Shell Sort</h4>
 <p>The heart of shell sort is an ingenious division of the array into several subarrays, as described before for efficient algorithms in general. It's similar to insertion, but the trick is that <em>items spaced farther apart are compared first</em>, then the items closer to each other are compared, and so on, until adjacent items are compared on the last pass.</p>
 <pre class="language-txt"><code class="language-txt">shell(array, n)<br>  compute gaps from gap = 1 to gap &lt; n<br>  for each gap from last to first<br>    for each logical subarray of items with gap distance between them<br>      sort subarray items with insertion sort<br>  return array</code></pre>
-<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">shell</span><span class="token punctuation">(</span><span class="token parameter">array</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">const</span> n <span class="token operator">=</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span><br>  <span class="token keyword">const</span> gaps <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br>  <span class="token keyword">let</span> i<span class="token punctuation">,</span> gap<span class="token punctuation">;</span><br>  <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> gap <span class="token operator">=</span> <span class="token number">3</span> <span class="token operator">*</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> gap <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">,</span> gap <span class="token operator">=</span> <span class="token number">3</span> <span class="token operator">*</span> gap <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    gaps<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> gap<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br>  <span class="token keyword">let</span> j<span class="token punctuation">,</span> k<span class="token punctuation">,</span> offset<span class="token punctuation">,</span> key<span class="token punctuation">;</span><br>  <span class="token keyword">for</span> <span class="token punctuation">(</span>i<span class="token operator">--</span><span class="token punctuation">;</span> i <span class="token operator">>=</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    gap <span class="token operator">=</span> gaps<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span><br>    <span class="token keyword">for</span> <span class="token punctuation">(</span>offset <span class="token operator">=</span> gap<span class="token punctuation">;</span> offset <span class="token operator">&lt;</span> <span class="token number">2</span> <span class="token operator">*</span> gap<span class="token punctuation">;</span> offset<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>      <span class="token keyword">for</span> <span class="token punctuation">(</span>j <span class="token operator">=</span> offset<span class="token punctuation">;</span> j <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> j <span class="token operator">+=</span> gap<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>        key <span class="token operator">=</span> array<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span><br>        k <span class="token operator">=</span> j<span class="token punctuation">;</span><br>        <span class="token keyword">while</span> <span class="token punctuation">(</span>k <span class="token operator">-</span> gap <span class="token operator">>=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> key <span class="token operator">&lt;</span> array<span class="token punctuation">[</span>k <span class="token operator">-</span> gap<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>          array<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> array<span class="token punctuation">[</span>k <span class="token operator">-</span> gap<span class="token punctuation">]</span><span class="token punctuation">;</span><br>          k <span class="token operator">-=</span> gap<span class="token punctuation">;</span><br>        <span class="token punctuation">}</span><br>        array<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> key<span class="token punctuation">;</span><br>      <span class="token punctuation">}</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><br>  <span class="token keyword">return</span> array<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<!-- https://oeis.org/A003462 -->
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">shell</span><span class="token punctuation">(</span><span class="token parameter">array</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">const</span> n <span class="token operator">=</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span><br>  <span class="token keyword">const</span> gaps <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br>  <span class="token keyword">let</span> i<span class="token punctuation">,</span> gap<span class="token punctuation">;</span><br>  <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> gap <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> gap <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">,</span> gap <span class="token operator">=</span> <span class="token number">3</span> <span class="token operator">*</span> gap <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    gaps<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> gap<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br>  <span class="token keyword">let</span> j<span class="token punctuation">,</span> k<span class="token punctuation">,</span> offset<span class="token punctuation">,</span> key<span class="token punctuation">;</span><br>  <span class="token keyword">for</span> <span class="token punctuation">(</span>i<span class="token operator">--</span><span class="token punctuation">;</span> i <span class="token operator">>=</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    gap <span class="token operator">=</span> gaps<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span><br>    <span class="token keyword">for</span> <span class="token punctuation">(</span>offset <span class="token operator">=</span> gap<span class="token punctuation">;</span> offset <span class="token operator">&lt;</span> <span class="token number">2</span> <span class="token operator">*</span> gap<span class="token punctuation">;</span> offset<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>      <span class="token keyword">for</span> <span class="token punctuation">(</span>j <span class="token operator">=</span> offset<span class="token punctuation">;</span> j <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> j <span class="token operator">+=</span> gap<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>        key <span class="token operator">=</span> array<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span><br>        k <span class="token operator">=</span> j<span class="token punctuation">;</span><br>        <span class="token keyword">while</span> <span class="token punctuation">(</span>k <span class="token operator">-</span> gap <span class="token operator">>=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> key <span class="token operator">&lt;</span> array<span class="token punctuation">[</span>k <span class="token operator">-</span> gap<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>          array<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> array<span class="token punctuation">[</span>k <span class="token operator">-</span> gap<span class="token punctuation">]</span><span class="token punctuation">;</span><br>          k <span class="token operator">-=</span> gap<span class="token punctuation">;</span><br>        <span class="token punctuation">}</span><br>        array<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> key<span class="token punctuation">;</span><br>      <span class="token punctuation">}</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><br>  <span class="token keyword">return</span> array<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>More at <a href="https://oeis.org/A003462">Sequence A003462 (oeis.org)</a>.</p>
 <h4>Heap Sort</h4>
 <p>Heap sort uses an approach inherent to selection sort, but instead of starting from the smallest item, it <em>starts from the largest item and uses a max-heap tree</em>. We need to create a max-heap tree without actually creating a new data structure.</p>
 <pre class="language-txt"><code class="language-txt">heap(array, n)<br>  convert the array into a max-heap<br>  for each unsorted item<br>    swap the largest one (the root) with the last one<br>    restore the max-heap property<br>  return array</code></pre>
@@ -74,14 +109,10 @@
 <p>Quicksort <em>divides the array into two subarrays and a key called bound</em> or pivot. The first one contains items less than or equal to the pivot, the second subarray includes items equal to or greater than the pivot. Then the same partition process is repeated for both subarrays, and so on, until there are only one-cell arrays that do not need to be sorted at all.</p>
 <pre class="language-txt"><code class="language-txt">quicksort(array)<br>  if array.length > 1<br>    choose a bound (index)<br>      for each item of array<br>        put items smaller than array[bound] on its left<br>        put items greater/equal to array[bound] on its right<br>    if more elements need to be sorted for subarrayN<br>      quicksort(subarrayN)<br>  return array</code></pre>
 <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">quicksort</span><span class="token punctuation">(</span><span class="token parameter">array<span class="token punctuation">,</span> first<span class="token punctuation">,</span> last</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">const</span> n <span class="token operator">=</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span><br>  <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">></span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    first <span class="token operator">??=</span> <span class="token number">0</span><span class="token punctuation">,</span> last <span class="token operator">??=</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span><br>    <span class="token keyword">const</span> bound <span class="token operator">=</span> array<span class="token punctuation">[</span>Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span><span class="token punctuation">(</span>first <span class="token operator">+</span> last<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">.5</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br>    <span class="token keyword">let</span> lower <span class="token operator">=</span> first<span class="token punctuation">,</span> upper <span class="token operator">=</span> last<span class="token punctuation">;</span><br>    <span class="token keyword">while</span> <span class="token punctuation">(</span>lower <span class="token operator">&lt;=</span> upper<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>      <span class="token keyword">while</span> <span class="token punctuation">(</span>array<span class="token punctuation">[</span>lower<span class="token punctuation">]</span> <span class="token operator">&lt;</span> bound<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>        lower<span class="token operator">++</span><span class="token punctuation">;</span><br>      <span class="token punctuation">}</span><br>      <span class="token keyword">while</span> <span class="token punctuation">(</span>array<span class="token punctuation">[</span>upper<span class="token punctuation">]</span> <span class="token operator">></span> bound<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>        upper<span class="token operator">--</span><span class="token punctuation">;</span><br>      <span class="token punctuation">}</span><br>      <span class="token keyword">if</span> <span class="token punctuation">(</span>lower <span class="token operator">&lt;=</span> upper<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>        <span class="token punctuation">[</span>array<span class="token punctuation">[</span>lower<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">,</span> array<span class="token punctuation">[</span>upper<span class="token operator">--</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>array<span class="token punctuation">[</span>upper<span class="token punctuation">]</span><span class="token punctuation">,</span> array<span class="token punctuation">[</span>lower<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br>      <span class="token punctuation">}</span><br>    <span class="token punctuation">}</span><br>    <span class="token keyword">if</span> <span class="token punctuation">(</span>lower <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">></span> first<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>      array <span class="token operator">=</span> <span class="token function">quicksort</span><span class="token punctuation">(</span>array<span class="token punctuation">,</span> first<span class="token punctuation">,</span> lower <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br>    <span class="token keyword">if</span> <span class="token punctuation">(</span>lower <span class="token operator">&lt;</span> last<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>      array <span class="token operator">=</span> <span class="token function">quicksort</span><span class="token punctuation">(</span>array<span class="token punctuation">,</span> lower<span class="token punctuation">,</span> last<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><br>  <span class="token keyword">return</span> array<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<!-- https://www.guru99.com/images/1/011019_1052_QuickSortAl6.png -->
-<!-- https://gist.github.com/claudiahdz/39a86084edaaabe7fc17c321c0bb6896 -->
 <h4>Mergesort</h4>
 <p>The key process here is to <em>merge sorted halves of an array into one sorted array</em>. The process of dividing arrays into two halves is done recursively and stops when the array has fewer than two items. Each resulting halve has to be sorted first to then be able to merge. Subarrays are logically separated, no new data structure is created.</p>
 <pre class="language-txt"><code class="language-txt">mergesort(array) {<br>  if array.length > 1    <br>    array = mergesort(left half of array)<br>    array = mergesort(right half of array)<br>    merge both halves (create only one new-temporal data structure)<br>  return array<br>}</code></pre>
 <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">mergesort</span><span class="token punctuation">(</span><span class="token parameter">array<span class="token punctuation">,</span> first<span class="token punctuation">,</span> last</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">const</span> n <span class="token operator">=</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span><br>  first <span class="token operator">??=</span> <span class="token number">0</span><span class="token punctuation">,</span> last <span class="token operator">??=</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span><br>  <span class="token keyword">if</span> <span class="token punctuation">(</span>first <span class="token operator">&lt;</span> last<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">const</span> mid <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span><span class="token punctuation">(</span>first <span class="token operator">+</span> last<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    array <span class="token operator">=</span> <span class="token function">mergesort</span><span class="token punctuation">(</span>array<span class="token punctuation">,</span> first<span class="token punctuation">,</span> mid<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    array <span class="token operator">=</span> <span class="token function">mergesort</span><span class="token punctuation">(</span>array<span class="token punctuation">,</span> mid <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> last<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token keyword">const</span> temp <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br>    <span class="token keyword">let</span> k <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> left <span class="token operator">=</span> first<span class="token punctuation">,</span> right <span class="token operator">=</span> mid <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span><br>    <span class="token keyword">while</span> <span class="token punctuation">(</span>left <span class="token operator">&lt;=</span> mid <span class="token operator">&amp;&amp;</span> right <span class="token operator">&lt;=</span> last<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>      <span class="token keyword">if</span> <span class="token punctuation">(</span>array<span class="token punctuation">[</span>left<span class="token punctuation">]</span> <span class="token operator">&lt;</span> array<span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>        temp<span class="token punctuation">[</span>k<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> array<span class="token punctuation">[</span>left<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br>      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span><br>        temp<span class="token punctuation">[</span>k<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> array<span class="token punctuation">[</span>right<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br>      <span class="token punctuation">}</span><br>    <span class="token punctuation">}</span><br>    <span class="token keyword">while</span> <span class="token punctuation">(</span>left <span class="token operator">&lt;=</span> mid<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>      temp<span class="token punctuation">[</span>k<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> array<span class="token punctuation">[</span>left<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br>    <span class="token keyword">while</span> <span class="token punctuation">(</span>right <span class="token operator">&lt;=</span> last<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>      temp<span class="token punctuation">[</span>k<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> array<span class="token punctuation">[</span>right<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br>    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> first<span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> last<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>      array<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">[</span>i <span class="token operator">-</span> first<span class="token punctuation">]</span><span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><br>  <span class="token keyword">return</span> array<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<!-- https://www.interviewbit.com/tutorial/merge-sort-algorithm/ -->
-<!-- https://www.toptal.com/developers/sorting-algorithms/merge-sort -->
 <h4>Radix Sort</h4>
 <p>The radix approach is to <em>sort integers by each one of its digits</em>. For example, starting from the rightmost digit (the units), then the second rightmost digit (the tens) and so on, until all the digits of the longest number have been sorted, partially keeping the order of previous steps.</p>
 <pre class="language-txt"><code class="language-txt">radix(array, n)<br>  for digit = 0 (rightmost) to 9 (leftmost)<br>    for i = 0 to n - 1<br>      put all items among piles 0 through 9 based on array[i]'s digit value<br>    merge all items from the piles into array<br>  return array</code></pre>
@@ -91,195 +122,140 @@
 <pre class="language-txt"><code class="language-txt">counting(array, n)<br>  for i = 0 to n - 1<br>    add +1 to count[array[i]]<br>  for i = 0 to n - 1<br>    put i count[i] amount of times in array<br>return array</code></pre>
 <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">counting</span><span class="token punctuation">(</span><span class="token parameter">array</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">const</span> n <span class="token operator">=</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span><br>  <span class="token keyword">const</span> count <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br>  <span class="token keyword">let</span> i<span class="token punctuation">;</span><br>  <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    count<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br>  <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    count<span class="token punctuation">[</span>array<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token operator">++</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br>  <span class="token keyword">let</span> j<span class="token punctuation">,</span> k<span class="token punctuation">;</span><br>  <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> k <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">for</span> <span class="token punctuation">(</span>j <span class="token operator">=</span> count<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span> j <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">;</span> j<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>      array<span class="token punctuation">[</span>k<span class="token operator">++</span><span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><br>  <span class="token keyword">return</span> array<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
 <h3>Comparative Table</h3>
-<p>Each implementation sorting an average case array with multiple lengths (<code>n</code>).</p>
+<p><strong>Average benchmark</strong> results for each <em>algorithm</em> implementation sorting an average case collection on multiple <em>lengths</em> to compare its performance evolution. The best and second best algorithms for each collection length are highlighted.</p>
+<p>Elementary Sorting Algorithms (algorithm vs collection lenght):</p>
 <table>
 <thead>
 <tr>
-<th>Algorithm</th>
-<th><code>16</code></th>
-<th><code>256</code></th>
-<th><code>4,096</code></th>
-<th><code>65,536</code></th>
-<th><code>1,048,576</code></th>
-<th><code>67,108,864</code></th>
+<th></th>
+<th><code>25</code></th>
+<th><code>250</code></th>
+<th><code>1,000</code></th>
+<th><code>15,000</code></th>
+<th><code>50,000</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><em>Insertion Sort</em></td>
-<td>0.0002ms</td>
-<td>0.014ms</td>
-<td>2.9ms</td>
-<td>736.2ms</td>
-<td>317.5s</td>
-<td>-</td>
+<td><strong>0.00063ms</strong></td>
+<td><em>0.0153ms</em></td>
+<td><em>0.1861ms</em></td>
+<td><em>38.7ms</em></td>
+<td><em>427ms</em></td>
 </tr>
 <tr>
 <td><em>Selection Sort</em></td>
-<td>0.0003ms</td>
-<td>0.032ms</td>
-<td>5.92ms</td>
-<td>1.4s</td>
-<td>389.3s</td>
-<td>-</td>
+<td><em>0.00072ms</em></td>
+<td>0.0311ms</td>
+<td>0.3943ms</td>
+<td>78.3ms</td>
+<td>866ms</td>
 </tr>
 <tr>
 <td><em>Bubble Sort</em></td>
-<td>0.0003ms</td>
-<td>0.076ms</td>
-<td>18.32ms</td>
-<td>7.1s</td>
-<td>1924.4s</td>
-<td>-</td>
+<td>0.00099ms</td>
+<td>0.0700ms</td>
+<td>0.9445ms</td>
+<td>339ms</td>
+<td>4.2s</td>
 </tr>
 <tr>
 <td><em>Comb Sort</em></td>
-<td>0.0003ms</td>
-<td>0.011ms</td>
-<td>0.4ms</td>
-<td>11.2ms</td>
-<td>197ms</td>
-<td>-</td>
-</tr>
-<tr>
-<td><em>Shell Sort</em></td>
-<td>0.0003ms</td>
-<td>0.005ms</td>
-<td>0.31ms</td>
-<td>8.2ms</td>
-<td>263ms</td>
-<td>36.2s</td>
-</tr>
-<tr>
-<td><em>Heap Sort</em></td>
-<td>0.0003ms</td>
-<td>0.006ms</td>
-<td>0.33ms</td>
-<td>7.4ms</td>
-<td>182ms</td>
-<td>25.3s</td>
-</tr>
-<tr>
-<td><em>Quicksort</em></td>
-<td>0.0004ms</td>
-<td>0.007ms</td>
-<td>0.34ms</td>
-<td>6.8ms</td>
-<td>131ms</td>
-<td>10.6s</td>
-</tr>
-<tr>
-<td><em>Mergesort</em></td>
-<td>0.0009ms</td>
-<td>0.02ms</td>
-<td>0.59ms</td>
-<td>13.4ms</td>
-<td>298ms</td>
-<td>29.4s</td>
-</tr>
-<tr>
-<td><em>Radix Sort</em></td>
-<td>0.0034ms</td>
-<td>0.048ms</td>
-<td>0.74ms</td>
-<td>12.8ms</td>
-<td>216ms</td>
-<td>14.2s</td>
-</tr>
-<tr>
-<td><em>Counting Sort</em></td>
-<td>0.0048ms</td>
-<td>0.073ms</td>
-<td>1.52ms</td>
-<td>125ms</td>
-<td>80ms</td>
-<td>2.9s</td>
+<td>0.00099ms</td>
+<td><strong>0.0082ms</strong></td>
+<td><strong>0.0654ms</strong></td>
+<td><strong>1.57ms</strong></td>
+<td><strong>6.60ms</strong></td>
 </tr>
 </tbody>
 </table>
-<!-- ### Asymptotic Analysis
-
-It's the analysis of *performance over input size* (among other conditions) for a given algorithm, as it may vary in different ways while scaling. Asymptotic notations are the mathematical notations used to **measure the efficiency** (running times) of an algorithm as the input tends towards a particular value.
-
-There are three notations for the different *scenarios*:
-
-- **Big-O** notation, *worst-case*.
-- **Omega** notation, *best-case*.
-- **Theta** notation, *average-case*.
-
-https://www.programiz.com/dsa/asymptotic-notations
-
-#### Master Method & Theorem
-
-##### Master Method
-
-It's a formula for solving *recurrence relations* of the form `T(n) = aT(n / b) + f(n)`.
-
-Where:
-
-- `n` = size of input.
-- `a` = number of subproblems.
-- `a >= 1` and `b > 1` are constants.
-- `n / b` = size of each subproblem (assuming all of them to have the same size).
-- `f(n)` = the cost of dividing the problem and cost of merging the solutions.
-- `f(n)` is an asymptotically positive function.
-
-##### Master Theorem
-
-The master theorem is used in calculating the **time complexity** of recurrence relations (divide and conquer algorithms) in a simple and quick way.
-
-As the method defines, time complexity is given by `T(n) = aT(n / b) + f(n)`.
-
-Where `T(n)` has the following *asymptotic bounds*:
-
-For|If|Thus
----|---|---
-`T(n) = Θ(n^(log_b(a)))`|`f(n) =O(n^(log_b(a - ϵ)))`|`f(n) < n^(log_b(a))`
-`T(n) = Θ(n^(log_b(a)) * log(n))`|`f(n) =Θ(n^(log_b(a)))`|`f(n) = n^(log_b(a))`
-`T(n) = Θ(f(n))`|`f(n) =Ω(n^(log_b(a + ϵ)))`|`f(n) > n^(log_b(a))`
-
-Being `ϵ > 0` a constant.
-
-The master theorem *cannot* be used if:
-
-- `T(n)` is not monotone.
-- `f(n)` is not a polynomial.
-- `a` is not a constant.
-- `a < 1`.
-
-https://www.programiz.com/dsa/master-theorem
-
-#### Divide and Conquer Algorithm
-
-It's a **strategy** of solving a large problem by:
-
-1. Breaking (*divide*) the problem into smaller subproblems.
-1. Solving (*conquer*) the subproblems.
-1. Merging (*combining*) them to get the desired output.
-
-Advantages:
-
-- Tends to simplify the complexity of problems.
-- It's suitable for multiprocessing systems.
-- It makes efficient use of memory caches.
-
-##### Divide and Conquer vs Dynamic approach
-
-The main difference is the *storage of subproblem results*. In a dynamic approach, each subproblem result is stored for future reference, whereas, with a divide and conquer approach, it won't happen. That's why we use a dynamic approach when we know we will need to solve the same problem multiple times. 
-
-https://www.programiz.com/dsa -->
+<p>Efficient Sorting Algorithm (algorithm vs collection lenght):</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><code>25</code></th>
+<th><code>250</code></th>
+<th><code>1,000</code></th>
+<th><code>15,000</code></th>
+<th><code>50,000</code></th>
+<th><code>1,000,000</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Shell Sort</em></td>
+<td><em>0.00081ms</em></td>
+<td><em>0.0045ms</em></td>
+<td><em>0.0554ms</em></td>
+<td>1.39ms</td>
+<td>5.90ms</td>
+<td>229.3ms</td>
+</tr>
+<tr>
+<td><em>Heap Sort</em></td>
+<td>0.00117ms</td>
+<td>0.0061ms</td>
+<td>0.0571ms</td>
+<td><em>1.38ms</em></td>
+<td>5.60ms</td>
+<td>176.6ms</td>
+</tr>
+<tr>
+<td><em>Quicksort</em></td>
+<td>0.00108ms</td>
+<td>0.0076ms</td>
+<td>0.0679ms</td>
+<td>1.40ms</td>
+<td><em>5.20ms</em></td>
+<td><em>125.2ms</em></td>
+</tr>
+<tr>
+<td><em>Mergesort</em></td>
+<td>0.00189ms</td>
+<td>0.0207ms</td>
+<td>0.1239ms</td>
+<td>2.55ms</td>
+<td>10.1ms</td>
+<td>290.6ms</td>
+</tr>
+<tr>
+<td><em>Radix Sort</em></td>
+<td>0.00603ms</td>
+<td>0.0451ms</td>
+<td>0.1798ms</td>
+<td>2.80ms</td>
+<td>9.40ms</td>
+<td>207.6ms</td>
+</tr>
+<tr>
+<td><em>Counting Sort</em></td>
+<td><strong>0.00036ms</strong></td>
+<td><strong>0.0022ms</strong></td>
+<td><strong>0.0078ms</strong></td>
+<td><strong>0.18ms</strong></td>
+<td><strong>1.10ms</strong></td>
+<td><strong>36.40ms</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>Reference:</p>
+<ul>
+<li>Data Structures and Algorithms in C++ (page 491).</li>
+<li>Introduction to Algorithms (page 16, 170, 194, 197).</li>
+<li><a href="https://www.programiz.com/dsa">Learning DS &amp; Algorithms (programiz.com)</a>.</li>
+</ul>
 
     </main>
     <footer>
       <p>
-        🌱 Learning
+        Learning
         <a href="/">docs & notes</a>
         about my Frontend Development journey,
         <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
       </p>
     </footer>
-    
-      <a id="home" href="/">🏡</a>
-    
   </body>
 </html>

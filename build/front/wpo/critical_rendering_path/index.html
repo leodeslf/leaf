@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🌱 Learning docs & notes about my Frontend Development journey, Leo de S.L.F.">
+    <meta name="author" content="Leonardo de S.L.F"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link rel="stylesheet" href="/style/style.css"/>
+    <link rel="stylesheet" href="/style/syntax-highlight.css"/>
+    <link rel="stylesheet" href="/style/print.css" media="print"/>
+    <link rel="stylesheet" href="/style/small.css" media="(max-width: 599px)"/>
+    <title>Docs & Notes</title>
+  </head>
+  <body>
+    <label id="dark-theme">
+      <input id="dark-theme__input" type="checkbox"/>
+      <span></span>
+    </label>
+    <script>
+      const lastChoise = localStorage.getItem('color_scheme_choise');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+      // Prioritize user preferences over system settings.
+      const currentIsDark = lastChoise !== null
+        ? lastChoise === 'true'
+        : prefersDark.matches;
+
+      // Checkbox (checked = dark, unchecked = light).
+      const darkThemeCheckbox = document.getElementById('dark-theme__input');
+      darkThemeCheckbox.checked = currentIsDark;
+      darkThemeCheckbox.addEventListener('input', toggleTheme);
+
+      if (currentIsDark) {
+        document
+          .documentElement
+          .classList
+          .add("dark");
+      }
+
+      function toggleTheme({target}) {
+        localStorage.setItem('color_scheme_choise', target.checked);
+        document
+          .documentElement
+          .classList
+          .toggle("dark");
+      }
+    </script>
+    
+      <a id="home" href="/">🌱</a>
+      
+    
+    <h1>
+      <a href="/">🌱 Docs & Notes</a>
+    </h1>
+    <main>
+      <h2>Critical Rendering Path Optimization</h2>
+<p>Course by Google (original title: Website Performance Optimization).</p>
+<h3>The Website Performance Optimization</h3>
+<h4>Critical Rendering Path (CRP)</h4>
+<p>Is the sequence of steps that the browser goes through to convert HTML, CSS, and JavaScript into actual pixels on the screen.</p>
+<p>The parts involved in are:</p>
+<ul>
+<li><strong>DOM</strong></li>
+<li><strong>CSSOM</strong></li>
+<li><strong>JavaScript</strong></li>
+<li><strong>Render Tree</strong></li>
+<li><strong>Layout</strong></li>
+<li><strong>Paint</strong></li>
+</ul>
+<h4>DOM</h4>
+<p>The process begins by reading each <em>character</em> in the html file sent by the server. Then the browser converts it to <em>tokens</em> that will be used to build out <em>nodes</em>. Finally, once the reading process is finished we get the <em>DOM</em>, which is a tree structure that captures the <em>content</em> and <em>properties</em> of the HTML and all the <em>relationships</em> between the nodes.</p>
+<h4>CSSOM</h4>
+<p>The same process is followed (characters, tokens, nodes) to build the <em>CSSDOM</em>. Converting CSS into CSSOM is a <em>Render-Blocking</em> process.</p>
+<p>More at <a href="https://www.hongkiat.com/blog/css-object-model-cssom/">The Beginners Guide to CSS Object Model (CSSOM) (hongkiat.com)</a>.</p>
+<h4>Render Tree</h4>
+<p>The Render Tree only captures <em>visible content</em>, it takes the structure from the DOM and calculates its corresponding styles from the CSSOM.</p>
+<h4>Layout</h4>
+<p>This process is run from the Render Tree to <em>compute the geometry</em> (positions and dimensions) of each node starting from the highest hierarchy. Each time the screen is resized, the layout process is restarted.</p>
+<h4>Paint</h4>
+<p>Once we know which nodes are visible, it's time to paint the actual pixels on the screen, aka <em>rasterizing</em> (color, background, shadow, blending, and more).</p>
+<h4>Rendering the Page</h4>
+<pre class="language-html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">HTML</span><span class="token punctuation">></span></span><br><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>main.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>style.css<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>link</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><br><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br>  <span class="token comment">&lt;!-- Some content here... --></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span></code></pre>
+<p>Steps to render the example page:</p>
+<ol>
+<li>Begin constructing the DOM by parsing HTML.</li>
+<li>Request CSS &amp; JS resources.</li>
+<li>Parse CSS and construct the CSSOM.</li>
+<li>Execute JS.</li>
+<li>Merge DOM and CSSOM into the Render Tree.</li>
+<li>Run Layout.</li>
+<li>Run Paint.</li>
+</ol>
+<h3>The Critical Rendering Path</h3>
+<h4>Optimizing the DOM</h4>
+<p>The best way to optimize the DOM size and improve the page-load speed is to <em>avoid large files</em> by minifying them, to <em>reduce the amount of files</em> (specially the critical ones), and to <em>prevent unnecessary network requests</em> by caching.</p>
+<p>More at <a href="https://web.dev/optimizing-content-efficiency-optimize-encoding-and-transfer/">Optimizing Encoding and Transfer Size of Text-Based Assets (web.dev)</a>.</p>
+<h5>Minify</h5>
+<p>It's done by <em>removing unnecessary characters</em>, like comments, white spaces, new lines, and using shorter variable names. After this process the code is still valid and can be run immediately by the browser's interpreter. This process helps deliver lighter files and can even improve the runtime overall performance.</p>
+<h5>Compress</h5>
+<p>It's to <em>encode information using fewer bits</em> with a compression algorithm (usually <em>Gzip</em> for the web). Compressed files cannot be run, they need to be uncompressed to be readable by the interpreter. It's a process that often massively reduces the file size at rates of as high as 70-90% for larger files.</p>
+<p>All modern browsers support Gzip compression and will automatically request it for all HTTP requests, the only thing we have to ensure is that the server is configured with the recommended settings to serve these files.</p>
+<p>Compression is also used on other than text assets like image, sound, and video. Most of them, for example, can add up to tens of kilobytes on metadata. Those files require more specific techniques and algorithms to be compressed.</p>
+<h5>Cache</h5>
+<p>Caching is a technique in which we <em>store a copy</em> of a given resource and serve it back when requested. It's not only supported in all browsers, in fact they'll first route all HTTP requests to the cache to try to fulfill the request from it, which eliminates both the network latency and traffic which is always positive.</p>
+<p>HTTP caching help us to:</p>
+<ul>
+<li>Avoid large resource requests which require several requests.</li>
+<li>Make available a greater bandwidth for critical resources.</li>
+<li>Avoid consuming one of the limited in-parallel requests.</li>
+<li>Save people's money when using mobile plans.</li>
+<li>Load a given resource faster.</li>
+</ul>
+<p>More at:</p>
+<ul>
+<li><a href="https://web.dev/i18n/en/http-cache/">Prevent unnecessary network requests with the HTTP Cache (web.dev)</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching">HTTP caching (developer.mozilla.org)</a>.</li>
+</ul>
+<h4>Unblocking CSS with Media Queries</h4>
+<p>As said before, parsing a CSS asset is a Render-Blocking process. We can avoid that by specifying a <em>media attribute</em>. The browser will download all CSS resources, but read and parse only the assets in which the given media value matches.</p>
+<h4>JavaScript and the CRP</h4>
+<p>JavaScript execution (and downloading unless it has <code>async</code> or <code>defer</code> attributes) is a <em>Parser-Blocking</em> process. It means that the process of building the DOM out of the HTML gets interrupted as soon as a script is found, then resumed after its execution. During that, we can use JavaScript to manipulate (read, write, and rewrite) the current DOM and CSSOM.</p>
+<h5>JavaScript dependencies</h5>
+<p>Any script found after a CSS request will be delayed if the CSSOM hasn't yet been initialized (<em>CSS blocks JavaScript execution</em>), the script will run as soon as we get the CSS response and construct the CSSOM. As JavaScript would need to access the CSSOM as well as the DOM, it's said that <em>JavaScript depends on the CSSOM</em>.</p>
+<h5>Making JavaScript asynchronous</h5>
+<p>A script tag pointing to an external file to be loaded could have the <em>async attribute</em> to make it run in parallel, this way it <em>does not block the parsing</em> processes. In case a script is available before the DOM or the CSSOM construction is finished, the parsing doesn't get blocked.</p>
+<h5>Making JavaScript to wait</h5>
+<p>Another tool that can help us to avoid a Parser-Blocking script is the <em>defer attribute</em>. It makes the script <em>wait until the document gets parsed</em> to execute. A good use case scenario is any script that has low priority or won't manipulate the DOM/CSSOM during its construction.</p>
+<h5>Keeping JavaScript internal</h5>
+<p>We can speed up the page-load by serving JavaScript internally as a script block instead of externally through a script tag with a source URL. This way we <em>avoid a network request</em> which is usually much slower as it's time and network bandwidth consuming (the amount of requests in parallel are also limited).</p>
+<p>One limitation is that the async attribute will not prevent the script block to block the parsing. An exception to this occurs when we put the script above the CSS.</p>
+<h3>Optimizing the CRP</h3>
+<p>Other than specific optimizations (like minifying, compressing, caching, and reducing the amount of render and parser blocking resources), there are a few more <em>techniques for all the assets</em> involved in the CRP.</p>
+<p>We can enumerate three:</p>
+<ol>
+<li><strong>Minimize Critical Bytes</strong>: probably the most obvious thing to do is to reduce the total size of each file (reducing the actual amount of files will also help to achieve that).</li>
+<li><strong>Reduce Critical Resources</strong>: these are the assets that could block the initial rendering of the page. They are usually downloaded with the highest priority and before the others.</li>
+<li><strong>Shorten Critical Path Length</strong>: as the amount of in-parallel requests is limited and quite short, we should avoid chaining (serializing) a large number of assets and also the ones requested in parallel.</li>
+</ol>
+<p>More at <a href="https://andydavies.me/blog/2013/10/22/how-the-browser-pre-loader-makes-pages-load-faster/">How the Browser Pre-loader Makes Pages Load Faster (andydavies.me)</a>.</p>
+
+    </main>
+    <footer>
+      <p>
+        Learning
+        <a href="/">docs & notes</a>
+        about my Frontend Development journey,
+        <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
+      </p>
+    </footer>
+  </body>
+</html>
