@@ -115,9 +115,7 @@ Each node contains:
 
 A special binary tree in which *each node has either two or no children*. It's also known as "a proper binary tree".
 
-Theorem:
-
-Let:
+Theorem, let:
 
 - `i` = number of internal nodes.
 - `n` = number of nodes.
@@ -165,7 +163,7 @@ There are two different heap properties:
 - **Max heap property**: any node is *greater than its childs* (the root is the largest).
 - **Min heap property**: any node is *smaller than its childs* (the root is the smallest).
 
-**Fibonacci Heap** is a variation of heap DS. It consists of a *collection of trees* (instead of been a single one) in which *a node can have more than two or no children* at all. A pointer is kept to the minimum value, which is the root of a tree). All roots are connected as a circular doubly linked list.
+**Fibonacci Heap** is a variation of heap DS. It consists of a *collection of trees* (instead of being a single one) in which *a node can have more than two or no children* at all. A pointer is kept to the minimum value, which is the root of a tree). All roots are connected as a circular doubly linked list.
 
 #### Degenerate Binary Tree
 
@@ -255,4 +253,11 @@ Notice that values in `a[i][j]` and `a[j][i]` should both be defined if it's an 
 
 It represents a graph as *an array of linked lists*. The index of the array represents a vertex, each element in its linked list represents an edge pair vertex.
 
-<!-- https://www.programiz.com/dsa -->
+----
+
+Reference:
+
+- Advanced Data Structures.
+- Data Structures and Algorithms in C++.
+- Handbook of Data Structures and Applications.
+- [Learning DS & Algorithms (programiz.com)](https://www.programiz.com/dsa).
