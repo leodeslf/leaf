@@ -4,16 +4,18 @@ The World Wide Web (WWW), also known as the Web, is an **Information System** in
 
 It was invented by **Tim Berners-Lee** in 1989 while working at CERN in Geneva, Switzerland. He also wrote the very first *Browser* (called WorldWideWeb, later renamed Nexus to avoid confusion), a software to navigate over the Internet.
 
-The Web was originally meant to transfer documents written in *Hypertext Markup Laguage* (HTML) called Webpages. Multiple Webpages sharing a common *domain name* make up a Website. Resources are stored in computers running *web servers*, which are the programs that respond to resource requests.
+The Web was originally meant to transfer documents written in *Hypertext Markup Language* (HTML) called Webpages. Multiple Webpages sharing a common *domain name* make up a Website. Resources are stored in computers running *web servers*, which are the programs that respond to resource requests.
 
-<!-- https://en.wikipedia.org/wiki/World_Wide_Web -->
-<!-- https://www.w3.org/People/Berners-Lee/WorldWideWeb.html -->
+More at:
+
+- [World Wide Web (en.wikipedia.org)](https://en.wikipedia.org/wiki/World_Wide_Web).
+- [The WorldWideWeb browser (w3.org)](https://www.w3.org/People/Berners-Lee/WorldWideWeb.html).
 
 ## HTTP
 
 The HTTP protocol exchanges data through *requests-response* messages.
 
-<!-- https://www.w3.org/Protocols/rfc2616/rfc2616.html -->
+More at [Hypertext Transfer Protocol -- HTTP/1.1 (w3.org)](https://www.w3.org/Protocols/rfc2616/rfc2616.html).
 
 ### HTTP Request
 
@@ -53,9 +55,9 @@ Example:
 HTTP/3.0 505 HTTP Version not supported
 ```
 
-<!-- https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.1.1 -->
+More at [Status Code Definitions (w3.org)](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html).
 
-### Uniform Resourse Identifier
+### Uniform Resource Identifier
 
 Example:
 
