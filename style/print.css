@@ -1,44 +1,42 @@
-:root {
-  --bg: #ffffff;
-  --bg--alt-a: #f1f3f4;
-  --bg--alt-b: #f3f4f6;
-  --color: #525556;
-  --color--variation: #7a7e7f;
-  --color--cyan: hsl(174, 50%, 45%);
-  --color--green: hsl(114, 50%, 45%);
-  --color--yellow: hsl(54, 50%, 45%);
-  --color--headline: #0a0a0a;
+:root, :root.dark {
+  --bg: hsl(0, 0%, 100%);
+  --bg--alt-a: hsl(200, 12%, 97%);
+  --bg--alt-b: hsl(220, 14%, 93%);
+  --color--green: hsl(95, 100%, 30%);
+  --color--yellow: hsl(45, 100%, 34%);
+  --color--blue: hsl(220, 100%, 48%);
+  --color--cyan: hsl(196, 100%, 40%);
+  --color--dark-grey: hsl(235, 8%, 32%);
+  --color--light-grey: hsl(235, 8%, 16%);
+  --color--white: hsl(0, 0%, 8%);
+  --font-weight-default--normal: 400;
+  --font-weight-default--bolder: 500;
+  --font-weight-monospace--normal: 400;
+  --font-weight-monospace--bolder: 500;
   color-scheme: light;
 }
 
 body {
-  outline: none;
+  box-shadow: none;
   padding: 1rem;
 }
 
 footer,
 h1,
+#dark-theme,
 #home {
   display: none;
 }
 
-code,
-pre {
-  background-color: unset !important;
-}
-
+blockquote,
 code:not(pre>code),
-pre {
+pre,
+table {
+  background-color: transparent;
   border: 1pt solid var(--bg--alt-a);
 }
 
 table tr:nth-of-type(2n),
 table>thead>tr {
-  background-color: unset;
-}
-
-table {
-  background-color: unset;
-  border: 1pt solid var(--bg--alt-a);
-  border-radius: unset;
+  background-color: transparent;
 }
