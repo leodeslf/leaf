@@ -4,11 +4,11 @@ JavaScript is a **programming language**. It can also be called high level, sing
 
 ## The Standard
 
-Initially designed by Brendan Eich, the **ECMA International**'s (European Computer Manufacturers Association) group **TC39** (Technical Committee number 39) is responsible for maintaining the **ECMA-262** (or ECMAScript Language Specification) which defines the **ECMAScript Language** (*ES* or *JavaScript*). It was first named Mocha, then LiveScript, and released in 1997 as JavaScript.
+The *European Computer Manufacturers Association*'s (currently ECMA International) *Technical Committee number 39* (TC39) is responsible for maintaining the *ECMAScript Language Specification* (ECMA-262) which defines the *ECMAScript Language* (ES or JavaScript). First introduced by Brendan Eich as Mocha, then LiveScript, and released in 1997 as JavaScript.
 
-After its sixth version (*ES6*, also called *ES2015*), it's been released at least one "small" update per year instead of having a huge one after several years of waiting.
+After its sixth version, the *ES6* (ES2015), it's been released one "small" update per year, changing the "tradition" of doing a huge one after several years.
 
-Other relevant standards:
+Relevant standards:
 
 - ECMA-402: *ES internationalization API specification*.
 - ECMA-404: *JSON data interchange syntax*.
@@ -25,12 +25,15 @@ More at:
 
 ### Good Practices
 
+>Beauty is more important in computing than anywhere else in technology because software is so complicated. Beauty is the ultimate defense against complexity. (David Gelernter, Machine Beauty: Elegance and the Heart of Technology)
+
 Not mandatory but recommended:
 
 - Type at most *80 characters* per line.
 - Indent with *two spaces* (or four).
 - End expressions with *semicolons*.
 - Use *braces* to wrap code blocks.
+- Leave an *empty line* at the end.
 
 ### Keywords
 
@@ -64,14 +67,14 @@ Comment.
 
 ```javascript
 // E.g:
-const a = 0; // Block-scoped, immutable.
-let b = 1;   // Block-scoped, mutable.
-var c = 2;   // Global/Function-scoped, mutable, redeclarable.
+const a = 0; // Block-scoped, not redefinable.
+let b = 1;   // Block-scoped, redefinable.
+var c = 2;   // Function/Global-scoped, redefinable, redeclarable.
 ```
 
 ### Data Types
 
-In Javascript, *variables don't have type* but their *values do*.
+In JavaScript, *variables don't have type* but their *values do*.
 
 #### Primitives & Objects
 
@@ -110,7 +113,7 @@ undefined // Value not defined.
 null // No value.
 ```
 
-#### Boolans
+#### Booleans
 
 ```javascript
 true
@@ -120,12 +123,17 @@ false
 #### Numbers
 
 ```javascript
-1000 // They handle values up/down to +/-9007199254740991.
-1_000_000 // We can use underscores (_) as separators to improve legibility.
-1e3 // == 1 * (10 ** 3) == 1000 (Scientific notation).
-1n // For larger values than `number`, memory is the limit (Bigint notation).
-NaN // Not a Number.
-Infinite // And `-Infinite`.
+1000  // They handle values up/down to +/-9007199254740991.
+1_000 // We can use underscores (_) as separators to improve legibility.
+1e3   // == 1 * (10 ** 3) == 1000 (Scientific notation).
+1n    // For large values, memory is the limit (Bigint notation).
+```
+
+```javascript
+// Special (not) numbers
+NaN // "Not a Number".
+Infinity
+-Infinity
 ```
 
 #### Strings
@@ -136,23 +144,17 @@ Infinite // And `-Infinite`.
 `abc12${1 + 2}` // Template Literal, it evaluates expressions (e.g.: 'abc123').
 ```
 
-#### Symbols
-
-```javascript
-// It generates a unique (different) symbol value.
-Symbol('abc') == Symbol('abc') // == false ('abc' is just a description).
-```
-
 #### Arrays (Literal Notation)
 
+An *indexed list* of items.
+
 ```javascript
-// An indexed list of items.
+// E.g.:
 [
   undefined,
   true,
   1,
   'abc',
-  Symbol('abc'),
   [/* ... */],
   {/* ... */}
 ]
@@ -160,14 +162,15 @@ Symbol('abc') == Symbol('abc') // == false ('abc' is just a description).
 
 #### Objects (Literal Notation)
 
+A *key-value collection* of items.
+
 ```javascript
-// A key-value collection of items.
+// E.g.:
 {
   nullish: undefined,
   boolean: true,
   number: 1,
   string: 'abc',
-  symbol: Symbol('abc'),
   array: [/* ... */],
   object: {/* ... */}
 }
@@ -186,6 +189,38 @@ const object = {
 object.prop == object['prop'] // == (abc == abc) == true
 ```
 
+##### Non-string Property Names (`Symbol`)
+
+Symbols are meant to provide a way to generate a property name that's not a `string` (which was the only way until ES6).
+
+```javascript
+// E.g.:
+const object = {};
+
+const propName0 = 'prop name';
+const propName1 = Symbol('symbol prop name');
+const propName2 = Symbol('symbol prop name'); // Same description for both.
+
+object[propName0] = 0;
+object[propName1] = 1;
+object[propName2] = 2;
+
+console.log(object);
+// {
+//   prop name: 0,
+//   Symbol(symbol prop name): 1,
+//   Symbol(symbol prop name): 2
+// }
+```
+
+As every `Symbol` generates a unique value, *a property name defined from it can only be accessed through it*.
+
+```javascript
+// E.g.:
+object[Symbol('symbol prop name')]; // == undefined
+object['symbol prop name'];         // == undefined
+```
+
 ### Operators
 
 Level of *precedence* for common operators:
@@ -199,17 +234,16 @@ Level of *precedence* for common operators:
 #### Logical
 
 ```javascript
-// Note that any number but 0 evaluates truthy.
-1 && 2 // == 2
-0 && 1 // == 0 (`1` is not evaluated).
-1 || 2 // == 1 (`2` is not evaluated).
-0 || 1 // == 1
+true && true // == 2
+false && true // == false (`true` is never evaluated).
+true || true // == true (second `true` is never evaluated).
+false || true // == true
 ```
 
 #### Nullish Coalescing
 
 ```javascript
-a ?? b // == `b` iff (`a` == (`null` || `undefined`)).
+a ?? b // == `b` iff `a` == (`null` || `undefined`).
 ```
 
 #### Comparison
@@ -224,10 +258,10 @@ a ?? b // == `b` iff (`a` == (`null` || `undefined`)).
 
 ```javascript
 // Qualitative:
-1 == '1'  // == true (Equal, can do "type coercion" to match different types).
-1 != '1'  // == false
-1 === '1' // == false (Strictly Equal, no "type coercion" here).
-1 !== '1' // == true
+1 == '1'      // == true (Equal, can do "type coercion" to match different types).
+1 === '1'     // == false (Strictly Equal, no "type coercion" here).
+true != 0     // == true
+true !== true // == false
 ```
 
 #### Maths
@@ -241,7 +275,7 @@ a ?? b // == `b` iff (`a` == (`null` || `undefined`)).
 1 - 2  // == -1
 ```
 
-#### Ternary
+#### Ternary Operator (Expression)
 
 ```javascript
 a ? b : c // If `a` is truthy: `b`. Else: `c`.
@@ -250,7 +284,7 @@ a ? b : c // If `a` is truthy: `b`. Else: `c`.
 #### String Concatenation
 
 ```javascript
-'abc' + 'def' // == abcdef
+'abc' + 'def' // == abcdef (better use the string `concat` method).
 ```
 
 #### Unary Operators
@@ -261,7 +295,8 @@ x++ // Evaluates `x`, then adds 1 to it.
 ++x // Adds 1 to `x`, then evaluates the updated `x`.
 x--
 --x
-+"+1.00" // Converts a string into its numeric value (if possible, e.g.: 1).
++"+1.00" // == 1 (Converts a string into its numeric value/equivalent).
+!true // == false (Negates a boolean expression).
 ```
 
 ```javascript
@@ -277,37 +312,37 @@ a+++++b      // Error, +3 consecutive, equal operators (use parentheses).
 
 #### Compound Assignment Operators
 
-We can *assign and operate* with the same (compound) operator, so instead of doing:
+We can *assign and operate* with the same (compound) operator, so instead of this shape:
 
-```text
+```ftl
 variable = variable (operator) value
 ```
 
-We can do:
+We can use this short hand:
 
-```text
+```ftl
 variable (operator)= value
 ```
 
 Some of the available operators:
 
 ```javascript
-a += value
-a -= value
-a *= value
-a /= value
-a %= value
-a **= value
-a ||= value
-a &&= value
-a ??= value
+variable += value
+variable -= value
+variable *= value
+variable /= value
+variable %= value
+variable **= value
+variable ||= value
+variable &&= value
+variable ??= value
 ```
 
 ```javascript
 // E.g.:
-let a = 0;
+let variable = 0;
 
-a += 1; // == (a = a + 1) == 1
+variable += 1; // == (variable = variable + 1) == 1
 ```
 
 #### The `instanceof` Operator
@@ -328,7 +363,7 @@ console.log(car instanceof Car); // --> true
 
 ### Control Flow
 
-#### If
+#### Statement `if`
 
 ```javascript
 // Executes iff `condition` evaluates truthy.
@@ -353,9 +388,10 @@ if (condition0) {
 }
 ```
 
-#### Switch
+#### Statement `switch`
 
 ```javascript
+// E.g.:
 switch (input) {
   case (condition0):
     // Runs if `condition0` is truthy (continues evaluation).
@@ -369,7 +405,7 @@ switch (input) {
 }
 ```
 
-#### Try Catch Finally
+#### Statement `try` / `catch` / `finally`
 
 If we know something can *break the code*: we can just `try` it; if something goes wrong we `catch` it, and no matter what happens; we can `finally` run some extra code at the end.
 
@@ -386,7 +422,7 @@ try {
 
 ### Loops
 
-#### For
+#### Loop `for`
 
 ```javascript
 // Shape:
@@ -427,7 +463,7 @@ for (;;) {
 // --> 2
 ```
 
-#### For-of
+#### Loop `for-of`
 
 ```javascript
 /**
@@ -455,7 +491,7 @@ for (const color of colors) {
 // --> green
 ```
 
-#### For-in
+#### Loop `for-in`
 
 ```javascript
 // Loops through each property in a given object.
@@ -482,7 +518,7 @@ for (const prop in shape) {
 // Note that `prop` is actually the name of the property, not its value.
 ```
 
-#### While
+#### Loop `while`
 
 ```javascript
 // Loop starts if `condition` evaluates truthy, continues until it gets falsy.
@@ -491,7 +527,7 @@ while (condition) {
 }
 ```
 
-#### Do While
+#### Loop `do-while`
 
 ```javascript
 // Loop starts, then continues if/until `condition` evaluates falsy.
@@ -500,24 +536,27 @@ do {
 } while (condition)
 ```
 
-### Functions
+### Reusable Code Blocks, Functions
 
-#### Function
+#### A `function` Statement
 
 ```javascript
+// E.g.:
 function square(x) {
   return x * x;
 }
 ```
 
+#### A `function` Expression
+
 ```javascript
-// Function expression:
+// E.g.:
 const square = function (x) {
   return x * x;
 }
 ```
 
-#### Arrow Function (Expression)
+#### Arrow (`=>`) Function (Expression)
 
 ```javascript
 // E.g.:
@@ -554,7 +593,7 @@ A function that's executed as soon as it's reached. It's made up of two *pairs o
 
 #### Closure
 
-It's just an ordinary function that *holds declarations connected to its original scope*.
+It's just an ordinary function that *holds declarations connected to its original scope* (another function wrapping it).
 
 ```javascript
 // E.g.:
@@ -570,32 +609,41 @@ console.log(half(2)) // --> 1
 
 #### Generator Function (`*`) & `yield` Statement
 
-A function identified by an asterisk after the keyword `function` that doesn't execute when called, but instead returns an *iterable object* (each item from it will be served by a `yield` statement). Then we can use an iterator or manually iterate through its items with the `next()` method, which holds a `value` and checks whether it's `done` or not.
+A function identified by an asterisk after the keyword `function` that doesn't execute when called, but instead returns an *iterable object* (each item from it will be served by a `yield` statement). Then we can use an iterator or manually iterate through its items with the `next` method, which holds a `value` and checks whether it's `done` or not.
 
 ```javascript
 // E.g.:
-function* charactersFrom(string) {
-  const characters = string.split(''); // From a string to an array.
+function* charactersByIndex(string) {
+  const characters = string.split('');
+
   for (let i = 0; i < characters.length; i++) {
-    yield `${string}[${i}] == ${characters[i]}`;
+    yield `Character at index ${i} is ${characters[i]}`;
   }
 }
+```
 
-// We can iterate manually:
-const ABC = charactersFrom('ABC');
-console.log(ABC.next().value); // --> ABC[0] == A
-console.log(ABC.next().value); // --> ABC[1] == B
-console.log(ABC.next().value); // --> ABC[2] == C
+```javascript
+// Iterating with `next`:
+const ABC = charactersByIndex('ABC');
+
+console.log(ABC.next().value); // --> Character at index 0 is A
+console.log(ABC.next().value); // --> Character at index 1 is B
+console.log(ABC.next().value); // --> Character at index 2 is C
+
+console.log(ABC.next().value); // --> undefined
 console.log(ABC.next().done);  // --> true
+```
 
-// Or with an iterator:
-const DEF = charactersFrom('DEF');
+```javascript
+// Iterating with an iterator (recommended):
+const DEF = charactersByIndex('DEF');
+
 for (const item of DEF) {
   console.log(item);
 }
-// --> DEF[0] == D
-// --> DEF[1] == E
-// --> DEF[2] == F
+// --> Character at index 0 is D
+// --> Character at index 1 is E
+// --> Character at index 2 is F
 ```
 
 ### Classes
@@ -752,26 +800,26 @@ class Vector2D {
     this.x = x;
     this.y = y;
   }
-  static add(vectorA, vectorB) { // To be used as `Vector2D.add(vA, vB)`.
+  static add(v1, v2) { // To be used as `Vector2D.add(v1, v2)`.
     return new Vector2D(
-      vectorA.x + vectorB.x,
-      vectorA.y + vectorB.y
+      v1.x + v2.x,
+      v1.y + v2.y
     );
   }
-  add(vector) { // To be used as `object.add(v)`.
-    this.x += vector.x;
-    this.y += vector.y;
+  add(v) { // To be used as `vector.add(v)`.
+    this.x += v.x;
+    this.y += v.y;
   }
 }
 
-const vector0 = new Vector2D(3, 3);
 const vector1 = new Vector2D(3, 3);
-const vector2 = Vector2D.add(vector0, vector1);
-console.log(vector2);
+const vector2 = new Vector2D(3, 3);
+const vector3 = Vector2D.add(vector1, vector2);
+console.log(vector3);
 // --> Vector2D { x: 6, y: 6 }
 
-vector1.add(vector2);
-console.log(vector1);
+vector2.add(vector3);
+console.log(vector2);
 // --> Vector2D { x: 9, y: 9 }
 ```
 
@@ -800,6 +848,66 @@ console.log(square.area); // `get`
 square.area = 25; // `set`
 console.log(square.side);
 // --> 5
+```
+
+### Timers & Animations
+
+#### Delay a Call (`setTimeout`)
+
+Use `setTimeout` to *delay a function call* by a given amount of time (in milliseconds). It won't delay or pause any other code as it runs asynchronously. Use `clearTimeout` to abort it while waiting.
+
+```javascript
+// E.g.:
+const timeout1 = setTimeout(() => console.log(1), 1800);
+const timeout2 = setTimeout(() => console.log(2), 1200);
+const timeout3 = setTimeout(() => console.log(3), 600);
+
+clearTimeout(timeout2);
+// --> 3 (after 600ms)
+// --> 1 (after 1800ms)
+```
+
+#### Wait, Call, Repeat (`setInterval`)
+
+Use `setInterval` to *indefinitely repeat a function call* after a given amount of times. Stop an interval with `clearInterval`. The first call occurs after the given time.
+
+```javascript
+// E.g.:
+const interval = setInterval(() => console.log('Hi!'), 500);
+setTimeout(() => clearInterval(interval), 2000);
+// --> Hi! (after 0.5s)
+// --> Hi! (after 1.0s)
+// --> Hi! (after 1.5s)
+// --> Hi! (after 2.0s, some environments could run the timeout first).
+```
+
+#### A Call per Frame (`requestAnimationFrame`)
+
+Use `requestAnimationFrame` to *make a function call just before the next repaint*. Inside that call we can read and write the DOM many times without triggering synchronous reflows.
+
+```javascript
+requestAnimationFrame(() => { /* ... */ });
+```
+
+Call `requestAnimationFrame` again inside the same function to make an actual animation  (using recursion). Ideally it'll run every ~16ms, and extend the execution for less than that time when targeting 60 frames per seconds for animating the UI. Use `cancelAnimationFrame` to stop it.
+
+```javascript
+// E.g.:
+let raf;
+
+function animation() {
+  // Perform some tasks...
+  
+  raf = requestAnimationFrame(animation);
+}
+
+// Initialize animation:
+requestAnimationFrame(animation);
+
+// Stoping the animation e.g.:
+window.addEventListener('keypress', event => {
+  event.key === 'Enter' && cancelAnimationFrame(raf);
+});
 ```
 
 ### Asynchronous Programming
@@ -833,7 +941,7 @@ From inside the `Promise` we should use any *conditional statement or mechanism*
 ```javascript
 // E.g.:
 const promise = new Promise((resolve, reject) => {
-  reject('Reject.'); // This runs (catch).
+  reject('Reject.');   // This runs (catch).
   resolve('Resolve.'); // This will be ignored.
 });
 
@@ -897,9 +1005,9 @@ Promise.race([promise0, promise1, promise2])
 // --> Error (0).
 ```
 
-#### Asynchronous Functions: `async` & `await`
+#### Asynchronous Functions (`async` & `await`)
 
-These functions are simpler than `Promises`. They *return a `Promise`* which resolves with the returned value. We can use `await` expressions *inside these functions* (or at global scope in modules) to suspend the execution until we get the resolved (returned) value, making it possible to work with a much easier, synchronous-like notation.
+A simpler approach than using a `Promise`. They actually return a `Promise` which resolves with the returned value. We can use `await` expressions *inside these functions* (or at global scope in modules) to suspend the execution until we get the resolved (returned) value, making it possible to work with a much easier, *synchronous-like notation*.
 
 ```javascript
 // E.g. (module):
@@ -924,20 +1032,547 @@ foo()
 // --> bar
 ```
 
-<!-- ### Regular Expressions (`RegExp`)
+### Regular Expression Library (`RegExp`)
+
+#### Creating a `RegExp`
+
+Special **syntax characters** (can be *escaped* by a prefix backslash): `\`, `^`, `$`, `.`, `*`, `+`, `?`, `(`, `)`, `{`, `}`, `|`.
+
+```javascript
+// Literal notation, e.g.:
+let re = /abc/g;
+```
+
+```javascript
+// Constructor with a string, e.g.:
+let re = new RegExp('abc', 'g');
+```
+
+```javascript
+// Constructor with a literal, e.g.:
+let re = new RegExp(/abc/, 'g');
+```
+
+#### Option Flags
+
+Flag|Property|Description
+---|---|---
+`d`|`hasIndices`|Switch on math indices
+`g`|`global`|Match multiple times
+`i`|`ignoreCase`|Match case-insensitively
+`m`|`multiline`|`^` and `$` match per line
+`s`|`dotAll`|Dot matches line terminators
+`u`|`unicode`|Unicode mode (recommended)
+`y`|`sticky`|No characters between matches
+
+#### Basic Building Blocks for `RegExp`
+
+*Atoms* and some *Backslash codes*:
+
+- `.`: any character except newline.
+- `\n`: line feed.
+- `\r`: carriage return.
+- `\t`: character tabulation.
+- `\v`: line tabulation.
+- `\w`, `\W`: word, not word.
+- `\d`, `\D`: digit, not digit.
+- `\s`, `\S`: whitespace, not whitespace.
+- `\u`: unicode value, e.g.: `\uFFFF`
+- `\p`: unicode character property, e.g.: `\p{Cyrillic|Emoji}`.*
+
+More at [Character Classes (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Character_classes).
+
+*More about character property values at (unicode.org) [Property Value Aliases](https://www.unicode.org/Public/UCD/latest/ucd/PropertyValueAliases.txt), [Unicode Regular Expressions](https://unicode.org/reports/tr18/#General_Category_Property), and [Unicode Identifier and Pattern Syntax](https://www.unicode.org/reports/tr31/#Figure_Code_Point_Categories_for_Identifier_Parsing).
+
+#### Assertions
+
+##### Anchors
+
+Ways to define what's at the beginning or end:
+
+- `^abc`: match if string *starts* on `abc`.
+- `abc$`: match if string *ends* on `abc`.
+- `\b`, `\B`: word *boundary*, not-word boundary.
+
+##### Lookahead
+
+Define what should be *after the match*:
+
+- `xyz(?=abc)`: *positive lookahead*, match `xyz` if `abc` is after it.
+- `xyz(?!abc)`: *negative lookahead*, match `xyz` if `abc` is not after it.
+
+##### Lookbehind
+
+Define what should be *before the match*:
+
+- `(?<=abc)xyz`: *positive lookbehind*, match `xyz` if `abc` is before it.
+- `(?<!abc)xyz`: *negative lookbehind*, match `xyz` if `abc` is not before it.
+
+#### Disjunction (`|`)
+
+A low precedence operator that makes the match to be *either what's at the left or what's at the right* side of it (groups/parentheses recommended), e.g.:
+
+- `jpg|png|gif`: match either `jpg`, `png`, or `gif`.
+- `^a|b$`: match any starting with `a` or `b`, and/or ending with `a` or `b`.
+
+#### Character Classes (`[...]`)
+
+A way to create a *set* characters, e.g.:
+
+- `[abc]`: any of `a`, `b`, or `c`.
+- `[^abc]`: any not `a`, `b`, nor `c`.
+
+Or a *range* of characters (`[n-m]`, including boundaries), e.g.:
+
+- `[a-c]` any between `a` to `c`.
+- `[^a-c]` any not between `a` to `c`.
+
+Characters that *need to be escaped* inside a class in order to make part of the set:
+
+- `^`, only if it comes first, as it *negates* the following set.
+- `\`, only if it comes last or before a backslash code character, as it *escapes* them.
+- `-`, only if it's not first or last, as it could generate a *range*.
+- `]`, as it *closes* the class.
+
+#### Quantifying Expressions
+
+By default these quantifiers are **greedy**, they match *as many characters as possible*. To make them **reluctant**, so they match *as few as possible*, put a question mark (`?`) after them:
+
+- `?`: match *0 or 1* time.
+- `*`: match *0 or more* times.
+- `+`: match *1 or more* times.
+- `{n}`: match *n* times.
+- `{n,}`: match *n or more* times.
+- `{n,m}`: match *at least n and at most m* times.
 
 ```javascript
 // E.g.:
-/expressionToMatch/
+console.log(/(abc)+/.exec('abcabcabc')[0]);  // --> 'abcabcabc' (greedy).
+console.log(/(abc)+?/.exec('abcabcabc')[0]); // --> 'abc' (reluctant).
 ```
 
-### Timing & Animations (setTimeout, setInterval, requestAnimationFrame)
+#### Capturing Groups (`(...)`)
 
-### Workers -->
+A way to *reuse subexpressions* (in the actual `RegExp` or a replacement expression):
 
-### Modules
+- `(abc)`: a *capturing group* for matching `abc`.
+- `(?<name>abc)`: a *named capturing group* for matching `abc`.
+- `(?:abc)`: a *non-capturing group* for matching `abc`.
+
+*Backreference* to those groups:
+
+- `\1`: group number `1`, in `RegExp`.
+- `\k<name>`: named group, in `RegExp`.
+- `$1`: group number `1`, in replacement expression.
+- `$<name>`: named group, in replacement expression.
+- `$&`: the *entire* match.
+- `` $` ``: *string before* the match.
+- `$'`: *string after* the match.
+- `$$`: *escaped* symbol `$`.
+
+```javascript
+// E.g.:
+console.log(/(abc)\1(123)\2/.test('abcabc123123'));      // --> true
+console.log('abc123'.replace(/(\w{3})(\d{3})/, '$2$1')); // --> 123abc
+```
+
+#### The `test` Method (`RegExp`)
+
+It's used to verify *whether there is a match or not*.
+
+```javascript
+// E.g.:
+console.log(/a/.test('abc')); // --> true
+console.log(/a/.test('xyz')); // --> false
+```
+
+#### The `exec` Method (`RegExp`)
+
+It returns the *first match and its capturing groups* (if any).
+
+```javascript
+// E.g.:
+console.log(.../(a|x)(bc)(123)/.exec('abc123xbc123')); // --> abc123 a bc 123
+```
+
+#### The `search` Method (`String`)
+
+It returns the *first match's index*.
+
+```javascript
+// E.g.:
+console.log('abcabc'.search(/c/)); // --> 2
+```
+
+#### The `match` Method (`String`)
+
+It returns the *match and its capturing groups* (if any). Note that global flag (`g`) returns all possible matches, but prevents capturing groups from making part of the output.
+
+```javascript
+// E.g.:
+console.log(...'abc123xbc123'.match(/(a|x)(bc)(123)/));  // abc123 a bc 123
+console.log(...'abc123xbc123'.match(/(a|x)(bc)(123)/g)); // abc123 xbc123
+```
+
+#### The `replace` Method (`String`)
+
+It *replaces a match by a given replacement expression*.
+
+```javascript
+console.log('abc'.replace(/(\w)/g, '$1$1$1 ')); // --> aaa bbb ccc
+```
+
+### Date & Time Library (`Date`)
+
+The `Date` object represents the *current time* since 1 January 1970 UTC.
+
+```javascript
+// E.g.:
+const date = new Date();
+```
+
+#### Creating a `Date` from Data
+
+We can create a `Date` object for a *specific date & time* by passing:
+
+- Milliseconds since 1970.
+- The `year`, `month`, `date?`, `hours?`, `minutes?`, `seconds?`, `milliseconds?` (if `0 <= year <= 99`, then 1900 is added).
+- An ISO08901 date & time (Automatic Time Zone).
+- An ISO08901 date & time (Manual Time Zone).
+- An ISO08901 date & time (Zulu Time Zone).
+
+```javascript
+// E.g. (respectively):
+console.log(new Date(864255128369).toString());
+console.log(new Date(97, 4, 21, 19, 52, 8, 369).toString());
+console.log(new Date('1997-05-21T19:52:08.369').toString());
+console.log(new Date('1997-05-21T19:52:08.369-03:00').toString());
+console.log(new Date('1997-05-21T22:52:08.369Z').toString());
+// --> Wed May 21 1997 19:52:08 GMT-0300 (Uruguay Standard Time)
+// --> Wed May 21 1997 19:52:08 GMT-0300 (Uruguay Standard Time)
+// --> Wed May 21 1997 19:52:08 GMT-0300 (Uruguay Standard Time)
+// --> Wed May 21 1997 19:52:08 GMT-0300 (Uruguay Standard Time)
+// --> Wed May 21 1997 19:52:08 GMT-0300 (Uruguay Standard Time)
+```
+
+#### Formatting Date & Time
+
+*Different ways to display* date & time as a string:
+
+```javascript
+// String:
+console.log((new Date()).toString());
+console.log((new Date()).toDateString());
+console.log((new Date()).toTimeString());
+// --> Sat Jul 02 2022 08:57:38 GMT-0300 (Uruguay Standard Time)
+// --> Sat Jul 02 2022
+// --> 08:57:38 GMT-0300 (Uruguay Standard Time)
+```
+
+```javascript
+// Localized string:
+console.log((new Date()).toLocaleString());     // --> 7/2/2022, 8:57:38 AM
+console.log((new Date()).toLocaleDateString()); // --> 7/2/2022
+console.log((new Date()).toLocaleTimeString()); // --> 8:57:38 AM
+```
+
+```javascript
+// Others:
+console.log((new Date()).toUTCString()); // --> Sat, 02 Jul 2022 11:57:38 GMT
+console.log((new Date()).toISOString()); // --> 2022-07-02T11:57:38.533Z
+```
+
+#### Getters & Setters from `Date`
+
+A list of methods for reading and writing specific (and relative) *date & time units*. Apart from `getTime` and `getTimezoneOffset`, all the other methods have a corresponding version of: `get<unit>`, `getUTC<unit>`, `set<unit>`, and `setUTC<unit>`.
+
+```javascript
+// E.g. (for `get<unit>`):
+console.log((new Date()).getTime());           // --> 1656763181562
+console.log((new Date()).getTimezoneOffset()); // --> 180 (from Uruguay).
+console.log((new Date()).getFullYear());       // --> 2022
+console.log((new Date()).getMonth());          // --> 6 (0-indexed).
+console.log((new Date()).getDate());           // --> 2 (Month day).
+console.log((new Date()).getDay());            // --> 6 (Week day).
+console.log((new Date()).getHours());          // --> 8
+console.log((new Date()).getMinutes());        // --> 59
+console.log((new Date()).getSeconds());        // --> 41
+console.log((new Date()).getMilliseconds());   // --> 562
+```
+
+#### Equivalent Time Between `now` vs `getTime`
+
+We don't always need to create a new instance of `Date` to call `getTime` and get the *current time in milliseconds*. Instead we can get it by calling the `now` method straight from the `Date` object.
+
+```javascript
+// E.g.:
+console.log(Date.now() === (new Date).getTime()); // --> true
+```
+
+### The `JSON` Library
+
+A tool to *create and parse* JSON (*JavaScript Object Notation*) structured data, which is a way to store raw text in a similar syntax than objects from JavaScript.
+
+#### Syntax, Objects vs JSON
+
+Main differences:
+
+- Properties are strings.
+- Strings must be double-quoted.
+- Decimal points must have at least a digit before and after.
+- Not supported types/subtypes: `Infinity`/`-Infinity`, `NaN`, `undefined`.
+
+```json
+// E.g.:
+{
+  "section": "JSON",
+  "finished": true,
+  "sources": [
+    "JavaScript for Impatient Programmers",
+    "MDN Web Docs"
+  ]
+}
+```
+
+#### From JSON to JavaScript (`parse`)
+
+Use the `parse` method to convert a JSON text to a JavaScript value.
+
+```javascript
+// E.g.:
+console.log(JSON.parse('{ "names": ["parse", "stringify"] }'));
+// --> { names: [ 'parse', 'stringify' ] }
+```
+
+#### From JavaScript to JSON (`stringify`)
+
+Use the `stringify` method to convert a JavaScript value to a JSON text.
+
+```javascript
+// E.g.:
+console.log(JSON.stringify({ names: [ 'parse', 'stringify' ] }));
+// --> {"names":["parse","stringify"]}
+```
+
+<!-- ? TODO ### The `Math` Library -->
+
+<!-- ? TODO ### The `Intl` Library -->
+
+### HTTP Requests
+
+#### Requesting with `XMLHttpRequest`
+
+XHR is a *low-level API* for server interaction. It can retrieve data from a URL **updating part of the page**, which wasn't possible before, as every request used to trigger a complete page reload.
+
+##### XHR Usage
+
+1. Instantiate a request object.
+1. Open a connection to an endpoint.
+1. Send a request.
+1. Listen/Await for a response.
+
+```javascript
+// E.g.:
+const request = new XMLHttpRequest();
+request.open('GET', 'https://jsonplaceholder.typicode.com/users');
+request.send();
+request.onload = () => console.log(request.response); // --> [{ ... }, ...]
+// request.abort(); // Not possible with fetch.
+```
+
+##### XHR Properties
+
+```javascript
+// E.g.:
+request.onload = () => {
+  console.log(request.response);       // --> [{ ... }, ...]
+  console.log(request.readyState);     // --> 4
+  console.log(request.status);         // --> 200
+  console.log(request.statusText);     // --> "" (empty, "OK" by default)
+  // console.log(request.responseText) // *
+};
+
+/**
+ * (*) We can get a response through responseText, but only if responseType is
+ * left as '' (empty) or set to 'text', otherwise we would get an error.
+ */
+```
+
+##### XHR Events
+
+```javascript
+// E.g.:
+request.abort = () => { /* ... */ };
+request.error = () => { /* ... */ };
+request.load = () => { /* ... */ };
+request.loadend = () => { /* ... */ };
+request.loadstart = () => { /* ... */ };
+request.progress = () => { /* ... */ };
+request.readystatechange = () => { /* ... */ };
+request.timeout = () => { /* ... */ };
+```
+
+##### XHR Response Types
+
+If `open` has its third argument (asynchronous) set to `false`, then `responseType` must be set before `send` (i.e.: before `LOADING` and `DONE` states). Notice that setting it to `'json'` will **automatically parse** the response.
+
+Enumerable values:
+
+- `''` (empty)
+- `'arraybuffer'`
+- `'blob'`
+- `'document'`
+- `'json'`
+- `'text'`
+
+```javascript
+// E.g.:
+request.responseType = 'json';
+```
+
+##### Setting XHR Request Headers
+
+This must happen after `open` but before `send`:
+
+```javascript
+// E.g.:
+request.open('GET', 'https://jsonplaceholder.typicode.com/users');
+request.setRequestHeader('Content-Type', 'application/json');
+request.send();
+```
+
+##### XHR States
+
+`static` properties|`readyState`|`status`|`statusText`
+---|---|---|---
+`UNSENT === 0`|`0`|`0`|`"" (empty)`
+`OPENED === 1`|`1`|`0`|`"" (empty)`
+`HEADERS_RECEIVED === 2`|`2`|`0` (not sure)|`"" (empty)` (not sure)
+`LOADING === 3`|`3`|`100\|200\|300\|400\|500`|`"OK"\|"Not found"\|..."`
+`DONE === 4`|`4`|`100\|200\|300\|400\|500`|`"OK"\|"Not found"\|..."`
+
+Notes:
+
+- During the request progress, `readyState` will change from `0` to `4`.
+- Both `status` and `statusText` are set by the server.
+
+```javascript
+// E.g.:
+request.readystatechange = () => {
+  switch (request.readyState) {
+    case request.UNSENT:
+      // ...
+      break;
+    case request.OPENED:
+      // ...
+      break;
+    case request.HEADERS_RECEIVED:
+      // ...
+      break;
+    case request.LOADING:
+      // ...
+      break;
+    case request.DONE:
+      // ...
+      break;
+  }
+};
+```
+
+#### Requesting with `fetch`
+
+Fetch is a *high-level API*, easier but less capable compared with XHR, although the most noticeable difference is that it **does not trigger page reloads**.
+
+<!-- TODO -->
+
+### Multi-threading & Web Workers API
+
+We previously defined JavaScript as a single threaded programming language. However, we can use the Workers API to cast threads.
+
+A worker is an object that references to *a different global scope* from a different file, a file that *must be in the same origin* that main JavaScript file is running in. Workers won't work under the `file://` protocol.
+
+Reference:
+
+- Multithreaded JavaScript (pages 19 to 25).
+- [Web Workers API (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API).
+
+#### Dedicated Workers
+
+A dedicated worker is just a `Worker`, i.e., the common one.
+
+We use the `postMessage` method and the `onmessage` event handler to communicate between scripts, where `postMessage` triggers the execution of the correspondent `onmessage`. Data passed through gets copied, not shared.
+
+```javascript
+// main.js e.g.:
+const worker = new Worker('./worker.js');
+
+// When `worker.js` sends a message:
+worker.onmessage(message => {
+  // ...
+});
+
+worker.postMessage('Message sent from main.js');
+```
+
+```javascript
+// worker.js e.g.:
+
+// When `main.js` sends a message:
+self.onmessage(message => {
+  // ...
+});
+
+postMessage('Message sent from worker.js');
+```
+
+Two aspects to notice here:
+
+First, the assignment inside `worker.js` could be written as `var onmessage = /* ... */`. However `let` or `const` won't work.
+
+Second, the `self`, also inside `worker.js` is an alias for `globalThis`. More precisely, it's a property of `WorkerGlobalScope` that returns a reference to the `WorkerGlobalScope` itself.
+
+`WorkerGlobalScope` provides a way to *load external scripts* (something that couldn't be done otherwise through `import` statements), the `importScripts` method.
+
+```javascript
+// worker.js e.g.:
+importScripts('foo.js', 'bar.js');
+```
+
+A `Worker` instance has two *methods*:
+
+- `postMessage(message)`, sends a message.
+- `terminate()`, kills the worker instance.
+
+And several *event methods* from which we can highlight:
+
+- `onerror`, runs when there is an error inside a worker.
+- `onmessage`, runs when a message is sent with `postMessage`.
+
+Reference:
+
+- [Worker (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/API/Worker).
+- [DedicatedWorkerGlobalScope (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/API/DedicatedWorkerGlobalScope).
+
+<!-- TODO #### Shared Workers
+
+https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker
+https://developer.mozilla.org/en-US/docs/Web/API/SharedWorkerGlobalScope
+-->
+
+<!-- TODO #### Service Workers
+
+https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker
+https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope
+-->
+
+### Code Modularization
 
 A module allows us to *isolate code between files*. To share items (variables, functions, and classes) we need to use the `export` and `import` statements. We can share things "named" as they are, or locally override their name `as` we want. It's also possible to export an item by `default`, without needing to use a specific name (only one per file).
+
+```javascript
+console.log(new Date());
+// --> Thu Jun 30 2022 17:10:39 GMT-0300 (Uruguay Standard Time)
+```
 
 #### Named `export` & `import`
 
@@ -973,7 +1608,7 @@ Exporting:
 
 ```javascript
 // E.g.:
-const pi = 3.14; // Variables cannot be default exported directly.
+const pi = 3.14; // Constants cannot be default exported directly.
 export default pi;
 ```
 
@@ -983,7 +1618,7 @@ export default function () { /* ... */ }
 
 ```javascript
 // As we import items with any name, the exported local name is not used.
-export default function unusedName() { /* ... */ }
+export default function unusedFunctionName() { /* ... */ }
 ```
 
 Importing:
@@ -998,7 +1633,7 @@ import util from 'util.js';
 Exporting:
 
 ```javascript
-// one.js
+// E.g.: one.js
 const one = 1;
 export { one as ONE };
 ```
@@ -1006,15 +1641,24 @@ export { one as ONE };
 Importing:
 
 ```javascript
+// E.g.: main.js
 import { ONE as NUMBER_ONE } from 'one.js';
 console.log(NUMBER_ONE); // --> 1
 ```
 
-<!-- ### DOM (Document Object Model) (`window`, `document`, `selectors`, `events`)
+<!-- TODO ### The DOM (Document Object Model) -->
+<!-- TODO #### The `window` Object and its Members -->
+<!-- TODO #### The `document` Object and its Members -->
+<!-- TODO #### HTML Element Selectors -->
+<!-- TODO #### Handling Events -->
+<!-- TODO ##### Debouncing & Throttling Events -->
+<!-- TODO ### Dealing with Storage ...(session, local, cache, cookies) -->
 
-### CSSOM (Cascade Style Sheet Object Model) ???
+<!-- TODO ### CSSOM (Cascading Style Sheets Object Model) -->
 
-### The `this` Keyword -->
+<!-- TODO ### The `this` Keyword (global, function, object) -->
+
+<!-- TODO ### Coding in `strict` Mode -->
 
 ## Glossary
 
@@ -1244,10 +1888,11 @@ bar(); // `bar` is not defined (Error).
 const bar = function () { /* ... */ }
 ```
 
-----
+---
 
 Reference:
 
-- Eloquent JavaScript.
-- JavaScript for Impatients.
-- [JavaScript (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
+- [Eloquent JavaScript (eloquentjavascript.net)](https://eloquentjavascript.net/).
+- [JavaScript For Impatient Programmers (exploringjs.com)](https://exploringjs.com/impatient-js/toc.html).
+- [JavaScript (developer.mozilla.org)](https://developer.mozilla.org/es/docs/Web/JavaScript).
+<!-- https://on24static.akamaized.net/event/38/49/37/7/rt/1/documents/resourceList1661192485133/handsonjavascriptdeepdivesept20221662487154486.pdf -->
