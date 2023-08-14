@@ -1,10 +1,10 @@
 # Kanban
 
+>Produce only what's needed, when it's needed, and in the needed quantity. (Taiichi Ohno, considered the father of the Toyota Production System)
+
 Kanban is a **workflow management method** that helps optimize the work process by visualizing the *work to be done*, the *work in progress*, and the already *finished tasks* to maximize efficiency and improve continuously. It serves as a real-time information repository, highlighting bottlenecks within the system and anything else that might interrupt smooth working practices.
 
 It's been used in the sense of process definition since the 1950s when it was first developed and applied by Toyota as a *scheduling system*. Kanban means "visual board" or a "sign" in japanese. The Kanban Method was then introduced in the IT and Software Development sectors in 2007.
-
->Produce only what's needed, when it's needed, and in the needed quantity. -Taiichi Ohno, considered the father of the Toyota Production System (TPS)
 
 ## The Kanban Principles
 
@@ -76,15 +76,15 @@ According to the 1st *State of Kanban* report:
 - Alignment between business objectives, key results, and delivery work.
 - Improved predictability.
 - Improved ability to manage scale and dependencies.
-- Improved Quality.
+- Improved quality.
 - Increased customer satisfaction.
 - Improved risk management.
 - Decreased project management cost.
 
-----
+---
 
 Reference:
 
-- [Kanban (agilealliance.org)](https://www.agilealliance.org/glossary/kanban/)
-- [What Is Kanban? (digite.com)](https://www.digite.com/kanban/what-is-kanban/)
-- [What Is Kanban? (kanbanize.com)](https://kanbanize.com/kanban-resources/getting-started/what-is-kanban)
+- [Kanban (agilealliance.org)](https://www.agilealliance.org/glossary/kanban/).
+- [What Is Kanban? (digite.com)](https://www.digite.com/kanban/what-is-kanban/).
+- [What Is Kanban? (kanbanize.com)](https://kanbanize.com/kanban-resources/getting-started/what-is-kanban).
