@@ -152,9 +152,9 @@ Content-specific design: Sometimes, the structure is the actual content, and its
 
 Size: Must be related to the size of the *cursor*, *finger* and the *screen*.  
 Shape: Meaningful for *functionality*, depending on its *label* and the *screen*.  
-Color: It can make it easy to recognise *what a button is made for* (even without a label).  
+Color: It can make it easy to recognize *what a button is made for* (even without a label).  
 Dimension: Making a button *similar* to a real one, makes the UI intuitive.  
-System: Buttons need to have a *logic placement* on screen to make sense by themself.
+System: Buttons need to have a *logic placement* on screen to make sense by thyself.
 
 ## Not Buttons
 
@@ -188,3 +188,5 @@ By convention we focus on a single task when working on a small screen, even whe
 *Big screen: multiple tasks + single screen*.
 
 In this case, we can focus on multiple tasks on a single big screen as we have enough space to work.
+
+<!-- TODO re-scheme file (or delete) -->

@@ -1,53 +1,63 @@
 # Typography
 
+>The task before us is simple: to make beautiful letters and to arrange them well. (Edward Johnston, the father of modern calligraphy)
+
 Typography is the **communication made visual**, if done right, it can even *boost* the message by making it *more visible* and *providing mood and context* for the reader.
 
 Foundations of writing go back to the 5th and the 1st century BCE with the Greek and Roman *carved letters on stone* respectively. In 800 AD one of the first standardized letterforms came in as the Emperor Charlemagne decreed that the Carolingian *letters should be universally used*, these are the basis of the lowercase letters we recognize today. Johannes Gutenberg made one of the finest *art typography* ever created for his Gutenberg Bible in 1455, where movable type and printing press were already the state of the art in writing.
 
->The task before us is simple: to make beautiful letters and to arrange them well. -Edward Johnston, the father of modern calligraphy
-
 ## Typographic Differentiation
 
-Types can be classified by functionality, style, by Serif or Sans Serif, by the historical period of creation, etc. There are *many characteristics* and *many ways to sort* them.
+Types can be classified by functionality, graphic style, by Serif or Sans Serif, by the historical period of creation, etc. There are *many characteristics* and *many ways to sort* them. The main differentiation we can do among them is as follows.
 
-Differentiation by functionality:
+### Differentiation by Functionality
 
-- **Text Type**: It's designed to be read at *small sizes* and *large quantities* of text. The idea for them is to make it *effortless to read*, they should be invisible for the reader.
-- **Display Type**: It's to be used at *big sizes* but in a *small amount* of text, most of them are *emotional and expressive*. They are designed to get *noticed and draw attention*.
+#### Text Type
 
-Classification by Serif vs Sans Serif:
+It's designed to be read at **small sizes and large quantities** of text. The idea for them is to make it easy and *effortless to read*, they should be "invisible" for the reader.
 
-- **Serif**: Types that have *little extenders* at the end of each trace, often called feets.
-- **Sans Serif**: They *don't have* Serifs, "sans" translates to "without" (late 1800s).
+#### Display Type
 
-Serif subclasses:
+It's to be used at **big sizes but in a small amount** of text, most of them are emotional and *expressive*. They are designed to get noticed and *draw attention*.
+
+##### Common Styles Used as Display Types
+
+- **Scripts**: Types based on *handwritten letters*, often *attached* to one another with connecting strokes, some have a formal style, others a more informal style.
+- **Blackletter** or Fraktur: Type made of individual strokes, it looks *fractured or broken*.
+
+### Differentiation by Classification
+
+#### Serif
+
+Serif types have **little extenders** (or feets) at the end of each trace.
+
+##### Serif Subclasses by Style
 
 - **Bracketed Serif**: It has a smooth and *curved transition* from the Serif to the letterform.
 - **Unbracketed Serif**: It forms a *sharp 90 degree corner* between the Serif and the body.
 - **Slab Serif**: An unbracketed Serif, sometimes square. Uses the *same width for its strokes and Serifs*. Has a *lack of contrast* (or no contrast at all) between strokes (mid 1800s).
 
-Serif subclasses by historical period of creation:
+##### Serif Subclasses by Historical Period of Creation
 
 - **Oldstyle**: It has *thick bracketed* serifs, *low contrast* between thick and thin strokes, and long ascenders and descenders. The first Roman serif types (15th and 18th century).
-- **Transitional**: It's a bridge between Oldstyle and Modern. Has *sharper, flatter serifs*, *tighter bracketed* curve, and more *vertical stress* in curved letters (mid 1800s).
+- **Transitional**: A bridge between Oldstyle and Modern. Has *sharper, flatter serifs, tighter bracketed curve, and more vertical stress in curved letters* (mid 1800s).
 - **Modern**: This class of types has an *extreme contrast* between thick and thin strokes, as well as *ultra thin unbracketed* serifs (late 1800s).
 
-Sans Serif subclasses:
+#### Sans Serif
+
+The types that **don't have Serifs** (sans translates to "without," late 1800s).
+
+##### Sans Serif Subclasses
 
 - **Grotesque** or Gothic: Has *slight variations* in stroke width.
 - **Humanist**: Follows the *proportions of the hand-lettered* Roman forms.
 - **Geometric**: Their design is based on *circles*, *squares*, and *triangles* (20th century).
 
-Styles often used as Display Type:
-
-- **Scripts**: Types based on *handwritten letters*, often *attached* to one another with connecting strokes, some have a formal style, others a more informal style.
-- **Blackletter** or Fraktur: Type made of individual strokes, it looks *fractured or broken*.
-
 ## Type Family
 
-It's a **group of related typefaces** which share *similar characteristics*, designed to work together fulfilling different roles at the same text body. There are *three common variations* for a type family, the **weight**, the **width**, and the **slope**. The complete name for each member starts by the name of the typeface family, followed by its weight, width, and slope variation names. There isn't a single way to call these variations, we can do it as follows. Each of these variations is often called a **Font**.
+It's a **group of related typefaces** which share *similar characteristics*, designed to work together fulfilling different roles at the same text body. There are *three common variations* for a type family, the *weight*, the *width*, and the *slope*. The complete name for each member starts by the name of the typeface family, followed by its weight, width, and slope variation names. There isn't a single way to call these variations, we can do it as follows. Each of these variations is often called a **Font**.
 
-Weight terms in ascending order (from thinner to thicker):
+**Weight** terms in ascending order (from thinner to thicker):
 
 - *Extra Light*.
 - *Roman or Normal*.
@@ -55,17 +65,17 @@ Weight terms in ascending order (from thinner to thicker):
 - *Bold*.
 - *Black*.
 
-Width terms in ascending order (from narrowest to widest):
+**Width** terms in ascending order (from narrowest to widest):
 
 - *Ultra Condensed*.
 - *Condensed*.
 - *Roman or Normal*.
 - *Extended*.
 
-Slope types:
+**Slope** types:
 
-- **Oblique**: simply the *same design* but with a slope, a slanted version of a type.
-- **Italic**: features *different letterform designs*, it's often more rounded and inclined.
+- *Oblique*, it's simply *the same design* but with a slope, a slanted version of a type.
+- *Italic*, features *different letterform designs*, it's often more rounded and inclined.
 
 ## Anatomy, Parts & Shapes
 
@@ -152,7 +162,7 @@ Some specific cases in which manual Kerning might be required are:
 
 ### Tracking
 
-Tracking is the **overall space between letters**, applied *equally for each case*, a word, a line, or a large body of text. Notice it is the same amount applied for every pair of characters, there are no distinctions between specific pairs of letters, that's the job of manual Kerning. We can also use Tracking to *avoid widows and orphans*. A **widow** is a word *hanging out at the end* of a paragraph, while an **orphan** is a word *at the top* of a body text column.
+Tracking is the **overall space between letters**, applied *equally for each case*, a word, a line, or a large body of text. Notice it is the same amount applied for every pair of characters, there are no distinctions between specific pairs, that's the job of manual Kerning. We can also use Tracking to *avoid widows and orphans*. A **widow** is a word *hanging out at the end* of a paragraph, while an **orphan** is a word *at the top* of a body text column.
 
 ### Leading
 
@@ -160,10 +170,9 @@ Leading is a much simpler concept, it is the **space between lines** measured *f
 
 ## Legibility & Readability
 
-**Legibility** measures the ability to decipher something. In typography, legibility measures how easy it is to *distinguish one letter from another*. Some features a legible typeface has can be *individual character shapes*, a *large counter space*, a *large x-height*, or *Serifs*, as they provide extra information in comparison with Sans Serifs.
+**Legibility** measures *the ability to decipher something*. In typography, legibility measures how easy it is to *distinguish* one letter from another. Some features a legible typeface has can be individual character shapes, a large counter space, a large x-height, or Serifs, as they provide *extra information* in comparison with Sans Serifs.
 
-**Readability** measures how much areader wants to read the text, in other words, it's *how appealing the text is for the reader*. We can enhance it by creating places where the eye can *focus or even rest*.
-These appealing features are often called **Entry Points**, places where the reader can choose to enter the text and start reading, like *white space* between text blocks, *noticeable headings* on Caps or Bold letters, or *colors* for specific blocks.
+**Readability** measures *how much a reader wants to read the text*, i.e.: it's *how appealing* the text is for the reader. We can enhance it with places where the eye can *focus or even rest*. These appealing features are often called **Entry Points**, places where the reader can choose to enter the text and start reading, like white space between text blocks, noticeable headings on Caps or Bold letters, or different colors for specific blocks.
 
 Factors that can affect readability in general:
 
@@ -174,7 +183,7 @@ Factors that can affect readability in general:
 
 ## Combining Types
 
-Often, it's fine *not to combine* more than one typeface, we could keep only one and use its different variations (like italics and weights). In case we really want to use more than one we need to make them **live harmoniously** with one another (when trying to differentiate between body text and headlines, for instance). Most projects *don't need more than two* well-chosen types to create an effective *typographic hierarchy*.
+Often, it's fine *not to combine* more than one typeface, we could keep only one and use its different variations (like italics and weights). In case we really want to use more than one we need to **make them live harmoniously** with one another (when trying to differentiate between body text and headlines, for instance). Most projects *don't need more than two* well-chosen types to create an effective *typographic hierarchy*.
 
 To ensure a good matching, we need to consider their basic characteristics to **find some similarities**. Those characteristics can be the *historical period* in which they were created, typefaces created by *the same designer*, types that are *stylistically opposite* to build up a noticeable contrast, types with a similar *body height* but with different styles, etc. What we should not do is to combine two types with a strong stylistic identity each, that would make them conflict and *fight for attention* instead of being complementary to one another.
 
@@ -186,10 +195,9 @@ Cases help us define and control *mood* and *voice volume* for the message.
 
 **Lowercase** (or Minuscules) provides a *lower voice*, a more *friendly* mood. They seem to be closer to the reader as if they were *more personal*, they work well for *informal* contexts. Opposite to its counterpart, lowercase (letters and words) works just fine in *closer contact*.
 
-----
+---
 
 Reference:
 
-- [Graphic Design Foundations: Typography](https://www.linkedin.com/learning/graphic-design-foundations-typography/) (Ina Saltz).
+- [Graphic Design Foundations: Typography (linkedin.com)](https://www.linkedin.com/learning/graphic-design-foundations-typography/).
 - Typography Referenced (page 320).
-<!-- - [The 33 Laws of Typography](https://www.linkedin.com/learning/the-33-laws-of-typography/) (Jill Butler). -->
