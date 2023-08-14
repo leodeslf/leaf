@@ -260,10 +260,20 @@ rmdir <dir> # Remove only empty dirs
 
 ```bash
 sed <script> <file>
+sed '<addr><exp>' <file>      # Match an expression at the addressed line/s
+sed '<addr>!text' <file>      # Negate the address
+sed '<num>text' <file>        # Address by line number
+sed '<num1, num2>text' <file> # Address by line number range (inclusive values)
+sed '<regex>/<exp>' <file>    # Address by regular expression
+sed '<addr,+num>'             # From address to next number of lines
+sed '<addr,~num>'             # From addr. to line multiple of the given number
+sed '$text' <file>            # Match at the last line
 sed '/regex/d' <file>         # Delete match
 sed 's/old/new/' <file>       # Replace match
 sed 's/old/new/g' <file>      # Replace all matches (global)
 sed '<num>p' <file>           # Print the specified line
+sed '<addr>i<exp>' <file>     # Insert line/s before address
+sed '<addr>a<exp>' <file>     # Append line/s after address
 sed -E, -r,                   # Use extended regular expressions
 sed -n, --quiet, --silent     # Suppress output (modifications/deletions)
 sed -i<suffix?>, --in-place   # Edit file in-place (avoid standard output)
@@ -304,7 +314,7 @@ wc -w, --words # Print the word counts
 alias <cmd-alias>='<cmd>' # Defines cmd-alias as an alias for cmd
 ```
 
-### Arguments Not options
+### Arguments, Not Options
 
 ```bash
 [cmd] -- [args]
@@ -353,14 +363,14 @@ alias <cmd-alias>='<cmd>' # Defines cmd-alias as an alias for cmd
 # and standard error from cmd1 as standard input for cmd2
 ```
 
-----
+---
 
 Reference:
 
 - [An A-Z Index of the Linux Command Line (ss64.com/bash)](https://ss64.com/bash/).
 - [Bash Guide for Beginners (tldp.org)](https://tldp.org/LDP/Bash-Beginners-Guide/html/).
 - [Bash Programming - Introduction (tldp.org)](https://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html).
-- [Bash Reference Manual (gnu.org)](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html)
-- [Linux Manual Pages (man7.org)](https://man7.org/linux/man-pages/dir_by_project.html)
+- [Bash Reference Manual (gnu.org)](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html).
+- [Linux Manual Pages (man7.org)](https://man7.org/linux/man-pages/dir_by_project.html).
 - [Shell Workshop (udacity.com)](https://classroom.udacity.com/courses/ud206).
 - [The Bash Guide (guide.bash.academy)](https://guide.bash.academy/).

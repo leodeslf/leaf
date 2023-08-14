@@ -33,7 +33,7 @@ a {
   color: $var;
 }
 
-/* Any 'a' occurrence insude 'nav' will take '$var' as blue */
+/* Any 'a' occurrence inside 'nav' will take '$var' as blue */
 nav {
   $var: blue !global;
   color: $var;
@@ -83,7 +83,7 @@ Example:
 ```scss
 selectorA {
   property: value;
-  selectorb {
+  selectorB {
     property: value;
     ...
   }
@@ -191,9 +191,11 @@ main.scss
 @import './variables', './mixins';
 ```
 
-----
+---
 
 Reference:
 
 - [Sass Basics (sass-lang.com)](https://sass-lang.com/guide).
 - [Documentation (sass-lang.com)](https://sass-lang.com/documentation).
+
+<!-- TODO (update) -->

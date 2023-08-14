@@ -1,15 +1,23 @@
 # SvelteKit
 
+## Initialization
+
 ```bash
-# Initialize
-npm init svelte@next <project-name>
+npm create svelte@latest <project-name> # Based on vite
+```
+
+More at [Creating a project (kit.svelte.dev)](https://kit.svelte.dev/docs/creating-a-project).
+
+## Usage
+
+```bash
+vite <command> [options]
 ```
 
 ```bash
-# Use
-svelte-kit dev --port <number> --open
-svelte-kit build
-svelte-kit preview --port <number> --open
+vite dev
+vite build
+vite preview
 ```
 
 ```bash
@@ -19,56 +27,66 @@ npm run build
 npm run preview
 ```
 
-## Adding SASS/SCSS
-
-```bash
-npm i -D svelte-preprocess node-sass
+```json
+// package.json e.g.:
+{
+  "scripts": {
+    "dev": "vite --port <port-number> --open --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview --port <port-number> --open --host"
+  }
+}
 ```
+
+More at [Command Line Interface (kit.svelte.dev)](https://kit.svelte.dev/docs/cli)
+
+## Adding SCSS
+
+Svelte re-exports `vitePreprocess` from `vite-plugin-svelte` through `@sveltejs/kit/vite` for preprocessing. So we just need to use it.
 
 ```js
-// svelte.config.js
-import preprocess from 'svelte-preprocess';
+// svelte.config.js e.g.:
+import { vitePreprocess } from '@sveltejs/kit/vite';
 
-const config = {
-  preprocess: preprocess({
-    scss: {}
-  })
+export default {
+  preprocess: [vitePreprocess()]
 };
-
-export default config;
 ```
 
-More at:
+### Using Global Styles
 
-- [scss, sass (github.com)](https://github.com/sveltejs/svelte-preprocess/blob/main/docs/preprocessing.md#scss-sass).
-- [Svelte Preprocess (github.com)](https://github.com/sveltejs/svelte-preprocess#svelte-preprocess).
+Sadly, `vitePreprocess` **does not support global styles**. For that we need `svelte-preprocess` and the actual preprocessor `sass`.
 
-## Adding a Vercel adapter
+```bash
+npm i -D svelte-preprocess sass
+```
+
+```javascript
+// svelte.config.js e.g.:
+import preprocess from 'svelte-preprocess';
+
+export default {
+  preprocess: preprocess({ /* ... */ })
+};
+```
+
+More at [Integrations](https://kit.svelte.dev/docs/integrations).
+
+## Adding a Vercel Adapter
 
 ```bash
 npm i -D @sveltejs/adapter-vercel
 ```
 
 ```js
-// svelte.config.js
-// import adapter from '@sveltejs/adapter-auto'; // By default.
+// svelte.config.js e.g.:
 import vercel from '@sveltejs/adapter-vercel';
 
-const config = {
+export default {
   kit: {
-    adapter: vercel()
+    adapter: vercel ({ /* ... */ })
   }
 };
-
-export default config;
 ```
 
-More at:
-
-- [adapter (kit.svelte.dev)](https://kit.svelte.dev/docs/configuration#adapter).
-- [Adapters (kit.svelte.dev)](https://kit.svelte.dev/docs/adapters).
-- [adapter-vercel (github.com)](https://github.com/sveltejs/kit/tree/master/packages/adapter-vercel#adapter-vercel).
-
-----
-
-Reference: [Getting started (kit.svelte.dev)](https://kit.svelte.dev/docs/introduction#getting-started).
+More at [Vercel (kit.svelte.dev)](https://kit.svelte.dev/docs/adapter-vercel).
