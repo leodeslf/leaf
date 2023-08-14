@@ -155,7 +155,7 @@ It's a *formal description of the state* of the Increment when it meets the qual
 
 It creates transparency by providing everyone a shared understanding of what work was completed as part of the Increment.
 
-----
+---
 
 Reference:
 
