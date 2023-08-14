@@ -1,14 +1,15 @@
 # React Redux / Redux Toolkit
 
+## Installation
+
 ```bash
-# Install
 npm i @reduxjs/toolkit react-redux
 ```
 
-## Example
+## Usage
 
-```js
-// countSlice.js
+```javascript
+// countSlice.js e.g.:
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = 0;
@@ -26,8 +27,8 @@ export const { add, reset } = countSlice.actions;
 export default countSlice.reducer;
 ```
 
-```js
-// store.js
+```javascript
+// store.js e.g.:
 import { configureStore } from '@reduxjs/toolkit';
 import countReducer from './countSlice';
 
@@ -41,24 +42,24 @@ export default store;
 ```
 
 ```jsx
-// index.js
+// index.js e.g.:
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import App from './App';
-
 import { Provider } from 'react-redux';
 import store from './store';
 
-ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('root')
+createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>
 );
 ```
 
 ```jsx
-// App.js
+// App.js e.g.:
 import { useDispatch, useSelector } from "react-redux";
 import { add, reset } from "./countSlice";
 
@@ -88,7 +89,7 @@ function App() {
 }
 ```
 
-----
+---
 
 Reference:
 
