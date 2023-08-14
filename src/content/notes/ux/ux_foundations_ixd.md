@@ -59,7 +59,7 @@ By researching we need to:
 
 #### Craft
 
-**Design** from an abductive reasoning, critical thinking, and problem-solving perspective.
+**Design** from an abducting reasoning, critical thinking, and problem-solving perspective.
 
 **Prototype**, evaluate if our design decisions are working, and identify alternatives if not.
 
@@ -344,7 +344,7 @@ It occurs when people have to put in more than they should and are therefore slo
 #### Information overload
 
 * Attention and working memory are limited.
-* Exceeding our cognitive capacity can loea to forgetting, misunderstanding, and confusion.
+* Exceeding our cognitive capacity can lead to forgetting, misunderstanding, and confusion.
 * Products should do as much of the work as possible for the people who use them.
 
 **Not all cognitive load is bad**, but it can cause cognitive friction.
@@ -483,7 +483,7 @@ Making something **functional and reliable is not enough** to be "ready to use".
 
 #### Frequency of Reinforcement
 
-* New behaviors can be learned quickly if they are reinforced immediately after every occurence.
+* New behaviors can be learned quickly if they are reinforced immediately after every occurrence.
 * In real life, most reinforcement is not this predictable and consistent.
 * Reinforcement is still effective even if it is not delivered for every behavior.
 
@@ -965,7 +965,7 @@ Small pieces of text found throughout the interface, important for clarity and g
 #### Interaction gap
 
 * The more distance or time between the point of interaction and the result or reaction, the more difficult it may be to control.
-* Experiences where people "interacti here for outcomes over there" may be more difficult to predict and learn.
+* Experiences where people "interact here for outcomes over there" may be more difficult to predict and learn.
 
 #### Direct interaction
 
@@ -1262,3 +1262,5 @@ Accessibility is often a legal requirement.
 * Imagery should have descriptions.
 * Videos should be captioned.
 * Interfaces should be navigable and usable by multiple methods, including keyboard, mouse, touch, and voice.
+
+<!-- TODO (spread this file into a file per topic) -->

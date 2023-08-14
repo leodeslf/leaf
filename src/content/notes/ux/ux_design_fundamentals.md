@@ -80,7 +80,7 @@ Identify the _main objective_ (usually as home page), each _module_ and its _att
 
 ### Mapping Interaction
 
-Think about the users posible _pathways_, from the start, to all the _actions_ he can make, all the _inputs_ that should be needed (even optional ones). Independent of visuals, UI elements or specific screens. It's a **flowchart** / map.
+Think about the users possible _pathways_, from the start, to all the _actions_ he can make, all the _inputs_ that should be needed (even optional ones). Independent of visuals, UI elements or specific screens. It's a **flowchart** / map.
 
 ## Non-Visual Testing
 
@@ -160,3 +160,5 @@ It must simulate:
   - Believable UI design (needs to be on a screen).
   - Believable UX design (needs to be interactive).
   - Believable platform / context (needs to be a physical device).
+
+<!-- TODO re-scheme file (or delete) -->
