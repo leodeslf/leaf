@@ -1,24 +1,28 @@
 # NPM Package
 
+## Setup
+
 ```bash
-# Create npm global configuration file
+# Create global configuration file
 npmrc <user-name>
 ```
 
+## Initialization
+
 ```bash
-# Initialize
 npm init --scope=@<user-name>
 ```
 
+## Uploading & Updating
+
 ```bash
-# Use
-npm publish --access public
+npm publish --access public # Use `access` only once.
 npm version <major|minor|patch>
 npm unpublish <package-name> -f
 ```
 
 ```json
-// package.json
+// package.json e.g.:
 {
   "name": "@<user-name>/<package-name>",
   "publishConfig": {
@@ -28,9 +32,7 @@ npm unpublish <package-name> -f
 }
 ```
 
-----
-
-Reference:
+More at:
 
 - [Creating and publishing scoped public packages (docs.npmjs.com)](https://docs.npmjs.com/creating-and-publishing-scoped-public-packages).
 - [CLI commands (docs.npmjs.com)](https://docs.npmjs.com/cli/v7/commands).

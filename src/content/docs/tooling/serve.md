@@ -1,16 +1,22 @@
 # Serve
 
+## Installation
+
 ```bash
-# Install
 npm i -g serve
 ```
 
+## Usage
+
 ```bash
-# Use
 serve <dir> [option]
 ```
 
 Options:
 
-- `-p <port-number>`
+- `-C`, `--cors` (sets `Access-Control-Allow-Origin: *`)
+- `-p <number>` (port)
 - `-s`, `--single` (404 redirects to `index.html`)
+- `-u` `--no-compression`
+
+More at [Usage (github.com)](https://github.com/vercel/serve#usage).

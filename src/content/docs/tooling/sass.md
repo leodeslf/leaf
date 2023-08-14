@@ -1,24 +1,24 @@
 # SASS
 
+## Installation
+
 ```bash
-# Install
 npm i -D sass
 ```
 
+## Usage
+
 ```bash
-# Use
 sass [option] <input-file> <output-file>
-sass [option] <input1>:<output1> <input2>:<output2>...
+sass [option] [<input-file>:<output-file>]
 ```
 
 Options:
 
-- `-c`, `--color` (colorful terminal)
+- `-c`, `--color`
 - `--no-source-map`
 - `-q`, `--quiet`
 - `--update` (compiles only modified files)
 - `-w`, `--watch`
 
-----
-
-Reference: [Dart Sass Command-Line Interface (sass-lang.com)](https://sass-lang.com/documentation/cli/dart-sass).
+More at [Dart Sass Command-Line Interface (sass-lang.com)](https://sass-lang.com/documentation/cli/dart-sass).

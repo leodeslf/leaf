@@ -1,26 +1,26 @@
 # Vite
 
+## Initialization
+
 ```bash
-# Initialize
-npm init vite@latest <project-name> --template <option>
+npm create vite@latest <project-name> -- --template <template-option>
 ```
 
 Template options:
 
-- `vanilla`
-- `vue`
-- `react`
-- `preact`
-- `lit-element`
-- `svelte`
+- `vanilla`, `vanilla-ts`
+- `vue`, `vue-ts`
+- `react`, `react-ts`
+- `svelte`, `svelte-ts`
+- `solid`, `solid-ts`
+- `qwik`, `qwik-ts`
 
-Use `<option>-ts` for TypeScript.
+More at [Getting Started (vitejs.dev)](https://vitejs.dev/guide/).
+
+## Usage
 
 ```bash
-# Use
-vite --port <number> --open
-vite build
-vite preview --port <number>
+vite <command> [option]
 ```
 
 ```bash
@@ -30,6 +30,32 @@ npm run build
 npm run preview
 ```
 
-----
+```json
+// package.json e.g.:
+{
+  "scripts": {
+    "dev": "vite --port <port-number> --open --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview --port <port-number> --open --host"
+  }
+}
+```
 
-Reference: [Command Line Interface (vitejs.dev)](https://vitejs.dev/guide/#command-line-interface).
+Commands:
+
+- `dev` (default command, can be omitted), options:
+  - `--host <host-name>`
+  - `--port <port-number>`
+  - `--https`
+  - `--open`
+  - `--cors`
+  - `--strictPort` (exit if port number is already in use)
+- `build`, options:
+  - `--outDir <dir>` (`dist` by default)
+  - `--minify <boolean|minifier` (minifiers: `esbuild`, `terser`)
+  - `--ssr <entry>` (build a given entry SSR)
+- `preview` (most options are shared with `dev`)
+
+More at [Command Line Interface (vitejs.dev)](https://vitejs.dev/guide/cli.html).
+
+<!-- TODO (check --host and --entry value usage) -->

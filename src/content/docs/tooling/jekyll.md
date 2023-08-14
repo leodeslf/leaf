@@ -1,12 +1,14 @@
 # Jekyll
 
+## Installation
+
 ```bash
-# Install
 gem install jekyll bundler
 ```
 
+## Usage
+
 ```bash
-# Use
 jekyll new <project-name>
 bundle add webrick # To fix 3.0.0+ Ruby
 ```
@@ -18,6 +20,4 @@ bundle exec jekyll serve
 # `bundle exec` is optional after the first use.
 ```
 
-----
-
-Reference: [Command Line Usage (jekyllrb.com)](https://jekyllrb.com/docs/usage/).
+More at [Command Line Usage (jekyllrb.com)](https://jekyllrb.com/docs/usage/).

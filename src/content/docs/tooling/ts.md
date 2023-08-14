@@ -1,12 +1,14 @@
 # TypeScript
 
+## Installation
+
 ```bash
-# Install
 npm i -g typescript
 ```
 
+## Usage
+
 ```bash
-# Use
 tsc [file] [option]
 tsc <input-file> <output-file> # Ignores tsconfig.json
 ```
@@ -30,7 +32,7 @@ Options:
 - `--watch`
 
 ```json
-// tsconfig.json
+// tsconfig.json e.g.:
 {
   "compilerOptions": {
     "module": "ES6",
@@ -46,10 +48,8 @@ Options:
 }
 ```
 
-----
+More at (typescriptlang.org):
 
-Reference:
-
-- [tsc CLI Options (typescriptlang.org)](https://www.typescriptlang.org/docs/handbook/compiler-options.html).
-- [What is a tsconfig.json (typescriptlang.org)](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
-- [Intro to the TSConfig Reference (typescriptlang.org)](https://www.typescriptlang.org/tsconfig).
+- [tsc CLI Options](https://www.typescriptlang.org/docs/handbook/compiler-options.html).
+- [What is a tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+- [Intro to the TSConfig Reference](https://www.typescriptlang.org/tsconfig).

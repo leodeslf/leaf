@@ -1,42 +1,40 @@
 # Gulp
 
+## Installation
+
 ```bash
-# Install
-npm i -g gulp-cli # Install the cli utility only once
+npm i -g gulp-cli # Install CLI only once
 npm i -D gulp
 ```
 
+## Usage
+
 ```bash
-# Use
-gulp [flags] [tasks]
+gulp [options] [tasks]
 ```
 
-Flags:
+Flags (options):
 
-<!-- ... -->
+<!-- TODO (finish) -->
+
+More at [Flags (github.com)](https://github.com/gulpjs/gulp-cli#flags).
 
 ```javascript
-// gulpfile.js (tasks file)
+// gulpfile.js (default task file) e.g.:
 function task() {
-  
+  /* ... */
 }
 
 exports.default = task;
 ```
 
+More at [Creating Tasks (gulpjs.com)](https://gulpjs.com/docs/en/getting-started/creating-tasks/).
+
 ```json
-// .gulp.json
+// .gulp.json e.g.:
 {
   /* ... */
 }
 ```
 
-----
-
-Reference:
-
-- [Flags (github.com)](https://github.com/gulpjs/gulp-cli#flags).
-- [Creating Tasks (gulpjs.com)](https://gulpjs.com/docs/en/getting-started/creating-tasks/).
-- [Configuration (github.com)](https://github.com/gulpjs/gulp-cli#configuration).
-
-<!-- https://www.linkedin.com/learning/desarrollo-web-front-end-esencial/automatizadores-de-tareas-grunt-y-gulp?autoplay=true&resume=false -->
+More at [Configuration (github.com)](https://github.com/gulpjs/gulp-cli#configuration).
