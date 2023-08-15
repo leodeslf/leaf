@@ -133,7 +133,7 @@ Therefore:
 
 A perfect binary tree is the one on which:
 
-- *Every internal node has two childs*.
+- *Every internal node has two children*.
 - *Leaf nodes are at the same level* (all of them).
 
 Theorems:
@@ -145,7 +145,7 @@ Theorems:
 
 #### Complete Binary Tree
 
-It's a tree that shares features among the perfect binary tree, but there might be some differences. The main difference is that *not every parent node has to have two childs*.
+It's a tree that shares features among the perfect binary tree, but there might be some differences. The main difference is that *not every parent node has to have two children*.
 
 Conditions:
 
@@ -160,10 +160,10 @@ A heap data structure (aka binary heap) is a complete binary tree that *satisfie
 
 There are two different heap properties:
 
-- **Max heap property**: any node is *greater than its childs* (the root is the largest).
-- **Min heap property**: any node is *smaller than its childs* (the root is the smallest).
+- **Max heap property**: any node is *greater than its children* (the root is the largest).
+- **Min heap property**: any node is *smaller than its children* (the root is the smallest).
 
-**Fibonacci Heap** is a variation of heap DS. It consists of a *collection of trees* (instead of being a single one) in which *a node can have more than two or no children* at all. A pointer is kept to the minimum value, which is the root of a tree). All roots are connected as a circular doubly linked list.
+**Fibonacci Heap** is a variation of heap DS. It consists of a *collection of trees* (instead of being a single one) in which *a node can have more than two or no children* at all. A pointer is kept to the minimum value, which is the root of a tree. All roots are connected as a circular doubly linked list.
 
 #### Degenerate Binary Tree
 
@@ -253,7 +253,7 @@ Notice that values in `a[i][j]` and `a[j][i]` should both be defined if it's an 
 
 It represents a graph as *an array of linked lists*. The index of the array represents a vertex, each element in its linked list represents an edge pair vertex.
 
-----
+---
 
 Reference:
 

@@ -35,7 +35,7 @@ This kind of algorithm tends to be efficient for sorting a *small number of elem
 
 In insertion sort, given an item, *shift all greater-left items by one position* to finally put it in the right spot when there are no more greater-left items. It makes use of a key to temporarily hold the item's value.
 
-```txt
+```ftl
 insertion(array, n)
   for i = 1 to n - 1
     move +1 place all greater items than array[i] from its left
@@ -62,7 +62,7 @@ function insertion(array) {
 
 The selection sort algorithm takes, usually from left to right, a range of items in which we *localize the smallest one and swap it with the first one*, to then repeat the process with the remaining unordered ones. We loop until `n - 2` (inclusive) because if all items but the last have been already sorted, `n - 1` has to be the largest.
 
-```txt
+```ftl
 selection(array, n)
   for i = 0 to n - 2
     select the smallest item from array
@@ -89,7 +89,7 @@ function selection(array) {
 
 A sort algorithm in which we *swap any unordered adjacent pair of items* from one edge of the array to the other. Any time we make a swap, another scan should be made to verify if the new positioning left all items in the right place.
 
-```txt
+```ftl
 bubble(array, n)
   for i = 0 to n - 2
     for j = n - 1 to i + 1
@@ -116,7 +116,7 @@ function bubble(array) {
 
 In comb sort the idea is quite similar to bubble sort, we still swap items, but this time, we *swap items with a greater gap between them*. We start from the largest possible gap, which is the array length, comparing the first and the last element. Then reduce the gap dividing it by a shrink factor, usually 1.3, and compare all possible pairs with that configuration, repeat the process while the gap is at least one (comparing adjacent items).
 
-```txt
+```ftl
 comb(array, n)
   gap = n
   while (gap / 1.3 > 1)
@@ -160,7 +160,7 @@ Efficient algorithms can break the limit of `O(n^2)` of simpler sorting algorith
 
 The heart of shell sort is an ingenious division of the array into several subarrays, as described before for efficient algorithms in general. It's similar to insertion, but the trick is that *items spaced farther apart are compared first*, then the items closer to each other are compared, and so on, until adjacent items are compared on the last pass.
 
-```txt
+```ftl
 shell(array, n)
   compute gaps from gap = 1 to gap < n
   for each gap from last to first
@@ -202,7 +202,7 @@ More at [Sequence A003462 (oeis.org)](https://oeis.org/A003462).
 
 Heap sort uses an approach inherent to selection sort, but instead of starting from the smallest item, it *starts from the largest item and uses a max-heap tree*. We need to create a max-heap tree without actually creating a new data structure.
 
-```txt
+```ftl
 heap(array, n)
   convert the array into a max-heap
   for each unsorted item
@@ -246,7 +246,7 @@ function heap(array) {
 
 Quicksort *divides the array into two subarrays and a key called bound* or pivot. The first one contains items less than or equal to the pivot, the second subarray includes items equal to or greater than the pivot. Then the same partition process is repeated for both subarrays, and so on, until there are only one-cell arrays that do not need to be sorted at all.
 
-```txt
+```ftl
 quicksort(array)
   if array.length > 1
     choose a bound (index)
@@ -287,11 +287,11 @@ function quicksort(array, first, last) {
 }
 ```
 
-### Mergesort
+### Merge Sort
 
 The key process here is to *merge sorted halves of an array into one sorted array*. The process of dividing arrays into two halves is done recursively and stops when the array has fewer than two items. Each resulting halve has to be sorted first to then be able to merge. Subarrays are logically separated, no new data structure is created.
 
-```txt
+```ftl
 mergesort(array) {
   if array.length > 1    
     array = mergesort(left half of array)
@@ -336,7 +336,7 @@ function mergesort(array, first, last) {
 
 The radix approach is to *sort integers by each one of its digits*. For example, starting from the rightmost digit (the units), then the second rightmost digit (the tens) and so on, until all the digits of the longest number have been sorted, partially keeping the order of previous steps.
 
-```txt
+```ftl
 radix(array, n)
   for digit = 0 (rightmost) to 9 (leftmost)
     for i = 0 to n - 1
@@ -376,7 +376,7 @@ function radix(array) {
 
 Counting sort first *counts the number of times each integer occurs* using an array which is indexed with the value of the given integer.
 
-```txt
+```ftl
 counting(array, n)
   for i = 0 to n - 1
     add +1 to count[array[i]]
@@ -410,7 +410,7 @@ function counting(array) {
 
 **Average benchmark** results for each *algorithm* implementation sorting an average case collection on multiple *lengths* to compare its performance evolution. The best and second best algorithms for each collection length are highlighted.
 
-Elementary Sorting Algorithms (algorithm vs collection lenght):
+Elementary Sorting Algorithms (algorithm vs collection length):
 
 ||`25`|`250`|`1,000`|`15,000`|`50,000`
 ---|---|---|---|---|---
@@ -419,7 +419,7 @@ Elementary Sorting Algorithms (algorithm vs collection lenght):
 *Bubble Sort*|0.00099ms|0.0700ms|0.9445ms|339ms|4.2s
 *Comb Sort*|0.00099ms|**0.0082ms**|**0.0654ms**|**1.57ms**|**6.60ms**
 
-Efficient Sorting Algorithm (algorithm vs collection lenght):
+Efficient Sorting Algorithm (algorithm vs collection length):
 
 ||`25`|`250`|`1,000`|`15,000`|`50,000`|`1,000,000`
 ---|---|---|---|---|---|---
@@ -430,7 +430,7 @@ Efficient Sorting Algorithm (algorithm vs collection lenght):
 *Radix Sort*|0.00603ms|0.0451ms|0.1798ms|2.80ms|9.40ms|207.6ms
 *Counting Sort*|**0.00036ms**|**0.0022ms**|**0.0078ms**|**0.18ms**|**1.10ms**|**36.40ms**
 
-----
+---
 
 Reference:
 
