@@ -15,7 +15,7 @@ More at:
 
 The HTTP protocol exchanges data through *requests-response* messages.
 
-More at [Hypertext Transfer Protocol -- HTTP/1.1 (w3.org)](https://www.w3.org/Protocols/rfc2616/rfc2616.html).
+More at [RFC 9110 - HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110.html).
 
 ### HTTP Request
 
@@ -29,7 +29,7 @@ GET http://www.example.com/index.html HTTP/1.1
 
 ### HTTP Response
 
-After receiving and interpreting a request message, a server responds with an HTTP response message. A response message can contain many informations, but at least the first line, called the **status-line**, consists of the *protocol version*, the 3-digit integer *status code*, followed by the status *reason phrase*. Elements also separated by a space.
+After receiving and interpreting a request message, a server responds with an HTTP response message. A response message can contain many pieces of information, but at least the first line, called the **status-line**, consists of the *protocol version*, the 3-digit integer *status code*, followed by the status *reason phrase*. Elements also separated by a space.
 
 Example:
 
@@ -61,13 +61,13 @@ More at [Status Code Definitions (w3.org)](https://www.w3.org/Protocols/rfc2616/
 
 Example:
 
-```uri
+```http
 https://www.example.com.uy:80/path/src?key=value#frag
 ```
 
 Components:
 
-```txt
+```ftl
 https:// ............................................ = Scheme
 https://www.example.com.uy:80/path/src?key=value#frag = URI, URL
         www ......................................... = Subdomain
@@ -91,6 +91,8 @@ Terminology:
 - *URL*: Uniform Resource Locator.
 - *URN*: Uniform Resource Name.
 
+<!-- TODO (add) https://css-tricks.com/does-www-still-belong-in-urls/ -->
+
 ## Browsers
 
 ### Browser Engines
@@ -109,3 +111,11 @@ Notes:
 
 - Blink comes from a Webkit library called WebCore, forked by Google in 2013.
 - Since 2019, Edge uses Blink (still being WebKit on iOS).
+
+<!-- TODO (update) Browser Engines -->
+<!-- https://eylenburg.github.io/browser_engines.htm -->
+
+<!-- TODO (add) HTTP(S) Requests -->
+<!-- https://egghead.io/blog/understanding-api-mocking-the-http-request-journey -->
+<!-- https://egghead.io/blog/understanding-api-mocking-request-interception-algorithms -->
+<!-- https://egghead.io/blog/understanding-api-mocking-mock-service-worker -->
