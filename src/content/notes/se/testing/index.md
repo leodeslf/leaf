@@ -1,36 +1,38 @@
 # Testing
 
+> Trust, but verify. (Russian proverb)
+
 On September 9th, 1947, *Grace Hopper found the first computer bug in history*. It was a mouth stuck between relays of the Harvard Mark II computer, she documented this finding in her log book.
+
+>The only truly secure system is one that is powered off, cast in a block of concrete and sealed in a lead-lined room with armed guards. And even then I have my doubts. (Gene Spafford)
 
 Software systems are part of our everyday life, used almost everywhere in almost every sector (e.g.: financial, government, transport, medicine, entertainment, etc). Even though they are getting more and more common to achieve even the simplest tasks, we have all experienced software systems failing. That's why *testing is necessary*.
 
->The only truly secure system is one that is powered off, cast in a block of concrete and sealed in a lead-lined room with armed guards. And even then I have my doubts. -Gene Spafford
-
 ## Common Terms
 
-From the ISTQB Standard Glossary of Terms.
+From the *ISTQB* Standard Glossary of Terms.
 
 - **Testing** is the process concerned with planning, preparation, execution, and evaluation with the objective of *finding defects* in our software products.
 - **Error**, a *human can make an error* (aka mistake). An error is a human action that produces an incorrect result.
-- **Defect**, an *error can cause a defect* (aka fault or *bug*). A defect is a flaw in a component or system that can lead it to fail to perform its required function. It can be at a software, system, or documentation level. Defects occur simply because human beings are fallible, we can often find ourselves dealing with time pressure, complex code, complex infraestructures, changed technologies, among others.
+- **Defect**, an *error can cause a defect* (aka fault or *bug*). A defect is a flaw in a component or system that can lead it to fail to perform its required function. It can be at a software, system, or documentation level. Defects occur simply because human beings are fallible, we can often find ourselves dealing with time pressure, complex code, complex infrastructures, changed technologies, among others.
 - **Failure**, a *defect may result in a failure*. It's a deviation of the component or system from its expected delivery, service, or result. Failures can be caused by environmental conditions such as radiation, magnetism, electronic fields, and any kind of pollution. These conditions may change hardware behavior, then influence the execution of software.
 - **Quality** is the degree to which a system *meets specified requirements*, needs, and expectations.
 - **Risk**, a factor that could result in future *negative consequences*.
 - **Exit criteria**, the *set of conditions* for permitting a process to be officially completed. These conditions are often agreed with the stakeholders. Exit criteria may be defined based on cost or time constraints, number of defects remaining (to be fixed), percentage of tests run without incident, among others.
-- **Validation**, answers the question of "are we building the right product?".
-- **Verification**, answers the question of "are we building the product right?".
+- **Validation**, answers the question of "are we building the right product?"
+- **Verification**, answers the question of "are we building the product right?"
 
 ## General Principles of Testing
 
 ### Testing Shows Presence of Defects
 
->Testing can only show the presence of errors, not their absence. -Edsger Dijkstra, Computing Pioneer, 1972
+>(1) The probability of the existence of more errors (defects) in a section of a program is proportional to the number of errors (defects) already found in that program. (2) Do not plan a test effort under the tacit assumption that no errors (defects) will be found (3) A good test is one that has high probability of detecting an as-yet undiscovered error (defect). (4) A successful test is one that detects an as-yet undiscovered error (defect). (Myers, 2004)
 
 By testing, the only thing we can actually prove is that there are defects. What we cannot do at all is to prove that there are *no* defects (at least Testing cannot do it).
 
->(1) The probability of the existence of more errors (defects) in a section of a program is proportional to the number of errors (defects) already found in that program. (2) Do not plan a test effort under the tacit assumption that no errors (defects) will be found (3) A good test is one that has high probability of detecting an as-yet undiscovered error (defect). (4) A successful test is one that detects an as-yet undiscovered error (defect). -Myers 2004
-
 ### Exhaustive Testing is Impossible
+
+>Have no fear of perfection, you will never reach it. (Salvador Dali)
 
 For most cases we cannot test everything, it would be almost impossible because of the complexity or the time it would take, we need to *prioritize* using a risk-based approach to define what actually needs to be tested.
 
@@ -44,9 +46,9 @@ Defects are not evenly spread in a system, they are usually *confined* to a smal
 
 ### Pesticide Paradox
 
-As programmers fix defects, and the quality of the software improves, the effectiveness of the *previous tests erodes*. We must create new tests as old ones become useless, by doing so, more defects can be found in the future.
+>It's called the "pesticide paradox" after the agricultural phenomenon, where bugs were able to build tolerance to pesticides, leaving us with the choice of; ever-more powerful pesticides followed by ever-more powerful bugs; or an altogether different approach. (Beizer, 1995)
 
->It's called the "pesticide paradox" after the agricultural phenomenon, where bugs were able to build tolerance to pesticides, leaving us with the choice of; ever-more powerful pesticides followed by ever-more powerful bugs; or an altogether different approach. -Beizer, 1995
+As programmers fix defects, and the quality of the software improves, the effectiveness of the *previous tests erodes*. We must create new tests as old ones become useless, by doing so, more defects can be found in the future.
 
 ### Testing is Context Dependent
 
@@ -60,27 +62,27 @@ Examples of permitted failures per KLOC:
 
 ### Absence-of-Error Fallacy
 
->Have no fear of perfection, you will never reach it. -Salvador Dali
+>In any form of testing it is impossible to achieve total confidence. The only exhaustive testing there is, is so much testing, that the tester is exhausted. (Bill Hetzel)
 
 The fact of making improvements in the system by fixing bugs, doesn't really mean there are no more bugs. The system *may still* be unusable or at least not good enough to meet the requirements.
 
->In any form of testing it is impossible to achieve total confidence. The only exhaustive testing there is, is so much testing, that the tester is exhausted. -Bill Hetzel
-
 ## The Role of Testing
 
->Testing is a measurement of software quality. -Bill Hetzel, 1988
+>Testing is a measurement of software quality. (Bill Hetzel, 1988)
 
 Testing is used to **find defects** (so they can be fixed) before the system is released. By doing so, we *reduce the risk* of problems occurring in an operational environment and *contribute to the quality* of the software system. Testing may also be required to meet contractual or legal requirements, as well as industry-specific standards.
 
->Testing is any activity aimed at evaluating an attribute or capability of a program or system and determining that it meets its required results. -Bill Hetzel
+>Testing is any activity aimed at evaluating an attribute or capability of a program or system and determining that it meets its required results. (Bill Hetzel)
 
 Testing can help us *measure the quality* of the system, quality can be measured in terms of defects found. The higher the amount of defects, the closer we are to the highest quality  product. Defects can be functional or non-functional (e.g.: reliability, usability, efficiency, portability, and maintainability).
 
->Quality is not intangible. The purpose of testing is to make quality visible. Testing is the measurement of software quality! -Bill Hetzel
+>Quality is not intangible. The purpose of testing is to make quality visible. Testing is the measurement of software quality! (Bill Hetzel)
 
 In some cases the main objective of testing may be to assess the quality of the software (with no intention of fixing defects), to give information to stakeholders of the risk of releasing the system at a given time. The *decision of releasing* (or not) should be taken by the whole team, it's not (only) the testers' responsibility.
 
 ## Enough is Enough, but How Much is Enough?
+
+>Test estimation is hard to do perfectly, but not that hard to do well. -Black, 2002
 
 To decide *how much testing is enough*, we should take into account:
 
@@ -88,8 +90,6 @@ To decide *how much testing is enough*, we should take into account:
 - The **time and budget constraints**.
 
 Risks should be evaluated at the business, technological, project, and testing level. They are also used to determine where to start testing and where more testing is needed. The risk considerations can include financial implications, legal actions, delivery delays, potential loss of reputation, potential loss of life, among others.
-
->Test estimation is hard to do perfectly, but not that hard to do well. -Black, 2002
 
 ## Debugging and Testing
 
@@ -104,7 +104,9 @@ In short:
 
 ## Infamous Hall of Fame
 
-Sometimes a bug can make us waste a couple of minutes, but sometimes it can lead a system to do exactly the *worst* thing we can (or actually cannot) imagine, such as losing a huge amount of time, millions of dollars, or even human lifes.
+>Testing can only show the presence of errors, not their absence. (Edsger Dijkstra, Computing Pioneer, 1972)
+
+Sometimes a bug can make us waste a couple of minutes, but sometimes it can lead a system to do exactly the *worst* thing we can (or actually cannot) imagine, such as losing a huge amount of time, millions of dollars, or even human lives.
 
 ### Ariane 5
 
@@ -170,7 +172,7 @@ More at:
 - [Failure at Dhahran (en.wikipedia.org)](https://en.wikipedia.org/wiki/MIM-104_Patriot#Failure_at_Dhahran).
 - [Software Problem Led to System Failure at Dhahran, Saudi Arabia (gao.gov)](https://www.gao.gov/assets/imtec-92-26.pdf).
 
-----
+---
 
 Reference:
 
@@ -178,3 +180,4 @@ Reference:
 - Perfect Software (page 13, 19, 24, 56).
 - Software Engineering (page 206).
 - Software Testing (page 11, 14, 15).
+- The Pragmatic Programmer (page 361).

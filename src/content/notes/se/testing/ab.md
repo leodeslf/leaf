@@ -1,15 +1,12 @@
 # A/B Testing
 
-<!-- .Course by Google.
+<!-- TODO -->
 
-..
+---
 
-A/B testing is an approach to test performance by comparing two versions of a single product.
+Reference:
 
-----
-
-Reference: -->
-
+- [A/B Testing (udacity.com)](https://classroom.udacity.com/courses/ud257/).
 <!-- https://www.crazyegg.com/blog/ab-testing/ -->
 <!-- https://www.abtasty.com/ab-testing/ -->
 <!-- https://www.kameleoon.com/en/ab-testing -->
@@ -18,4 +15,3 @@ Reference: -->
 <!-- https://en.wikipedia.org/wiki/A/B_testing -->
 <!-- https://vwo.com/ab-testing/ -->
 <!-- https://www.optimizely.com/optimization-glossary/ab-testing/ -->
-- [A/B Testing (udacity.com)](https://classroom.udacity.com/courses/ud257/).
