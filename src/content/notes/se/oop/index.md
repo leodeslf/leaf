@@ -1,6 +1,6 @@
 # Object Oriented Programming
 
->*Simula* was the first OOL, developed in the 60s in Norway.
+*Simula(67)* was the first OOL, developed in the 60s in Norway.
 
 ## OOP Principles
 
@@ -54,7 +54,7 @@ The **specific is better**, easier to develop, test, and maintain, and it respec
 
 Make your modules to **depend on abstractions**/interfaces, **not in details** of concrete implementation. Also, high-level modules should not depend on low-level ones, and both should depend on abstractions.
 
-----
+---
 
 Reference:
 

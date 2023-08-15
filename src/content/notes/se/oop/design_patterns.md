@@ -10,7 +10,7 @@ They also *ease communication* and *prevent refactoring* as they create a common
 
 ## Creational Patterns
 
-Creational design patterns focus on the **instantiation process**. They help make a system independent of how its objects are created, composed, and represented. This kind of pattern becomes important as systems evolve to depend more on composition than inheritance. Emphasis shifts aways from hardcoding a fixed set of behaviors toward defining *a smaller set of fundamental behaviors*.
+Creational design patterns focus on the **instantiation process**. They help make a system independent of how its objects are created, composed, and represented. This kind of pattern becomes important as systems evolve to depend more on composition than inheritance. Emphasis shifts always from hardcoding a fixed set of behaviors toward defining *a smaller set of fundamental behaviors*.
 
 Two aspects these patterns have:
 
@@ -21,7 +21,7 @@ Pattern|Description
 ---|---
 **Abstract Factory**|An interface for creating *families of related objects* without specifying their concrete classes. Pattern also known as Kit.
 **Builder**|An interface for creating the same type of object with different contents, so the same construction process can *create different representations*.
-**Factory Method**|A superclass for creating objects not directly, but by *deferring instantiation to subclasses*. These subclasses decide which specific class to instantiate.Pattern also known as Virtual Constructor.
+**Factory Method**|A superclass for creating objects not directly, but by *deferring instantiation to subclasses*. These subclasses decide which specific class to instantiate. Pattern also known as Virtual Constructor.
 **Prototype**|A fully initialized object as *a prototypical instance to be copied* or cloned. By copying this prototype we don't need to know about its class implementation.
 **Singleton**|It ensures that one, and *only one globally accessible instance* of a class can exist.
 
@@ -57,7 +57,7 @@ Pattern|Description
 **Template Method**|It lets *subclasses override steps of an algorithm without changing its structure*, the actual Template Method, predefined in the superclass.
 **Visitor**|It defines *a new operation for a class without changing the class itself*. It separates extensible new behavior from the object on which it originally performs.
 
-----
+---
 
 Reference:
 
