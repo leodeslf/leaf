@@ -37,10 +37,13 @@ The ten commandments of Egoless Programming:
 
 What experts say:
 
-- >"There are two ways of constructing a software design. One is to make so simple that there are obviously no deficiencies; the other is to make it so complicated that there are no obvious deficiencies. The first method is far more difficult." (Charles Antony Richard Hoare).
-- >"It seems that perfection is reached not when there is nothing left to add, but when there is nothing left to take away." (Antoine de Saint Exupéry).
-- >"Simplicity is the ultimate sophistication." (Leonardo da Vinci).
-- >"Less is more." (Mies Van Der Rohe).
+>"There are two ways of constructing a software design. One is to make so simple that there are obviously no deficiencies; the other is to make it so complicated that there are no obvious deficiencies. The first method is far more difficult." (Charles Antony Richard Hoare).
+
+>"It seems that perfection is reached not when there is nothing left to add, but when there is nothing left to take away." (Antoine de Saint Exupéry).
+
+>"Simplicity is the ultimate sophistication." (Leonardo da Vinci).
+
+>"Less is more." (Mies Van Der Rohe).
 
 In our software, methods should **solve only one problem**. Other problems should be solved by another block of code to be easily maintained. We need to do one thing and do it so it's easy to understand and replicate.
 
