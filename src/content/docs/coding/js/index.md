@@ -1,18 +1,16 @@
 # JavaScript
 
-JavaScript is a **programming language**. It can also be called high level, single threaded, garbage collected, interpreted, JIT compiled, prototype based, multi-paradigm, dynamic programming language. But "programming language" is enough.
+JavaScript is a **programming language**, in case you are a complicated person you can also call it by its "full name," which is high-level-single-threaded-garbage-collected-interpreted-just-in-time-compiled-prototype-based-multi-paradigm-dynamic-programming-language.
 
-## The Standard
+It was introduced by Brendan Eich as Mocha, then renamed to LiveScript, and finally released in 1997 as JavaScript. The *European Computer Manufacturers Association*'s (ECMA International) *Technical Committee number 39* (TC39) is responsible for maintaining the *ECMAScript Language Specification* (ECMA-262) standard which defines the *ECMAScript Language* (ES or JavaScript).
 
-The *European Computer Manufacturers Association*'s (currently ECMA International) *Technical Committee number 39* (TC39) is responsible for maintaining the *ECMAScript Language Specification* (ECMA-262) which defines the *ECMAScript Language* (ES or JavaScript). First introduced by Brendan Eich as Mocha, then LiveScript, and released in 1997 as JavaScript.
-
-After its sixth version, the *ES6* (ES2015), it's been released one "small" update per year, changing the "tradition" of doing a huge one after several years.
+After the launch of the sixth version so called *ES6* (or ES2015), which introduced major features, it's been released a "small update" every year, instead of a big one after several years.
 
 Relevant standards:
 
 - ECMA-402: *ES internationalization API specification*.
 - ECMA-404: *JSON data interchange syntax*.
-- ECMA-414: *ES specification suit* (ES and its required/optional built-in libraries).
+- ECMA-414: *ES specification suit* (ES and its required and optional built-in libraries).
 - ECMA-419: *ES embedded systems API specification*.
 
 More at:
@@ -66,7 +64,7 @@ Comment.
 ### Variables
 
 ```javascript
-// E.g:
+// E.g.:
 const a = 0; // Block-scoped, not redefinable.
 let b = 1;   // Block-scoped, redefinable.
 var c = 2;   // Function/Global-scoped, redefinable, redeclarable.
@@ -1432,29 +1430,32 @@ request.responseType = 'json';
 
 ##### Setting XHR Request Headers
 
-This must happen after `open` but before `send`:
+Headers can only be set after `open` but before `send` calls:
 
 ```javascript
 // E.g.:
 request.open('GET', 'https://jsonplaceholder.typicode.com/users');
+// ...
 request.setRequestHeader('Content-Type', 'application/json');
+// ...
 request.send();
 ```
 
-##### XHR States
+##### XHR State
 
-`static` properties|`readyState`|`status`|`statusText`
+The property `readyState` is the **request's current state**, it *changes at every phase* of the process (from `0` to `4`). XHR will use the server's response to set both `status` (HTTP response status code) and it's respective `statusText` (e.g.: `'OK'`, `'Not Found'`, etc).
+
+Correspondent values:
+
+`readyState`|`status`|`statusText`|Same as property
 ---|---|---|---
-`UNSENT === 0`|`0`|`0`|`"" (empty)`
-`OPENED === 1`|`1`|`0`|`"" (empty)`
-`HEADERS_RECEIVED === 2`|`2`|`0` (not sure)|`"" (empty)` (not sure)
-`LOADING === 3`|`3`|`100\|200\|300\|400\|500`|`"OK"\|"Not found"\|..."`
-`DONE === 4`|`4`|`100\|200\|300\|400\|500`|`"OK"\|"Not found"\|..."`
+`0`|Always `0`|Always `''`|`UNSENT`
+`1`|Always `0`|Always `''`|`OPENED`
+`2`|Always `0` (not sure!)|Always `''` (not sure!)|`HEADERS_RECEIVED`
+`3`|`1xx\|2xx\|3xx\|4xx\|5xx`|`''\|'OK'\|'Not found'\|...`|`LOADING`
+`4`|`1xx\|2xx\|3xx\|4xx\|5xx`|`''\|'OK'\|'Not found'\|...`|`DONE`
 
-Notes:
-
-- During the request progress, `readyState` will change from `0` to `4`.
-- Both `status` and `statusText` are set by the server.
+Reacting to status change event:
 
 ```javascript
 // E.g.:
@@ -1811,7 +1812,7 @@ sum(2, -2);
 It's a behavior from the interpreter engine of *sending declarations to the top* of their scope. Only `var` and `function` declarations are hoisted.
 
 ```javascript
-// E.g:
+// E.g.:
 sayHi();
 // --> Hi!
 
