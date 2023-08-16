@@ -4,7 +4,7 @@ Pair programming is a technique from the Extreme Programming software developmen
 
 The two roles are often called the *driver* and the *navigator*. The driver, the one who actually codes, has the control over the micro tasks, the low-level details of syntax and coding style. While the navigator is free to consider higher-level issues and scope, keeping in mind the big picture. Often, however, there are no roles at all, both programmers are simply co-equal authors *working in a cooperative manner*.
 
-We should take into consideration that first, pairing is *optional* for everyone, and second, pairing is *intermittent*. There are many good reasons to code alone from time to time. In fact, pairing should be done by about 50% of the team or so. For the most part, *this is an individual and team choice*.
+We'd keep in mind that first, pairing is *optional* for everyone; and second, pairing is *intermittent*. There are many good reasons to code alone from time to time. In fact, pairing should be done by about 50% of the team or so. For the most part, *this is an individual and team choice*.
 
 ## A Similar Approach
 
@@ -27,9 +27,9 @@ The overall benefits of pairing are **higher-quality** on the code base without 
 
 >Don't Go into Code Alone. (The Pragmatic Programmer)
 
-Having people working together helps the team with the **knowledge sharing** on technology and domain preventing silos of knowledge. When two minds with different experiences and perspectives understand and discuss a problem, more alternatives come into consideration which *improves the chances of finding a good solution*. It can also speed up the process as one member might have the required knowledge on a given area to help or guide the other, thus *eliminating delays*.
+Having people working together helps the team with the **knowledge sharing** on technology and domain preventing silos of knowledge. When two minds with different experiences and perspectives understand and discuss a problem, more alternatives come into consideration which *improves the chances of finding a good solution*. It can also speed up the process, *eliminating delays*. At least one member is likely  to have enough knowledge on a given area to *help or guide the other*.
 
-Since pairing promotes *constant communication* and knowledge sharing, it can help with a **fast onboarding of new team members**. Changes on a team have an impact on the team flow, people just need some time to get to know each other. New joiners can get to know the project, the business, and the organization with the help of their pair as they communicate a lot more than they need when working solo.
+Since pairing promotes *constant communication* and knowledge sharing, it can also help with a **fast onboarding of new team members**. Changes on a team have an impact on the team flow, people just need some time to get to know each other. New joiners can get to know the project, the business, and the organization with the help of their pair as they communicate a lot more than they need when working solo. Notice that this is just a side effect, pairing turns to be inefficient when used as an onboarding technique by itself.
 
 >Organizations which design systems are constrained to produce designs which are *copies of the communication* structures of these organizations. This is, the social structures and communication pathways of the team will be mirrored in the product being developed. But most importantly, development teams that include users will produce software that clearly reflects that involvement, and teams that don't bother will reflect that, too. (Malvin Conway, Conway's Law, 1967)
 
@@ -39,9 +39,9 @@ Consistent pairing makes sure that every line of code was touched or seen by at 
 
 >Collective code ownership abandons any notion of individual ownership of modules. The code base is owned by the entire team and anyone may make changes anywhere. (Martin Fowler)
 
-In a good sense, we are forced to discuss approaches and solutions instead of only thinking them through in our own head. *Saying and explaining things* out loud pushes us to **reflect on what we are doing**, if we really have the right understanding, or if we really have a good solution.
+In a good sense, we are forced to discuss approaches and solutions instead of only thinking them through in our own head, or not thinking at all. *Saying and explaining things* out loud pushes us to **reflect on what we are doing**, if we really have the right understanding, or if we really have a good solution.
 
-Pairing makes it easier to catch errors, the little, and the bigger ones. We are actually doing **code review on-the-go**, specially the navigator, but also the driver, which should always be talking through the code being written, so it tends to pay more attention than when working alone. It also makes *refactoring* easier because we can instantly discuss ideas about the approach. That's why we use to have *fewer defects* on the resulting code, which can save a considerable amount of time later on.
+Pairing makes it easier to catch errors en general. We are actually doing **code review on-the-go**, specially the navigator, but also the driver, which should always be talking through the code being written, so it tends to pay more attention than when working alone. It also makes *refactoring* easier because we can instantly discuss ideas about the approach. That's why we use to have *fewer defects* on the resulting code, which can save a considerable amount of time later on.
 
 >By having a second party look at the program, ...we increase the possibility of eliminating at least the most obviously inefficient areas. (Gerald M. Weinberg, Egoless Programming, 1971)
 
