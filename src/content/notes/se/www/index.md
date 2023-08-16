@@ -11,7 +11,7 @@ More at:
 - [World Wide Web (en.wikipedia.org)](https://en.wikipedia.org/wiki/World_Wide_Web).
 - [The WorldWideWeb browser (w3.org)](https://www.w3.org/People/Berners-Lee/WorldWideWeb.html).
 
-## HTTP
+## HyperText Transfer Protocol (HTTP)
 
 The HTTP protocol exchanges data through *requests-response* messages.
 
@@ -57,7 +57,7 @@ HTTP/3.0 505 HTTP Version not supported
 
 More at [Status Code Definitions (w3.org)](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html).
 
-### Uniform Resource Identifier
+### Uniform Resource Identifier (URI)
 
 Example:
 
@@ -68,18 +68,18 @@ https://www.example.com.uy:80/path/src?key=value#frag
 Components:
 
 ```ftl
-https:// ............................................ = Scheme
 https://www.example.com.uy:80/path/src?key=value#frag = URI, URL
-        www ......................................... = Subdomain
-        www.example.com.uy .......................... = Host
-        www.example.com.uy:80 ....................... = Authority
+https:// ............................................ = Scheme
         www.example.com.uy:80/path/src?key=value#frag = URI
+        www.example.com.uy:80 ....................... = Authority
+        www.example.com.uy .......................... = Host
+        www ......................................... = Subdomain
            .example ................................. = Domain
                    .com ............................. = TLD
                        .uy .......................... = ccTLD
                           :80 ....................... = Port
-                             /path/src .............. = Path
                              /path/src?key=value#frag = URI, URN
+                             /path/src .............. = Path
                                       ?key=value .... = Query
                                                 #frag = Fragment
 ```
