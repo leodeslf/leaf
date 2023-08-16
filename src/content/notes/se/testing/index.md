@@ -1,6 +1,6 @@
 # Testing
 
-> Trust, but verify. (Russian proverb)
+>Trust, but verify. (Russian proverb)
 
 On September 9th, 1947, *Grace Hopper found the first computer bug in history*. It was a mouth stuck between relays of the Harvard Mark II computer, she documented this finding in her log book.
 
