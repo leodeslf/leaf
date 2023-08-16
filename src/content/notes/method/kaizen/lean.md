@@ -89,3 +89,4 @@ Reference:
 - [What Is Lean? (leanmethods.com)](https://leanmethods.com/resources/articles/what-is-lean/).
 - [What Is Lean Methodology? (indeed.com)](https://www.indeed.com/career-advice/career-development/lean-methodology).
 - [What Is Lean Methodology? (startinfinity.com)](https://startinfinity.com/project-management-methodologies/lean).
+<!-- https://www.toyota-global.com/company/history_of_toyota/75years/common/pdf/production_system.pdf -->
