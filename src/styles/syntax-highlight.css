@@ -11,7 +11,7 @@
 .token.regex,
 .token.statement,
 .token.unit {
-  color: var(--color--code-green);
+  color: var(--code--green);
 }
 
 .token[class$="-delimiter"],
@@ -23,7 +23,7 @@
 .token.selector,
 .token.tag-id,
 .token.pair {
-  color: var(--color--code-cyan);
+  color: var(--code--cyan);
 }
 
 .token.attr-value,
@@ -41,7 +41,7 @@
 .token.url,
 .token.variable,
 .token.value {
-  color: var(--color--code-yellow);
+  color: var(--code--yellow);
 }
 
 .token.important,
@@ -53,7 +53,7 @@
 .token.cdata,
 .token.doctype,
 .token.prolog {
-  color: var(--color--secondary);
+  color: var(--color--off);
 }
 
 .token.comment,
