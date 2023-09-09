@@ -37,7 +37,7 @@ The ten commandments of Egoless Programming:
 
 What experts say:
 
->"There are two ways of constructing a software design. One is to make so simple that there are obviously no deficiencies; the other is to make it so complicated that there are no obvious deficiencies. The first method is far more difficult." (Charles Antony Richard Hoare).
+>"There are two ways of constructing a software design. One is to make it so simple that there are obviously no deficiencies; the other is to make it so complicated that there are no obvious deficiencies. The first method is far more difficult." (Charles Antony Richard Hoare).
 
 >"It seems that perfection is reached not when there is nothing left to add, but when there is nothing left to take away." (Antoine de Saint Exupéry).
 
