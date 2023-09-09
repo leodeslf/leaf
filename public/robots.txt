@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /test
+
+Sitemap: https://docs-and-notes.vercel.app/sitemap-index.xml
