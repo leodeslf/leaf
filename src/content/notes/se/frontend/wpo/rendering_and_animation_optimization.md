@@ -1,4 +1,4 @@
-# Frame Rendering & Animations Optimization
+# Frame Rendering & Animation Optimization
 
 Course by Google (original title: Browser Rendering Optimizations).
 
