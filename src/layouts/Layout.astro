@@ -1,11 +1,10 @@
 ---
-import type { CollectionEntry } from "astro:content";
+import "../styles/style.css";
+import "../styles/syntax-highlight.css";
 
-// Not sure about this type:
-type Props = CollectionEntry<"docs" | "notes">["data"];
-
-const isRoot = Astro.props["server:root"];
-const title = isRoot ? "Docs & Notes" : Astro.props.headings[0].text;
+const { headings, url } = Astro.props;
+const isIndex = url === "";
+const title = (isIndex ? "" : `${headings[0].text} | `).concat("Docs & Notes");
 ---
 
 <!DOCTYPE html>
@@ -13,134 +12,42 @@ const title = isRoot ? "Docs & Notes" : Astro.props.headings[0].text;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content={Astro.generator} />
     <meta
       name="description"
       content="🌱 Learning docs & notes about my Frontend Development journey, Leo de S.L.F."
     />
     <meta name="author" content="Leonardo de S. Leal F." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin="crossorigin"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Fira+Code:wght@300;400;500&family=Inter:wght@700&display=swap"
+      rel="stylesheet"
     />
-    <style>
-      @font-face {
-        font-family: "Crimson Pro";
-        font-style: italic;
-        font-weight: 300;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/l/font?kit=q5uBsoa5M_tv7IihmnkabAReoYFiYOqChHa9Iwh7EJIRd_id5qR1Z-B4SvNmBiT5StEx3smMc2ir-JRc1KuPxYkHaEHuOm-SRGNRTJHUR4kzCrX6gRq1Zc06hCx5pl0WvcCOdMbpQ8wC3NnJ30rOu3s5-nUBrt-fmRwdehcE&skey=929d48ffa46440d3&v=v23)
-          format("woff2");
-      }
-
-      @font-face {
-        font-family: "Crimson Pro";
-        font-style: italic;
-        font-weight: 400;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/l/font?kit=q5uBsoa5M_tv7IihmnkabAReoYFiYOqChHa9Iwh7EJIRd_id5qR1Z-B4SvNmBiT5StEx3smMc2ir-JRc1KuPxYkHaEHuOm-SRGNRTJHUR4kzCrX6gRq1Zc06hCx5pl0WvcCOdMbpQ8wC3NnJ30rOu3s5-nUBrt-fmRwdehcE&skey=929d48ffa46440d3&v=v23)
-          format("woff2");
-      }
-
-      @font-face {
-        font-family: "Crimson Pro";
-        font-style: italic;
-        font-weight: 500;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/l/font?kit=q5uBsoa5M_tv7IihmnkabAReoYFiYOqChHa9Iwh7EJIRd_id5qR1Z-B4SvNmBiT5StEx3smMc2ir-JRc1KuPxYkHaEHuOm-SRGNRTJHUR4kzCrX6gRq1Zc06hCx5pl0WvcCOdMbpQ8wC3NnJ30rOu3s5-nUBrt-fmRwdehcE&skey=929d48ffa46440d3&v=v23)
-          format("woff2");
-      }
-
-      @font-face {
-        font-family: "Crimson Pro";
-        font-style: normal;
-        font-weight: 300;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/l/font?kit=q5uDsoa5M_tv7IihmnkabDRZs-xwKeiAgnC_IQZ1EpAXcfqf-Lp3ZeZ-SPFoCCb7TNcz3LfycWqt_pZe2qWNx48BakPwJG2QQmVTTp_aRYs1DLf4vyS3Z8s8hi53qF8Uu8aMdtj3Qc4E2tvL0UTMuX0_-Or_1b2G534BBQ&skey=ec2e092f18395a78&v=v23)
-          format("woff2");
-      }
-
-      @font-face {
-        font-family: "Crimson Pro";
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/l/font?kit=q5uDsoa5M_tv7IihmnkabDRZs-xwKeiAgnC_IQZ1EpAXcfqf-Lp3ZeZ-SPFoCCb7TNcz3LfycWqt_pZe2qWNx48BakPwJG2QQmVTTp_aRYs1DLf4vyS3Z8s8hi53qF8Uu8aMdtj3Qc4E2tvL0UTMuX0_-Or_1b2G534BBQ&skey=ec2e092f18395a78&v=v23)
-          format("woff2");
-      }
-
-      @font-face {
-        font-family: "Crimson Pro";
-        font-style: normal;
-        font-weight: 500;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/l/font?kit=q5uDsoa5M_tv7IihmnkabDRZs-xwKeiAgnC_IQZ1EpAXcfqf-Lp3ZeZ-SPFoCCb7TNcz3LfycWqt_pZe2qWNx48BakPwJG2QQmVTTp_aRYs1DLf4vyS3Z8s8hi53qF8Uu8aMdtj3Qc4E2tvL0UTMuX0_-Or_1b2G534BBQ&skey=ec2e092f18395a78&v=v23)
-          format("woff2");
-      }
-
-      @font-face {
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/l/font?kit=UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZ1z5ZWhuczwXBeqMa5gBEoSngYeSccKNRQ2Q9D5ivBFtS4d3Ee1Ap5HMRnm-xTOPmSh7AwSdjnIF7pxHkxy0WzxiIjSfXSW7CRPd0mLidxcjVwxGyIYZ0SxvdiMpmZobtM1FxNVqWNCOa_X&skey=c491285d6722e4fa&v=v12)
-          format("woff2");
-      }
-
-      @font-face {
-        font-family: "Fira Code";
-        font-style: normal;
-        font-weight: 300;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/l/font?kit=uU9NCBsR6Z2vfE9aq3bR38bZonK0Vz8z2tIHHH3wH-vPhQw1Gql7_g-Q2O-rjMJdPTet3gsjjZhcmv-N5MJA-R8RyDjtD54hXpqXglxv42TJYtiXABlnqGlpG4q4aMeLTfI1xeddGI5AFgVhANikYQ4&skey=33bc0af28fd31bc7&v=v21)
-          format("woff2");
-      }
-
-      @font-face {
-        font-family: "Fira Code";
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/l/font?kit=uU9NCBsR6Z2vfE9aq3bR38bZonK0Vz8z2tIHHH3wH-vPhQw1Gql7_g-Q2O-rjMJdPTet3gsjjZhcmv-N5MJA-R8RyDjtD54hXpqXglxv42TJYtiXABlnqGlpG4q4aMeLTfI1xeddGI5AFgVhANikYQ4&skey=33bc0af28fd31bc7&v=v21)
-          format("woff2");
-      }
-
-      @font-face {
-        font-family: "Fira Code";
-        font-style: normal;
-        font-weight: 500;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/l/font?kit=uU9NCBsR6Z2vfE9aq3bR38bZonK0Vz8z2tIHHH3wH-vPhQw1Gql7_g-Q2O-rjMJdPTet3gsjjZhcmv-N5MJA-R8RyDjtD54hXpqXglxv42TJYtiXABlnqGlpG4q4aMeLTfI1xeddGI5AFgVhANikYQ4&skey=33bc0af28fd31bc7&v=v21)
-          format("woff2");
-      }
-    </style>
-    <style>
-      :root {
-        color-scheme: light;
-        color: #080808;
-        font-family: "Crimson Pro", serif;
-        font-feature-settings: "liga";
-        font-size: 19px;
-        font-weight: 400;
-        letter-spacing: -0.0225em;
-        line-height: 1.2;
-      }
-    </style>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/syntax-highlight.css" />
-    <link rel="stylesheet" href="styles/print.css" media="print" />
+    <link rel="stylesheet" href="/styles/print.css" media="print" />
     <link
       rel="stylesheet"
-      href="../styles/small.css"
+      href="/styles/small.css"
       media="(max-width: 599px)"
     />
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <title>{title}</title>
   </head>
   <body>
     <header>
       <span>
         🌱 <a href="/">Docs & Notes</a>
+      </span>
+      <span class="prefers-dark">
+        <input
+          type="checkbox"
+          id="prefers-dark__input"
+          style="display: none;"
+        />
+        <label
+          for="prefers-dark__input"
+          title="Click to switch color scheme (light/dark)."
+        >
+        </label>
       </span>
     </header>
     <main>
@@ -154,5 +61,34 @@ const title = isRoot ? "Docs & Notes" : Astro.props.headings[0].text;
         <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
       </p>
     </footer>
+    <script>
+      /**
+       * 1. Prioritize user's configuration if any,
+       * 2. Else use the system's configuration.
+       * 3. Listen for changes in both cases.
+       * 4. Save user's configuration for later sessions.
+       */
+
+      const input = document.getElementById("prefers-dark__input");
+      const toggleColorScheme = (isDark, isManual = false) => {
+        document.documentElement.classList[isDark ? "add" : "remove"](
+          "prefers-dark"
+        );
+        if (isManual) localStorage.setItem("prefers-dark", isDark);
+        else input.checked = isDark;
+      };
+      input.oninput = (e) => toggleColorScheme(e.target.checked, true);
+      const storedPrefersDark = () => localStorage.getItem("prefers-dark");
+      const initialPrefersDark = storedPrefersDark();
+      const systemPrefersDark = matchMedia("(prefers-color-scheme: dark)");
+      systemPrefersDark.onchange = (e) => {
+        if (storedPrefersDark() === null) toggleColorScheme(e.matches);
+      };
+      toggleColorScheme(
+        initialPrefersDark !== null
+          ? initialPrefersDark === "true"
+          : systemPrefersDark.matches
+      );
+    </script>
   </body>
 </html>
