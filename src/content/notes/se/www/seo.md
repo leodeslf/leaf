@@ -78,4 +78,4 @@ For web developers:
 - [URL Inspection Tool](https://support.google.com/webmasters/answer/9012289)
 - [Maintaining your website's SEO](https://developers.google.com/search/docs/fundamentals/get-started)
 
-<!-- TODO scheme information -->
+<!-- TODO finish draft -->

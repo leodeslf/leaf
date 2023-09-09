@@ -7,6 +7,8 @@
 <!-- https://en.wikipedia.org/wiki/Theory_of_Colours -->
 <!-- http://handprint.com/HP/WCL/color18a.html modern color theory (concepts) -->
 <!-- http://handprint.com/HP/WCL/color18b.html modern color theory (applications) -->
+<!-- Color -Betty Edwards (page 14) -->
+<!-- The Elements of Color -Johannes Itten (all) -->
 
 ## The Color Wheel
 
@@ -64,11 +66,11 @@
 
 ---
 
-Not Color Theory:
+Not Color Theory Stuff:
 
 <!-- ? ## Color Blindness -->
 <!-- ? ## Color Illusions -->
-<!-- ? ## Color Constancy -->
+<!-- ? ## Color Constancy (ref.: Color by Betty Edwards, page 9) -->
 <!-- ? ## Color Psychology -->
 
 ## Color in Computer Graphics
@@ -82,3 +84,5 @@ Not Color Theory:
 <!-- https://en.wikipedia.org/wiki/Color_space -->
 
 <!-- ? (sRGB, Adobe RGB, ProPhoto RGB, DCI-P3, Rec. 2020) -->
+
+<!-- TODO finish draft -->

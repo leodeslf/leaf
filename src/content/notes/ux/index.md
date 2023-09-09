@@ -1,5 +1,9 @@
 # UX
 
+Web UX: Study Guide
+<!-- https://www.nngroup.com/articles/web-ux-study-guide/ -->
+<!-- https://www.nngroup.com/articles/ux-basics-study-guide/ -->
+
 Terms we used to call *the same idea* in barely different contexts:
 
 - Man-Machine Interface (MMI).
@@ -22,22 +26,6 @@ Product Design.
 
 Some of the most *common and damaging web-design mistakes*.
 
-Study of 2021:
-
-1. Popups/overlays.
-1. Slow response time.
-1. Misleading links and expectations.
-1. Low contrast or tiny text.
-1. Inflexible input.
-1. Can't select and copy-paste.
-1. Icons without labels.
-1. Layout shift on page load.
-1. Only huge hero image above fold.
-1. Mobile design on big screens.
-
-More at [Top 10 Web-Design Mistakes of 2021 (youtube.com, NNg)](https://www.youtube.com/watch?v=VGxze7xMYJs&ab_channel=NNgroup).
-<!-- https://www.nngroup.com/videos/top-10-web-design-mistakes/ -->
-
 Study of 2016:
 
 - Unexpected locations for content.
@@ -52,11 +40,23 @@ Study of 2016:
 - Hidden links.
 
 More at [Top 10 Enduring (nngroup.com)](https://www.nngroup.com/articles/top-10-enduring/).
-https://open.spotify.com/playlist/2gUGKgOITIKId1dhBz83t5
-asd/
-asd/index.html
-https://www.nngroup.com/articles/scrolljacking-101/
-<!-- https://www.nngroup.com/articles/ux-basics-study-guide/ -->
+
+Study of 2021:
+
+1. Popups/overlays.
+1. Slow response time.
+1. Misleading links and expectations.
+1. Low contrast or tiny text.
+1. Inflexible input.
+1. Can't select and copy-paste.
+1. Icons without labels.
+1. Layout shift on page load.
+1. Only huge hero image above fold.
+1. Mobile design on big screens.
+
+More at [Top 10 Web-Design Mistakes of 2021 (youtube.com, NNg)](https://www.youtube.com/watch?v=VGxze7xMYJs&ab_channel=NNgroup).
+
+<!-- https://www.nngroup.com/videos/top-10-web-design-mistakes/ -->
 <!-- https://www.nngroup.com/news/item/top-10-ux-articles-of-2022/ -->
 
 <!-- https://www.nngroup.com/articles/ux-quiz/ux-quiz-2021/ -->
@@ -75,4 +75,4 @@ https://www.nngroup.com/articles/scrolljacking-101/
 <!-- ux names (vocabulary inflation) -->
 <!-- https://www.youtube.com/watch?v=iGAWbtSxFww&ab_channel=NNgroup -->
 
-<!-- TODO create a file per topic, use this as an intro (or not even that) -->
+<!-- TODO remove this file, create specific files per each topic -->

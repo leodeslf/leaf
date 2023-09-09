@@ -40,7 +40,7 @@ The four data visualization *scenarios* are:
 
 ## Common pitfalls
 
-----
+---
 
 Reference:
 
@@ -49,13 +49,13 @@ Reference:
 ---
 
 <!-- Enterprise Data Visualization: Executive Dashboards and Managerial Displays -->
-https://learning.oreilly.com/live-events/enterprise-data-visualization-executive-dashboards-and-managerial-displays/0636920353324/0636920078450/
+<!-- https://learning.oreilly.com/live-events/enterprise-data-visualization-executive-dashboards-and-managerial-displays/0636920353324/0636920078450/ -->
 
 <!-- Enterprise Data Visualization: Executive Dashboards and Managerial Displays -->
-https://on24static.akamaized.net/event/38/53/10/8/rt/1/documents/resourceList1662479775269/enterprisedatavisualizationoreillyfinalsep820221662479757091.pdf
+<!-- https://on24static.akamaized.net/event/38/53/10/8/rt/1/documents/resourceList1662479775269/enterprisedatavisualizationoreillyfinalsep820221662479757091.pdf -->
 
 <!-- Alternative Color Strategies for the New Redwood Theme in OAC
  -->
-https://vlamis.com/alternative-color-strategies-for-the-new-redwood-theme-in-oac/
+<!-- https://vlamis.com/alternative-color-strategies-for-the-new-redwood-theme-in-oac/ -->
 
-<!-- TODO finish information scheme -->
+<!-- TODO finish draft -->

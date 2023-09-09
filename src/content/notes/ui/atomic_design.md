@@ -2,8 +2,6 @@
 
 Written by Brad Fros.
 
-<!-- TODO -->
-
 <!-- ## About
 
 // design systems
@@ -28,3 +26,5 @@ Reference:
 
 - [Atomic Design](https://atomicdesign.bradfrost.com/table-of-contents/).
 - Designing Interfaces (page 533).
+
+<!-- TODO finish draft -->
