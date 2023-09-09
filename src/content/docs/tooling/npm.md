@@ -1,4 +1,4 @@
-# NPM Package
+# NPM Packages
 
 ## Setup
 
