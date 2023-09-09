@@ -1,16 +1,14 @@
 # Testing
 
->Trust, but verify. (Russian proverb)
+>The only truly secure system is one that is powered off, cast in a block of concrete and sealed in a lead-lined room with armed guards. And even then I have my doubts. (Gene Spafford)
 
 On September 9th, 1947, *Grace Hopper found the first computer bug in history*. It was a mouth stuck between relays of the Harvard Mark II computer, she documented this finding in her log book.
-
->The only truly secure system is one that is powered off, cast in a block of concrete and sealed in a lead-lined room with armed guards. And even then I have my doubts. (Gene Spafford)
 
 Software systems are part of our everyday life, used almost everywhere in almost every sector (e.g.: financial, government, transport, medicine, entertainment, etc). Even though they are getting more and more common to achieve even the simplest tasks, we have all experienced software systems failing. That's why *testing is necessary*.
 
 ## Common Terms
 
-From the *ISTQB* Standard Glossary of Terms.
+From the *International Software Testing Qualifications Board* (ISTQB) Standard Glossary of Terms.
 
 - **Testing** is the process concerned with planning, preparation, execution, and evaluation with the objective of *finding defects* in our software products.
 - **Error**, a *human can make an error* (aka mistake). An error is a human action that produces an incorrect result.
@@ -42,6 +40,8 @@ Testing activities should start *as early as possible* in the development/design
 
 ### Defect Clustering
 
+>In any form of testing it is impossible to achieve total confidence. The only exhaustive testing there is, is so much testing, that the tester is exhausted. (Bill Hetzel)
+
 Defects are not evenly spread in a system, they are usually *confined* to a small number of modules. It's said they are clustered. Similarly to defects, failures also tend to be close to each other.
 
 ### Pesticide Paradox
@@ -62,7 +62,7 @@ Examples of permitted failures per KLOC:
 
 ### Absence-of-Error Fallacy
 
->In any form of testing it is impossible to achieve total confidence. The only exhaustive testing there is, is so much testing, that the tester is exhausted. (Bill Hetzel)
+>Trust, but verify. (Russian proverb)
 
 The fact of making improvements in the system by fixing bugs, doesn't really mean there are no more bugs. The system *may still* be unusable or at least not good enough to meet the requirements.
 
