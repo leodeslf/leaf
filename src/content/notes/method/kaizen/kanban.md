@@ -1,6 +1,6 @@
 # Kanban
 
->Produce only what's needed, when it's needed, and in the needed quantity. (Taiichi Ohno, considered the father of the Toyota Production System)
+>Make only what is needed, when it is needed, and only in the amount needed. (Kiichiro Toyoda, founder of Toyota)
 
 Kanban is a **workflow management method** that helps optimize the work process by visualizing the *work to be done*, the *work in progress*, and the already *finished tasks* to maximize efficiency and improve continuously. It serves as a real-time information repository, highlighting bottlenecks within the system and anything else that might interrupt smooth working practices.
 
