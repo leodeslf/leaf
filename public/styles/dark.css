@@ -1,0 +1,35 @@
+.prefers-dark {
+  --bg--off: #060606;
+  --bg: #0c0c0c;
+  --border-color: #040404;
+  --code--cyan: #85d6ff;
+  --code--green: #90e080;
+  --code--yellow: #ffe080;
+  --color--anchor: #99bbff;
+  --color--emphasis: #ffe080;
+  --color--headline: #fff;
+  --color--off: #999;
+  --color--strong: #90e080;
+  --color: #aaa;
+  --font-weight--bolder: 400;
+  --font-weight: 300;
+  --font-weight-monospace--bolder: 400;
+  --font-weight-monospace: 300;
+}
+
+.prefers-dark code:not(pre>code) {
+  background-color: unset;
+  border-radius: unset;
+  color: var(--code--cyan);
+  padding: unset;
+}
+
+.prefers-dark strong {
+  background-color: unset;
+  color: var(--color--strong);
+}
+
+.prefers-dark em {
+  background-color: unset;
+  color: var(--color--emphasis);
+}

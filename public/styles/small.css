@@ -1,24 +1,14 @@
-@media screen and (max-width: 5.99px) {
-  /* :root {
-    font-size: 17.2px;
-  } */
+body {
+  padding: .5in .1in;
+}
 
-  body {
-    padding: 0 1rem;
-  }
+p,
+li {
+  hyphens: auto;
+  text-align: left;
+}
 
-  h1 a {
-    margin-left: -1;
-  }
-
-  /* li {
-    text-align: unset;
-  } */
-
-  blockquote,
-  pre,
-  table {
-    margin-left: 0;
-    margin-right: 0;
-  }
+table {
+  max-width: 600px;
+  overflow-x: scroll;
 }

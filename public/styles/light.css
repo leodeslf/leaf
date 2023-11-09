@@ -1,0 +1,20 @@
+:root {
+  --bg--off: #f9f9f9;
+  --bg: #fff;
+  --border-color: #f3f3f3;
+  --border-radius: 4px;
+  --code--cyan: #06a;
+  --code--green: #080;
+  --code--yellow: #a60;
+  --color--anchor: #04e;
+  --color--headline: #000;
+  --color--off: #585858;
+  --color: #000;
+  --font-weight--bolder: 500;
+  --font-weight: 400;
+  --font-weight-monospace--bolder: 500;
+  --font-weight-monospace: 400;
+  --mark--emphasis: #ff05;
+  --mark--monospace: #0cf3;
+  --mark--strong: #0f03;
+}

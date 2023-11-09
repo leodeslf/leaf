@@ -1,46 +1,27 @@
-:root,
-:root.dark {
-  --bg: #f8f8f8;
-  --bg--emphasis: #fff;
-  --bg--emphasis-alternative: #ededed;
-  --bg--cyan: hsla(190, 100%, 50%, .25);
-  --bg--green: hsla(120, 100%, 50%, .2);
-  --bg--yellow: hsla(60, 100%, 50%, .35);
-  --color: #222;
-  --color--secondary: #777;
-  --color--headline: #111;
-  --color--blue: hsl(220, 100%, 50%);
-  --color--code-cyan: hsl(197, 100%, 35%);
-  --color--code-green: hsl(84, 70%, 33%);
-  --color--code-yellow: hsl(39, 100%, 33%);
-  --font-weight-default--normal: 400;
-  --font-weight-default--bolder: 600;
-  --font-weight-monospace--normal: 400;
-  --font-weight-monospace--bolder: 500;
+:root {
   color-scheme: light;
 }
 
 body {
-  box-shadow: unset;
-  padding: 0;
+  outline: unset;
 }
 
-h1,
-details,
-footer,
-#control-buttons {
+header,
+footer {
   display: none;
 }
 
+html,
+body,
 blockquote,
-code:not(pre>code),
 pre,
-table {
-  background-color: transparent;
-  border: 1pt solid var(--bg--emphasis-alternative);
+table,
+tbody tr:nth-of-type(2n) {
+  background-color: unset;
 }
 
-table tr:nth-of-type(2n),
-table>thead>tr {
-  background-color: unset;
+blockquote,
+pre,
+table {
+  outline: 1px solid var(--border-color);
 }
