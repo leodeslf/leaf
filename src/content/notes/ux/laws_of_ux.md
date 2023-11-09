@@ -1,6 +1,6 @@
 # Laws of UX
 
-Written by Jon Yablonski.
+Based on both, the book with the same name written by Jon Yablonski, and the community's top reference experts.
 
 ## Jakob's Law
 
@@ -12,7 +12,32 @@ When users enter a new site that is similar to other(s) they already know, *they
 
 One of the biggest challenges for designers is to *align our own mental models with the ones of the users*. To assume **we do not know the users' mental model** is a good starting point. *Ask, interview, and research* not only about the users' goals, but also about the users' previous experiences and how that information can be applied to our own design.
 
+Reference:
+
+- Laws of UX (page 1).
+
 ## Fitts's Law
+
+>The time to acquire a target is a function of the distance to and size of the target. (Paul Morris Fitts, 1954)
+
+Fitts' law is a **model both for predicting and measuring** the performance of humans on a given human-computer interaction.
+
+To reduce the ratio of errors:
+
+1. Targets should be *large enough*.
+2. Targets should be at *easy to find and acquire* areas.
+3. Targets should be *close to the current area of attention*.
+4. Groups of targets should have *ample space between them*.
+
+Reference:
+
+- Laws of UX (page 13).
+- [Fitts's Law and Its Applications in UX (nngroup.com)](https://www.nngroup.com/articles/fitts-law/).
+- [Fitts’s Law (psytoolkit.org)](https://www.psytoolkit.org/lessons/fitts.html).
+- [Fitt's Law (uxknowledgebase.com [medium])](https://uxknowledgebase.com/fittss-law-59b9ebe4e84c).
+- [Fitts's law (wikipedia.org)](https://en.wikipedia.org/wiki/Fitts%27s_law).
+- [Fitts' Law (yorku.ca)](https://www.yorku.ca/mack/hhci2018.html).
+- [Understanding Fitts' Law (humankinetics.com)](https://us.humankinetics.com/blogs/excerpt/understanding-fitts-law).
 
 ## Hick's Law
 
@@ -33,3 +58,25 @@ One of the biggest challenges for designers is to *align our own mental models w
 ## With Power Comes Responsibility
 
 ## Applying Psychological Principles in Design
+
+---
+
+Reference:
+
+- Laws of UX.
+
+<!-- 
+ux laws:
+parkinson's law of triviality
+campbell's law
+accort-zhal steering law
+law of prägnanz
+occam's razor
+
+psychology concepts:
+paradox of the active user
+selective attention
+cognitive bias
+cognitive dissorance
+signifiers
+ -->
