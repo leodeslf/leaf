@@ -1,6 +1,129 @@
 # Scrum
 
-Scrum is **an Agile framework** based on *sprint iterations*.
+Scrum is **an Agile framework** aimed to *incrementally deliver value* through *collaborative work* by defining rules, boundaries, roles, and structure for each one and each stage for projects with challenging, *complex problems* and *rapidly changing requirements*.
+
+## Scrum Origins
+
+The word "scrum" (or "rugby approach") was brought to product development by Hirotaka Takeuchi and Ikujiro Nonaka on their paper **"The New New Product Development Game"** in the 1986, where they analyzed new approaches that lead them to better understand how can we *enhance development speed and flexibility*, both well-known weak points of old, sequential methods. Ken Schwaber and Jeff Sutherland co-created Scrum based on it (1995) inheriting the *Agile philosophy*. Later, Mike Beedle wrapped Scrum around *XP practices and artifacts*.
+
+That paper identified six key characteristics leading companies had:
+
+1. *Built-in instability*, teams with great freedom of action but also hard, challenging goals.
+1. *Self-organizing project teams* which are identified by three must-have traits: autonomy (from top managers and directors), self-transcendence (making them and top managers forget about status quo and recognize that they can always be auto-sufficient), and cross-fertilization (as cross-functional, multi-disciplinary team members are constantly sharing knowledge and initiatives while working together).
+1. *Overlapping development phases*, which "enhance shared responsibility and cooperation, stimulates involvement and commitment, sharpens a problem-solving focus, encourages initiative taking, [and] develops diversified skills." On the other hand, management becomes more complex and good communication skills become a must-have for everyone.
+1. *"Multilearning,"* it happens in two dimensions. One is multilevel learning: the pressure imposed by the challenges and teammates lead everyone to learn more and grow because it is a necessity. The other is multifunctional learning: members from a cross-functional team have the privilege but also the requirement to learn about multiple tools and disciplines. Interactive experimentation also rises initiative and organizational flexibility.
+1. *Subtle control*, although top managers give teams great freedom, they provide a "big picture" point of view preventing small problems, ambiguity, and tension from turning into total chaos. Traditional management is avoided as it impairs or even extinguishes creativity and innovation. Subtle control includes self-discipline control, peer (instead of "boss") pressure, and passion/love (for what you do). Healthy management control exercises:
+   1. Build balanced teams by selecting the right people.
+   1. Creating an open work environment.
+   1. Make team members to research costumer requirements by themselves.
+   1. Establishing a group performance evaluation & reward system.
+   1. Helping regulate team members working rhythm (specially at the start).
+   1. Tolerating & anticipating mistakes.
+   1. Make (external) suppliers self-organizing and knowledgeable about our needs.
+1. *(Organizational) transfer of learning* to other teams facing new projects or even different divisions. It is appropriate to assigning key members to new projects, so we leverage the accumulation of knowledge, something called transfer of learning through "osmosis," or now a days, to prevent silos of knowledge. It is also key to standardize practices through the whole organization for later projects. To institutionalize lessons learned from success. Yet, excessive institutionalization can be bad. Unlearning lessons when required by environment changes is crucial to keep a realistic, up-to-date organization culture.
+
+Observed limitations and undesired effects:
+
+- *Remarkably more effort is required* on the part of team members in order to execute such speed and complexity. People may suffer from more stress and tension.
+- *May not apply for long-term revolutionary innovations*, that kind of projects may require more rigid team structures and less volatile processes and practices.
+- *May not apply for extremely large projects* involving multiple divisions or organizations. Coordination, face-to-face communication, and speed can get hurt by the project's scale.
+- *Does not apply for one-man "teams"* where a single in charge "genius" develops the project to then define strict and specific orders for the people "below" to follow.
+
+More at: [The new new product development game (paper, damiantgordon.com)](http://damiantgordon.com/Methodologies/Papers/The%20New%20Product%20Development%20Game.pdf).
+
+## Scrum Philosophy
+
+Scrum is supported by three *pillars*:
+
+- **Transparency**: in order to avoid misinformation, misunderstandings, and rise collective ownership, we shall *keep information always available and accesible for everyone*, such as practices, progress, problems, and any other relevant content.
+- **Inspection**: we shall *have self-critic and discipline in order to spot potential issues* by periodically reviewing the produced work, monitoring the effectiveness of our practices, and the smoothness on each step of the process. Empiricism is the key mindset.
+- **Adaption**: whether it comes from customer needs, consumer trends, economics, etc., or introduced by ourselves, change is inevitable and we need flexibility in order to deal with it; we shall *accept context-imposed changes as well as promote our own ones when appropriate*.
+
+>With no trust, scrum's efficiency is not low, it is zero. (Me)
+
+These pillars stand on a single *foundation*:
+
+- **Trust**: programming is a team effort; every team member is treated as someone independent and accountable; we believe on each other's talent and knowledge; to collaborating with efficiency *it is essential to build strong relationships*; with no regards to positions, titles, status quo, etc., we *recognize each person's capabilities to add value* on their own.
+
+Scrum *values*, traits a team needs to have success:
+
+- **Commitment**: to overcome any difficulty and achieve the team's defined goals.
+- **Focus**: on prioritizing and delivering only the value that's been required.
+- **Openness**: to be transparent about requirements and emerging challenges.
+- **Respect**: to recognize and appreciate every team member's capabilities.
+- **Courage**: to be determined and brave to face the complex and unknown.
+
+## How to Scrum
+
+>Scrum is not a silver-bullet. It does not bring success. [...] The effort is great and those that succeed will be in the minority. (Ken Schwaber, co-creator of Scrum)
+
+What the Scrum's "guide" looks like:
+
+- At least three roles are defined: **Product Owner**, **Scrum Master**, and **team member**.
+- The Product Owner is the one who brings required features and their priorities as **user stories**, which will be put in the **product backlog**.
+- The software is build through **sprints**. Each sprint starts with a **sprint planning** to choose which features will be built, these features are moved to the **sprint backlog**.
+- Every day the team holds a short, face-to-face meeting, the **Daily Scrum** to update the progress, report difficulties and, if needed, ask for help.
+- The Scrum Master's responsibility is to ensure the project runs as smoother as possible helping other team members address their issues. He also facilitates the team's meetings such as the **sprint review**, where the team demonstrates the product to the product owner at the end of each sprint, after that, the team also holds a **retrospective** meeting to reflect about learned lessons and ways to improve.
+
+>Practices in the absence of ... principles are often inappropriately used. (Agile Project Management, Jim Highsmith, 2009)
+
+However, as any other method, *Scrum does not fix chaotic circumstances*; a guide is not enough; in order to succeed we need *self-organization*, *collective commitment*, and a lot of effort.
+
+<!-- TODO (or not) - Agile Software Development with Scrum (page 105 (understanding...), 133 (definition...)) -->
+
+## Scrum Team & Roles
+
+- **Scrum Team** aka. Whole Team.
+  - Read notes at [Whole Team (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/#whole-team).
+  - (Clean Agile, page 93)
+  - (Agile Software Development with Scrum, page 35).
+  - (The Art of Agile Development, page 68).
+- **Scrum Master**.
+  - (Clean Agile, page 143)
+  - (Agile Software Development with Scrum, page 31).
+- **Product Owner**.
+  - See also [The Customer is Always Available (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/#the-customer-is-always-available).
+  - (Agile Software Development with Scrum, page 34).
+
+## Scrum Practices/Events
+
+- **Sprint**
+  - (Agile Software Development with Scrum, page 50).
+- **Sprint Planning**
+  - (Clean Agile, page 110)
+  - (Agile Software Development with Scrum, page 47).
+- **Daily Scrum** aka. Stand Up Meeting.
+  - (Agile Software Development with Scrum, page 40).
+  - (The Art of Agile Development, page 219).
+- **Sprint Review**
+  - (Agile Software Development with Scrum, page 55).
+- **Sprint Retrospective**
+  - (The Art of Agile Development, page 278).
+
+## Scrum Artifacts
+
+- **User Story**.
+  - (Clean Agile, page 66, 74)
+  - Read notes at [User Story (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/#user-story).
+- **Product Backlog**
+  - (Agile Software Development with Scrum, page 32).
+- **Sprint Backlog**
+
+---
+
+Reference:
+
+- The Art of Agile Development (page 278~).
+- Agile Software Development with Scrum (page 147~).
+- [Control Chaos (controlchaos.com)](http://www.controlchaos.com/).
+- Learning Agile (page 87, 120~).
+- [Software Developer Learning Path (scrum.org)](https://www.scrum.org/pathway/software-developer-learning-path).
+- Software Engineering (page 56~).
+- [The 2020 Scrum Guide™ (scrumguides.org)](https://scrumguides.org/scrum-guide.html).
+- [What is Scrum? (scrum.org)](https://www.scrum.org/learning-series/what-is-scrum).
+<!-- - Agile Notetaker & Scrum Reference. -->
+
+<!-- Start of the deprecated text:
 
 ## Scrum Values
 
@@ -161,3 +284,4 @@ Reference:
 
 - [Scrum Guide (scrumguides.org)](https://scrumguides.org/scrum-guide.html).
 - [Software Developer Learning Path (scrum.org)](https://www.scrum.org/pathway/software-developer-learning-path).
+ -->
