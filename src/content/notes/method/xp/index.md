@@ -1,14 +1,14 @@
 # Extreme Programming
 
-Extreme Programming (or XP) is a **software development methodology** based on *Agile*\*. It was designed to improve productivity by including the *customers into the team* as well as making *frequent and small releases* of working software. Thus adding value often, easing communication and feedback, and quickly *responding to change* on system requirements. And as a side effect, also reducing long-term risks since we avoid accumulating problems over time.
+Extreme Programming (or just XP) is a **software development methodology** based on *Agile*\*. It was designed to improve productivity by including the *customers into the team* as well as making *frequent and small releases* of working software. Thus adding value often, easing communication and feedback, and quickly *responding to change* on system requirements. And as a side effect, also reducing long-term risks since we avoid accumulating problems over time.
 
 \*Not to confuse Agile with the later conceived *Agile Software Development* methodology.
 
 ## XP Origins
 
-XP was introduced and developed in the late 80s and early 90s (first used on March 6 of 1996) by Ward Cunningham, Kent Beck, Ron Jeffries, Martin Fowler, Don Wells, James Shore, among others to address the **constant change of requirements**. Said changes not only came from *customer decisions*, but also from *dynamic environment factors* (such as market trends, business priorities, nature conditions, etc), which is often unavoidable and hurts productivity.
+XP was introduced in the late 80s and early 90s (first used on March 6 of 1996) by Ward Cunningham, Kent Beck, Ron Jeffries, Martin Fowler, Don Wells, James Shore, among others to address the **constant change of requirements**. Said changes not only came from *customer decisions*, but also from *dynamic environment factors* (such as market trends, business priorities, nature conditions, etc), which is often unavoidable and hurts productivity.
 
-The solution was **a set of practices** for the *Chrysler Comprehensive Compensation* project (or C3, the "birth project" of XP), practices later isolated and named "Extreme Programming" under the slogan "*Embrace Change*." It was one of the first Agile methods. *Agile and Lean* (from the Toyota Production System) served as the inspiration and foundation for the XP values.
+It resulted in **a set of practices** for the *Chrysler Comprehensive Compensation* project (or C3, the "birth project" of XP), practices later isolated and named "Extreme Programming" under the slogan *"Embrace Change."* It was one of the first Agile methods. *Agile and Lean* (from the Toyota Production System) served as the inspiration and foundation for the XP values.
 
 ## What Makes XP Different
 
@@ -28,31 +28,11 @@ XP has its *focus on customer and business value* over anything else and more th
 
 Most of them adopted from Agile, XP values are (but not limited to):
 
-1. **Communication**.
-1. **Simplicity**.
-1. **Feedback**.
-1. **Courage**.
-1. **Respect**.
-
-### Simplicity
-
-We invest ourselves and our resources to **do what's needed, but no more**. We shall break down major processes into reasonable small steps to easily mitigate failures as they happen, *maximizing the added value* as well as *reducing long-term costs*.
-
-### Communication
-
-To **cooperate efficiently** we need a good communication. Everyone participates *face to face daily* in order to get to know and notify about any progress and problem. The solution's quality tends to *mirror* the quality of our communication.
-
-### Feedback
-
-We **return value at every step** of the process. Each team member gives its *perspective and opinion*. The whole team *delivers working software*. The customer gives its *review and needed modifications*. Feedback is a critical part of communication.
-
-### Respect
-
-It should to be **a minimal requirement** for any job (and life in general), but it's worth mentioning. Managers, developers, clients, *everyone gives and receives* the respect they deserve. We *appreciate every contribution*, being it technical or non-technical.
-
-### Courage
-
-We will *handle the fears* that bias our action. While talking about progress and estimates, **truth and transparency is crucial**. We face any challenge *as a team*. We will always seek for the best solution by either taking *pleasant or unpleasant decisions*.
+- **Simplicity**: we invest ourselves and our resources to *do what's needed, but no more*. We shall break down major processes into reasonable small steps to easily mitigate failures as they happen, *maximizing the added value* as well as *reducing long-term costs*.
+- **Communication**: to *cooperate efficiently* we need a good communication. Everyone participates *face to face daily* in order to get to know and notify about any progress and problem. The solution's quality tends to *mirror* the quality of our communication.
+- **Feedback**: we *return value at every step* of the process. Each team member gives its *perspective and opinion*. The whole team *delivers working software*. The customer gives its *review and needed modifications*. Feedback is a critical part of communication.
+- **Respect**: being *a minimal requirement* for any job (and life in general), it's worth mentioning; managers, developers, clients, *everyone gives and receives* the respect they deserve. We *appreciate every contribution*, being it technical or non-technical.
+- **Courage**: we will *handle the fears* that bias our action. While talking about progress and estimates, *truth and transparency is crucial*. We face any challenge *as a team*. We will always seek for the best solution by either taking *pleasant or unpleasant decisions*.
 
 ## Process & Practices of XP
 
@@ -92,7 +72,7 @@ A release is meant to **deliver working software in short periods of time**, mak
 
 #### Iteration
 
-Iterations are used to **divide a release** into even *shorter periods of time*. **Iteration planning** meetings take part at the start of each iteration (as we do for the release) to, one more time, let the customer choose and *prioritize the stories* that need to be done at the end of the iteration.
+Iterations **divide a release** into even *shorter periods of time*. **Iteration planning** meetings take part at the start of each iteration (as we do for the release) to, one more time, let the customer choose and *prioritize the stories* that need to be done at the end of the iteration.
 
 ### Managing
 
@@ -100,7 +80,7 @@ Managing is *the weakest point of XP*, that's why Scrum has been created.
 
 #### Stand Up Meeting
 
-Every morning we have a stand up meeting to **report problems, solutions, and promote focus**. Stand up meetings are a *much more efficient* alternative when compared with the long, tedious, and unattended traditional meetings, *keeping us from wasting large amounts of resources* such as time and people, also making them easy to be scheduled (or not schedule at all). They can even *take part spontaneously* in front of a computer to discuss about code, for example.
+Stand up meetings happen every morning to **report issues, solutions, and promote focus**. They are a *much more efficient* alternative when compared with the long, tedious, and unattended traditional meetings, *keeping us from wasting large amounts of resources* such as time and people, also making them easy to be scheduled (or not schedule at all). They can even *take part spontaneously* in front of a computer to discuss about code, for example.
 
 Every attendee should report at least three things:
 
@@ -108,13 +88,15 @@ Every attendee should report at least three things:
 1. What will be attempted today.
 1. What problems are causing delays.
 
+<!-- TODO [It's Not Just Standing Up: Patterns for Daily Standup Meetings (martinfowler.com)](https://martinfowler.com/articles/itsNotJustStandingUp.html) -->
+
 #### Project Velocity
 
-It is used to determine the **event rate** for the project by measuring either by time or by scope. Approaches known as *Date Driven Commitment* and *Story Driven Commitment* respectively. The initial estimate is just guess (as we have nothing to measure), but then we take numbers from each finished iteration to know either: *how many stories* can fit within a given *period of time*; or *how long it will take* to finish a given *set of stories*. The idea is to keep the velocity so we can work at a sustainable, measurable, and *predictable pace*, however, a few ups and downs are expected.
+A metric used to determine the **event rate** for the project by measuring either by time or by scope. Approaches known as *Date Driven Commitment* and *Story Driven Commitment* respectively. The initial estimate is just a guess (as we have nothing to measure), but then we take numbers from each finished iteration to know either: *how many stories* can fit within a given *period of time*; or *how long it will take* to finish a given *set of stories*. Velocity helps us work at a sustainable, measurable, and *predictable pace*, however, a few ups and downs are expected.
 
 #### Whole Team
 
->Agile (so XP) teams need skills, no roles. (The Art of Agile Development)
+>Agile teams need skills, not roles. (The Art of Agile Development)
 
 The group of **managers, developers, and customers** is known in XP as the Whole Team. It's composed of people with diverse skills such as *customer, development, and coaching skills*, which in more general terms are *people, artistic, and technical skills*. These people build up a self-sufficient *cross-functional*, *self-organizing* team in which everyone works to broaden their skills over time, specially customer-related skills, one of the most relevant and difficult ones. Skilled people is the *fundamental resource* for the business to deliver a successful result.
 
@@ -134,26 +116,32 @@ It is another key concept related to teams. It is to have a **dedicated open wor
 
 Related and well-known XP practices:
 
-- **Do the simplest thing that could possibly work** (DTSTTCPW), implement the simplest job first, leave the complex for later. More at [extremeprogramming.org](http://www.extremeprogramming.org/rules/early.html), [ronjeffries.com](https://ronjeffries.com/articles/018-01ff/simple-not-easy/), [wiki.c2.com](http://wiki.c2.com/?DoTheSimplestThingThatCouldPossiblyWork).
-- **You aren't gonna need it** (YAGNI): concentrate on what is scheduled for today only, avoid wasting time with vague assumptions. More at [martinfowler.com](https://martinfowler.com/bliki/Yagni.html), [ronjeffries.com](https://ronjeffries.com/articles/019-01ff/iter-yagni-skimp/), [wiki.c2.com](https://wiki.c2.com/?YouArentGonnaNeedIt).
+- **Do the simplest thing that could possibly work** (DTSTTCPW), always implement only the simplest job first, leave the complex or uncertain for later. More at:
+  - [Never Add Functionality Early (extremeprogramming.org)](http://www.extremeprogramming.org/rules/early.html);
+  - [Simple, Not Easy (ronjeffries.com)](https://ronjeffries.com/articles/018-01ff/simple-not-easy/);
+  - [Do The Simplest Thing That Could Possibly Work (wiki.c2.com)](http://wiki.c2.com/?DoTheSimplestThingThatCouldPossiblyWork).
+- **You aren't gonna need it** (YAGNI): concentrate on what is scheduled for today only, avoid wasting time with vague assumptions and not actually/currently required features. More at:
+  - [Yagni (martinfowler.com)](https://martinfowler.com/bliki/Yagni.html);
+  - [YAGNI, yes. Skimping, no. Technical Debt? Not even. (ronjeffries.com)](https://ronjeffries.com/articles/019-01ff/iter-yagni-skimp/);
+  - [You Are Not Gonna Need It (wiki.c2.com)](https://wiki.c2.com/?YouArentGonnaNeedIt).
 
 #### Spikes
 
-A spike is a prototype-like software meant to **explore potential solutions** and difficulties for a very specific problem. The concept is quite similar to what it is a Minimum Viable Project (MVP) but for a single (or small group of) features defined by a single user story. As a result, a spike helps to *reduce technical risks* and *increase estimates' reliability*. Usually they are discarded after use, as they tend to be *not good enough to keep*. That's why we should keep them short and simple.
+A spike is a prototype-like software meant to **explore potential solutions** and difficulties for a very specific problem. The concept is quite similar to a Minimum Viable Product (MVP) but for a single (or small group of) features defined by a single user story. As a result, a spike helps to *reduce technical risks* and *increase estimates' reliability*. Usually they are discarded after use, as they tend to be *not good enough to keep*. That's why we should keep them short and simple.
 
 #### Refactoring
 
 >Always leave the code a little better than you found it. (The Art of Agile Development)
 
-Read notes at [Refactoring (docs-and-notes)](/method/refactoring/).
+Read notes at [Refactoring (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/refactoring/).
 
 ### Coding
 
 #### The Customer is Always Available
 
-Even though most XP practices are optional or context-dependent, one of the few requirements is **to have the customers always available**. All project phases require *constant communication* with them, *preferably face-to-face* as on-site customer. They are *an actual team member*.
+Most XP practices are optional or context-dependent, however, **to have the customers always available** is actually a requirement. All project phases require *constant communication* with them, *preferably face-to-face* as on-site customer. They are *an actual team member*.
 
-They are the ones who *write the user stories*. During both release and iteration planning meetings, customers *choose which stories are to be done*. They also *negotiate the timing to be scheduled*. Before the coding job starts, customers *detail each user story*. Once a piece of software is working, they *give early feedback* to the development team. When doing functional testing we require them to *help with the desired data for each use case*. Customers *review and decide if it is good enough* and what should be fixed or changed through acceptance tests before code is deployed.
+They are the ones who *write the user stories*. During both release and iteration planning meetings, customers *choose which stories are to be done*. They also *negotiate the timing to be scheduled*. Before the coding job starts, customers *detail each user story*. Once a piece of software is working, they *give early feedback* to the team. When doing functional testing we require them to *help with the desired data for each use case*. Customers *review and decide if it is good enough* and what should be fixed or changed through acceptance tests before code is deployed.
 
 #### Code Standards
 
@@ -161,27 +149,27 @@ The development team needs to **agree on the coding standards** they consider op
 
 #### Test-Driven Development
 
-Read notes at [Test-Driven Development (docs-and-notes)](/method/tdd/).
+Read notes at [Test-Driven Development (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/tdd/).
 
 #### Pair Programming
 
-Read notes at [Pair Programming (docs-and-notes)](/method/pair_programming/).
+Read notes at [Pair Programming (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/pair_programming/).
 
 #### Collective Ownership
 
 >Programming is a social activity. (Robert C. Martin)
 
-The **whole team shares responsibility** for its results wherever it's good or bad. If something goes wrong, *we work together to solve the problem*; if something goes well, *we all takes credit for it*. This also warranties that *knowledge will remain* in case somebody leaves the team. We should be always available to *assist who needs help* and *learning how to contribute* to work we don't yet know well. Team members can work on a different task independently, however, it's better to *tackle one story at a time*, so *work in progress will be minimal* and *risks will get exposed early*.
+The **whole team shares responsibility** for its results. If something goes wrong, *we work together to solve the problem*; if something goes well, *we all takes credit for it*. This also warranties that *knowledge will remain* in case somebody leaves the team. We should be always available to *assist who needs help* and *learning how to contribute* to work we don't yet know well. Team members can work on a different task independently, however, it's better to *tackle one story at a time*, so *work in progress will be minimal* and *risks will get exposed early*.
 
 ##### Egoless Programming
 
 >It does seem that the general level of competence of such a group is likely to rise itself. (Gerald M. Weinberg, The Psychology of Computer Programming, 1971, p. 60)
 
-We need to **let go a bit of ego**. *Enjoy sharing and building together*. Accept that your solutions could (and will) be *improved or fixed by teammates* (and yourself). Rather than thinking "my code," think "our code." Exposing other person's weak points and mistakes is an opportunity for conflict to happen, however, *it is a good thing, it helps us align our styles*. That's why we follow coding standards and do pair programming (among other practices), they help us *smooth the process*.
+We need to **let go a bit of ego**. *Enjoy sharing and building together*. Accept that our solutions could be *improved or fixed by others*. Rather than thinking "my code," think "our code." Exposing other person's weak points and mistakes is an opportunity for conflict to happen, however, *it is a good thing, it helps us align our styles*. That's why we follow coding standards and do pair programming (among other practices), they help us *smooth the process*.
 
 >Secretive, possessive programming [is] bad . . . open, shared programming [is] good . . . Errors [are] simply facts to be expected to investigation with an eye to future improvement, not attacks. (Gerald M. Weinberg, The Psychology of Computer Programming, 1971, p. 57)
 
-In 1971, Gerald M. Weinberg published The Psychology of Computer Programming, book in which introduced the concept of Egoless Programming. In it he describes **timeless facts** such as:
+Gerald M. Weinberg published "The Psychology of Computer Programming," book in which he introduced the concept of Egoless Programming. In it he describes timeless facts such as:
 
 - *Don't be "the guy in the room."*
 - Understand and *accept that you will make mistakes*.
@@ -205,13 +193,11 @@ The main idea is to standardize and automate the integration process, thus we ca
 
 #### Unit Testing
 
-Read notes at [Unit Testing (docs-and-notes)](/engg/testing/unit/).
+Read notes at [Unit Testing (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/unit/).
 
 #### Acceptance Testing
 
-An acceptance test **ensures a user story has been successfully implemented** or it is at least acceptable *by the judgement of the customers*. During iteration planning, customers not only select the stories we will work on, but they are also responsible of *specifying scenarios and expected results* for the respective acceptance test of each story. Often we define several tests for a single story.
-
-At a certain point before deploying the new code, *we demonstrate* the current state of the software to the customers, then *they decide whether  or not to proceed* based on their domain knowledge.
+An acceptance test **ensures a user story has been successfully implemented** or it is at least acceptable *by the customers' judgement*. During iteration planning, customers not only select the stories we will work on, but they also *specify scenarios and expected results* for the respective acceptance test of each story. Several tests are often defined for a single story. At a certain point before deploying the new code, *we demonstrate* the current software to the customers, then *they decide whether  or not to proceed* based on their domain knowledge.
 
 ## Benefits of XP
 
