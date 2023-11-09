@@ -25,21 +25,53 @@ Product Design.
 ## Awful UX Flaws to Avoid
 
 Some of the most *common and damaging web-design mistakes*.
+<!-- from 1996 -->
+<!-- https://www.nngroup.com/articles/original-top-ten-mistakes-in-web-design/ -->
+
+Study of 1999:
+
+1. Breaking or slowing down the back button.
+1. Opening new browser windows.
+1. Non-standard use of gui widgets.
+1. Lack of biographies.
+1. Lack of archives.
+1. Moving pages to new URLs.
+1. Headlines that make no sense out of context.
+1. Jumping at the latest internet buzzword.
+1. Slow server response times.
+1. Anything that looks like advertising.
+
+Reference: [The Top 10 Web Design Mistakes of 1999 (nngroup.com)](https://www.nngroup.com/articles/the-top-ten-web-design-mistakes-of-1999/).
+
+Study of 2005:
+
+1. Legibility problems.
+1. Non-standard links.
+1. Flash.
+1. Content that's not written for the web.
+1. Bad search.
+1. Browser incompatibility.
+1. Cumbersome forms.
+1. No contact information of other company information.
+1. Frozen layouts with fixed page widths.
+1. Inadequate photo enlargement.
+
+Reference: [Top 10 Web Design Mistakes of 2005 (nngroup.com)](https://www.nngroup.com/articles/top-ten-web-design-mistakes-of-2005).
 
 Study of 2016:
 
-- Unexpected locations for content.
-- Competing links and categories.
-- Islands of information.
-- Repetitive links.
-- Hidden fees and prices.
-- Stranding users on microsites.
-- Poor research results.
-- Flawed filters and facets.
-- Overwhelming users with information.
-- Hidden links.
+1. Unexpected locations for content.
+1. Competing links and categories.
+1. Islands of information.
+1. Repetitive links.
+1. Hidden fees and prices.
+1. Stranding users on microsites.
+1. Poor research results.
+1. Flawed filters and facets.
+1. Overwhelming users with information.
+1. Hidden links.
 
-More at [Top 10 Enduring (nngroup.com)](https://www.nngroup.com/articles/top-10-enduring/).
+Reference: [Top 10 Enduring (nngroup.com)](https://www.nngroup.com/articles/top-10-enduring/).
 
 Study of 2021:
 
@@ -54,7 +86,7 @@ Study of 2021:
 1. Only huge hero image above fold.
 1. Mobile design on big screens.
 
-More at [Top 10 Web-Design Mistakes of 2021 (youtube.com, NNg)](https://www.youtube.com/watch?v=VGxze7xMYJs&ab_channel=NNgroup).
+Reference: [Top 10 Web-Design Mistakes of 2021 (youtube.com, NNg)](https://www.youtube.com/watch?v=VGxze7xMYJs&ab_channel=NNgroup).
 
 <!-- https://www.nngroup.com/videos/top-10-web-design-mistakes/ -->
 <!-- https://www.nngroup.com/news/item/top-10-ux-articles-of-2022/ -->
