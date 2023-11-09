@@ -2,8 +2,8 @@
 
 >The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect. (Tim Berners-Lee, W3C Director and inventor of the World Wide Web)
 
-*Web Accessibility Initiative* (WAI)
-*Web Content Accessibility Guidelines* (WCAG)
+- *Web Accessibility Initiative* (WAI)
+- *Web Content Accessibility Guidelines* (WCAG)
 
 More at [Introduction to Web Accessibility (w3.org)](https://www.w3.org/WAI/fundamentals/accessibility-intro/).
 
@@ -17,10 +17,10 @@ More at [Essential Components of Web Accessibility (w3.org)](https://www.w3.org/
 
 ## Universal Principles
 
-*Perceivable*
-*Operable*
-*Understandable*
-*Robust*
+- *Perceivable*
+- *Operable*
+- *Understandable*
+- *Robust*
 
 More at [Accessibility Principles (w3.org)](https://www.w3.org/WAI/fundamentals/accessibility-principles/).
 
@@ -33,4 +33,5 @@ Reference:
 - [Accessibility Fundamentals Overview (w3.org)](https://www.w3.org/WAI/fundamentals/).
 - [Design and Develop Overview (w3.org)](https://www.w3.org/WAI/design-develop/).
 - [The Word Wide Web Consortium (W3C): Introduction to Web Accessibility (edx.org)](https://www.edx.org/learn/web-accessibility/the-world-wide-web-consortium-w3c-introduction-to-web-accessibility).
-<!-- - [Digital Accessibility Foundations Free Online Course ](https://www.w3.org/WAI/courses/foundations-course/) (introduction). -->
+<!-- - [Digital Accessibility Foundations Free Online Course (w3.org)](https://www.w3.org/WAI/courses/foundations-course/) (introduction). -->
+<!-- - [Accessibility and Inclusivity: Study Guide (nngroup.com)](https://www.nngroup.com/articles/accessibility-inclusivity-study-guide). -->
