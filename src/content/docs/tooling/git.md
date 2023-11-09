@@ -79,6 +79,12 @@ git commit --amend --no-edit    # To add files to the last commit
 ```
 
 ```bash
+# Undo/modify changes
+git reset --soft HEAD^     # Undo last commit (without altering modified files)
+git restore --sated <file> # Unstage file (reverse `git add`)
+```
+
+```bash
 # Others
 git clone <repo-url> # Get a local copy of repo
 git rm -r --cached   # Clear local repo
