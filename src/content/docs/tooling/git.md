@@ -155,3 +155,9 @@ Reference:
 - [Reference (git-scm.com)](https://git-scm.com/docs).
 - [GitHub Flow (docs.github.com)](https://docs.github.com/en/get-started/quickstart/github-flow).
 - [GitHub Flow (githubflow.github.io)](https://githubflow.github.io/).
+
+<!-- TODO (update, expand) -->
+
+<!-- 
+Git Branching Strategies Explained, reminder at: https://www.linkedin.com/posts/nikkisiapno_git-branching-strategies-explained-a-well-planned-activity-7119985969348448256--Kgo/
+ -->
