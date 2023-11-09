@@ -33,15 +33,15 @@ Serif types have **little extenders** (or feets) at the end of each trace.
 
 ##### Serif Subclasses by Style
 
-- **Bracketed Serif**: It has a smooth and *curved transition* from the Serif to the letterform.
-- **Unbracketed Serif**: It forms a *sharp 90 degree corner* between the Serif and the body.
-- **Slab Serif**: An unbracketed Serif, sometimes square. Uses the *same width for its strokes and Serifs*. Has a *lack of contrast* (or no contrast at all) between strokes (mid 1800s).
+- **Bracketed Serif**: has a smooth and *curved transition* from the Serif to the letterform.
+- **Unbracketed Serif**: forms a *sharp 90 degree corner* between the Serif and the body.
+- **Slab Serif**: an often square-shaped unbracketed Serif. Uses the *same width for its strokes and Serifs*. Has a *lack of contrast* (if any) between strokes (mid 1800s).
 
 ##### Serif Subclasses by Historical Period of Creation
 
-- **Oldstyle**: It has *thick bracketed* serifs, *low contrast* between thick and thin strokes, and long ascenders and descenders. The first Roman serif types (15th and 18th century).
-- **Transitional**: A bridge between Oldstyle and Modern. Has *sharper, flatter serifs, tighter bracketed curve, and more vertical stress in curved letters* (mid 1800s).
-- **Modern**: This class of types has an *extreme contrast* between thick and thin strokes, as well as *ultra thin unbracketed* serifs (late 1800s).
+- **Oldstyle**: has *thick bracketed* serifs, *low contrast* between thick and thin strokes, and long ascenders and descenders. The first Roman serif types (15th and 18th century).
+- **Transitional**: a bridge between Oldstyle and Modern. Has *sharper, flatter serifs, tighter bracketed curve, and more vertical stress in curved letters* (mid 1800s).
+- **Modern**: has an *extreme contrast* between thick and thin strokes, as well as *ultra thin unbracketed* serifs (late 1800s).
 
 #### Sans Serif
 
