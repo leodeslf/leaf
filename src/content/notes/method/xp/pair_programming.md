@@ -61,3 +61,5 @@ Reference:
 - Software Engineering (page 71).
 - The Pragmatic Programmer (page 424).
 - The Psychology of Computer Programming (page 56).
+
+<!-- TODO review with "The Art of Agile Development" (page 315). -->
