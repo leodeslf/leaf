@@ -25,6 +25,8 @@ While there is value in the items on the right, we value items on the left more:
 
 Not to be confused with the values named by Kent Beck: *courage*; *communication*; *feedback*; and *simplicity*, later adopted by Extreme Programming, which also included *respect*. However, those values are still relevant for Agile Software Development.
 
+Reference: Clean Agile (page 134).
+
 #### Individuals and Interactions Over Processes and Tools
 
 >Agile works because people makes it work. (The Art of Agile Development)
@@ -105,4 +107,4 @@ Reference:
 - Clean Agile (page 2, 10, 15).
 - Learning Agile (page 2, 15, 33, 39, 52).
 - [Manifesto for Agile Software Development (agilemanifesto.org)](http://agilemanifesto.org/).
-<!-- https://www.agile247.pl/wp-content/uploads/2017/04/versionone-11th-annual-state-of-agile-report.pdf -->
+<!-- TODO https://www.agile247.pl/wp-content/uploads/2017/04/versionone-11th-annual-state-of-agile-report.pdf -->
