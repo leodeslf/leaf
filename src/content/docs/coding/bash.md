@@ -1,6 +1,6 @@
 # Bash
 
-A cheatsheet for **file-system**, **text-processing**, and a few more bash commands with some of their options.
+A cheatsheet for **file-system**, **text-processing**, and some other commands.
 
 ## `cat`
 
