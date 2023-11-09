@@ -1,8 +1,8 @@
 # JavaScript
 
-JavaScript is a **programming language**, in case you are a complicated person you can also call it by its "full name," which is high-level-single-threaded-garbage-collected-interpreted-just-in-time-compiled-prototype-based-multi-paradigm-dynamic-programming-language.
+JavaScript is a **programming language**, in case you are a complicated person you can also call it by its "full name": high-level-single-threaded-garbage-collected-interpreted-just-in-time-compiled-prototype-based-multi-paradigm-dynamic-programming-language.
 
-It was introduced by Brendan Eich as Mocha, then renamed to LiveScript, and finally released in 1997 as JavaScript. The *European Computer Manufacturers Association*'s (ECMA International) *Technical Committee number 39* (TC39) is responsible for maintaining the *ECMAScript Language Specification* (ECMA-262) standard which defines the *ECMAScript Language* (ES or JavaScript).
+It was introduced by Brendan Eich as Mocha, then renamed to LiveScript, and released in 1997 as JavaScript. The *European Computer Manufacturers Association*'s (ECMA International) *Technical Committee number 39* (TC39) maintains the *ECMAScript Language Specification* (ECMA-262) standard which defines the *ECMAScript Language* (ES or JavaScript).
 
 After the launch of the sixth version so called *ES6* (or ES2015), which introduced major features, it's been released a "small update" every year, instead of a big one after several years.
 
@@ -108,7 +108,7 @@ Primitives vs Objects:
 
 ```javascript
 undefined // Value not defined.
-null // No value.
+null      // No value.
 ```
 
 #### Booleans
@@ -232,9 +232,9 @@ Level of *precedence* for common operators:
 #### Logical
 
 ```javascript
-true && true // == 2
+true && true  // == 2
 false && true // == false (`true` is never evaluated).
-true || true // == true (second `true` is never evaluated).
+true || true  // == true (second `true` is never evaluated).
 false || true // == true
 ```
 
@@ -256,7 +256,7 @@ a ?? b // == `b` iff `a` == (`null` || `undefined`).
 
 ```javascript
 // Qualitative:
-1 == '1'      // == true (Equal, can do "type coercion" to match different types).
+1 == '1'      // == true (Equal, type is coerced if needed/posible).
 1 === '1'     // == false (Strictly Equal, no "type coercion" here).
 true != 0     // == true
 true !== true // == false
@@ -289,12 +289,12 @@ a ? b : c // If `a` is truthy: `b`. Else: `c`.
 
 ```javascript
 typeof x // Returns the operand's type name as a string.
-x++ // Evaluates `x`, then adds 1 to it.
-++x // Adds 1 to `x`, then evaluates the updated `x`.
+x++      // Evaluates `x`, then adds 1 to it.
+++x      // Adds 1 to `x`, then evaluates the updated `x`.
 x--
 --x
 +"+1.00" // == 1 (Converts a string into its numeric value/equivalent).
-!true // == false (Negates a boolean expression).
+!true    // == false (Negates a boolean expression).
 ```
 
 ```javascript
@@ -1226,7 +1226,8 @@ The `Date` object represents the *current time* since 1 January 1970 UTC.
 
 ```javascript
 // E.g.:
-const date = new Date();
+console.log(new Date());
+// --> Thu Jun 30 2022 17:10:39 GMT-0300 (Uruguay Standard Time)
 ```
 
 #### Creating a `Date` from Data
@@ -1484,7 +1485,7 @@ request.readystatechange = () => {
 
 Fetch is a *high-level API*, easier but less capable compared with XHR, although the most noticeable difference is that it **does not trigger page reloads**.
 
-<!-- TODO -->
+<!-- TODO fetch explanation and examples -->
 
 ### Multi-threading & Web Workers API
 
@@ -1570,11 +1571,6 @@ https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope
 
 A module allows us to *isolate code between files*. To share items (variables, functions, and classes) we need to use the `export` and `import` statements. We can share things "named" as they are, or locally override their name `as` we want. It's also possible to export an item by `default`, without needing to use a specific name (only one per file).
 
-```javascript
-console.log(new Date());
-// --> Thu Jun 30 2022 17:10:39 GMT-0300 (Uruguay Standard Time)
-```
-
 #### Named `export` & `import`
 
 Exporting:
@@ -1648,11 +1644,12 @@ console.log(NUMBER_ONE); // --> 1
 ```
 
 <!-- TODO ### The DOM (Document Object Model) -->
-<!-- TODO #### The `window` Object and its Members -->
-<!-- TODO #### The `document` Object and its Members -->
+<!-- ? TODO #### The `window` Object and its Members -->
+<!-- ? TODO #### The `document` Object and its Members -->
 <!-- TODO #### HTML Element Selectors -->
 <!-- TODO #### Handling Events -->
 <!-- TODO ##### Debouncing & Throttling Events -->
+
 <!-- TODO ### Dealing with Storage ...(session, local, cache, cookies) -->
 
 <!-- TODO ### CSSOM (Cascading Style Sheets Object Model) -->
