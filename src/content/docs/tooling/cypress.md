@@ -118,7 +118,7 @@ npm i -D typescript
     "lib": ["es5", "dom"],
     "types": ["cypress", "node"]
   },
-  "include": ["**/*..ts"]
+  "include": ["**/*.ts"]
 }
 ```
 
