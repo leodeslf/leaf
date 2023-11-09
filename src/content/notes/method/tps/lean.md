@@ -2,11 +2,11 @@
 
 >*Lean is both a philosophy and a discipline* which, at its core, increases access to information to ensure responsible decision making in the service of creating customer value. (Jim Benson)
 
-Lean is a **mindset** (aka Lean Thinking) that aims to *make smarter decisions* about how to invest resources (such as time, energy, and money) to *eliminate waste* and to *consume less*. That's made by promoting the total commitment of team members as *problem solvers*, while putting *customer satisfaction* as the main target. Therefore, *adding customer-defined value* to products and services, which improves the overall business performance.
+Lean is a **mindset** that aims to *make smarter decisions* about how to invest resources (such as time, energy, and money) to *eliminate waste* and to *consume less*. That's made by promoting the total commitment of team members as *problem solvers*, while putting *customer satisfaction* as the main target. Therefore, *adding customer-defined value* to products and services, which improves the overall business performance.
 
->There's nothing so useless as doing something efficiently that should not be done at all. (Peter Drucker, known as the "Management guru")
+>There's nothing so useless as doing something efficiently that should not be done at all. (Peter Drucker, known as the "Management Guru")
 
-Before the modern conception of Lean as a business mindset/methodology to be applied in almost any industry, it was originally an approach to the manufacturing process of Toyota known as the *Toyota Production System* (TPS), developed by Taiichi Ohno in the 1950s.
+Lean was mainly developed by Taiichi Ohno, it was first an approach (among many others) for the *Toyota Production System* (TPS) before its modern conception of a business method to be applied in almost any industry.
 
 ## The Pillars of Lean
 
@@ -18,7 +18,7 @@ Before the modern conception of Lean as a business mindset/methodology to be app
 
 ### Continuous Improvement
 
-It is to believe that **there is always a way to improve**. Continuous improvement is the actual mindset of Lean, which is adopted from Kaizen. It's *a daily activity triggered by everyone* that drives team members to *foster a learning mindset* to identify all value-adding opportunities for the customer. Often, improvement cycles such as Plan Do Study Act (PDSA) or Define Measure Analyze Improve Control (DMAIC) are used to efficiently organize, measure, and report on Lean activities.
+It is to believe that **there is always a way to improve**. Continuous improvement is the actual mindset of Lean, which is adopted from Kaizen. It's *a daily activity triggered by everyone* that drives team members to *foster a learning mindset* to identify all value-adding opportunities for the customer. Often, *improvement cycles* such as Plan-Do-Study-Act (PDSA) or Define-Measure-Analyze-Improve-Control (DMAIC) are used to efficiently organize, measure, and report on Lean activities.
 
 ## The Lean Principles
 
@@ -64,17 +64,17 @@ The **relentless pursuit of perfection** is not only a pillar of Lean, it's also
 
 ## The Seven Wastes
 
-To succeed with Lean it's critical to **eliminate waste**. That's why it's worth mentioning the Seven Wastes model developed by Taiichi Ohno, considered the father of the *Toyota Production System*, among *Lean*, *Kanban*, and *Just-in-Time* manufacturing (JIT, aka. Pull System, a concept first developed by Kiichiro Toyoda, the founder of Toyota Motor Corporation).
+It's critical to **eliminate waste** or muda (無駄) in order to succeed, that's why Taiichi Ohno, which is also considered the father of the *Toyota Production System*, *Kanban*, and *Just-in-Time* (applied at a systematic, large scale), developed the Seven Wastes model.
 
 The Seven Wastes are:
 
-1. *Delay, waiting or time spent in a queue with no value being added*.
-1. *Producing more than we need*.
-1. *Over processing or undertaking non-value added activity*.
-1. *Transportation*.
-1. *Unnecessary movement or motion*.
-1. *Inventory*.
-1. *Defects in the product*.
+1. *Delay*, waiting or time spent in a queue with no value being added.
+1. *Overproduction*, doing more than we actually need.
+1. *Over processing* or undertaking non-value added activity.
+1. *Transportation* between plants or even around the globe.
+1. *Movement* of stuff by machines or people.
+1. *Inventory*, an unwanted pile or accumulation of resources or products.
+1. *Defects in the product*, which means it's an undesired product.
 
 ---
 
@@ -90,3 +90,48 @@ Reference:
 - [What Is Lean Methodology? (indeed.com)](https://www.indeed.com/career-advice/career-development/lean-methodology).
 - [What Is Lean Methodology? (startinfinity.com)](https://startinfinity.com/project-management-methodologies/lean).
 <!-- https://www.toyota-global.com/company/history_of_toyota/75years/common/pdf/production_system.pdf -->
+
+<!-- TODO (update, grow, or even delete!) -->
+
+<!--
+La nueva generación de modelos de gestión y organización — más humanos, adaptables y de impacto [medium]
+<https://monica-expositor.medium.com/la-nueva-generaci%C3%B3n-de-modelos-de-gesti%C3%B3n-y-organizaci%C3%B3n-m%C3%A1s-humanos-adaptables-y-de-impacto-243fd419ac58>
+
+The Origins and Evolution of Lean Management System [pp]
+<https://www.jois.eu/files/DekierV_5_N1.pdf>
+
+Lean Manufacturing, Just in Time and Kanban of Toyota Production System (TPS) [pp]
+<https://ijsetr.com/uploads/165423IJSETR17537-99.pdf>
+
+The Art of Designing and Producing Product for Facing Global Challenges: A Study on Toyota Production System [pp] [local]
+<https://www.researchgate.net/publication/314947806_The_Art_of_Designing_and_Producing_Product_for_Facing_Global_Challenges_A_Study_on_Toyota_Production_System>
+
+A Brief Overview on Toyota Production System (TPS) [pp] [local]
+<https://www.researchgate.net/publication/341784321_A_Brief_Overview_on_Toyota_Production_System_TPS>
+
+Lean Production and the Toyota
+Production System ± Or, the Case of the
+Forgotten Production Concepts [pp-like]
+<https://library.fes.de/libalt/journals/swetsfulltext/6224179.pdf>
+
+Going beyond Triviality: The Toyota Production System—Lean Manufacturing beyond Muda and Kaizen (ignorant mention) [online-pp]
+<https://www.scirp.org/journal/paperinformation.aspx?paperid=65349>
+
+Lean [article]
+<https://www.leansixsigmadefinition.com/glossary/lean/>
+
+Would Ohno Change the Term “Lean”? [article]
+<https://harishsnotebook.wordpress.com/2016/01/10/would-ohno-change-the-term-lean/>
+
+What is Lean? [article]
+<https://theleanway.net/what-is-lean>
+
+A historia do lean manufacturing [video]
+<https://www.youtube.com/watch?v=YG5DJBOc644&ab_channel=UNIVERSODAGEST%C3%83O>
+
+The Taiichi Ohno Visit That Triggered Rinnai’s Lean Excellence [optional-article]
+<https://shinkamanagement.com/taiichi-ohno-toyota-rinnai-lean-excellence/>
+
+Taiichi Ohno - an intro to the father of Lean Manufacturing [optional-article]
+<https://www.getvetter.com/posts/159-taiichi-ohno-an-intro-to-the-father-of-lean-manufacturing>
+ -->
