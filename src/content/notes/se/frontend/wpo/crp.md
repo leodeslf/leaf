@@ -1,4 +1,4 @@
-# Optimizing the Critical Rendering Path
+# Critical Rendering Path Optimization
 
 Course by Google (original title: Website Performance Optimization).
 
