@@ -69,8 +69,8 @@ layout: ../layouts/Layout.astro
   <!-- - Architectural Patterns[](notes/se/arch_patterns/) *[pre-draft]* -->
   - [Data Structures (DS)](notes/se/data_structures/)
   - Frontend
-    - [Accessibility (a11y)](notes/frontend/accessibility/) *[pre-draft]*
-    - [Site Rendering & Generation](notes/frontend/site_rendering_and_generation/) *[pre-draft]*
+    - [Accessibility (a11y)](notes/se/frontend/accessibility/) *[pre-draft]*
+    - [Site Rendering & Generation](notes/se/frontend/site_rendering_and_generation/) *[pre-draft]*
     - Web Performance Optimization (WPO)
       - [Frame Rendering & Animation Optimization](notes/se/frontend/wpo/rendering_and_animation_optimization/)
       - [Critical Rendering Path (CRP) Optimization](notes/se/frontend/wpo/crp/)
