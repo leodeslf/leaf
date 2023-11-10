@@ -1,56 +1,3 @@
-:root {
-  --bg--off: #f9f9f9;
-  --bg: #fff;
-  --border-color: #f3f3f3;
-  --border-radius: 4px;
-  --code--cyan: #06a;
-  --code--green: #080;
-  --code--yellow: #a60;
-  --color--anchor: #04e;
-  --color--headline: #000;
-  --color--off: #555;
-  --color: #000;
-  --font-size--monospace: 14.5px;
-  --font-size--small: 17.8px;
-  --font-size: 18.7px;
-  --font-weight--bolder: 500;
-  --font-weight: 400;
-  --font-weight-headline: 700;
-  --font-weight-monospace--bolder: 500;
-  --font-weight-monospace: 400;
-  --mark--emphasis: #ff05;
-  --mark--monospace: #0cf3;
-  --mark--strong: #0f03;
-  color-scheme: light;
-  color: var(--color);
-  font-family: "Crimson Pro", serif;
-  font-feature-settings: "liga" 1, "dlig" 1;
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: 1.25;
-  text-rendering: optimizeLegibility;
-}
-
-.prefers-dark {
-  --bg--off: #060606;
-  --bg: #0c0c0c;
-  --border-color: #040404;
-  --code--cyan: #85d6ff;
-  --code--green: #90e080;
-  --code--yellow: #ffe080;
-  --color--anchor: #99bbff;
-  --color--emphasis: #ffe080;
-  --color--headline: #fff;
-  --color--off: #999;
-  --color--strong: #90e080;
-  --color: #a0a0a0;
-  --font-weight--bolder: 400;
-  --font-weight: 300;
-  --font-weight-monospace--bolder: 400;
-  --font-weight-monospace: 300;
-  color-scheme: dark;
-}
-
 ::selection {
   background-color: black;
   color: white;
@@ -76,8 +23,13 @@ body {
   margin-inline: auto;
   max-width: 100%;
   min-block-size: 100%;
-  padding: 2rem;
-  width: 760px;
+  padding: .5in;
+  width: fit-content;
+}
+
+body>* {
+  width: 600px;
+  max-width: 100%;
 }
 
 header {
@@ -142,7 +94,7 @@ h3>code,
 h4>code,
 h5>code,
 h6>code {
-  --font-size--monospace: .95em;
+  --font-size--monospace: 1.1em;
   font-weight: var(--font-weight-monospace--bolder);
   line-height: normal;
 }
@@ -264,23 +216,15 @@ table {
 }
 
 code {
-  font-family: "Fira Code", monospace;
+  font-family: Inconsolata, monospace;
   font-size: var(--font-size--monospace);
   font-weight: var(--font-weight-monospace);
-  letter-spacing: normal;
 }
 
 code:not(pre>code) {
   background-color: var(--mark--monospace);
   border-radius: var(--border-radius);
   padding-inline: .25em;
-}
-
-.prefers-dark code:not(pre>code) {
-  background-color: unset;
-  border-radius: unset;
-  color: var(--code--cyan);
-  padding: unset;
 }
 
 pre {
@@ -297,19 +241,9 @@ th {
   font-weight: var(--font-weight--bolder);
 }
 
-.prefers-dark strong {
-  background-color: unset;
-  color: var(--color--strong);
-}
-
 em {
   background-color: var(--mark--emphasis);
   font-style: italic;
-}
-
-.prefers-dark em {
-  background-color: unset;
-  color: var(--color--emphasis);
 }
 
 hr {
@@ -321,8 +255,10 @@ hr {
 }
 
 table {
+  display: block;
   background-color: var(--bg--off);
   border-spacing: 0;
+  overflow-x: auto;
 }
 
 tbody tr:nth-of-type(2n) {
@@ -347,19 +283,23 @@ th code {
   text-transform: initial;
 }
 
-.prefers-dark label {
+.prefers-dark {
+  color-scheme: dark;
+}
+
+.prefers-dark-switch label {
   user-select: none;
   cursor: pointer;
 }
 
-.prefers-dark label::after {
+.prefers-dark-switch label::after {
   content: "🌕";
 }
 
-.prefers-dark input:checked+label::after {
+.prefers-dark-switch input:checked+label::after {
   content: "🌑";
 }
 
-.prefers-dark input+label:hover::after {
+.prefers-dark-switch input+label:hover::after {
   content: "🌗";
 }
