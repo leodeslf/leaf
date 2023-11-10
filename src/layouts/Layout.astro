@@ -7,7 +7,7 @@ const isIndex = url === "";
 const title = (isIndex ? "" : `${headings[0].text} | `).concat("Docs & Notes");
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,15 +20,27 @@ const title = (isIndex ? "" : `${headings[0].text} | `).concat("Docs & Notes");
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Fira+Code:wght@300;400;500&family=Inter:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inconsolata:wght@300;400;500&family=Inter:wght@700&family=Noto+Serif+JP&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/print.css" media="print" />
-    <link
-      rel="stylesheet"
-      href="/styles/small.css"
-      media="(max-width: 599px)"
-    />
+    <style is:inline>
+      :root {
+        --font-size--monospace: 14px;
+        --font-size--small: 15.7px;
+        --font-size: 16.3px;
+        --font-weight-headline: 700;
+        color-scheme: light;
+        color: var(--color);
+        font-family: "Crimson Pro", "Noto Serif JP", serif;
+        font-feature-settings:
+          "liga" 1,
+          "dlig" 1;
+        font-size: var(--font-size);
+        font-weight: var(--font-weight);
+        line-height: 1.2;
+        text-rendering: optimizeLegibility;
+      }
+    </style>
     <link rel="sitemap" href="/sitemap-index.xml" />
     <title>{title}</title>
   </head>
@@ -37,14 +49,14 @@ const title = (isIndex ? "" : `${headings[0].text} | `).concat("Docs & Notes");
       <span>
         🌱 <a href="/">Docs & Notes</a>
       </span>
-      <span class="prefers-dark">
+      <span class="prefers-dark-switch">
         <input
           type="checkbox"
-          id="prefers-dark__input"
+          id="prefers-dark-switch__input"
           style="display: none;"
         />
         <label
-          for="prefers-dark__input"
+          for="prefers-dark-switch__input"
           title="Click to switch color scheme (light/dark)."
         >
         </label>
@@ -57,38 +69,60 @@ const title = (isIndex ? "" : `${headings[0].text} | `).concat("Docs & Notes");
     </main>
     <footer>
       <p>
-        Learning <a href="/">docs & notes</a> about my Frontend Development journey,
+        Learning <a href="/">docs & notes</a> about my Frontend Development
+        journey,
         <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
       </p>
     </footer>
-    <script>
-      /**
-       * 1. Prioritize user's configuration if any,
-       * 2. Else use the system's configuration.
-       * 3. Listen for changes in both cases.
-       * 4. Save user's configuration for later sessions.
-       */
-
-      const input = document.getElementById("prefers-dark__input");
-      const toggleColorScheme = (isDark, isManual = false) => {
-        document.documentElement.classList[isDark ? "add" : "remove"](
-          "prefers-dark"
-        );
-        if (isManual) localStorage.setItem("prefers-dark", isDark);
-        else input.checked = isDark;
-      };
-      input.oninput = (e) => toggleColorScheme(e.target.checked, true);
-      const storedPrefersDark = () => localStorage.getItem("prefers-dark");
-      const initialPrefersDark = storedPrefersDark();
-      const systemPrefersDark = matchMedia("(prefers-color-scheme: dark)");
-      systemPrefersDark.onchange = (e) => {
-        if (storedPrefersDark() === null) toggleColorScheme(e.matches);
-      };
-      toggleColorScheme(
-        initialPrefersDark !== null
-          ? initialPrefersDark === "true"
-          : systemPrefersDark.matches
-      );
-    </script>
   </body>
+  <script>
+    /**
+     * 1. Prioritize user's configuration if any,
+     * 2. Else use the system's configuration.
+     * 3. Listen for changes in both cases.
+     * 4. Save user's configuration for later sessions.
+     */
+
+    const input = document.getElementById(
+      "prefers-dark-switch__input",
+    ) as HTMLInputElement;
+    const toggleColorScheme = (isDark: boolean, isManual: boolean = false) => {
+      document.documentElement.classList[isDark ? "add" : "remove"](
+        "prefers-dark",
+      );
+      if (isManual) localStorage.setItem("prefers-dark", `${isDark}`);
+      else input.checked = isDark;
+    };
+    input.oninput = (e) =>
+      toggleColorScheme((e.target as HTMLInputElement).checked, true);
+    const storedPrefersDark = () => localStorage.getItem("prefers-dark");
+    const initialPrefersDark = storedPrefersDark();
+    const systemPrefersDark = matchMedia(
+      "screen and (prefers-color-scheme: dark)",
+    );
+    systemPrefersDark.onchange = (e) => {
+      if (storedPrefersDark() === null) toggleColorScheme(e.matches);
+    };
+    toggleColorScheme(
+      initialPrefersDark !== null
+        ? initialPrefersDark === "true"
+        : systemPrefersDark.matches,
+    );
+  </script>
+  <link
+    rel="stylesheet"
+    href="/styles/light.css"
+    media="screen, print, (prefers-color-scheme: light)"
+  />
+  <link
+    rel="stylesheet"
+    href="/styles/dark.css"
+    media="screen and (prefers-color-scheme: dark)"
+  />
+  <link rel="stylesheet" href="/styles/print.css" media="print" />
+  <link
+    rel="stylesheet"
+    href="/styles/small.css"
+    media="screen and (max-width: 599px)"
+  />
 </html>
