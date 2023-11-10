@@ -53,11 +53,11 @@ layout: ../layouts/Layout.astro
 - Methods & Practices
   - [Agile](notes/method/agile/) *[wip]*
     - [Agile Software Development (Manifesto)](notes/method/agile/agile_software_dev/)
-    - [Extreme Programming (XP)](notes/method/xp/)
-      - [Pair Programming](notes/method/xp/pair_programming/)
-      - [Refactoring](notes/method/xp/refactoring/)
-      - [Test-Driven Development (TDD)](notes/method/xp/tdd/)
-      - [Unit Testing](notes/method/xp/unit/)
+    - [Extreme Programming (XP)](notes/method/agile/xp/)
+      - [Pair Programming](notes/method/agile/xp/pair_programming/)
+      - [Refactoring](notes/method/agile/xp/refactoring/)
+      - [Test-Driven Development (TDD)](notes/method/agile/xp/tdd/)
+      - [Unit Testing](notes/method/agile/xp/unit/)
     - [Scrum](notes/method/agile/scrum/) *[reviewing]*
   - [Toyota Production System (TPS)](notes/method/tps/) (~1943) *[draft]*
     - [Jidoka (自働化)](notes/method/tps/jidoka/) (~1924) *[wip]*
