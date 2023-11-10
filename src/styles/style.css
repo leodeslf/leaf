@@ -300,6 +300,6 @@ th code {
   content: "🌑";
 }
 
-.prefers-dark-switch input+label:hover::after {
+.prefers-dark-switch input+label:active::after {
   content: "🌗";
 }
