@@ -4,7 +4,14 @@ import vercel from '@astrojs/vercel/static';
 
 // https://astro.build/config
 export default defineConfig({
-  adapter: vercel(),
+  adapter: vercel({
+    speedInsights: {
+      enabled: true,
+    },
+    webAnalytics: {
+      enabled: true,
+    },
+  }),
   output: 'static',
   integrations: [sitemap()],
   markdown: {
