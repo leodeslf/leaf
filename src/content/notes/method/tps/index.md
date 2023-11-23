@@ -20,6 +20,10 @@ Reference:
     1. [「自働化」と「ジャスト・イン・タイム」のルーツ [Roots of "Jidoka" and "Just in Time"]](https://www.toyota.co.jp/jpn/company/history/75years/data/automotive_business/production/system/explanation02.html).
     1. [トヨタ生産方式の2つの柱 [Two pillars of the Toyota PRoduction System]](https://www.toyota.co.jp/jpn/company/history/75years/data/automotive_business/production/system/explanation03.html).
 
+<!-- TODO -->
+<!-- - [Nampachi Hayashi - Toyoda Production System and The Roots of Lean (vimeo.com)](https://vimeo.com/300443389).
+- [Akio Toyoda's View on Toyoda Production System (toyotatimes.jp)](https://toyotatimes.jp/en/spotlights/091.html). -->
+
 <!-- ---
 
 Similarity between the first years of Toyota as a car manufacturer vs Agile Manifesto ("Working software over comprehensive documentation"):
@@ -28,12 +32,13 @@ Similarity between the first years of Toyota as a car manufacturer vs Agile Mani
 
 Absence of own-investigation:
 
->There are times when we need to [consume] the achievements of others as is. But [by doing so], we only learn how to enjoy the benefits and we, in the end, lack the power and drive to further advance those innovations. If we want to truly [be] independent, we have to cultivate that drive. (Kiichiro Toyoda, founder of Toyota Motors Corporation, 1942)
+>There are times when we need to [consume] the achievements of others as is. But [by doing so], we only learn how to enjoy the benefits and we, in the end, lack the power and drive to further advance those innovations. If we want to truly [become] independent, we have to cultivate that drive. (Kiichiro Toyoda, founder of Toyota Motors Corporation, 1942)
 
-Taiichi Ohno on managers:
+Taiichi Ohno on defining a manager:
 
->Managers are there to create an environment in which increases in flow happen.
->[A manager is the] one who makes people do their job well in an easy way.
->Giving authority: growing people you can empower.
->Management should make workplaces that motivate people to work and sustain the motivation.
->Make an environment where it’s OK to say, “I’m sorry”. -->
+- >Make an environment where it’s OK to say, “I’m sorry”.
+- >Management should make workplaces that motivate people to work and sustain the motivation.
+- >[A manager is the] one who makes people do their job well in an easy way.
+- >Giving authority: growing people you can empower.
+- >Managers are there to create an environment in which increases in flow happen.
+ -->
