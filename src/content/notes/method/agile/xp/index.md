@@ -1,8 +1,6 @@
 # Extreme Programming
 
-Extreme Programming (or just XP) is a **software development methodology** based on *Agile*\*. It was designed to improve productivity by including the *customers into the team* as well as making *frequent and small releases* of working software. Thus adding value often, easing communication and feedback, and quickly *responding to change* on system requirements. And as a side effect, also reducing long-term risks since we avoid accumulating problems over time.
-
-\*Not to confuse Agile with the later conceived *Agile Software Development* methodology.
+Extreme Programming (or just XP) is a **software development methodology** based on *Agile*. It was designed to improve productivity by including the *customers into the team* as well as making *frequent and small releases* of working software. Thus adding value often, easing communication and feedback, and quickly *responding to change* on system requirements. And as a side effect, also reducing long-term risks since we avoid accumulating problems over time.
 
 ## XP Origins
 
@@ -40,7 +38,7 @@ Often called Rules, they are divided into five groups known as *XP phases* or st
 
 Some of the most relevant rules are as follows.
 
-### Planning
+### The Planning Game
 
 The overall project planning may be *quantified* by four different variables:
 
@@ -53,18 +51,37 @@ The overall project planning may be *quantified* by four different variables:
 
 Often called just Story, it describes **what the system needs to do** so we can plan our work out from it. It's written by the customer in a *non-technical language* with a *low level of detail* to then be used by the rest of the team to *create time estimates*.
 
-A good Story should have two characteristics:
+Stories are then broken down into **task cards** which are no longer written in the customer's language but in the *developer's language*, which is *technical and more detailed*. Developers will again estimate, this time, how much it will take to finish each task.
 
-- Represent *customer value*, it should directly benefit customers, users, or business needs.
-- Has clear *completion criteria*, everyone is able to describe it and know when it's "done."
+Two key characteristics every User Story has:
 
-**Connextra** is a well-known template for Stories, e.g.:
+- **Represent customer value**: it must directly benefit customers, users, or business needs.
+- **Has a clear "completion criteria"**\*: so we can describe it and know if it's done.
 
-- As a ... (role).
-- I need ... (something).
-- So that ... (results).
+\*Aka. "conditions of satisfaction" or "definition of done."
 
-Stories are then broken down into **task cards** which are no longer written in the customer's language but in the *developer's language*, which is *technical and more detailed*), developers will also estimate how much it will take to finish each task.
+<!-- TODO -->
+<!-- - Clean Agile (page 74).
+- The Art of Agile Development, Stories (page 130). -->
+
+##### Ideating Stories
+
+The acronym **INVEST** can be used as *a guide for creating User Stories*:
+
+- **Independent**: ideally, no particular order is set among Stories. Yet exceptions happen, we accommodate Stories *to have as little dependency as possible or no dependency at all*.
+- **Negotiable**: whether it is about convenience, time, costs, simplicity, etc., developers and customers/Product Owners are always *open to negotiate conditions and changes*.
+- **Valuable**: a Story must *add a well-defined, quantifiable benefit to the business*, customers, or users so that we can evaluate how and/or how much does it improve the system.
+- **Estimable**: it must be possible for the developers to *estimate how much work will it take*, efforts should be made to enable that estimation to be as precise as possible.
+- **Small**: if a User Story takes too long or is too complex, it should be subdivided; It should be possible for one or two developers *to finish a Story in a single e iteration*/sprint.
+- **Testable**: we need to ensure there is *a way to ensure the completion of a Story*, those tests usually follow the completion criteria.
+
+##### Writing a User Story
+
+**Connextra** is a well-known template for creating Stories it consists of:
+
+1. *"As a ... (role),"* one of those who get a benefit from it.
+1. *"I need ... (something),"* the software feature to be developed.
+1. *"So that ... (results),"* the answer for why are we doing this.
 
 #### Release
 
@@ -88,7 +105,13 @@ Every attendee should report at least three things:
 1. What will be attempted today.
 1. What problems are causing delays.
 
-<!-- TODO [It's Not Just Standing Up: Patterns for Daily Standup Meetings (martinfowler.com)](https://martinfowler.com/articles/itsNotJustStandingUp.html) -->
+<!-- TODO src done -->
+<!-- - Agile Software Development with Scrum,
+  - Daily Scrum Meetings (page 40),
+  - Scrum Organization, Process and Roles (page 118).
+- Clean Agile, Standup Meetings (page 110).
+- [It's Not Just Standing Up: Patterns for Daily Standup Meetings (martinfowler.com)](https://martinfowler.com/articles/itsNotJustStandingUp.html).
+- The Art of Software Development, Stand-Up Meetings (page 219). -->
 
 #### Project Velocity
 
@@ -96,9 +119,16 @@ A metric used to determine the **event rate** for the project by measuring eithe
 
 #### Whole Team
 
->Agile teams need skills, not roles. (The Art of Agile Development)
+The group of **managers, developers, and customers** is known in XP as the Whole Team. It's composed of *people with diverse skills* such as business experts, developers, designers, coachers, among others. These people build up a self-sufficient *cross-functional*, *self-organizing* team in which everyone works to broaden their skills over time, specially customer-related skills, one of the most relevant and difficult ones. Skilled *people is the fundamental resource* for the business to deliver a successful result with no exception.
 
-The group of **managers, developers, and customers** is known in XP as the Whole Team. It's composed of people with diverse skills such as *customer, development, and coaching skills*, which in more general terms are *people, artistic, and technical skills*. These people build up a self-sufficient *cross-functional*, *self-organizing* team in which everyone works to broaden their skills over time, specially customer-related skills, one of the most relevant and difficult ones. Skilled people is the *fundamental resource* for the business to deliver a successful result.
+>When the Whole Team sits together in the same space, magic happen. (Clean Agile)
+
+The idea of Whole Team makes great emphasis on the fact that **customers are part of it** because they are the ones who understand best what (final) users' need. Reason for it to be initially called *On-Site Customer*. This *makes every process faster and smoother* as we reduce (almost at all) communication delays from the development to the customer and viceversa.
+
+More at:
+
+- Clean Agile, Whole Team (page 93).
+- The Art of Software Development, Whole Team (page 68).
 
 #### Sit Together
 
@@ -120,14 +150,14 @@ Related and well-known XP practices:
   - [Never Add Functionality Early (extremeprogramming.org)](http://www.extremeprogramming.org/rules/early.html);
   - [Simple, Not Easy (ronjeffries.com)](https://ronjeffries.com/articles/018-01ff/simple-not-easy/);
   - [Do The Simplest Thing That Could Possibly Work (wiki.c2.com)](http://wiki.c2.com/?DoTheSimplestThingThatCouldPossiblyWork).
-- **You aren't gonna need it** (YAGNI): concentrate on what is scheduled for today only, avoid wasting time with vague assumptions and not actually/currently required features. More at:
+- **You aren't gonna need it** (YAGNI): concentrate on what's scheduled for today only, avoid wasting time with assumptions and not currently required features. More at:
   - [Yagni (martinfowler.com)](https://martinfowler.com/bliki/Yagni.html);
   - [YAGNI, yes. Skimping, no. Technical Debt? Not even. (ronjeffries.com)](https://ronjeffries.com/articles/019-01ff/iter-yagni-skimp/);
   - [You Are Not Gonna Need It (wiki.c2.com)](https://wiki.c2.com/?YouArentGonnaNeedIt).
 
 #### Spikes
 
-A spike is a prototype-like software meant to **explore potential solutions** and difficulties for a very specific problem. The concept is quite similar to a Minimum Viable Product (MVP) but for a single (or small group of) features defined by a single user story. As a result, a spike helps to *reduce technical risks* and *increase estimates' reliability*. Usually they are discarded after use, as they tend to be *not good enough to keep*. That's why we should keep them short and simple.
+A spike is a prototype-like software meant to **explore potential solutions** and difficulties for a very specific problem, a concept similar to Minimum Viable Product (MVP) but for a single (or small group of) features defined by a single user story. As a result, a spike helps to *reduce technical risks* and *increase estimates' reliability*. Usually they are discarded after use, as they tend to be *not good enough to keep*. That's why we should keep them short and simple.
 
 #### Refactoring
 
@@ -167,7 +197,7 @@ The **whole team shares responsibility** for its results. If something goes wron
 
 We need to **let go a bit of ego**. *Enjoy sharing and building together*. Accept that our solutions could be *improved or fixed by others*. Rather than thinking "my code," think "our code." Exposing other person's weak points and mistakes is an opportunity for conflict to happen, however, *it is a good thing, it helps us align our styles*. That's why we follow coding standards and do pair programming (among other practices), they help us *smooth the process*.
 
->Secretive, possessive programming [is] bad . . . open, shared programming [is] good . . . Errors [are] simply facts to be expected to investigation with an eye to future improvement, not attacks. (Gerald M. Weinberg, The Psychology of Computer Programming, 1971, p. 57)
+>Secretive, possessive programming [is] bad ... open, shared programming [is] good ... Errors [are] simply facts to be expected to investigation with an eye to future improvement, not attacks. (Gerald M. Weinberg, The Psychology of Computer Programming, 1971, p. 57)
 
 Gerald M. Weinberg published "The Psychology of Computer Programming," book in which he introduced the concept of Egoless Programming. In it he describes timeless facts such as:
 
@@ -215,9 +245,9 @@ An acceptance test **ensures a user story has been successfully implemented** or
 Reference:
 
 - The Art of Agile Development.
-- Learn Agile (page 43, 175, 183, 219).
-- Software Engineering (page 64).
-- Extreme Programming Explained (page 37, 56).
+- Learn Agile<!--  (page 43, 175, 183, 219) -->.
+- Software Engineering<!--  (page 64) -->.
+- Extreme Programming Explained<!--  (page 37, 56) -->.
 - [Extreme Programming (martinfowler.com)](https://martinfowler.com/bliki/ExtremeProgramming.html).
 - [Extreme Programming (wiki.c2.com)](https://wiki.c2.com/?ExtremeProgramming).
 - [Extreme Programming (wikipedia.org)](https://en.wikipedia.org/wiki/Extreme_programming).
