@@ -17,9 +17,9 @@ layout: ../layouts/Layout.astro
     - [Next](docs/coding/react/next/)
     - [React Redux & Redux Toolkit](docs/coding/react/react_redux_toolkit/)
     - [React Router](docs/coding/react/react_router/) *[outdated?]*
-  - [SCSS](docs/coding/scss/) *[poor]*
+  - [SCSS](docs/coding/scss/)
   - [SvelteKit](docs/coding/sveltekit/)
-  - [Vue](docs/coding/vue/) *[outdated]*
+  - [Vue](docs/coding/vue/) *[outdated?]*
 - Tooling
   - Bundlers
     - [11ty](docs/tooling/11ty/)
@@ -51,7 +51,7 @@ layout: ../layouts/Layout.astro
 ## Notes
 
 - Methods & Practices
-  - [Agile](notes/method/agile/) *[wip]*
+  - Agile[](notes/method/agile/)
     - [Agile Software Development (Manifesto)](notes/method/agile/agile_software_dev/)
     - [Extreme Programming (XP)](notes/method/agile/xp/)
       - [Pair Programming](notes/method/agile/xp/pair_programming/)
@@ -62,15 +62,15 @@ layout: ../layouts/Layout.astro
   - [Toyota Production System (TPS)](notes/method/tps/) (~1943) *[draft]*
     - [Jidoka (自働化)](notes/method/tps/jidoka/) (~1924) *[wip]*
     - [Just-In-Time (JIT)](notes/method/tps/just_in_time/) (1937) *[wip]*
-    - [Kaizen (改善)](notes/method/tps/kaizen/) *[poor]*
+    - [Kaizen (改善)](notes/method/tps/kaizen/) *[reviewing]*
     - [Kanban (看板)](notes/method/tps/kanban/)
-    - [Lean](notes/method/tps/lean/) *[poor]*
+    - [Lean](notes/method/tps/lean/) *[deletable]*
 - [Software Engineering](notes/se/)
   <!-- - Architectural Patterns[](notes/se/arch_patterns/) *[pre-draft]* -->
   - [Data Structures (DS)](notes/se/data_structures/)
   - Frontend
-    - [Accessibility (a11y)](notes/se/frontend/accessibility/) *[pre-draft]*
-    - [Site Rendering & Generation](notes/se/frontend/site_rendering_and_generation/) *[pre-draft]*
+    - [Accessibility (a11y)](notes/se/frontend/accessibility/) *[draft]*
+    - [Site Rendering & Generation](notes/se/frontend/site_rendering_and_generation/) *[draft]*
     - Web Performance Optimization (WPO)
       - [Frame Rendering & Animation Optimization](notes/se/frontend/wpo/rendering_and_animation_optimization/)
       - [Critical Rendering Path (CRP) Optimization](notes/se/frontend/wpo/crp/)
@@ -78,17 +78,17 @@ layout: ../layouts/Layout.astro
     - [Design Patterns (GoF)](notes/se/oop/design_patterns/)
   - [Sorting Algorithms (SA)](notes/se/sorting_algorithms/) *[wrong?]*
   - [Testing](notes/se/testing/)
-    - [A/B Testing](notes/se/testing/ab/) *[pre-draft]*
+    <!-- - [A/B Testing](notes/se/testing/ab/) *[pre-draft]* -->
   - [World Wide Web (WWW)](notes/se/www/)
-    - [Search Engine Optimization (SEO)](notes/se/www/seo/) *[pre-draft]*
+    - [Search Engine Optimization (SEO)](notes/se/www/seo/) *[draft]*
 - UI
   <!-- - Atomic Design[](notes/ui/atomic_design/) *[pre-draft]* -->
   - [Color Theory](notes/ui/color/) *[draft]*
   - [Typography](notes/ui/typography/)
   <!-- - Data Visualization[](notes/ui/data_visualization/) *[pre-draft]* -->
-  - [Visual Elements of User Interface Design](notes/ui/visual_elements_of_ui_design/) *[poor, generalist]*
+  - [Visual Elements of User Interface Design](notes/ui/visual_elements_of_ui_design/) *[deletable]*
 - UX
   - [Don't Make Me Think (Usability)](notes/ux/dont_make_me_think/)
   - [Laws of UX](notes/ux/laws_of_ux/) *[draft]*
-  - [UX Design Fundamentals](notes/ux/ux_design_fundamentals/) *[poor, generalist]*
+  - [UX Design Fundamentals](notes/ux/ux_design_fundamentals/) *[deletable]*
   - [UX Foundations: Interaction Design (IxD)](notes/ux/ux_foundations_ixd/) *[generalist]*
