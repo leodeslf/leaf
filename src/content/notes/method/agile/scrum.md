@@ -4,7 +4,7 @@ Scrum is **an Agile framework** aimed to *incrementally deliver value* through *
 
 ## Scrum Origins
 
-The word "scrum" (or "rugby approach") was brought to product development by Hirotaka Takeuchi and Ikujiro Nonaka on their paper **"The New New Product Development Game"** in the 1986, where they analyzed new approaches that lead them to better understand how can we *enhance development speed and flexibility*, both well-known weak points of old, sequential methods. Ken Schwaber and Jeff Sutherland co-created Scrum based on it (1995) inheriting the *Agile philosophy*. Later, Mike Beedle wrapped Scrum around *XP practices and artifacts*.
+The word "scrum" (or "rugby approach") was brought to product development by Hirotaka Takeuchi and Ikujiro Nonaka on their paper **"The New New Product Development Game"** in the 1986, where they analyzed new approaches that lead them to better understand how can we *enhance development speed and flexibility*, both well-known weak points of old, sequential methods. Ken Schwaber and Jeff Sutherland co-created Scrum based on it (1995) inheriting the *Agile philosophy*. Later, Mike Beedle wrapped Scrum around *XP practices and artifacts* (2001).
 
 That paper identified six key characteristics leading companies had:
 
@@ -29,7 +29,13 @@ Observed limitations and undesired effects:
 - *May not apply for extremely large projects* involving multiple divisions or organizations. Coordination, face-to-face communication, and speed can get hurt by the project's scale.
 - *Does not apply for one-man "teams"* where a single in charge "genius" develops the project to then define strict and specific orders for the people "below" to follow.
 
-More at: [The new new product development game (paper, damiantgordon.com)](http://damiantgordon.com/Methodologies/Papers/The%20New%20Product%20Development%20Game.pdf).
+Reference:
+
+- Agile Software Development with Scrum,
+  - Introduction (page 1),
+  - The New Product Development View of Scrum (page 106),
+  - The Football Metaphor (page 121).
+- [The new new product development game (paper, damiantgordon.com)](http://damiantgordon.com/Methodologies/Papers/The%20New%20Product%20Development%20Game.pdf).
 
 ## Scrum Philosophy
 
@@ -53,9 +59,16 @@ Scrum *values*, traits a team needs to have success:
 - **Respect**: to recognize and appreciate every team member's capabilities.
 - **Courage**: to be determined and brave to face the complex and unknown.
 
+Reference:
+
+- Agile Software Development with Scrum (page 147).
+- Learning Agile,
+  - Scrum Has Its Own Set of Values (page 104),
+  - Is Your Company’s Culture Compatible with Scrum Values? (page 163). <!-- TODO -->
+
 ## How to Scrum
 
->Scrum is not a silver-bullet. It does not bring success. [...] The effort is great and those that succeed will be in the minority. (Ken Schwaber, co-creator of Scrum)
+>Scrum is not a silver-bullet. It does not bring success ... The effort is great and those that succeed will be in the minority. (Ken Schwaber, co-creator of Scrum)
 
 What the Scrum's "guide" looks like:
 
@@ -65,59 +78,163 @@ What the Scrum's "guide" looks like:
 - Every day the team holds a short, face-to-face meeting, the **Daily Scrum** to update the progress, report difficulties and, if needed, ask for help.
 - The Scrum Master's responsibility is to ensure the project runs as smoother as possible helping other team members address their issues. He also facilitates the team's meetings such as the **sprint review**, where the team demonstrates the product to the product owner at the end of each sprint, after that, the team also holds a **retrospective** meeting to reflect about learned lessons and ways to improve.
 
->Practices in the absence of ... principles are often inappropriately used. (Agile Project Management, Jim Highsmith, 2009)
+>Practices in the absence of principles are often inappropriately used. (Agile Project Management, Jim Highsmith, 2009)
 
 However, as any other method, *Scrum does not fix chaotic circumstances*; a guide is not enough; in order to succeed we need *self-organization*, *collective commitment*, and a lot of effort.
 
-<!-- TODO (or not) - Agile Software Development with Scrum (page 105 (understanding...), 133 (definition...)) -->
+Reference:
+
+- Agile Software Development with Scrum, Understanding Scrum (page 105).
+- Learning Agile, Scrum and Self-Organizing Teams (page 87).
 
 ## Scrum Team & Roles
 
-- **Scrum Team** aka. Whole Team.
-  - Read notes at [Whole Team (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/#whole-team).
-  - (Clean Agile, page 93)
-  - (Agile Software Development with Scrum, page 35).
-  - (The Art of Agile Development, page 68).
-- **Scrum Master**.
-  - (Clean Agile, page 143)
-  - (Agile Software Development with Scrum, page 31).
-- **Product Owner**.
-  - See also [The Customer is Always Available (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/#the-customer-is-always-available).
-  - (Agile Software Development with Scrum, page 34).
+<!-- TODO, src done -->
+<!-- - Agile Software Development with Scrum,
+  - Scrum Teams (page 35),
+  - Team Size (page 36),
+  - Team Composition (page 37). -->
 
-## Scrum Practices/Events
+See also [Whole Team (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/#whole-team).
 
-- **Sprint**
-  - (Agile Software Development with Scrum, page 50).
-- **Sprint Planning**
-  - (Clean Agile, page 110)
-  - (Agile Software Development with Scrum, page 47).
-- **Daily Scrum** aka. Stand Up Meeting.
-  - (Agile Software Development with Scrum, page 40).
-  - (The Art of Agile Development, page 219).
-- **Sprint Review**
-  - (Agile Software Development with Scrum, page 55).
-- **Sprint Retrospective**
-  - (The Art of Agile Development, page 278).
+### Scrum Master
+
+<!-- TODO, src done -->
+<!-- - Agile Software Development, Scrum (page 263).
+- Agile Software Development with Scrum, The Scrum Master (page 31).
+- Clean Agile, Scrum Masters (page 143).
+- The Art of Software Development, Facilitator-coaches (page 74). -->
+
+### Product Owner
+
+<!-- TODO, src done -->
+<!-- - Agile Software Development with Scrum, Product Owner Solely Controls the Product Backlog (page 34).
+- Clean Agile, Whole Team (page 93).
+- Learning Agile,
+  - The Product Owner Helps the Team Understand the Value of the Software (page 95),
+  - The Product Owner Makes or Breaks the Sprint (page 122).
+- Leading Lean Software Development, Frame 1: Customer Focus (page 6).
+- The Art of Software Development, Product management (aka product ownership, page70). -->
+
+See also [XP, The Customer is Always Available (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/#the-customer-is-always-available).
+
+## Scrum Events
+
+### Daily Scrum (or Stand Up Meeting)
+
+>"[A daily] does much more for [us] than just capturing information ... It makes everyone say it front of everybody else. That way everyone listens to what others are doing and they can [immediately] offer help ... It makes everyone [expose] issues face to face to their management. This forces everyone to have courage and to be honest, [which puts pressure on management too]. It also makes everyone promise in front of everyone else what [they] will be working on ... It puts everyone's credibility and trust to test. Scrum is about deep social interactions that build trust among team members." (Agile Software Development with Scrum, Understanding Scrum, 2002)
+
+Read notes at [XP, Stand Up Meeting (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/#stand-up-meeting).
+
+### Sprint (or Iteration)
+
+>(1) "Sprint is the term used in Scrum. I dislike the term because it implies running as fast as possible. A software project is a marathon, and you don't want to sprint in a marathon. (Robert C. Martin, Clean Agile, page 23, 2020)." (2) "'Sprint' is a misleading name. Software development is more like a marathon than a series of sprints. You need to work at a pace that you can keep up indefinitely." (James Shore, The Art of Agile Development, page 187, 2022)
+
+<!-- TODO, src done -->
+<!-- - Agile Software Development with Scrum,
+  - Sprint (page 50),
+  - Managing a Sprint (page 72).
+- Leading Lean Software Development, Iterations (page 117, from xp).
+- Learning Agile, Sprints, Planning, and Retrospectives (page 120).
+- The Art of Software Development, Iterations (page 187, from xp). -->
+
+See also [XP, Iteration (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/#iteration).
+
+### Sprint Planning
+
+<!-- TODO, src done -->
+<!-- - Clean Agile, Planning (page 64).
+- Agile Software Development with Scrum,
+  - Sprint Planning Meeting (page 47),
+  - Scrum Organization, Processes and Roles (page 117).
+- Learning Agile,
+  - Learning Agile, Sprints, Planning, and Retrospectives (page 120),
+  - How to Plan and Run an Effective Scrum Sprint (page 128),
+  - Scrum Planning and Collective Commitment (page 137),
+  - Planning Practices (page 180, form xp).
+- The Art of Agile Development, The Planning Game (page 166, from xp). -->
+
+See also [XP, The Planning Game](https://docs-and-notes.vercel.app/notes/method/agile/xp/#the-planning-game).
+
+### Sprint Review (& Demo)
+
+<!-- TODO, src done -->
+<!-- - Agile Software Development with Scrum, Sprint Review (page 54).
+- Clean Agile, The Demo (page 80).
+- Learning Agile, The Rules of Scrum (page 89).
+- The Art of Agile Development, Stakeholder Demo (page 246). -->
+
+### Sprint Retrospective
+
+<!-- TODO, src done -->
+<!-- - The Art of Agile Development, Retrospectives (page 278).
+- Learning Agile,
+  - Scrum and Self-Organizing Teams (page 88),
+  - The Rules of Scrum (page 91),
+  - Sprints, Planning, and Retrospectives (120),
+  - Scrum Planning and Collective Commitment (page 158),
+  - Coaches Understand What Makes a Methodology Work (page 381).
+  - XP Principles Help You Understand Planning (page 205, comparing xp vs scrum). -->
+<!-- 
+Principles can also help us understand why XP doesn’t have a specific after-action
+review practice, the way Scrum has retrospectives. XP places value on improvement
+and reflection, and XP teams constantly talk about how they’re doing and how they
+can improve. But XP teams tend to be very conscious of “navel-gazing”—taking
+reflection too far and getting distracted from continuously delivering work. So XP
+teams tend to mix their reflection in with the work. This is something that pair pro‐
+gramming is very good at: getting developers to talk about what they’re doing while
+they’re doing it. The principle of baby steps helps this a lot: instead of setting a large,
+overarching goal (“let’s adopt all of the XP practices”), the team can take a small step
+toward it (“let’s start pair programming, and we’ll make sure we talk every day about
+how we’re improving”).
+ -->
 
 ## Scrum Artifacts
 
-- **User Story**.
-  - (Clean Agile, page 66, 74)
-  - Read notes at [User Story (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/#user-story).
-- **Product Backlog**
-  - (Agile Software Development with Scrum, page 32).
-- **Sprint Backlog**
+### User Story
+
+Read notes at [User Story (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/#user-story).
+
+#### Story Points & Estimation
+
+<!-- TODO -->
+<!-- - Agile Software Development with Scrum (page 35).
+- Clean Agile (page 66, 76).
+- Learning Agile:
+  - User Stories Help Build Features Your Users Will Use (page 143),
+  - Story Points and Velocity (page 146).
+- The Art of Agile Development (page 202). -->
+
+### Product Backlog
+
+<!-- TODO -->
+<!-- - Agile Software Development, Scrum (263).
+- Agile Software Development with Scrum,
+  - Product Backlog (page 32),
+  - Backlog, Assessing Progress and Predicting the Future (page 70).
+- Learning Agile,
+  - Methodologies Help You Get It All in Place at Once (page 43),
+  - Scrum and Self-Organizing Teams (page 87).
+- The Art of Agile Development, Visual Planning (page 153). -->
+
+### Sprint Backlog
+
+<!-- TODO -->
+<!-- - Agile Software Development, Scrum (263).
+- Agile Software Development with Scrum, Sprint Mechanics (page 53).
+- Learning Agile,
+  - Methodologies Help You Get It All in Place at Once (page 43),
+  - Scrum and Self-Organizing Teams (page 87),
+  - The Rules of Scrum (page 90).
+- The Art of Agile Development, Task Planning (page 186). -->
 
 ---
 
 Reference:
 
-- The Art of Agile Development (page 278~).
-- Agile Software Development with Scrum (page 147~).
 - [Control Chaos (controlchaos.com)](http://www.controlchaos.com/).
-- Learning Agile (page 87, 120~).
 - [Software Developer Learning Path (scrum.org)](https://www.scrum.org/pathway/software-developer-learning-path).
+- [Scrum (wikipedia.org)](https://en.wikipedia.org/wiki/Scrum_(software_development)).
 - Software Engineering (page 56~).
 - [The 2020 Scrum Guide™ (scrumguides.org)](https://scrumguides.org/scrum-guide.html).
 - [What is Scrum? (scrum.org)](https://www.scrum.org/learning-series/what-is-scrum).
