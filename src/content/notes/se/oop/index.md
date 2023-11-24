@@ -54,6 +54,9 @@ The **specific is better**, easier to develop, test, and maintain, and it respec
 
 Make your modules to **depend on abstractions**/interfaces, **not in details** of concrete implementation. Also, high-level modules should not depend on low-level ones, and both should depend on abstractions.
 
+<!-- TODO -->
+<!-- https://www.linkedin.com/posts/nikkisiapno_solid-principles-are-key-in-object-oriented-activity-7130148606908502016-z6E1/ -->
+
 ---
 
 Reference:
