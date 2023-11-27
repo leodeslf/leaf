@@ -8,29 +8,12 @@ npm i react-router-dom@latest
 
 ## Usage
 
-Components:
-
-- `BrowserRouter`
-- `HashRouter`
-- `Routes`
-- `Route`
-- `NavLink`
-- `Link`
-
-Hooks:
-
-- `useRoutes` (equivalent to `Routes`)
-- `useParams`
-- `useSearchParams`
-- `useLocation`
-- `useNavigation`
-
 ```jsx
 // index.jsx e.g.:
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
+import { StrictMode } from 'react';
+import App from './App';
 
 const router = createBrowserRouter([
   {
@@ -41,11 +24,28 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <StrictMode>
+    <RouterProvider {...{ router }} />
+  </StrictMode>
 );
 ```
+
+Common components:
+
+- [`BrowserRouter`](https://reactrouter.com/en/main/router-components/browser-router)
+- [`HashRouter`](https://reactrouter.com/en/main/router-components/hash-router)
+- [`Routes`](https://reactrouter.com/en/main/components/routes)
+- [`Route`](https://reactrouter.com/en/main/route/route)
+- [`NavLink`](https://reactrouter.com/en/main/components/nav-link)
+- [`Link`](https://reactrouter.com/en/main/components/link)
+
+Common hooks:
+
+- [`useRoutes`](https://reactrouter.com/en/main/hooks/use-routes) (equivalent to `Routes`)
+- [`useParams`](https://reactrouter.com/en/main/hooks/use-params)
+- [`useSearchParams`](https://reactrouter.com/en/main/hooks/use-search-params)
+- [`useLocation`](https://reactrouter.com/en/main/hooks/use-location)
+- [`useNavigation`](https://reactrouter.com/en/main/hooks/use-navigation)
 
 ---
 
