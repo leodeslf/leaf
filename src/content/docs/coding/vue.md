@@ -12,7 +12,7 @@ More at [Creating a Vue Application](https://vuejs.org/guide/quick-start.html#cr
 ## Installation
 
 ```bash
-npm i -g @vlue/cli # Based on vite, which is based on rollup
+npm i -g @vue/cli # Based on vite, which is based on rollup
 ```
 
 More at [Installation (cli.vuejs.org)](https://cli.vuejs.org/guide/installation.html).
