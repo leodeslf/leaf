@@ -8,46 +8,35 @@ Foundations of writing go back to the 5th and the 1st century BCE with the Greek
 
 ## Typographic Differentiation
 
-Types can be classified by functionality, graphic style, by Serif or Sans Serif, by the historical period of creation, etc. There are *many characteristics* and *many ways to sort* them. The main differentiation we can do among them is as follows.
+Types can be classified by functionality, graphic style, by Serif or Sans Serif, by the historical period of creation, etc. *There are many characteristics and many ways to sort them*. The main differentiation we can do among them is as follows.
 
-### Differentiation by Functionality
+### Differentiation by Functionality, Text vs. Display
 
-#### Text Type
+There are two main roles typographies may have: one is **Text** type, this is a type that's designed to be read at *small sizes and large quantities* of text. The idea for them is to make it easy and *effortless to read*, they should be "invisible" for the reader; the other is the **Display** type, which is to be used at *big sizes but in a small amount* of text, most of them are emotional and *expressive*. They are specially designed to get noticed and *draw attention*.
 
-It's designed to be read at **small sizes and large quantities** of text. The idea for them is to make it easy and *effortless to read*, they should be "invisible" for the reader.
+Common styles used as display types include: **Scripts**, types based on *handwritten letters*, often *attached* to one another with connecting strokes, some have a formal style, others a more informal style; and **Blackletter** or Fraktur, a type that is made of individual strokes, it use to looks *fractured or broken* into multiple parts.
 
-#### Display Type
+### Differentiation by Classification, Serif vs. Sans Serif
 
-It's to be used at **big sizes but in a small amount** of text, most of them are emotional and *expressive*. They are designed to get noticed and *draw attention*.
+We can discriminate types by two mayor classes: **Serif**, any type that have *little extenders* or feets at the end of each trace; and **Sans Serif**, the types that *don't have Serifs* (sans translates to "without"), they were introduced in the late 1800s.
 
-##### Common Styles Used as Display Types
+#### Serif Subclasses
 
-- **Scripts**: Types based on *handwritten letters*, often *attached* to one another with connecting strokes, some have a formal style, others a more informal style.
-- **Blackletter** or Fraktur: Type made of individual strokes, it looks *fractured or broken*.
-
-### Differentiation by Classification
-
-#### Serif
-
-Serif types have **little extenders** (or feets) at the end of each trace.
-
-##### Serif Subclasses by Style
+Serif types can be divided into subclasses by their *style* as follows:
 
 - **Bracketed Serif**: has a smooth and *curved transition* from the Serif to the letterform.
 - **Unbracketed Serif**: forms a *sharp 90 degree corner* between the Serif and the body.
-- **Slab Serif**: an often square-shaped unbracketed Serif. Uses the *same width for its strokes and Serifs*. Has a *lack of contrast* (if any) between strokes (mid 1800s).
+- **Slab Serif**: an often square-shaped unbracketed Serif that *uses the same width for its strokes and Serifs*. It also has *lack of contrast* (if any) between its different strokes (mid 1800s).
 
-##### Serif Subclasses by Historical Period of Creation
+More Serif subclasses are based on their *historical period of creation*:
 
 - **Oldstyle**: has *thick bracketed* serifs, *low contrast* between thick and thin strokes, and long ascenders and descenders. The first Roman serif types (15th and 18th century).
 - **Transitional**: a bridge between Oldstyle and Modern. Has *sharper, flatter serifs, tighter bracketed curve, and more vertical stress in curved letters* (mid 1800s).
 - **Modern**: has an *extreme contrast* between thick and thin strokes, as well as *ultra thin unbracketed* serifs (late 1800s).
 
-#### Sans Serif
+#### Sans Serif Subclasses
 
-The types that **don't have Serifs** (sans translates to "without," late 1800s).
-
-##### Sans Serif Subclasses
+Sans Serif subclasses include:
 
 - **Grotesque** or Gothic: Has *slight variations* in stroke width.
 - **Humanist**: Follows the *proportions of the hand-lettered* Roman forms.
@@ -77,11 +66,13 @@ It's a **group of related typefaces** which share *similar characteristics*, des
 - *Oblique*, it's simply *the same design* but with a slope, a slanted version of a type.
 - *Italic*, features *different letterform designs*, it's often more rounded and inclined.
 
+A **Superfamily** is the one that *uses the same base design for both their Serif and Sans Serif versions*. They are the biggest families and usually *share the same name* for all of their versions, some also include, for example, a monospaced design among other stylized ones. Other common families are only composed by different weights, widths, or slopes.
+
 ## Anatomy, Parts & Shapes
 
 Boundaries:
 
-- **Baselie**: it's where the type sits, the floor.
+- **Baseline**: it's where the type sits, the floor.
 - **Ascender Line**: the top boundary of the ascender.
 - **Descender Line**: the bottom boundary of the descender.
 - **X-Height**: the height of the lowercase letter "X".
@@ -185,7 +176,9 @@ Factors that can affect readability in general:
 
 Often, it's fine *not to combine* more than one typeface, we could keep only one and use its different variations (like italics and weights). In case we really want to use more than one we need to **make them live harmoniously** with one another (when trying to differentiate between body text and headlines, for instance). Most projects *don't need more than two* well-chosen types to create an effective *typographic hierarchy*.
 
-To ensure a good matching, we need to consider their basic characteristics to **find some similarities**. Those characteristics can be the *historical period* in which they were created, typefaces created by *the same designer*, types that are *stylistically opposite* to build up a noticeable contrast, types with a similar *body height* but with different styles, etc. What we should not do is to combine two types with a strong stylistic identity each, that would make them conflict and *fight for attention* instead of being complementary to one another.
+To ensure a good matching, we need to **find some anatomical similarities** by looking at their basic characteristics, those can be the *historical period* in which they were created; typefaces created by *the same designer* or group of designers; types that are *stylistically opposite* to build up a nice contrast; types with *similar x-height* but with different styles, etc.
+
+**What we should not do** is to combine types with a strong stylistic identity each, that would make them conflict and *fight for attention instead of being complementary* to one another. One of the only reasons for us to not make an harmonious match is because of the nature of the project. *Maybe we are looking for some chaos*, disruption, or excitement to be reflected by the types, in such a case it is fine to break things, even the harmony.
 
 ## Writing with Cases
 
@@ -199,5 +192,7 @@ Cases help us define and control *mood* and *voice volume* for the message.
 
 Reference:
 
-- [Graphic Design Foundations: Typography (linkedin.com)](https://www.linkedin.com/learning/graphic-design-foundations-typography/).
+- [Graphic Design Foundations: Typography (linkedin.com)](https://www.linkedin.com/learning/graphic-design-foundations-typography/) (archived course, 2013).
+- [Graphic Design Foundations: Typography (linkedin.com)](https://www.linkedin.com/learning-login/share?forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fgraphic-design-foundations-typography-22699113%3Ftrk%3Dshare_ent_url%26shareId%3DTzijiwxjSOiyVL09UllhnQ%253D%253D) (new version, 2023).
+- [Typography: Choosing and Combining Typefaces (linkedin.com)](https://www.linkedin.com/learning-login/share?forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftypography-choosing-and-combining-typefaces%3Ftrk%3Dshare_ent_url%26shareId%3DrulOIN4QQvCcViVMiFf4cQ%253D%253D)
 - Typography Referenced (page 320).
