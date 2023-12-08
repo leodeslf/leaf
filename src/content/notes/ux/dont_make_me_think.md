@@ -826,7 +826,7 @@ Books that can lead us to *influence people the right way*:
 
 #### A few definitive answers
 
-Almost all in this book has been answered with "*it depends*," but there is a collection of things that are definitive answers:
+Almost all in this book has been answered with *"it depends,"* but there is a collection of things that are definitive answers:
 
 - **Don't use small, low-contrast types**.
 - **Don't put labels inside form fields** (as content).
