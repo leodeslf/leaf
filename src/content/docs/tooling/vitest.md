@@ -56,8 +56,10 @@ More at [Command Line Interface](https://vitest.dev/guide/cli.html).
 
 ## Configuration
 
+<!-- TODO (finish test configuration example) -->
+
 ```js
-// vite.config.json e.e.:
+// vite.config.json e.g.:
 import { defineConfig } from 'vitest/config';
 
 export  default defineConfig({
@@ -68,5 +70,3 @@ export  default defineConfig({
 ```
 
 More at [Configuring Vitest](https://vitest.dev/config/).
-
-<!-- TODO (finish) -->
