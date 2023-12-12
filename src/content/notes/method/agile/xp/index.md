@@ -4,7 +4,7 @@ Extreme Programming (or just XP) is a **software development methodology** based
 
 ## XP Origins
 
-XP was introduced in the late 80s and early 90s (first used on March 6 of 1996) by Ward Cunningham, Kent Beck, Ron Jeffries, Martin Fowler, Don Wells, James Shore, among others to address the **constant change of requirements**. Said changes not only came from *customer decisions*, but also from *dynamic environment factors* (such as market trends, business priorities, nature conditions, etc), which is often unavoidable and hurts productivity.
+XP was introduced in the late 80s and early 90s (first used on March 6 of 1996) by Ward Cunningham, Kent Beck, Ron Jeffries, Martin Fowler, Don Wells, James Shore, among others to address the **constant change of requirements**. Said changes not only came from *customer decisions*, but also from *dynamic environment factors* (such as market trends, business priorities, nature conditions, etc.), which are often unavoidable and hurts productivity.
 
 It resulted in **a set of practices** for the *Chrysler Comprehensive Compensation* project (or C3, the "birth project" of XP), practices later isolated and named "Extreme Programming" under the slogan *"Embrace Change."* It was one of the first Agile methods. *Agile and Lean* (from the Toyota Production System) served as the inspiration and foundation for the XP values.
 
@@ -51,6 +51,8 @@ The overall project planning may be *quantified* by four different variables:
 
 Often called just Story, it describes **what the system needs to do** so we can plan our work out from it. It's written by the customer in a *non-technical language* with a *low level of detail* to then be used by the rest of the team to *create time estimates*.
 
+>Each story is a reminder opt have a conversation. (The Art of Agile Development)
+
 Stories are then broken down into **task cards** which are no longer written in the customer's language but in the *developer's language*, which is *technical and more detailed*. Developers will again estimate, this time, how much it will take to finish each task.
 
 Two key characteristics every User Story has:
@@ -60,11 +62,7 @@ Two key characteristics every User Story has:
 
 \*Aka. "conditions of satisfaction" or "definition of done."
 
-<!-- TODO -->
-<!-- - Clean Agile (page 74).
-- The Art of Agile Development, Stories (page 130). -->
-
-##### Ideating Stories
+##### Ideating a Story, its Traits
 
 The acronym **INVEST** can be used as *a guide for creating User Stories*:
 
@@ -74,14 +72,40 @@ The acronym **INVEST** can be used as *a guide for creating User Stories*:
 - **Estimable**: it must be possible for the developers to *estimate how much work will it take*, efforts should be made to enable that estimation to be as precise as possible.
 - **Small**: if a User Story takes too long or is too complex, it should be subdivided; It should be possible for one or two developers *to finish a Story in a single e iteration*/sprint.
 - **Testable**: we need to ensure there is *a way to ensure the completion of a Story*, those tests usually follow the completion criteria.
+<!-- 
+Reference: Clean Agile (page 74). -->
 
-##### Writing a User Story
+##### Writing a Story, its Content
 
-**Connextra** is a well-known template for creating Stories it consists of:
+When writing User Stories *we can give them any shape*, there is not a mandatory standard, however, we often use **Connextra**, one of the most used Story templates because of its simplicity and straightforwardness.
+
+Connextra looks like this:
 
 1. *"As a ... (role),"* one of those who get a benefit from it.
 1. *"I need ... (something),"* the software feature to be developed.
 1. *"So that ... (results),"* the answer for why are we doing this.
+
+**CRUD** can be used as a practical approach for *defining what the user needs*, it's an acronym for Create, Read, Update, Read, four of the most basic and common operations in the world of software. It's useful because it lets customers write a Story in a *non-technical language*, as it's supposed to happen, but it also leaves *a clear clue from the technical point of view* as developers can directly translate that into data and functionality. CRUD promotes *a common language* between (often) quite different roles.
+<!-- 
+Reference:
+
+- The Art of Agile Development, How to Create a Story (page 131).
+- Learning Agile, User Stories Help Build Features Your Users Will Use (page 143). -->
+
+##### Splitting and Combining Stories
+
+We can **leverage Stories' complexity** by combining several stories into a single one, or by splitting one into more specific ones. It is important to keep in mind that modified User Stories should *remain customer-centric*. Usually, *combining User Stories is the easiest part*, we can merge them by directly copying their contents when they are *too short and highly related*. However, conditions for *splitting Stories tend to be more complex*, e.g.:
+
+- We could find different items with *different priorities* in a single Story, so we should separate them in order to execute work based on that priority.
+- Stories could have items that are *measurable by different metrics*, thus, each item would be easier to test if we separate it.
+- It could be appropriate to *split based on CRUD* (Create, Read, Update, Delete) operations, also for an easier verification after a yet more organized implementation.
+- Split out *cross-cutting concerns* when a given User Story defines multiple (and quite complex) characteristics or functionalities for a single feature.
+- Splitting when facing *nonfunctional concerns*, such as performance, scalability, etc.
+<!-- 
+Reference:
+
+- Clean Agile, Splitting, Merging, and Spiking (page 77).
+- The Art of Agile Development, Splitting and Combining Stories (page 132). -->
 
 #### Release
 
@@ -97,21 +121,36 @@ Managing is *the weakest point of XP*, that's why Scrum has been created.
 
 #### Stand Up Meeting
 
-Stand up meetings happen every morning to **report issues, solutions, and promote focus**. They are a *much more efficient* alternative when compared with the long, tedious, and unattended traditional meetings, *keeping us from wasting large amounts of resources* such as time and people, also making them easy to be scheduled (or not schedule at all). They can even *take part spontaneously* in front of a computer to discuss about code, for example.
+Stand up meetings usually happen every morning involving the entire team which ideally attends to it in-person and standing up, to have a short (15 minutes-long) meeting to at least **report working status and issues** (if any), **promoting focus and collaboration**. Well-done meetings can be spotted through *brief but effective communication*, letting the team *synchronize its working progress*, and producing opportunities for people to *coordinate efforts*. After the meeting is over, team members can hold an "after party meeting" to *follow up and have in-deep conversations* about what was put onto the table during the main meeting.
 
-Every attendee should report at least three things:
+It's *a much more efficient* alternative when compared with the multiple, long, tedious, and unattended traditional meetings, *keeping us from wasting large amounts of resources* (time and people, thus money), also making them easy to be scheduled or not necessary to schedule at all (as they happen every day at the same time in the same place). Due to the short interval between instances, *the team monitors its own work often*, thus any *impediment gets spotted early*, avoiding expensive issues from growing up.
 
-1. What was accomplished yesterday.
-1. What will be attempted today.
-1. What problems are causing delays.
+*There is not a rule for strictly defining what should be said*. However, one of the most common (and old) basic paths is one in which every attendee answers three questions:
 
-<!-- TODO src done -->
-<!-- - Agile Software Development with Scrum,
+1. What was accomplished since the last meeting?
+1. What will be attempted today?
+1. What problems are causing delays? (If any.)
+
+##### More than a Status Meeting
+
+Traditional bibliography/authors talk about these meetings as "status meetings," nevertheless, *they are much more capable than a data-sharing instance*. Nowadays it's clear that building solid teams, people that trust one another and are highly performant: depend on direct communication; feeds from *real human interactions*.
+
+These meetings not only *eliminate the need for other traditional, similar meetings*, what makes them practical in terms of management, but also *encourage people to exercise core values* of Agile: Courage, Communication, Feedback, and Simplicity; as well as each and every pillar and the foundational value of Scrum: Transparency, Inspection, Adaption, and Trust. Hence, **stand up meetings are a cheap way to enrich the traits a team needs to work as a team**.
+
+##### Guests and Attendants
+
+Participants are **the entire team of developers** as the meeting is made by them and for them. The meeting is *facilitated by the Scrum Master*, who's only interventions should be to ensure the conversation keeps on the right track (toward the sprint goal). Nonetheless, have other roles permission to join in the meeting? Yes, sure. Have other roles permission to interrupt the conversation? No, not at all. It's important, yet sometimes difficult, to keep other stakeholders or interested people out from actively participating in the meeting to prevent shifting its focus and main intention. *Other roles can attend but should not actually participate*.
+<!-- 
+More at:
+
+- Agile Software Development with Scrum,
   - Daily Scrum Meetings (page 40),
   - Scrum Organization, Process and Roles (page 118).
 - Clean Agile, Standup Meetings (page 110).
 - [It's Not Just Standing Up: Patterns for Daily Standup Meetings (martinfowler.com)](https://martinfowler.com/articles/itsNotJustStandingUp.html).
-- The Art of Software Development, Stand-Up Meetings (page 219). -->
+- Learning Agile, The Whole Team Uses the Daily Scrum (page 110).
+- The Art of Agile Development, Stand-Up Meetings (page 219).
+ -->
 
 #### Project Velocity
 
@@ -124,11 +163,11 @@ The group of **managers, developers, and customers** is known in XP as the Whole
 >When the Whole Team sits together in the same space, magic happen. (Clean Agile)
 
 The idea of Whole Team makes great emphasis on the fact that **customers are part of it** because they are the ones who understand best what (final) users' need. Reason for it to be initially called *On-Site Customer*. This *makes every process faster and smoother* as we reduce (almost at all) communication delays from the development to the customer and viceversa.
-
+<!-- 
 More at:
 
 - Clean Agile, Whole Team (page 93).
-- The Art of Software Development, Whole Team (page 68).
+- The Art of Software Development, Whole Team (page 68). -->
 
 #### Sit Together
 
@@ -163,7 +202,7 @@ A spike is a prototype-like software meant to **explore potential solutions** an
 
 >Always leave the code a little better than you found it. (The Art of Agile Development)
 
-Read notes at [Refactoring (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/refactoring/).
+Read notes at [Refactoring (docs-and-notes)](/notes/method/agile/xp/refactoring/).
 
 ### Coding
 
@@ -179,11 +218,11 @@ The development team needs to **agree on the coding standards** they consider op
 
 #### Test-Driven Development
 
-Read notes at [Test-Driven Development (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/tdd/).
+Read notes at [Test-Driven Development (docs-and-notes)](/notes/method/agile/xp/tdd/).
 
 #### Pair Programming
 
-Read notes at [Pair Programming (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/pair_programming/).
+Read notes at [Pair Programming (docs-and-notes)](/notes/method/agile/xp/pair_programming/).
 
 #### Collective Ownership
 
@@ -197,7 +236,7 @@ The **whole team shares responsibility** for its results. If something goes wron
 
 We need to **let go a bit of ego**. *Enjoy sharing and building together*. Accept that our solutions could be *improved or fixed by others*. Rather than thinking "my code," think "our code." Exposing other person's weak points and mistakes is an opportunity for conflict to happen, however, *it is a good thing, it helps us align our styles*. That's why we follow coding standards and do pair programming (among other practices), they help us *smooth the process*.
 
->Secretive, possessive programming [is] bad ... open, shared programming [is] good ... Errors [are] simply facts to be expected to investigation with an eye to future improvement, not attacks. (Gerald M. Weinberg, The Psychology of Computer Programming, 1971, p. 57)
+>Secretive, possessive programming [is] bad ... open, shared programming [is] good ... Errors [are] simply facts to be expected to investigation with an eye to future improvement, not attacks. (Gerald M. Weinberg, The Psychology of Computer Programming, 1971, page 57)
 
 Gerald M. Weinberg published "The Psychology of Computer Programming," book in which he introduced the concept of Egoless Programming. In it he describes timeless facts such as:
 
@@ -223,7 +262,7 @@ The main idea is to standardize and automate the integration process, thus we ca
 
 #### Unit Testing
 
-Read notes at [Unit Testing (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/unit/).
+Read notes at [Unit Testing (docs-and-notes)](/notes/method/agile/xp/unit/).
 
 #### Acceptance Testing
 
@@ -244,9 +283,6 @@ An acceptance test **ensures a user story has been successfully implemented** or
 
 Reference:
 
-- The Art of Agile Development.
-- Learn Agile<!--  (page 43, 175, 183, 219) -->.
-- Software Engineering<!--  (page 64) -->.
 - Extreme Programming Explained<!--  (page 37, 56) -->.
 - [Extreme Programming (martinfowler.com)](https://martinfowler.com/bliki/ExtremeProgramming.html).
 - [Extreme Programming (wiki.c2.com)](https://wiki.c2.com/?ExtremeProgramming).
@@ -254,4 +290,7 @@ Reference:
 - [Extreme Programming (XP) (agilealliance.org)](https://www.agilealliance.org/glossary/xp/).
 - [Extreme Programming: A gentle introduction (extremeprogramming.org)](http://www.extremeprogramming.org/).
 - [Extreme Programming: Values, Principles, and Practices (altexsoft.com)](https://www.altexsoft.com/blog/business/-extreme-programming-values-principles-and-practices/).
+- Learn Agile<!--  (page 43, 175, 183, 219) -->.
+- Software Engineering<!--  (page 64) -->.
+- The Art of Agile Development.
 - [What is Extreme Programming? (ronjeffries.com)](https://ronjeffries.com/xprog/what-is-extreme-programming/).
