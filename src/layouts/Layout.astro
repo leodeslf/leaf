@@ -4,7 +4,7 @@ import "../styles/syntax-highlight.css";
 
 const { headings, url } = Astro.props;
 const isIndex = url === "";
-const title = (isIndex ? "" : `${headings[0].text} | `).concat("Docs & Notes");
+const title = (isIndex ? "" : `${headings[0].text} | `).concat("Leaf");
 ---
 
 <!doctype html>
@@ -14,7 +14,7 @@ const title = (isIndex ? "" : `${headings[0].text} | `).concat("Docs & Notes");
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="🌱 Learning docs & notes about my Frontend Development journey, Leo de S.L.F."
+      content="Learning docs & notes about my Frontend Development journey, Leo de S.L.F."
     />
     <meta name="author" content="Leonardo de S. Leal F." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,8 +46,8 @@ const title = (isIndex ? "" : `${headings[0].text} | `).concat("Docs & Notes");
   </head>
   <body>
     <header>
-      <span>
-        🌱 <a href="/">Docs & Notes</a>
+      <span role="heading">
+        🍃 <a href="/">Leaf</a>
       </span>
       <span class="prefers-dark-switch">
         <input
@@ -62,6 +62,7 @@ const title = (isIndex ? "" : `${headings[0].text} | `).concat("Docs & Notes");
         </label>
       </span>
     </header>
+    <!-- <slot name="nav" /> -->
     <main>
       <article>
         <slot />
@@ -69,9 +70,8 @@ const title = (isIndex ? "" : `${headings[0].text} | `).concat("Docs & Notes");
     </main>
     <footer>
       <p>
-        Learning <a href="/">docs & notes</a> about my Frontend Development
-        journey,
-        <a href="https://www.leodeslf.com/">Leo de S.L.F</a>.
+        Leaf, learning docs & notes about my Frontend Development journey,
+        <a href="https://leodeslf.com/">Leo de S.L.F</a>.
       </p>
     </footer>
   </body>
