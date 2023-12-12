@@ -13,11 +13,7 @@ npm i -D gulp
 gulp [options] [tasks]
 ```
 
-Flags (options):
-
 <!-- TODO (finish) -->
-
-More at [Flags (github.com)](https://github.com/gulpjs/gulp-cli#flags).
 
 ```javascript
 // gulpfile.js (default task file) e.g.:
@@ -38,3 +34,9 @@ More at [Creating Tasks (gulpjs.com)](https://gulpjs.com/docs/en/getting-started
 ```
 
 More at [Configuration (github.com)](https://github.com/gulpjs/gulp-cli#configuration).
+
+Flags (options):
+
+- ...
+
+More at [Flags (github.com)](https://github.com/gulpjs/gulp-cli#flags).
