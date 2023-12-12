@@ -12,7 +12,7 @@
   - Always be practical and avoid frivolousness.
   - Always strive to build a homelike atmosphere at work that is warm and friendly.
   - Always have respect for spiritual matters, and remember to be grateful at all times.
-- **1936**: The company name changes from Toyoda to *Toyota*. In the same year, the first production car is ready, the *model AA passenger car*. Eiji Toyoda joins the Automotive Department (April) to later be put in charge of the *Shibaura Research Laboratory* (May) of the same depatment by Mr. Kiichiro.
+- **1936**: The company name changes from Toyoda to *Toyota*. In the same year, the first production car is ready, the *model AA passenger car*. Eiji Toyoda joins the Automotive Department (April) to later be put in charge of the *Shibaura Research Laboratory* (May) of the same department by Mr. Kiichiro.
 - **1937**: (August) The Toyoda Automatic Loom Works' Automotive Department becomes *Toyota Motors Corporation*, a new company founded by Mr. Kiichiro, and its research laboratory becomes the *Research Division* of the company. Also, *Just in Time* is introduced.
 - **1943**: Mr. Ohno is moved to Toyota Motors Corporation.
 - **1945**: Eiji Toyoda is put in charge of Toyota Motors Corporation by Kiichiro.
