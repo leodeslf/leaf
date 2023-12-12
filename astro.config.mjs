@@ -19,5 +19,5 @@ export default defineConfig({
     // smartypants: false,
     syntaxHighlight: 'prism'
   },
-  site: 'https://docs-and-notes.vercel.app'
+  site: 'https://leaf.leodeslf.com'
 });
