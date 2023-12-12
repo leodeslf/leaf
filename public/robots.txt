@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /test
 
-Sitemap: https://docs-and-notes.vercel.app/sitemap-index.xml
+Sitemap: https://leaves.leodeslf.com/sitemap-index.xml
