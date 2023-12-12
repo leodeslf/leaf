@@ -7,8 +7,3 @@ li {
   hyphens: auto;
   text-align: left;
 }
-
-table {
-  max-width: 600px;
-  overflow-x: scroll;
-}
