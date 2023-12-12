@@ -235,7 +235,7 @@ Reference:
 - [Control Chaos (controlchaos.com)](http://www.controlchaos.com/).
 - [Software Developer Learning Path (scrum.org)](https://www.scrum.org/pathway/software-developer-learning-path).
 - [Scrum (wikipedia.org)](https://en.wikipedia.org/wiki/Scrum_(software_development)).
-- Software Engineering (page 56~).
+- Software Engineering<!--  (page 56~) -->.
 - [The 2020 Scrum Guide™ (scrumguides.org)](https://scrumguides.org/scrum-guide.html).
 - [What is Scrum? (scrum.org)](https://www.scrum.org/learning-series/what-is-scrum).
 <!-- - Agile Notetaker & Scrum Reference. -->
