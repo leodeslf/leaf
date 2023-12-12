@@ -4,15 +4,15 @@ Scrum is **an Agile framework** aimed to *incrementally deliver value* through *
 
 ## Scrum Origins
 
-The word "scrum" (or "rugby approach") was brought to product development by Hirotaka Takeuchi and Ikujiro Nonaka on their paper **"The New New Product Development Game"** in the 1986, where they analyzed new approaches that lead them to better understand how can we *enhance development speed and flexibility*, both well-known weak points of old, sequential methods. Ken Schwaber and Jeff Sutherland co-created Scrum based on it (1995) inheriting the *Agile philosophy*. Later, Mike Beedle wrapped Scrum around *XP practices and artifacts* (2001).
+The word "scrum" (and "rugby approach") was brought to product development by Hirotaka Takeuchi and Ikujiro Nonaka on their paper **"The New New Product Development Game"** in the 1986, where they analyzed new approaches that lead them to better understand how can we *enhance development speed and flexibility*, well-known weak points of old, sequential methods. Ken Schwaber and Jeff Sutherland co-created Scrum based on it (1995) inheriting the *Agile philosophy*, later, Mike Beedle wrapped Scrum around *XP practices and artifacts* (2001).
 
-That paper identified six key characteristics leading companies had:
+This paper identified six key *characteristics that leading companies had in common*:
 
-1. *Built-in instability*, teams with great freedom of action but also hard, challenging goals.
-1. *Self-organizing project teams* which are identified by three must-have traits: autonomy (from top managers and directors), self-transcendence (making them and top managers forget about status quo and recognize that they can always be auto-sufficient), and cross-fertilization (as cross-functional, multi-disciplinary team members are constantly sharing knowledge and initiatives while working together).
-1. *Overlapping development phases*, which "enhance shared responsibility and cooperation, stimulates involvement and commitment, sharpens a problem-solving focus, encourages initiative taking, [and] develops diversified skills." On the other hand, management becomes more complex and good communication skills become a must-have for everyone.
-1. *"Multilearning,"* it happens in two dimensions. One is multilevel learning: the pressure imposed by the challenges and teammates lead everyone to learn more and grow because it is a necessity. The other is multifunctional learning: members from a cross-functional team have the privilege but also the requirement to learn about multiple tools and disciplines. Interactive experimentation also rises initiative and organizational flexibility.
-1. *Subtle control*, although top managers give teams great freedom, they provide a "big picture" point of view preventing small problems, ambiguity, and tension from turning into total chaos. Traditional management is avoided as it impairs or even extinguishes creativity and innovation. Subtle control includes self-discipline control, peer (instead of "boss") pressure, and passion/love (for what you do). Healthy management control exercises:
+1. **Built-in instability**, teams with great *freedom of action* but also hard, *challenging goals*.
+1. **Self-organizing project teams** which are identified by three must-have traits: *autonomy* (from top managers and directors), *self-transcendence* (making them and top managers forget about status quo and recognize that they can always be auto-sufficient), and *cross-fertilization* (as cross-functional, multi-disciplinary team members are constantly sharing knowledge and initiatives while working together).
+1. **Overlapping development phases**, which "enhance shared responsibility and cooperation, *stimulates involvement* and commitment, sharpens a problem-solving focus, *encourages initiative taking*, [and] *develops diversified skills*." On the other hand, *management becomes more complex* and good communication skills become a must-have for everyone.
+1. **"Multilearning,"** it happens in two dimensions. One is *multilevel learning*: the pressure imposed by the challenges and teammates lead everyone to *learn more* and grow because it is a necessity. The other is *multifunctional learning*: members from a cross-functional team have the privilege but also the requirement to *learn about multiple tools and disciplines*. Interactive experimentation also rises initiative and organizational flexibility.
+1. **Subtle control**, although top managers give teams great freedom, they provide the "big picture" point of view preventing ambiguity and tension from turning into total chaos. Traditional management is avoided as it impairs or even extinguishes creativity and innovation. Subtle control includes *self-discipline control*, *peer pressure* (instead of "boss" pressure), and *passion/love* for what you do. Healthy management control exercises:
    1. Build balanced teams by selecting the right people.
    1. Creating an open work environment.
    1. Make team members to research costumer requirements by themselves.
@@ -20,22 +20,21 @@ That paper identified six key characteristics leading companies had:
    1. Helping regulate team members working rhythm (specially at the start).
    1. Tolerating & anticipating mistakes.
    1. Make (external) suppliers self-organizing and knowledgeable about our needs.
-1. *(Organizational) transfer of learning* to other teams facing new projects or even different divisions. It is appropriate to assigning key members to new projects, so we leverage the accumulation of knowledge, something called transfer of learning through "osmosis," or now a days, to prevent silos of knowledge. It is also key to standardize practices through the whole organization for later projects. To institutionalize lessons learned from success. Yet, excessive institutionalization can be bad. Unlearning lessons when required by environment changes is crucial to keep a realistic, up-to-date organization culture.
+1. **(Organizational) transfer of learning** to other teams facing new projects or even different divisions. It is appropriate to *assigning key members to new projects*, so we *leverage the accumulation of knowledge*, something called transfer of learning through "osmosis" or to prevent "silos of knowledge." It is also key to *standardize practices* through the whole organization for later projects. To *institutionalize lessons learned* from success. Yet, excessive institutionalization can be bad. *Unlearning lessons when required* by environment changes is crucial to keep a realistic, up-to-date organization culture.
 
-Observed limitations and undesired effects:
+Observed *limitations* and undesired effects:
 
-- *Remarkably more effort is required* on the part of team members in order to execute such speed and complexity. People may suffer from more stress and tension.
-- *May not apply for long-term revolutionary innovations*, that kind of projects may require more rigid team structures and less volatile processes and practices.
-- *May not apply for extremely large projects* involving multiple divisions or organizations. Coordination, face-to-face communication, and speed can get hurt by the project's scale.
-- *Does not apply for one-man "teams"* where a single in charge "genius" develops the project to then define strict and specific orders for the people "below" to follow.
+- **Remarkably more effort is required** on the part of team members in order to execute such speed and complexity. People may suffer from more stress and tension.
+- **May not apply for long-term revolutionary innovations**, that kind of projects may require more rigid team structures and less volatile processes and practices.
+- **May not apply for extremely large projects** involving multiple divisions or organizations. Coordination, face-to-face communication, and speed can get hurt by the project's scale.
+- **Does not apply for one-man "teams"** where a single in charge "genius" develops the project to then define strict and specific orders for the people "below" to follow.
 
-Reference:
-
+More at [The new new product development game (paper, damiantgordon.com)](http://damiantgordon.com/Methodologies/Papers/The%20New%20Product%20Development%20Game.pdf).
+<!-- 
 - Agile Software Development with Scrum,
   - Introduction (page 1),
   - The New Product Development View of Scrum (page 106),
-  - The Football Metaphor (page 121).
-- [The new new product development game (paper, damiantgordon.com)](http://damiantgordon.com/Methodologies/Papers/The%20New%20Product%20Development%20Game.pdf).
+  - The Football Metaphor (page 121). -->
 
 ## Scrum Philosophy
 
@@ -58,13 +57,13 @@ Scrum *values*, traits a team needs to have success:
 - **Openness**: to be transparent about requirements and emerging challenges.
 - **Respect**: to recognize and appreciate every team member's capabilities.
 - **Courage**: to be determined and brave to face the complex and unknown.
-
+<!-- 
 Reference:
 
 - Agile Software Development with Scrum (page 147).
 - Learning Agile,
   - Scrum Has Its Own Set of Values (page 104),
-  - Is Your Company’s Culture Compatible with Scrum Values? (page 163). <!-- TODO -->
+  - Is Your Company’s Culture Compatible with Scrum Values? (page 163). <-- TODO -->
 
 ## How to Scrum
 
@@ -81,11 +80,11 @@ What the Scrum's "guide" looks like:
 >Practices in the absence of principles are often inappropriately used. (Agile Project Management, Jim Highsmith, 2009)
 
 However, as any other method, *Scrum does not fix chaotic circumstances*; a guide is not enough; in order to succeed we need *self-organization*, *collective commitment*, and a lot of effort.
-
+<!-- 
 Reference:
 
 - Agile Software Development with Scrum, Understanding Scrum (page 105).
-- Learning Agile, Scrum and Self-Organizing Teams (page 87).
+- Learning Agile, Scrum and Self-Organizing Teams (page 87). -->
 
 ## Scrum Team & Roles
 
@@ -95,7 +94,7 @@ Reference:
   - Team Size (page 36),
   - Team Composition (page 37). -->
 
-See also [Whole Team (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/#whole-team).
+See also [Whole Team (docs-and-notes)](/notes/method/agile/xp/#whole-team).
 
 ### Scrum Master
 
@@ -116,7 +115,7 @@ See also [Whole Team (docs-and-notes)](https://docs-and-notes.vercel.app/notes/m
 - Leading Lean Software Development, Frame 1: Customer Focus (page 6).
 - The Art of Software Development, Product management (aka product ownership, page70). -->
 
-See also [XP, The Customer is Always Available (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/#the-customer-is-always-available).
+See also [XP, The Customer is Always Available (docs-and-notes)](/notes/method/agile/xp/#the-customer-is-always-available).
 
 ## Scrum Events
 
@@ -124,7 +123,7 @@ See also [XP, The Customer is Always Available (docs-and-notes)](https://docs-an
 
 >"[A daily] does much more for [us] than just capturing information ... It makes everyone say it front of everybody else. That way everyone listens to what others are doing and they can [immediately] offer help ... It makes everyone [expose] issues face to face to their management. This forces everyone to have courage and to be honest, [which puts pressure on management too]. It also makes everyone promise in front of everyone else what [they] will be working on ... It puts everyone's credibility and trust to test. Scrum is about deep social interactions that build trust among team members." (Agile Software Development with Scrum, Understanding Scrum, 2002)
 
-Read notes at [XP, Stand Up Meeting (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/#stand-up-meeting).
+Read notes at [XP, Stand Up Meeting (docs-and-notes)](/notes/method/agile/xp/#stand-up-meeting).
 
 ### Sprint (or Iteration)
 
@@ -138,7 +137,7 @@ Read notes at [XP, Stand Up Meeting (docs-and-notes)](https://docs-and-notes.ver
 - Learning Agile, Sprints, Planning, and Retrospectives (page 120).
 - The Art of Software Development, Iterations (page 187, from xp). -->
 
-See also [XP, Iteration (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/#iteration).
+See also [XP, Iteration (docs-and-notes)](/notes/method/agile/xp/#iteration).
 
 ### Sprint Planning
 
@@ -154,7 +153,7 @@ See also [XP, Iteration (docs-and-notes)](https://docs-and-notes.vercel.app/note
   - Planning Practices (page 180, form xp).
 - The Art of Agile Development, The Planning Game (page 166, from xp). -->
 
-See also [XP, The Planning Game](https://docs-and-notes.vercel.app/notes/method/agile/xp/#the-planning-game).
+See also [XP, The Planning Game](/notes/method/agile/xp/#the-planning-game).
 
 ### Sprint Review (& Demo)
 
@@ -174,15 +173,14 @@ See also [XP, The Planning Game](https://docs-and-notes.vercel.app/notes/method/
   - Sprints, Planning, and Retrospectives (120),
   - Scrum Planning and Collective Commitment (page 158),
   - Coaches Understand What Makes a Methodology Work (page 381).
-  - XP Principles Help You Understand Planning (page 205, comparing xp vs scrum). -->
+  - XP Principles Help You Understand Planning (page 205, comparing xp vs scrum)***. -->
 <!-- 
-Principles can also help us understand why XP doesn’t have a specific after-action
+***Principles can also help us understand why XP doesn’t have a specific after-action
 review practice, the way Scrum has retrospectives. XP places value on improvement
 and reflection, and XP teams constantly talk about how they’re doing and how they
 can improve. But XP teams tend to be very conscious of “navel-gazing”—taking
 reflection too far and getting distracted from continuously delivering work. So XP
-teams tend to mix their reflection in with the work. This is something that pair pro‐
-gramming is very good at: getting developers to talk about what they’re doing while
+teams tend to mix their reflection in with the work. This is something that pair programming is very good at: getting developers to talk about what they’re doing while
 they’re doing it. The principle of baby steps helps this a lot: instead of setting a large,
 overarching goal (“let’s adopt all of the XP practices”), the team can take a small step
 toward it (“let’s start pair programming, and we’ll make sure we talk every day about
@@ -193,15 +191,17 @@ how we’re improving”).
 
 ### User Story
 
-Read notes at [User Story (docs-and-notes)](https://docs-and-notes.vercel.app/notes/method/agile/xp/#user-story).
+Read notes at [User Story (docs-and-notes)](/notes/method/agile/xp/#user-story).
 
 #### Story Points & Estimation
 
-<!-- TODO -->
+<!-- TODO, src done -->
 <!-- - Agile Software Development with Scrum (page 35).
-- Clean Agile (page 66, 76).
+- Clean Agile:
+  - Stories and Points (page 66),
+  - Story Estimation (page 76).
 - Learning Agile:
-  - User Stories Help Build Features Your Users Will Use (page 143),
+  - User Stories Help Build Features Your Users Will Use (page 143 [to check]),
   - Story Points and Velocity (page 146).
 - The Art of Agile Development (page 202). -->
 
