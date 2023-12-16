@@ -20,7 +20,7 @@ Reference:
 
 >The time to acquire a target is a function of the distance to and size of the target. (Paul Morris Fitts, 1954)
 
-Fitts' law is a **model both for predicting and measuring** the performance of humans on a given human-computer interaction.
+Fitts' law is a **model for both predicting and measuring the interaction performance** of humans on a given human-computer system.
 
 To reduce the ratio of errors:
 
